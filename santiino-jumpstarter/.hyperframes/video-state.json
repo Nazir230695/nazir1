@@ -1,7 +1,7 @@
 {
   "version": 1,
   "historyId": "25ac4d21-1945-4678-86f6-2be5042b0e71",
-  "currentRevision": "215bf7e2-386d-4a37-9d7f-c1d0fb9a1839",
+  "currentRevision": "9c21aff4-b5e4-45a6-a4b4-225989b7d335",
   "pendingChanges": false,
   "files": {
     "AGENTS.md": {
@@ -123,6 +123,18 @@
     "assets/santiino.mp4": {
       "hash": "1798755637b4f122acba0ebc91a998dff9544cd837d801ce3c9c68bd6c5a9d5b",
       "content": "/root/.cache/hyperframes/history/25ac4d21-1945-4678-86f6-2be5042b0e71/blobs/17/1798755637b4f122acba0ebc91a998dff9544cd837d801ce3c9c68bd6c5a9d5b"
+    },
+    "transcript.json": {
+      "hash": "42925698f199aa19ee1fcce6bd32fda4456e56c8e534ac7e5a50b730108acafe",
+      "content": "/root/.cache/hyperframes/history/25ac4d21-1945-4678-86f6-2be5042b0e71/blobs/42/42925698f199aa19ee1fcce6bd32fda4456e56c8e534ac7e5a50b730108acafe"
+    },
+    "tools/build2.py": {
+      "hash": "c187a0bc47c46f22a210f5b899243e22a7c85f668f8b7074bc5eea7248cf4be5",
+      "content": "/root/.cache/hyperframes/history/25ac4d21-1945-4678-86f6-2be5042b0e71/blobs/c1/c187a0bc47c46f22a210f5b899243e22a7c85f668f8b7074bc5eea7248cf4be5"
+    },
+    "tools/transcribe.py": {
+      "hash": "4655fc7dbef370625b1864d7902b93b321990da2b5d99b3b16ff51f4728779a8",
+      "content": "/root/.cache/hyperframes/history/25ac4d21-1945-4678-86f6-2be5042b0e71/blobs/46/4655fc7dbef370625b1864d7902b93b321990da2b5d99b3b16ff51f4728779a8"
     }
   },
   "revisions": {
@@ -224,6 +236,29 @@
         "compositions/callouts-a.html": {
           "before": "/root/.cache/hyperframes/history/25ac4d21-1945-4678-86f6-2be5042b0e71/blobs/28/287b9ceb4ed13c42bf2e9e9939e15ac3a074fd22b69c67439f3363464a5ee1cf",
           "after": "/root/.cache/hyperframes/history/25ac4d21-1945-4678-86f6-2be5042b0e71/blobs/f3/f3d80daf53d47a83cac00ada41ad936650a6a3e614679aa171af4d015014a95b"
+        }
+      }
+    },
+    "9c21aff4-b5e4-45a6-a4b4-225989b7d335": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1794846574715,
+      "endedAt": 1794846574727,
+      "files": {
+        "tools/build2.py": {
+          "before": null,
+          "after": "/root/.cache/hyperframes/history/25ac4d21-1945-4678-86f6-2be5042b0e71/blobs/c1/c187a0bc47c46f22a210f5b899243e22a7c85f668f8b7074bc5eea7248cf4be5"
+        },
+        "tools/transcribe.py": {
+          "before": null,
+          "after": "/root/.cache/hyperframes/history/25ac4d21-1945-4678-86f6-2be5042b0e71/blobs/46/4655fc7dbef370625b1864d7902b93b321990da2b5d99b3b16ff51f4728779a8"
+        },
+        "transcript.json": {
+          "before": null,
+          "after": "/root/.cache/hyperframes/history/25ac4d21-1945-4678-86f6-2be5042b0e71/blobs/42/42925698f199aa19ee1fcce6bd32fda4456e56c8e534ac7e5a50b730108acafe"
         }
       }
     }
