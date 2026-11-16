@@ -1,0 +1,36 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; pointer-events: none; 
+      --accent: #ffc21a;
+      --ink: #ffffff;
+      --glass: rgba(10, 14, 16, 0.80);
+      --teal: #1f8f7a;
+      --danger: #ff3b4e;
+      --font-display: "Archivo Black", "Montserrat", sans-serif;
+      --font-ui: "Montserrat", sans-serif;
+ }
+    #ct-box { position: absolute; left: 40px; right: 200px; top: 720px; text-align: center; font-family: var(--font-ui); }
+    #ct-prod { display: inline-block; padding: 12px 30px; border-radius: 999px; background: var(--teal); color: #fff;
+      font-weight: 900; font-size: 40px; letter-spacing: .05em; text-transform: uppercase; }
+    #ct-main { margin-top: 18px; font-family: var(--font-display); font-size: 104px; line-height: .95; color: #fff;
+      text-transform: uppercase; text-shadow: 0 10px 34px rgba(0,0,0,.6); }
+    #ct-main b { color: var(--accent); font-weight: inherit; }
+    #ct-arrow { position: absolute; left: 110px; top: 1150px; width: 150px; height: 150px; }
+
+  </style>
+  <div id="root" data-composition-id="cta" data-width="1080" data-height="1920">
+    <div id="ct-box" class="clip" data-start="53.6167" data-duration="2.8667" data-track-index="0">
+      <div><span id="ct-prod" data-var-text="ctaProduct">Santiino 4-in-1</span></div>
+      <div id="ct-main">Tekan<br/><b>link</b> sekarang</div>
+    </div>
+    <svg id="ct-arrow" class="clip" data-start="53.9333" data-duration="2.5667" data-track-index="1" viewBox="0 0 100 100" fill="none" stroke="#ffc21a" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"><path d="M78 12 C70 50 50 70 22 84 M22 84 L26 58 M22 84 L48 84"/></svg>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#ct-prod", { opacity: 0, scale: 0.5 }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(1.7)" }, 53.6167);
+    tl.fromTo("#ct-main", { opacity: 0, y: 30, filter: "blur(10px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.35, ease: "expo.out" }, 53.7333);
+    tl.fromTo("#ct-arrow", { opacity: 0, x: 30, y: -30 }, { opacity: 1, x: 0, y: 0, duration: 0.3, ease: "expo.out" }, 53.9333);
+    tl.to("#ct-arrow", { x: -10, y: 10, duration: 0.3, ease: "power2.inOut" }, 54.3333);
+    window.__timelines["cta"] = tl;
+  </script>
+</template>

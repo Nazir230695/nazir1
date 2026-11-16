@@ -1,0 +1,56 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; pointer-events: none; 
+      --accent: #ffc21a;
+      --ink: #ffffff;
+      --glass: rgba(10, 14, 16, 0.80);
+      --teal: #1f8f7a;
+      --danger: #ff3b4e;
+      --font-display: "Archivo Black", "Montserrat", sans-serif;
+      --font-ui: "Montserrat", sans-serif;
+ }
+    .card { position: absolute; left: 92px; top: 860px; display: flex; align-items: center; gap: 22px;
+      padding: 20px 34px 20px 22px; border-radius: 28px; background: var(--glass);
+      border: 2px solid rgba(255,255,255,.14); box-shadow: 0 18px 50px rgba(0,0,0,.5);
+      backdrop-filter: blur(18px); color: var(--ink); font-family: var(--font-ui); }
+    .card .ic { width: 80px; height: 80px; border-radius: 20px; background: var(--accent);
+      display: flex; align-items: center; justify-content: center; flex: none; }
+    .card .ic svg { width: 50px; height: 50px; }
+    .card .ic.num { font-family: var(--font-display); font-size: 48px; color: #111; }
+    .card .k { font-size: 30px; font-weight: 600; opacity: .8; letter-spacing: .05em; text-transform: uppercase; }
+    .card .t { font-size: 46px; font-weight: 800; line-height: 1.05; text-transform: uppercase; }
+    .card .t b { color: var(--accent); font-weight: 800; }
+    .row { position: absolute; left: 40px; right: 120px; top: 760px; text-align: center; font-family: var(--font-ui); }
+    .row .ttl { display: inline-block; padding: 10px 26px; border-radius: 999px; background: var(--accent); color: #111;
+      font-weight: 800; font-size: 34px; letter-spacing: .06em; text-transform: uppercase; }
+    .row .items { margin-top: 22px; display: flex; justify-content: center; gap: 14px; }
+    .row .it { width: 180px; padding: 22px 8px 18px; border-radius: 26px; background: var(--glass);
+      border: 2px solid rgba(255,255,255,.14); box-shadow: 0 18px 50px rgba(0,0,0,.45); color: var(--ink); }
+    .row .it .ic { width: 88px; height: 88px; margin: 0 auto; border-radius: 24px; background: var(--accent);
+      display: flex; align-items: center; justify-content: center; }
+    .row .it .ic svg { width: 56px; height: 56px; }
+    .row .it .n { margin-top: 12px; font-weight: 800; font-size: 32px; text-transform: uppercase; }
+
+    #hk-shade { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,.7) 0%, rgba(0,0,0,.2) 38%, rgba(0,0,0,0) 60%); }
+    #hk-copy { position: absolute; left: 0; right: 120px; top: 250px; text-align: center; }
+    #hk-q { font-family: var(--font-display); font-size: 120px; line-height: .95; color: #fff; text-transform: uppercase;
+      text-shadow: 0 10px 40px rgba(0,0,0,.6); }
+    #hk-a { margin-top: 14px; display: inline-block; padding: 8px 30px 14px; font-family: var(--font-display); font-size: 92px;
+      color: #111; background: var(--accent); border-radius: 22px; text-transform: uppercase; transform: rotate(-3deg); }
+
+  </style>
+  <div id="root" data-composition-id="hook" data-width="1080" data-height="1920">
+    <div id="hk-shade" class="clip" data-start="0" data-duration="2.7" data-track-index="0"></div>
+    <div id="hk-copy" class="clip" data-start="0" data-duration="2.7" data-track-index="1">
+      <div id="hk-q" data-var-text="hookQ">Bateri kong?</div>
+      <div><span id="hk-a" data-var-text="hookA">Sekali start je</span></div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#hk-q", { opacity: 0.0, scale: 1.2 }, { opacity: 1, scale: 1, duration: 0.22, ease: "power4.out" }, 0);
+    tl.fromTo("#hk-a", { opacity: 0, scale: 0.4, rotation: -12 }, { opacity: 1, scale: 1, rotation: -3, duration: 0.4, ease: "back.out(1.8)" }, 1.5333);
+    tl.to("#hk-copy", { opacity: 0, y: -40, filter: "blur(10px)", duration: 0.2, ease: "power3.in" }, 2.4667);
+    window.__timelines["hook"] = tl;
+  </script>
+</template>

@@ -1,0 +1,518 @@
+{
+ "total": 56.5,
+ "segs": [
+  {
+   "id": "h1",
+   "src_in": 98.4,
+   "src_out": 99.9333,
+   "start": 0.0,
+   "dur": 1.5332000000000001,
+   "scale": 1.0,
+   "note": "engine cranks"
+  },
+  {
+   "id": "h2",
+   "src_in": 101.6,
+   "src_out": 102.7667,
+   "start": 1.5334,
+   "dur": 1.1665,
+   "scale": 1.1,
+   "note": "Memang terbaik lah."
+  },
+  {
+   "id": "a1",
+   "src_in": 1.2667,
+   "src_out": 2.8667,
+   "start": 2.7,
+   "dur": 1.5999,
+   "scale": 1.0,
+   "note": "Abang nampak bateri dah kong"
+  },
+  {
+   "id": "a2",
+   "src_in": 5.0,
+   "src_out": 7.2333,
+   "start": 4.3,
+   "dur": 2.2331999999999996,
+   "scale": 1.12,
+   "note": "kalau kereta pun jenis parking lama"
+  },
+  {
+   "id": "a3",
+   "src_in": 8.6333,
+   "src_out": 10.0333,
+   "start": 6.5334,
+   "dur": 1.3999,
+   "scale": 1.0,
+   "note": "abang kena standby satu benda ni"
+  },
+  {
+   "id": "a4",
+   "src_in": 18.9667,
+   "src_out": 20.3,
+   "start": 7.9334,
+   "dur": 1.3332,
+   "scale": 1.12,
+   "note": "all in one, jump starter"
+  },
+  {
+   "id": "b1",
+   "src_in": 22.3333,
+   "src_out": 25.0333,
+   "start": 9.2667,
+   "dur": 2.6999,
+   "scale": 1.0,
+   "note": "abang nampak ni dia main sekali dengan tempat pegang sini"
+  },
+  {
+   "id": "b2",
+   "src_in": 34.4333,
+   "src_out": 36.7,
+   "start": 11.9667,
+   "dur": 2.2664999999999997,
+   "scale": 1.12,
+   "note": "daripada Santiino memang lawa"
+  },
+  {
+   "id": "c1",
+   "src_in": 44.9,
+   "src_out": 47.4667,
+   "start": 14.2334,
+   "dur": 2.5665,
+   "scale": 1.0,
+   "note": "dia kegunaan dia nak pump tayar pun boleh"
+  },
+  {
+   "id": "c2",
+   "src_in": 48.2667,
+   "src_out": 50.4333,
+   "start": 16.8,
+   "dur": 2.1664999999999996,
+   "scale": 1.1,
+   "note": "nak jumper pun boleh, 2 dalam 1"
+  },
+  {
+   "id": "c3",
+   "src_in": 51.5333,
+   "src_out": 54.4333,
+   "start": 18.9667,
+   "dur": 2.8998999999999997,
+   "scale": 1.0,
+   "note": "abang nampak dia boleh cas guna Type-C memang mudah"
+  },
+  {
+   "id": "d1",
+   "src_in": 67.3667,
+   "src_out": 69.4333,
+   "start": 21.8667,
+   "dur": 2.0665,
+   "scale": 1.12,
+   "note": "abang boleh cucuk kat sini je tau"
+  },
+  {
+   "id": "d2",
+   "src_in": 70.7333,
+   "src_out": 73.5667,
+   "start": 23.9334,
+   "dur": 2.8331999999999997,
+   "scale": 1.0,
+   "note": "nampak dia akan menyala lampu macam ni tau"
+  },
+  {
+   "id": "d3",
+   "src_in": 76.4,
+   "src_out": 78.7667,
+   "start": 26.7667,
+   "dur": 2.3665,
+   "scale": 1.12,
+   "note": "abang masuk yang hitam ke hitam"
+  },
+  {
+   "id": "d4",
+   "src_in": 81.9667,
+   "src_out": 84.0333,
+   "start": 29.1334,
+   "dur": 2.0665,
+   "scale": 1.0,
+   "note": "yang merah ni masuk ke merah"
+  },
+  {
+   "id": "d5",
+   "src_in": 91.2333,
+   "src_out": 92.2,
+   "start": 31.2,
+   "dur": 0.9665,
+   "scale": 1.1,
+   "note": "jom kita start tengok"
+  },
+  {
+   "id": "p1",
+   "src_in": 96.8667,
+   "src_out": 97.5,
+   "start": 32.1667,
+   "dur": 0.6332,
+   "scale": 1.0,
+   "note": "Bismillahirrahmanirrahim"
+  },
+  {
+   "id": "p2",
+   "src_in": 98.0333,
+   "src_out": 100.4,
+   "start": 32.8,
+   "dur": 2.3665,
+   "scale": 1.08,
+   "note": "engine start"
+  },
+  {
+   "id": "p3",
+   "src_in": 100.4,
+   "src_out": 102.7667,
+   "start": 35.1667,
+   "dur": 2.3665,
+   "scale": 1.0,
+   "note": "Tengok. Sekali lah. Memang terbaik lah."
+  },
+  {
+   "id": "e1",
+   "src_in": 108.4667,
+   "src_out": 114.2667,
+   "start": 37.5334,
+   "dur": 5.7999,
+   "scale": 1.1,
+   "note": "kalau suka travel... untuk emergency memang mudah benda ni"
+  },
+  {
+   "id": "f1",
+   "src_in": 115.4333,
+   "src_out": 117.3,
+   "start": 43.3334,
+   "dur": 1.8665,
+   "scale": 1.0,
+   "note": "nak isi tayar angin pun boleh"
+  },
+  {
+   "id": "f2",
+   "src_in": 141.5667,
+   "src_out": 146.8333,
+   "start": 45.2,
+   "dur": 5.266500000000001,
+   "scale": 1.12,
+   "note": "untuk tayar basikal, motor, bola, kereta"
+  },
+  {
+   "id": "f3",
+   "src_in": 161.4333,
+   "src_out": 162.5,
+   "start": 50.4667,
+   "dur": 1.0665,
+   "scale": 1.0,
+   "note": "dia bagi sekali dengan tube ni"
+  },
+  {
+   "id": "g1",
+   "src_in": 164.3667,
+   "src_out": 166.4667,
+   "start": 51.5334,
+   "dur": 2.0999,
+   "scale": 1.1,
+   "note": "kat sini abang boleh tekan lampu dia juga"
+  },
+  {
+   "id": "z1",
+   "src_in": 171.6,
+   "src_out": 174.4667,
+   "start": 53.6334,
+   "dur": 2.8665,
+   "scale": 1.0,
+   "note": "memang sangat sesuai benda ni. nak dapat, tekan link"
+  }
+ ],
+ "T": {
+  "parking": 5.9333,
+  "all": 7.9667,
+  "pegang": 11.3667,
+  "santiino": 12.4,
+  "kegunaan": 14.6,
+  "pump": 15.6,
+  "jumper": 17.3667,
+  "duadalam": 18.3,
+  "typec": 20.7,
+  "cucuk": 22.9667,
+  "lampu": 24.5333,
+  "hitam": 28.0333,
+  "merah": 29.4333,
+  "start": 31.6,
+  "crank": 32.8667,
+  "sekali": 35.7,
+  "travel": 38.5,
+  "emergency": 41.5333,
+  "angin": 44.3333,
+  "basikal": 46.5667,
+  "motor": 47.8333,
+  "bola": 48.9,
+  "kereta": 50.2,
+  "tube": 51.1333,
+  "lampuled": 53.0333,
+  "cta": 53.6167
+ },
+ "groups": [
+  [
+   "abang",
+   "nampak",
+   "bateri"
+  ],
+  [
+   "dah",
+   "kong"
+  ],
+  [
+   "kalau",
+   "kereta",
+   "pun"
+  ],
+  [
+   "jenis",
+   "parking",
+   "lama,"
+  ],
+  [
+   "abang",
+   "kena",
+   "standby"
+  ],
+  [
+   "satu",
+   "benda",
+   "ni,"
+  ],
+  [
+   "all",
+   "in",
+   "one,"
+  ],
+  [
+   "jump",
+   "starter"
+  ],
+  [
+   "abang",
+   "nampak",
+   "ni"
+  ],
+  [
+   "dia",
+   "main",
+   "sekali"
+  ],
+  [
+   "dengan",
+   "tempat"
+  ],
+  [
+   "pegang",
+   "sini,"
+  ],
+  [
+   "daripada",
+   "Santiino"
+  ],
+  [
+   "memang",
+   "lawa"
+  ],
+  [
+   "dia",
+   "kegunaan",
+   "dia"
+  ],
+  [
+   "nak",
+   "pam",
+   "tayar"
+  ],
+  [
+   "pun",
+   "boleh"
+  ],
+  [
+   "nak",
+   "jumper",
+   "pun"
+  ],
+  [
+   "boleh",
+   "2"
+  ],
+  [
+   "dalam",
+   "1"
+  ],
+  [
+   "abang",
+   "nampak",
+   "dia"
+  ],
+  [
+   "boleh",
+   "cas",
+   "guna"
+  ],
+  [
+   "Type-C",
+   "memang",
+   "mudah"
+  ],
+  [
+   "abang",
+   "boleh",
+   "cucuk"
+  ],
+  [
+   "kat",
+   "sini"
+  ],
+  [
+   "je",
+   "tau"
+  ],
+  [
+   "nampak",
+   "Dia",
+   "akan"
+  ],
+  [
+   "menyala",
+   "lampu",
+   "macam"
+  ],
+  [
+   "ni",
+   "tau"
+  ],
+  [
+   "abang",
+   "masuk",
+   "yang"
+  ],
+  [
+   "hitam",
+   "ke",
+   "hitam"
+  ],
+  [
+   "Yang",
+   "merah",
+   "ni"
+  ],
+  [
+   "Masuk",
+   "ke",
+   "merah"
+  ],
+  [
+   "Jom",
+   "kita"
+  ],
+  [
+   "start",
+   "tengok."
+  ],
+  [
+   "Bismillah."
+  ],
+  [
+   "Tengok.",
+   "Sekali",
+   "lah."
+  ],
+  [
+   "Memang",
+   "terbaik",
+   "lah."
+  ],
+  [
+   "Yang",
+   "ni",
+   "kalau"
+  ],
+  [
+   "suka",
+   "travel"
+  ],
+  [
+   "je",
+   "lah."
+  ],
+  [
+   "Dapatkan",
+   "satu",
+   "letak"
+  ],
+  [
+   "lah",
+   "kereta."
+  ],
+  [
+   "Untuk",
+   "emergency",
+   "nanti"
+  ],
+  [
+   "memang",
+   "mudah"
+  ],
+  [
+   "benda",
+   "ni."
+  ],
+  [
+   "nak",
+   "isi",
+   "tayar"
+  ],
+  [
+   "angin",
+   "pun",
+   "boleh"
+  ],
+  [
+   "untuk",
+   "tayar",
+   "basikal"
+  ],
+  [
+   "Untuk",
+   "motor",
+   "Untuk"
+  ],
+  [
+   "bola",
+   "Untuk",
+   "kereta"
+  ],
+  [
+   "dia",
+   "bagi",
+   "sekali"
+  ],
+  [
+   "dengan",
+   "tiub",
+   "ni"
+  ],
+  [
+   "Kat",
+   "sini",
+   "abang"
+  ],
+  [
+   "boleh",
+   "tekan",
+   "lampu"
+  ],
+  [
+   "dia",
+   "juga"
+  ]
+ ]
+}

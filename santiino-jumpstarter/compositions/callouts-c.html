@@ -1,0 +1,56 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; pointer-events: none; 
+      --accent: #ffc21a;
+      --ink: #ffffff;
+      --glass: rgba(10, 14, 16, 0.80);
+      --teal: #1f8f7a;
+      --danger: #ff3b4e;
+      --font-display: "Archivo Black", "Montserrat", sans-serif;
+      --font-ui: "Montserrat", sans-serif;
+ }
+    .card { position: absolute; left: 92px; top: 860px; display: flex; align-items: center; gap: 22px;
+      padding: 20px 34px 20px 22px; border-radius: 28px; background: var(--glass);
+      border: 2px solid rgba(255,255,255,.14); box-shadow: 0 18px 50px rgba(0,0,0,.5);
+      backdrop-filter: blur(18px); color: var(--ink); font-family: var(--font-ui); }
+    .card .ic { width: 80px; height: 80px; border-radius: 20px; background: var(--accent);
+      display: flex; align-items: center; justify-content: center; flex: none; }
+    .card .ic svg { width: 50px; height: 50px; }
+    .card .ic.num { font-family: var(--font-display); font-size: 48px; color: #111; }
+    .card .k { font-size: 30px; font-weight: 600; opacity: .8; letter-spacing: .05em; text-transform: uppercase; }
+    .card .t { font-size: 46px; font-weight: 800; line-height: 1.05; text-transform: uppercase; }
+    .card .t b { color: var(--accent); font-weight: 800; }
+    .row { position: absolute; left: 40px; right: 120px; top: 760px; text-align: center; font-family: var(--font-ui); }
+    .row .ttl { display: inline-block; padding: 10px 26px; border-radius: 999px; background: var(--accent); color: #111;
+      font-weight: 800; font-size: 34px; letter-spacing: .06em; text-transform: uppercase; }
+    .row .items { margin-top: 22px; display: flex; justify-content: center; gap: 14px; }
+    .row .it { width: 180px; padding: 22px 8px 18px; border-radius: 26px; background: var(--glass);
+      border: 2px solid rgba(255,255,255,.14); box-shadow: 0 18px 50px rgba(0,0,0,.45); color: var(--ink); }
+    .row .it .ic { width: 88px; height: 88px; margin: 0 auto; border-radius: 24px; background: var(--accent);
+      display: flex; align-items: center; justify-content: center; }
+    .row .it .ic svg { width: 56px; height: 56px; }
+    .row .it .n { margin-top: 12px; font-weight: 800; font-size: 32px; text-transform: uppercase; }
+
+  </style>
+  <div id="root" data-composition-id="callouts-c" data-width="1080" data-height="1920">
+    <div id="cc-s1" class="card clip" data-start="22.9667" data-duration="1.4667" data-track-index="0" style="top:860px"><div class="ic num">1</div><div><div class="k">Langkah 1</div><div class="t">Cucuk <b>smart clamp</b></div></div></div>
+    <div id="cc-s2" class="card clip" data-start="24.5333" data-duration="2.2333" data-track-index="0" style="top:860px"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0 0 12 3z"/></svg></div><div><div class="k">Lampu hijau</div><div class="t"><b>Sedia</b> guna</div></div></div>
+    <div id="cc-s3" class="card clip" data-start="28.0333" data-duration="1.4667" data-track-index="0" style="top:860px"><div class="ic num">2</div><div><div class="k">Langkah 2</div><div class="t"><b>Hitam</b> ke negatif (−)</div></div></div>
+    <div id="cc-s4" class="card clip" data-start="29.4333" data-duration="1.7667" data-track-index="0" style="top:860px"><div class="ic num">3</div><div><div class="k">Langkah 3</div><div class="t"><b>Merah</b> ke positif (+)</div></div></div>
+    <div id="cc-s5" class="card clip" data-start="31.6" data-duration="1.4667" data-track-index="0" style="top:860px"><div class="ic num">4</div><div><div class="k">Langkah 4</div><div class="t"><b>Start</b> enjin</div></div></div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#cc-s1", { opacity: 0, x: -60, filter: "blur(10px)" }, { opacity: 1, x: 0, filter: "blur(0px)", duration: 0.45, ease: "expo.out" }, 22.9667);
+    tl.to("#cc-s1", { opacity: 0, x: 40, filter: "blur(8px)", duration: 0.22, ease: "power3.in" }, 24.2);
+    tl.fromTo("#cc-s2", { opacity: 0, x: -60, filter: "blur(10px)" }, { opacity: 1, x: 0, filter: "blur(0px)", duration: 0.45, ease: "expo.out" }, 24.5333);
+    tl.to("#cc-s2", { opacity: 0, x: 40, filter: "blur(8px)", duration: 0.22, ease: "power3.in" }, 26.5333);
+    tl.fromTo("#cc-s3", { opacity: 0, x: -60, filter: "blur(10px)" }, { opacity: 1, x: 0, filter: "blur(0px)", duration: 0.45, ease: "expo.out" }, 28.0333);
+    tl.to("#cc-s3", { opacity: 0, x: 40, filter: "blur(8px)", duration: 0.22, ease: "power3.in" }, 29.2667);
+    tl.fromTo("#cc-s4", { opacity: 0, x: -60, filter: "blur(10px)" }, { opacity: 1, x: 0, filter: "blur(0px)", duration: 0.45, ease: "expo.out" }, 29.4333);
+    tl.to("#cc-s4", { opacity: 0, x: 40, filter: "blur(8px)", duration: 0.22, ease: "power3.in" }, 30.9667);
+    tl.fromTo("#cc-s5", { opacity: 0, x: -60, filter: "blur(10px)" }, { opacity: 1, x: 0, filter: "blur(0px)", duration: 0.45, ease: "expo.out" }, 31.6);
+    tl.to("#cc-s5", { opacity: 0, x: 40, filter: "blur(8px)", duration: 0.22, ease: "power3.in" }, 32.8333);
+    window.__timelines["callouts-c"] = tl;
+  </script>
+</template>

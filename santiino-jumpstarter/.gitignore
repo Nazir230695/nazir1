@@ -1,0 +1,5 @@
+# source footage proxy is >100MB (GitHub limit) — regenerate from the Drive original
+assets/santiino.mp4
+.hyperframes/artifacts/
+node_modules/
+renders/

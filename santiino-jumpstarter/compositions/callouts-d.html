@@ -1,0 +1,55 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; pointer-events: none; 
+      --accent: #ffc21a;
+      --ink: #ffffff;
+      --glass: rgba(10, 14, 16, 0.80);
+      --teal: #1f8f7a;
+      --danger: #ff3b4e;
+      --font-display: "Archivo Black", "Montserrat", sans-serif;
+      --font-ui: "Montserrat", sans-serif;
+ }
+    .card { position: absolute; left: 92px; top: 860px; display: flex; align-items: center; gap: 22px;
+      padding: 20px 34px 20px 22px; border-radius: 28px; background: var(--glass);
+      border: 2px solid rgba(255,255,255,.14); box-shadow: 0 18px 50px rgba(0,0,0,.5);
+      backdrop-filter: blur(18px); color: var(--ink); font-family: var(--font-ui); }
+    .card .ic { width: 80px; height: 80px; border-radius: 20px; background: var(--accent);
+      display: flex; align-items: center; justify-content: center; flex: none; }
+    .card .ic svg { width: 50px; height: 50px; }
+    .card .ic.num { font-family: var(--font-display); font-size: 48px; color: #111; }
+    .card .k { font-size: 30px; font-weight: 600; opacity: .8; letter-spacing: .05em; text-transform: uppercase; }
+    .card .t { font-size: 46px; font-weight: 800; line-height: 1.05; text-transform: uppercase; }
+    .card .t b { color: var(--accent); font-weight: 800; }
+    .row { position: absolute; left: 40px; right: 120px; top: 760px; text-align: center; font-family: var(--font-ui); }
+    .row .ttl { display: inline-block; padding: 10px 26px; border-radius: 999px; background: var(--accent); color: #111;
+      font-weight: 800; font-size: 34px; letter-spacing: .06em; text-transform: uppercase; }
+    .row .items { margin-top: 22px; display: flex; justify-content: center; gap: 14px; }
+    .row .it { width: 180px; padding: 22px 8px 18px; border-radius: 26px; background: var(--glass);
+      border: 2px solid rgba(255,255,255,.14); box-shadow: 0 18px 50px rgba(0,0,0,.45); color: var(--ink); }
+    .row .it .ic { width: 88px; height: 88px; margin: 0 auto; border-radius: 24px; background: var(--accent);
+      display: flex; align-items: center; justify-content: center; }
+    .row .it .ic svg { width: 56px; height: 56px; }
+    .row .it .n { margin-top: 12px; font-weight: 800; font-size: 32px; text-transform: uppercase; }
+
+    #cd-start { position: absolute; left: 40px; right: 160px; top: 700px; text-align: center; }
+    #cd-start span { display: inline-block; padding: 10px 46px 20px; font-family: var(--font-display); font-size: 136px;
+      color: var(--accent); border: 12px solid var(--accent); border-radius: 30px; text-transform: uppercase;
+      background: rgba(0,0,0,.3); text-shadow: 0 10px 34px rgba(0,0,0,.5); }
+
+  </style>
+  <div id="root" data-composition-id="callouts-d" data-width="1080" data-height="1920">
+    <div id="cd-start" class="clip" data-start="32.7667" data-duration="2.4" data-track-index="1"><span id="cd-start-s">Start!</span></div>
+    <div id="cd-ok" class="card clip" data-start="35.7" data-duration="1.8333" data-track-index="0" style="top:860px"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"><path d="M4 12.5l5 5L20 6.5"/></svg></div><div><div class="k">Terbukti</div><div class="t">Sekali <b>start</b> je!</div></div></div>
+    <div id="cd-em" class="card clip" data-start="38.5" data-duration="4.8333" data-track-index="0" style="top:860px"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 4.5-3.4 8-8 9-4.6-1-8-4.5-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg></div><div><div class="k">Wajib dalam kereta</div><div class="t">Travel &amp; <b>emergency</b></div></div></div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#cd-start-s", { opacity: 0, scale: 2.4, rotation: -10 }, { opacity: 1, scale: 1, rotation: -6, duration: 0.28, ease: "power4.in" }, 32.7667);
+    tl.to("#cd-start-s", { opacity: 0, scale: 1.1, filter: "blur(8px)", duration: 0.22, ease: "power3.in" }, 34.9333);
+    tl.fromTo("#cd-ok", { opacity: 0, x: -60, filter: "blur(10px)" }, { opacity: 1, x: 0, filter: "blur(0px)", duration: 0.45, ease: "expo.out" }, 35.7);
+    tl.to("#cd-ok", { opacity: 0, x: 40, filter: "blur(8px)", duration: 0.22, ease: "power3.in" }, 37.3);
+    tl.fromTo("#cd-em", { opacity: 0, x: -60, filter: "blur(10px)" }, { opacity: 1, x: 0, filter: "blur(0px)", duration: 0.45, ease: "expo.out" }, 38.5);
+    tl.to("#cd-em", { opacity: 0, x: 40, filter: "blur(8px)", duration: 0.22, ease: "power3.in" }, 43.1);
+    window.__timelines["callouts-d"] = tl;
+  </script>
+</template>
