@@ -1,0 +1,46 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; pointer-events: none; 
+      --accent: #ffd60a;
+      --ink: #ffffff;
+      --glass: rgba(12, 14, 20, 0.78);
+      --promo: #ff3b4e;
+      --font-display: "Archivo Black", "Montserrat", sans-serif;
+      --font-ui: "Montserrat", sans-serif;
+ }
+    #ct-rare { position: absolute; left: 0; right: 140px; top: 740px; text-align: center; }
+    #ct-rare span { display: inline-block; padding: 10px 40px 18px; font-family: var(--font-display); font-size: 140px;
+      color: var(--accent); text-transform: uppercase; border: 10px solid var(--accent); border-radius: 26px;
+      transform: rotate(-6deg); text-shadow: 0 8px 30px rgba(0,0,0,.5); background: rgba(0,0,0,.28); }
+    #ct-box { position: absolute; left: 40px; right: 200px; top: 780px; text-align: center; font-family: var(--font-ui); }
+    #ct-badge { display: inline-block; padding: 12px 34px; border-radius: 999px; background: var(--promo); color: #fff;
+      font-weight: 900; font-size: 46px; letter-spacing: .06em; text-transform: uppercase; box-shadow: 0 14px 40px rgba(255,59,78,.45); }
+    #ct-main { margin-top: 20px; font-family: var(--font-display); font-size: 96px; line-height: .95; color: #fff;
+      text-transform: uppercase; text-shadow: 0 10px 34px rgba(0,0,0,.6); }
+    #ct-main b { color: var(--accent); font-weight: inherit; }
+    #ct-size { display: inline-block; margin-top: 22px; padding: 12px 26px; border-radius: 18px; background: var(--glass);
+      color: #fff; font-weight: 700; font-size: 36px; border: 2px solid rgba(255,255,255,.16); }
+    #ct-arrow { position: absolute; left: 120px; top: 1160px; width: 150px; height: 150px; }
+
+  </style>
+  <div id="root" data-composition-id="cta" data-width="1080" data-height="1920">
+    <div id="ct-rare" class="clip" data-start="37.7667" data-duration="0.8667" data-track-index="0"><span id="ct-rare-s">Memang Rare</span></div>
+    <div id="ct-box" class="clip" data-start="38.6333" data-duration="2.7" data-track-index="0">
+      <div><span id="ct-badge" data-var-text="ctaBadge">Tengah Promo</span></div>
+      <div id="ct-main">Tekan<br/><b>Sekarang</b></div>
+      <div><span id="ct-size" data-var-text="ctaSize">Saiz M – 5XL tersedia</span></div>
+    </div>
+    <svg id="ct-arrow" class="clip" data-start="40.6333" data-duration="0.7" data-track-index="1" viewBox="0 0 100 100" fill="none" stroke="#ffd60a" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"><path id="ct-arrow-p" d="M78 12 C70 50 50 70 22 84 M22 84 L26 58 M22 84 L48 84"/></svg>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#ct-rare-s", { opacity: 0, scale: 2.2 }, { opacity: 1, scale: 1, duration: 0.28, ease: "power4.in" }, 37.5667);
+    tl.to("#ct-rare-s", { opacity: 0, scale: 0.9, filter: "blur(8px)", duration: 0.2, ease: "power3.in" }, 38.4);
+    tl.fromTo("#ct-badge", { opacity: 0, scale: 0.5 }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(1.7)" }, 38.6333);
+    tl.fromTo("#ct-main", { opacity: 0, y: 30, filter: "blur(10px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.35, ease: "expo.out" }, 38.7667);
+    tl.fromTo("#ct-size", { opacity: 0 }, { opacity: 1, duration: 0.3 }, 38.9333);
+    tl.fromTo("#ct-arrow", { opacity: 0, x: 30, y: -30 }, { opacity: 1, x: 0, y: 0, duration: 0.3, ease: "expo.out" }, 40.6333);
+    tl.to("#ct-arrow", { x: -10, y: 10, duration: 0.25, ease: "power2.inOut" }, 40.9333);
+    window.__timelines["cta"] = tl;
+  </script>
+</template>

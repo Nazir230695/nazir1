@@ -1,0 +1,414 @@
+{
+ "segs": [
+  {
+   "id": "s01",
+   "src_in": 1.6,
+   "src_out": 3.1667,
+   "start": 1.5,
+   "dur": 1.5667,
+   "scale": 1.0,
+   "note": "Memang smart, memang style."
+  },
+  {
+   "id": "s02",
+   "src_in": 3.8333,
+   "src_out": 5.9667,
+   "start": 3.0667,
+   "dur": 2.1333,
+   "scale": 1.14,
+   "note": "ni baju hujan yang memang jenis style."
+  },
+  {
+   "id": "s03",
+   "src_in": 6.1333,
+   "src_out": 9.7667,
+   "start": 5.2,
+   "dur": 3.6333,
+   "scale": 1.0,
+   "note": "Macam ni, jenis camo grey. Ha, ada juga warna lain."
+  },
+  {
+   "id": "s04",
+   "src_in": 9.9,
+   "src_out": 10.7667,
+   "start": 8.8333,
+   "dur": 0.8667,
+   "scale": 1.12,
+   "note": "Yang best dia ni,"
+  },
+  {
+   "id": "s05",
+   "src_in": 11.1667,
+   "src_out": 13.4667,
+   "start": 9.7,
+   "dur": 2.3,
+   "scale": 1.0,
+   "note": "Zip dia pun smooth. Zip jenis waterproof."
+  },
+  {
+   "id": "s06",
+   "src_in": 13.9333,
+   "src_out": 19.6333,
+   "start": 12.0,
+   "dur": 5.7,
+   "scale": 1.1,
+   "note": "Lepas tu, dalam dia ni... sesuai untuk hujan, panas, berangin."
+  },
+  {
+   "id": "s07",
+   "src_in": 19.7,
+   "src_out": 22.4667,
+   "start": 17.7,
+   "dur": 2.7667,
+   "scale": 1.0,
+   "note": "Lepas tu, dia ada pocket tau kat ni. Ada satu kompartmen."
+  },
+  {
+   "id": "s08",
+   "src_in": 22.7667,
+   "src_out": 24.6667,
+   "start": 20.4667,
+   "dur": 1.9,
+   "scale": 1.12,
+   "note": "Ha, ni boleh tutup."
+  },
+  {
+   "id": "s09",
+   "src_in": 27.2667,
+   "src_out": 28.8,
+   "start": 22.3667,
+   "dur": 1.5333,
+   "scale": 1.0,
+   "note": "yang best dia lagi kat pocket ni,"
+  },
+  {
+   "id": "s10",
+   "src_in": 30.8,
+   "src_out": 32.4333,
+   "start": 23.9,
+   "dur": 1.6333,
+   "scale": 1.14,
+   "note": "Ha, pocket dia jenis waterproof tau."
+  },
+  {
+   "id": "s11",
+   "src_in": 32.7333,
+   "src_out": 34.8,
+   "start": 25.5333,
+   "dur": 2.0667,
+   "scale": 1.0,
+   "note": "Kiri dan kanan, boleh tutup zip dia."
+  },
+  {
+   "id": "s12",
+   "src_in": 38.0333,
+   "src_out": 40.3333,
+   "start": 27.6,
+   "dur": 2.3,
+   "scale": 1.12,
+   "note": "So, kalau phone... letak ni, tak jatuh lah."
+  },
+  {
+   "id": "s13",
+   "src_in": 41.8333,
+   "src_out": 44.0333,
+   "start": 29.9,
+   "dur": 2.2,
+   "scale": 1.0,
+   "note": "Belakang dia ni, ada jenis hoodie tau. Ni,"
+  },
+  {
+   "id": "s14",
+   "src_in": 44.6,
+   "src_out": 45.4667,
+   "start": 32.1,
+   "dur": 0.8667,
+   "scale": 1.1,
+   "note": "boleh pakai sini."
+  },
+  {
+   "id": "s15",
+   "src_in": 45.5667,
+   "src_out": 49.9,
+   "start": 32.9667,
+   "dur": 4.3333,
+   "scale": 1.0,
+   "note": "Kalau tak nak pakai... boleh buka dan simpan."
+  },
+  {
+   "id": "s16",
+   "src_in": 50.0667,
+   "src_out": 54.1,
+   "start": 37.3,
+   "dur": 4.0333,
+   "scale": 1.08,
+   "note": "Ha, memang rare. ...tengah ada promo, tekan ni sekarang."
+  }
+ ],
+ "total": 41.3333,
+ "T": {
+  "camo": 5.5333,
+  "warna": 7.8667,
+  "zip": 10.9,
+  "sesuai": 13.8,
+  "hujan": 14.4667,
+  "panas": 16.0333,
+  "angin": 17.1,
+  "pocket": 18.4667,
+  "komp": 19.7333,
+  "wp_pocket": 24.5667,
+  "kirikanan": 25.5667,
+  "phone": 28.0,
+  "jatuh": 29.3,
+  "hoodie": 30.8,
+  "simpan": 36.3333,
+  "rare": 37.7667,
+  "promo": 39.9667,
+  "tekan": 40.6333,
+  "dapat": 38.3667
+ },
+ "groups": [
+  [
+   "Memang",
+   "smart,"
+  ],
+  [
+   "memang",
+   "style."
+  ],
+  [
+   "ni",
+   "baju",
+   "hujan"
+  ],
+  [
+   "yang",
+   "memang"
+  ],
+  [
+   "jenis",
+   "style."
+  ],
+  [
+   "Macam",
+   "ni,",
+   "jenis"
+  ],
+  [
+   "camo",
+   "grey."
+  ],
+  [
+   "Ha,",
+   "ada",
+   "juga"
+  ],
+  [
+   "warna",
+   "lain."
+  ],
+  [
+   "Yang",
+   "best"
+  ],
+  [
+   "dia",
+   "ni,"
+  ],
+  [
+   "Zip",
+   "dia"
+  ],
+  [
+   "pun",
+   "smooth."
+  ],
+  [
+   "Zip",
+   "jenis",
+   "waterproof."
+  ],
+  [
+   "Lepas",
+   "tu,",
+   "dalam"
+  ],
+  [
+   "dia",
+   "ni,",
+   "apa"
+  ],
+  [
+   "boleh",
+   "tengok."
+  ],
+  [
+   "Dia",
+   "sesuai"
+  ],
+  [
+   "untuk",
+   "hujan,"
+  ],
+  [
+   "untuk",
+   "panas,",
+   "untuk"
+  ],
+  [
+   "yang",
+   "berangin."
+  ],
+  [
+   "Lepas",
+   "tu,",
+   "dia"
+  ],
+  [
+   "ada",
+   "pocket",
+   "tau"
+  ],
+  [
+   "kat",
+   "ni."
+  ],
+  [
+   "Ada",
+   "kat",
+   "satu"
+  ],
+  [
+   "kompartmen",
+   "kat",
+   "ni."
+  ],
+  [
+   "Ha,",
+   "ni",
+   "apa"
+  ],
+  [
+   "boleh",
+   "tutup."
+  ],
+  [
+   "yang",
+   "best",
+   "dia"
+  ],
+  [
+   "lagi",
+   "kat"
+  ],
+  [
+   "pocket",
+   "ni,"
+  ],
+  [
+   "Ha,",
+   "pocket",
+   "dia"
+  ],
+  [
+   "jenis",
+   "waterproof",
+   "tau."
+  ],
+  [
+   "Kiri",
+   "dan",
+   "kanan,"
+  ],
+  [
+   "apa",
+   "boleh",
+   "tutup"
+  ],
+  [
+   "zip",
+   "dia."
+  ],
+  [
+   "So,",
+   "kalau",
+   "phone"
+  ],
+  [
+   "nampak,",
+   "apa",
+   "boleh"
+  ],
+  [
+   "letak",
+   "ni,",
+   "tak"
+  ],
+  [
+   "jatuh",
+   "lah."
+  ],
+  [
+   "Belakang",
+   "dia",
+   "ni,"
+  ],
+  [
+   "ada",
+   "jenis"
+  ],
+  [
+   "hoodie",
+   "tau."
+  ],
+  [
+   "Ni,",
+   "boleh"
+  ],
+  [
+   "pakai",
+   "sini."
+  ],
+  [
+   "Kalau",
+   "tak",
+   "nak"
+  ],
+  [
+   "pakai",
+   "ni,",
+   "dia"
+  ],
+  [
+   "ada",
+   "zip"
+  ],
+  [
+   "kat",
+   "sini."
+  ],
+  [
+   "Apa",
+   "boleh",
+   "buka"
+  ],
+  [
+   "dan",
+   "apa"
+  ],
+  [
+   "boleh",
+   "simpan."
+  ],
+  [
+   "Ha,",
+   "memang",
+   "rare."
+  ],
+  [
+   "Nak",
+   "dapat",
+   "mana-mana"
+  ]
+ ]
+}

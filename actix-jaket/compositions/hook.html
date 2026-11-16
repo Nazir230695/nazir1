@@ -1,0 +1,46 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; overflow: hidden; background: #050506;
+      
+      --accent: #ffd60a;
+      --ink: #ffffff;
+      --glass: rgba(12, 14, 20, 0.78);
+      --promo: #ff3b4e;
+      --font-display: "Archivo Black", "Montserrat", sans-serif;
+      --font-ui: "Montserrat", sans-serif;
+ }
+    #hook-img-wrap { position: absolute; inset: 0; transform-origin: 52% 45%; }
+    #hook-img { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; object-fit: cover; object-position: 58% 50%; }
+    #hook-shade { position: absolute; inset: 0;
+      background: linear-gradient(180deg, rgba(0,0,0,.72) 0%, rgba(0,0,0,.25) 34%, rgba(0,0,0,0) 55%, rgba(0,0,0,.55) 100%); }
+    #hook-copy { position: absolute; left: 0; right: 120px; top: 250px; text-align: center; }
+    #hook-kicker { font-family: var(--font-ui); font-weight: 800; font-size: 64px; letter-spacing: .04em;
+      color: var(--ink); text-transform: uppercase; text-shadow: 0 6px 24px rgba(0,0,0,.6); }
+    #hook-big { margin-top: 6px; font-family: var(--font-display); font-size: 132px; line-height: .95;
+      color: var(--accent); text-transform: uppercase; letter-spacing: -.01em;
+      text-shadow: 0 10px 40px rgba(0,0,0,.65); }
+    #hook-pill { display: inline-block; margin-top: 28px; padding: 14px 30px; border-radius: 999px;
+      background: var(--glass); color: var(--ink); font-family: var(--font-ui); font-weight: 700; font-size: 38px;
+      border: 2px solid rgba(255,255,255,.18); }
+  </style>
+  <div id="root" data-composition-id="hook" data-width="1080" data-height="1920">
+    <div id="hook-img-wrap">
+      <img id="hook-img" class="clip" src="assets/img/hook-pour.jpg" data-start="0" data-duration="1.5" data-track-index="0" />
+    </div>
+    <div id="hook-shade"></div>
+    <div id="hook-copy" class="clip" data-start="0" data-duration="1.5" data-track-index="1">
+      <div id="hook-kicker" data-var-text="hookKicker">Kena air pun</div>
+      <div id="hook-big"><span id="hook-w1">TAK</span> <span id="hook-w2">MERESAP.</span></div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    // frame 0 already carries the headline (thumbnail); the proof shot punches in behind it
+    tl.fromTo("#hook-img-wrap", { scale: 1.18 }, { scale: 1.04, duration: 0.6, ease: "expo.out" }, 0);
+    tl.fromTo("#hook-img-wrap", { scale: 1.04 }, { scale: 1.0, duration: 0.9, ease: "none", immediateRender: false }, 0.6);
+    tl.fromTo("#hook-kicker", { opacity: 0.85 }, { opacity: 1, duration: 0.15 }, 0);
+    tl.fromTo("#hook-w1", { scale: 1.25, opacity: 0.0 }, { scale: 1, opacity: 1, duration: 0.22, ease: "power4.out" }, 0.0);
+    tl.fromTo("#hook-w2", { scale: 1.25, opacity: 0.0, filter: "blur(8px)" }, { scale: 1, opacity: 1, filter: "blur(0px)", duration: 0.22, ease: "power4.out" }, 0.18);
+    window.__timelines["hook"] = tl;
+  </script>
+</template>
