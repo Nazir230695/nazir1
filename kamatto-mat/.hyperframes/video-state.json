@@ -406,8 +406,8 @@
   },
   "checks": {
     "latest": {
-      "revision": "ee7e479a-0d73-43f7-9333-cdfcc4532ce7",
-      "id": "80b04d4b-1fef-441f-986d-e04cdda4c35f"
+      "revision": null,
+      "id": "1db330eb-0424-4800-b3e4-b84b4d8c34bc"
     },
     "revisions": {
       "0d890819-34c5-4008-bc07-82ab41040737": [
@@ -528,7 +528,6 @@
         {
           "id": "35d155fe-467e-48d7-989e-62c91bca79c9",
           "scope": "project",
-          "report": "/home/user/nazir1/kamatto-mat/.hyperframes/artifacts/checks/35d155fe-467e-48d7-989e-62c91bca79c9.json",
           "metadata": {
             "ok": true,
             "browserSkipped": false,
@@ -558,14 +557,15 @@
           "revision": "6aa3aff4-50ff-4c3b-a5fd-d28495333b01",
           "inputFingerprint": "090e4da6d311844d6cf9aa49c293d4f0a64710ead3abf4f4ddaccfca3f3c7233",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "2d7dca64-c272-45fe-915f-a0699b851915"
         }
       ],
       "5990ce51-16de-4ca3-b2d3-3be582d057eb": [
         {
           "id": "5af314ee-7e15-458f-ad4d-93872fb533d3",
           "scope": "project",
-          "report": "/home/user/nazir1/kamatto-mat/.hyperframes/artifacts/checks/5af314ee-7e15-458f-ad4d-93872fb533d3.json",
           "metadata": {
             "ok": true,
             "browserSkipped": false,
@@ -595,14 +595,15 @@
           "revision": "5990ce51-16de-4ca3-b2d3-3be582d057eb",
           "inputFingerprint": "4e3e34a9b2cd62011ded962dc198f4ca6b567ed50e88c005234982bfd0fc26e9",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "2d7dca64-c272-45fe-915f-a0699b851915"
         }
       ],
       "85872f22-3e90-40b7-bd67-b3cb601f6520": [
         {
           "id": "efe5aafc-ca73-457d-b247-3013d44fd487",
           "scope": "project",
-          "report": "/home/user/nazir1/kamatto-mat/.hyperframes/artifacts/checks/efe5aafc-ca73-457d-b247-3013d44fd487.json",
           "metadata": {
             "ok": true,
             "browserSkipped": false,
@@ -632,14 +633,15 @@
           "revision": "85872f22-3e90-40b7-bd67-b3cb601f6520",
           "inputFingerprint": "cb7dbd060a76e0692509b228896a314c9306e7c3d5e139fdba1c2909df68ef3a",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "2d7dca64-c272-45fe-915f-a0699b851915"
         }
       ],
       "1c6dc42d-ad4d-41e2-a817-97356592ff89": [
         {
           "id": "22d578e6-a3d7-48b1-94c8-225a7c5a8561",
           "scope": "project",
-          "report": "/home/user/nazir1/kamatto-mat/.hyperframes/artifacts/checks/22d578e6-a3d7-48b1-94c8-225a7c5a8561.json",
           "metadata": {
             "ok": true,
             "browserSkipped": false,
@@ -669,14 +671,15 @@
           "revision": "1c6dc42d-ad4d-41e2-a817-97356592ff89",
           "inputFingerprint": "94f3f043810534f957acba78927f7e6969d3e050354f8d4294de551ac9baffb8",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "2d7dca64-c272-45fe-915f-a0699b851915"
         }
       ],
       "ee7e479a-0d73-43f7-9333-cdfcc4532ce7": [
         {
           "id": "80b04d4b-1fef-441f-986d-e04cdda4c35f",
           "scope": "project",
-          "report": "/home/user/nazir1/kamatto-mat/.hyperframes/artifacts/checks/80b04d4b-1fef-441f-986d-e04cdda4c35f.json",
           "metadata": {
             "ok": true,
             "browserSkipped": false,
@@ -706,7 +709,9 @@
           "revision": "ee7e479a-0d73-43f7-9333-cdfcc4532ce7",
           "inputFingerprint": "f80360d76907c4be59f3099d9d40a18683b908733ba1d8186e1a7922888526dd",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "2d7dca64-c272-45fe-915f-a0699b851915"
         }
       ]
     },
@@ -749,10 +754,7 @@
     ]
   },
   "snapshots": {
-    "latest": {
-      "revision": "1c6dc42d-ad4d-41e2-a817-97356592ff89",
-      "id": "1840734f-f6a4-4aa1-8a39-a7b8c89b2df3-4"
-    },
+    "latest": null,
     "revisions": {
       "7ba97264-6bdc-4dfb-9b55-c3a4bcc84325": [
         {
@@ -1413,7 +1415,6 @@
         {
           "scope": "full",
           "id": "1874b149-b5a3-4b7c-ad4e-b1dd424a7ca3-0",
-          "image": "/home/user/nazir1/kamatto-mat/.hyperframes/artifacts/snapshots/84d2cd58-26d1-4ac7-b8d3-660bd0a03102/frame-00-at-3.4s.png",
           "time": 3.4,
           "metadata": {
             "width": 1080,
@@ -1428,12 +1429,13 @@
           "revision": "6aa3aff4-50ff-4c3b-a5fd-d28495333b01",
           "inputFingerprint": "090e4da6d311844d6cf9aa49c293d4f0a64710ead3abf4f4ddaccfca3f3c7233",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "2d7dca64-c272-45fe-915f-a0699b851915"
         },
         {
           "scope": "full",
           "id": "1874b149-b5a3-4b7c-ad4e-b1dd424a7ca3-1",
-          "image": "/home/user/nazir1/kamatto-mat/.hyperframes/artifacts/snapshots/84d2cd58-26d1-4ac7-b8d3-660bd0a03102/frame-01-at-4.273s.png",
           "time": 4.2727272727272725,
           "metadata": {
             "width": 1080,
@@ -1448,12 +1450,13 @@
           "revision": "6aa3aff4-50ff-4c3b-a5fd-d28495333b01",
           "inputFingerprint": "090e4da6d311844d6cf9aa49c293d4f0a64710ead3abf4f4ddaccfca3f3c7233",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "2d7dca64-c272-45fe-915f-a0699b851915"
         },
         {
           "scope": "full",
           "id": "1874b149-b5a3-4b7c-ad4e-b1dd424a7ca3-2",
-          "image": "/home/user/nazir1/kamatto-mat/.hyperframes/artifacts/snapshots/84d2cd58-26d1-4ac7-b8d3-660bd0a03102/frame-02-at-5.145s.png",
           "time": 5.1454545454545455,
           "metadata": {
             "width": 1080,
@@ -1468,12 +1471,13 @@
           "revision": "6aa3aff4-50ff-4c3b-a5fd-d28495333b01",
           "inputFingerprint": "090e4da6d311844d6cf9aa49c293d4f0a64710ead3abf4f4ddaccfca3f3c7233",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "2d7dca64-c272-45fe-915f-a0699b851915"
         },
         {
           "scope": "full",
           "id": "1874b149-b5a3-4b7c-ad4e-b1dd424a7ca3-3",
-          "image": "/home/user/nazir1/kamatto-mat/.hyperframes/artifacts/snapshots/84d2cd58-26d1-4ac7-b8d3-660bd0a03102/frame-03-at-6.018s.png",
           "time": 6.018181818181818,
           "metadata": {
             "width": 1080,
@@ -1488,12 +1492,13 @@
           "revision": "6aa3aff4-50ff-4c3b-a5fd-d28495333b01",
           "inputFingerprint": "090e4da6d311844d6cf9aa49c293d4f0a64710ead3abf4f4ddaccfca3f3c7233",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "2d7dca64-c272-45fe-915f-a0699b851915"
         },
         {
           "scope": "full",
           "id": "1874b149-b5a3-4b7c-ad4e-b1dd424a7ca3-4",
-          "image": "/home/user/nazir1/kamatto-mat/.hyperframes/artifacts/snapshots/84d2cd58-26d1-4ac7-b8d3-660bd0a03102/frame-04-at-6.891s.png",
           "time": 6.890909090909091,
           "metadata": {
             "width": 1080,
@@ -1508,12 +1513,13 @@
           "revision": "6aa3aff4-50ff-4c3b-a5fd-d28495333b01",
           "inputFingerprint": "090e4da6d311844d6cf9aa49c293d4f0a64710ead3abf4f4ddaccfca3f3c7233",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "2d7dca64-c272-45fe-915f-a0699b851915"
         },
         {
           "scope": "full",
           "id": "1874b149-b5a3-4b7c-ad4e-b1dd424a7ca3-5",
-          "image": "/home/user/nazir1/kamatto-mat/.hyperframes/artifacts/snapshots/84d2cd58-26d1-4ac7-b8d3-660bd0a03102/frame-05-at-7.764s.png",
           "time": 7.763636363636364,
           "metadata": {
             "width": 1080,
@@ -1528,12 +1534,13 @@
           "revision": "6aa3aff4-50ff-4c3b-a5fd-d28495333b01",
           "inputFingerprint": "090e4da6d311844d6cf9aa49c293d4f0a64710ead3abf4f4ddaccfca3f3c7233",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "2d7dca64-c272-45fe-915f-a0699b851915"
         },
         {
           "scope": "full",
           "id": "1874b149-b5a3-4b7c-ad4e-b1dd424a7ca3-6",
-          "image": "/home/user/nazir1/kamatto-mat/.hyperframes/artifacts/snapshots/84d2cd58-26d1-4ac7-b8d3-660bd0a03102/frame-06-at-8.636s.png",
           "time": 8.636363636363635,
           "metadata": {
             "width": 1080,
@@ -1548,12 +1555,13 @@
           "revision": "6aa3aff4-50ff-4c3b-a5fd-d28495333b01",
           "inputFingerprint": "090e4da6d311844d6cf9aa49c293d4f0a64710ead3abf4f4ddaccfca3f3c7233",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "2d7dca64-c272-45fe-915f-a0699b851915"
         },
         {
           "scope": "full",
           "id": "1874b149-b5a3-4b7c-ad4e-b1dd424a7ca3-7",
-          "image": "/home/user/nazir1/kamatto-mat/.hyperframes/artifacts/snapshots/84d2cd58-26d1-4ac7-b8d3-660bd0a03102/frame-07-at-9.509s.png",
           "time": 9.50909090909091,
           "metadata": {
             "width": 1080,
@@ -1568,12 +1576,13 @@
           "revision": "6aa3aff4-50ff-4c3b-a5fd-d28495333b01",
           "inputFingerprint": "090e4da6d311844d6cf9aa49c293d4f0a64710ead3abf4f4ddaccfca3f3c7233",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "2d7dca64-c272-45fe-915f-a0699b851915"
         },
         {
           "scope": "full",
           "id": "1874b149-b5a3-4b7c-ad4e-b1dd424a7ca3-8",
-          "image": "/home/user/nazir1/kamatto-mat/.hyperframes/artifacts/snapshots/84d2cd58-26d1-4ac7-b8d3-660bd0a03102/frame-08-at-10.382s.png",
           "time": 10.381818181818181,
           "metadata": {
             "width": 1080,
@@ -1588,12 +1597,13 @@
           "revision": "6aa3aff4-50ff-4c3b-a5fd-d28495333b01",
           "inputFingerprint": "090e4da6d311844d6cf9aa49c293d4f0a64710ead3abf4f4ddaccfca3f3c7233",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "2d7dca64-c272-45fe-915f-a0699b851915"
         },
         {
           "scope": "full",
           "id": "1874b149-b5a3-4b7c-ad4e-b1dd424a7ca3-9",
-          "image": "/home/user/nazir1/kamatto-mat/.hyperframes/artifacts/snapshots/84d2cd58-26d1-4ac7-b8d3-660bd0a03102/frame-09-at-11.255s.png",
           "time": 11.254545454545454,
           "metadata": {
             "width": 1080,
@@ -1608,12 +1618,13 @@
           "revision": "6aa3aff4-50ff-4c3b-a5fd-d28495333b01",
           "inputFingerprint": "090e4da6d311844d6cf9aa49c293d4f0a64710ead3abf4f4ddaccfca3f3c7233",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "2d7dca64-c272-45fe-915f-a0699b851915"
         },
         {
           "scope": "full",
           "id": "1874b149-b5a3-4b7c-ad4e-b1dd424a7ca3-10",
-          "image": "/home/user/nazir1/kamatto-mat/.hyperframes/artifacts/snapshots/84d2cd58-26d1-4ac7-b8d3-660bd0a03102/frame-10-at-12.127s.png",
           "time": 12.127272727272727,
           "metadata": {
             "width": 1080,
@@ -1628,12 +1639,13 @@
           "revision": "6aa3aff4-50ff-4c3b-a5fd-d28495333b01",
           "inputFingerprint": "090e4da6d311844d6cf9aa49c293d4f0a64710ead3abf4f4ddaccfca3f3c7233",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "2d7dca64-c272-45fe-915f-a0699b851915"
         },
         {
           "scope": "full",
           "id": "1874b149-b5a3-4b7c-ad4e-b1dd424a7ca3-11",
-          "image": "/home/user/nazir1/kamatto-mat/.hyperframes/artifacts/snapshots/84d2cd58-26d1-4ac7-b8d3-660bd0a03102/frame-11-at-13s.png",
           "time": 13,
           "metadata": {
             "width": 1080,
@@ -1648,14 +1660,15 @@
           "revision": "6aa3aff4-50ff-4c3b-a5fd-d28495333b01",
           "inputFingerprint": "090e4da6d311844d6cf9aa49c293d4f0a64710ead3abf4f4ddaccfca3f3c7233",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "2d7dca64-c272-45fe-915f-a0699b851915"
         }
       ],
       "5990ce51-16de-4ca3-b2d3-3be582d057eb": [
         {
           "scope": "full",
           "id": "1c401a96-476d-4b69-97ed-c6e793ba2de1-0",
-          "image": "/home/user/nazir1/kamatto-mat/.hyperframes/artifacts/snapshots/bf306cff-f2c3-4171-b3c9-c2afbc19ac8d/frame-00-at-3.4s.png",
           "time": 3.4,
           "metadata": {
             "width": 1080,
@@ -1670,12 +1683,13 @@
           "revision": "5990ce51-16de-4ca3-b2d3-3be582d057eb",
           "inputFingerprint": "4e3e34a9b2cd62011ded962dc198f4ca6b567ed50e88c005234982bfd0fc26e9",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "2d7dca64-c272-45fe-915f-a0699b851915"
         },
         {
           "scope": "full",
           "id": "1c401a96-476d-4b69-97ed-c6e793ba2de1-1",
-          "image": "/home/user/nazir1/kamatto-mat/.hyperframes/artifacts/snapshots/bf306cff-f2c3-4171-b3c9-c2afbc19ac8d/frame-01-at-4.273s.png",
           "time": 4.2727272727272725,
           "metadata": {
             "width": 1080,
@@ -1690,12 +1704,13 @@
           "revision": "5990ce51-16de-4ca3-b2d3-3be582d057eb",
           "inputFingerprint": "4e3e34a9b2cd62011ded962dc198f4ca6b567ed50e88c005234982bfd0fc26e9",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "2d7dca64-c272-45fe-915f-a0699b851915"
         },
         {
           "scope": "full",
           "id": "1c401a96-476d-4b69-97ed-c6e793ba2de1-2",
-          "image": "/home/user/nazir1/kamatto-mat/.hyperframes/artifacts/snapshots/bf306cff-f2c3-4171-b3c9-c2afbc19ac8d/frame-02-at-5.145s.png",
           "time": 5.1454545454545455,
           "metadata": {
             "width": 1080,
@@ -1710,12 +1725,13 @@
           "revision": "5990ce51-16de-4ca3-b2d3-3be582d057eb",
           "inputFingerprint": "4e3e34a9b2cd62011ded962dc198f4ca6b567ed50e88c005234982bfd0fc26e9",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "2d7dca64-c272-45fe-915f-a0699b851915"
         },
         {
           "scope": "full",
           "id": "1c401a96-476d-4b69-97ed-c6e793ba2de1-3",
-          "image": "/home/user/nazir1/kamatto-mat/.hyperframes/artifacts/snapshots/bf306cff-f2c3-4171-b3c9-c2afbc19ac8d/frame-03-at-6.018s.png",
           "time": 6.018181818181818,
           "metadata": {
             "width": 1080,
@@ -1730,12 +1746,13 @@
           "revision": "5990ce51-16de-4ca3-b2d3-3be582d057eb",
           "inputFingerprint": "4e3e34a9b2cd62011ded962dc198f4ca6b567ed50e88c005234982bfd0fc26e9",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "2d7dca64-c272-45fe-915f-a0699b851915"
         },
         {
           "scope": "full",
           "id": "1c401a96-476d-4b69-97ed-c6e793ba2de1-4",
-          "image": "/home/user/nazir1/kamatto-mat/.hyperframes/artifacts/snapshots/bf306cff-f2c3-4171-b3c9-c2afbc19ac8d/frame-04-at-6.891s.png",
           "time": 6.890909090909091,
           "metadata": {
             "width": 1080,
@@ -1750,12 +1767,13 @@
           "revision": "5990ce51-16de-4ca3-b2d3-3be582d057eb",
           "inputFingerprint": "4e3e34a9b2cd62011ded962dc198f4ca6b567ed50e88c005234982bfd0fc26e9",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "2d7dca64-c272-45fe-915f-a0699b851915"
         },
         {
           "scope": "full",
           "id": "1c401a96-476d-4b69-97ed-c6e793ba2de1-5",
-          "image": "/home/user/nazir1/kamatto-mat/.hyperframes/artifacts/snapshots/bf306cff-f2c3-4171-b3c9-c2afbc19ac8d/frame-05-at-7.764s.png",
           "time": 7.763636363636364,
           "metadata": {
             "width": 1080,
@@ -1770,12 +1788,13 @@
           "revision": "5990ce51-16de-4ca3-b2d3-3be582d057eb",
           "inputFingerprint": "4e3e34a9b2cd62011ded962dc198f4ca6b567ed50e88c005234982bfd0fc26e9",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "2d7dca64-c272-45fe-915f-a0699b851915"
         },
         {
           "scope": "full",
           "id": "1c401a96-476d-4b69-97ed-c6e793ba2de1-6",
-          "image": "/home/user/nazir1/kamatto-mat/.hyperframes/artifacts/snapshots/bf306cff-f2c3-4171-b3c9-c2afbc19ac8d/frame-06-at-8.636s.png",
           "time": 8.636363636363635,
           "metadata": {
             "width": 1080,
@@ -1790,12 +1809,13 @@
           "revision": "5990ce51-16de-4ca3-b2d3-3be582d057eb",
           "inputFingerprint": "4e3e34a9b2cd62011ded962dc198f4ca6b567ed50e88c005234982bfd0fc26e9",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "2d7dca64-c272-45fe-915f-a0699b851915"
         },
         {
           "scope": "full",
           "id": "1c401a96-476d-4b69-97ed-c6e793ba2de1-7",
-          "image": "/home/user/nazir1/kamatto-mat/.hyperframes/artifacts/snapshots/bf306cff-f2c3-4171-b3c9-c2afbc19ac8d/frame-07-at-9.509s.png",
           "time": 9.50909090909091,
           "metadata": {
             "width": 1080,
@@ -1810,12 +1830,13 @@
           "revision": "5990ce51-16de-4ca3-b2d3-3be582d057eb",
           "inputFingerprint": "4e3e34a9b2cd62011ded962dc198f4ca6b567ed50e88c005234982bfd0fc26e9",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "2d7dca64-c272-45fe-915f-a0699b851915"
         },
         {
           "scope": "full",
           "id": "1c401a96-476d-4b69-97ed-c6e793ba2de1-8",
-          "image": "/home/user/nazir1/kamatto-mat/.hyperframes/artifacts/snapshots/bf306cff-f2c3-4171-b3c9-c2afbc19ac8d/frame-08-at-10.382s.png",
           "time": 10.381818181818181,
           "metadata": {
             "width": 1080,
@@ -1830,12 +1851,13 @@
           "revision": "5990ce51-16de-4ca3-b2d3-3be582d057eb",
           "inputFingerprint": "4e3e34a9b2cd62011ded962dc198f4ca6b567ed50e88c005234982bfd0fc26e9",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "2d7dca64-c272-45fe-915f-a0699b851915"
         },
         {
           "scope": "full",
           "id": "1c401a96-476d-4b69-97ed-c6e793ba2de1-9",
-          "image": "/home/user/nazir1/kamatto-mat/.hyperframes/artifacts/snapshots/bf306cff-f2c3-4171-b3c9-c2afbc19ac8d/frame-09-at-11.255s.png",
           "time": 11.254545454545454,
           "metadata": {
             "width": 1080,
@@ -1850,12 +1872,13 @@
           "revision": "5990ce51-16de-4ca3-b2d3-3be582d057eb",
           "inputFingerprint": "4e3e34a9b2cd62011ded962dc198f4ca6b567ed50e88c005234982bfd0fc26e9",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "2d7dca64-c272-45fe-915f-a0699b851915"
         },
         {
           "scope": "full",
           "id": "1c401a96-476d-4b69-97ed-c6e793ba2de1-10",
-          "image": "/home/user/nazir1/kamatto-mat/.hyperframes/artifacts/snapshots/bf306cff-f2c3-4171-b3c9-c2afbc19ac8d/frame-10-at-12.127s.png",
           "time": 12.127272727272727,
           "metadata": {
             "width": 1080,
@@ -1870,12 +1893,13 @@
           "revision": "5990ce51-16de-4ca3-b2d3-3be582d057eb",
           "inputFingerprint": "4e3e34a9b2cd62011ded962dc198f4ca6b567ed50e88c005234982bfd0fc26e9",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "2d7dca64-c272-45fe-915f-a0699b851915"
         },
         {
           "scope": "full",
           "id": "1c401a96-476d-4b69-97ed-c6e793ba2de1-11",
-          "image": "/home/user/nazir1/kamatto-mat/.hyperframes/artifacts/snapshots/bf306cff-f2c3-4171-b3c9-c2afbc19ac8d/frame-11-at-13s.png",
           "time": 13,
           "metadata": {
             "width": 1080,
@@ -1890,14 +1914,15 @@
           "revision": "5990ce51-16de-4ca3-b2d3-3be582d057eb",
           "inputFingerprint": "4e3e34a9b2cd62011ded962dc198f4ca6b567ed50e88c005234982bfd0fc26e9",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "2d7dca64-c272-45fe-915f-a0699b851915"
         }
       ],
       "85872f22-3e90-40b7-bd67-b3cb601f6520": [
         {
           "scope": "full",
           "id": "f5cf2c31-d321-4857-96f7-c1dff088e99b-0",
-          "image": "/home/user/nazir1/kamatto-mat/.hyperframes/artifacts/snapshots/966a0416-b685-4532-b84a-bec40185cfec/frame-00-at-2s.png",
           "time": 2,
           "metadata": {
             "width": 1080,
@@ -1912,12 +1937,13 @@
           "revision": "85872f22-3e90-40b7-bd67-b3cb601f6520",
           "inputFingerprint": "cb7dbd060a76e0692509b228896a314c9306e7c3d5e139fdba1c2909df68ef3a",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "2d7dca64-c272-45fe-915f-a0699b851915"
         },
         {
           "scope": "full",
           "id": "f5cf2c31-d321-4857-96f7-c1dff088e99b-1",
-          "image": "/home/user/nazir1/kamatto-mat/.hyperframes/artifacts/snapshots/966a0416-b685-4532-b84a-bec40185cfec/frame-01-at-4.3s.png",
           "time": 4.3,
           "metadata": {
             "width": 1080,
@@ -1932,12 +1958,13 @@
           "revision": "85872f22-3e90-40b7-bd67-b3cb601f6520",
           "inputFingerprint": "cb7dbd060a76e0692509b228896a314c9306e7c3d5e139fdba1c2909df68ef3a",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "2d7dca64-c272-45fe-915f-a0699b851915"
         },
         {
           "scope": "full",
           "id": "f5cf2c31-d321-4857-96f7-c1dff088e99b-2",
-          "image": "/home/user/nazir1/kamatto-mat/.hyperframes/artifacts/snapshots/966a0416-b685-4532-b84a-bec40185cfec/frame-02-at-9.6s.png",
           "time": 9.6,
           "metadata": {
             "width": 1080,
@@ -1952,12 +1979,13 @@
           "revision": "85872f22-3e90-40b7-bd67-b3cb601f6520",
           "inputFingerprint": "cb7dbd060a76e0692509b228896a314c9306e7c3d5e139fdba1c2909df68ef3a",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "2d7dca64-c272-45fe-915f-a0699b851915"
         },
         {
           "scope": "full",
           "id": "f5cf2c31-d321-4857-96f7-c1dff088e99b-3",
-          "image": "/home/user/nazir1/kamatto-mat/.hyperframes/artifacts/snapshots/966a0416-b685-4532-b84a-bec40185cfec/frame-03-at-10.5s.png",
           "time": 10.5,
           "metadata": {
             "width": 1080,
@@ -1972,12 +2000,13 @@
           "revision": "85872f22-3e90-40b7-bd67-b3cb601f6520",
           "inputFingerprint": "cb7dbd060a76e0692509b228896a314c9306e7c3d5e139fdba1c2909df68ef3a",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "2d7dca64-c272-45fe-915f-a0699b851915"
         },
         {
           "scope": "full",
           "id": "f5cf2c31-d321-4857-96f7-c1dff088e99b-4",
-          "image": "/home/user/nazir1/kamatto-mat/.hyperframes/artifacts/snapshots/966a0416-b685-4532-b84a-bec40185cfec/frame-04-at-53.75s.png",
           "time": 53.75,
           "metadata": {
             "width": 1080,
@@ -1992,14 +2021,15 @@
           "revision": "85872f22-3e90-40b7-bd67-b3cb601f6520",
           "inputFingerprint": "cb7dbd060a76e0692509b228896a314c9306e7c3d5e139fdba1c2909df68ef3a",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "2d7dca64-c272-45fe-915f-a0699b851915"
         }
       ],
       "1c6dc42d-ad4d-41e2-a817-97356592ff89": [
         {
           "scope": "full",
           "id": "1840734f-f6a4-4aa1-8a39-a7b8c89b2df3-0",
-          "image": "/home/user/nazir1/kamatto-mat/.hyperframes/artifacts/snapshots/790090eb-3f28-4c7a-92a5-b2508cf8661f/frame-00-at-22.9s.png",
           "time": 22.9,
           "metadata": {
             "width": 1080,
@@ -2014,12 +2044,13 @@
           "revision": "1c6dc42d-ad4d-41e2-a817-97356592ff89",
           "inputFingerprint": "94f3f043810534f957acba78927f7e6969d3e050354f8d4294de551ac9baffb8",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "2d7dca64-c272-45fe-915f-a0699b851915"
         },
         {
           "scope": "full",
           "id": "1840734f-f6a4-4aa1-8a39-a7b8c89b2df3-1",
-          "image": "/home/user/nazir1/kamatto-mat/.hyperframes/artifacts/snapshots/790090eb-3f28-4c7a-92a5-b2508cf8661f/frame-01-at-23.9s.png",
           "time": 23.9,
           "metadata": {
             "width": 1080,
@@ -2034,12 +2065,13 @@
           "revision": "1c6dc42d-ad4d-41e2-a817-97356592ff89",
           "inputFingerprint": "94f3f043810534f957acba78927f7e6969d3e050354f8d4294de551ac9baffb8",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "2d7dca64-c272-45fe-915f-a0699b851915"
         },
         {
           "scope": "full",
           "id": "1840734f-f6a4-4aa1-8a39-a7b8c89b2df3-2",
-          "image": "/home/user/nazir1/kamatto-mat/.hyperframes/artifacts/snapshots/790090eb-3f28-4c7a-92a5-b2508cf8661f/frame-02-at-24.6s.png",
           "time": 24.6,
           "metadata": {
             "width": 1080,
@@ -2054,12 +2086,13 @@
           "revision": "1c6dc42d-ad4d-41e2-a817-97356592ff89",
           "inputFingerprint": "94f3f043810534f957acba78927f7e6969d3e050354f8d4294de551ac9baffb8",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "2d7dca64-c272-45fe-915f-a0699b851915"
         },
         {
           "scope": "full",
           "id": "1840734f-f6a4-4aa1-8a39-a7b8c89b2df3-3",
-          "image": "/home/user/nazir1/kamatto-mat/.hyperframes/artifacts/snapshots/790090eb-3f28-4c7a-92a5-b2508cf8661f/frame-03-at-26.2s.png",
           "time": 26.2,
           "metadata": {
             "width": 1080,
@@ -2074,12 +2107,13 @@
           "revision": "1c6dc42d-ad4d-41e2-a817-97356592ff89",
           "inputFingerprint": "94f3f043810534f957acba78927f7e6969d3e050354f8d4294de551ac9baffb8",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "2d7dca64-c272-45fe-915f-a0699b851915"
         },
         {
           "scope": "full",
           "id": "1840734f-f6a4-4aa1-8a39-a7b8c89b2df3-4",
-          "image": "/home/user/nazir1/kamatto-mat/.hyperframes/artifacts/snapshots/790090eb-3f28-4c7a-92a5-b2508cf8661f/frame-04-at-53.75s.png",
           "time": 53.75,
           "metadata": {
             "width": 1080,
@@ -2094,7 +2128,9 @@
           "revision": "1c6dc42d-ad4d-41e2-a817-97356592ff89",
           "inputFingerprint": "94f3f043810534f957acba78927f7e6969d3e050354f8d4294de551ac9baffb8",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "2d7dca64-c272-45fe-915f-a0699b851915"
         }
       ]
     },
@@ -2102,13 +2138,14 @@
   },
   "renders": {
     "latest": {
-      "id": "6af81dae-24f4-4663-8673-f63eabdeef99",
-      "completedAt": 1794922419508,
-      "output": "/home/user/nazir1/kamatto-mat/renders/kamatto-final.mp4",
+      "id": "2d7dca64-c272-45fe-915f-a0699b851915",
+      "completedAt": 1794924933559,
+      "output": "/home/user/nazir1/kamatto-mat/renders/kamatto-final-v2.mp4",
       "status": "completed",
-      "revision": "6aace9a5-47e0-47b3-9c09-01849e0e6de4"
+      "revision": "eda33b6b-9c8c-4965-86e9-4d7e6270bb17"
     },
     "retainedRevisions": [
+      "eda33b6b-9c8c-4965-86e9-4d7e6270bb17",
       "6aace9a5-47e0-47b3-9c09-01849e0e6de4"
     ]
   },
