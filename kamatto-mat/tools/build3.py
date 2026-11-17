@@ -21,9 +21,7 @@ def wat(src, t):
 # (id, src, first_word_start, last_word_start, cam_scale)
 EDL = [
     ("h1", "v2", 0.84, 3.48, 1.00),   # Dalam kereta kalau anak-anak tertumpah air macam risau ni
-    ("h2", "v2", 4.24, 4.68, 1.10),   # Nampak tengok
-    ("h3", "v2", 7.34, 8.64, 1.00),   # Dia kalis air tau gang
-    ("h4", "v2", 12.16, 13.10, 1.08), # dah kering dah
+    ("h2", "v2", 4.24, 13.10, 1.00),  # Nampak tengok ... dia kalis air tau gang ... (shake) ... dah kering dah — kept whole so the water visibly leaves
     ("p1", "v3", 6.20, 7.68, 1.00),   # Kamatto ni nampak premium elok
     ("p2", "v3", 8.10, 9.24, 1.00),   # tengok bentuk honeycomb ni
     ("c1", "v3", 11.56, 13.70, 1.08), # dia tertutup habis
@@ -85,7 +83,7 @@ FIX = {"ayak": "air", "kamato": "Kamatto", "leh": "kalis", "kan": "kan", "sia": 
 def norm(sid, w):
     t = w["text"]
     core = re.sub(r"[^\w-]", "", t).lower()
-    if sid == "h3" and core == "kan":
+    if sid == "h2" and core == "kan" and w["start"] > 7:
         return None  # "dia kan leh air" -> "dia kalis air"
     if core in FIX:
         return FIX[core]
@@ -263,9 +261,10 @@ def build_scene(name, parts, css_extra=""):
 # hook: question widget, KALIS AIR title, dry pill
 build_scene("hook", [
     widget("hk-q", f'<div class="hd">{DROP}<span>Dalam kereta</span></div><div class="big" style="font-size:78px">Tumpah air?</div>',
-           0.0, end("h2") - 0.0, top=280),
-    wave_title("hk-t", "Kalis Air", W("h3", 8.20) - 0.15, end("h3") - W("h3", 8.20) + 0.15),
-    pill("hk-dry", "Cepat kering", W("h4", 12.60), end("h4") - W("h4", 12.60) + 0.4, None, 330),
+           0.0, end("h1"), top=280),
+    pill("hk-wet", "Air tak meresap", at("h2", 7.4), at("h2", 8.95) - at("h2", 7.4), None, 330),
+    wave_title("hk-t", "Kalis Air", at("h2", 9.4), at("h2", 11.9) - at("h2", 9.4), top=990),
+    pill("hk-dry", "Cepat kering", W("h2", 12.60), end("h2") - W("h2", 12.60) + 0.4, None, 330),
 ])
 
 # product: tilted card, honeycomb callout
@@ -355,10 +354,14 @@ videos = [f'        <video id="{s["id"]}" class="clip seg" src="assets/{s["src"]
 cam = [f'      tl.set("#cam", {{ scale: {s["scale"]} }}, {s["start"]});' for s in segs]
 # slow premium push-in across the hook
 cam.append(f'      tl.fromTo("#cam", {{ scale: 1.0 }}, {{ scale: 1.05, duration: {end("h1")}, ease: "none", immediateRender: false }}, 0);')
+# slow push-in while he lifts and shakes the mat, then settle back for the dry reveal
+cam.append(f'      tl.fromTo("#cam", {{ scale: 1.0 }}, {{ scale: 1.1, duration: {fr(at("h2", 9.8) - at("h2", 7.0))}, ease: "power1.inOut", immediateRender: false }}, {at("h2", 7.0)});')
+cam.append(f'      tl.to("#cam", {{ scale: 1.0, duration: 0.6, ease: "power2.inOut" }}, {at("h2", 10.6)});')
 
 SFX = [("sx-q", "pop.mp3", 0.05, 0.35),
-       ("sx-t1", "whoosh.mp3", W("h3", 8.20) - 0.3, 0.3),
-       ("sx-dry", "pop.mp3", W("h4", 12.60) + 0.03, 0.35),
+       ("sx-wet", "pop.mp3", at("h2", 7.4) + 0.03, 0.3),
+       ("sx-t1", "whoosh.mp3", at("h2", 9.4) - 0.3, 0.3),
+       ("sx-dry", "pop.mp3", W("h2", 12.60) + 0.03, 0.35),
        ("sx-card", "whoosh-short.mp3", SEG["p1"]["start"] + 0.05, 0.3),
        ("sx-hc", "click-soft.mp3", W("p2", 8.78), 0.5),
        ("sx-full", "pop.mp3", W("c1", 12.14) + 0.03, 0.3),
