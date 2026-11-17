@@ -14,7 +14,7 @@
     .widget { position: absolute; left: 50%; width: 640px; margin-left: -320px; padding: 26px 32px; border-radius: 34px;
       background: var(--glass); border: 1.5px solid var(--stroke); box-shadow: 0 24px 60px rgba(0,0,0,.45);
       backdrop-filter: blur(20px); color: var(--ink); font-family: var(--font-ui); }
-    .widget .hd { display: flex; align-items: center; justify-content: center; gap: 10px; font-size: 28px; font-weight: 600; color: var(--muted); }
+    .widget .hd { display: flex; align-items: center; justify-content: center; gap: 10px; font-size: 28px; font-weight: 600; color: var(--muted); text-align: center; }
     .widget .hd svg { width: 30px; height: 30px; flex: none; }
     .widget .rowx { display: flex; align-items: center; justify-content: space-between; margin-top: 18px; font-size: 32px; font-weight: 700; }
     .widget .rowx .v { font-family: var(--font-num); font-size: 40px; font-weight: 700; color: var(--ok); letter-spacing: .02em; }
@@ -31,14 +31,17 @@
 
   </style>
   <div id="root" data-composition-id="benefits" data-width="1080" data-height="1920">
-    <div id="bf-t" class="ttl clip" data-start="24.0667" data-duration="1.7667" data-track-index="0" style="top:290px"><div id="bf-tt">Honeycomb</div><svg id="bf-tw" viewBox="0 0 700 70"><path class="wv" d="M0 35 C 90 5, 170 65, 260 35 S 430 5, 520 35 S 650 65, 700 35" stroke="#f5c542" stroke-width="3" fill="none"/><path class="wv" d="M0 40 C 110 70, 200 10, 300 40 S 480 70, 560 40 S 660 15, 700 40" stroke="rgba(255,255,255,.75)" stroke-width="2" fill="none"/><path class="wv" d="M0 32 C 70 50, 150 15, 240 32 S 400 55, 500 30 S 640 20, 700 32" stroke="#c86b9a" stroke-width="2" fill="none"/></svg></div>
-    <div id="bf-trap" class="widget clip" data-start="25.8333" data-duration="3.5333" data-track-index="0" style="top:280px"><div class="hd"><span>Terkumpul dalam honeycomb</span></div><div class="rowx"><span>Pasir</span><span class="v">✓</span></div><div class="rowx"><span>Susu tumpah</span><span class="v">✓</span></div></div>
+    <div id="bf-sand" class="widget clip" data-start="22.4667" data-duration="1.9333" data-track-index="0" style="top:280px"><div class="hd"><span>Sebelum pasang Kamatto</span></div><div class="big" style="font-size:66px">Banyak pasir terkumpul</div></div>
+    <div id="bf-t" class="ttl clip" data-start="24.4333" data-duration="1.4" data-track-index="0" style="top:290px"><div id="bf-tt">Honeycomb</div><svg id="bf-tw" viewBox="0 0 700 70"><path class="wv" d="M0 35 C 90 5, 170 65, 260 35 S 430 5, 520 35 S 650 65, 700 35" stroke="#f5c542" stroke-width="3" fill="none"/><path class="wv" d="M0 40 C 110 70, 200 10, 300 40 S 480 70, 560 40 S 660 15, 700 40" stroke="rgba(255,255,255,.75)" stroke-width="2" fill="none"/><path class="wv" d="M0 32 C 70 50, 150 15, 240 32 S 400 55, 500 30 S 640 20, 700 32" stroke="#c86b9a" stroke-width="2" fill="none"/></svg></div>
+    <div id="bf-trap" class="widget clip" data-start="25.8333" data-duration="3.5333" data-track-index="0" style="top:280px"><div class="hd"><span>Dengan Kamatto: masuk honeycomb</span></div><div class="rowx"><span>Pasir</span><span class="v">✓</span></div><div class="rowx"><span>Susu tumpah</span><span class="v">✓</span></div></div>
     <div id="bf-smell" class="widget clip" data-start="29.4333" data-duration="5.0333" data-track-index="0" style="top:280px"><div class="hd"><svg viewBox="0 0 24 24" fill="#5ac8fa"><path d="M12 2.5s7 7.6 7 12.6a7 7 0 0 1-14 0c0-5 7-12.6 7-12.6z"/></svg><span>Air tertumpah?</span></div><div class="rowx"><span>Meresap</span><span class="v" style="color:#ff6b6b">TIDAK</span></div><div class="rowx"><span>Tinggal bau</span><span class="v" style="color:#ff6b6b">TIDAK</span></div></div>
   </div>
   <script>
     const tl = gsap.timeline({ paused: true });
-    tl.fromTo("#bf-tt", { opacity: 0, scaleX: 1.25, filter: "blur(10px)" }, { opacity: 1, scaleX: 1, filter: "blur(0px)", duration: 0.6, ease: "expo.out" }, 24.0667);
-    tl.fromTo("#bf-tw .wv", { strokeDasharray: 900, strokeDashoffset: 900 }, { strokeDashoffset: 0, duration: 0.9, ease: "power2.inOut", stagger: 0.08 }, 24.1667);
+    tl.fromTo("#bf-sand", { opacity: 0, y: -20, filter: "blur(10px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.42, ease: "expo.out" }, 22.4667);
+    tl.to("#bf-sand", { opacity: 0, filter: "blur(8px)", duration: 0.2, ease: "power2.in" }, 24.1667);
+    tl.fromTo("#bf-tt", { opacity: 0, scaleX: 1.25, filter: "blur(10px)" }, { opacity: 1, scaleX: 1, filter: "blur(0px)", duration: 0.6, ease: "expo.out" }, 24.4333);
+    tl.fromTo("#bf-tw .wv", { strokeDasharray: 900, strokeDashoffset: 900 }, { strokeDashoffset: 0, duration: 0.9, ease: "power2.inOut", stagger: 0.08 }, 24.5333);
     tl.to("#bf-t", { opacity: 0, filter: "blur(8px)", duration: 0.2, ease: "power2.in" }, 25.6);
     tl.fromTo("#bf-trap", { opacity: 0, y: -20, filter: "blur(10px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.42, ease: "expo.out" }, 25.8333);
     tl.to("#bf-trap", { opacity: 0, filter: "blur(8px)", duration: 0.2, ease: "power2.in" }, 29.1333);

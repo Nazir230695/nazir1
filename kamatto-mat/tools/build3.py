@@ -141,7 +141,7 @@ BASE = f"""
     .widget {{ position: absolute; left: 50%; width: 640px; margin-left: -320px; padding: 26px 32px; border-radius: 34px;
       background: var(--glass); border: 1.5px solid var(--stroke); box-shadow: 0 24px 60px rgba(0,0,0,.45);
       backdrop-filter: blur(20px); color: var(--ink); font-family: var(--font-ui); }}
-    .widget .hd {{ display: flex; align-items: center; justify-content: center; gap: 10px; font-size: 28px; font-weight: 600; color: var(--muted); }}
+    .widget .hd {{ display: flex; align-items: center; justify-content: center; gap: 10px; font-size: 28px; font-weight: 600; color: var(--muted); text-align: center; }}
     .widget .hd svg {{ width: 30px; height: 30px; flex: none; }}
     .widget .rowx {{ display: flex; align-items: center; justify-content: space-between; margin-top: 18px; font-size: 32px; font-weight: 700; }}
     .widget .rowx .v {{ font-family: var(--font-num); font-size: 40px; font-weight: 700; color: var(--ok); letter-spacing: .02em; }}
@@ -288,8 +288,11 @@ build_scene("product", [
 
 # dirt + smell
 build_scene("benefits", [
-    wave_title("bf-t", "Honeycomb", W("d2", 35.64) - 0.1, W("d2", 37.30) - W("d2", 35.64) + 0.1, top=290),
-    widget("bf-trap", '<div class="hd"><span>Terkumpul dalam honeycomb</span></div>'
+    widget("bf-sand", '<div class="hd"><span>Sebelum pasang Kamatto</span></div>'
+           '<div class="big" style="font-size:66px">Banyak pasir terkumpul</div>',
+           SEG["d1"]["start"] + 0.1, end("d1") + 0.22 - SEG["d1"]["start"] - 0.1, top=280),
+    wave_title("bf-t", "Honeycomb", end("d1") + 0.25, W("d2", 37.30) - end("d1") - 0.25, top=290),
+    widget("bf-trap", '<div class="hd"><span>Dengan Kamatto: masuk honeycomb</span></div>'
            '<div class="rowx"><span>Pasir</span><span class="v">✓</span></div>'
            '<div class="rowx"><span>Susu tumpah</span><span class="v">✓</span></div>',
            W("d2", 37.30), end("d2") - W("d2", 37.30), top=280),
@@ -365,7 +368,8 @@ SFX = [("sx-q", "pop.mp3", 0.05, 0.35),
        ("sx-card", "whoosh-short.mp3", SEG["p1"]["start"] + 0.05, 0.3),
        ("sx-hc", "click-soft.mp3", W("p2", 8.78), 0.5),
        ("sx-full", "pop.mp3", W("c1", 12.14) + 0.03, 0.3),
-       ("sx-t2", "whoosh.mp3", W("d2", 35.64) - 0.3, 0.3),
+       ("sx-sand", "pop.mp3", SEG["d1"]["start"] + 0.13, 0.35),
+       ("sx-t2", "whoosh.mp3", end("d1") - 0.05, 0.3),
        ("sx-smell", "whoosh-short.mp3", W("f1", 18.56) - 0.05, 0.3),
        ("sx-as", "click-soft.mp3", SEG["s1"]["start"] + 0.05, 0.5),
        ("sx-klik", "click.mp3", W("k1", 56.80), 0.45),
