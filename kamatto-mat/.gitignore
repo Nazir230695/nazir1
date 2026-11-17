@@ -1,0 +1,5 @@
+# source footage proxies are >100MB total (GitHub limit) — regenerate from the Drive originals
+assets/v*.mp4
+.hyperframes/artifacts/
+node_modules/
+renders/
