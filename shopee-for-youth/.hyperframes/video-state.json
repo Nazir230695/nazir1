@@ -301,15 +301,14 @@
   },
   "checks": {
     "latest": {
-      "revision": "5afe1633-6d57-42cc-bf6d-f035969a0c45",
-      "id": "8b20337e-89fa-48c3-95b0-89d771e92188"
+      "revision": null,
+      "id": "bd89fd45-1c9f-4065-9d90-ba7e892c5051"
     },
     "revisions": {
       "7f3f2ff5-df0d-4b50-8e53-f93613de4299": [
         {
           "id": "e28ab528-ad15-4fe4-82c8-1987d71153c1",
           "scope": "project",
-          "report": "/home/user/nazir1/shopee-for-youth/.hyperframes/artifacts/checks/e28ab528-ad15-4fe4-82c8-1987d71153c1.json",
           "metadata": {
             "ok": true,
             "browserSkipped": false,
@@ -339,14 +338,15 @@
           "revision": "7f3f2ff5-df0d-4b50-8e53-f93613de4299",
           "inputFingerprint": "a1474b639d25e6d500180fbdb4891a9500bc20bdf3433c94ae04d4c0ddc07f92",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "bee44550-4270-465b-91c7-4358515e008d"
         }
       ],
       "3436b9a5-73d8-4ca8-84f6-98b015cd3b7c": [
         {
           "id": "36700fa0-74dc-418d-922e-bc3d2287b8cc",
           "scope": "project",
-          "report": "/home/user/nazir1/shopee-for-youth/.hyperframes/artifacts/checks/36700fa0-74dc-418d-922e-bc3d2287b8cc.json",
           "metadata": {
             "ok": true,
             "browserSkipped": false,
@@ -376,14 +376,15 @@
           "revision": "3436b9a5-73d8-4ca8-84f6-98b015cd3b7c",
           "inputFingerprint": "f8376990436e6cd932bad673d2863ce36ca580fcac7d740324170c1c52b8851c",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "bee44550-4270-465b-91c7-4358515e008d"
         }
       ],
       "417bc0b3-ddb0-4bc0-b217-4ce046a2556a": [
         {
           "id": "53097cc3-faf6-4478-b5d4-38f8d632e003",
           "scope": "project",
-          "report": "/home/user/nazir1/shopee-for-youth/.hyperframes/artifacts/checks/53097cc3-faf6-4478-b5d4-38f8d632e003.json",
           "metadata": {
             "ok": true,
             "browserSkipped": false,
@@ -413,14 +414,15 @@
           "revision": "417bc0b3-ddb0-4bc0-b217-4ce046a2556a",
           "inputFingerprint": "1414a4292bd9bc756d8b3b7ce8d631bd942f5e9aa9f5213838a6f251f8e3d644",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "bee44550-4270-465b-91c7-4358515e008d"
         }
       ],
       "e2b6de2f-70df-4edf-98d9-0d41c0fb9797": [
         {
           "id": "df34b35a-65cb-4ce4-ab8a-f198472e51ee",
           "scope": "project",
-          "report": "/home/user/nazir1/shopee-for-youth/.hyperframes/artifacts/checks/df34b35a-65cb-4ce4-ab8a-f198472e51ee.json",
           "metadata": {
             "ok": true,
             "browserSkipped": false,
@@ -450,14 +452,15 @@
           "revision": "e2b6de2f-70df-4edf-98d9-0d41c0fb9797",
           "inputFingerprint": "28e8c38d1bb970117318498341e75b29112e8077784ef4e37c263eb3fe98f9fc",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "bee44550-4270-465b-91c7-4358515e008d"
         }
       ],
       "5afe1633-6d57-42cc-bf6d-f035969a0c45": [
         {
           "id": "8b20337e-89fa-48c3-95b0-89d771e92188",
           "scope": "project",
-          "report": "/home/user/nazir1/shopee-for-youth/.hyperframes/artifacts/checks/8b20337e-89fa-48c3-95b0-89d771e92188.json",
           "metadata": {
             "ok": true,
             "browserSkipped": false,
@@ -487,7 +490,9 @@
           "revision": "5afe1633-6d57-42cc-bf6d-f035969a0c45",
           "inputFingerprint": "d70b34385f69455e109aff0b385de95248c887fbd397c0591b468831045ddba5",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "bee44550-4270-465b-91c7-4358515e008d"
         }
       ]
     },
@@ -530,16 +535,12 @@
     ]
   },
   "snapshots": {
-    "latest": {
-      "revision": "5afe1633-6d57-42cc-bf6d-f035969a0c45",
-      "id": "9b54e7e3-8d75-433d-af01-a622474590c8-6"
-    },
+    "latest": null,
     "revisions": {
       "7f3f2ff5-df0d-4b50-8e53-f93613de4299": [
         {
           "scope": "full",
           "id": "c0f081d7-2618-455b-be78-f6bbbd31cf40-0",
-          "image": "/home/user/nazir1/shopee-for-youth/.hyperframes/artifacts/snapshots/8dbb1505-9faf-4857-bdea-6b2db4b7825b/frame-00-at-4s.png",
           "time": 4,
           "metadata": {
             "width": 1080,
@@ -554,12 +555,13 @@
           "revision": "7f3f2ff5-df0d-4b50-8e53-f93613de4299",
           "inputFingerprint": "a1474b639d25e6d500180fbdb4891a9500bc20bdf3433c94ae04d4c0ddc07f92",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "bee44550-4270-465b-91c7-4358515e008d"
         },
         {
           "scope": "full",
           "id": "c0f081d7-2618-455b-be78-f6bbbd31cf40-1",
-          "image": "/home/user/nazir1/shopee-for-youth/.hyperframes/artifacts/snapshots/8dbb1505-9faf-4857-bdea-6b2db4b7825b/frame-01-at-7s.png",
           "time": 7,
           "metadata": {
             "width": 1080,
@@ -574,12 +576,13 @@
           "revision": "7f3f2ff5-df0d-4b50-8e53-f93613de4299",
           "inputFingerprint": "a1474b639d25e6d500180fbdb4891a9500bc20bdf3433c94ae04d4c0ddc07f92",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "bee44550-4270-465b-91c7-4358515e008d"
         },
         {
           "scope": "full",
           "id": "c0f081d7-2618-455b-be78-f6bbbd31cf40-2",
-          "image": "/home/user/nazir1/shopee-for-youth/.hyperframes/artifacts/snapshots/8dbb1505-9faf-4857-bdea-6b2db4b7825b/frame-02-at-10.6s.png",
           "time": 10.6,
           "metadata": {
             "width": 1080,
@@ -594,12 +597,13 @@
           "revision": "7f3f2ff5-df0d-4b50-8e53-f93613de4299",
           "inputFingerprint": "a1474b639d25e6d500180fbdb4891a9500bc20bdf3433c94ae04d4c0ddc07f92",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "bee44550-4270-465b-91c7-4358515e008d"
         },
         {
           "scope": "full",
           "id": "c0f081d7-2618-455b-be78-f6bbbd31cf40-3",
-          "image": "/home/user/nazir1/shopee-for-youth/.hyperframes/artifacts/snapshots/8dbb1505-9faf-4857-bdea-6b2db4b7825b/frame-03-at-15s.png",
           "time": 15,
           "metadata": {
             "width": 1080,
@@ -614,12 +618,13 @@
           "revision": "7f3f2ff5-df0d-4b50-8e53-f93613de4299",
           "inputFingerprint": "a1474b639d25e6d500180fbdb4891a9500bc20bdf3433c94ae04d4c0ddc07f92",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "bee44550-4270-465b-91c7-4358515e008d"
         },
         {
           "scope": "full",
           "id": "c0f081d7-2618-455b-be78-f6bbbd31cf40-4",
-          "image": "/home/user/nazir1/shopee-for-youth/.hyperframes/artifacts/snapshots/8dbb1505-9faf-4857-bdea-6b2db4b7825b/frame-04-at-21.5s.png",
           "time": 21.5,
           "metadata": {
             "width": 1080,
@@ -634,12 +639,13 @@
           "revision": "7f3f2ff5-df0d-4b50-8e53-f93613de4299",
           "inputFingerprint": "a1474b639d25e6d500180fbdb4891a9500bc20bdf3433c94ae04d4c0ddc07f92",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "bee44550-4270-465b-91c7-4358515e008d"
         },
         {
           "scope": "full",
           "id": "c0f081d7-2618-455b-be78-f6bbbd31cf40-5",
-          "image": "/home/user/nazir1/shopee-for-youth/.hyperframes/artifacts/snapshots/8dbb1505-9faf-4857-bdea-6b2db4b7825b/frame-05-at-24.5s.png",
           "time": 24.5,
           "metadata": {
             "width": 1080,
@@ -654,12 +660,13 @@
           "revision": "7f3f2ff5-df0d-4b50-8e53-f93613de4299",
           "inputFingerprint": "a1474b639d25e6d500180fbdb4891a9500bc20bdf3433c94ae04d4c0ddc07f92",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "bee44550-4270-465b-91c7-4358515e008d"
         },
         {
           "scope": "full",
           "id": "c0f081d7-2618-455b-be78-f6bbbd31cf40-6",
-          "image": "/home/user/nazir1/shopee-for-youth/.hyperframes/artifacts/snapshots/8dbb1505-9faf-4857-bdea-6b2db4b7825b/frame-06-at-28.6s.png",
           "time": 28.6,
           "metadata": {
             "width": 1080,
@@ -674,12 +681,13 @@
           "revision": "7f3f2ff5-df0d-4b50-8e53-f93613de4299",
           "inputFingerprint": "a1474b639d25e6d500180fbdb4891a9500bc20bdf3433c94ae04d4c0ddc07f92",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "bee44550-4270-465b-91c7-4358515e008d"
         },
         {
           "scope": "full",
           "id": "c0f081d7-2618-455b-be78-f6bbbd31cf40-7",
-          "image": "/home/user/nazir1/shopee-for-youth/.hyperframes/artifacts/snapshots/8dbb1505-9faf-4857-bdea-6b2db4b7825b/frame-07-at-33s.png",
           "time": 33,
           "metadata": {
             "width": 1080,
@@ -694,12 +702,13 @@
           "revision": "7f3f2ff5-df0d-4b50-8e53-f93613de4299",
           "inputFingerprint": "a1474b639d25e6d500180fbdb4891a9500bc20bdf3433c94ae04d4c0ddc07f92",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "bee44550-4270-465b-91c7-4358515e008d"
         },
         {
           "scope": "full",
           "id": "c0f081d7-2618-455b-be78-f6bbbd31cf40-8",
-          "image": "/home/user/nazir1/shopee-for-youth/.hyperframes/artifacts/snapshots/8dbb1505-9faf-4857-bdea-6b2db4b7825b/frame-08-at-36.5s.png",
           "time": 36.5,
           "metadata": {
             "width": 1080,
@@ -714,12 +723,13 @@
           "revision": "7f3f2ff5-df0d-4b50-8e53-f93613de4299",
           "inputFingerprint": "a1474b639d25e6d500180fbdb4891a9500bc20bdf3433c94ae04d4c0ddc07f92",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "bee44550-4270-465b-91c7-4358515e008d"
         },
         {
           "scope": "full",
           "id": "c0f081d7-2618-455b-be78-f6bbbd31cf40-9",
-          "image": "/home/user/nazir1/shopee-for-youth/.hyperframes/artifacts/snapshots/8dbb1505-9faf-4857-bdea-6b2db4b7825b/frame-09-at-40s.png",
           "time": 40,
           "metadata": {
             "width": 1080,
@@ -734,12 +744,13 @@
           "revision": "7f3f2ff5-df0d-4b50-8e53-f93613de4299",
           "inputFingerprint": "a1474b639d25e6d500180fbdb4891a9500bc20bdf3433c94ae04d4c0ddc07f92",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "bee44550-4270-465b-91c7-4358515e008d"
         },
         {
           "scope": "full",
           "id": "c0f081d7-2618-455b-be78-f6bbbd31cf40-10",
-          "image": "/home/user/nazir1/shopee-for-youth/.hyperframes/artifacts/snapshots/8dbb1505-9faf-4857-bdea-6b2db4b7825b/frame-10-at-43.5s.png",
           "time": 43.5,
           "metadata": {
             "width": 1080,
@@ -754,12 +765,13 @@
           "revision": "7f3f2ff5-df0d-4b50-8e53-f93613de4299",
           "inputFingerprint": "a1474b639d25e6d500180fbdb4891a9500bc20bdf3433c94ae04d4c0ddc07f92",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "bee44550-4270-465b-91c7-4358515e008d"
         },
         {
           "scope": "full",
           "id": "c0f081d7-2618-455b-be78-f6bbbd31cf40-11",
-          "image": "/home/user/nazir1/shopee-for-youth/.hyperframes/artifacts/snapshots/8dbb1505-9faf-4857-bdea-6b2db4b7825b/frame-11-at-47s.png",
           "time": 47,
           "metadata": {
             "width": 1080,
@@ -774,12 +786,13 @@
           "revision": "7f3f2ff5-df0d-4b50-8e53-f93613de4299",
           "inputFingerprint": "a1474b639d25e6d500180fbdb4891a9500bc20bdf3433c94ae04d4c0ddc07f92",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "bee44550-4270-465b-91c7-4358515e008d"
         },
         {
           "scope": "full",
           "id": "c0f081d7-2618-455b-be78-f6bbbd31cf40-12",
-          "image": "/home/user/nazir1/shopee-for-youth/.hyperframes/artifacts/snapshots/8dbb1505-9faf-4857-bdea-6b2db4b7825b/frame-12-at-50s.png",
           "time": 50,
           "metadata": {
             "width": 1080,
@@ -794,12 +807,13 @@
           "revision": "7f3f2ff5-df0d-4b50-8e53-f93613de4299",
           "inputFingerprint": "a1474b639d25e6d500180fbdb4891a9500bc20bdf3433c94ae04d4c0ddc07f92",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "bee44550-4270-465b-91c7-4358515e008d"
         },
         {
           "scope": "full",
           "id": "c0f081d7-2618-455b-be78-f6bbbd31cf40-13",
-          "image": "/home/user/nazir1/shopee-for-youth/.hyperframes/artifacts/snapshots/8dbb1505-9faf-4857-bdea-6b2db4b7825b/frame-13-at-53.5s.png",
           "time": 53.5,
           "metadata": {
             "width": 1080,
@@ -814,12 +828,13 @@
           "revision": "7f3f2ff5-df0d-4b50-8e53-f93613de4299",
           "inputFingerprint": "a1474b639d25e6d500180fbdb4891a9500bc20bdf3433c94ae04d4c0ddc07f92",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "bee44550-4270-465b-91c7-4358515e008d"
         },
         {
           "scope": "full",
           "id": "c0f081d7-2618-455b-be78-f6bbbd31cf40-14",
-          "image": "/home/user/nazir1/shopee-for-youth/.hyperframes/artifacts/snapshots/8dbb1505-9faf-4857-bdea-6b2db4b7825b/frame-14-at-55.75s.png",
           "time": 55.75,
           "metadata": {
             "width": 1080,
@@ -834,14 +849,15 @@
           "revision": "7f3f2ff5-df0d-4b50-8e53-f93613de4299",
           "inputFingerprint": "a1474b639d25e6d500180fbdb4891a9500bc20bdf3433c94ae04d4c0ddc07f92",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "bee44550-4270-465b-91c7-4358515e008d"
         }
       ],
       "3436b9a5-73d8-4ca8-84f6-98b015cd3b7c": [
         {
           "scope": "full",
           "id": "7819a75e-c9c9-4c2c-86a0-0b9a85a4983c-0",
-          "image": "/home/user/nazir1/shopee-for-youth/.hyperframes/artifacts/snapshots/1bf33872-2391-43b5-81f8-1b97997c4ce7/frame-00-at-0.3s.png",
           "time": 0.3,
           "metadata": {
             "width": 1080,
@@ -856,12 +872,13 @@
           "revision": "3436b9a5-73d8-4ca8-84f6-98b015cd3b7c",
           "inputFingerprint": "f8376990436e6cd932bad673d2863ce36ca580fcac7d740324170c1c52b8851c",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "bee44550-4270-465b-91c7-4358515e008d"
         },
         {
           "scope": "full",
           "id": "7819a75e-c9c9-4c2c-86a0-0b9a85a4983c-1",
-          "image": "/home/user/nazir1/shopee-for-youth/.hyperframes/artifacts/snapshots/1bf33872-2391-43b5-81f8-1b97997c4ce7/frame-01-at-2.5s.png",
           "time": 2.5,
           "metadata": {
             "width": 1080,
@@ -876,12 +893,13 @@
           "revision": "3436b9a5-73d8-4ca8-84f6-98b015cd3b7c",
           "inputFingerprint": "f8376990436e6cd932bad673d2863ce36ca580fcac7d740324170c1c52b8851c",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "bee44550-4270-465b-91c7-4358515e008d"
         },
         {
           "scope": "full",
           "id": "7819a75e-c9c9-4c2c-86a0-0b9a85a4983c-2",
-          "image": "/home/user/nazir1/shopee-for-youth/.hyperframes/artifacts/snapshots/1bf33872-2391-43b5-81f8-1b97997c4ce7/frame-02-at-55.75s.png",
           "time": 55.75,
           "metadata": {
             "width": 1080,
@@ -896,14 +914,15 @@
           "revision": "3436b9a5-73d8-4ca8-84f6-98b015cd3b7c",
           "inputFingerprint": "f8376990436e6cd932bad673d2863ce36ca580fcac7d740324170c1c52b8851c",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "bee44550-4270-465b-91c7-4358515e008d"
         }
       ],
       "417bc0b3-ddb0-4bc0-b217-4ce046a2556a": [
         {
           "scope": "full",
           "id": "625f2ad2-545b-44c3-a4e5-74acdc20420b-0",
-          "image": "/home/user/nazir1/shopee-for-youth/.hyperframes/artifacts/snapshots/8d06934a-673e-4f19-86d9-5ca0ab13d859/frame-00-at-28.3s.png",
           "time": 28.3,
           "metadata": {
             "width": 1080,
@@ -918,12 +937,13 @@
           "revision": "417bc0b3-ddb0-4bc0-b217-4ce046a2556a",
           "inputFingerprint": "1414a4292bd9bc756d8b3b7ce8d631bd942f5e9aa9f5213838a6f251f8e3d644",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "bee44550-4270-465b-91c7-4358515e008d"
         },
         {
           "scope": "full",
           "id": "625f2ad2-545b-44c3-a4e5-74acdc20420b-1",
-          "image": "/home/user/nazir1/shopee-for-youth/.hyperframes/artifacts/snapshots/8d06934a-673e-4f19-86d9-5ca0ab13d859/frame-01-at-36.6s.png",
           "time": 36.6,
           "metadata": {
             "width": 1080,
@@ -938,12 +958,13 @@
           "revision": "417bc0b3-ddb0-4bc0-b217-4ce046a2556a",
           "inputFingerprint": "1414a4292bd9bc756d8b3b7ce8d631bd942f5e9aa9f5213838a6f251f8e3d644",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "bee44550-4270-465b-91c7-4358515e008d"
         },
         {
           "scope": "full",
           "id": "625f2ad2-545b-44c3-a4e5-74acdc20420b-2",
-          "image": "/home/user/nazir1/shopee-for-youth/.hyperframes/artifacts/snapshots/8d06934a-673e-4f19-86d9-5ca0ab13d859/frame-02-at-38.2s.png",
           "time": 38.2,
           "metadata": {
             "width": 1080,
@@ -958,12 +979,13 @@
           "revision": "417bc0b3-ddb0-4bc0-b217-4ce046a2556a",
           "inputFingerprint": "1414a4292bd9bc756d8b3b7ce8d631bd942f5e9aa9f5213838a6f251f8e3d644",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "bee44550-4270-465b-91c7-4358515e008d"
         },
         {
           "scope": "full",
           "id": "625f2ad2-545b-44c3-a4e5-74acdc20420b-3",
-          "image": "/home/user/nazir1/shopee-for-youth/.hyperframes/artifacts/snapshots/8d06934a-673e-4f19-86d9-5ca0ab13d859/frame-03-at-39s.png",
           "time": 39,
           "metadata": {
             "width": 1080,
@@ -978,12 +1000,13 @@
           "revision": "417bc0b3-ddb0-4bc0-b217-4ce046a2556a",
           "inputFingerprint": "1414a4292bd9bc756d8b3b7ce8d631bd942f5e9aa9f5213838a6f251f8e3d644",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "bee44550-4270-465b-91c7-4358515e008d"
         },
         {
           "scope": "full",
           "id": "625f2ad2-545b-44c3-a4e5-74acdc20420b-4",
-          "image": "/home/user/nazir1/shopee-for-youth/.hyperframes/artifacts/snapshots/8d06934a-673e-4f19-86d9-5ca0ab13d859/frame-04-at-54.083s.png",
           "time": 54.083,
           "metadata": {
             "width": 1080,
@@ -998,14 +1021,15 @@
           "revision": "417bc0b3-ddb0-4bc0-b217-4ce046a2556a",
           "inputFingerprint": "1414a4292bd9bc756d8b3b7ce8d631bd942f5e9aa9f5213838a6f251f8e3d644",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "bee44550-4270-465b-91c7-4358515e008d"
         }
       ],
       "5afe1633-6d57-42cc-bf6d-f035969a0c45": [
         {
           "scope": "full",
           "id": "9b54e7e3-8d75-433d-af01-a622474590c8-0",
-          "image": "/home/user/nazir1/shopee-for-youth/.hyperframes/artifacts/snapshots/e8f9603d-d5d9-417a-b49a-e1bb7156e0a9/frame-00-at-32s.png",
           "time": 32,
           "metadata": {
             "width": 1080,
@@ -1020,12 +1044,13 @@
           "revision": "5afe1633-6d57-42cc-bf6d-f035969a0c45",
           "inputFingerprint": "d70b34385f69455e109aff0b385de95248c887fbd397c0591b468831045ddba5",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "bee44550-4270-465b-91c7-4358515e008d"
         },
         {
           "scope": "full",
           "id": "9b54e7e3-8d75-433d-af01-a622474590c8-1",
-          "image": "/home/user/nazir1/shopee-for-youth/.hyperframes/artifacts/snapshots/e8f9603d-d5d9-417a-b49a-e1bb7156e0a9/frame-01-at-35.7s.png",
           "time": 35.7,
           "metadata": {
             "width": 1080,
@@ -1040,12 +1065,13 @@
           "revision": "5afe1633-6d57-42cc-bf6d-f035969a0c45",
           "inputFingerprint": "d70b34385f69455e109aff0b385de95248c887fbd397c0591b468831045ddba5",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "bee44550-4270-465b-91c7-4358515e008d"
         },
         {
           "scope": "full",
           "id": "9b54e7e3-8d75-433d-af01-a622474590c8-2",
-          "image": "/home/user/nazir1/shopee-for-youth/.hyperframes/artifacts/snapshots/e8f9603d-d5d9-417a-b49a-e1bb7156e0a9/frame-02-at-38.4s.png",
           "time": 38.4,
           "metadata": {
             "width": 1080,
@@ -1060,12 +1086,13 @@
           "revision": "5afe1633-6d57-42cc-bf6d-f035969a0c45",
           "inputFingerprint": "d70b34385f69455e109aff0b385de95248c887fbd397c0591b468831045ddba5",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "bee44550-4270-465b-91c7-4358515e008d"
         },
         {
           "scope": "full",
           "id": "9b54e7e3-8d75-433d-af01-a622474590c8-3",
-          "image": "/home/user/nazir1/shopee-for-youth/.hyperframes/artifacts/snapshots/e8f9603d-d5d9-417a-b49a-e1bb7156e0a9/frame-03-at-40.2s.png",
           "time": 40.2,
           "metadata": {
             "width": 1080,
@@ -1080,12 +1107,13 @@
           "revision": "5afe1633-6d57-42cc-bf6d-f035969a0c45",
           "inputFingerprint": "d70b34385f69455e109aff0b385de95248c887fbd397c0591b468831045ddba5",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "bee44550-4270-465b-91c7-4358515e008d"
         },
         {
           "scope": "full",
           "id": "9b54e7e3-8d75-433d-af01-a622474590c8-4",
-          "image": "/home/user/nazir1/shopee-for-youth/.hyperframes/artifacts/snapshots/e8f9603d-d5d9-417a-b49a-e1bb7156e0a9/frame-04-at-42.5s.png",
           "time": 42.5,
           "metadata": {
             "width": 1080,
@@ -1100,12 +1128,13 @@
           "revision": "5afe1633-6d57-42cc-bf6d-f035969a0c45",
           "inputFingerprint": "d70b34385f69455e109aff0b385de95248c887fbd397c0591b468831045ddba5",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "bee44550-4270-465b-91c7-4358515e008d"
         },
         {
           "scope": "full",
           "id": "9b54e7e3-8d75-433d-af01-a622474590c8-5",
-          "image": "/home/user/nazir1/shopee-for-youth/.hyperframes/artifacts/snapshots/e8f9603d-d5d9-417a-b49a-e1bb7156e0a9/frame-05-at-54.5s.png",
           "time": 54.5,
           "metadata": {
             "width": 1080,
@@ -1120,12 +1149,13 @@
           "revision": "5afe1633-6d57-42cc-bf6d-f035969a0c45",
           "inputFingerprint": "d70b34385f69455e109aff0b385de95248c887fbd397c0591b468831045ddba5",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "bee44550-4270-465b-91c7-4358515e008d"
         },
         {
           "scope": "full",
           "id": "9b54e7e3-8d75-433d-af01-a622474590c8-6",
-          "image": "/home/user/nazir1/shopee-for-youth/.hyperframes/artifacts/snapshots/e8f9603d-d5d9-417a-b49a-e1bb7156e0a9/frame-06-at-57.117s.png",
           "time": 57.117,
           "metadata": {
             "width": 1080,
@@ -1140,10 +1170,25 @@
           "revision": "5afe1633-6d57-42cc-bf6d-f035969a0c45",
           "inputFingerprint": "d70b34385f69455e109aff0b385de95248c887fbd397c0591b468831045ddba5",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "bee44550-4270-465b-91c7-4358515e008d"
         }
       ]
     },
     "unversioned": []
-  }
+  },
+  "renders": {
+    "latest": {
+      "id": "bee44550-4270-465b-91c7-4358515e008d",
+      "completedAt": 1795011407317,
+      "output": "/home/user/nazir1/shopee-for-youth/renders/shopee-for-youth-final.mp4",
+      "status": "completed",
+      "revision": "64290694-56f2-474d-98e8-c268deea5862"
+    },
+    "retainedRevisions": [
+      "64290694-56f2-474d-98e8-c268deea5862"
+    ]
+  },
+  "pendingArtifactCleanup": []
 }
