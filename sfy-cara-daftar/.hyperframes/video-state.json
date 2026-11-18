@@ -201,15 +201,14 @@
   },
   "checks": {
     "latest": {
-      "revision": "9d312ebe-a1eb-4f61-8680-2d1f0a061eb3",
-      "id": "a856a6f4-94cc-4b2f-a762-15750124c9b0"
+      "revision": null,
+      "id": "39109770-1779-41c0-88ff-eab89e3ed021"
     },
     "revisions": {
       "6fcff4a9-8663-420c-bd29-a166111d6e1d": [
         {
           "id": "2f027331-b904-4820-8871-b8a5d36f14eb",
           "scope": "project",
-          "report": "/home/user/nazir1/sfy-cara-daftar/.hyperframes/artifacts/checks/2f027331-b904-4820-8871-b8a5d36f14eb.json",
           "metadata": {
             "ok": true,
             "browserSkipped": false,
@@ -239,14 +238,15 @@
           "revision": "6fcff4a9-8663-420c-bd29-a166111d6e1d",
           "inputFingerprint": "172ef97aee1972803cc43e76baa9f22af2d7a42e69d2ffdcdd7ac70aea0136a6",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "29d44ead-f906-460d-8f88-de3cc4adf449"
         }
       ],
       "9d7d9f0c-179b-4568-bc5b-f1ce5be6d12b": [
         {
           "id": "86edeb58-82c0-4540-b349-07a1172a7681",
           "scope": "project",
-          "report": "/home/user/nazir1/sfy-cara-daftar/.hyperframes/artifacts/checks/86edeb58-82c0-4540-b349-07a1172a7681.json",
           "metadata": {
             "ok": true,
             "browserSkipped": false,
@@ -276,14 +276,15 @@
           "revision": "9d7d9f0c-179b-4568-bc5b-f1ce5be6d12b",
           "inputFingerprint": "dcfe1a570515a1422311e73d830c582e199cc8127640c497dc93611935e75866",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "29d44ead-f906-460d-8f88-de3cc4adf449"
         }
       ],
       "9d312ebe-a1eb-4f61-8680-2d1f0a061eb3": [
         {
           "id": "a856a6f4-94cc-4b2f-a762-15750124c9b0",
           "scope": "project",
-          "report": "/home/user/nazir1/sfy-cara-daftar/.hyperframes/artifacts/checks/a856a6f4-94cc-4b2f-a762-15750124c9b0.json",
           "metadata": {
             "ok": true,
             "browserSkipped": false,
@@ -313,7 +314,9 @@
           "revision": "9d312ebe-a1eb-4f61-8680-2d1f0a061eb3",
           "inputFingerprint": "5832af89f5425939c8429f0cef6fe5657916ca99c0ebbbf35282b7782fd05f14",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "29d44ead-f906-460d-8f88-de3cc4adf449"
         }
       ]
     },
@@ -356,16 +359,12 @@
     ]
   },
   "snapshots": {
-    "latest": {
-      "revision": "9d312ebe-a1eb-4f61-8680-2d1f0a061eb3",
-      "id": "49b9bb9d-5275-4368-8f88-ed2765addb9a-14"
-    },
+    "latest": null,
     "revisions": {
       "6fcff4a9-8663-420c-bd29-a166111d6e1d": [
         {
           "scope": "full",
           "id": "c51d3ca2-eeb0-4219-a2ac-cf35c24c060b-0",
-          "image": "/home/user/nazir1/sfy-cara-daftar/.hyperframes/artifacts/snapshots/88bd8f84-f065-4579-b4f3-24b9596880d5/frame-00-at-0.5s.png",
           "time": 0.5,
           "metadata": {
             "width": 1080,
@@ -380,12 +379,13 @@
           "revision": "6fcff4a9-8663-420c-bd29-a166111d6e1d",
           "inputFingerprint": "172ef97aee1972803cc43e76baa9f22af2d7a42e69d2ffdcdd7ac70aea0136a6",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "29d44ead-f906-460d-8f88-de3cc4adf449"
         },
         {
           "scope": "full",
           "id": "c51d3ca2-eeb0-4219-a2ac-cf35c24c060b-1",
-          "image": "/home/user/nazir1/sfy-cara-daftar/.hyperframes/artifacts/snapshots/88bd8f84-f065-4579-b4f3-24b9596880d5/frame-01-at-7.5s.png",
           "time": 7.5,
           "metadata": {
             "width": 1080,
@@ -400,12 +400,13 @@
           "revision": "6fcff4a9-8663-420c-bd29-a166111d6e1d",
           "inputFingerprint": "172ef97aee1972803cc43e76baa9f22af2d7a42e69d2ffdcdd7ac70aea0136a6",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "29d44ead-f906-460d-8f88-de3cc4adf449"
         },
         {
           "scope": "full",
           "id": "c51d3ca2-eeb0-4219-a2ac-cf35c24c060b-2",
-          "image": "/home/user/nazir1/sfy-cara-daftar/.hyperframes/artifacts/snapshots/88bd8f84-f065-4579-b4f3-24b9596880d5/frame-02-at-12s.png",
           "time": 12,
           "metadata": {
             "width": 1080,
@@ -420,12 +421,13 @@
           "revision": "6fcff4a9-8663-420c-bd29-a166111d6e1d",
           "inputFingerprint": "172ef97aee1972803cc43e76baa9f22af2d7a42e69d2ffdcdd7ac70aea0136a6",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "29d44ead-f906-460d-8f88-de3cc4adf449"
         },
         {
           "scope": "full",
           "id": "c51d3ca2-eeb0-4219-a2ac-cf35c24c060b-3",
-          "image": "/home/user/nazir1/sfy-cara-daftar/.hyperframes/artifacts/snapshots/88bd8f84-f065-4579-b4f3-24b9596880d5/frame-03-at-18.5s.png",
           "time": 18.5,
           "metadata": {
             "width": 1080,
@@ -440,12 +442,13 @@
           "revision": "6fcff4a9-8663-420c-bd29-a166111d6e1d",
           "inputFingerprint": "172ef97aee1972803cc43e76baa9f22af2d7a42e69d2ffdcdd7ac70aea0136a6",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "29d44ead-f906-460d-8f88-de3cc4adf449"
         },
         {
           "scope": "full",
           "id": "c51d3ca2-eeb0-4219-a2ac-cf35c24c060b-4",
-          "image": "/home/user/nazir1/sfy-cara-daftar/.hyperframes/artifacts/snapshots/88bd8f84-f065-4579-b4f3-24b9596880d5/frame-04-at-22s.png",
           "time": 22,
           "metadata": {
             "width": 1080,
@@ -460,12 +463,13 @@
           "revision": "6fcff4a9-8663-420c-bd29-a166111d6e1d",
           "inputFingerprint": "172ef97aee1972803cc43e76baa9f22af2d7a42e69d2ffdcdd7ac70aea0136a6",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "29d44ead-f906-460d-8f88-de3cc4adf449"
         },
         {
           "scope": "full",
           "id": "c51d3ca2-eeb0-4219-a2ac-cf35c24c060b-5",
-          "image": "/home/user/nazir1/sfy-cara-daftar/.hyperframes/artifacts/snapshots/88bd8f84-f065-4579-b4f3-24b9596880d5/frame-05-at-24.2s.png",
           "time": 24.2,
           "metadata": {
             "width": 1080,
@@ -480,12 +484,13 @@
           "revision": "6fcff4a9-8663-420c-bd29-a166111d6e1d",
           "inputFingerprint": "172ef97aee1972803cc43e76baa9f22af2d7a42e69d2ffdcdd7ac70aea0136a6",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "29d44ead-f906-460d-8f88-de3cc4adf449"
         },
         {
           "scope": "full",
           "id": "c51d3ca2-eeb0-4219-a2ac-cf35c24c060b-6",
-          "image": "/home/user/nazir1/sfy-cara-daftar/.hyperframes/artifacts/snapshots/88bd8f84-f065-4579-b4f3-24b9596880d5/frame-06-at-26.5s.png",
           "time": 26.5,
           "metadata": {
             "width": 1080,
@@ -500,12 +505,13 @@
           "revision": "6fcff4a9-8663-420c-bd29-a166111d6e1d",
           "inputFingerprint": "172ef97aee1972803cc43e76baa9f22af2d7a42e69d2ffdcdd7ac70aea0136a6",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "29d44ead-f906-460d-8f88-de3cc4adf449"
         },
         {
           "scope": "full",
           "id": "c51d3ca2-eeb0-4219-a2ac-cf35c24c060b-7",
-          "image": "/home/user/nazir1/sfy-cara-daftar/.hyperframes/artifacts/snapshots/88bd8f84-f065-4579-b4f3-24b9596880d5/frame-07-at-28.8s.png",
           "time": 28.8,
           "metadata": {
             "width": 1080,
@@ -520,12 +526,13 @@
           "revision": "6fcff4a9-8663-420c-bd29-a166111d6e1d",
           "inputFingerprint": "172ef97aee1972803cc43e76baa9f22af2d7a42e69d2ffdcdd7ac70aea0136a6",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "29d44ead-f906-460d-8f88-de3cc4adf449"
         },
         {
           "scope": "full",
           "id": "c51d3ca2-eeb0-4219-a2ac-cf35c24c060b-8",
-          "image": "/home/user/nazir1/sfy-cara-daftar/.hyperframes/artifacts/snapshots/88bd8f84-f065-4579-b4f3-24b9596880d5/frame-08-at-32s.png",
           "time": 32,
           "metadata": {
             "width": 1080,
@@ -540,12 +547,13 @@
           "revision": "6fcff4a9-8663-420c-bd29-a166111d6e1d",
           "inputFingerprint": "172ef97aee1972803cc43e76baa9f22af2d7a42e69d2ffdcdd7ac70aea0136a6",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "29d44ead-f906-460d-8f88-de3cc4adf449"
         },
         {
           "scope": "full",
           "id": "c51d3ca2-eeb0-4219-a2ac-cf35c24c060b-9",
-          "image": "/home/user/nazir1/sfy-cara-daftar/.hyperframes/artifacts/snapshots/88bd8f84-f065-4579-b4f3-24b9596880d5/frame-09-at-34.2s.png",
           "time": 34.2,
           "metadata": {
             "width": 1080,
@@ -560,12 +568,13 @@
           "revision": "6fcff4a9-8663-420c-bd29-a166111d6e1d",
           "inputFingerprint": "172ef97aee1972803cc43e76baa9f22af2d7a42e69d2ffdcdd7ac70aea0136a6",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "29d44ead-f906-460d-8f88-de3cc4adf449"
         },
         {
           "scope": "full",
           "id": "c51d3ca2-eeb0-4219-a2ac-cf35c24c060b-10",
-          "image": "/home/user/nazir1/sfy-cara-daftar/.hyperframes/artifacts/snapshots/88bd8f84-f065-4579-b4f3-24b9596880d5/frame-10-at-36.5s.png",
           "time": 36.5,
           "metadata": {
             "width": 1080,
@@ -580,12 +589,13 @@
           "revision": "6fcff4a9-8663-420c-bd29-a166111d6e1d",
           "inputFingerprint": "172ef97aee1972803cc43e76baa9f22af2d7a42e69d2ffdcdd7ac70aea0136a6",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "29d44ead-f906-460d-8f88-de3cc4adf449"
         },
         {
           "scope": "full",
           "id": "c51d3ca2-eeb0-4219-a2ac-cf35c24c060b-11",
-          "image": "/home/user/nazir1/sfy-cara-daftar/.hyperframes/artifacts/snapshots/88bd8f84-f065-4579-b4f3-24b9596880d5/frame-11-at-40s.png",
           "time": 40,
           "metadata": {
             "width": 1080,
@@ -600,12 +610,13 @@
           "revision": "6fcff4a9-8663-420c-bd29-a166111d6e1d",
           "inputFingerprint": "172ef97aee1972803cc43e76baa9f22af2d7a42e69d2ffdcdd7ac70aea0136a6",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "29d44ead-f906-460d-8f88-de3cc4adf449"
         },
         {
           "scope": "full",
           "id": "c51d3ca2-eeb0-4219-a2ac-cf35c24c060b-12",
-          "image": "/home/user/nazir1/sfy-cara-daftar/.hyperframes/artifacts/snapshots/88bd8f84-f065-4579-b4f3-24b9596880d5/frame-12-at-44.5s.png",
           "time": 44.5,
           "metadata": {
             "width": 1080,
@@ -620,12 +631,13 @@
           "revision": "6fcff4a9-8663-420c-bd29-a166111d6e1d",
           "inputFingerprint": "172ef97aee1972803cc43e76baa9f22af2d7a42e69d2ffdcdd7ac70aea0136a6",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "29d44ead-f906-460d-8f88-de3cc4adf449"
         },
         {
           "scope": "full",
           "id": "c51d3ca2-eeb0-4219-a2ac-cf35c24c060b-13",
-          "image": "/home/user/nazir1/sfy-cara-daftar/.hyperframes/artifacts/snapshots/88bd8f84-f065-4579-b4f3-24b9596880d5/frame-13-at-48s.png",
           "time": 48,
           "metadata": {
             "width": 1080,
@@ -640,12 +652,13 @@
           "revision": "6fcff4a9-8663-420c-bd29-a166111d6e1d",
           "inputFingerprint": "172ef97aee1972803cc43e76baa9f22af2d7a42e69d2ffdcdd7ac70aea0136a6",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "29d44ead-f906-460d-8f88-de3cc4adf449"
         },
         {
           "scope": "full",
           "id": "c51d3ca2-eeb0-4219-a2ac-cf35c24c060b-14",
-          "image": "/home/user/nazir1/sfy-cara-daftar/.hyperframes/artifacts/snapshots/88bd8f84-f065-4579-b4f3-24b9596880d5/frame-14-at-52.5s.png",
           "time": 52.5,
           "metadata": {
             "width": 1080,
@@ -660,12 +673,13 @@
           "revision": "6fcff4a9-8663-420c-bd29-a166111d6e1d",
           "inputFingerprint": "172ef97aee1972803cc43e76baa9f22af2d7a42e69d2ffdcdd7ac70aea0136a6",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "29d44ead-f906-460d-8f88-de3cc4adf449"
         },
         {
           "scope": "full",
           "id": "c51d3ca2-eeb0-4219-a2ac-cf35c24c060b-15",
-          "image": "/home/user/nazir1/sfy-cara-daftar/.hyperframes/artifacts/snapshots/88bd8f84-f065-4579-b4f3-24b9596880d5/frame-15-at-53.717s.png",
           "time": 53.717,
           "metadata": {
             "width": 1080,
@@ -680,14 +694,15 @@
           "revision": "6fcff4a9-8663-420c-bd29-a166111d6e1d",
           "inputFingerprint": "172ef97aee1972803cc43e76baa9f22af2d7a42e69d2ffdcdd7ac70aea0136a6",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "29d44ead-f906-460d-8f88-de3cc4adf449"
         }
       ],
       "9d7d9f0c-179b-4568-bc5b-f1ce5be6d12b": [
         {
           "scope": "full",
           "id": "8e691511-f642-42ae-9b4f-52659d7a2aea-0",
-          "image": "/home/user/nazir1/sfy-cara-daftar/.hyperframes/artifacts/snapshots/05f8eb3d-7fa2-4a43-aea8-ab13b7fa9b02/frame-00-at-22.65s.png",
           "time": 22.65,
           "metadata": {
             "width": 1080,
@@ -702,12 +717,13 @@
           "revision": "9d7d9f0c-179b-4568-bc5b-f1ce5be6d12b",
           "inputFingerprint": "dcfe1a570515a1422311e73d830c582e199cc8127640c497dc93611935e75866",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "29d44ead-f906-460d-8f88-de3cc4adf449"
         },
         {
           "scope": "full",
           "id": "8e691511-f642-42ae-9b4f-52659d7a2aea-1",
-          "image": "/home/user/nazir1/sfy-cara-daftar/.hyperframes/artifacts/snapshots/05f8eb3d-7fa2-4a43-aea8-ab13b7fa9b02/frame-01-at-23.2s.png",
           "time": 23.2,
           "metadata": {
             "width": 1080,
@@ -722,12 +738,13 @@
           "revision": "9d7d9f0c-179b-4568-bc5b-f1ce5be6d12b",
           "inputFingerprint": "dcfe1a570515a1422311e73d830c582e199cc8127640c497dc93611935e75866",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "29d44ead-f906-460d-8f88-de3cc4adf449"
         },
         {
           "scope": "full",
           "id": "8e691511-f642-42ae-9b4f-52659d7a2aea-2",
-          "image": "/home/user/nazir1/sfy-cara-daftar/.hyperframes/artifacts/snapshots/05f8eb3d-7fa2-4a43-aea8-ab13b7fa9b02/frame-02-at-26.5s.png",
           "time": 26.5,
           "metadata": {
             "width": 1080,
@@ -742,12 +759,13 @@
           "revision": "9d7d9f0c-179b-4568-bc5b-f1ce5be6d12b",
           "inputFingerprint": "dcfe1a570515a1422311e73d830c582e199cc8127640c497dc93611935e75866",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "29d44ead-f906-460d-8f88-de3cc4adf449"
         },
         {
           "scope": "full",
           "id": "8e691511-f642-42ae-9b4f-52659d7a2aea-3",
-          "image": "/home/user/nazir1/sfy-cara-daftar/.hyperframes/artifacts/snapshots/05f8eb3d-7fa2-4a43-aea8-ab13b7fa9b02/frame-03-at-32s.png",
           "time": 32,
           "metadata": {
             "width": 1080,
@@ -762,12 +780,13 @@
           "revision": "9d7d9f0c-179b-4568-bc5b-f1ce5be6d12b",
           "inputFingerprint": "dcfe1a570515a1422311e73d830c582e199cc8127640c497dc93611935e75866",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "29d44ead-f906-460d-8f88-de3cc4adf449"
         },
         {
           "scope": "full",
           "id": "8e691511-f642-42ae-9b4f-52659d7a2aea-4",
-          "image": "/home/user/nazir1/sfy-cara-daftar/.hyperframes/artifacts/snapshots/05f8eb3d-7fa2-4a43-aea8-ab13b7fa9b02/frame-04-at-37s.png",
           "time": 37,
           "metadata": {
             "width": 1080,
@@ -782,12 +801,13 @@
           "revision": "9d7d9f0c-179b-4568-bc5b-f1ce5be6d12b",
           "inputFingerprint": "dcfe1a570515a1422311e73d830c582e199cc8127640c497dc93611935e75866",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "29d44ead-f906-460d-8f88-de3cc4adf449"
         },
         {
           "scope": "full",
           "id": "8e691511-f642-42ae-9b4f-52659d7a2aea-5",
-          "image": "/home/user/nazir1/sfy-cara-daftar/.hyperframes/artifacts/snapshots/05f8eb3d-7fa2-4a43-aea8-ab13b7fa9b02/frame-05-at-45.9s.png",
           "time": 45.9,
           "metadata": {
             "width": 1080,
@@ -802,12 +822,13 @@
           "revision": "9d7d9f0c-179b-4568-bc5b-f1ce5be6d12b",
           "inputFingerprint": "dcfe1a570515a1422311e73d830c582e199cc8127640c497dc93611935e75866",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "29d44ead-f906-460d-8f88-de3cc4adf449"
         },
         {
           "scope": "full",
           "id": "8e691511-f642-42ae-9b4f-52659d7a2aea-6",
-          "image": "/home/user/nazir1/sfy-cara-daftar/.hyperframes/artifacts/snapshots/05f8eb3d-7fa2-4a43-aea8-ab13b7fa9b02/frame-06-at-46.3s.png",
           "time": 46.3,
           "metadata": {
             "width": 1080,
@@ -822,12 +843,13 @@
           "revision": "9d7d9f0c-179b-4568-bc5b-f1ce5be6d12b",
           "inputFingerprint": "dcfe1a570515a1422311e73d830c582e199cc8127640c497dc93611935e75866",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "29d44ead-f906-460d-8f88-de3cc4adf449"
         },
         {
           "scope": "full",
           "id": "8e691511-f642-42ae-9b4f-52659d7a2aea-7",
-          "image": "/home/user/nazir1/sfy-cara-daftar/.hyperframes/artifacts/snapshots/05f8eb3d-7fa2-4a43-aea8-ab13b7fa9b02/frame-07-at-53.717s.png",
           "time": 53.717,
           "metadata": {
             "width": 1080,
@@ -842,14 +864,15 @@
           "revision": "9d7d9f0c-179b-4568-bc5b-f1ce5be6d12b",
           "inputFingerprint": "dcfe1a570515a1422311e73d830c582e199cc8127640c497dc93611935e75866",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "29d44ead-f906-460d-8f88-de3cc4adf449"
         }
       ],
       "9d312ebe-a1eb-4f61-8680-2d1f0a061eb3": [
         {
           "scope": "full",
           "id": "49b9bb9d-5275-4368-8f88-ed2765addb9a-0",
-          "image": "/home/user/nazir1/sfy-cara-daftar/.hyperframes/artifacts/snapshots/699c92ae-b925-43ef-95b2-9a7ad486688d/frame-00-at-0.5s.png",
           "time": 0.5,
           "metadata": {
             "width": 1080,
@@ -864,12 +887,13 @@
           "revision": "9d312ebe-a1eb-4f61-8680-2d1f0a061eb3",
           "inputFingerprint": "5832af89f5425939c8429f0cef6fe5657916ca99c0ebbbf35282b7782fd05f14",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "29d44ead-f906-460d-8f88-de3cc4adf449"
         },
         {
           "scope": "full",
           "id": "49b9bb9d-5275-4368-8f88-ed2765addb9a-1",
-          "image": "/home/user/nazir1/sfy-cara-daftar/.hyperframes/artifacts/snapshots/699c92ae-b925-43ef-95b2-9a7ad486688d/frame-01-at-7.5s.png",
           "time": 7.5,
           "metadata": {
             "width": 1080,
@@ -884,12 +908,13 @@
           "revision": "9d312ebe-a1eb-4f61-8680-2d1f0a061eb3",
           "inputFingerprint": "5832af89f5425939c8429f0cef6fe5657916ca99c0ebbbf35282b7782fd05f14",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "29d44ead-f906-460d-8f88-de3cc4adf449"
         },
         {
           "scope": "full",
           "id": "49b9bb9d-5275-4368-8f88-ed2765addb9a-2",
-          "image": "/home/user/nazir1/sfy-cara-daftar/.hyperframes/artifacts/snapshots/699c92ae-b925-43ef-95b2-9a7ad486688d/frame-02-at-12s.png",
           "time": 12,
           "metadata": {
             "width": 1080,
@@ -904,12 +929,13 @@
           "revision": "9d312ebe-a1eb-4f61-8680-2d1f0a061eb3",
           "inputFingerprint": "5832af89f5425939c8429f0cef6fe5657916ca99c0ebbbf35282b7782fd05f14",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "29d44ead-f906-460d-8f88-de3cc4adf449"
         },
         {
           "scope": "full",
           "id": "49b9bb9d-5275-4368-8f88-ed2765addb9a-3",
-          "image": "/home/user/nazir1/sfy-cara-daftar/.hyperframes/artifacts/snapshots/699c92ae-b925-43ef-95b2-9a7ad486688d/frame-03-at-18.5s.png",
           "time": 18.5,
           "metadata": {
             "width": 1080,
@@ -924,12 +950,13 @@
           "revision": "9d312ebe-a1eb-4f61-8680-2d1f0a061eb3",
           "inputFingerprint": "5832af89f5425939c8429f0cef6fe5657916ca99c0ebbbf35282b7782fd05f14",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "29d44ead-f906-460d-8f88-de3cc4adf449"
         },
         {
           "scope": "full",
           "id": "49b9bb9d-5275-4368-8f88-ed2765addb9a-4",
-          "image": "/home/user/nazir1/sfy-cara-daftar/.hyperframes/artifacts/snapshots/699c92ae-b925-43ef-95b2-9a7ad486688d/frame-04-at-22s.png",
           "time": 22,
           "metadata": {
             "width": 1080,
@@ -944,12 +971,13 @@
           "revision": "9d312ebe-a1eb-4f61-8680-2d1f0a061eb3",
           "inputFingerprint": "5832af89f5425939c8429f0cef6fe5657916ca99c0ebbbf35282b7782fd05f14",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "29d44ead-f906-460d-8f88-de3cc4adf449"
         },
         {
           "scope": "full",
           "id": "49b9bb9d-5275-4368-8f88-ed2765addb9a-5",
-          "image": "/home/user/nazir1/sfy-cara-daftar/.hyperframes/artifacts/snapshots/699c92ae-b925-43ef-95b2-9a7ad486688d/frame-05-at-23.6s.png",
           "time": 23.6,
           "metadata": {
             "width": 1080,
@@ -964,12 +992,13 @@
           "revision": "9d312ebe-a1eb-4f61-8680-2d1f0a061eb3",
           "inputFingerprint": "5832af89f5425939c8429f0cef6fe5657916ca99c0ebbbf35282b7782fd05f14",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "29d44ead-f906-460d-8f88-de3cc4adf449"
         },
         {
           "scope": "full",
           "id": "49b9bb9d-5275-4368-8f88-ed2765addb9a-6",
-          "image": "/home/user/nazir1/sfy-cara-daftar/.hyperframes/artifacts/snapshots/699c92ae-b925-43ef-95b2-9a7ad486688d/frame-06-at-26.5s.png",
           "time": 26.5,
           "metadata": {
             "width": 1080,
@@ -984,12 +1013,13 @@
           "revision": "9d312ebe-a1eb-4f61-8680-2d1f0a061eb3",
           "inputFingerprint": "5832af89f5425939c8429f0cef6fe5657916ca99c0ebbbf35282b7782fd05f14",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "29d44ead-f906-460d-8f88-de3cc4adf449"
         },
         {
           "scope": "full",
           "id": "49b9bb9d-5275-4368-8f88-ed2765addb9a-7",
-          "image": "/home/user/nazir1/sfy-cara-daftar/.hyperframes/artifacts/snapshots/699c92ae-b925-43ef-95b2-9a7ad486688d/frame-07-at-28.8s.png",
           "time": 28.8,
           "metadata": {
             "width": 1080,
@@ -1004,12 +1034,13 @@
           "revision": "9d312ebe-a1eb-4f61-8680-2d1f0a061eb3",
           "inputFingerprint": "5832af89f5425939c8429f0cef6fe5657916ca99c0ebbbf35282b7782fd05f14",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "29d44ead-f906-460d-8f88-de3cc4adf449"
         },
         {
           "scope": "full",
           "id": "49b9bb9d-5275-4368-8f88-ed2765addb9a-8",
-          "image": "/home/user/nazir1/sfy-cara-daftar/.hyperframes/artifacts/snapshots/699c92ae-b925-43ef-95b2-9a7ad486688d/frame-08-at-32s.png",
           "time": 32,
           "metadata": {
             "width": 1080,
@@ -1024,12 +1055,13 @@
           "revision": "9d312ebe-a1eb-4f61-8680-2d1f0a061eb3",
           "inputFingerprint": "5832af89f5425939c8429f0cef6fe5657916ca99c0ebbbf35282b7782fd05f14",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "29d44ead-f906-460d-8f88-de3cc4adf449"
         },
         {
           "scope": "full",
           "id": "49b9bb9d-5275-4368-8f88-ed2765addb9a-9",
-          "image": "/home/user/nazir1/sfy-cara-daftar/.hyperframes/artifacts/snapshots/699c92ae-b925-43ef-95b2-9a7ad486688d/frame-09-at-36.5s.png",
           "time": 36.5,
           "metadata": {
             "width": 1080,
@@ -1044,12 +1076,13 @@
           "revision": "9d312ebe-a1eb-4f61-8680-2d1f0a061eb3",
           "inputFingerprint": "5832af89f5425939c8429f0cef6fe5657916ca99c0ebbbf35282b7782fd05f14",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "29d44ead-f906-460d-8f88-de3cc4adf449"
         },
         {
           "scope": "full",
           "id": "49b9bb9d-5275-4368-8f88-ed2765addb9a-10",
-          "image": "/home/user/nazir1/sfy-cara-daftar/.hyperframes/artifacts/snapshots/699c92ae-b925-43ef-95b2-9a7ad486688d/frame-10-at-40s.png",
           "time": 40,
           "metadata": {
             "width": 1080,
@@ -1064,12 +1097,13 @@
           "revision": "9d312ebe-a1eb-4f61-8680-2d1f0a061eb3",
           "inputFingerprint": "5832af89f5425939c8429f0cef6fe5657916ca99c0ebbbf35282b7782fd05f14",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "29d44ead-f906-460d-8f88-de3cc4adf449"
         },
         {
           "scope": "full",
           "id": "49b9bb9d-5275-4368-8f88-ed2765addb9a-11",
-          "image": "/home/user/nazir1/sfy-cara-daftar/.hyperframes/artifacts/snapshots/699c92ae-b925-43ef-95b2-9a7ad486688d/frame-11-at-44.5s.png",
           "time": 44.5,
           "metadata": {
             "width": 1080,
@@ -1084,12 +1118,13 @@
           "revision": "9d312ebe-a1eb-4f61-8680-2d1f0a061eb3",
           "inputFingerprint": "5832af89f5425939c8429f0cef6fe5657916ca99c0ebbbf35282b7782fd05f14",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "29d44ead-f906-460d-8f88-de3cc4adf449"
         },
         {
           "scope": "full",
           "id": "49b9bb9d-5275-4368-8f88-ed2765addb9a-12",
-          "image": "/home/user/nazir1/sfy-cara-daftar/.hyperframes/artifacts/snapshots/699c92ae-b925-43ef-95b2-9a7ad486688d/frame-12-at-48s.png",
           "time": 48,
           "metadata": {
             "width": 1080,
@@ -1104,12 +1139,13 @@
           "revision": "9d312ebe-a1eb-4f61-8680-2d1f0a061eb3",
           "inputFingerprint": "5832af89f5425939c8429f0cef6fe5657916ca99c0ebbbf35282b7782fd05f14",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "29d44ead-f906-460d-8f88-de3cc4adf449"
         },
         {
           "scope": "full",
           "id": "49b9bb9d-5275-4368-8f88-ed2765addb9a-13",
-          "image": "/home/user/nazir1/sfy-cara-daftar/.hyperframes/artifacts/snapshots/699c92ae-b925-43ef-95b2-9a7ad486688d/frame-13-at-52.5s.png",
           "time": 52.5,
           "metadata": {
             "width": 1080,
@@ -1124,12 +1160,13 @@
           "revision": "9d312ebe-a1eb-4f61-8680-2d1f0a061eb3",
           "inputFingerprint": "5832af89f5425939c8429f0cef6fe5657916ca99c0ebbbf35282b7782fd05f14",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "29d44ead-f906-460d-8f88-de3cc4adf449"
         },
         {
           "scope": "full",
           "id": "49b9bb9d-5275-4368-8f88-ed2765addb9a-14",
-          "image": "/home/user/nazir1/sfy-cara-daftar/.hyperframes/artifacts/snapshots/699c92ae-b925-43ef-95b2-9a7ad486688d/frame-14-at-53.717s.png",
           "time": 53.717,
           "metadata": {
             "width": 1080,
@@ -1144,10 +1181,25 @@
           "revision": "9d312ebe-a1eb-4f61-8680-2d1f0a061eb3",
           "inputFingerprint": "5832af89f5425939c8429f0cef6fe5657916ca99c0ebbbf35282b7782fd05f14",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "29d44ead-f906-460d-8f88-de3cc4adf449"
         }
       ]
     },
     "unversioned": []
-  }
+  },
+  "renders": {
+    "latest": {
+      "id": "29d44ead-f906-460d-8f88-de3cc4adf449",
+      "completedAt": 1795022106808,
+      "output": "/home/user/nazir1/sfy-cara-daftar/renders/sfy-cara-daftar-final.mp4",
+      "status": "completed",
+      "revision": "46009187-4b4b-4bee-8450-aec43e540e75"
+    },
+    "retainedRevisions": [
+      "46009187-4b4b-4bee-8450-aec43e540e75"
+    ]
+  },
+  "pendingArtifactCleanup": []
 }
