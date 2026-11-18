@@ -1,5 +1,5 @@
 {
- "total": 56.0,
+ "total": 54.3333,
  "segs": [
   {
    "id": "h1",
@@ -92,20 +92,29 @@
    "scale": 1.08
   },
   {
-   "id": "z1",
+   "id": "z1a",
    "src": "v",
    "src_in": 44.9333,
-   "src_out": 51.4,
+   "src_out": 47.2667,
    "start": 35.9667,
-   "dur": 6.4665,
+   "dur": 2.3331999999999997,
    "scale": 1.0
+  },
+  {
+   "id": "z1b",
+   "src": "v",
+   "src_in": 48.9333,
+   "src_out": 51.4,
+   "start": 38.3,
+   "dur": 2.4665,
+   "scale": 1.08
   },
   {
    "id": "z2",
    "src": "v",
    "src_in": 58.0333,
    "src_out": 61.6,
-   "start": 42.4334,
+   "start": 40.7667,
    "dur": 3.5665,
    "scale": 1.08
   },
@@ -114,7 +123,7 @@
    "src": "v",
    "src_in": 83.2667,
    "src_out": 84.9667,
-   "start": 46.0,
+   "start": 44.3334,
    "dur": 1.6999,
    "scale": 1.0
   },
@@ -123,7 +132,7 @@
    "src": "v",
    "src_in": 85.1,
    "src_out": 88.5667,
-   "start": 47.7,
+   "start": 46.0334,
    "dur": 3.4665,
    "scale": 1.06
   },
@@ -132,7 +141,7 @@
    "src": "v",
    "src_in": 88.5667,
    "src_out": 93.4,
-   "start": 51.1667,
+   "start": 49.5,
    "dur": 4.833200000000001,
    "scale": 1.0
   }
@@ -205,9 +214,7 @@
   "bayar",
   "RM1",
   "je.",
-  "Oh",
-  "lah",
-  "mak",
+  "Fuhlamak",
   "untung",
   "gila.",
   "banyak",
@@ -229,12 +236,6 @@
   "kaki",
   "ZUS",
   "Coffee",
-  "nak",
-  "pergi",
-  "dating",
-  "ke",
-  "apa",
-  "kan",
   "boleh",
   "dapat",
   "free",

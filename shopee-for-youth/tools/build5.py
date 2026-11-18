@@ -28,7 +28,8 @@ EDL = [
     ("p3", "v", 78.12, 79.34, 1.16),  # oh la mak, untung gila
     ("v1", "v", 31.66, 35.90, 1.00),  # banyak kelebihan dia, ada 30% off voucher, free shipping
     ("v2", "v", 39.44, 40.78, 1.08),  # macam-macam lagi
-    ("z1", "v", 44.94, 51.18, 1.00),  # selain tu, yang mana kaki ZUS Coffee, nak pergi dating ke apa kan, boleh dapat free juga ZUS Coffee
+    ("z1a", "v", 44.94, 46.94, 1.00), # selain tu, yang mana kaki ZUS Coffee
+    ("z1b", "v", 48.96, 51.18, 1.08), # boleh dapat free juga ZUS Coffee   (cut: "nak pergi dating ke apa kan")
     ("z2", "v", 58.10, 61.22, 1.08),  # tapi abang join Shopee for Youth, free je ZUS Coffee ni. Free tau
     ("c1", "v", 83.32, 84.76, 1.00),  # inilah peluang abang join benda ni
     ("c2", "v", 85.16, 88.26, 1.06),  # nak tahu macam mana, tekan link untuk tahu lebih lanjut
@@ -83,6 +84,10 @@ FIX = {"jenzy": "Gen Z", "use": "Youth", "you": "Youth", "you.": "Youth", "ampun
 def norm(sid, w):
     t = w["text"]
     core = re.sub(r"[^\w%-]", "", t).lower()
+    if sid == "p3" and core == "oh":
+        return "Fuhlamak"  # "oh lah mak" is "fuhlamak"
+    if sid == "p3" and core in {"lah", "mak"}:
+        return None
     if core in FIX:
         return FIX[core] + t[len(t.rstrip(".,!?")):]
     return t
@@ -341,7 +346,7 @@ build_scene("vip", [
 build_scene("zus", [
     widget("zs-card", f'<div class="hd">{CUP}<span>Kaki ZUS Coffee?</span></div><div class="big" style="font-size:96px">FREE</div>'
            '<div style="text-align:center;font-size:30px;font-weight:700">ZUS Coffee</div>',
-           W("z1", 46.34) - 0.1, end("z1") - W("z1", 46.34) + 0.1, top=Y - 30),
+           W("z1a", 46.34) - 0.1, end("z1b") - W("z1a", 46.34) + 0.1, top=Y - 30),
     pill("zs-free", "Free je, tau!", W("z2", 59.90), end("z2") - W("z2", 59.90), None, Y + 20),
 ])
 
@@ -365,7 +370,7 @@ cam = [f'      tl.set("#cam", {{ scale: {s["scale"]} }}, {s["start"]});' for s i
 cam.append(f'      tl.fromTo("#cam", {{ scale: 1.0 }}, {{ scale: 1.06, duration: {end("h1")}, ease: "none", immediateRender: false }}, 0);')
 
 # warm flash cuts, like the reference (light leak right on the cut)
-FLASH = [("flash1", SEG["h3"]["start"]), ("flash2", SEG["p1"]["start"]), ("flash3", SEG["z1"]["start"])]
+FLASH = [("flash1", SEG["h3"]["start"]), ("flash2", SEG["p1"]["start"]), ("flash3", SEG["z1a"]["start"])]
 
 SFX = [("sx-hook", "pop.mp3", 0.05, 0.35),
        ("sx-age", "pop.mp3", W("h1", 8.98) + 0.03, 0.35),
@@ -376,8 +381,8 @@ SFX = [("sx-hook", "pop.mp3", 0.05, 0.35),
        ("sx-untung", "sparkle.mp3", SEG["p3"]["start"] + 0.1, 0.3),
        ("sx-v30", "pop.mp3", W("v1", 33.48) + 0.03, 0.35),
        ("sx-ship", "pop.mp3", W("v1", 35.68) + 0.03, 0.35),
-       ("sx-f3", "whoosh.mp3", SEG["z1"]["start"] - 0.25, 0.35),
-       ("sx-free", "pop.mp3", W("z1", 46.34) - 0.07, 0.4),
+       ("sx-f3", "whoosh.mp3", SEG["z1a"]["start"] - 0.25, 0.35),
+       ("sx-free", "pop.mp3", W("z1a", 46.34) - 0.07, 0.4),
        ("sx-cta", "whoosh-short.mp3", SEG["c1"]["start"], 0.3),
        ("sx-share", "sparkle.mp3", SEG["c3"]["start"] + 0.1, 0.3)]
 def adur(fn):
