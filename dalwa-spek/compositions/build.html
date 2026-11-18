@@ -1,0 +1,55 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; pointer-events: none; 
+      --ink: #ffffff;
+      --muted: rgba(255,255,255,.62);
+      --glass: rgba(18, 19, 22, 0.82);
+      --stroke: rgba(255,255,255,.12);
+      --gold: #f5c542;
+      --rose: #c86b9a;
+      --ok: #34c759;
+      --font-ui: "Montserrat", sans-serif;
+      --font-num: "Oswald", "League Gothic", sans-serif;
+ }
+    .widget { position: absolute; left: 50%; width: 600px; margin-left: -330px; padding: 26px 32px; border-radius: 34px;
+      background: var(--glass); border: 1.5px solid var(--stroke); box-shadow: 0 24px 60px rgba(0,0,0,.45);
+      backdrop-filter: blur(20px); color: var(--ink); font-family: var(--font-ui); }
+    .widget .hd { display: flex; align-items: center; justify-content: center; gap: 10px; font-size: 28px; font-weight: 600; color: var(--muted); text-align: center; }
+    .widget .hd svg { width: 30px; height: 30px; flex: none; }
+    .widget .rowx { display: flex; align-items: center; justify-content: space-between; margin-top: 18px; font-size: 32px; font-weight: 700; }
+    .widget .rowx .v { font-family: var(--font-num); font-size: 40px; font-weight: 700; color: var(--ok); letter-spacing: .02em; }
+    .widget .big { margin-top: 6px; text-align: center; font-family: var(--font-num); font-size: 92px; font-weight: 700; color: var(--gold); line-height: 1.05; letter-spacing: .01em; }
+    .pill { display: inline-flex; align-items: center; gap: 10px; padding: 12px 24px; border-radius: 999px;
+      background: #fff; color: #111; font-family: var(--font-ui); font-weight: 800; font-size: 32px; box-shadow: 0 12px 30px rgba(0,0,0,.35); white-space: nowrap; }
+    .pill svg { width: 28px; height: 28px; }
+    .ttl { position: absolute; left: 0; width: 960px; text-align: center; font-family: var(--font-ui); font-weight: 800; color: #fff;
+      font-size: 68px; letter-spacing: .22em; text-transform: uppercase; text-shadow: 0 2px 4px rgba(0,0,0,.6), 0 8px 30px rgba(0,0,0,.7); }
+    .ttl svg { display: block; margin: 8px auto 0; width: 700px; height: 70px; overflow: visible; }
+    .co-lbl { position: absolute; font-family: var(--font-ui); font-weight: 800; font-size: 44px; color: #fff; letter-spacing: .02em;
+      text-transform: uppercase; text-shadow: 0 4px 18px rgba(0,0,0,.6); white-space: nowrap; padding-bottom: 8px; border-bottom: 3px solid #fff; }
+    .co svg { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; overflow: visible; }
+
+  </style>
+  <div id="root" data-composition-id="build" data-width="1080" data-height="1920">
+    <div id="bd-mat" class="widget clip" data-start="7.4333" data-duration="3.7667" data-track-index="0" style="top:780px"><div class="hd"><span>Dua material</span></div><div class="rowx"><span>Depan</span><span class="v" style="color:#fff">METAL</span></div><div class="rowx"><span>Belakang</span><span class="v" style="color:#fff">PLASTIK</span></div></div>
+    <div id="bd-nose" class=" clip" data-start="11.9333" data-duration="2.2333" data-track-index="0" style="position:absolute; left:0px; width:1080px; top:820px; text-align:center"><span id="bd-nosei" class="pill" style="position:relative"><svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12.5l4.8 4.8L19.5 7"/></svg><span>Nose pad selesa</span></span></div>
+    <div id="bd-mark" class=" clip" data-start="14.8333" data-duration="1.2" data-track-index="0" style="position:absolute; left:0px; width:1080px; top:820px; text-align:center"><span id="bd-marki" class="pill" style="position:relative"><svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12.5l4.8 4.8L19.5 7"/></svg><span>Tak tinggal bekas</span></span></div>
+    <div id="bd-sil" class=" clip" data-start="17.4667" data-duration="1.1" data-track-index="0" style="position:absolute; left:0px; width:1080px; top:820px; text-align:center"><span id="bd-sili" class="pill" style="position:relative"><svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12.5l4.8 4.8L19.5 7"/></svg><span>Bingkai silikon</span></span></div>
+    <div id="bd-lasak" class="ttl clip" data-start="19.0667" data-duration="0.9667" data-track-index="0" style="top:800px"><div id="bd-lasakt">Tahan Lasak</div><svg id="bd-lasakw" viewBox="0 0 700 70"><path class="wv" d="M0 35 C 90 5, 170 65, 260 35 S 430 5, 520 35 S 650 65, 700 35" stroke="#f5c542" stroke-width="3" fill="none"/><path class="wv" d="M0 40 C 110 70, 200 10, 300 40 S 480 70, 560 40 S 660 15, 700 40" stroke="rgba(255,255,255,.75)" stroke-width="2" fill="none"/><path class="wv" d="M0 32 C 70 50, 150 15, 240 32 S 400 55, 500 30 S 640 20, 700 32" stroke="#c86b9a" stroke-width="2" fill="none"/></svg></div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#bd-mat", { opacity: 0, y: -20, filter: "blur(10px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.42, ease: "expo.out" }, 7.4333);
+    tl.to("#bd-mat", { opacity: 0, filter: "blur(8px)", duration: 0.2, ease: "power2.in" }, 10.9667);
+    tl.fromTo("#bd-nosei", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.45, ease: "back.out(1.6)" }, 11.9333);
+    tl.to("#bd-nose", { opacity: 0, filter: "blur(8px)", duration: 0.2, ease: "power2.in" }, 13.9333);
+    tl.fromTo("#bd-marki", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.45, ease: "back.out(1.6)" }, 14.8333);
+    tl.to("#bd-mark", { opacity: 0, filter: "blur(8px)", duration: 0.2, ease: "power2.in" }, 15.8);
+    tl.fromTo("#bd-sili", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.45, ease: "back.out(1.6)" }, 17.4667);
+    tl.to("#bd-sil", { opacity: 0, filter: "blur(8px)", duration: 0.2, ease: "power2.in" }, 18.3333);
+    tl.fromTo("#bd-lasakt", { opacity: 0, scaleX: 1.25, filter: "blur(10px)" }, { opacity: 1, scaleX: 1, filter: "blur(0px)", duration: 0.6, ease: "expo.out" }, 19.0667);
+    tl.fromTo("#bd-lasakw .wv", { strokeDasharray: 900, strokeDashoffset: 900 }, { strokeDashoffset: 0, duration: 0.9, ease: "power2.inOut", stagger: 0.08 }, 19.1667);
+    tl.to("#bd-lasak", { opacity: 0, filter: "blur(8px)", duration: 0.2, ease: "power2.in" }, 19.7667);
+    window.__timelines["build"] = tl;
+  </script>
+</template>

@@ -1,0 +1,317 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; pointer-events: none; 
+      --ink: #ffffff;
+      --muted: rgba(255,255,255,.62);
+      --glass: rgba(18, 19, 22, 0.82);
+      --stroke: rgba(255,255,255,.12);
+      --gold: #f5c542;
+      --rose: #c86b9a;
+      --ok: #34c759;
+      --font-ui: "Montserrat", sans-serif;
+      --font-num: "Oswald", "League Gothic", sans-serif;
+ }
+    .cw { position: absolute; left: 0; width: 960px; top: 1180px; text-align: center; }
+    .cw span { display: inline-block; font-family: var(--font-ui); font-weight: 800; font-size: 58px; color: #fff;
+      letter-spacing: .01em; text-shadow: 0 3px 0 rgba(0,0,0,.35), 0 6px 22px rgba(0,0,0,.6); }
+
+  </style>
+  <div id="root" data-composition-id="captions" data-width="1080" data-height="1920">
+    <div id="cw000" class="cw clip" data-start="0.0" data-duration="0.4" data-track-index="0"><span id="cw000s">SPEK</span></div>
+    <div id="cw001" class="cw clip" data-start="0.4" data-duration="0.4" data-track-index="0"><span id="cw001s">DALWA</span></div>
+    <div id="cw002" class="cw clip" data-start="0.8" data-duration="0.2667" data-track-index="0"><span id="cw002s">NI</span></div>
+    <div id="cw003" class="cw clip" data-start="1.0667" data-duration="0.2333" data-track-index="0"><span id="cw003s">MEMANG</span></div>
+    <div id="cw004" class="cw clip" data-start="1.3" data-duration="0.4" data-track-index="0"><span id="cw004s">BEST</span></div>
+    <div id="cw005" class="cw clip" data-start="1.7" data-duration="0.2333" data-track-index="0"><span id="cw005s">LAH</span></div>
+    <div id="cw006" class="cw clip" data-start="2.0" data-duration="0.4333" data-track-index="0"><span id="cw006s">NAMPAK-NAMPAK</span></div>
+    <div id="cw007" class="cw clip" data-start="2.4333" data-duration="0.3667" data-track-index="0"><span id="cw007s">DESIGN</span></div>
+    <div id="cw008" class="cw clip" data-start="2.8" data-duration="0.2" data-track-index="0"><span id="cw008s">DIA</span></div>
+    <div id="cw009" class="cw clip" data-start="3.0" data-duration="0.1" data-track-index="0"><span id="cw009s">PUN</span></div>
+    <div id="cw010" class="cw clip" data-start="3.1" data-duration="0.5" data-track-index="0"><span id="cw010s">CANTIK</span></div>
+    <div id="cw011" class="cw clip" data-start="3.6" data-duration="0.1333" data-track-index="0"><span id="cw011s">KALAU</span></div>
+    <div id="cw012" class="cw clip" data-start="3.7333" data-duration="0.1333" data-track-index="0"><span id="cw012s">PUN</span></div>
+    <div id="cw013" class="cw clip" data-start="3.8667" data-duration="0.2333" data-track-index="0"><span id="cw013s">PAKAI</span></div>
+    <div id="cw014" class="cw clip" data-start="4.1" data-duration="0.3667" data-track-index="0"><span id="cw014s">PUN</span></div>
+    <div id="cw015" class="cw clip" data-start="4.6" data-duration="0.4333" data-track-index="0"><span id="cw015s">SESUAI</span></div>
+    <div id="cw016" class="cw clip" data-start="5.0333" data-duration="0.1667" data-track-index="0"><span id="cw016s">UNTUK</span></div>
+    <div id="cw017" class="cw clip" data-start="5.2" data-duration="0.4" data-track-index="0"><span id="cw017s">OUTDOOR</span></div>
+    <div id="cw018" class="cw clip" data-start="5.6" data-duration="0.2" data-track-index="0"><span id="cw018s">DAN</span></div>
+    <div id="cw019" class="cw clip" data-start="5.8" data-duration="0.4667" data-track-index="0"><span id="cw019s">INDOOR</span></div>
+    <div id="cw020" class="cw clip" data-start="6.3667" data-duration="0.4333" data-track-index="0"><span id="cw020s">DIA</span></div>
+    <div id="cw021" class="cw clip" data-start="6.8" data-duration="0.1333" data-track-index="0"><span id="cw021s">ADA</span></div>
+    <div id="cw022" class="cw clip" data-start="6.9333" data-duration="0.4" data-track-index="0"><span id="cw022s">DUA</span></div>
+    <div id="cw023" class="cw clip" data-start="7.3333" data-duration="0.3333" data-track-index="0"><span id="cw023s">TAU</span></div>
+    <div id="cw024" class="cw clip" data-start="7.7333" data-duration="0.8" data-track-index="0"><span id="cw024s">MATERIAL</span></div>
+    <div id="cw025" class="cw clip" data-start="8.6333" data-duration="0.4333" data-track-index="0"><span id="cw025s">DEPAN</span></div>
+    <div id="cw026" class="cw clip" data-start="9.0667" data-duration="0.1333" data-track-index="0"><span id="cw026s">NI</span></div>
+    <div id="cw027" class="cw clip" data-start="9.2" data-duration="0.3333" data-track-index="0"><span id="cw027s">METAL</span></div>
+    <div id="cw028" class="cw clip" data-start="9.8" data-duration="0.7333" data-track-index="0"><span id="cw028s">BELAKANG</span></div>
+    <div id="cw030" class="cw clip" data-start="10.6333" data-duration="0.5" data-track-index="0"><span id="cw030s">PLASTIK</span></div>
+    <div id="cw031" class="cw clip" data-start="11.2667" data-duration="0.4333" data-track-index="0"><span id="cw031s">LEPAS</span></div>
+    <div id="cw032" class="cw clip" data-start="11.7" data-duration="0.2333" data-track-index="0"><span id="cw032s">TU</span></div>
+    <div id="cw033" class="cw clip" data-start="11.9333" data-duration="0.1667" data-track-index="0"><span id="cw033s">NOSE</span></div>
+    <div id="cw034" class="cw clip" data-start="12.1" data-duration="0.3333" data-track-index="0"><span id="cw034s">PAD</span></div>
+    <div id="cw035" class="cw clip" data-start="12.4333" data-duration="0.1333" data-track-index="0"><span id="cw035s">DIA</span></div>
+    <div id="cw036" class="cw clip" data-start="12.5667" data-duration="0.2" data-track-index="0"><span id="cw036s">PUN</span></div>
+    <div id="cw037" class="cw clip" data-start="12.7667" data-duration="0.2333" data-track-index="0"><span id="cw037s">MEMANG</span></div>
+    <div id="cw038" class="cw clip" data-start="13.0" data-duration="0.4667" data-track-index="0"><span id="cw038s">SEDAP</span></div>
+    <div id="cw039" class="cw clip" data-start="13.4667" data-duration="0.3" data-track-index="0"><span id="cw039s">SELESA</span></div>
+    <div id="cw040" class="cw clip" data-start="13.7667" data-duration="0.3667" data-track-index="0"><span id="cw040s">TAU</span></div>
+    <div id="cw041" class="cw clip" data-start="14.2333" data-duration="0.4333" data-track-index="0"><span id="cw041s">MEMANG</span></div>
+    <div id="cw043" class="cw clip" data-start="14.7333" data-duration="0.3667" data-track-index="0"><span id="cw043s">PAKAI</span></div>
+    <div id="cw044" class="cw clip" data-start="15.1" data-duration="0.1333" data-track-index="0"><span id="cw044s">NI</span></div>
+    <div id="cw045" class="cw clip" data-start="15.2333" data-duration="0.1667" data-track-index="0"><span id="cw045s">TAK</span></div>
+    <div id="cw046" class="cw clip" data-start="15.4" data-duration="0.2333" data-track-index="0"><span id="cw046s">ADA</span></div>
+    <div id="cw047" class="cw clip" data-start="15.6333" data-duration="0.3333" data-track-index="0"><span id="cw047s">BEKAS</span></div>
+    <div id="cw048" class="cw clip" data-start="16.1" data-duration="0.4333" data-track-index="0"><span id="cw048s">LEPAS</span></div>
+    <div id="cw049" class="cw clip" data-start="16.5333" data-duration="0.2333" data-track-index="0"><span id="cw049s">TU</span></div>
+    <div id="cw051" class="cw clip" data-start="16.8333" data-duration="0.1667" data-track-index="0"><span id="cw051s">PUNYA</span></div>
+    <div id="cw052" class="cw clip" data-start="17.0" data-duration="0.5" data-track-index="0"><span id="cw052s">BINGKAI</span></div>
+    <div id="cw053" class="cw clip" data-start="17.5" data-duration="0.2333" data-track-index="0"><span id="cw053s">DIA</span></div>
+    <div id="cw054" class="cw clip" data-start="17.7667" data-duration="0.6667" data-track-index="0"><span id="cw054s">SILIKON</span></div>
+    <div id="cw055" class="cw clip" data-start="18.4333" data-duration="0.2" data-track-index="0"><span id="cw055s">TAU</span></div>
+    <div id="cw056" class="cw clip" data-start="18.6333" data-duration="0.4333" data-track-index="0"><span id="cw056s">DIA</span></div>
+    <div id="cw057" class="cw clip" data-start="19.0667" data-duration="0.1333" data-track-index="0"><span id="cw057s">NI</span></div>
+    <div id="cw058" class="cw clip" data-start="19.2" data-duration="0.2" data-track-index="0"><span id="cw058s">TAHAN</span></div>
+    <div id="cw059" class="cw clip" data-start="19.4" data-duration="0.4" data-track-index="0"><span id="cw059s">LASAK</span></div>
+    <div id="cw060" class="cw clip" data-start="19.8" data-duration="0.2667" data-track-index="0"><span id="cw060s">TAU</span></div>
+    <div id="cw061" class="cw clip" data-start="20.0667" data-duration="0.4333" data-track-index="0"><span id="cw061s">WARNA</span></div>
+    <div id="cw062" class="cw clip" data-start="20.5" data-duration="0.2333" data-track-index="0"><span id="cw062s">DIA</span></div>
+    <div id="cw063" class="cw clip" data-start="20.7333" data-duration="0.1333" data-track-index="0"><span id="cw063s">PUN</span></div>
+    <div id="cw064" class="cw clip" data-start="20.8667" data-duration="0.5667" data-track-index="0"><span id="cw064s">CANTIK</span></div>
+    <div id="cw065" class="cw clip" data-start="21.4333" data-duration="0.6667" data-track-index="0"><span id="cw065s">LEPAS</span></div>
+    <div id="cw066" class="cw clip" data-start="22.1" data-duration="0.1667" data-track-index="0"><span id="cw066s">TU</span></div>
+    <div id="cw067" class="cw clip" data-start="22.2667" data-duration="0.1667" data-track-index="0"><span id="cw067s">YANG</span></div>
+    <div id="cw068" class="cw clip" data-start="22.4333" data-duration="0.3333" data-track-index="0"><span id="cw068s">BEST</span></div>
+    <div id="cw069" class="cw clip" data-start="22.7667" data-duration="0.1667" data-track-index="0"><span id="cw069s">DIA</span></div>
+    <div id="cw070" class="cw clip" data-start="22.9333" data-duration="0.9" data-track-index="0"><span id="cw070s">FUNGSI</span></div>
+    <div id="cw071" class="cw clip" data-start="23.8333" data-duration="0.1333" data-track-index="0"><span id="cw071s">DIA</span></div>
+    <div id="cw072" class="cw clip" data-start="23.9667" data-duration="0.2667" data-track-index="0"><span id="cw072s">LAGI</span></div>
+    <div id="cw073" class="cw clip" data-start="24.2333" data-duration="0.7" data-track-index="0"><span id="cw073s">NI</span></div>
+    <div id="cw074" class="cw clip" data-start="24.9333" data-duration="0.3667" data-track-index="0"><span id="cw074s">ANTI</span></div>
+    <div id="cw075" class="cw clip" data-start="25.3" data-duration="0.4" data-track-index="0"><span id="cw075s">UV</span></div>
+    <div id="cw076" class="cw clip" data-start="25.7" data-duration="0.4" data-track-index="0"><span id="cw076s">LIGHT</span></div>
+    <div id="cw077" class="cw clip" data-start="26.1" data-duration="0.2" data-track-index="0"><span id="cw077s">TAU</span></div>
+    <div id="cw078" class="cw clip" data-start="26.3" data-duration="0.3333" data-track-index="0"><span id="cw078s">LEPAS</span></div>
+    <div id="cw079" class="cw clip" data-start="26.6333" data-duration="0.1333" data-track-index="0"><span id="cw079s">TU</span></div>
+    <div id="cw080" class="cw clip" data-start="26.7667" data-duration="0.1333" data-track-index="0"><span id="cw080s">KALAU</span></div>
+    <div id="cw081" class="cw clip" data-start="26.9" data-duration="0.2" data-track-index="0"><span id="cw081s">CAHAYA</span></div>
+    <div id="cw082" class="cw clip" data-start="27.1" data-duration="0.3667" data-track-index="0"><span id="cw082s">MATAHARI</span></div>
+    <div id="cw083" class="cw clip" data-start="27.6333" data-duration="1.0333" data-track-index="0"><span id="cw083s">PHOTOCHROMIC</span></div>
+    <div id="cw084" class="cw clip" data-start="28.6667" data-duration="0.4333" data-track-index="0"><span id="cw084s">DIA</span></div>
+    <div id="cw085" class="cw clip" data-start="29.1" data-duration="0.3" data-track-index="0"><span id="cw085s">JADI</span></div>
+    <div id="cw086" class="cw clip" data-start="29.4" data-duration="0.2333" data-track-index="0"><span id="cw086s">WARNA</span></div>
+    <div id="cw087" class="cw clip" data-start="29.6333" data-duration="0.3333" data-track-index="0"><span id="cw087s">HITAM</span></div>
+    <div id="cw088" class="cw clip" data-start="29.9667" data-duration="0.1667" data-track-index="0"><span id="cw088s">KALAU</span></div>
+    <div id="cw089" class="cw clip" data-start="30.1333" data-duration="0.3" data-track-index="0"><span id="cw089s">KENA</span></div>
+    <div id="cw090" class="cw clip" data-start="30.4333" data-duration="0.5" data-track-index="0"><span id="cw090s">SINARAN</span></div>
+    <div id="cw091" class="cw clip" data-start="30.9333" data-duration="0.3667" data-track-index="0"><span id="cw091s">CAHAYA</span></div>
+    <div id="cw092" class="cw clip" data-start="31.3" data-duration="0.4" data-track-index="0"><span id="cw092s">MATAHARI</span></div>
+    <div id="cw093" class="cw clip" data-start="31.7" data-duration="0.2" data-track-index="0"><span id="cw093s">KALAU</span></div>
+    <div id="cw094" class="cw clip" data-start="31.9" data-duration="0.1667" data-track-index="0"><span id="cw094s">ABANG</span></div>
+    <div id="cw095" class="cw clip" data-start="32.0667" data-duration="0.3333" data-track-index="0"><span id="cw095s">TENGOK</span></div>
+    <div id="cw096" class="cw clip" data-start="32.4" data-duration="0.1667" data-track-index="0"><span id="cw096s">PUN</span></div>
+    <div id="cw097" class="cw clip" data-start="32.5667" data-duration="0.3" data-track-index="0"><span id="cw097s">LAMA</span></div>
+    <div id="cw098" class="cw clip" data-start="32.8667" data-duration="0.3" data-track-index="0"><span id="cw098s">KE</span></div>
+    <div id="cw099" class="cw clip" data-start="33.1667" data-duration="0.4" data-track-index="0"><span id="cw099s">ATAUPUN</span></div>
+    <div id="cw100" class="cw clip" data-start="33.5667" data-duration="0.7667" data-track-index="0"><span id="cw100s">BEKERJA</span></div>
+    <div id="cw101" class="cw clip" data-start="34.3333" data-duration="0.4667" data-track-index="0"><span id="cw101s">DEPAN</span></div>
+    <div id="cw102" class="cw clip" data-start="34.8" data-duration="0.4333" data-track-index="0"><span id="cw102s">LAPTOP</span></div>
+    <div id="cw103" class="cw clip" data-start="35.2333" data-duration="1.0333" data-track-index="0"><span id="cw103s">ATAUPUN</span></div>
+    <div id="cw104" class="cw clip" data-start="36.2667" data-duration="0.4" data-track-index="0"><span id="cw104s">KOMPUTER</span></div>
+    <div id="cw105" class="cw clip" data-start="36.6667" data-duration="0.3" data-track-index="0"><span id="cw105s">KAN</span></div>
+    <div id="cw106" class="cw clip" data-start="36.9667" data-duration="0.3" data-track-index="0"><span id="cw106s">ABANG</span></div>
+    <div id="cw107" class="cw clip" data-start="37.2667" data-duration="0.1667" data-track-index="0"><span id="cw107s">BOLEH</span></div>
+    <div id="cw108" class="cw clip" data-start="37.4333" data-duration="0.2333" data-track-index="0"><span id="cw108s">TENGOK</span></div>
+    <div id="cw109" class="cw clip" data-start="37.6667" data-duration="0.3333" data-track-index="0"><span id="cw109s">LAMA-LAMA</span></div>
+    <div id="cw110" class="cw clip" data-start="38.0" data-duration="0.2333" data-track-index="0"><span id="cw110s">JANGAN</span></div>
+    <div id="cw111" class="cw clip" data-start="38.2333" data-duration="0.3" data-track-index="0"><span id="cw111s">RISAU</span></div>
+    <div id="cw112" class="cw clip" data-start="38.5333" data-duration="0.5667" data-track-index="0"><span id="cw112s">SEBAB</span></div>
+    <div id="cw113" class="cw clip" data-start="39.1" data-duration="0.1333" data-track-index="0"><span id="cw113s">APA</span></div>
+    <div id="cw114" class="cw clip" data-start="39.2333" data-duration="0.1" data-track-index="0"><span id="cw114s">DIA</span></div>
+    <div id="cw115" class="cw clip" data-start="39.3333" data-duration="0.2" data-track-index="0"><span id="cw115s">ANTI</span></div>
+    <div id="cw116" class="cw clip" data-start="39.5333" data-duration="0.3" data-track-index="0"><span id="cw116s">UV</span></div>
+    <div id="cw117" class="cw clip" data-start="39.8333" data-duration="0.3" data-track-index="0"><span id="cw117s">LIGHT</span></div>
+    <div id="cw118" class="cw clip" data-start="40.1333" data-duration="0.2333" data-track-index="0"><span id="cw118s">SO</span></div>
+    <div id="cw119" class="cw clip" data-start="40.3667" data-duration="0.4667" data-track-index="0"><span id="cw119s">MATA</span></div>
+    <div id="cw120" class="cw clip" data-start="40.8333" data-duration="0.1667" data-track-index="0"><span id="cw120s">PUN</span></div>
+    <div id="cw121" class="cw clip" data-start="41.0" data-duration="0.2667" data-track-index="0"><span id="cw121s">TAKKAN</span></div>
+    <div id="cw122" class="cw clip" data-start="41.2667" data-duration="0.3333" data-track-index="0"><span id="cw122s">PENAT</span></div>
+    <div id="cw123" class="cw clip" data-start="41.6" data-duration="0.6" data-track-index="0"><span id="cw123s">ABANG</span></div>
+    <div id="cw124" class="cw clip" data-start="42.2" data-duration="0.3" data-track-index="0"><span id="cw124s">TAKKAN</span></div>
+    <div id="cw125" class="cw clip" data-start="42.5" data-duration="0.2" data-track-index="0"><span id="cw125s">JADI</span></div>
+    <div id="cw126" class="cw clip" data-start="42.7" data-duration="1.0" data-track-index="0"><span id="cw126s">MENGANTUK</span></div>
+    <div id="cw127" class="cw clip" data-start="43.7" data-duration="0.7667" data-track-index="0"><span id="cw127s">YANG</span></div>
+    <div id="cw128" class="cw clip" data-start="44.4667" data-duration="0.2" data-track-index="0"><span id="cw128s">MANA</span></div>
+    <div id="cw129" class="cw clip" data-start="44.6667" data-duration="0.3667" data-track-index="0"><span id="cw129s">DRIVE</span></div>
+    <div id="cw130" class="cw clip" data-start="45.0333" data-duration="0.2667" data-track-index="0"><span id="cw130s">KALAU</span></div>
+    <div id="cw131" class="cw clip" data-start="45.3" data-duration="0.6" data-track-index="0"><span id="cw131s">LAMA-LAMA</span></div>
+    <div id="cw132" class="cw clip" data-start="45.9" data-duration="0.4" data-track-index="0"><span id="cw132s">KENA</span></div>
+    <div id="cw133" class="cw clip" data-start="46.3" data-duration="0.2" data-track-index="0"><span id="cw133s">CAHAYA</span></div>
+    <div id="cw134" class="cw clip" data-start="46.5" data-duration="0.4" data-track-index="0"><span id="cw134s">MATAHARI</span></div>
+    <div id="cw135" class="cw clip" data-start="46.9" data-duration="0.2" data-track-index="0"><span id="cw135s">TU</span></div>
+    <div id="cw136" class="cw clip" data-start="47.1" data-duration="0.1" data-track-index="0"><span id="cw136s">KAN</span></div>
+    <div id="cw137" class="cw clip" data-start="47.2" data-duration="0.7" data-track-index="0"><span id="cw137s">BOLEH</span></div>
+    <div id="cw138" class="cw clip" data-start="47.9" data-duration="0.5667" data-track-index="0"><span id="cw138s">MICROSLEEP</span></div>
+    <div id="cw139" class="cw clip" data-start="48.4667" data-duration="0.3333" data-track-index="0"><span id="cw139s">ABANG</span></div>
+    <div id="cw140" class="cw clip" data-start="48.8" data-duration="0.1667" data-track-index="0"><span id="cw140s">PAKAI</span></div>
+    <div id="cw141" class="cw clip" data-start="48.9667" data-duration="0.1667" data-track-index="0"><span id="cw141s">NI</span></div>
+    <div id="cw142" class="cw clip" data-start="49.1333" data-duration="0.1333" data-track-index="0"><span id="cw142s">MEMANG</span></div>
+    <div id="cw143" class="cw clip" data-start="49.2667" data-duration="0.6667" data-track-index="0"><span id="cw143s">SELESA</span></div>
+    <div id="cw144" class="cw clip" data-start="49.9667" data-duration="0.2667" data-track-index="0"><span id="cw144s">NAK</span></div>
+    <div id="cw145" class="cw clip" data-start="50.2333" data-duration="0.2" data-track-index="0"><span id="cw145s">DAPAT</span></div>
+    <div id="cw146" class="cw clip" data-start="50.4333" data-duration="0.1667" data-track-index="0"><span id="cw146s">MANA</span></div>
+    <div id="cw147" class="cw clip" data-start="50.6" data-duration="0.4" data-track-index="0"><span id="cw147s">TEKAN</span></div>
+    <div id="cw148" class="cw clip" data-start="51.0" data-duration="0.2667" data-track-index="0"><span id="cw148s">LINK</span></div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#cw000s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 0.0);
+    tl.fromTo("#cw001s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 0.4);
+    tl.fromTo("#cw002s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 0.8);
+    tl.fromTo("#cw003s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 1.0667);
+    tl.fromTo("#cw004s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 1.3);
+    tl.fromTo("#cw005s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 1.7);
+    tl.fromTo("#cw006s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 2.0);
+    tl.fromTo("#cw007s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 2.4333);
+    tl.fromTo("#cw008s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 2.8);
+    tl.fromTo("#cw009s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 3.0);
+    tl.fromTo("#cw010s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 3.1);
+    tl.fromTo("#cw011s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 3.6);
+    tl.fromTo("#cw012s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 3.7333);
+    tl.fromTo("#cw013s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 3.8667);
+    tl.fromTo("#cw014s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 4.1);
+    tl.fromTo("#cw015s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 4.6);
+    tl.fromTo("#cw016s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 5.0333);
+    tl.fromTo("#cw017s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 5.2);
+    tl.fromTo("#cw018s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 5.6);
+    tl.fromTo("#cw019s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 5.8);
+    tl.fromTo("#cw020s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 6.3667);
+    tl.fromTo("#cw021s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 6.8);
+    tl.fromTo("#cw022s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 6.9333);
+    tl.fromTo("#cw023s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 7.3333);
+    tl.fromTo("#cw024s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 7.7333);
+    tl.fromTo("#cw025s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 8.6333);
+    tl.fromTo("#cw026s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 9.0667);
+    tl.fromTo("#cw027s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 9.2);
+    tl.fromTo("#cw028s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 9.8);
+    tl.fromTo("#cw030s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 10.6333);
+    tl.fromTo("#cw031s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 11.2667);
+    tl.fromTo("#cw032s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 11.7);
+    tl.fromTo("#cw033s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 11.9333);
+    tl.fromTo("#cw034s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 12.1);
+    tl.fromTo("#cw035s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 12.4333);
+    tl.fromTo("#cw036s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 12.5667);
+    tl.fromTo("#cw037s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 12.7667);
+    tl.fromTo("#cw038s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 13.0);
+    tl.fromTo("#cw039s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 13.4667);
+    tl.fromTo("#cw040s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 13.7667);
+    tl.fromTo("#cw041s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 14.2333);
+    tl.fromTo("#cw043s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 14.7333);
+    tl.fromTo("#cw044s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 15.1);
+    tl.fromTo("#cw045s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 15.2333);
+    tl.fromTo("#cw046s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 15.4);
+    tl.fromTo("#cw047s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 15.6333);
+    tl.fromTo("#cw048s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 16.1);
+    tl.fromTo("#cw049s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 16.5333);
+    tl.fromTo("#cw051s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 16.8333);
+    tl.fromTo("#cw052s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 17.0);
+    tl.fromTo("#cw053s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 17.5);
+    tl.fromTo("#cw054s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 17.7667);
+    tl.fromTo("#cw055s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 18.4333);
+    tl.fromTo("#cw056s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 18.6333);
+    tl.fromTo("#cw057s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 19.0667);
+    tl.fromTo("#cw058s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 19.2);
+    tl.fromTo("#cw059s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 19.4);
+    tl.fromTo("#cw060s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 19.8);
+    tl.fromTo("#cw061s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 20.0667);
+    tl.fromTo("#cw062s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 20.5);
+    tl.fromTo("#cw063s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 20.7333);
+    tl.fromTo("#cw064s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 20.8667);
+    tl.fromTo("#cw065s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 21.4333);
+    tl.fromTo("#cw066s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 22.1);
+    tl.fromTo("#cw067s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 22.2667);
+    tl.fromTo("#cw068s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 22.4333);
+    tl.fromTo("#cw069s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 22.7667);
+    tl.fromTo("#cw070s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 22.9333);
+    tl.fromTo("#cw071s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 23.8333);
+    tl.fromTo("#cw072s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 23.9667);
+    tl.fromTo("#cw073s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 24.2333);
+    tl.fromTo("#cw074s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 24.9333);
+    tl.fromTo("#cw075s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 25.3);
+    tl.fromTo("#cw076s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 25.7);
+    tl.fromTo("#cw077s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 26.1);
+    tl.fromTo("#cw078s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 26.3);
+    tl.fromTo("#cw079s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 26.6333);
+    tl.fromTo("#cw080s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 26.7667);
+    tl.fromTo("#cw081s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 26.9);
+    tl.fromTo("#cw082s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 27.1);
+    tl.fromTo("#cw083s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 27.6333);
+    tl.fromTo("#cw084s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 28.6667);
+    tl.fromTo("#cw085s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 29.1);
+    tl.fromTo("#cw086s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 29.4);
+    tl.fromTo("#cw087s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 29.6333);
+    tl.fromTo("#cw088s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 29.9667);
+    tl.fromTo("#cw089s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 30.1333);
+    tl.fromTo("#cw090s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 30.4333);
+    tl.fromTo("#cw091s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 30.9333);
+    tl.fromTo("#cw092s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 31.3);
+    tl.fromTo("#cw093s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 31.7);
+    tl.fromTo("#cw094s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 31.9);
+    tl.fromTo("#cw095s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 32.0667);
+    tl.fromTo("#cw096s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 32.4);
+    tl.fromTo("#cw097s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 32.5667);
+    tl.fromTo("#cw098s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 32.8667);
+    tl.fromTo("#cw099s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 33.1667);
+    tl.fromTo("#cw100s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 33.5667);
+    tl.fromTo("#cw101s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 34.3333);
+    tl.fromTo("#cw102s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 34.8);
+    tl.fromTo("#cw103s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 35.2333);
+    tl.fromTo("#cw104s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 36.2667);
+    tl.fromTo("#cw105s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 36.6667);
+    tl.fromTo("#cw106s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 36.9667);
+    tl.fromTo("#cw107s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 37.2667);
+    tl.fromTo("#cw108s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 37.4333);
+    tl.fromTo("#cw109s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 37.6667);
+    tl.fromTo("#cw110s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 38.0);
+    tl.fromTo("#cw111s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 38.2333);
+    tl.fromTo("#cw112s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 38.5333);
+    tl.fromTo("#cw113s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 39.1);
+    tl.fromTo("#cw114s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 39.2333);
+    tl.fromTo("#cw115s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 39.3333);
+    tl.fromTo("#cw116s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 39.5333);
+    tl.fromTo("#cw117s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 39.8333);
+    tl.fromTo("#cw118s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 40.1333);
+    tl.fromTo("#cw119s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 40.3667);
+    tl.fromTo("#cw120s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 40.8333);
+    tl.fromTo("#cw121s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 41.0);
+    tl.fromTo("#cw122s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 41.2667);
+    tl.fromTo("#cw123s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 41.6);
+    tl.fromTo("#cw124s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 42.2);
+    tl.fromTo("#cw125s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 42.5);
+    tl.fromTo("#cw126s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 42.7);
+    tl.fromTo("#cw127s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 43.7);
+    tl.fromTo("#cw128s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 44.4667);
+    tl.fromTo("#cw129s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 44.6667);
+    tl.fromTo("#cw130s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 45.0333);
+    tl.fromTo("#cw131s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 45.3);
+    tl.fromTo("#cw132s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 45.9);
+    tl.fromTo("#cw133s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 46.3);
+    tl.fromTo("#cw134s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 46.5);
+    tl.fromTo("#cw135s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 46.9);
+    tl.fromTo("#cw136s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 47.1);
+    tl.fromTo("#cw137s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 47.2);
+    tl.fromTo("#cw138s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 47.9);
+    tl.fromTo("#cw139s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 48.4667);
+    tl.fromTo("#cw140s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 48.8);
+    tl.fromTo("#cw141s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 48.9667);
+    tl.fromTo("#cw142s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 49.1333);
+    tl.fromTo("#cw143s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 49.2667);
+    tl.fromTo("#cw144s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 49.9667);
+    tl.fromTo("#cw145s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 50.2333);
+    tl.fromTo("#cw146s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 50.4333);
+    tl.fromTo("#cw147s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 50.6);
+    tl.fromTo("#cw148s", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.08, ease: "power2.out" }, 51.0);
+    window.__timelines["captions"] = tl;
+  </script>
+</template>
