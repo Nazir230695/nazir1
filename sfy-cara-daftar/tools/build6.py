@@ -373,27 +373,31 @@ build_scene("hook", [
 ])
 
 def price_card():
-    """'orang lain bayar RM6.99' first; on 'RM1' the old price is struck and RM1 / bulan lands beside it"""
-    t0, t1, t_end = W("p3", 28.86) - 0.15, W("p3", 34.94), end("p4")
+    """three rows revealed on the words: before RM6.99 (struck on 'tapi') / join SFY: FREE 6 bulan / then RM1 je"""
+    t0 = W("p3", 28.86) - 0.15          # RM6.99
+    t_strike = W("p3", 30.78)           # tapi
+    t_free = W("p3", 32.14)             # 6 bulan free
+    t_rm1 = W("p3", 34.94)              # RM1
+    t_end = end("p4")
+    row = lambda rid, label, val: (f'<div id="{rid}" class="rowx" style="margin-top:14px">'
+                                   f'<span style="font-size:28px;font-weight:600;color:var(--muted)">{label}</span>{val}</div>')
+    old = ('<span id="vp-old" style="position:relative;font-family:var(--font-num);font-size:52px;font-weight:700;color:#fff">RM6.99'
+           '<span id="vp-strike" style="position:absolute;left:-4px;right:-4px;top:54%;height:5px;border-radius:3px;background:#ee4d2d;transform-origin:0 50%"></span></span>')
+    free = '<span style="font-family:var(--font-num);font-size:46px;font-weight:700;color:var(--gold);white-space:nowrap">FREE 6 bulan</span>'
+    rm1 = '<span style="font-family:var(--font-num);font-size:52px;font-weight:700;color:var(--gold);white-space:nowrap">RM1 je</span>'
     body, js = widget("vp-price",
-        '<div style="position:relative;height:34px">'
-        '<div id="vp-h1" class="hd" style="position:absolute;left:0;right:0">Orang lain bayar</div>'
-        '<div id="vp-h2" class="hd" style="position:absolute;left:0;right:0;color:#fff">Hampa: lepas 6 bulan free</div></div>'
-        '<div style="display:flex;align-items:baseline;justify-content:center;gap:22px;margin-top:8px;white-space:nowrap">'
-        '<span id="vp-old" style="position:relative;font-family:var(--font-num);font-size:72px;font-weight:700;color:#fff">RM6.99'
-        '<span id="vp-strike" style="position:absolute;left:-4px;right:-4px;top:54%;height:6px;border-radius:3px;background:#ee4d2d;transform-origin:0 50%"></span></span>'
-        '<span id="vp-new" style="font-family:var(--font-num);font-size:84px;font-weight:700;color:var(--gold)">RM1'
-        '<span style="font-family:var(--font-ui);font-size:28px;color:#fff"> /bulan</span></span></div>',
-        t0, t_end - t0, top=Y - 30)
+        '<div class="hd"><span style="color:#fff;font-weight:800">Shopee<span style="color:#ee4d2d">VIP</span></span></div>'
+        + row("vp-r1", "Sebelum ni hampa bayar", old)
+        + row("vp-r2", "Join Shopee for Youth", free)
+        + row("vp-r3", "Bulan berikutnya", rm1),
+        t0, t_end - t0, top=Y - 60)
     js += "\n" + "\n".join([
-        f'    tl.set(["#vp-new", "#vp-h2"], {{ opacity: 0 }}, {fr(t0)});',
+        f'    tl.set(["#vp-r2", "#vp-r3"], {{ opacity: 0 }}, {fr(t0)});',
         f'    tl.fromTo("#vp-strike", {{ scaleX: 0 }}, {{ scaleX: 0, duration: 0.01 }}, {fr(t0)});',
-        f'    tl.to("#vp-strike", {{ scaleX: 1, duration: 0.3, ease: "power2.out" }}, {fr(t1 - 0.1)});',
-        f'    tl.fromTo("#vp-old", {{ x: 126 }}, {{ x: 126, duration: 0.01 }}, {fr(t0)});',
-        f'    tl.to("#vp-old", {{ x: 0, opacity: 0.5, duration: 0.4, ease: "power3.inOut" }}, {fr(t1 - 0.15)});',
-        f'    tl.to("#vp-h1", {{ opacity: 0, duration: 0.2 }}, {fr(t1 - 0.1)});',
-        f'    tl.fromTo("#vp-h2", {{ opacity: 0 }}, {{ opacity: 1, duration: 0.3 }}, {fr(t1)});',
-        f'    tl.fromTo("#vp-new", {{ opacity: 0, scale: 0.6 }}, {{ opacity: 1, scale: 1, duration: 0.45, ease: "back.out(1.7)" }}, {fr(t1)});'])
+        f'    tl.to("#vp-strike", {{ scaleX: 1, duration: 0.3, ease: "power2.out" }}, {fr(t_strike)});',
+        f'    tl.to("#vp-old", {{ opacity: 0.5, duration: 0.3 }}, {fr(t_strike)});',
+        f'    tl.fromTo("#vp-r2", {{ opacity: 0, x: -24 }}, {{ opacity: 1, x: 0, duration: 0.4, ease: "expo.out" }}, {fr(t_free)});',
+        f'    tl.fromTo("#vp-r3", {{ opacity: 0, x: -24 }}, {{ opacity: 1, x: 0, duration: 0.4, ease: "expo.out" }}, {fr(t_rm1)});'])
     return body, js
 
 
@@ -446,6 +450,7 @@ SFX = [("sx-hook", "pop.mp3", 0.05, 0.3),
        ("sx-free", "sparkle.mp3", W("p1", 19.46) - 0.2, 0.25),
        ("sx-price", "pop.mp3", W("p3", 28.86) - 0.12, 0.3),
        ("sx-baloi", "sparkle.mp3", SEG["p4"]["start"] + 0.03, 0.22),
+       ("sx-free6", "pop.mp3", W("p3", 32.14) + 0.03, 0.3),
        ("sx-rm1", "pop.mp3", W("p3", 34.94) + 0.03, 0.35),
        ("sx-phone", "whoosh-short.mp3", HOW0, 0.3),
        ("sx-tap1", "click-soft.mp3", W("c1", 38.54), 0.45),
