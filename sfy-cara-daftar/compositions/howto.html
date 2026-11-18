@@ -1,0 +1,85 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; pointer-events: none; 
+      --ink: #ffffff;
+      --muted: rgba(255,255,255,.62);
+      --glass: rgba(18, 19, 22, 0.82);
+      --stroke: rgba(255,255,255,.12);
+      --gold: #f5c542;
+      --rose: #c86b9a;
+      --ok: #34c759;
+      --font-ui: "Montserrat", sans-serif;
+      --font-num: "Oswald", "League Gothic", sans-serif;
+      --orange: #ee4d2d;
+      --teal: #2de2c8;
+ }
+    .widget { position: absolute; left: 50%; width: 600px; margin-left: -330px; padding: 26px 32px; border-radius: 34px;
+      background: var(--glass); border: 1.5px solid var(--stroke); box-shadow: 0 24px 60px rgba(0,0,0,.45);
+      backdrop-filter: blur(20px); color: var(--ink); font-family: var(--font-ui); }
+    .widget .hd { display: flex; align-items: center; justify-content: center; gap: 10px; font-size: 28px; font-weight: 600; color: var(--muted); text-align: center; }
+    .widget .hd svg { width: 30px; height: 30px; flex: none; }
+    .widget .rowx { display: flex; align-items: center; justify-content: space-between; margin-top: 18px; font-size: 32px; font-weight: 700; }
+    .widget .rowx .v { font-family: var(--font-num); font-size: 40px; font-weight: 700; color: var(--ok); letter-spacing: .02em; }
+    .widget .big { margin-top: 6px; text-align: center; font-family: var(--font-num); font-size: 92px; font-weight: 700; color: var(--gold); line-height: 1.05; letter-spacing: .01em; }
+    .pill { display: inline-flex; align-items: center; gap: 10px; padding: 12px 24px; border-radius: 999px;
+      background: #fff; color: #111; font-family: var(--font-ui); font-weight: 800; font-size: 32px; box-shadow: 0 12px 30px rgba(0,0,0,.35); white-space: nowrap; }
+    .pill svg { width: 28px; height: 28px; }
+    .ttl { position: absolute; left: 0; width: 960px; text-align: center; font-family: var(--font-ui); font-weight: 800; color: #fff;
+      font-size: 68px; letter-spacing: .22em; text-transform: uppercase; text-shadow: 0 2px 4px rgba(0,0,0,.6), 0 8px 30px rgba(0,0,0,.7); }
+    .ttl svg { display: block; margin: 8px auto 0; width: 700px; height: 70px; overflow: visible; }
+    .co-lbl { position: absolute; font-family: var(--font-ui); font-weight: 800; font-size: 44px; color: #fff; letter-spacing: .02em;
+      text-transform: uppercase; text-shadow: 0 4px 18px rgba(0,0,0,.6); white-space: nowrap; padding-bottom: 8px; border-bottom: 3px solid #fff; }
+    .co svg { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; overflow: visible; }
+    .neon svg { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; overflow: visible; }
+    .neon path, .neon circle { filter: drop-shadow(0 0 10px rgba(45,226,200,.9)) drop-shadow(0 0 24px rgba(45,226,200,.55)); }
+    .fcard { position: absolute; width: 290px; padding: 22px 22px 20px; border-radius: 28px; background: var(--glass);
+      border: 1.5px solid rgba(45,226,200,.45); box-shadow: 0 0 30px rgba(45,226,200,.25), 0 20px 50px rgba(0,0,0,.5);
+      color: #fff; font-family: var(--font-ui); text-align: center; }
+    .fcard .n { font-family: var(--font-num); font-size: 70px; font-weight: 700; line-height: 1; color: var(--gold); }
+    .fcard .l { margin-top: 8px; font-size: 28px; font-weight: 700; }
+
+  </style>
+  <div id="root" data-composition-id="howto" data-width="1080" data-height="1920">
+    <div id="ph" class=" clip" data-start="22.7" data-duration="23.5333" data-track-index="0" style="position:absolute; left:540px; top:430px; width:400px; height:760px; border-radius:56px; background:#0d0d0f; border:2px solid rgba(255,255,255,.18); box-shadow:0 30px 80px rgba(0,0,0,.55)" data-layout-allow-overflow><div style="position:absolute; inset:12px; border-radius:44px; overflow:hidden; background:linear-gradient(180deg,#24326b,#16204a)"><img id="ph-s1" class="clip" src="assets/img/app-home.jpg" data-start="22.7" data-duration="3.0667" data-track-index="1" style="position:absolute; left:0; top:138px; width:376px; border-radius:6px" alt=""/><img id="ph-s2" class="clip" src="assets/img/app-ways.jpg" data-start="25.7667" data-duration="2.2333" data-track-index="1" style="position:absolute; left:0; top:190px; width:376px; border-radius:6px" alt=""/><img id="ph-s3" class="clip" src="assets/img/app-mykad.jpg" data-start="28.0" data-duration="2.9667" data-track-index="1" style="position:absolute; left:0; top:18px; width:376px; border-radius:6px" alt=""/><img id="ph-s4" class="clip" src="assets/img/app-form.jpg" data-start="30.9667" data-duration="4.1" data-track-index="1" style="position:absolute; left:0; top:19px; width:376px; border-radius:6px" alt=""/><img id="ph-s5" class="clip" src="assets/img/app-home.jpg" data-start="35.0667" data-duration="2.7" data-track-index="1" style="position:absolute; left:0; top:138px; width:376px; border-radius:6px" alt=""/><img id="ph-s6" class="clip" src="assets/img/app-home.jpg" data-start="37.7667" data-duration="8.4667" data-track-index="1" style="position:absolute; left:0; top:138px; width:376px; border-radius:6px" alt=""/></div></div>
+    <div id="phc0" class=" clip" data-start="22.7" data-duration="3.0667" data-track-index="2" style="position:absolute; left:480px; width:520px; top:344px; text-align:center"><span id="phc0i" class="pill" style="position:relative">Buka Shopee for Youth</span></div>
+    <div id="phc1" class=" clip" data-start="25.7667" data-duration="2.2333" data-track-index="2" style="position:absolute; left:480px; width:520px; top:344px; text-align:center"><span id="phc1i" class="pill" style="position:relative">2 cara untuk join</span></div>
+    <div id="phc2" class=" clip" data-start="28.0" data-duration="2.9667" data-track-index="2" style="position:absolute; left:480px; width:520px; top:344px; text-align:center"><span id="phc2i" class="pill" style="position:relative">Cara 1 · Scan MyKad</span></div>
+    <div id="phc3" class=" clip" data-start="30.9667" data-duration="4.1" data-track-index="2" style="position:absolute; left:480px; width:520px; top:344px; text-align:center"><span id="phc3i" class="pill" style="position:relative">Cara 2 · Email pelajar</span></div>
+    <div id="phc4" class=" clip" data-start="35.0667" data-duration="2.7" data-track-index="2" style="position:absolute; left:480px; width:520px; top:344px; text-align:center"><span id="phc4i" class="pill" style="position:relative">Siap! Dah jadi member ✓</span></div>
+    <div id="phc5" class=" clip" data-start="37.7667" data-duration="8.4667" data-track-index="2" style="position:absolute; left:480px; width:520px; top:344px; text-align:center"><span id="phc5i" class="pill" style="position:relative">Claim VIP percuma</span></div>
+    <div id="pht0" class=" clip" data-start="24.0" data-duration="1.0" data-track-index="3" style="position:absolute; inset:0" data-layout-ignore><div id="pht0r" style="position:absolute; left:828px; top:609px; width:68px; height:68px; border-radius:50%; border:4px solid #fff; box-shadow:0 0 18px rgba(255,255,255,.9)"></div></div>
+    <div id="pht3" class=" clip" data-start="34.2" data-duration="1.0" data-track-index="3" style="position:absolute; inset:0" data-layout-ignore><div id="pht3r" style="position:absolute; left:706px; top:1000px; width:68px; height:68px; border-radius:50%; border:4px solid #fff; box-shadow:0 0 18px rgba(255,255,255,.9)"></div></div>
+    <div id="pht5" class=" clip" data-start="40.9" data-duration="1.0" data-track-index="3" style="position:absolute; inset:0" data-layout-ignore><div id="pht5r" style="position:absolute; left:668px; top:878px; width:68px; height:68px; border-radius:50%; border:4px solid #fff; box-shadow:0 0 18px rgba(255,255,255,.9)"></div></div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#ph", { opacity: 0, x: 140, rotation: 5 }, { opacity: 1, x: 0, rotation: 0, duration: 0.8, ease: "expo.out" }, 22.7);
+    tl.fromTo("#ph-s1", { opacity: 0, scale: 0.96 }, { opacity: 1, scale: 1, duration: 0.35, ease: "power2.out" }, 22.7);
+    tl.fromTo("#phc0i", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.4, ease: "expo.out" }, 22.7);
+    tl.to("#phc0", { opacity: 0, filter: "blur(8px)", duration: 0.2, ease: "power2.in" }, 25.5333);
+    tl.fromTo("#pht0r", { opacity: 0, scale: 0.4 }, { opacity: 1, scale: 1, duration: 0.3, ease: "back.out(2)" }, 24.0);
+    tl.to("#pht0r", { opacity: 0, scale: 1.5, duration: 0.45, ease: "power2.out" }, 24.4667);
+    tl.fromTo("#ph-s2", { opacity: 0, scale: 0.96 }, { opacity: 1, scale: 1, duration: 0.35, ease: "power2.out" }, 25.7667);
+    tl.fromTo("#phc1i", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.4, ease: "expo.out" }, 25.7667);
+    tl.to("#phc1", { opacity: 0, filter: "blur(8px)", duration: 0.2, ease: "power2.in" }, 27.7667);
+    tl.fromTo("#ph-s3", { opacity: 0, scale: 0.96 }, { opacity: 1, scale: 1, duration: 0.35, ease: "power2.out" }, 28.0);
+    tl.fromTo("#phc2i", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.4, ease: "expo.out" }, 28.0);
+    tl.to("#phc2", { opacity: 0, filter: "blur(8px)", duration: 0.2, ease: "power2.in" }, 30.7333);
+    tl.fromTo("#ph-s4", { opacity: 0, scale: 0.96 }, { opacity: 1, scale: 1, duration: 0.35, ease: "power2.out" }, 30.9667);
+    tl.fromTo("#phc3i", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.4, ease: "expo.out" }, 30.9667);
+    tl.to("#phc3", { opacity: 0, filter: "blur(8px)", duration: 0.2, ease: "power2.in" }, 34.8333);
+    tl.fromTo("#pht3r", { opacity: 0, scale: 0.4 }, { opacity: 1, scale: 1, duration: 0.3, ease: "back.out(2)" }, 34.2);
+    tl.to("#pht3r", { opacity: 0, scale: 1.5, duration: 0.45, ease: "power2.out" }, 34.6667);
+    tl.fromTo("#ph-s5", { opacity: 0, scale: 0.96 }, { opacity: 1, scale: 1, duration: 0.35, ease: "power2.out" }, 35.0667);
+    tl.fromTo("#phc4i", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.4, ease: "expo.out" }, 35.0667);
+    tl.to("#phc4", { opacity: 0, filter: "blur(8px)", duration: 0.2, ease: "power2.in" }, 37.5333);
+    tl.fromTo("#ph-s6", { opacity: 0, scale: 0.96 }, { opacity: 1, scale: 1, duration: 0.35, ease: "power2.out" }, 37.7667);
+    tl.to("#ph-s6", { scale: 1.7, transformOrigin: "25% 84%", duration: 1.2, ease: "power2.inOut" }, 38.2667);
+    tl.fromTo("#phc5i", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.4, ease: "expo.out" }, 37.7667);
+    tl.to("#phc5", { opacity: 0, filter: "blur(8px)", duration: 0.2, ease: "power2.in" }, 46.0);
+    tl.fromTo("#pht5r", { opacity: 0, scale: 0.4 }, { opacity: 1, scale: 1, duration: 0.3, ease: "back.out(2)" }, 40.9);
+    tl.to("#pht5r", { opacity: 0, scale: 1.5, duration: 0.45, ease: "power2.out" }, 41.3333);
+    tl.to("#ph", { opacity: 0, x: 140, duration: 0.4, ease: "power2.in" }, 45.8);
+    window.__timelines["howto"] = tl;
+  </script>
+</template>

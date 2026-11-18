@@ -1,0 +1,968 @@
+[
+{
+"text": "Haa",
+"start": 1.68,
+"end": 2.3,
+"p": 0.84
+},
+{
+"text": "ni",
+"start": 2.3,
+"end": 2.54,
+"p": 0.89
+},
+{
+"text": "Kalau",
+"start": 2.54,
+"end": 2.88,
+"p": 0.02
+},
+{
+"text": "Ampoh",
+"start": 2.88,
+"end": 3.46,
+"p": 0.5
+},
+{
+"text": "umur",
+"start": 3.46,
+"end": 3.88,
+"p": 0.98
+},
+{
+"text": "18",
+"start": 3.88,
+"end": 4.32,
+"p": 1.0
+},
+{
+"text": "hingga",
+"start": 4.32,
+"end": 4.68,
+"p": 0.98
+},
+{
+"text": "24",
+"start": 4.68,
+"end": 4.9,
+"p": 1.0
+},
+{
+"text": "Ampoh",
+"start": 4.9,
+"end": 5.28,
+"p": 0.84
+},
+{
+"text": "tengok",
+"start": 5.28,
+"end": 5.48,
+"p": 1.0
+},
+{
+"text": "video",
+"start": 5.48,
+"end": 5.68,
+"p": 0.97
+},
+{
+"text": "aku",
+"start": 5.68,
+"end": 5.82,
+"p": 0.91
+},
+{
+"text": "sampai",
+"start": 5.82,
+"end": 6.02,
+"p": 0.99
+},
+{
+"text": "habis",
+"start": 6.02,
+"end": 6.38,
+"p": 1.0
+},
+{
+"text": "Pasal",
+"start": 6.38,
+"end": 6.96,
+"p": 0.92
+},
+{
+"text": "apa",
+"start": 6.96,
+"end": 7.12,
+"p": 0.16
+},
+{
+"text": "ni",
+"start": 7.12,
+"end": 7.42,
+"p": 0.95
+},
+{
+"text": "aku",
+"start": 7.42,
+"end": 7.56,
+"p": 0.9
+},
+{
+"text": "nak",
+"start": 7.56,
+"end": 7.68,
+"p": 1.0
+},
+{
+"text": "bagitahu",
+"start": 7.68,
+"end": 8.0,
+"p": 0.93
+},
+{
+"text": "Ampoh",
+"start": 8.0,
+"end": 8.22,
+"p": 1.0
+},
+{
+"text": "Ampoh",
+"start": 8.94,
+"end": 9.56,
+"p": 1.0
+},
+{
+"text": "pernah",
+"start": 9.56,
+"end": 9.72,
+"p": 1.0
+},
+{
+"text": "dengar",
+"start": 9.72,
+"end": 10.04,
+"p": 1.0
+},
+{
+"text": "Shopee",
+"start": 10.04,
+"end": 10.44,
+"p": 0.99
+},
+{
+"text": "VIP",
+"start": 10.44,
+"end": 10.6,
+"p": 0.91
+},
+{
+"text": "Haa",
+"start": 10.6,
+"end": 11.46,
+"p": 0.99
+},
+{
+"text": "banyak",
+"start": 11.46,
+"end": 11.92,
+"p": 0.95
+},
+{
+"text": "kan",
+"start": 11.92,
+"end": 12.14,
+"p": 0.94
+},
+{
+"text": "kelebihan",
+"start": 12.14,
+"end": 12.56,
+"p": 0.98
+},
+{
+"text": "dia",
+"start": 12.56,
+"end": 12.72,
+"p": 1.0
+},
+{
+"text": "kan",
+"start": 12.72,
+"end": 12.88,
+"p": 1.0
+},
+{
+"text": "Tapi",
+"start": 12.88,
+"end": 13.46,
+"p": 1.0
+},
+{
+"text": "kat",
+"start": 13.46,
+"end": 13.74,
+"p": 1.0
+},
+{
+"text": "sini",
+"start": 13.74,
+"end": 13.92,
+"p": 1.0
+},
+{
+"text": "aku",
+"start": 13.92,
+"end": 14.12,
+"p": 1.0
+},
+{
+"text": "nak",
+"start": 14.12,
+"end": 14.26,
+"p": 1.0
+},
+{
+"text": "bagitahu",
+"start": 14.26,
+"end": 14.74,
+"p": 1.0
+},
+{
+"text": "Untuk",
+"start": 14.74,
+"end": 15.8,
+"p": 1.0
+},
+{
+"text": "umur",
+"start": 15.8,
+"end": 16.22,
+"p": 1.0
+},
+{
+"text": "18",
+"start": 16.22,
+"end": 16.52,
+"p": 1.0
+},
+{
+"text": "hingga",
+"start": 16.52,
+"end": 17.28,
+"p": 1.0
+},
+{
+"text": "24",
+"start": 17.28,
+"end": 17.54,
+"p": 1.0
+},
+{
+"text": "Ampoh",
+"start": 17.54,
+"end": 18.52,
+"p": 1.0
+},
+{
+"text": "dapat",
+"start": 18.52,
+"end": 18.7,
+"p": 1.0
+},
+{
+"text": "peluang",
+"start": 18.7,
+"end": 19.46,
+"p": 1.0
+},
+{
+"text": "Selama",
+"start": 19.46,
+"end": 20.44,
+"p": 0.94
+},
+{
+"text": "6",
+"start": 20.44,
+"end": 20.78,
+"p": 1.0
+},
+{
+"text": "bulan",
+"start": 20.78,
+"end": 21.2,
+"p": 1.0
+},
+{
+"text": "free",
+"start": 21.2,
+"end": 21.46,
+"p": 0.99
+},
+{
+"text": "yau",
+"start": 21.46,
+"end": 21.82,
+"p": 0.58
+},
+{
+"text": "6",
+"start": 21.82,
+"end": 22.06,
+"p": 0.92
+},
+{
+"text": "bulan",
+"start": 22.06,
+"end": 22.58,
+"p": 1.0
+},
+{
+"text": "free",
+"start": 22.58,
+"end": 22.86,
+"p": 1.0
+},
+{
+"text": "Lepas",
+"start": 22.86,
+"end": 23.62,
+"p": 1.0
+},
+{
+"text": "tu",
+"start": 23.62,
+"end": 23.78,
+"p": 1.0
+},
+{
+"text": "Kemudian",
+"start": 24.46,
+"end": 25.08,
+"p": 0.98
+},
+{
+"text": "-kemudian",
+"start": 25.08,
+"end": 25.5,
+"p": 0.98
+},
+{
+"text": "tu",
+"start": 25.5,
+"end": 25.64,
+"p": 1.0
+},
+{
+"text": "Ampoh",
+"start": 25.64,
+"end": 26.0,
+"p": 1.0
+},
+{
+"text": "bayar",
+"start": 26.0,
+"end": 26.24,
+"p": 0.99
+},
+{
+"text": "RM1",
+"start": 26.24,
+"end": 26.56,
+"p": 0.57
+},
+{
+"text": "je",
+"start": 26.56,
+"end": 26.7,
+"p": 0.8
+},
+{
+"text": "Kalau",
+"start": 26.7,
+"end": 27.22,
+"p": 1.0
+},
+{
+"text": "sebelum",
+"start": 27.22,
+"end": 27.76,
+"p": 1.0
+},
+{
+"text": "ni",
+"start": 27.76,
+"end": 27.88,
+"p": 1.0
+},
+{
+"text": "orang",
+"start": 27.88,
+"end": 28.18,
+"p": 0.45
+},
+{
+"text": "lain",
+"start": 28.18,
+"end": 28.4,
+"p": 1.0
+},
+{
+"text": "kena",
+"start": 28.4,
+"end": 28.56,
+"p": 1.0
+},
+{
+"text": "bayar",
+"start": 28.56,
+"end": 28.86,
+"p": 1.0
+},
+{
+"text": "RM6",
+"start": 28.86,
+"end": 30.26,
+"p": 0.91
+},
+{
+"text": ".99",
+"start": 30.26,
+"end": 30.78,
+"p": 0.98
+},
+{
+"text": "Tapi",
+"start": 30.78,
+"end": 31.54,
+"p": 0.37
+},
+{
+"text": "untuk",
+"start": 31.54,
+"end": 32.14,
+"p": 0.89
+},
+{
+"text": "6",
+"start": 32.14,
+"end": 32.54,
+"p": 0.03
+},
+{
+"text": "bulan",
+"start": 32.54,
+"end": 33.22,
+"p": 1.0
+},
+{
+"text": "free",
+"start": 33.22,
+"end": 33.4,
+"p": 0.96
+},
+{
+"text": "dan",
+"start": 33.4,
+"end": 33.96,
+"p": 0.18
+},
+{
+"text": "hanya",
+"start": 33.96,
+"end": 34.34,
+"p": 0.96
+},
+{
+"text": "perlu",
+"start": 34.34,
+"end": 34.64,
+"p": 0.97
+},
+{
+"text": "bayar",
+"start": 34.64,
+"end": 34.94,
+"p": 1.0
+},
+{
+"text": "RM1",
+"start": 34.94,
+"end": 35.38,
+"p": 0.96
+},
+{
+"text": "lepas",
+"start": 35.38,
+"end": 35.78,
+"p": 0.95
+},
+{
+"text": "6",
+"start": 35.78,
+"end": 35.9,
+"p": 1.0
+},
+{
+"text": "bulan",
+"start": 35.9,
+"end": 36.2,
+"p": 1.0
+},
+{
+"text": "Memang",
+"start": 36.2,
+"end": 36.74,
+"p": 0.65
+},
+{
+"text": "berbaloi",
+"start": 36.74,
+"end": 37.16,
+"p": 0.99
+},
+{
+"text": "Cara",
+"start": 37.16,
+"end": 37.46,
+"p": 0.08
+},
+{
+"text": "dia",
+"start": 37.46,
+"end": 38.12,
+"p": 0.89
+},
+{
+"text": "mudah,",
+"start": 38.12,
+"end": 38.54,
+"p": 1.0
+},
+{
+"text": "join",
+"start": 38.54,
+"end": 38.98,
+"p": 0.65
+},
+{
+"text": "je",
+"start": 38.98,
+"end": 39.52,
+"p": 0.55
+},
+{
+"text": "Shopee4u",
+"start": 39.52,
+"end": 40.32,
+"p": 0.74
+},
+{
+"text": "Cara",
+"start": 40.32,
+"end": 40.92,
+"p": 0.75
+},
+{
+"text": "nak",
+"start": 40.92,
+"end": 42.76,
+"p": 0.97
+},
+{
+"text": "daftar",
+"start": 42.76,
+"end": 43.2,
+"p": 0.99
+},
+{
+"text": "dia,",
+"start": 43.2,
+"end": 43.32,
+"p": 0.78
+},
+{
+"text": "menggunakan",
+"start": 43.38,
+"end": 44.2,
+"p": 0.94
+},
+{
+"text": "IC",
+"start": 44.2,
+"end": 44.74,
+"p": 0.98
+},
+{
+"text": "Ataupun",
+"start": 44.74,
+"end": 46.16,
+"p": 0.94
+},
+{
+"text": "cara",
+"start": 46.16,
+"end": 46.42,
+"p": 0.98
+},
+{
+"text": "kedua",
+"start": 46.42,
+"end": 47.0,
+"p": 0.99
+},
+{
+"text": "dia,",
+"start": 47.0,
+"end": 47.26,
+"p": 0.75
+},
+{
+"text": "boleh",
+"start": 47.36,
+"end": 47.78,
+"p": 0.44
+},
+{
+"text": "daftar",
+"start": 47.78,
+"end": 48.84,
+"p": 1.0
+},
+{
+"text": "menggunakan",
+"start": 48.84,
+"end": 49.4,
+"p": 0.99
+},
+{
+"text": "student",
+"start": 49.4,
+"end": 49.78,
+"p": 0.95
+},
+{
+"text": "email",
+"start": 49.78,
+"end": 50.28,
+"p": 0.99
+},
+{
+"text": "Lepas",
+"start": 50.28,
+"end": 51.76,
+"p": 0.98
+},
+{
+"text": "dah",
+"start": 51.76,
+"end": 51.9,
+"p": 0.59
+},
+{
+"text": "settle",
+"start": 51.9,
+"end": 52.22,
+"p": 0.83
+},
+{
+"text": "daftar",
+"start": 52.22,
+"end": 52.76,
+"p": 1.0
+},
+{
+"text": "tu,",
+"start": 52.76,
+"end": 52.94,
+"p": 0.92
+},
+{
+"text": "join",
+"start": 53.0,
+"end": 53.86,
+"p": 0.95
+},
+{
+"text": "je",
+"start": 53.86,
+"end": 54.46,
+"p": 0.99
+},
+{
+"text": "boleh",
+"start": 54.46,
+"end": 55.24,
+"p": 0.05
+},
+{
+"text": "register",
+"start": 55.24,
+"end": 55.8,
+"p": 1.0
+},
+{
+"text": "untuk",
+"start": 55.8,
+"end": 56.42,
+"p": 1.0
+},
+{
+"text": "Shopee",
+"start": 56.42,
+"end": 57.58,
+"p": 1.0
+},
+{
+"text": "VIP",
+"start": 57.58,
+"end": 57.82,
+"p": 0.8
+},
+{
+"text": "IP",
+"start": 57.82,
+"end": 58.04,
+"p": 0.16
+},
+{
+"text": "percuma",
+"start": 58.04,
+"end": 58.92,
+"p": 0.93
+},
+{
+"text": "selama",
+"start": 58.92,
+"end": 59.64,
+"p": 1.0
+},
+{
+"text": "6",
+"start": 59.64,
+"end": 59.94,
+"p": 0.94
+},
+{
+"text": "bulan",
+"start": 59.94,
+"end": 60.64,
+"p": 1.0
+},
+{
+"text": "untuk",
+"start": 60.64,
+"end": 61.32,
+"p": 0.9
+},
+{
+"text": "segala",
+"start": 61.32,
+"end": 62.3,
+"p": 1.0
+},
+{
+"text": "benefit",
+"start": 62.3,
+"end": 62.52,
+"p": 0.95
+},
+{
+"text": "dia.",
+"start": 62.52,
+"end": 62.82,
+"p": 1.0
+},
+{
+"text": "Dan",
+"start": 62.92,
+"end": 63.38,
+"p": 0.99
+},
+{
+"text": "selepas",
+"start": 63.38,
+"end": 64.3,
+"p": 1.0
+},
+{
+"text": "6",
+"start": 64.3,
+"end": 64.46,
+"p": 1.0
+},
+{
+"text": "bulan,",
+"start": 64.46,
+"end": 64.86,
+"p": 1.0
+},
+{
+"text": "ampuh",
+"start": 64.86,
+"end": 65.16,
+"p": 0.22
+},
+{
+"text": "hanya",
+"start": 65.16,
+"end": 65.26,
+"p": 0.95
+},
+{
+"text": "perlu",
+"start": 65.26,
+"end": 65.56,
+"p": 1.0
+},
+{
+"text": "bayar",
+"start": 65.56,
+"end": 65.92,
+"p": 1.0
+},
+{
+"text": "RM1",
+"start": 65.92,
+"end": 66.72,
+"p": 0.96
+},
+{
+"text": "sahaja.",
+"start": 66.72,
+"end": 67.06,
+"p": 0.97
+},
+{
+"text": "Memang",
+"start": 67.22,
+"end": 67.8,
+"p": 1.0
+},
+{
+"text": "berbaloi",
+"start": 67.8,
+"end": 68.18,
+"p": 0.99
+},
+{
+"text": "geng.",
+"start": 68.18,
+"end": 68.5,
+"p": 0.65
+},
+{
+"text": "Kalau",
+"start": 68.5,
+"end": 68.94,
+"p": 1.0
+},
+{
+"text": "ampuh",
+"start": 68.94,
+"end": 69.16,
+"p": 0.92
+},
+{
+"text": "rasa",
+"start": 69.16,
+"end": 69.36,
+"p": 0.65
+},
+{
+"text": "bermanfaat",
+"start": 69.36,
+"end": 70.02,
+"p": 1.0
+},
+{
+"text": "video",
+"start": 70.02,
+"end": 70.24,
+"p": 0.99
+},
+{
+"text": "ni,",
+"start": 70.24,
+"end": 70.5,
+"p": 0.97
+},
+{
+"text": "ampuh",
+"start": 70.52,
+"end": 70.72,
+"p": 1.0
+},
+{
+"text": "share",
+"start": 70.72,
+"end": 70.98,
+"p": 1.0
+},
+{
+"text": "banyak",
+"start": 70.98,
+"end": 71.2,
+"p": 1.0
+},
+{
+"text": "-banyak",
+"start": 71.2,
+"end": 71.52,
+"p": 1.0
+},
+{
+"text": "biar",
+"start": 71.52,
+"end": 71.76,
+"p": 0.97
+},
+{
+"text": "semua",
+"start": 71.76,
+"end": 72.04,
+"p": 1.0
+},
+{
+"text": "tau.",
+"start": 72.04,
+"end": 72.3,
+"p": 0.46
+},
+{
+"text": "Special",
+"start": 72.68,
+"end": 73.28,
+"p": 0.86
+},
+{
+"text": "untuk",
+"start": 73.28,
+"end": 73.64,
+"p": 1.0
+},
+{
+"text": "umur",
+"start": 73.64,
+"end": 74.06,
+"p": 1.0
+},
+{
+"text": "18",
+"start": 74.06,
+"end": 74.44,
+"p": 0.99
+},
+{
+"text": "hingga",
+"start": 74.44,
+"end": 74.64,
+"p": 0.96
+},
+{
+"text": "24.",
+"start": 74.64,
+"end": 74.82,
+"p": 1.0
+}
+]
