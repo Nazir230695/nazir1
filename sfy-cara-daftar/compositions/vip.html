@@ -41,17 +41,22 @@
   </style>
   <div id="root" data-composition-id="vip" data-width="1080" data-height="1920">
     <div id="vp-free" class="widget clip" data-start="14.3333" data-duration="2.1667" data-track-index="0" style="top:830px"><div class="hd"><span style="color:#fff;font-weight:800">Shopee<span style="color:#ee4d2d">VIP</span> · umur 18–24</span></div><div class="big" style="font-size:84px">PERCUMA</div><div style="text-align:center;font-size:30px;font-weight:700">untuk 6 bulan pertama</div></div>
-    <div id="vp-price" class="widget clip" data-start="16.5333" data-duration="5.0667" data-track-index="0" style="top:830px"><div class="hd"><span>Lepas 6 bulan</span></div><div style="display:flex;align-items:baseline;justify-content:center;gap:26px;margin-top:6px"><span id="vp-old" style="font-family:var(--font-num);font-size:56px;font-weight:700;color:rgba(255,255,255,.55);text-decoration:line-through">RM6.99</span><span style="font-family:var(--font-num);font-size:96px;font-weight:700;color:var(--gold)">RM1</span><span style="font-size:32px;font-weight:700">/ bulan</span></div></div>
-    <div id="vp-baloi" class=" clip" data-start="21.6667" data-duration="0.9667" data-track-index="0" style="position:absolute; left:0px; width:1080px; top:880px; text-align:center"><span id="vp-baloii" class="pill" style="position:relative"><svg viewBox="0 0 24 24" fill="#f5c542"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><span>Memang berbaloi!</span></span></div>
+    <div id="vp-price" class="widget clip" data-start="18.5333" data-duration="8.4333" data-track-index="0" style="top:830px"><div style="position:relative;height:34px"><div id="vp-h1" class="hd" style="position:absolute;left:0;right:0">Orang lain bayar</div><div id="vp-h2" class="hd" style="position:absolute;left:0;right:0;color:#fff">Abang: lepas 6 bulan free</div></div><div style="display:flex;align-items:baseline;justify-content:center;gap:22px;margin-top:8px;white-space:nowrap"><span id="vp-old" style="position:relative;font-family:var(--font-num);font-size:72px;font-weight:700;color:#fff">RM6.99<span id="vp-strike" style="position:absolute;left:-4px;right:-4px;top:54%;height:6px;border-radius:3px;background:#ee4d2d;transform-origin:0 50%"></span></span><span id="vp-new" style="font-family:var(--font-num);font-size:84px;font-weight:700;color:var(--gold)">RM1<span style="font-family:var(--font-ui);font-size:28px;color:#fff"> /bulan</span></span></div></div>
   </div>
   <script>
     const tl = gsap.timeline({ paused: true });
     tl.fromTo("#vp-free", { opacity: 0, y: -20, filter: "blur(10px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.42, ease: "expo.out" }, 14.3333);
     tl.to("#vp-free", { opacity: 0, filter: "blur(8px)", duration: 0.2, ease: "power2.in" }, 16.2667);
-    tl.fromTo("#vp-price", { opacity: 0, y: -20, filter: "blur(10px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.42, ease: "expo.out" }, 16.5333);
-    tl.to("#vp-price", { opacity: 0, filter: "blur(8px)", duration: 0.2, ease: "power2.in" }, 21.4);
-    tl.fromTo("#vp-baloii", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.45, ease: "back.out(1.6)" }, 21.6667);
-    tl.to("#vp-baloi", { opacity: 0, filter: "blur(8px)", duration: 0.2, ease: "power2.in" }, 22.4);
+    tl.fromTo("#vp-price", { opacity: 0, y: -20, filter: "blur(10px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.42, ease: "expo.out" }, 18.5333);
+    tl.to("#vp-price", { opacity: 0, filter: "blur(8px)", duration: 0.2, ease: "power2.in" }, 26.7333);
+    tl.set(["#vp-new", "#vp-h2"], { opacity: 0 }, 18.5333);
+    tl.fromTo("#vp-strike", { scaleX: 0 }, { scaleX: 0, duration: 0.01 }, 18.5333);
+    tl.to("#vp-strike", { scaleX: 1, duration: 0.3, ease: "power2.out" }, 24.6667);
+    tl.fromTo("#vp-old", { x: 126 }, { x: 126, duration: 0.01 }, 18.5333);
+    tl.to("#vp-old", { x: 0, opacity: 0.5, duration: 0.4, ease: "power3.inOut" }, 24.6333);
+    tl.to("#vp-h1", { opacity: 0, duration: 0.2 }, 24.6667);
+    tl.fromTo("#vp-h2", { opacity: 0 }, { opacity: 1, duration: 0.3 }, 24.7667);
+    tl.fromTo("#vp-new", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.45, ease: "back.out(1.7)" }, 24.7667);
     window.__timelines["vip"] = tl;
   </script>
 </template>

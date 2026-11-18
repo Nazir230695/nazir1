@@ -40,15 +40,15 @@
 
   </style>
   <div id="root" data-composition-id="cta" data-width="1080" data-height="1920">
-    <div id="ct-share" class=" clip" data-start="46.3333" data-duration="3.8333" data-track-index="0" style="position:absolute; left:0px; width:1080px; top:880px; text-align:center"><span id="ct-sharei" class="pill" style="position:relative"><svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 5l6 6-6 6M20 11H10a6 6 0 0 0-6 6v1"/></svg><span>Jom ajak kawan!</span></span></div>
-    <div id="ct-banner" class="widget clip" data-start="50.2333" data-duration="3.7667" data-track-index="0" style="top:840px; width:940px; margin-left:-500px; padding:10px; border-radius:34px"><img src="assets/img/sfy-banner.jpg" alt="" style="display:block;width:100%;border-radius:24px"/></div>
+    <div id="ct-share" class=" clip" data-start="50.7" data-duration="3.8333" data-track-index="0" style="position:absolute; left:0px; width:1080px; top:880px; text-align:center"><span id="ct-sharei" class="pill" style="position:relative"><svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 5l6 6-6 6M20 11H10a6 6 0 0 0-6 6v1"/></svg><span>Jom ajak kawan!</span></span></div>
+    <div id="ct-banner" class="widget clip" data-start="54.6" data-duration="3.7333" data-track-index="0" style="top:840px; width:940px; margin-left:-500px; padding:10px; border-radius:34px"><img src="assets/img/sfy-banner.jpg" alt="" style="display:block;width:100%;border-radius:24px"/></div>
   </div>
   <script>
     const tl = gsap.timeline({ paused: true });
-    tl.fromTo("#ct-sharei", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.45, ease: "back.out(1.6)" }, 46.3333);
-    tl.to("#ct-share", { opacity: 0, filter: "blur(8px)", duration: 0.2, ease: "power2.in" }, 49.9333);
-    tl.fromTo("#ct-banner", { opacity: 0, y: -40, scale: 0.92, filter: "blur(12px)" }, { opacity: 1, y: 0, scale: 1, filter: "blur(0px)", duration: 0.6, ease: "expo.out" }, 50.2333);
-    tl.to("#ct-banner", { opacity: 0, filter: "blur(8px)", duration: 0.2, ease: "power2.in" }, 53.7333);
+    tl.fromTo("#ct-sharei", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.45, ease: "back.out(1.6)" }, 50.7);
+    tl.to("#ct-share", { opacity: 0, filter: "blur(8px)", duration: 0.2, ease: "power2.in" }, 54.3);
+    tl.fromTo("#ct-banner", { opacity: 0, y: -40, scale: 0.92, filter: "blur(12px)" }, { opacity: 1, y: 0, scale: 1, filter: "blur(0px)", duration: 0.6, ease: "expo.out" }, 54.6);
+    tl.to("#ct-banner", { opacity: 0, filter: "blur(8px)", duration: 0.2, ease: "power2.in" }, 58.1);
     window.__timelines["cta"] = tl;
   </script>
 </template>

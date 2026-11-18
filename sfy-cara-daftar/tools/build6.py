@@ -21,8 +21,7 @@ EDL = [
     ("h1", "v", 2.54, 8.00, 1.00),    # kalau abang umur 18 hingga 24, abang tengok video aku sampai habis, pasal apa ni aku nak bagitahu abang
     ("h2", "v", 8.94, 12.72, 1.06),   # abang pernah dengar ShopeeVIP? banyak kan kelebihan dia kan
     ("p1", "v", 14.74, 21.20, 1.00),  # untuk umur 18 hingga 24 abang dapat peluang selama 6 bulan free
-    ("p2", "v", 25.64, 26.56, 1.08),  # abang bayar RM1 je
-    ("p3", "v", 26.70, 30.26, 1.00),  # kalau sebelum ni orang lain kena bayar RM6.99
+    ("p3", "v", 26.70, 35.90, 1.00),  # kalau sebelum ni orang lain kena bayar RM6.99, tapi untuk 6 bulan free dan hanya perlu bayar RM1 lepas 6 bulan
     ("p4", "v", 36.20, 36.74, 1.10),  # memang berbaloi
     ("c1", "v", 37.16, 39.52, 1.30),  # cara dia mudah, join je Shopee for Youth
     ("c2a", "v", 40.32, 40.92, 1.30), # cara nak
@@ -118,7 +117,7 @@ for i, w in enumerate(kept):
     en = fr(min(max(w["end"] + 0.05, st + 0.25), nxt, CTA_AT))
     if en - st < 0.1:
         continue
-    word = re.sub(r"[.,!?]", "", w["text"]).upper()
+    word = re.sub(r"^[.,!?]+|[.,!?]+$", "", w["text"]).upper()  # keep the dot inside RM6.99
     cid = f"cw{i:03d}"
     cap_items.append(f'    <div id="{cid}" class="cw clip" data-start="{st}" data-duration="{fr(en - st)}" data-track-index="0">'
                      f'<span id="{cid}s">{html.escape(word)}</span></div>')
@@ -333,7 +332,7 @@ def benefits(cid, start, dur, rows, footer, footer_at):
 
 
 Y = 860  # overlay band: chest, below his face
-PX, PY, PW, PH = 540, 430, 400, 760  # phone mockup on the right during the how-to (he sits left after the reframe)
+PX, PY, PW, PH = 540, 430, 400, 740  # phone mockup on the right during the how-to (he sits left after the reframe)
 HOW0 = fr(SEG["c1"]["start"])        # how-to section
 HOW1 = end("c5")
 
@@ -373,28 +372,47 @@ build_scene("hook", [
     pill("hk-vip", "Kenal ShopeeVIP?", SEG["h2"]["start"] + 0.1, end("h2") - SEG["h2"]["start"] - 0.1, None, Y + 20, icon=STAR),
 ])
 
+def price_card():
+    """'orang lain bayar RM6.99' first; on 'RM1' the old price is struck and RM1 / bulan lands beside it"""
+    t0, t1, t_end = W("p3", 28.86) - 0.15, W("p3", 34.94), end("p4")
+    body, js = widget("vp-price",
+        '<div style="position:relative;height:34px">'
+        '<div id="vp-h1" class="hd" style="position:absolute;left:0;right:0">Orang lain bayar</div>'
+        '<div id="vp-h2" class="hd" style="position:absolute;left:0;right:0;color:#fff">Abang: lepas 6 bulan free</div></div>'
+        '<div style="display:flex;align-items:baseline;justify-content:center;gap:22px;margin-top:8px;white-space:nowrap">'
+        '<span id="vp-old" style="position:relative;font-family:var(--font-num);font-size:72px;font-weight:700;color:#fff">RM6.99'
+        '<span id="vp-strike" style="position:absolute;left:-4px;right:-4px;top:54%;height:6px;border-radius:3px;background:#ee4d2d;transform-origin:0 50%"></span></span>'
+        '<span id="vp-new" style="font-family:var(--font-num);font-size:84px;font-weight:700;color:var(--gold)">RM1'
+        '<span style="font-family:var(--font-ui);font-size:28px;color:#fff"> /bulan</span></span></div>',
+        t0, t_end - t0, top=Y - 30)
+    js += "\n" + "\n".join([
+        f'    tl.set(["#vp-new", "#vp-h2"], {{ opacity: 0 }}, {fr(t0)});',
+        f'    tl.fromTo("#vp-strike", {{ scaleX: 0 }}, {{ scaleX: 0, duration: 0.01 }}, {fr(t0)});',
+        f'    tl.to("#vp-strike", {{ scaleX: 1, duration: 0.3, ease: "power2.out" }}, {fr(t1 - 0.1)});',
+        f'    tl.fromTo("#vp-old", {{ x: 126 }}, {{ x: 126, duration: 0.01 }}, {fr(t0)});',
+        f'    tl.to("#vp-old", {{ x: 0, opacity: 0.5, duration: 0.4, ease: "power3.inOut" }}, {fr(t1 - 0.15)});',
+        f'    tl.to("#vp-h1", {{ opacity: 0, duration: 0.2 }}, {fr(t1 - 0.1)});',
+        f'    tl.fromTo("#vp-h2", {{ opacity: 0 }}, {{ opacity: 1, duration: 0.3 }}, {fr(t1)});',
+        f'    tl.fromTo("#vp-new", {{ opacity: 0, scale: 0.6 }}, {{ opacity: 1, scale: 1, duration: 0.45, ease: "back.out(1.7)" }}, {fr(t1)});'])
+    return body, js
+
+
 build_scene("vip", [
     widget("vp-free", '<div class="hd"><span style="color:#fff;font-weight:800">Shopee<span style="color:#ee4d2d">VIP</span> · umur 18–24</span></div>'
            '<div class="big" style="font-size:84px">PERCUMA</div><div style="text-align:center;font-size:30px;font-weight:700">untuk 6 bulan pertama</div>',
            W("p1", 19.46) - 0.2, end("p1") - W("p1", 19.46) + 0.2, top=Y - 30),
-    widget("vp-price", '<div class="hd"><span>Lepas 6 bulan</span></div>'
-           '<div style="display:flex;align-items:baseline;justify-content:center;gap:26px;margin-top:6px">'
-           '<span id="vp-old" style="font-family:var(--font-num);font-size:56px;font-weight:700;color:rgba(255,255,255,.55);text-decoration:line-through">RM6.99</span>'
-           '<span style="font-family:var(--font-num);font-size:96px;font-weight:700;color:var(--gold)">RM1</span>'
-           '<span style="font-size:32px;font-weight:700">/ bulan</span></div>',
-           SEG["p2"]["start"] + 0.05, end("p3") - SEG["p2"]["start"] - 0.05, top=Y - 30),
-    pill("vp-baloi", "Memang berbaloi!", SEG["p4"]["start"] + 0.03, end("p4") - SEG["p4"]["start"] + 0.0, None, Y + 20, icon=STAR),
+    price_card(),
 ])
 
 T = lambda sid, t: W(sid, t)
 build_scene("howto", [
     phone("ph", HOW0 + 0.1, HOW1 - HOW0 - 0.1, [
-        ("ph-s1", "assets/img/app-home.jpg", HOW0 + 0.1, SEG["c2a"]["start"], 138, 1, "", "Buka Shopee for Youth", (310, 201, T("c1", 38.54))),
-        ("ph-s2", "assets/img/app-ways.jpg", SEG["c2a"]["start"], SEG["c2b"]["start"] + 0.3, 190, 1, "", "2 cara untuk join", None),
-        ("ph-s3", "assets/img/app-mykad.jpg", SEG["c2b"]["start"] + 0.3, SEG["c3b"]["start"], 18, 1, "", "Cara 1 · Scan MyKad", None),
-        ("ph-s4", "assets/img/app-form.jpg", SEG["c3b"]["start"], end("c3c"), 19, 1, "", "Cara 2 · Email pelajar", (188, 592, T("c3c", 49.40))),
-        ("ph-s5", "assets/img/app-home.jpg", SEG["c4"]["start"], SEG["c5"]["start"], 138, 1, "", "Siap! Dah jadi member ✓", None),
-        ("ph-s6", "assets/img/app-home.jpg", SEG["c5"]["start"], HOW1, 138, 1.7, "25% 84%", "Claim VIP percuma", (150, 470, T("c5", 57.58))),
+        ("ph-s1", "assets/img/app-home.jpg", HOW0 + 0.1, SEG["c2a"]["start"], 128, 1, "", "Buka Shopee for Youth", (310, 191, T("c1", 38.54))),
+        ("ph-s2", "assets/img/app-ways.jpg", SEG["c2a"]["start"], SEG["c2b"]["start"] + 0.3, 180, 1, "", "2 cara untuk join", None),
+        ("ph-s3", "assets/img/app-mykad.jpg", SEG["c2b"]["start"] + 0.3, SEG["c3b"]["start"], 8, 1, "", "Cara 1 · Scan MyKad", None),
+        ("ph-s4", "assets/img/app-form.jpg", SEG["c3b"]["start"], end("c3c"), 9, 1, "", "Cara 2 · Email pelajar", (188, 582, T("c3c", 49.40))),
+        ("ph-s5", "assets/img/app-home.jpg", SEG["c4"]["start"], SEG["c5"]["start"], 128, 1, "", "Siap! Dah jadi member ✓", None),
+        ("ph-s6", "assets/img/app-home.jpg", SEG["c5"]["start"], HOW1, 128, 1.7, "25% 84%", "Claim VIP percuma", (150, 460, T("c5", 57.58))),
     ]),
 ])
 
@@ -405,7 +423,7 @@ build_scene("cta", [
 
 write("captions.html", scene("captions", f"""
     #root {{ position: absolute; inset: 0; pointer-events: none; {TOK} }}
-    .cw {{ position: absolute; left: 0; width: 960px; top: 1200px; text-align: center; }}
+    .cw {{ position: absolute; left: 0; width: 960px; top: 1180px; text-align: center; }}
     .cw span {{ display: inline-block; font-family: "Archivo Black", var(--font-ui); font-size: 56px; color: #fff; text-transform: uppercase;
       letter-spacing: .01em; -webkit-text-stroke: 2px rgba(0,0,0,.55); paint-order: stroke fill; text-shadow: 0 3px 0 rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.6); }}
 """, "\n".join(cap_items), "\n".join(cap_js)))
@@ -426,7 +444,9 @@ SFX = [("sx-hook", "pop.mp3", 0.05, 0.3),
        ("sx-vip", "pop.mp3", SEG["h2"]["start"] + 0.13, 0.3),
        ("sx-f1", "whoosh.mp3", SEG["p1"]["start"] - 0.25, 0.3),
        ("sx-free", "sparkle.mp3", W("p1", 19.46) - 0.2, 0.25),
-       ("sx-price", "pop.mp3", SEG["p2"]["start"] + 0.08, 0.3),
+       ("sx-price", "pop.mp3", W("p3", 28.86) - 0.12, 0.3),
+       ("sx-baloi", "sparkle.mp3", SEG["p4"]["start"] + 0.03, 0.22),
+       ("sx-rm1", "pop.mp3", W("p3", 34.94) + 0.03, 0.35),
        ("sx-phone", "whoosh-short.mp3", HOW0, 0.3),
        ("sx-tap1", "click-soft.mp3", W("c1", 38.54), 0.45),
        ("sx-tap2", "click-soft.mp3", W("c3c", 49.40), 0.45),
