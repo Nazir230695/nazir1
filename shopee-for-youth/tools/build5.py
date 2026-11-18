@@ -26,8 +26,7 @@ EDL = [
     ("p1", "v", 65.76, 67.78, 1.00),  # abang dapat join ShopeeVIP free
     ("p2", "v", 73.00, 77.80, 1.08),  # abang percuma 6 bulan, bulan berikutnya hanya bayar RM1 je
     ("p3", "v", 78.12, 79.34, 1.16),  # oh la mak, untung gila
-    ("v1", "v", 31.66, 35.90, 1.00),  # banyak kelebihan dia, ada 30% off voucher, free shipping
-    ("v2", "v", 39.44, 40.78, 1.08),  # macam-macam lagi
+    ("v1", "v", 31.66, 40.78, 1.00),  # banyak kelebihan dia: 30% off voucher, free shipping, 10% off Trip.com, macam-macam lagi
     ("z1a", "v", 44.94, 46.94, 1.00), # selain tu, yang mana kaki ZUS Coffee
     ("z1b", "v", 48.96, 51.18, 1.08), # boleh dapat free juga ZUS Coffee   (cut: "nak pergi dating ke apa kan")
     ("z2", "v", 58.10, 61.22, 1.08),  # tapi abang join Shopee for Youth, free je ZUS Coffee ni. Free tau
@@ -77,7 +76,7 @@ def W(sid, t):
 
 
 # ---------------------------------------------------------------- one-word captions
-FIX = {"jenzy": "Gen Z", "use": "Youth", "you": "Youth", "you.": "Youth", "ampun": "abang", "zeus": "ZUS", "sukofi": "ZUS Coffee",
+FIX = {"trip": "Trip.com", "jenzy": "Gen Z", "use": "Youth", "you": "Youth", "you.": "Youth", "ampun": "abang", "zeus": "ZUS", "sukofi": "ZUS Coffee",
        "hola": "la", "buntung": "untung", "shopee": "Shopee", "vip": "VIP", "ic": "IC"}
 
 
@@ -310,6 +309,30 @@ MAIL = '<svg viewBox="0 0 24 24" fill="none" stroke="#2de2c8" stroke-width="2.2"
 CUP = '<svg viewBox="0 0 24 24" fill="none" stroke="#f5c542" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8h12l-1.4 12H7.4z"/><path d="M5 8h14M9 4h6l1 4H8z"/></svg>'
 HEART = '<svg viewBox="0 0 24 24" fill="#ff4d6d"><path d="M12 20.5s-8-4.9-8-10.6A4.4 4.4 0 0 1 12 7.4a4.4 4.4 0 0 1 8 2.5c0 5.7-8 10.6-8 10.6z"/></svg>'
 SHARE = '<svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 5l6 6-6 6M20 11H10a6 6 0 0 0-6 6v1"/></svg>'
+TAG = '<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12V4h8l10 10-8 8z"/><circle cx="7.5" cy="8.5" r="1.4"/></svg>'
+TRUCK = '<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 6h12v10H2zM14 10h4l3 3v3h-7"/><circle cx="6" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/></svg>'
+PLANE = '<svg viewBox="0 0 24 24" fill="#fff"><path d="M21 15.5v-1.8l-7.5-4.6V4a1.5 1.5 0 0 0-3 0v5.1L3 13.7v1.8l7.5-2.3v4.9l-2 1.5V21l3.5-1 3.5 1v-1.4l-2-1.5v-4.9z"/></svg>'
+
+
+def benefits(cid, start, dur, rows, footer, footer_at):
+    """ShopeeVIP benefits list: header, then each row pops in on the word that says it"""
+    items = "".join(
+        f'<div id="{cid}r{i}" style="display:flex;align-items:center;gap:16px;margin-top:14px;font-size:28px;font-weight:600">'
+        f'<span style="width:48px;height:48px;border-radius:14px;background:#ee4d2d;display:flex;align-items:center;justify-content:center;flex:none">'
+        f'{ic.replace("<svg", "<svg width=28 height=28")}</span><span>{txt}</span></div>'
+        for i, (ic, txt, _) in enumerate(rows))
+    inner = (f'<div class="hd"><span style="color:#fff;font-weight:800;font-size:30px">Shopee<span style="color:#ee4d2d">VIP</span> Benefits</span></div>'
+             f'{items}<div id="{cid}f" style="margin-top:14px;text-align:center;font-size:28px;font-weight:700;color:var(--gold)">{footer}</div>')
+    body = clip(cid, start, dur, inner, cls="widget", style=f"top:{Y - 70}px; width:660px; margin-left:-370px; padding:22px 26px")
+    js = [fade_in(f"#{cid}", start, y=-20),
+          f'    tl.set([{", ".join(f"{chr(34)}#{cid}r{i}{chr(34)}" for i in range(len(rows)))}, "#{cid}f"], {{ opacity: 0 }}, {fr(start)});']
+    for i, (_, _, at_) in enumerate(rows):
+        js.append(f'    tl.fromTo("#{cid}r{i}", {{ opacity: 0, x: -30 }}, {{ opacity: 1, x: 0, duration: 0.35, ease: "expo.out" }}, {fr(at_)});')
+    js.append(f'    tl.fromTo("#{cid}f", {{ opacity: 0 }}, {{ opacity: 1, duration: 0.3 }}, {fr(footer_at)});')
+    js.append(fade_out(f"#{cid}", start + dur))
+    return body, "\n".join(js)
+
+
 Y = 890  # overlay band: on the chest, below his face (the head sits high in this frame)
 
 build_scene("hook", [
@@ -338,21 +361,24 @@ build_scene("vip", [
            W("p2", 75.08), end("p2") - W("p2", 75.08), top=Y - 30),
     neon_arc("vp-arc", SEG["p3"]["start"], end("p3") - SEG["p3"]["start"], 540, 640, r=360, a0=195, a1=345),
     pill("vp-untung", "Untung gila!", SEG["p3"]["start"] + 0.1, end("p3") - SEG["p3"]["start"] - 0.1, None, Y + 30, icon=STAR),
-    fcard("vp-v30", "30%", "Off voucher", W("v1", 33.48), end("v2") - W("v1", 33.48), 190, Y - 40, rot=-4),
-    fcard("vp-ship", "FREE", "Shipping", W("v1", 35.68), end("v2") - W("v1", 35.68), 540, Y - 40, rot=4),
-    pill("vp-more", "&amp; macam-macam lagi", SEG["v2"]["start"] + 0.05, end("v2") - SEG["v2"]["start"] - 0.05, None, Y + 230),
+    benefits("vp-ben", SEG["v1"]["start"] + 0.05, end("v1") - SEG["v1"]["start"] - 0.05, [
+        (TAG, "Up to <b>30% off</b> vouchers", W("v1", 33.48)),
+        (TRUCK, "<b>Free shipping</b> tanpa min. spend", W("v1", 35.68)),
+        (PLANE, "<b>10% off</b> Trip.com", W("v1", 37.42)),
+    ], "&amp; macam-macam lagi", W("v1", 39.44)),
 ])
 
 build_scene("zus", [
-    widget("zs-card", f'<div class="hd">{CUP}<span>Kaki ZUS Coffee?</span></div><div class="big" style="font-size:96px">FREE</div>'
-           '<div style="text-align:center;font-size:30px;font-weight:700">ZUS Coffee</div>',
+    widget("zs-card", f'<div class="hd">{CUP}<span>Kaki ZUS Coffee?</span></div><div class="big" style="font-size:90px">FREE</div>'
+           '<div style="text-align:center;font-size:32px;font-weight:800">ZUS Coffee setiap bulan</div>'
+           '<div style="text-align:center;font-size:28px;font-weight:600;color:var(--muted);margin-top:6px">dengan belanja RM100 di Shopee</div>',
            W("z1a", 46.34) - 0.1, end("z1b") - W("z1a", 46.34) + 0.1, top=Y - 30),
     pill("zs-free", "Free je, tau!", W("z2", 59.90), end("z2") - W("z2", 59.90), None, Y + 20),
 ])
 
 build_scene("cta", [
     banner("ct-banner", "assets/img/sfy-banner.jpg", SEG["c1"]["start"] + 0.05, end("c2") - SEG["c1"]["start"], top=Y - 20, width=940),
-    pill("ct-share", "Share dengan kawan", SEG["c3"]["start"] + 0.1, TOTAL - SEG["c3"]["start"] - 0.1, None, Y + 20, icon=SHARE),
+    pill("ct-share", "Jom ajak kawan!", SEG["c3"]["start"] + 0.1, TOTAL - SEG["c3"]["start"] - 0.1, None, Y + 20, icon=SHARE),
 ])
 
 write("captions.html", scene("captions", f"""
@@ -379,8 +405,10 @@ SFX = [("sx-hook", "pop.mp3", 0.05, 0.35),
        ("sx-f2", "whoosh.mp3", SEG["p1"]["start"] - 0.25, 0.35),
        ("sx-rm1", "pop.mp3", W("p2", 75.08) + 0.03, 0.35),
        ("sx-untung", "sparkle.mp3", SEG["p3"]["start"] + 0.1, 0.3),
+       ("sx-ben", "whoosh-short.mp3", SEG["v1"]["start"] - 0.1, 0.3),
        ("sx-v30", "pop.mp3", W("v1", 33.48) + 0.03, 0.35),
        ("sx-ship", "pop.mp3", W("v1", 35.68) + 0.03, 0.35),
+       ("sx-trip", "pop.mp3", W("v1", 37.42) + 0.03, 0.35),
        ("sx-f3", "whoosh.mp3", SEG["z1a"]["start"] - 0.25, 0.35),
        ("sx-free", "pop.mp3", W("z1a", 46.34) - 0.07, 0.4),
        ("sx-cta", "whoosh-short.mp3", SEG["c1"]["start"], 0.3),
