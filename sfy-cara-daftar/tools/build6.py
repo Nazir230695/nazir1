@@ -76,7 +76,7 @@ def W(sid, t):
 
 
 # ---------------------------------------------------------------- one-word captions
-FIX = {"ampoh": "abang", "ampuh": "abang", "ampun": "abang", "yau": "tau", "shopee4u": "Shopee for Youth", "shopee": "Shopee",
+FIX = {"ampoh": "hampa", "ampuh": "hampa", "ampun": "hampa", "abang": "hampa", "yau": "tau", "shopee4u": "Shopee for Youth", "shopee": "Shopee",
        "vip": "VIP", "ic": "IC"}
 
 
@@ -378,7 +378,7 @@ def price_card():
     body, js = widget("vp-price",
         '<div style="position:relative;height:34px">'
         '<div id="vp-h1" class="hd" style="position:absolute;left:0;right:0">Orang lain bayar</div>'
-        '<div id="vp-h2" class="hd" style="position:absolute;left:0;right:0;color:#fff">Abang: lepas 6 bulan free</div></div>'
+        '<div id="vp-h2" class="hd" style="position:absolute;left:0;right:0;color:#fff">Hampa: lepas 6 bulan free</div></div>'
         '<div style="display:flex;align-items:baseline;justify-content:center;gap:22px;margin-top:8px;white-space:nowrap">'
         '<span id="vp-old" style="position:relative;font-family:var(--font-num);font-size:72px;font-weight:700;color:#fff">RM6.99'
         '<span id="vp-strike" style="position:absolute;left:-4px;right:-4px;top:54%;height:6px;border-radius:3px;background:#ee4d2d;transform-origin:0 50%"></span></span>'
