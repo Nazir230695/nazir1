@@ -1,0 +1,51 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; pointer-events: none; 
+      --ink: #ffffff;
+      --muted: rgba(255,255,255,.62);
+      --glass: rgba(18, 19, 22, 0.82);
+      --stroke: rgba(255,255,255,.12);
+      --gold: #f5c542;
+      --rose: #c86b9a;
+      --ok: #34c759;
+      --font-ui: "Montserrat", sans-serif;
+      --font-num: "Oswald", "League Gothic", sans-serif;
+      --orange: #ee4d2d;
+      --teal: #2de2c8;
+ }
+    .widget { position: absolute; left: 50%; width: 600px; margin-left: -330px; padding: 26px 32px; border-radius: 34px;
+      background: var(--glass); border: 1.5px solid var(--stroke); box-shadow: 0 24px 60px rgba(0,0,0,.45);
+      backdrop-filter: blur(20px); color: var(--ink); font-family: var(--font-ui); }
+    .widget .hd { display: flex; align-items: center; justify-content: center; gap: 10px; font-size: 28px; font-weight: 600; color: var(--muted); text-align: center; }
+    .widget .hd svg { width: 30px; height: 30px; flex: none; }
+    .widget .rowx { display: flex; align-items: center; justify-content: space-between; margin-top: 18px; font-size: 32px; font-weight: 700; }
+    .widget .rowx .v { font-family: var(--font-num); font-size: 40px; font-weight: 700; color: var(--ok); letter-spacing: .02em; }
+    .widget .big { margin-top: 6px; text-align: center; font-family: var(--font-num); font-size: 92px; font-weight: 700; color: var(--gold); line-height: 1.05; letter-spacing: .01em; }
+    .pill { display: inline-flex; align-items: center; gap: 10px; padding: 12px 24px; border-radius: 999px;
+      background: #fff; color: #111; font-family: var(--font-ui); font-weight: 800; font-size: 32px; box-shadow: 0 12px 30px rgba(0,0,0,.35); white-space: nowrap; }
+    .pill svg { width: 28px; height: 28px; }
+    .ttl { position: absolute; left: 0; width: 960px; text-align: center; font-family: var(--font-ui); font-weight: 800; color: #fff;
+      font-size: 68px; letter-spacing: .22em; text-transform: uppercase; text-shadow: 0 2px 4px rgba(0,0,0,.6), 0 8px 30px rgba(0,0,0,.7); }
+    .ttl svg { display: block; margin: 8px auto 0; width: 700px; height: 70px; overflow: visible; }
+    .co-lbl { position: absolute; font-family: var(--font-ui); font-weight: 800; font-size: 44px; color: #fff; letter-spacing: .02em;
+      text-transform: uppercase; text-shadow: 0 4px 18px rgba(0,0,0,.6); white-space: nowrap; padding-bottom: 8px; border-bottom: 3px solid #fff; }
+    .co svg { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; overflow: visible; }
+    .neon svg { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; overflow: visible; }
+    .neon path, .neon circle { filter: drop-shadow(0 0 10px rgba(45,226,200,.9)) drop-shadow(0 0 24px rgba(45,226,200,.55)); }
+    .fcard { position: absolute; width: 290px; padding: 22px 22px 20px; border-radius: 28px; background: var(--glass);
+      border: 1.5px solid rgba(45,226,200,.45); box-shadow: 0 0 30px rgba(45,226,200,.25), 0 20px 50px rgba(0,0,0,.5);
+      color: #fff; font-family: var(--font-ui); text-align: center; }
+    .fcard .n { font-family: var(--font-num); font-size: 70px; font-weight: 700; line-height: 1; color: var(--gold); }
+    .fcard .l { margin-top: 8px; font-size: 28px; font-weight: 700; }
+
+  </style>
+  <div id="root" data-composition-id="register" data-width="1080" data-height="1920">
+    <div id="rg-how" class="widget clip" data-start="14.2" data-duration="4.1667" data-track-index="0" style="top:870px"><div class="hd"><span>Cara daftar</span></div><div class="rowx" id="rg-r1"><span style="display:flex;gap:12px;align-items:center"><svg width=40 height=40 viewBox="0 0 24 24" fill="none" stroke="#2de2c8" stroke-width="2.2" stroke-linecap="round"><rect x="2.5" y="5" width="19" height="14" rx="2.5"/><circle cx="8.5" cy="11" r="2.2"/><path d="M5.5 16c.6-1.6 1.7-2.3 3-2.3s2.4.7 3 2.3M14 10h5M14 13.5h4"/></svg>Guna IC</span><span class="v">✓</span></div><div class="rowx" id="rg-r2"><span style="display:flex;gap:12px;align-items:center"><svg width=40 height=40 viewBox="0 0 24 24" fill="none" stroke="#2de2c8" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5.5" width="18" height="13" rx="2"/><path d="M3.5 7l8.5 6 8.5-6"/></svg>Student email</span><span class="v">✓</span></div></div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#rg-how", { opacity: 0, y: -20, filter: "blur(10px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.42, ease: "expo.out" }, 14.2);
+    tl.to("#rg-how", { opacity: 0, filter: "blur(8px)", duration: 0.2, ease: "power2.in" }, 18.1333);
+    window.__timelines["register"] = tl;
+  </script>
+</template>
