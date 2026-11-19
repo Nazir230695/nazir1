@@ -1,0 +1,51 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; pointer-events: none; 
+      --ink: #ffffff;
+      --muted: rgba(255,255,255,.62);
+      --glass: rgba(18, 19, 22, 0.82);
+      --stroke: rgba(255,255,255,.12);
+      --gold: #f5c542;
+      --rose: #c86b9a;
+      --ok: #34c759;
+      --font-ui: "Montserrat", sans-serif;
+      --font-num: "Oswald", "League Gothic", sans-serif;
+ }
+    .widget { position: absolute; left: 50%; width: 600px; margin-left: -330px; padding: 26px 32px; border-radius: 34px;
+      background: var(--glass); border: 1.5px solid var(--stroke); box-shadow: 0 24px 60px rgba(0,0,0,.45);
+      backdrop-filter: blur(20px); color: var(--ink); font-family: var(--font-ui); }
+    .widget .hd { display: flex; align-items: center; justify-content: center; gap: 10px; font-size: 28px; font-weight: 600; color: var(--muted); text-align: center; }
+    .widget .hd svg { width: 30px; height: 30px; flex: none; }
+    .widget .rowx { display: flex; align-items: center; justify-content: space-between; margin-top: 18px; font-size: 32px; font-weight: 700; }
+    .widget .rowx .v { font-family: var(--font-num); font-size: 40px; font-weight: 700; color: var(--ok); letter-spacing: .02em; }
+    .widget .big { margin-top: 6px; text-align: center; font-family: var(--font-num); font-size: 92px; font-weight: 700; color: var(--gold); line-height: 1.05; letter-spacing: .01em; }
+    .pill { display: inline-flex; align-items: center; gap: 10px; padding: 12px 24px; border-radius: 999px;
+      background: #fff; color: #111; font-family: var(--font-ui); font-weight: 800; font-size: 32px; box-shadow: 0 12px 30px rgba(0,0,0,.35); white-space: nowrap; }
+    .pill svg { width: 28px; height: 28px; }
+    .ttl { position: absolute; left: 0; width: 960px; text-align: center; font-family: var(--font-ui); font-weight: 800; color: #fff;
+      font-size: 68px; letter-spacing: .22em; text-transform: uppercase; text-shadow: 0 2px 4px rgba(0,0,0,.6), 0 8px 30px rgba(0,0,0,.7); }
+    .ttl svg { display: block; margin: 8px auto 0; width: 700px; height: 70px; overflow: visible; }
+    .co-lbl { position: absolute; font-family: var(--font-ui); font-weight: 800; font-size: 44px; color: #fff; letter-spacing: .02em;
+      text-transform: uppercase; text-shadow: 0 4px 18px rgba(0,0,0,.6); white-space: nowrap; padding-bottom: 8px; border-bottom: 3px solid #fff; }
+    .co svg { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; overflow: visible; }
+
+  </style>
+  <div id="root" data-composition-id="intro" data-width="1080" data-height="1920">
+    <div id="in-smart" class=" clip" data-start="0.1333" data-duration="2.0667" data-track-index="0" style="position:absolute; left:70px; width:360px; top:560px; text-align:left"><span id="in-smarti" class="pill" style="position:relative"><svg viewBox="0 0 24 24" fill="#f5c542"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><span>Smart &amp; terbaik</span></span></div>
+    <div id="in-snap" class=" clip" data-start="2.3333" data-duration="4.6333" data-track-index="0" style="position:absolute; left:70px; top:780px; width:300px; padding:8px; border-radius:28px; background:var(--glass); border:1.5px solid var(--stroke); box-shadow:0 20px 50px rgba(0,0,0,.45)"><img src="assets/img/details.jpg" alt="" style="display:block;width:100%;border-radius:20px"/></div>
+    <div id="in-lock" class=" clip" data-start="4.4333" data-duration="2.5333" data-track-index="0" style="position:absolute; left:70px; width:360px; top:1000px; text-align:left"><span id="in-locki" class="pill" style="position:relative"><svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12.5l4.8 4.8L19.5 7"/></svg><span>Butang snap</span></span></div>
+    <div id="in-size" class=" clip" data-start="7.0333" data-duration="2.1" data-track-index="0" style="position:absolute; left:70px; top:780px; width:300px; padding:8px; border-radius:28px; background:var(--glass); border:1.5px solid var(--stroke); box-shadow:0 20px 50px rgba(0,0,0,.45)"><img src="assets/img/size.jpg" alt="" style="display:block;width:100%;border-radius:20px"/></div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#in-smarti", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.45, ease: "back.out(1.6)" }, 0.1333);
+    tl.to("#in-smart", { opacity: 0, filter: "blur(8px)", duration: 0.2, ease: "power2.in" }, 2.0);
+    tl.fromTo("#in-snap", { opacity: 0, x: -60, filter: "blur(10px)" }, { opacity: 1, x: 0, filter: "blur(0px)", duration: 0.5, ease: "expo.out" }, 2.3333);
+    tl.to("#in-snap", { opacity: 0, filter: "blur(8px)", duration: 0.2, ease: "power2.in" }, 6.7333);
+    tl.fromTo("#in-locki", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.45, ease: "back.out(1.6)" }, 4.4333);
+    tl.to("#in-lock", { opacity: 0, filter: "blur(8px)", duration: 0.2, ease: "power2.in" }, 6.7333);
+    tl.fromTo("#in-size", { opacity: 0, x: -60, filter: "blur(10px)" }, { opacity: 1, x: 0, filter: "blur(0px)", duration: 0.5, ease: "expo.out" }, 7.0333);
+    tl.to("#in-size", { opacity: 0, filter: "blur(8px)", duration: 0.2, ease: "power2.in" }, 8.9);
+    window.__timelines["intro"] = tl;
+  </script>
+</template>
