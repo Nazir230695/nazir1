@@ -34,7 +34,7 @@
     <div id="in-smart" class=" clip" data-start="0.1333" data-duration="2.0667" data-track-index="0" style="position:absolute; left:70px; width:360px; top:560px; text-align:left"><span id="in-smarti" class="pill" style="position:relative"><svg viewBox="0 0 24 24" fill="#f5c542"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><span>Smart &amp; terbaik</span></span></div>
     <div id="in-snap" class=" clip" data-start="2.3333" data-duration="4.6333" data-track-index="0" style="position:absolute; left:70px; top:780px; width:300px; padding:8px; border-radius:28px; background:var(--glass); border:1.5px solid var(--stroke); box-shadow:0 20px 50px rgba(0,0,0,.45)"><img src="assets/img/details.jpg" alt="" style="display:block;width:100%;border-radius:20px"/></div>
     <div id="in-lock" class=" clip" data-start="4.4333" data-duration="2.5333" data-track-index="0" style="position:absolute; left:70px; width:360px; top:1000px; text-align:left"><span id="in-locki" class="pill" style="position:relative"><svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12.5l4.8 4.8L19.5 7"/></svg><span>Butang snap</span></span></div>
-    <div id="in-size" class=" clip" data-start="7.0333" data-duration="2.1" data-track-index="0" style="position:absolute; left:70px; top:780px; width:300px; padding:8px; border-radius:28px; background:var(--glass); border:1.5px solid var(--stroke); box-shadow:0 20px 50px rgba(0,0,0,.45)"><img src="assets/img/size.jpg" alt="" style="display:block;width:100%;border-radius:20px"/></div>
+    <div id="sz" class=" clip" data-start="7.0667" data-duration="4.0333" data-track-index="0" style="position:absolute; inset:0" data-layout-allow-overflow><div id="szbg" style="position:absolute;inset:0;background:rgba(8,9,12,.72)"></div><div id="sz-c" style="position:absolute;left:60px;top:300px;width:900px;border-radius:30px;overflow:visible"><div style="border-radius:30px;overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.6)"><img src="assets/img/size-crop.jpg" style="display:block;width:900px" alt=""/></div><div id="sz-hl0" style="position:absolute;left:4px;right:4px;top:424px;height:60px;border:5px solid #f5c542;border-radius:14px;box-shadow:0 0 0 4px rgba(245,197,66,.25),0 0 30px rgba(245,197,66,.8)"></div><div id="sz-tag0" class="pill" style="position:absolute;right:24px;top:384px">Aku pakai: L</div></div></div>
   </div>
   <script>
     const tl = gsap.timeline({ paused: true });
@@ -44,8 +44,11 @@
     tl.to("#in-snap", { opacity: 0, filter: "blur(8px)", duration: 0.2, ease: "power2.in" }, 6.7333);
     tl.fromTo("#in-locki", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.45, ease: "back.out(1.6)" }, 4.4333);
     tl.to("#in-lock", { opacity: 0, filter: "blur(8px)", duration: 0.2, ease: "power2.in" }, 6.7333);
-    tl.fromTo("#in-size", { opacity: 0, x: -60, filter: "blur(10px)" }, { opacity: 1, x: 0, filter: "blur(0px)", duration: 0.5, ease: "expo.out" }, 7.0333);
-    tl.to("#in-size", { opacity: 0, filter: "blur(8px)", duration: 0.2, ease: "power2.in" }, 8.9);
+    tl.fromTo("#szbg", { opacity: 0 }, { opacity: 1, duration: 0.3, ease: "power2.out" }, 7.0667);
+    tl.fromTo("#sz-c", { opacity: 0, scale: 0.82, y: 40 }, { opacity: 1, scale: 1, y: 0, duration: 0.55, ease: "expo.out" }, 7.1333);
+    tl.set(["#sz-hl0", "#sz-tag0"], { opacity: 0 }, 7.0667);
+    tl.fromTo(["#sz-hl0", "#sz-tag0"], { opacity: 0, scale: 1.15 }, { opacity: 1, scale: 1, duration: 0.35, ease: "back.out(2)" }, 8.5667);
+    tl.to("#sz", { opacity: 0, duration: 0.25, ease: "power2.in" }, 10.8333);
     window.__timelines["intro"] = tl;
   </script>
 </template>

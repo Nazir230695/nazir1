@@ -6,6 +6,8 @@ import json, sys, html, os, re, glob, math, subprocess
 
 WJ, P = sys.argv[1], sys.argv[2]
 FPS = 30
+SECOND_SIZE = os.environ.get("SECOND_SIZE")  # e.g. "M"
+SIZE_ROWS = {"S": 305, "M": 360, "L": 415, "XL": 470, "XXL": 525, "XXXL": 580}  # row centres in the 823 px chart
 WORDS = {"v": json.load(open(WJ))}
 
 
@@ -21,7 +23,7 @@ EDL = [
     ("a1", "v", 0.90, 2.94, 1.00),    # baju memang smart lah, memang terbaik lah
     ("a2", "v", 3.04, 5.88, 1.10),    # baju ni, kat sini pun dia ada button to lock
     ("a3", "v", 7.62, 8.88, 1.10),    # kiri dan kanan tau
-    ("s1", "v", 9.00, 10.58, 1.00),   # yang aku pakai ni size L
+    ("s1", "v", 9.00, 12.70, 1.00),   # yang aku pakai ni size L, kalau nak fit-fit badan aku ambil size <SECOND_SIZE>
     ("r1", "v", 15.46, 17.50, 1.08),  # dia reflector kiri dan kanan
     ("r2", "v", 18.06, 21.98, 1.00),  # kat depan ni pun dia reflector, kalau naik motor ke pun memang selamat, safety
     ("r3", "v", 22.18, 23.14, 1.00),  # kat belakang pun dia reflector
@@ -30,7 +32,7 @@ EDL = [
     ("l1", "v", 37.54, 43.78, 1.00),  # kat sini, yang mana ada syarikat, ada pekerjaan, aku boleh letak juga nama, kat sini boleh buat logo yang sulam ke apa
     ("l2", "v", 44.26, 45.62, 1.08),  # memang nice lah
     ("w1", "v", 45.80, 51.02, 1.00),  # kalau customer datang kat kilang, pekerjaan apa kan, tengok pakai macam ni memang nampak padu
-    ("z1", "v", 51.68, 53.36, 1.06),  # nak dapat benda-benda ni, tekan link (bawah -> di bio on screen)
+    ("z1", "v", 51.68, 53.28, 1.06),  # nak dapat benda-benda ni, tekan link   ("bawah" cut from the audio; card says "di bio")
 ]
 
 
@@ -43,8 +45,10 @@ for sid, src, a, b, sc in EDL:
     next_start = W_[i1 + 1]["start"] if i1 + 1 < len(W_) else 1e9
     a = min(w0["start"] - 0.02, max(w0["start"] - 0.07, prev_end + 0.02))
     b = max(w1["start"] + 0.15, min(min(w1["end"], w1["start"] + 1.2) + 0.1, next_start - 0.03))
+    if sid == "s1":
+        b = 13.10  # through the second size word
     if sid == "z1":
-        b = 53.89  # to the end of the take
+        b = min(b, 53.33)  # stop before "bawah"
     fa, fb = round(a * FPS), round(b * FPS)
     segs.append(dict(id=sid, src=src, src_in=fa / FPS, src_out=fb / FPS, start=f / FPS, dur=(fb - fa) / FPS, scale=sc))
     f += fb - fa
@@ -81,8 +85,8 @@ def norm(sid, w):
     core = re.sub(r"[^\w-]", "", t).lower()
     if core in {"perempuan", "-perempuan", "wish", "terima", "kasih", "kerana", "menonton"}:
         return None  # unclear words / whisper hallucination
-    if sid == "z1" and core == "bawah":
-        return "di bio"  # CTA changed to "link di bio"
+    if sid == "s1" and w["start"] > 12.6:
+        return SECOND_SIZE  # whisper can't hear it clearly; set from the speaker
     if core in FIX:
         return FIX[core] + t[len(t.rstrip(".,!?")):]
     return t
@@ -285,17 +289,86 @@ def side_pill(cid, text, start, dur, top, icon=CHECK):
 TAPE = '<svg viewBox="0 0 24 24" fill="none" stroke="#f5c542" stroke-width="2.4" stroke-linecap="round"><path d="M3 9h18M3 15h18"/></svg>'
 YT = 880
 
+def insert(cid, start, dur, inner, js_extra=()):
+    """full-screen cut-away: video dims, a big card zooms in"""
+    body = clip(cid, start, dur,
+                f'<div id="{cid}bg" style="position:absolute;inset:0;background:rgba(8,9,12,.72)"></div>{inner}',
+                style="position:absolute; inset:0", extra=" data-layout-allow-overflow")
+    js = [f'    tl.fromTo("#{cid}bg", {{ opacity: 0 }}, {{ opacity: 1, duration: 0.3, ease: "power2.out" }}, {fr(start)});',
+          f'    tl.fromTo("#{cid}-c", {{ opacity: 0, scale: 0.82, y: 40 }}, {{ opacity: 1, scale: 1, y: 0, duration: 0.55, ease: "expo.out" }}, {fr(start + 0.05)});',
+          *js_extra,
+          f'    tl.to("#{cid}", {{ opacity: 0, duration: 0.25, ease: "power2.in" }}, {fr(start + dur - 0.27)});']
+    return body, "\n".join(js)
+
+
+CW = 900  # insert card width
+k = CW / 823
+
+
+def size_insert(start, dur, hl):
+    """size chart big, the rows the speaker names light up in turn"""
+    bars, js = [], []
+    for i, (size, t) in enumerate(hl):
+        y = SIZE_ROWS[size] * k
+        bars.append(f'<div id="sz-hl{i}" style="position:absolute;left:4px;right:4px;top:{y - 30:.0f}px;height:60px;border:5px solid #f5c542;border-radius:14px;'
+                    f'box-shadow:0 0 0 4px rgba(245,197,66,.25),0 0 30px rgba(245,197,66,.8)"></div>'
+                    f'<div id="sz-tag{i}" class="pill" style="position:absolute;right:24px;top:{y - 70:.0f}px">{"Aku pakai" if i == 0 else "Nak fit"}: {size}</div>')
+        js += [f'    tl.fromTo(["#sz-hl{i}", "#sz-tag{i}"], {{ opacity: 0, scale: 1.15 }}, {{ opacity: 1, scale: 1, duration: 0.35, ease: "back.out(2)" }}, {fr(t)});']
+        if i + 1 < len(hl):
+            js.append(f'    tl.to(["#sz-hl{i}", "#sz-tag{i}"], {{ opacity: 0.25, duration: 0.25 }}, {fr(hl[i + 1][1] - 0.05)});')
+    inner = (f'<div id="sz-c" style="position:absolute;left:{(1080 - CW) // 2 - 30}px;top:300px;width:{CW}px;border-radius:30px;overflow:visible">'
+             f'<div style="border-radius:30px;overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.6)"><img src="assets/img/size-crop.jpg" style="display:block;width:{CW}px" alt=""/></div>'
+             + "".join(bars) + '</div>')
+    js.insert(0, f'    tl.set([{", ".join(chr(34) + f"#sz-hl{i}" + chr(34) + ", " + chr(34) + f"#sz-tag{i}" + chr(34) for i in range(len(hl)))}], {{ opacity: 0 }}, {fr(start)});')
+    return insert("sz", start, dur, inner, js)
+
+
+def review_insert(start, dur):
+    stars = "".join(f'<span id="rv-s{i}" style="display:inline-block;margin:0 6px">'
+                    f'<svg viewBox="0 0 24 24" width="88" height="88" fill="#f5c542"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg></span>' for i in range(5))
+    inner = (f'<div id="rv-c" style="position:absolute;left:{(1080 - CW) // 2 - 30}px;top:300px;width:{CW}px;text-align:center">'
+             f'<div style="font-family:var(--font-ui);font-weight:800;font-size:40px;color:#fff;letter-spacing:.04em">REVIEW PEMBELI</div>'
+             f'<div style="margin:10px 0 18px">{stars}</div>'
+             f'<div style="border-radius:28px;overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.6)"><img src="assets/img/review.jpg" style="display:block;width:{CW}px" alt=""/></div></div>')
+    js = [f'    tl.fromTo("#rv-s{i}", {{ opacity: 0, scale: 0.2, rotation: -40 }}, {{ opacity: 1, scale: 1, rotation: 0, duration: 0.35, ease: "back.out(2.2)" }}, {fr(start + 0.3 + i * 0.09)});' for i in range(5)]
+    return insert("rv", start, dur, inner, js)
+
+
+def shine_img(cid, src, start, dur, top=780, w=SW):
+    """side card with a light sweep across it, like a reflector catching headlights"""
+    body = clip(cid, start, dur,
+                f'<div style="position:relative;border-radius:20px;overflow:hidden"><img src="{src}" alt="" style="display:block;width:100%"/>'
+                f'<div id="{cid}sh" style="position:absolute;top:-20%;bottom:-20%;width:45%;left:0;background:linear-gradient(100deg,transparent,rgba(255,255,255,.85),transparent);mix-blend-mode:screen"></div></div>',
+                style=f"position:absolute; left:{SX}px; top:{top}px; width:{w}px; padding:8px; border-radius:28px; background:var(--glass); border:1.5px solid var(--stroke); box-shadow:0 20px 50px rgba(0,0,0,.45)")
+    js = "\n".join([f'    tl.fromTo("#{cid}", {{ opacity: 0, y: -50, rotation: -4 }}, {{ opacity: 1, y: 0, rotation: 0, duration: 0.55, ease: "back.out(1.5)" }}, {fr(start)});',
+                    f'    tl.fromTo("#{cid}sh", {{ xPercent: -120 }}, {{ xPercent: 260, duration: 0.8, ease: "power2.inOut" }}, {fr(start + 0.45)});',
+                    f'    tl.fromTo("#{cid}sh", {{ xPercent: -120 }}, {{ xPercent: 260, duration: 0.8, ease: "power2.inOut", immediateRender: false }}, {fr(start + 2.6)});',
+                    fade_out(f"#{cid}", start + dur)])
+    return body, js
+
+
+def center_img(cid, src, start, dur, top=640, w=560):
+    body = clip(cid, start, dur, f'<img src="{src}" alt="" style="display:block;width:100%;border-radius:22px"/>',
+                style=f"position:absolute; left:{540 - w // 2}px; top:{top}px; width:{w}px; padding:8px; border-radius:30px; background:var(--glass); border:1.5px solid var(--stroke); box-shadow:0 24px 60px rgba(0,0,0,.5)")
+    js = "\n".join([f'    tl.fromTo("#{cid}", {{ opacity: 0, scale: 0.6, y: 80 }}, {{ opacity: 1, scale: 1, y: 0, duration: 0.6, ease: "back.out(1.4)" }}, {fr(start)});',
+                    fade_out(f"#{cid}", start + dur)])
+    return body, js
+
+
+hl = [("L", W("s1", 10.56))]
+if SECOND_SIZE in SIZE_ROWS:
+    hl.append((SECOND_SIZE, W("s1", 12.70)))
 build_scene("intro", [
     side_pill("in-smart", "Smart &amp; terbaik", 0.15, end("a1") - 0.15, 560, icon=STAR),
     side_img("in-snap", "assets/img/details.jpg", SEG["a2"]["start"] + 0.1, end("a3") - SEG["a2"]["start"] - 0.1, top=780),
     side_pill("in-lock", "Butang snap", W("a2", 5.22), end("a3") - W("a2", 5.22), 1000),
-    side_img("in-size", "assets/img/size.jpg", SEG["s1"]["start"] + 0.05, end("s1") - SEG["s1"]["start"] + 0.2, top=780),
+    size_insert(SEG["s1"]["start"] + 0.1, end("s1") - SEG["s1"]["start"] - 0.1, hl),
 ])
 
 build_scene("safety", [
-    side_img("sf-tape", "assets/img/reflective.jpg", SEG["r1"]["start"] + 0.05, end("r3") - SEG["r1"]["start"] - 0.05, top=780),
-    side_pill("sf-motor", "Selamat naik motor", W("r2", 20.10), end("r2") - W("r2", 20.10), 920, icon=TAPE),
-    side_pill("sf-back", "Depan &amp; belakang", SEG["r3"]["start"] + 0.05, end("r3") - SEG["r3"]["start"] - 0.05, 920, icon=TAPE),
+    shine_img("sf-tape", "assets/img/reflective.jpg", SEG["r1"]["start"] + 0.05, end("r3") - SEG["r1"]["start"] - 0.05, top=780),
+    side_pill("sf-motor", "Selamat naik motor", W("r2", 20.10), end("r2") - W("r2", 20.10), 700, icon=TAPE),
+    side_pill("sf-back", "Depan &amp; belakang", SEG["r3"]["start"] + 0.05, end("r3") - SEG["r3"]["start"] - 0.05, 700, icon=TAPE),
 ])
 
 build_scene("pocket", [
@@ -307,11 +380,11 @@ build_scene("pocket", [
 build_scene("brand", [
     side_pill("br-name", "Boleh letak nama syarikat", W("l1", 38.72), W("l1", 41.66) - W("l1", 38.72), 640, icon=STAR),
     side_pill("br-logo", "Logo sulam", W("l1", 42.76), end("l1") - W("l1", 42.76), 640, icon=STAR),
-    side_img("br-review", "assets/img/review.jpg", SEG["l2"]["start"], end("l2") - SEG["l2"]["start"] + 0.2, top=780),
-    side_img("br-industry", "assets/img/industry.jpg", SEG["w1"]["start"] + 0.1, end("w1") - SEG["w1"]["start"] - 0.1, top=780),
+    review_insert(fr(end("l1") - 0.25), fr(end("l2") - end("l1") + 0.55)),
+    center_img("br-industry", "assets/img/industry.jpg", SEG["w1"]["start"] + 0.35, end("w1") - SEG["w1"]["start"] - 0.75),
 ])
 
-CTA0 = fr(end("w1") - 0.4)
+CTA0 = fr(end("w1") - 0.6)
 cta_body = clip("cta-card", CTA0, TOTAL - CTA0,
                 '<div style="font-size:30px;font-weight:600;color:var(--muted)">Nak dapatkan jaket ni?</div>'
                 '<div style="margin-top:10px;display:inline-flex;align-items:center;gap:14px;padding:16px 34px;border-radius:999px;background:#fe2c55;color:#fff;font-weight:900;font-size:46px">'
@@ -339,13 +412,16 @@ cam.append(f'      tl.fromTo("#cam", {{ scale: 1.0 }}, {{ scale: 1.06, duration:
 SFX = [("sx-smart", "pop.mp3", 0.18, 0.3),
        ("sx-snap", "whoosh-short.mp3", SEG["a2"]["start"], 0.3),
        ("sx-lock", "click-soft.mp3", W("a2", 5.22), 0.45),
-       ("sx-size", "whoosh-short.mp3", SEG["s1"]["start"], 0.3),
+       ("sx-size", "whoosh.mp3", SEG["s1"]["start"], 0.3),
+       ("sx-L", "pop.mp3", W("s1", 10.56) + 0.03, 0.35),
        ("sx-tape", "whoosh.mp3", SEG["r1"]["start"] - 0.2, 0.3),
+       ("sx-shine", "sparkle.mp3", SEG["r1"]["start"] + 0.5, 0.22),
        ("sx-motor", "pop.mp3", W("r2", 20.10) + 0.03, 0.3),
        ("sx-pocket", "pop.mp3", SEG["k1"]["start"] + 0.08, 0.3),
        ("sx-zip", "pop.mp3", SEG["k2"]["start"] + 0.08, 0.3),
        ("sx-name", "pop.mp3", W("l1", 38.72) + 0.03, 0.3),
-       ("sx-review", "sparkle.mp3", SEG["l2"]["start"], 0.25),
+       ("sx-review", "whoosh.mp3", end("l1") - 0.3, 0.3),
+       ("sx-stars", "sparkle.mp3", end("l1") + 0.1, 0.3),
        ("sx-ind", "whoosh-short.mp3", SEG["w1"]["start"] + 0.05, 0.3),
        ("sx-cta", "sparkle.mp3", SEG["z1"]["start"] + 0.05, 0.3)]
 
