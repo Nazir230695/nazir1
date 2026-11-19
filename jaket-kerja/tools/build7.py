@@ -48,7 +48,7 @@ for sid, src, a, b, sc in EDL:
     if sid == "s1":
         b = 10.86  # stop right before "kalau"
     if sid == "z1":
-        b = min(b, 53.33)  # stop before "bawah"
+        b = 53.46  # measured: "link" ends 53.46, "bawah" starts 53.47
     fa, fb = round(a * FPS), round(b * FPS)
     segs.append(dict(id=sid, src=src, src_in=fa / FPS, src_out=fb / FPS, start=f / FPS, dur=(fb - fa) / FPS, scale=sc))
     f += fb - fa
@@ -404,7 +404,7 @@ write("captions.html", scene("captions", f"""
 
 # ---------------------------------------------------------------- index
 videos = [f'        <video id="{s["id"]}" class="clip seg" src="assets/raw.mp4" data-start="{s["start"]}" data-duration="{s["dur"]}" '
-          f'data-media-start="{s["src_in"]}" data-track-index="1" data-has-audio="true" data-volume="1" playsinline></video>' for s in segs]
+          f'data-media-start="{s["src_in"]}" data-track-index="1" data-has-audio="true" data-volume="1"{' data-fade-out="0.08"' if s["id"] == "z1" else ""} playsinline></video>' for s in segs]
 cam = [f'      tl.set("#cam", {{ scale: {s["scale"]} }}, {s["start"]});' for s in segs]
 # slow premium push-in across the hook
 cam.append(f'      tl.fromTo("#cam", {{ scale: 1.0 }}, {{ scale: 1.06, duration: {end("a1")}, ease: "none", immediateRender: false }}, 0);')

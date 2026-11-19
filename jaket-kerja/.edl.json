@@ -1,5 +1,5 @@
 {
- "total": 37.8667,
+ "total": 38.0,
  "segs": [
   {
    "id": "a1",
@@ -113,9 +113,9 @@
    "id": "z1",
    "src": "v",
    "src_in": 51.6667,
-   "src_out": 53.3333,
+   "src_out": 53.4667,
    "start": 36.2,
-   "dur": 1.6665,
+   "dur": 1.7999,
    "scale": 1.06
   }
  ],
@@ -240,6 +240,7 @@
   "benda-benda",
   "ni",
   "Tekan",
-  "link"
+  "link",
+  "bawah"
  ]
 }
