@@ -32,7 +32,7 @@ EDL = [
     ("l1", "v", 37.54, 43.78, 1.00),  # kat sini, yang mana ada syarikat, ada pekerjaan, aku boleh letak juga nama, kat sini boleh buat logo yang sulam ke apa
     ("l2", "v", 44.26, 45.62, 1.08),  # memang nice lah
     ("w1", "v", 45.80, 51.02, 1.00),  # kalau customer datang kat kilang, pekerjaan apa kan, tengok pakai macam ni memang nampak padu
-    ("z1", "v", 51.68, 53.28, 1.06),  # nak dapat benda-benda ni, tekan link   ("bawah" cut from the audio; card says "di bio")
+    ("z1", "v", 51.68, 53.36, 1.06),  # nak dapat benda-benda ni, tekan link   ("bawah" cut from the audio; card says "di bio")
 ]
 
 
@@ -48,7 +48,7 @@ for sid, src, a, b, sc in EDL:
     if sid == "s1":
         b = 10.86  # stop right before "kalau"
     if sid == "z1":
-        b = 53.46  # measured: "link" ends 53.46, "bawah" starts 53.47
+        b = 53.89  # full take: "tekan link bawah" kept in the audio
     fa, fb = round(a * FPS), round(b * FPS)
     segs.append(dict(id=sid, src=src, src_in=fa / FPS, src_out=fb / FPS, start=f / FPS, dur=(fb - fa) / FPS, scale=sc))
     f += fb - fa
@@ -85,6 +85,8 @@ def norm(sid, w):
     core = re.sub(r"[^\w-]", "", t).lower()
     if core in {"perempuan", "-perempuan", "wish", "terima", "kasih", "kerana", "menonton"}:
         return None  # unclear words / whisper hallucination
+    if sid == "z1" and core == "bawah":
+        return "di bio"  # caption + card say "link di bio"
     if sid == "s1" and w["start"] > 12.6:
         return SECOND_SIZE  # whisper can't hear it clearly; set from the speaker
     if core in FIX:
