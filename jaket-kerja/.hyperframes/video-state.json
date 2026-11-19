@@ -479,8 +479,8 @@
   },
   "checks": {
     "latest": {
-      "revision": "6fe67293-7191-4aa2-823f-2b05470fe7fe",
-      "id": "ab94d741-d1c8-4968-a1f0-541ed53bfb51"
+      "revision": null,
+      "id": "9e78a7fe-dce7-4c84-a863-1f0fbe396de4"
     },
     "revisions": {
       "386b8888-f282-4f80-ba64-07003194a488": [
@@ -791,7 +791,6 @@
         {
           "id": "7f1f69da-49fe-4141-846f-427acd1556ad",
           "scope": "project",
-          "report": "/home/user/nazir1/jaket-kerja/.hyperframes/artifacts/checks/7f1f69da-49fe-4141-846f-427acd1556ad.json",
           "metadata": {
             "ok": true,
             "browserSkipped": false,
@@ -821,14 +820,15 @@
           "revision": "00766ac4-02a3-455a-8645-2fcbb671106a",
           "inputFingerprint": "d9684d4ddc50cf5a082b7df73256f429a943dc6df0b21eb099623600fee6e0fb",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "4b477218-e2ed-491d-a31d-52340a099aa6"
         }
       ],
       "7d62b565-8794-4e18-ae16-d38ed7517206": [
         {
           "id": "d7ce30d7-2511-4516-acbe-0219114c165b",
           "scope": "project",
-          "report": "/home/user/nazir1/jaket-kerja/.hyperframes/artifacts/checks/d7ce30d7-2511-4516-acbe-0219114c165b.json",
           "metadata": {
             "ok": true,
             "browserSkipped": false,
@@ -858,14 +858,15 @@
           "revision": "7d62b565-8794-4e18-ae16-d38ed7517206",
           "inputFingerprint": "76923ddac7e30d0475d4826b243f4f98866ec8b90bb63705f5a65af411557ae7",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "4b477218-e2ed-491d-a31d-52340a099aa6"
         }
       ],
       "6fe67293-7191-4aa2-823f-2b05470fe7fe": [
         {
           "id": "ab94d741-d1c8-4968-a1f0-541ed53bfb51",
           "scope": "project",
-          "report": "/home/user/nazir1/jaket-kerja/.hyperframes/artifacts/checks/ab94d741-d1c8-4968-a1f0-541ed53bfb51.json",
           "metadata": {
             "ok": true,
             "browserSkipped": false,
@@ -895,7 +896,9 @@
           "revision": "6fe67293-7191-4aa2-823f-2b05470fe7fe",
           "inputFingerprint": "9515467767687a528a29bdb609c9c2133ede4a871c1a696a60df6b36c6b3f7a6",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "4b477218-e2ed-491d-a31d-52340a099aa6"
         }
       ]
     },
@@ -1879,15 +1882,15 @@
   },
   "renders": {
     "latest": {
-      "id": "b46001f0-c9bd-4b19-9bc0-1f99c33be864",
-      "completedAt": 1795102612970,
+      "id": "4b477218-e2ed-491d-a31d-52340a099aa6",
+      "completedAt": 1795103296388,
       "output": "/home/user/nazir1/jaket-kerja/renders/jaket-kerja-final.mp4",
       "status": "completed",
-      "revision": null
+      "revision": "eeafbed5-3ed3-4306-b28c-35a82c18b580"
     },
     "retainedRevisions": [
-      "11625eda-00cf-4d2e-8bdf-3cf83362a988",
-      "a485f545-3cf5-4baf-a58a-d35a18c2cd06"
+      "eeafbed5-3ed3-4306-b28c-35a82c18b580",
+      "11625eda-00cf-4d2e-8bdf-3cf83362a988"
     ]
   },
   "pendingArtifactCleanup": []
