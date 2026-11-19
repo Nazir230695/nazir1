@@ -1,7 +1,7 @@
 {
   "version": 1,
   "historyId": "29dd0fd3-7f12-48bd-9624-29b7cca888b9",
-  "currentRevision": "64290694-56f2-474d-98e8-c268deea5862",
+  "currentRevision": "922bf7bd-715c-46a3-b56e-1915fc6162aa",
   "pendingChanges": false,
   "files": {
     "AGENTS.md": {
@@ -45,8 +45,8 @@
       "content": "/root/.cache/hyperframes/history/29dd0fd3-7f12-48bd-9624-29b7cca888b9/blobs/c2/c2efd9d902a59bf9ec5019035d7deadd17762136896b6e3cb6dd99ea50997a30"
     },
     "compositions/captions.html": {
-      "hash": "74f72ffd7dfaa362418cef6ef87300573bbe930035653e54be9ec86f47d4377e",
-      "content": "/root/.cache/hyperframes/history/29dd0fd3-7f12-48bd-9624-29b7cca888b9/blobs/74/74f72ffd7dfaa362418cef6ef87300573bbe930035653e54be9ec86f47d4377e"
+      "hash": "549fffd9f172864694fa6a91d0844b4569f93c12a7f73f72414e83e5635edc69",
+      "content": "/root/.cache/hyperframes/history/29dd0fd3-7f12-48bd-9624-29b7cca888b9/blobs/54/549fffd9f172864694fa6a91d0844b4569f93c12a7f73f72414e83e5635edc69"
     },
     "compositions/cta.html": {
       "hash": "bc9a9ba3456f532b85d8188ebebb7dc53575691fd717651f40e564a045abcd53",
@@ -77,8 +77,8 @@
       "content": "/root/.cache/hyperframes/history/29dd0fd3-7f12-48bd-9624-29b7cca888b9/blobs/df/df72db49253ebc2bd3d1677cb9259eda9e01bab3e1cb0d917e27472930791cb9"
     },
     "compositions/zus.html": {
-      "hash": "d67da3105ef34e265f40caf2c9f9a2aeed51eab2b2de8ae67cecf3142b66d3c7",
-      "content": "/root/.cache/hyperframes/history/29dd0fd3-7f12-48bd-9624-29b7cca888b9/blobs/d6/d67da3105ef34e265f40caf2c9f9a2aeed51eab2b2de8ae67cecf3142b66d3c7"
+      "hash": "01d36537bda078244db9b3047c76d5390ffcafcd76617ef1c49c75f573f4d99c",
+      "content": "/root/.cache/hyperframes/history/29dd0fd3-7f12-48bd-9624-29b7cca888b9/blobs/01/01d36537bda078244db9b3047c76d5390ffcafcd76617ef1c49c75f573f4d99c"
     },
     "hyperframes.json": {
       "hash": "35a6d4ea79ebe911f0d81705f7aace5d8ff0316b745b0311d56af50c9c237cb7",
@@ -297,12 +297,31 @@
           "after": "/root/.cache/hyperframes/history/29dd0fd3-7f12-48bd-9624-29b7cca888b9/blobs/3a/3adcc864bf3d527d6b6e0782b4caab07cd9a8d63a54f0f8234d7236f828814cb"
         }
       }
+    },
+    "922bf7bd-715c-46a3-b56e-1915fc6162aa": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1795056483337,
+      "endedAt": 1795056483527,
+      "files": {
+        "compositions/captions.html": {
+          "before": "/root/.cache/hyperframes/history/29dd0fd3-7f12-48bd-9624-29b7cca888b9/blobs/74/74f72ffd7dfaa362418cef6ef87300573bbe930035653e54be9ec86f47d4377e",
+          "after": "/root/.cache/hyperframes/history/29dd0fd3-7f12-48bd-9624-29b7cca888b9/blobs/54/549fffd9f172864694fa6a91d0844b4569f93c12a7f73f72414e83e5635edc69"
+        },
+        "compositions/zus.html": {
+          "before": "/root/.cache/hyperframes/history/29dd0fd3-7f12-48bd-9624-29b7cca888b9/blobs/d6/d67da3105ef34e265f40caf2c9f9a2aeed51eab2b2de8ae67cecf3142b66d3c7",
+          "after": "/root/.cache/hyperframes/history/29dd0fd3-7f12-48bd-9624-29b7cca888b9/blobs/01/01d36537bda078244db9b3047c76d5390ffcafcd76617ef1c49c75f573f4d99c"
+        }
+      }
     }
   },
   "checks": {
     "latest": {
-      "revision": null,
-      "id": "bd89fd45-1c9f-4065-9d90-ba7e892c5051"
+      "revision": "922bf7bd-715c-46a3-b56e-1915fc6162aa",
+      "id": "9f5ba1b5-6f82-432b-9d48-6ced802756b2"
     },
     "revisions": {
       "7f3f2ff5-df0d-4b50-8e53-f93613de4299": [
@@ -494,6 +513,43 @@
           "status": "cleaned",
           "cleanedAfterRender": "bee44550-4270-465b-91c7-4358515e008d"
         }
+      ],
+      "922bf7bd-715c-46a3-b56e-1915fc6162aa": [
+        {
+          "id": "9f5ba1b5-6f82-432b-9d48-6ced802756b2",
+          "scope": "project",
+          "report": "/home/user/nazir1/shopee-for-youth/.hyperframes/artifacts/checks/9f5ba1b5-6f82-432b-9d48-6ced802756b2.json",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 45000,
+              "cache": true,
+              "contrast": true,
+              "craft": true,
+              "strict": false,
+              "snapshots": false,
+              "safeZones": [
+                "tiktok",
+                "reels",
+                "shorts"
+              ],
+              "browserGpuMode": "auto",
+              "includeUnmounted": false
+            }
+          },
+          "createdAt": 1795056502017,
+          "contentHash": "fe8d38c9a7ad0792d53ddeed966ac7d7e4af74b363af0191bb8a5529b91d887c",
+          "revision": "922bf7bd-715c-46a3-b56e-1915fc6162aa",
+          "inputFingerprint": "fa9a41a5ac827a3b369c795820d2d553dd909539169f323af81bc2818bcc8982",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
       ]
     },
     "unversioned": [
@@ -535,7 +591,10 @@
     ]
   },
   "snapshots": {
-    "latest": null,
+    "latest": {
+      "revision": "922bf7bd-715c-46a3-b56e-1915fc6162aa",
+      "id": "51b12f29-de25-4a72-a07a-118ca63f15f1-3"
+    },
     "revisions": {
       "7f3f2ff5-df0d-4b50-8e53-f93613de4299": [
         {
@@ -1173,6 +1232,88 @@
           "attribution": "recorded-revision",
           "status": "cleaned",
           "cleanedAfterRender": "bee44550-4270-465b-91c7-4358515e008d"
+        }
+      ],
+      "922bf7bd-715c-46a3-b56e-1915fc6162aa": [
+        {
+          "scope": "full",
+          "id": "51b12f29-de25-4a72-a07a-118ca63f15f1-0",
+          "image": "/home/user/nazir1/shopee-for-youth/.hyperframes/artifacts/snapshots/2e6ebd4c-0f1f-4aa7-b33c-2d4c26613040/frame-00-at-20.5s.png",
+          "time": 20.5,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1795056509596,
+          "contentHash": "8a7f981e59c640d44621fd799297fc5eefafa8c1d573238eac194a6dd4ed0ac8",
+          "revision": "922bf7bd-715c-46a3-b56e-1915fc6162aa",
+          "inputFingerprint": "fa9a41a5ac827a3b369c795820d2d553dd909539169f323af81bc2818bcc8982",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "51b12f29-de25-4a72-a07a-118ca63f15f1-1",
+          "image": "/home/user/nazir1/shopee-for-youth/.hyperframes/artifacts/snapshots/2e6ebd4c-0f1f-4aa7-b33c-2d4c26613040/frame-01-at-42.5s.png",
+          "time": 42.5,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1795056509596,
+          "contentHash": "ad5e72030b1bc44a664cf4ca4f55f06a53136e7901b11da91d89fcc21a9f6043",
+          "revision": "922bf7bd-715c-46a3-b56e-1915fc6162aa",
+          "inputFingerprint": "fa9a41a5ac827a3b369c795820d2d553dd909539169f323af81bc2818bcc8982",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "51b12f29-de25-4a72-a07a-118ca63f15f1-2",
+          "image": "/home/user/nazir1/shopee-for-youth/.hyperframes/artifacts/snapshots/2e6ebd4c-0f1f-4aa7-b33c-2d4c26613040/frame-02-at-51s.png",
+          "time": 51,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1795056509596,
+          "contentHash": "9c9723cb7bbdc275871c9cb6be17541d36984a1c4b07a80cd3168b1eab2a71b2",
+          "revision": "922bf7bd-715c-46a3-b56e-1915fc6162aa",
+          "inputFingerprint": "fa9a41a5ac827a3b369c795820d2d553dd909539169f323af81bc2818bcc8982",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "51b12f29-de25-4a72-a07a-118ca63f15f1-3",
+          "image": "/home/user/nazir1/shopee-for-youth/.hyperframes/artifacts/snapshots/2e6ebd4c-0f1f-4aa7-b33c-2d4c26613040/frame-03-at-57.117s.png",
+          "time": 57.117,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1795056509596,
+          "contentHash": "6901794cd0dbdbca940680d2773f6be57f0935234e20022c17809454128ca26c",
+          "revision": "922bf7bd-715c-46a3-b56e-1915fc6162aa",
+          "inputFingerprint": "fa9a41a5ac827a3b369c795820d2d553dd909539169f323af81bc2818bcc8982",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
         }
       ]
     },

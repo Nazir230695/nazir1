@@ -76,7 +76,7 @@ def W(sid, t):
 
 
 # ---------------------------------------------------------------- one-word captions
-FIX = {"trip": "Trip.com", "jenzy": "Gen Z", "use": "Youth", "you": "Youth", "you.": "Youth", "ampun": "abang", "zeus": "ZUS", "sukofi": "ZUS Coffee",
+FIX = {"trip": "Trip.com", "jenzy": "Gen Z", "use": "Youth", "you": "Youth", "you.": "Youth", "ampun": "hampa", "abang": "hampa", "zeus": "ZUS", "sukofi": "ZUS Coffee",
        "hola": "la", "buntung": "untung", "shopee": "Shopee", "vip": "VIP", "ic": "IC"}
 
 
@@ -371,7 +371,7 @@ build_scene("vip", [
 build_scene("zus", [
     widget("zs-card", f'<div class="hd">{CUP}<span>Kaki ZUS Coffee?</span></div><div class="big" style="font-size:90px">FREE</div>'
            '<div style="text-align:center;font-size:32px;font-weight:800">ZUS Coffee setiap bulan</div>'
-           '<div style="text-align:center;font-size:28px;font-weight:600;color:var(--muted);margin-top:6px">dengan belanja RM100 di Shopee</div>',
+           '<div style="text-align:center;font-size:28px;font-weight:600;color:var(--muted);margin-top:6px">dengan belanja RM200 di Shopee</div>',
            W("z1a", 46.34) - 0.1, end("z1b") - W("z1a", 46.34) + 0.1, top=Y - 30),
     pill("zs-free", "Free je, tau!", W("z2", 59.90), end("z2") - W("z2", 59.90), None, Y + 20),
 ])
