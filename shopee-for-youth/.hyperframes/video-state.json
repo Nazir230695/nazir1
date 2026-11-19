@@ -335,8 +335,8 @@
   },
   "checks": {
     "latest": {
-      "revision": "922bf7bd-715c-46a3-b56e-1915fc6162aa",
-      "id": "9f5ba1b5-6f82-432b-9d48-6ced802756b2"
+      "revision": null,
+      "id": "bd89fd45-1c9f-4065-9d90-ba7e892c5051"
     },
     "revisions": {
       "7f3f2ff5-df0d-4b50-8e53-f93613de4299": [
@@ -533,7 +533,6 @@
         {
           "id": "9f5ba1b5-6f82-432b-9d48-6ced802756b2",
           "scope": "project",
-          "report": "/home/user/nazir1/shopee-for-youth/.hyperframes/artifacts/checks/9f5ba1b5-6f82-432b-9d48-6ced802756b2.json",
           "metadata": {
             "ok": true,
             "browserSkipped": false,
@@ -563,7 +562,9 @@
           "revision": "922bf7bd-715c-46a3-b56e-1915fc6162aa",
           "inputFingerprint": "fa9a41a5ac827a3b369c795820d2d553dd909539169f323af81bc2818bcc8982",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "0362a553-7dca-457a-b5ea-60423e88d7d9"
         }
       ]
     },
@@ -606,10 +607,7 @@
     ]
   },
   "snapshots": {
-    "latest": {
-      "revision": "922bf7bd-715c-46a3-b56e-1915fc6162aa",
-      "id": "51b12f29-de25-4a72-a07a-118ca63f15f1-3"
-    },
+    "latest": null,
     "revisions": {
       "7f3f2ff5-df0d-4b50-8e53-f93613de4299": [
         {
@@ -1253,7 +1251,6 @@
         {
           "scope": "full",
           "id": "51b12f29-de25-4a72-a07a-118ca63f15f1-0",
-          "image": "/home/user/nazir1/shopee-for-youth/.hyperframes/artifacts/snapshots/2e6ebd4c-0f1f-4aa7-b33c-2d4c26613040/frame-00-at-20.5s.png",
           "time": 20.5,
           "metadata": {
             "width": 1080,
@@ -1268,12 +1265,13 @@
           "revision": "922bf7bd-715c-46a3-b56e-1915fc6162aa",
           "inputFingerprint": "fa9a41a5ac827a3b369c795820d2d553dd909539169f323af81bc2818bcc8982",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "0362a553-7dca-457a-b5ea-60423e88d7d9"
         },
         {
           "scope": "full",
           "id": "51b12f29-de25-4a72-a07a-118ca63f15f1-1",
-          "image": "/home/user/nazir1/shopee-for-youth/.hyperframes/artifacts/snapshots/2e6ebd4c-0f1f-4aa7-b33c-2d4c26613040/frame-01-at-42.5s.png",
           "time": 42.5,
           "metadata": {
             "width": 1080,
@@ -1288,12 +1286,13 @@
           "revision": "922bf7bd-715c-46a3-b56e-1915fc6162aa",
           "inputFingerprint": "fa9a41a5ac827a3b369c795820d2d553dd909539169f323af81bc2818bcc8982",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "0362a553-7dca-457a-b5ea-60423e88d7d9"
         },
         {
           "scope": "full",
           "id": "51b12f29-de25-4a72-a07a-118ca63f15f1-2",
-          "image": "/home/user/nazir1/shopee-for-youth/.hyperframes/artifacts/snapshots/2e6ebd4c-0f1f-4aa7-b33c-2d4c26613040/frame-02-at-51s.png",
           "time": 51,
           "metadata": {
             "width": 1080,
@@ -1308,12 +1307,13 @@
           "revision": "922bf7bd-715c-46a3-b56e-1915fc6162aa",
           "inputFingerprint": "fa9a41a5ac827a3b369c795820d2d553dd909539169f323af81bc2818bcc8982",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "0362a553-7dca-457a-b5ea-60423e88d7d9"
         },
         {
           "scope": "full",
           "id": "51b12f29-de25-4a72-a07a-118ca63f15f1-3",
-          "image": "/home/user/nazir1/shopee-for-youth/.hyperframes/artifacts/snapshots/2e6ebd4c-0f1f-4aa7-b33c-2d4c26613040/frame-03-at-57.117s.png",
           "time": 57.117,
           "metadata": {
             "width": 1080,
@@ -1328,7 +1328,9 @@
           "revision": "922bf7bd-715c-46a3-b56e-1915fc6162aa",
           "inputFingerprint": "fa9a41a5ac827a3b369c795820d2d553dd909539169f323af81bc2818bcc8982",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "0362a553-7dca-457a-b5ea-60423e88d7d9"
         }
       ]
     },
@@ -1336,13 +1338,14 @@
   },
   "renders": {
     "latest": {
-      "id": "bee44550-4270-465b-91c7-4358515e008d",
-      "completedAt": 1795011407317,
+      "id": "0362a553-7dca-457a-b5ea-60423e88d7d9",
+      "completedAt": 1795057429183,
       "output": "/home/user/nazir1/shopee-for-youth/renders/shopee-for-youth-final.mp4",
       "status": "completed",
-      "revision": "64290694-56f2-474d-98e8-c268deea5862"
+      "revision": "00892316-04c3-45fd-9210-b8667dc1ef45"
     },
     "retainedRevisions": [
+      "00892316-04c3-45fd-9210-b8667dc1ef45",
       "64290694-56f2-474d-98e8-c268deea5862"
     ]
   },
