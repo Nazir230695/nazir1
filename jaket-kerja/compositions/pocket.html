@@ -31,18 +31,18 @@
 
   </style>
   <div id="root" data-composition-id="pocket" data-width="1080" data-height="1920">
-    <div id="pk-in" class=" clip" data-start="19.3" data-duration="2.1667" data-track-index="0" style="position:absolute; left:70px; width:360px; top:640px; text-align:left"><span id="pk-ini" class="pill" style="position:relative"><svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12.5l4.8 4.8L19.5 7"/></svg><span>Poket dalam kiri &amp; kanan</span></span></div>
-    <div id="pk-zip" class=" clip" data-start="21.5333" data-duration="3.2667" data-track-index="0" style="position:absolute; left:70px; width:360px; top:640px; text-align:left"><span id="pk-zipi" class="pill" style="position:relative"><svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12.5l4.8 4.8L19.5 7"/></svg><span>Poket berzip</span></span></div>
-    <div id="pk-phone" class=" clip" data-start="22.6333" data-duration="2.1333" data-track-index="0" style="position:absolute; left:70px; width:360px; top:730px; text-align:left"><span id="pk-phonei" class="pill" style="position:relative"><svg viewBox="0 0 24 24" fill="#f5c542"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><span>Senang ambil phone</span></span></div>
+    <div id="pk-in" class=" clip" data-start="17.0667" data-duration="2.1667" data-track-index="0" style="position:absolute; left:70px; width:360px; top:640px; text-align:left"><span id="pk-ini" class="pill" style="position:relative"><svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12.5l4.8 4.8L19.5 7"/></svg><span>Poket dalam kiri &amp; kanan</span></span></div>
+    <div id="pk-zip" class=" clip" data-start="19.3" data-duration="3.2333" data-track-index="0" style="position:absolute; left:70px; width:360px; top:640px; text-align:left"><span id="pk-zipi" class="pill" style="position:relative"><svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12.5l4.8 4.8L19.5 7"/></svg><span>Poket berzip</span></span></div>
+    <div id="pk-phone" class=" clip" data-start="20.4" data-duration="2.1333" data-track-index="0" style="position:absolute; left:70px; width:360px; top:730px; text-align:left"><span id="pk-phonei" class="pill" style="position:relative"><svg viewBox="0 0 24 24" fill="#f5c542"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><span>Senang ambil phone</span></span></div>
   </div>
   <script>
     const tl = gsap.timeline({ paused: true });
-    tl.fromTo("#pk-ini", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.45, ease: "back.out(1.6)" }, 19.3);
-    tl.to("#pk-in", { opacity: 0, filter: "blur(8px)", duration: 0.2, ease: "power2.in" }, 21.2333);
-    tl.fromTo("#pk-zipi", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.45, ease: "back.out(1.6)" }, 21.5333);
-    tl.to("#pk-zip", { opacity: 0, filter: "blur(8px)", duration: 0.2, ease: "power2.in" }, 24.5333);
-    tl.fromTo("#pk-phonei", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.45, ease: "back.out(1.6)" }, 22.6333);
-    tl.to("#pk-phone", { opacity: 0, filter: "blur(8px)", duration: 0.2, ease: "power2.in" }, 24.5333);
+    tl.fromTo("#pk-ini", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.45, ease: "back.out(1.6)" }, 17.0667);
+    tl.to("#pk-in", { opacity: 0, filter: "blur(8px)", duration: 0.2, ease: "power2.in" }, 19.0);
+    tl.fromTo("#pk-zipi", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.45, ease: "back.out(1.6)" }, 19.3);
+    tl.to("#pk-zip", { opacity: 0, filter: "blur(8px)", duration: 0.2, ease: "power2.in" }, 22.3);
+    tl.fromTo("#pk-phonei", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.45, ease: "back.out(1.6)" }, 20.4);
+    tl.to("#pk-phone", { opacity: 0, filter: "blur(8px)", duration: 0.2, ease: "power2.in" }, 22.3);
     window.__timelines["pocket"] = tl;
   </script>
 </template>

@@ -23,7 +23,7 @@ EDL = [
     ("a1", "v", 0.90, 2.94, 1.00),    # baju memang smart lah, memang terbaik lah
     ("a2", "v", 3.04, 5.88, 1.10),    # baju ni, kat sini pun dia ada button to lock
     ("a3", "v", 7.62, 8.88, 1.10),    # kiri dan kanan tau
-    ("s1", "v", 9.00, 12.70, 1.00),   # yang aku pakai ni size L, kalau nak fit-fit badan aku ambil size <SECOND_SIZE>
+    ("s1", "v", 9.00, 10.58, 1.00),   # yang aku pakai ni size L   (the "kalau nak fit" part is cut on request)
     ("r1", "v", 15.46, 17.50, 1.08),  # dia reflector kiri dan kanan
     ("r2", "v", 18.06, 21.98, 1.00),  # kat depan ni pun dia reflector, kalau naik motor ke pun memang selamat, safety
     ("r3", "v", 22.18, 23.14, 1.00),  # kat belakang pun dia reflector
@@ -46,7 +46,7 @@ for sid, src, a, b, sc in EDL:
     a = min(w0["start"] - 0.02, max(w0["start"] - 0.07, prev_end + 0.02))
     b = max(w1["start"] + 0.15, min(min(w1["end"], w1["start"] + 1.2) + 0.1, next_start - 0.03))
     if sid == "s1":
-        b = 13.10  # through the second size word
+        b = 10.86  # stop right before "kalau"
     if sid == "z1":
         b = min(b, 53.33)  # stop before "bawah"
     fa, fb = round(a * FPS), round(b * FPS)
@@ -355,7 +355,7 @@ def center_img(cid, src, start, dur, top=640, w=560):
     return body, js
 
 
-hl = [("L", W("s1", 10.56))]
+hl = [("L", fr(SEG["s1"]["start"] + 0.55))]  # light the L row early so it reads
 if SECOND_SIZE in SIZE_ROWS:
     hl.append((SECOND_SIZE, W("s1", 12.70)))
 build_scene("intro", [
