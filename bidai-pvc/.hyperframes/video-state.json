@@ -203,7 +203,6 @@
         {
           "id": "9973d799-7b84-4ea0-9a81-b73c8863a086",
           "scope": "project",
-          "report": "/home/user/nazir1/bidai-pvc/.hyperframes/artifacts/checks/9973d799-7b84-4ea0-9a81-b73c8863a086.json",
           "metadata": {
             "ok": true,
             "browserSkipped": false,
@@ -233,7 +232,9 @@
           "revision": "bc3ca3a7-7272-48d2-9849-c8a2e3f88c45",
           "inputFingerprint": "d0511f7277599cbb4561dcf35f1334115302da3fa22c6bb2c034ad903bac5556",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "34dcb2e8-0a1a-4eb6-b052-ce98f17cce58"
         }
       ],
       "809bf5e7-a021-48f6-b597-55e20ab81931": [
@@ -722,5 +723,18 @@
       ]
     },
     "unversioned": []
-  }
+  },
+  "renders": {
+    "latest": {
+      "id": "34dcb2e8-0a1a-4eb6-b052-ce98f17cce58",
+      "completedAt": 1795181460792,
+      "output": "/home/user/nazir1/bidai-pvc/renders/bidai-pvc-final.mp4",
+      "status": "completed",
+      "revision": "809bf5e7-a021-48f6-b597-55e20ab81931"
+    },
+    "retainedRevisions": [
+      "809bf5e7-a021-48f6-b597-55e20ab81931"
+    ]
+  },
+  "pendingArtifactCleanup": []
 }
