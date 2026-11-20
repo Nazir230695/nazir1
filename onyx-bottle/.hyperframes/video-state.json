@@ -189,8 +189,8 @@
   },
   "checks": {
     "latest": {
-      "revision": "59eaf100-34c5-4903-b9dc-80ba9f89a589",
-      "id": "8b9cb7e8-359b-4392-8064-3d0a03fcf7ee"
+      "revision": null,
+      "id": "271c5c9e-2dec-4d5d-b07d-902f1a510060"
     },
     "revisions": {
       "a4b3914e-ed7b-4664-9776-3093cb28b9b5": [
@@ -235,7 +235,6 @@
         {
           "id": "8b9cb7e8-359b-4392-8064-3d0a03fcf7ee",
           "scope": "project",
-          "report": "/home/user/nazir1/onyx-bottle/.hyperframes/artifacts/checks/8b9cb7e8-359b-4392-8064-3d0a03fcf7ee.json",
           "metadata": {
             "ok": true,
             "browserSkipped": false,
@@ -265,7 +264,9 @@
           "revision": "59eaf100-34c5-4903-b9dc-80ba9f89a589",
           "inputFingerprint": "a36f4862803f8c75e14f8c6580a8c1c689a096baa1d05013508d75f5c33b10b1",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "84674eb7-96ba-4cf8-acdd-9b341ff42d16"
         }
       ]
     },
@@ -527,13 +528,14 @@
   },
   "renders": {
     "latest": {
-      "id": "5aff9873-9e62-47d4-a990-6aa1aeae37f9",
-      "completedAt": 1795136681020,
+      "id": "84674eb7-96ba-4cf8-acdd-9b341ff42d16",
+      "completedAt": 1795138022313,
       "output": "/home/user/nazir1/onyx-bottle/renders/onyx-bottle-final.mp4",
       "status": "completed",
-      "revision": "e2b4de61-09be-4c7d-be41-3985acd69598"
+      "revision": "0ecbe794-ac27-4d77-831e-f40996e6c6f8"
     },
     "retainedRevisions": [
+      "0ecbe794-ac27-4d77-831e-f40996e6c6f8",
       "e2b4de61-09be-4c7d-be41-3985acd69598"
     ]
   },
