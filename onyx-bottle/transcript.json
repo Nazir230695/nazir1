@@ -1,0 +1,392 @@
+[
+{
+"text": "Boto",
+"start": 2.46,
+"end": 2.9,
+"p": 0.42
+},
+{
+"text": "Ayak",
+"start": 2.9,
+"end": 3.22,
+"p": 0.63
+},
+{
+"text": "ni",
+"start": 3.22,
+"end": 3.34,
+"p": 0.76
+},
+{
+"text": "memang",
+"start": 3.34,
+"end": 3.48,
+"p": 0.81
+},
+{
+"text": "padu",
+"start": 3.48,
+"end": 3.86,
+"p": 0.9
+},
+{
+"text": "lah",
+"start": 3.86,
+"end": 3.92,
+"p": 0.56
+},
+{
+"text": "daripada",
+"start": 3.92,
+"end": 4.42,
+"p": 0.86
+},
+{
+"text": "Onyx",
+"start": 4.42,
+"end": 4.96,
+"p": 0.91
+},
+{
+"text": "tau",
+"start": 4.96,
+"end": 5.16,
+"p": 0.5
+},
+{
+"text": "Kamu",
+"start": 5.16,
+"end": 5.74,
+"p": 0.42
+},
+{
+"text": "nampak",
+"start": 5.74,
+"end": 5.96,
+"p": 0.82
+},
+{
+"text": "dia",
+"start": 5.96,
+"end": 6.22,
+"p": 0.25
+},
+{
+"text": "boleh",
+"start": 6.22,
+"end": 6.5,
+"p": 0.67
+},
+{
+"text": "juga",
+"start": 6.5,
+"end": 6.76,
+"p": 0.74
+},
+{
+"text": "jadi",
+"start": 6.76,
+"end": 6.94,
+"p": 0.98
+},
+{
+"text": "dumbbell",
+"start": 6.94,
+"end": 7.32,
+"p": 0.9
+},
+{
+"text": "Selain",
+"start": 8.38,
+"end": 8.82,
+"p": 0.58
+},
+{
+"text": "tu,",
+"start": 8.82,
+"end": 8.98,
+"p": 0.96
+},
+{
+"text": "kamu",
+"start": 9.1,
+"end": 9.22,
+"p": 0.91
+},
+{
+"text": "tengok",
+"start": 9.22,
+"end": 9.54,
+"p": 0.95
+},
+{
+"text": "lah",
+"start": 9.54,
+"end": 9.64,
+"p": 0.61
+},
+{
+"text": "yang",
+"start": 9.64,
+"end": 9.94,
+"p": 0.77
+},
+{
+"text": "best",
+"start": 9.94,
+"end": 10.24,
+"p": 0.97
+},
+{
+"text": "dia",
+"start": 10.24,
+"end": 10.38,
+"p": 0.99
+},
+{
+"text": "lagi",
+"start": 10.38,
+"end": 10.58,
+"p": 0.99
+},
+{
+"text": "Ni",
+"start": 10.98,
+"end": 11.2,
+"p": 0.31
+},
+{
+"text": "Haa",
+"start": 13.42,
+"end": 13.86,
+"p": 0.41
+},
+{
+"text": "Boleh",
+"start": 15.1,
+"end": 15.54,
+"p": 0.8
+},
+{
+"text": "record",
+"start": 15.54,
+"end": 15.92,
+"p": 0.26
+},
+{
+"text": "tau",
+"start": 15.92,
+"end": 16.14,
+"p": 0.88
+},
+{
+"text": "sambil",
+"start": 16.14,
+"end": 16.62,
+"p": 0.78
+},
+{
+"text": "nak",
+"start": 16.62,
+"end": 16.7,
+"p": 0.29
+},
+{
+"text": "main",
+"start": 16.7,
+"end": 16.9,
+"p": 0.3
+},
+{
+"text": "dumbbell",
+"start": 16.9,
+"end": 17.4,
+"p": 1.0
+},
+{
+"text": "ke",
+"start": 17.4,
+"end": 17.72,
+"p": 0.86
+},
+{
+"text": "main",
+"start": 17.72,
+"end": 18.24,
+"p": 0.95
+},
+{
+"text": "gym",
+"start": 18.24,
+"end": 18.48,
+"p": 0.93
+},
+{
+"text": "ke",
+"start": 18.48,
+"end": 18.62,
+"p": 0.77
+},
+{
+"text": "apa",
+"start": 18.62,
+"end": 18.74,
+"p": 0.71
+},
+{
+"text": "kan",
+"start": 18.74,
+"end": 18.94,
+"p": 0.9
+},
+{
+"text": "Tak",
+"start": 18.94,
+"end": 19.32,
+"p": 0.93
+},
+{
+"text": "payah",
+"start": 19.32,
+"end": 19.52,
+"p": 0.7
+},
+{
+"text": "tau,",
+"start": 19.52,
+"end": 19.68,
+"p": 0.36
+},
+{
+"text": "sekarang",
+"start": 19.76,
+"end": 19.88,
+"p": 0.99
+},
+{
+"text": "ni",
+"start": 19.88,
+"end": 20.02,
+"p": 0.98
+},
+{
+"text": "bukan",
+"start": 20.02,
+"end": 20.1,
+"p": 0.95
+},
+{
+"text": "sama",
+"start": 20.1,
+"end": 20.36,
+"p": 0.58
+},
+{
+"text": "-sama",
+"start": 20.36,
+"end": 20.48,
+"p": 0.94
+},
+{
+"text": "tripod",
+"start": 20.48,
+"end": 20.82,
+"p": 0.96
+},
+{
+"text": "Ni",
+"start": 20.82,
+"end": 21.46,
+"p": 0.8
+},
+{
+"text": "Boto",
+"start": 22.38,
+"end": 22.82,
+"p": 0.97
+},
+{
+"text": "Ayak",
+"start": 22.82,
+"end": 23.22,
+"p": 0.99
+},
+{
+"text": "ni,",
+"start": 23.22,
+"end": 23.4,
+"p": 0.99
+},
+{
+"text": "oh",
+"start": 23.46,
+"end": 23.64,
+"p": 0.09
+},
+{
+"text": "lah",
+"start": 23.64,
+"end": 23.96,
+"p": 0.16
+},
+{
+"text": "memang",
+"start": 23.96,
+"end": 24.2,
+"p": 0.42
+},
+{
+"text": "padu",
+"start": 24.2,
+"end": 24.74,
+"p": 0.99
+},
+{
+"text": "lah",
+"start": 24.74,
+"end": 24.86,
+"p": 0.96
+},
+{
+"text": "Nak",
+"start": 24.86,
+"end": 25.4,
+"p": 0.97
+},
+{
+"text": "dapat",
+"start": 25.4,
+"end": 25.62,
+"p": 0.97
+},
+{
+"text": "mana,",
+"start": 25.62,
+"end": 25.78,
+"p": 0.65
+},
+{
+"text": "pergi",
+"start": 25.9,
+"end": 26.04,
+"p": 0.31
+},
+{
+"text": "ke",
+"start": 26.04,
+"end": 26.14,
+"p": 0.5
+},
+{
+"text": "link",
+"start": 26.14,
+"end": 26.28,
+"p": 0.64
+},
+{
+"text": "tu",
+"start": 26.28,
+"end": 26.36,
+"p": 0.34
+}
+]
