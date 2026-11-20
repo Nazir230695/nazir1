@@ -29,6 +29,7 @@ EDL = [
     ("d2", "v", 25.30, 27.34, 1.08, None, None),  # dia ada speaker, hidden speaker dia, memang rare
     ("e1", "v", 29.68, 30.52, 1.00, 29.30, None), # (lepas) tu lawa dia memang lawa
     ("f1", "v", 31.18, 34.18, 1.00, None, None),  # boleh bluetooth speaker, boleh dengar lagu, boleh angkat call
+    ("g0", "w", 0.76, 1.92, 1.00, 0.70, 11.05),  # okay, ni apa dengar lah  + the song playing from the glasses speaker (held to the mic)
     ("g1", "w", 20.24, 21.30, 1.06, None, 21.75), # oh layan weh, syok oh       (second clip, listening)
     ("g2", "w", 25.58, 26.00, 1.10, None, 26.70), # memang terbaik lah
     ("h1", "v", 34.54, 35.90, 1.00, 34.70, None), # yang best dia yang ni
@@ -377,7 +378,9 @@ build_scene("speaker", [
 
 build_scene("sound", [
     music_card("sd-music", W("f1", 31.48), W("f1", 33.90) - W("f1", 31.48), 900, title="Bluetooth speaker", sub="Boleh dengar lagu"),
-    call_card("sd-call", W("f1", 33.90), end("f1") - W("f1", 33.90) + 0.9, 900),
+    call_card("sd-call", W("f1", 33.90), end("f1") - W("f1", 33.90) + 0.6, 900),
+    music_card("sd-play", W("g0", 1.92) + 0.3, end("g0") - W("g0", 1.92) - 0.3, 1150, title="Lagu dari speaker spek", sub="Dengar sendiri"),
+    sound_arcs("sd-arcs0", W("g0", 1.92) + 0.3, end("g0") - W("g0", 1.92) - 0.3, 540, 640),
     head("sd-sedap", "Bunyi sedap", st("g1") + 0.9, end("g1") - st("g1") - 0.9, 1080),
     sound_arcs("sd-arcs", st("g1") + 0.05, end("g2") - st("g1") - 0.05, 610, 600),
     music_card("sd-music2", st("g2"), end("g2") - st("g2"), 1000, title="Memang terbaik", sub="Hidden speaker"),
@@ -437,6 +440,7 @@ SFX = [("sx-hk", "whoosh.mp3", 0.0, 0.3),
        ("sx-bt", "pop.mp3", W("f1", 31.48), 0.3),
        ("sx-music", "whoosh-short.mp3", W("f1", 33.18), 0.3),
        ("sx-call", "click-soft.mp3", W("f1", 33.90), 0.4),
+       ("sx-play", "whoosh-short.mp3", W("g0", 1.92) + 0.3, 0.2),
        ("sx-sedap", "sparkle.mp3", st("g1"), 0.22),
        ("sx-best", "pop.mp3", st("h1") + 0.05, 0.3),
        ("sx-car", "pop.mp3", W("i1", 42.04), 0.3),
