@@ -235,8 +235,8 @@
   },
   "checks": {
     "latest": {
-      "revision": "74eccf91-ae9f-4c70-96b6-ef540897c63d",
-      "id": "5a327d12-9925-4540-8d8d-5359abfa1127"
+      "revision": null,
+      "id": "271c5c9e-2dec-4d5d-b07d-902f1a510060"
     },
     "revisions": {
       "a4b3914e-ed7b-4664-9776-3093cb28b9b5": [
@@ -319,7 +319,6 @@
         {
           "id": "5a327d12-9925-4540-8d8d-5359abfa1127",
           "scope": "project",
-          "report": "/home/user/nazir1/onyx-bottle/.hyperframes/artifacts/checks/5a327d12-9925-4540-8d8d-5359abfa1127.json",
           "metadata": {
             "ok": true,
             "browserSkipped": false,
@@ -349,7 +348,9 @@
           "revision": "74eccf91-ae9f-4c70-96b6-ef540897c63d",
           "inputFingerprint": "628c05960f585084ff037d3f238fc8a1d6d19ddeca0b92d0f194afbd92cdb37d",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "e58b1813-26a3-47a2-afff-f8db7dba7a55"
         }
       ]
     },
@@ -392,10 +393,7 @@
     ]
   },
   "snapshots": {
-    "latest": {
-      "revision": "74eccf91-ae9f-4c70-96b6-ef540897c63d",
-      "id": "41d8744f-4fa8-477b-9e09-add4fbbe3fd8-3"
-    },
+    "latest": null,
     "revisions": {
       "a4b3914e-ed7b-4664-9776-3093cb28b9b5": [
         {
@@ -613,7 +611,6 @@
         {
           "scope": "full",
           "id": "41d8744f-4fa8-477b-9e09-add4fbbe3fd8-0",
-          "image": "/home/user/nazir1/onyx-bottle/.hyperframes/artifacts/snapshots/1c2f876c-0baf-4b58-ada2-646b08422f23/frame-00-at-0.3s.png",
           "time": 0.3,
           "metadata": {
             "width": 1080,
@@ -628,12 +625,13 @@
           "revision": "74eccf91-ae9f-4c70-96b6-ef540897c63d",
           "inputFingerprint": "628c05960f585084ff037d3f238fc8a1d6d19ddeca0b92d0f194afbd92cdb37d",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "e58b1813-26a3-47a2-afff-f8db7dba7a55"
         },
         {
           "scope": "full",
           "id": "41d8744f-4fa8-477b-9e09-add4fbbe3fd8-1",
-          "image": "/home/user/nazir1/onyx-bottle/.hyperframes/artifacts/snapshots/1c2f876c-0baf-4b58-ada2-646b08422f23/frame-01-at-1.5s.png",
           "time": 1.5,
           "metadata": {
             "width": 1080,
@@ -648,12 +646,13 @@
           "revision": "74eccf91-ae9f-4c70-96b6-ef540897c63d",
           "inputFingerprint": "628c05960f585084ff037d3f238fc8a1d6d19ddeca0b92d0f194afbd92cdb37d",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "e58b1813-26a3-47a2-afff-f8db7dba7a55"
         },
         {
           "scope": "full",
           "id": "41d8744f-4fa8-477b-9e09-add4fbbe3fd8-2",
-          "image": "/home/user/nazir1/onyx-bottle/.hyperframes/artifacts/snapshots/1c2f876c-0baf-4b58-ada2-646b08422f23/frame-02-at-3s.png",
           "time": 3,
           "metadata": {
             "width": 1080,
@@ -668,12 +667,13 @@
           "revision": "74eccf91-ae9f-4c70-96b6-ef540897c63d",
           "inputFingerprint": "628c05960f585084ff037d3f238fc8a1d6d19ddeca0b92d0f194afbd92cdb37d",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "e58b1813-26a3-47a2-afff-f8db7dba7a55"
         },
         {
           "scope": "full",
           "id": "41d8744f-4fa8-477b-9e09-add4fbbe3fd8-3",
-          "image": "/home/user/nazir1/onyx-bottle/.hyperframes/artifacts/snapshots/1c2f876c-0baf-4b58-ada2-646b08422f23/frame-03-at-23.683s.png",
           "time": 23.683,
           "metadata": {
             "width": 1080,
@@ -688,7 +688,9 @@
           "revision": "74eccf91-ae9f-4c70-96b6-ef540897c63d",
           "inputFingerprint": "628c05960f585084ff037d3f238fc8a1d6d19ddeca0b92d0f194afbd92cdb37d",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "e58b1813-26a3-47a2-afff-f8db7dba7a55"
         }
       ]
     },
@@ -696,15 +698,15 @@
   },
   "renders": {
     "latest": {
-      "id": "84674eb7-96ba-4cf8-acdd-9b341ff42d16",
-      "completedAt": 1795138022313,
+      "id": "e58b1813-26a3-47a2-afff-f8db7dba7a55",
+      "completedAt": 1795140674177,
       "output": "/home/user/nazir1/onyx-bottle/renders/onyx-bottle-final.mp4",
       "status": "completed",
-      "revision": "0ecbe794-ac27-4d77-831e-f40996e6c6f8"
+      "revision": "9f3e51c1-a078-4ae9-8206-cd1489ba3154"
     },
     "retainedRevisions": [
-      "0ecbe794-ac27-4d77-831e-f40996e6c6f8",
-      "e2b4de61-09be-4c7d-be41-3985acd69598"
+      "9f3e51c1-a078-4ae9-8206-cd1489ba3154",
+      "0ecbe794-ac27-4d77-831e-f40996e6c6f8"
     ]
   },
   "pendingArtifactCleanup": []
