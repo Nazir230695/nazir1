@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ms">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+    <style>
+      :root {
+      --ink: #ffffff;
+      --muted: rgba(255,255,255,.62);
+      --glass: rgba(18, 19, 22, 0.82);
+      --stroke: rgba(255,255,255,.12);
+      --gold: #f5c542;
+      --rose: #c86b9a;
+      --ok: #34c759;
+      --font-ui: "Montserrat", sans-serif;
+      --font-num: "Oswald", "League Gothic", sans-serif;
+      --ground: #000;
+      }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; width: 1080px; height: 1920px; overflow: hidden; background: var(--ground); }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden; background: var(--ground); }
+      #cam, #broll { position: absolute; inset: 0; transform-origin: 50% 45%; }
+      #broll { z-index: 2; }
+      #cam video, #broll video { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; object-fit: cover; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="52.2333" data-width="1080" data-height="1920">
+      <!-- Footage: one clip per kept take from the talking video. Trim in Studio by dragging clip edges. -->
+      <div id="cam">
+        <video id="h1" class="clip seg" src="assets/raw.mp4" data-start="0.0" data-duration="4.1332" data-media-start="1.4" data-track-index="1" data-has-audio="true" data-volume="1" playsinline></video>
+        <video id="o1" class="clip seg" src="assets/raw.mp4" data-start="4.1334" data-duration="4.2332" data-media-start="5.5333" data-track-index="1" data-has-audio="true" data-volume="1" playsinline></video>
+        <video id="b1" class="clip seg" src="assets/raw.mp4" data-start="8.3667" data-duration="1.5665" data-media-start="10.3333" data-track-index="1" data-has-audio="true" data-volume="1" playsinline></video>
+        <video id="p1" class="clip seg" src="assets/raw.mp4" data-start="9.9334" data-duration="2.9665" data-media-start="14.0333" data-track-index="1" data-has-audio="true" data-volume="1" playsinline></video>
+        <video id="w1" class="clip seg" src="assets/raw.mp4" data-start="12.9" data-duration="6.766500000000001" data-media-start="22.3" data-track-index="1" data-has-audio="true" data-volume="1" playsinline></video>
+        <video id="c1" class="clip seg" src="assets/raw.mp4" data-start="19.6667" data-duration="10.166500000000001" data-media-start="29.3" data-track-index="1" data-has-audio="true" data-volume="1" playsinline></video>
+        <video id="f1" class="clip seg" src="assets/raw.mp4" data-start="29.8334" data-duration="1.7332" data-media-start="39.5333" data-track-index="1" data-has-audio="true" data-volume="1" playsinline></video>
+        <video id="f2" class="clip seg" src="assets/raw.mp4" data-start="31.5667" data-duration="3.8665" data-media-start="47.8" data-track-index="1" data-has-audio="true" data-volume="1" playsinline></video>
+        <video id="t1" class="clip seg" src="assets/raw.mp4" data-start="35.4334" data-duration="0.9999" data-media-start="52.3333" data-track-index="1" data-has-audio="true" data-volume="1" playsinline></video>
+        <video id="s1" class="clip seg" src="assets/raw.mp4" data-start="36.4334" data-duration="5.1665" data-media-start="53.3333" data-track-index="1" data-has-audio="true" data-volume="1" playsinline></video>
+        <video id="k1" class="clip seg" src="assets/raw.mp4" data-start="41.6" data-duration="4.1999" data-media-start="62.3667" data-track-index="1" data-has-audio="true" data-volume="1" playsinline></video>
+        <video id="k2" class="clip seg" src="assets/raw.mp4" data-start="45.8" data-duration="2.9332" data-media-start="70.8333" data-track-index="1" data-has-audio="true" data-volume="1" playsinline></video>
+        <video id="z1" class="clip seg" src="assets/raw.mp4" data-start="48.7334" data-duration="3.4999" data-media-start="75.3667" data-track-index="1" data-has-audio="true" data-volume="1" data-fade-out="0.08" playsinline></video>
+      </div>
+      <!-- B-roll: muted cutaways from the second video; the talking audio keeps running underneath. -->
+      <div id="broll">
+        <video id="br1" class="clip" src="assets/broll.mp4" data-start="8.3667" data-duration="1.5667" data-media-start="0.3" data-track-index="8" muted playsinline></video>
+        <video id="br2" class="clip" src="assets/broll.mp4" data-start="11.9333" data-duration="0.9667" data-media-start="22.4" data-track-index="8" muted playsinline></video>
+        <video id="br3" class="clip" src="assets/broll.mp4" data-start="47.4667" data-duration="1.2667" data-media-start="7.0" data-track-index="8" muted playsinline></video>
+      </div>
+      <div id="intro" data-composition-id="intro" data-composition-src="compositions/intro.html" data-start="0" data-duration="52.2333" data-track-index="2" data-track-kind="graphics" data-width="1080" data-height="1920" style="z-index:7"></div>
+      <div id="clean" data-composition-id="clean" data-composition-src="compositions/clean.html" data-start="0" data-duration="52.2333" data-track-index="3" data-track-kind="graphics" data-width="1080" data-height="1920" style="z-index:8"></div>
+      <div id="style" data-composition-id="style" data-composition-src="compositions/style.html" data-start="0" data-duration="52.2333" data-track-index="4" data-track-kind="graphics" data-width="1080" data-height="1920" style="z-index:9"></div>
+      <div id="kit" data-composition-id="kit" data-composition-src="compositions/kit.html" data-start="0" data-duration="52.2333" data-track-index="5" data-track-kind="graphics" data-width="1080" data-height="1920" style="z-index:10"></div>
+      <div id="shop" data-composition-id="shop" data-composition-src="compositions/shop.html" data-start="0" data-duration="52.2333" data-track-index="6" data-track-kind="graphics" data-width="1080" data-height="1920" style="z-index:11"></div>
+      <div id="pull" data-composition-id="pull" data-composition-src="compositions/pull.html" data-start="0" data-duration="52.2333" data-track-index="7" data-track-kind="graphics" data-width="1080" data-height="1920" style="z-index:12"></div>
+      <div id="outro" data-composition-id="outro" data-composition-src="compositions/outro.html" data-start="0" data-duration="52.2333" data-track-index="9" data-track-kind="graphics" data-width="1080" data-height="1920" style="z-index:14"></div>
+      <div id="captions" data-composition-id="captions" data-composition-src="compositions/captions.html" data-start="0" data-duration="52.2333" data-track-index="10" data-track-kind="captions" data-width="1080" data-height="1920" style="z-index:15"></div>
+      <audio id="sx-ttl" class="clip" src="assets/sfx/whoosh.mp3" data-start="0.0667" data-duration="0.5667" data-track-index="20" data-volume="0.3"></audio>
+      <audio id="sx-buka" class="clip" src="assets/sfx/pop.mp3" data-start="4.9333" data-duration="0.7333" data-track-index="20" data-volume="0.3"></audio>
+      <audio id="sx-br1" class="clip" src="assets/sfx/whoosh-short.mp3" data-start="8.2667" data-duration="0.5667" data-track-index="20" data-volume="0.3"></audio>
+      <audio id="sx-priv" class="clip" src="assets/sfx/pop.mp3" data-start="10.5667" data-duration="0.7333" data-track-index="20" data-volume="0.3"></audio>
+      <audio id="sx-dust" class="clip" src="assets/sfx/pop.mp3" data-start="14.9" data-duration="0.7333" data-track-index="20" data-volume="0.3"></audio>
+      <audio id="sx-pvc" class="clip" src="assets/sfx/click.mp3" data-start="17.4667" data-duration="0.3667" data-track-index="20" data-volume="0.4"></audio>
+      <audio id="sx-wp" class="clip" src="assets/sfx/sparkle.mp3" data-start="19.0" data-duration="1.8" data-track-index="20" data-volume="0.25"></audio>
+      <audio id="sx-cl" class="clip" src="assets/sfx/whoosh.mp3" data-start="19.6667" data-duration="0.5667" data-track-index="21" data-volume="0.3"></audio>
+      <audio id="sx-rm" class="clip" src="assets/sfx/whoosh-short.mp3" data-start="22.0" data-duration="0.5667" data-track-index="20" data-volume="0.3"></audio>
+      <audio id="sx-r1" class="clip" src="assets/sfx/click-soft.mp3" data-start="22.1333" data-duration="0.3667" data-track-index="21" data-volume="0.4"></audio>
+      <audio id="sx-r2" class="clip" src="assets/sfx/click-soft.mp3" data-start="24.4" data-duration="0.3667" data-track-index="20" data-volume="0.4"></audio>
+      <audio id="sx-r3" class="clip" src="assets/sfx/click-soft.mp3" data-start="26.5333" data-duration="0.3667" data-track-index="20" data-volume="0.4"></audio>
+      <audio id="sx-r4" class="clip" src="assets/sfx/click-soft.mp3" data-start="27.8" data-duration="0.3667" data-track-index="20" data-volume="0.4"></audio>
+      <audio id="sx-kit" class="clip" src="assets/sfx/whoosh-short.mp3" data-start="29.8333" data-duration="0.5667" data-track-index="20" data-volume="0.3"></audio>
+      <audio id="sx-k1" class="clip" src="assets/sfx/pop.mp3" data-start="32.7" data-duration="0.7333" data-track-index="20" data-volume="0.3"></audio>
+      <audio id="sx-k2" class="clip" src="assets/sfx/pop.mp3" data-start="34.3333" data-duration="0.7333" data-track-index="20" data-volume="0.3"></audio>
+      <audio id="sx-shop" class="clip" src="assets/sfx/whoosh.mp3" data-start="36.3333" data-duration="0.5667" data-track-index="20" data-volume="0.3"></audio>
+      <audio id="sx-num" class="clip" src="assets/sfx/pop.mp3" data-start="38.0333" data-duration="0.7333" data-track-index="20" data-volume="0.35"></audio>
+      <audio id="sx-stars" class="clip" src="assets/sfx/sparkle.mp3" data-start="39.2667" data-duration="1.8" data-track-index="20" data-volume="0.3"></audio>
+      <audio id="sx-half" class="clip" src="assets/sfx/whoosh-short.mp3" data-start="42.3" data-duration="0.5667" data-track-index="20" data-volume="0.3"></audio>
+      <audio id="sx-tali" class="clip" src="assets/sfx/pop.mp3" data-start="44.4" data-duration="0.7333" data-track-index="20" data-volume="0.3"></audio>
+      <audio id="sx-full" class="clip" src="assets/sfx/pop.mp3" data-start="46.0" data-duration="0.7333" data-track-index="20" data-volume="0.3"></audio>
+      <audio id="sx-shut" class="clip" src="assets/sfx/click-soft.mp3" data-start="47.5667" data-duration="0.3667" data-track-index="20" data-volume="0.4"></audio>
+      <audio id="sx-cta" class="clip" src="assets/sfx/sparkle.mp3" data-start="48.8" data-duration="1.8" data-track-index="20" data-volume="0.3"></audio>
+    </div>
+    <script>
+      const tl = gsap.timeline({ paused: true });
+      tl.set("#cam", { scale: 1.0 }, 0.0);
+      tl.set("#cam", { scale: 1.08 }, 4.1334);
+      tl.set("#cam", { scale: 1.0 }, 8.3667);
+      tl.set("#cam", { scale: 1.08 }, 9.9334);
+      tl.set("#cam", { scale: 1.0 }, 12.9);
+      tl.set("#cam", { scale: 1.0 }, 19.6667);
+      tl.set("#cam", { scale: 1.08 }, 29.8334);
+      tl.set("#cam", { scale: 1.0 }, 31.5667);
+      tl.set("#cam", { scale: 1.1 }, 35.4334);
+      tl.set("#cam", { scale: 1.0 }, 36.4334);
+      tl.set("#cam", { scale: 1.0 }, 41.6);
+      tl.set("#cam", { scale: 1.06 }, 45.8);
+      tl.set("#cam", { scale: 1.04 }, 48.7334);
+      tl.fromTo("#cam", { scale: 1.0 }, { scale: 1.06, duration: 4.1333, ease: "none", immediateRender: false }, 0);
+      tl.fromTo("#broll", { scale: 1.0 }, { scale: 1.08, duration: 1.5667, ease: "none", immediateRender: false }, 8.3667);
+      tl.fromTo("#broll", { scale: 1.0 }, { scale: 1.08, duration: 0.9667, ease: "none", immediateRender: false }, 11.9333);
+      tl.fromTo("#broll", { scale: 1.0 }, { scale: 1.08, duration: 1.2667, ease: "none", immediateRender: false }, 47.4667);
+      tl.to({}, { duration: 52.2333 }, 0);
+      window.__timelines["main"] = tl;
+    </script>
+  </body>
+</html>

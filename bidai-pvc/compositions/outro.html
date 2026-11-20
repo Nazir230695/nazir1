@@ -1,0 +1,42 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; pointer-events: none; 
+      --ink: #ffffff;
+      --muted: rgba(255,255,255,.62);
+      --glass: rgba(18, 19, 22, 0.82);
+      --stroke: rgba(255,255,255,.12);
+      --gold: #f5c542;
+      --rose: #c86b9a;
+      --ok: #34c759;
+      --font-ui: "Montserrat", sans-serif;
+      --font-num: "Oswald", "League Gothic", sans-serif;
+ }
+    .widget { position: absolute; left: 50%; width: 600px; margin-left: -330px; padding: 26px 32px; border-radius: 34px;
+      background: var(--glass); border: 1.5px solid var(--stroke); box-shadow: 0 24px 60px rgba(0,0,0,.45);
+      backdrop-filter: blur(20px); color: var(--ink); font-family: var(--font-ui); }
+    .widget .hd { display: flex; align-items: center; justify-content: center; gap: 10px; font-size: 28px; font-weight: 600; color: var(--muted); text-align: center; }
+    .widget .hd svg { width: 30px; height: 30px; flex: none; }
+    .widget .rowx { display: flex; align-items: center; justify-content: space-between; margin-top: 18px; font-size: 34px; font-weight: 700; }
+    .widget .rowx .v { font-family: var(--font-num); font-size: 40px; font-weight: 700; color: var(--ok); letter-spacing: .02em; }
+    .widget .big { margin-top: 6px; text-align: center; font-family: var(--font-num); font-size: 92px; font-weight: 700; color: var(--gold); line-height: 1.05; letter-spacing: .01em; }
+    .pill { display: inline-flex; align-items: center; gap: 10px; padding: 12px 24px; border-radius: 999px;
+      background: #fff; color: #111; font-family: var(--font-ui); font-weight: 800; font-size: 32px; box-shadow: 0 12px 30px rgba(0,0,0,.35); white-space: nowrap; }
+    .pill svg { width: 28px; height: 28px; }
+    .ttl { position: absolute; left: 0; width: 960px; text-align: center; font-family: var(--font-ui); font-weight: 800; color: #fff;
+      font-size: 68px; letter-spacing: .22em; text-transform: uppercase; text-shadow: 0 2px 4px rgba(0,0,0,.6), 0 8px 30px rgba(0,0,0,.7); }
+    .ttl svg { display: block; margin: 8px auto 0; width: 700px; height: 70px; overflow: visible; }
+    .co-lbl { position: absolute; font-family: var(--font-ui); font-weight: 800; font-size: 44px; color: #fff; letter-spacing: .02em;
+      text-transform: uppercase; text-shadow: 0 4px 18px rgba(0,0,0,.6); white-space: nowrap; padding-bottom: 8px; border-bottom: 3px solid #fff; }
+    .co svg { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; overflow: visible; }
+
+  </style>
+  <div id="root" data-composition-id="outro" data-width="1080" data-height="1920">
+    <div id="cta-card" class="widget clip" data-start="48.8" data-duration="3.4333" data-track-index="0" style="top:880px; width:640px; margin-left:-350px; text-align:center"><div style="font-size:30px;font-weight:600;color:var(--muted)">Nak dapatkan bidai ni?</div><div style="margin-top:10px;display:inline-flex;align-items:center;gap:14px;padding:16px 34px;border-radius:999px;background:#fe2c55;color:#fff;font-weight:900;font-size:46px"><svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M10 14a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1 1"/><path d="M14 10a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1-1"/></svg>Tekan link di bio</div></div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#cta-card", { opacity: 0, y: -20, filter: "blur(10px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.42, ease: "expo.out" }, 48.8);
+    tl.fromTo("#cta-card div:last-child", { scale: 1 }, { scale: 1.06, duration: 0.3, ease: "power2.out", yoyo: true, repeat: 1 }, 51.6667);
+    window.__timelines["outro"] = tl;
+  </script>
+</template>

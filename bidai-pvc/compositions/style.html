@@ -1,0 +1,58 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; pointer-events: none; 
+      --ink: #ffffff;
+      --muted: rgba(255,255,255,.62);
+      --glass: rgba(18, 19, 22, 0.82);
+      --stroke: rgba(255,255,255,.12);
+      --gold: #f5c542;
+      --rose: #c86b9a;
+      --ok: #34c759;
+      --font-ui: "Montserrat", sans-serif;
+      --font-num: "Oswald", "League Gothic", sans-serif;
+ }
+    .widget { position: absolute; left: 50%; width: 600px; margin-left: -330px; padding: 26px 32px; border-radius: 34px;
+      background: var(--glass); border: 1.5px solid var(--stroke); box-shadow: 0 24px 60px rgba(0,0,0,.45);
+      backdrop-filter: blur(20px); color: var(--ink); font-family: var(--font-ui); }
+    .widget .hd { display: flex; align-items: center; justify-content: center; gap: 10px; font-size: 28px; font-weight: 600; color: var(--muted); text-align: center; }
+    .widget .hd svg { width: 30px; height: 30px; flex: none; }
+    .widget .rowx { display: flex; align-items: center; justify-content: space-between; margin-top: 18px; font-size: 34px; font-weight: 700; }
+    .widget .rowx .v { font-family: var(--font-num); font-size: 40px; font-weight: 700; color: var(--ok); letter-spacing: .02em; }
+    .widget .big { margin-top: 6px; text-align: center; font-family: var(--font-num); font-size: 92px; font-weight: 700; color: var(--gold); line-height: 1.05; letter-spacing: .01em; }
+    .pill { display: inline-flex; align-items: center; gap: 10px; padding: 12px 24px; border-radius: 999px;
+      background: #fff; color: #111; font-family: var(--font-ui); font-weight: 800; font-size: 32px; box-shadow: 0 12px 30px rgba(0,0,0,.35); white-space: nowrap; }
+    .pill svg { width: 28px; height: 28px; }
+    .ttl { position: absolute; left: 0; width: 960px; text-align: center; font-family: var(--font-ui); font-weight: 800; color: #fff;
+      font-size: 68px; letter-spacing: .22em; text-transform: uppercase; text-shadow: 0 2px 4px rgba(0,0,0,.6), 0 8px 30px rgba(0,0,0,.7); }
+    .ttl svg { display: block; margin: 8px auto 0; width: 700px; height: 70px; overflow: visible; }
+    .co-lbl { position: absolute; font-family: var(--font-ui); font-weight: 800; font-size: 44px; color: #fff; letter-spacing: .02em;
+      text-transform: uppercase; text-shadow: 0 4px 18px rgba(0,0,0,.6); white-space: nowrap; padding-bottom: 8px; border-bottom: 3px solid #fff; }
+    .co svg { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; overflow: visible; }
+
+  </style>
+  <div id="root" data-composition-id="style" data-width="1080" data-height="1920">
+    <div id="cl" class=" clip" data-start="19.7333" data-duration="2.2667" data-track-index="0" style="position:absolute; inset:0" data-layout-allow-overflow><div id="clbg" style="position:absolute;inset:0;background:rgba(8,9,12,.72)"></div><div id="cl-c" style="position:absolute;left:100px;top:290px;width:760px"><div style="font-family:var(--font-ui);font-weight:800;font-size:44px;color:#fff;letter-spacing:.06em;text-align:center;margin-bottom:22px;text-shadow:0 4px 18px rgba(0,0,0,.6)">MACAM-MACAM WARNA</div><div style="border-radius:30px;overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.6)"><img src="assets/img/colours.jpg" style="display:block;width:760px" alt=""/></div></div></div>
+    <div id="rm" class=" clip" data-start="22.0" data-duration="6.7333" data-track-index="0" style="position:absolute; inset:0" data-layout-allow-overflow><div id="rmbg" style="position:absolute;inset:0;background:rgba(8,9,12,.72)"></div><div id="rm-c" style="position:absolute;left:100px;top:290px;width:760px"><div style="font-family:var(--font-ui);font-weight:800;font-size:44px;color:#fff;letter-spacing:.06em;text-align:center;margin-bottom:22px;text-shadow:0 4px 18px rgba(0,0,0,.6)">SESUAI SEMUA RUANG</div><div style="border-radius:30px;overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.6)"><img src="assets/img/rooms.jpg" style="display:block;width:760px" alt=""/></div><div id="rm-h0" style="position:absolute;left:18px;top:192px;width:354px;height:279px;border:6px solid #f5c542;border-radius:18px;box-shadow:0 0 0 4px rgba(245,197,66,.25),0 0 34px rgba(245,197,66,.85)"></div><div id="rm-h1" style="position:absolute;left:0;width:760px;top:331px;text-align:center"><span class="pill"><svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12.5l4.8 4.8L19.5 7"/></svg><span>Dapur pun cantik</span></span></div><div id="rm-h2" style="position:absolute;left:388px;top:192px;width:354px;height:279px;border:6px solid #f5c542;border-radius:18px;box-shadow:0 0 0 4px rgba(245,197,66,.25),0 0 34px rgba(245,197,66,.85)"></div><div id="rm-h3" style="position:absolute;left:388px;top:488px;width:354px;height:279px;border:6px solid #f5c542;border-radius:18px;box-shadow:0 0 0 4px rgba(245,197,66,.25),0 0 34px rgba(245,197,66,.85)"></div></div></div>
+    <div id="st-lawa" class=" clip" data-start="28.6333" data-duration="1.2" data-track-index="0" style="position:absolute; left:0px; width:960px; top:300px; text-align:center"><span id="st-lawai" class="pill" style="position:relative"><svg viewBox="0 0 24 24" fill="#f5c542"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><span>Lawa &amp; cantik</span></span></div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#clbg", { opacity: 0 }, { opacity: 1, duration: 0.3, ease: "power2.out" }, 19.7333);
+    tl.fromTo("#cl-c", { opacity: 0, scale: 0.82, y: 40 }, { opacity: 1, scale: 1, y: 0, duration: 0.55, ease: "expo.out" }, 19.7667);
+    tl.to("#cl", { opacity: 0, duration: 0.25, ease: "power2.in" }, 21.7333);
+    tl.fromTo("#rmbg", { opacity: 0 }, { opacity: 1, duration: 0.3, ease: "power2.out" }, 22.0);
+    tl.fromTo("#rm-c", { opacity: 0, scale: 0.82, y: 40 }, { opacity: 1, scale: 1, y: 0, duration: 0.55, ease: "expo.out" }, 22.0667);
+    tl.set(["#rm-h0", "#rm-h1", "#rm-h2", "#rm-h3"], { opacity: 0 }, 22.0);
+    tl.fromTo("#rm-h0", { opacity: 0, scale: 1.12 }, { opacity: 1, scale: 1, duration: 0.35, ease: "back.out(2)" }, 22.1333);
+    tl.to("#rm-h0", { opacity: 0, duration: 0.2 }, 24.3333);
+    tl.fromTo("#rm-h1", { opacity: 0, scale: 1.12 }, { opacity: 1, scale: 1, duration: 0.35, ease: "back.out(2)" }, 24.4);
+    tl.to("#rm-h1", { opacity: 0, duration: 0.2 }, 26.4667);
+    tl.fromTo("#rm-h2", { opacity: 0, scale: 1.12 }, { opacity: 1, scale: 1, duration: 0.35, ease: "back.out(2)" }, 26.5333);
+    tl.to("#rm-h2", { opacity: 0, duration: 0.2 }, 27.7333);
+    tl.fromTo("#rm-h3", { opacity: 0, scale: 1.12 }, { opacity: 1, scale: 1, duration: 0.35, ease: "back.out(2)" }, 27.8);
+    tl.to("#rm", { opacity: 0, duration: 0.25, ease: "power2.in" }, 28.4667);
+    tl.fromTo("#st-lawai", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.45, ease: "back.out(1.6)" }, 28.6333);
+    tl.to("#st-lawa", { opacity: 0, filter: "blur(8px)", duration: 0.2, ease: "power2.in" }, 29.6);
+    window.__timelines["style"] = tl;
+  </script>
+</template>

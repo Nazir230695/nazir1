@@ -1,0 +1,51 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; pointer-events: none; 
+      --ink: #ffffff;
+      --muted: rgba(255,255,255,.62);
+      --glass: rgba(18, 19, 22, 0.82);
+      --stroke: rgba(255,255,255,.12);
+      --gold: #f5c542;
+      --rose: #c86b9a;
+      --ok: #34c759;
+      --font-ui: "Montserrat", sans-serif;
+      --font-num: "Oswald", "League Gothic", sans-serif;
+ }
+    .widget { position: absolute; left: 50%; width: 600px; margin-left: -330px; padding: 26px 32px; border-radius: 34px;
+      background: var(--glass); border: 1.5px solid var(--stroke); box-shadow: 0 24px 60px rgba(0,0,0,.45);
+      backdrop-filter: blur(20px); color: var(--ink); font-family: var(--font-ui); }
+    .widget .hd { display: flex; align-items: center; justify-content: center; gap: 10px; font-size: 28px; font-weight: 600; color: var(--muted); text-align: center; }
+    .widget .hd svg { width: 30px; height: 30px; flex: none; }
+    .widget .rowx { display: flex; align-items: center; justify-content: space-between; margin-top: 18px; font-size: 34px; font-weight: 700; }
+    .widget .rowx .v { font-family: var(--font-num); font-size: 40px; font-weight: 700; color: var(--ok); letter-spacing: .02em; }
+    .widget .big { margin-top: 6px; text-align: center; font-family: var(--font-num); font-size: 92px; font-weight: 700; color: var(--gold); line-height: 1.05; letter-spacing: .01em; }
+    .pill { display: inline-flex; align-items: center; gap: 10px; padding: 12px 24px; border-radius: 999px;
+      background: #fff; color: #111; font-family: var(--font-ui); font-weight: 800; font-size: 32px; box-shadow: 0 12px 30px rgba(0,0,0,.35); white-space: nowrap; }
+    .pill svg { width: 28px; height: 28px; }
+    .ttl { position: absolute; left: 0; width: 960px; text-align: center; font-family: var(--font-ui); font-weight: 800; color: #fff;
+      font-size: 68px; letter-spacing: .22em; text-transform: uppercase; text-shadow: 0 2px 4px rgba(0,0,0,.6), 0 8px 30px rgba(0,0,0,.7); }
+    .ttl svg { display: block; margin: 8px auto 0; width: 700px; height: 70px; overflow: visible; }
+    .co-lbl { position: absolute; font-family: var(--font-ui); font-weight: 800; font-size: 44px; color: #fff; letter-spacing: .02em;
+      text-transform: uppercase; text-shadow: 0 4px 18px rgba(0,0,0,.6); white-space: nowrap; padding-bottom: 8px; border-bottom: 3px solid #fff; }
+    .co svg { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; overflow: visible; }
+
+  </style>
+  <div id="root" data-composition-id="clean" data-width="1080" data-height="1920">
+    <div id="cl-dust" class=" clip" data-start="14.8667" data-duration="2.2667" data-track-index="0" style="position:absolute; left:0px; width:960px; top:300px; text-align:center"><span id="cl-dusti" class="pill" style="position:relative"><svg viewBox="0 0 24 24" fill="#5ac8fa"><path d="M12 2l2.2 6.3L20.5 10l-6.3 2.2L12 18.5l-2.2-6.3L3.5 10l6.3-1.7z"/></svg><span>Habuk? Lap je</span></span></div>
+    <div id="cl-pvc" class="co clip" data-start="17.4667" data-duration="1.5333" data-track-index="0" style="position:absolute; inset:0" data-layout-allow-overflow><svg viewBox="0 0 1080 1920"><circle id="cl-pvcd" cx="560" cy="900" r="11" fill="#fff"/><path id="cl-pvcp" d="M560 900 L560 620 L180 620" stroke="#fff" stroke-width="3.5" fill="none"/></svg><div id="cl-pvcl" class="co-lbl" style="left:180px; top:554px">PVC 25MM</div></div>
+    <div id="cl-wp" class="co clip" data-start="19.0" data-duration="0.8333" data-track-index="0" style="position:absolute; inset:0" data-layout-allow-overflow><svg viewBox="0 0 1080 1920"><circle class="rg" cx="480" cy="860" r="70" stroke="rgba(255,255,255,.8)" stroke-width="2.5" fill="none"/><circle class="rg" cx="480" cy="860" r="130" stroke="rgba(255,255,255,.8)" stroke-width="2.5" fill="none"/><circle class="rg" cx="480" cy="860" r="190" stroke="rgba(255,255,255,.8)" stroke-width="2.5" fill="none"/></svg><div style="position:absolute; left:0; width:1080px; top:826px; text-align:center"><span id="cl-wpl" class="pill"><svg viewBox="0 0 24 24" fill="#5ac8fa"><path d="M12 2.5s7 7.6 7 12.6a7 7 0 0 1-14 0c0-5 7-12.6 7-12.6z"/></svg><span>Waterproof</span></span></div></div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#cl-dusti", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.45, ease: "back.out(1.6)" }, 14.8667);
+    tl.to("#cl-dust", { opacity: 0, filter: "blur(8px)", duration: 0.2, ease: "power2.in" }, 16.9);
+    tl.fromTo("#cl-pvcd", { scale: 0, transformOrigin: "50% 50%" }, { scale: 1, duration: 0.3, ease: "back.out(2)" }, 17.4667);
+    tl.fromTo("#cl-pvcp", { strokeDasharray: 1400, strokeDashoffset: 1400 }, { strokeDashoffset: 0, duration: 0.5, ease: "power2.inOut" }, 17.5667);
+    tl.fromTo("#cl-pvcl", { opacity: 0, y: 10, filter: "blur(6px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.3, ease: "expo.out" }, 17.9333);
+    tl.to("#cl-pvc", { opacity: 0, filter: "blur(8px)", duration: 0.2, ease: "power2.in" }, 18.7667);
+    tl.fromTo("#cl-wp .rg", { opacity: 0, scale: 0.4, transformOrigin: "480px 860px" }, { opacity: 1, scale: 1, duration: 0.7, ease: "expo.out", stagger: 0.1 }, 19.0);
+    tl.fromTo("#cl-wpl", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(1.6)" }, 19.1333);
+    tl.to("#cl-wp", { opacity: 0, filter: "blur(8px)", duration: 0.2, ease: "power2.in" }, 19.6);
+    window.__timelines["clean"] = tl;
+  </script>
+</template>
