@@ -20,6 +20,7 @@ def wat(src, t):
 
 # (id, src, first_word_start, last_word_start, cam_scale)
 EDL = [
+    ("d0", "v", 2.46, 2.46, 1.00),    # opening: he drinks from the bottle (raw 0.0-2.38, no speech)
     ("a1", "v", 2.46, 4.96, 1.00),    # botol air ni memang padu lah daripada Onyx tau
     ("a2", "v", 5.16, 6.94, 1.08),    # kamu nampak dia boleh juga jadi dumbbell
     ("a3", "v", 8.38, 10.38, 1.00),   # selain tu kamu tengok lah yang best dia lagi
@@ -42,6 +43,8 @@ for sid, src, a, b, sc in EDL:
     next_start = W_[i1 + 1]["start"] if i1 + 1 < len(W_) else 1e9
     a = min(w0["start"] - 0.02, max(w0["start"] - 0.07, prev_end + 0.02))
     b = max(w1["start"] + 0.15, min(min(w1["end"], w1["start"] + 1.2) + 0.1, next_start - 0.03))
+    if sid == "d0":
+        a, b = 0.0, 2.38
     if sid == "m1":
         b = 12.60  # keep the magnet clip-on action
     if sid == "m2":
@@ -84,7 +87,7 @@ FIX = {"boto": "Botol", "ayak": "air", "onyx": "Onyx"}
 def norm(sid, w):
     t = w["text"]
     core = re.sub(r"[^\w-]", "", t).lower()
-    if sid in ("m1", "m2") or core in {"haa", "ni"} and sid in ("m1", "m2"):
+    if sid in ("d0", "m1", "m2"):
         return None
     if sid == "m4" and core == "sama":
         return "zaman"  # "bukan zaman tripod" (whisper heard "sama-sama")
@@ -405,7 +408,7 @@ videos = [f'        <video id="{s["id"]}" class="clip seg" src="assets/raw.mp4" 
           f'data-media-start="{s["src_in"]}" data-track-index="1" data-has-audio="true" data-volume="1" playsinline></video>' for s in segs]
 cam = [f'      tl.set("#cam", {{ scale: {s["scale"]} }}, {s["start"]});' for s in segs]
 # slow premium push-in across the hook
-cam.append(f'      tl.fromTo("#cam", {{ scale: 1.0 }}, {{ scale: 1.06, duration: {end("a1")}, ease: "none", immediateRender: false }}, 0);')
+cam.append(f'      tl.fromTo("#cam", {{ scale: 1.0 }}, {{ scale: 1.06, duration: {end("a1")}, ease: "none", immediateRender: false }}, 0);')  # one slow push across the drink + first line
 
 SFX = [("sx-t", "whoosh.mp3", 0.0, 0.3),
        ("sx-dumb", "pop.mp3", W("a2", 5.74) + 0.03, 0.35),

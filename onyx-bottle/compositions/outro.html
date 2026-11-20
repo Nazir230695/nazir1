@@ -31,16 +31,16 @@
 
   </style>
   <div id="root" data-composition-id="outro" data-width="1080" data-height="1920">
-    <div id="ot-padu" class="ttl clip" data-start="17.2667" data-duration="1.5333" data-track-index="0" style="top:280px"><div id="ot-padut">Padu</div><svg id="ot-paduw" viewBox="0 0 700 70"><path class="wv" d="M0 35 C 90 5, 170 65, 260 35 S 430 5, 520 35 S 650 65, 700 35" stroke="#f5c542" stroke-width="3" fill="none"/><path class="wv" d="M0 40 C 110 70, 200 10, 300 40 S 480 70, 560 40 S 660 15, 700 40" stroke="rgba(255,255,255,.75)" stroke-width="2" fill="none"/><path class="wv" d="M0 32 C 70 50, 150 15, 240 32 S 400 55, 500 30 S 640 20, 700 32" stroke="#c86b9a" stroke-width="2" fill="none"/></svg></div>
-    <div id="ot-shop" class="widget clip" data-start="18.8667" data-duration="2.7333" data-track-index="0" style="top:280px; width:640px; margin-left:-350px; padding:10px; border-radius:34px"><img src="assets/img/shop-card.jpg" alt="" style="display:block;width:100%;border-radius:24px"/></div>
+    <div id="ot-padu" class="ttl clip" data-start="19.6333" data-duration="1.5333" data-track-index="0" style="top:280px"><div id="ot-padut">Padu</div><svg id="ot-paduw" viewBox="0 0 700 70"><path class="wv" d="M0 35 C 90 5, 170 65, 260 35 S 430 5, 520 35 S 650 65, 700 35" stroke="#f5c542" stroke-width="3" fill="none"/><path class="wv" d="M0 40 C 110 70, 200 10, 300 40 S 480 70, 560 40 S 660 15, 700 40" stroke="rgba(255,255,255,.75)" stroke-width="2" fill="none"/><path class="wv" d="M0 32 C 70 50, 150 15, 240 32 S 400 55, 500 30 S 640 20, 700 32" stroke="#c86b9a" stroke-width="2" fill="none"/></svg></div>
+    <div id="ot-shop" class="widget clip" data-start="21.2333" data-duration="2.7" data-track-index="0" style="top:280px; width:640px; margin-left:-350px; padding:10px; border-radius:34px"><img src="assets/img/shop-card.jpg" alt="" style="display:block;width:100%;border-radius:24px"/></div>
   </div>
   <script>
     const tl = gsap.timeline({ paused: true });
-    tl.fromTo("#ot-padut", { opacity: 0, scaleX: 1.25, filter: "blur(10px)" }, { opacity: 1, scaleX: 1, filter: "blur(0px)", duration: 0.6, ease: "expo.out" }, 17.2667);
-    tl.fromTo("#ot-paduw .wv", { strokeDasharray: 900, strokeDashoffset: 900 }, { strokeDashoffset: 0, duration: 0.9, ease: "power2.inOut", stagger: 0.08 }, 17.3667);
-    tl.to("#ot-padu", { opacity: 0, filter: "blur(8px)", duration: 0.2, ease: "power2.in" }, 18.5667);
-    tl.fromTo("#ot-shop", { opacity: 0, y: -40, scale: 0.92, filter: "blur(12px)" }, { opacity: 1, y: 0, scale: 1, filter: "blur(0px)", duration: 0.6, ease: "expo.out" }, 18.8667);
-    tl.to("#ot-shop", { opacity: 0, filter: "blur(8px)", duration: 0.2, ease: "power2.in" }, 21.3333);
+    tl.fromTo("#ot-padut", { opacity: 0, scaleX: 1.25, filter: "blur(10px)" }, { opacity: 1, scaleX: 1, filter: "blur(0px)", duration: 0.6, ease: "expo.out" }, 19.6333);
+    tl.fromTo("#ot-paduw .wv", { strokeDasharray: 900, strokeDashoffset: 900 }, { strokeDashoffset: 0, duration: 0.9, ease: "power2.inOut", stagger: 0.08 }, 19.7333);
+    tl.to("#ot-padu", { opacity: 0, filter: "blur(8px)", duration: 0.2, ease: "power2.in" }, 20.9333);
+    tl.fromTo("#ot-shop", { opacity: 0, y: -40, scale: 0.92, filter: "blur(12px)" }, { opacity: 1, y: 0, scale: 1, filter: "blur(0px)", duration: 0.6, ease: "expo.out" }, 21.2333);
+    tl.to("#ot-shop", { opacity: 0, filter: "blur(8px)", duration: 0.2, ease: "power2.in" }, 23.7);
     window.__timelines["outro"] = tl;
   </script>
 </template>

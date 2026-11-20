@@ -31,18 +31,18 @@
 
   </style>
   <div id="root" data-composition-id="magnet" data-width="1080" data-height="1920">
-    <div id="mg-mag" class=" clip" data-start="7.9" data-duration="2.4667" data-track-index="0" style="position:absolute; left:0px; width:1080px; top:300px; text-align:center"><span id="mg-magi" class="pill" style="position:relative"><svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3v8a6 6 0 0 0 12 0V3"/><path d="M6 7h3M15 7h3"/></svg><span>Magnet · lekat phone</span></span></div>
-    <div id="mg-rec" class=" clip" data-start="10.8667" data-duration="3.3667" data-track-index="0" style="position:absolute; left:0px; width:1080px; top:300px; text-align:center"><span id="mg-reci" class="pill" style="position:relative"><svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="6.5" width="13" height="11" rx="2"/><path d="M15.5 10.5l6-3v9l-6-3"/></svg><span>Record masa workout</span></span></div>
-    <div id="mg-tri" class=" clip" data-start="14.3" data-duration="1.9" data-track-index="0" style="position:absolute; left:0px; width:1080px; top:300px; text-align:center"><span id="mg-trii" class="pill" style="position:relative"><svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12.5l4.8 4.8L19.5 7"/></svg><span>Bukan zaman tripod</span></span></div>
+    <div id="mg-mag" class=" clip" data-start="10.2667" data-duration="2.4667" data-track-index="0" style="position:absolute; left:0px; width:1080px; top:300px; text-align:center"><span id="mg-magi" class="pill" style="position:relative"><svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3v8a6 6 0 0 0 12 0V3"/><path d="M6 7h3M15 7h3"/></svg><span>Magnet · lekat phone</span></span></div>
+    <div id="mg-rec" class=" clip" data-start="13.2333" data-duration="3.3667" data-track-index="0" style="position:absolute; left:0px; width:1080px; top:300px; text-align:center"><span id="mg-reci" class="pill" style="position:relative"><svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="6.5" width="13" height="11" rx="2"/><path d="M15.5 10.5l6-3v9l-6-3"/></svg><span>Record masa workout</span></span></div>
+    <div id="mg-tri" class=" clip" data-start="16.6667" data-duration="1.9333" data-track-index="0" style="position:absolute; left:0px; width:1080px; top:300px; text-align:center"><span id="mg-trii" class="pill" style="position:relative"><svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12.5l4.8 4.8L19.5 7"/></svg><span>Bukan zaman tripod</span></span></div>
   </div>
   <script>
     const tl = gsap.timeline({ paused: true });
-    tl.fromTo("#mg-magi", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.45, ease: "back.out(1.6)" }, 7.9);
-    tl.to("#mg-mag", { opacity: 0, filter: "blur(8px)", duration: 0.2, ease: "power2.in" }, 10.1333);
-    tl.fromTo("#mg-reci", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.45, ease: "back.out(1.6)" }, 10.8667);
-    tl.to("#mg-rec", { opacity: 0, filter: "blur(8px)", duration: 0.2, ease: "power2.in" }, 14.0);
-    tl.fromTo("#mg-trii", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.45, ease: "back.out(1.6)" }, 14.3);
-    tl.to("#mg-tri", { opacity: 0, filter: "blur(8px)", duration: 0.2, ease: "power2.in" }, 15.9667);
+    tl.fromTo("#mg-magi", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.45, ease: "back.out(1.6)" }, 10.2667);
+    tl.to("#mg-mag", { opacity: 0, filter: "blur(8px)", duration: 0.2, ease: "power2.in" }, 12.5);
+    tl.fromTo("#mg-reci", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.45, ease: "back.out(1.6)" }, 13.2333);
+    tl.to("#mg-rec", { opacity: 0, filter: "blur(8px)", duration: 0.2, ease: "power2.in" }, 16.3667);
+    tl.fromTo("#mg-trii", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.45, ease: "back.out(1.6)" }, 16.6667);
+    tl.to("#mg-tri", { opacity: 0, filter: "blur(8px)", duration: 0.2, ease: "power2.in" }, 18.3333);
     window.__timelines["magnet"] = tl;
   </script>
 </template>

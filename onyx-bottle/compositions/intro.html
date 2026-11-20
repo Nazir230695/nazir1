@@ -31,20 +31,20 @@
 
   </style>
   <div id="root" data-composition-id="intro" data-width="1080" data-height="1920">
-    <div id="in-t" class="ttl clip" data-start="0.1" data-duration="2.6333" data-track-index="0" style="top:280px"><div id="in-tt">Onyx Bottle</div><svg id="in-tw" viewBox="0 0 700 70"><path class="wv" d="M0 35 C 90 5, 170 65, 260 35 S 430 5, 520 35 S 650 65, 700 35" stroke="#f5c542" stroke-width="3" fill="none"/><path class="wv" d="M0 40 C 110 70, 200 10, 300 40 S 480 70, 560 40 S 660 15, 700 40" stroke="rgba(255,255,255,.75)" stroke-width="2" fill="none"/><path class="wv" d="M0 32 C 70 50, 150 15, 240 32 S 400 55, 500 30 S 640 20, 700 32" stroke="#c86b9a" stroke-width="2" fill="none"/></svg></div>
-    <div id="in-dumb" class=" clip" data-start="3.3333" data-duration="1.7" data-track-index="0" style="position:absolute; left:0px; width:1080px; top:300px; text-align:center"><span id="in-dumbi" class="pill" style="position:relative"><svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2.6" stroke-linecap="round"><path d="M6 7v10M18 7v10M3 9.5v5M21 9.5v5M6 12h12"/></svg><span>Boleh jadi dumbbell</span></span></div>
-    <div id="ft" class=" clip" data-start="6.2667" data-duration="1.5333" data-track-index="0" style="position:absolute; inset:0" data-layout-allow-overflow><div id="ftbg" style="position:absolute;inset:0;background:rgba(8,9,12,.72)"></div><div id="ft-c" style="position:absolute;left:60px;top:300px;width:900px;text-align:center"><div style="font-family:var(--font-ui);font-weight:800;font-size:40px;color:#fff;letter-spacing:.08em">ONYX BOTTLE 2.0</div><div style="margin-top:16px;border-radius:28px;overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.6)"><img src="assets/img/features.jpg" style="display:block;width:900px" alt=""/></div></div></div>
+    <div id="in-t" class="ttl clip" data-start="0.1" data-duration="5.0" data-track-index="0" style="top:280px"><div id="in-tt">Onyx Bottle</div><svg id="in-tw" viewBox="0 0 700 70"><path class="wv" d="M0 35 C 90 5, 170 65, 260 35 S 430 5, 520 35 S 650 65, 700 35" stroke="#f5c542" stroke-width="3" fill="none"/><path class="wv" d="M0 40 C 110 70, 200 10, 300 40 S 480 70, 560 40 S 660 15, 700 40" stroke="rgba(255,255,255,.75)" stroke-width="2" fill="none"/><path class="wv" d="M0 32 C 70 50, 150 15, 240 32 S 400 55, 500 30 S 640 20, 700 32" stroke="#c86b9a" stroke-width="2" fill="none"/></svg></div>
+    <div id="in-dumb" class=" clip" data-start="5.7" data-duration="1.7" data-track-index="0" style="position:absolute; left:0px; width:1080px; top:300px; text-align:center"><span id="in-dumbi" class="pill" style="position:relative"><svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2.6" stroke-linecap="round"><path d="M6 7v10M18 7v10M3 9.5v5M21 9.5v5M6 12h12"/></svg><span>Boleh jadi dumbbell</span></span></div>
+    <div id="ft" class=" clip" data-start="8.6333" data-duration="1.5333" data-track-index="0" style="position:absolute; inset:0" data-layout-allow-overflow><div id="ftbg" style="position:absolute;inset:0;background:rgba(8,9,12,.72)"></div><div id="ft-c" style="position:absolute;left:60px;top:300px;width:900px;text-align:center"><div style="font-family:var(--font-ui);font-weight:800;font-size:40px;color:#fff;letter-spacing:.08em">ONYX BOTTLE 2.0</div><div style="margin-top:16px;border-radius:28px;overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.6)"><img src="assets/img/features.jpg" style="display:block;width:900px" alt=""/></div></div></div>
   </div>
   <script>
     const tl = gsap.timeline({ paused: true });
     tl.fromTo("#in-tt", { opacity: 0, scaleX: 1.25, filter: "blur(10px)" }, { opacity: 1, scaleX: 1, filter: "blur(0px)", duration: 0.6, ease: "expo.out" }, 0.1);
     tl.fromTo("#in-tw .wv", { strokeDasharray: 900, strokeDashoffset: 900 }, { strokeDashoffset: 0, duration: 0.9, ease: "power2.inOut", stagger: 0.08 }, 0.2);
-    tl.to("#in-t", { opacity: 0, filter: "blur(8px)", duration: 0.2, ease: "power2.in" }, 2.5);
-    tl.fromTo("#in-dumbi", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.45, ease: "back.out(1.6)" }, 3.3333);
-    tl.to("#in-dumb", { opacity: 0, filter: "blur(8px)", duration: 0.2, ease: "power2.in" }, 4.8);
-    tl.fromTo("#ftbg", { opacity: 0 }, { opacity: 1, duration: 0.3, ease: "power2.out" }, 6.2667);
-    tl.fromTo("#ft-c", { opacity: 0, scale: 0.82, y: 40 }, { opacity: 1, scale: 1, y: 0, duration: 0.55, ease: "expo.out" }, 6.3333);
-    tl.to("#ft", { opacity: 0, duration: 0.25, ease: "power2.in" }, 7.5333);
+    tl.to("#in-t", { opacity: 0, filter: "blur(8px)", duration: 0.2, ease: "power2.in" }, 4.8667);
+    tl.fromTo("#in-dumbi", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.45, ease: "back.out(1.6)" }, 5.7);
+    tl.to("#in-dumb", { opacity: 0, filter: "blur(8px)", duration: 0.2, ease: "power2.in" }, 7.1667);
+    tl.fromTo("#ftbg", { opacity: 0 }, { opacity: 1, duration: 0.3, ease: "power2.out" }, 8.6333);
+    tl.fromTo("#ft-c", { opacity: 0, scale: 0.82, y: 40 }, { opacity: 1, scale: 1, y: 0, duration: 0.55, ease: "expo.out" }, 8.6667);
+    tl.to("#ft", { opacity: 0, duration: 0.25, ease: "power2.in" }, 9.9);
     window.__timelines["intro"] = tl;
   </script>
 </template>
