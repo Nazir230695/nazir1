@@ -1,7 +1,7 @@
 {
   "version": 1,
   "historyId": "2f7aa0bc-4b83-4766-b110-036ca1d5bed9",
-  "currentRevision": "a4b3914e-ed7b-4664-9776-3093cb28b9b5",
+  "currentRevision": "e2b4de61-09be-4c7d-be41-3985acd69598",
   "pendingChanges": false,
   "files": {
     "AGENTS.md": {
@@ -79,6 +79,18 @@
     "assets/raw.mp4": {
       "hash": "f4eca79f2da1748d05af6512cd0ac3ac57107b143791b6650f7069b2a0b3b914",
       "content": "/root/.cache/hyperframes/history/2f7aa0bc-4b83-4766-b110-036ca1d5bed9/blobs/f4/f4eca79f2da1748d05af6512cd0ac3ac57107b143791b6650f7069b2a0b3b914"
+    },
+    "tools/build8.py": {
+      "hash": "10e593d61b69c372d01f28c93fc56425e85001ada5dff57b14b07ef397b4ad9b",
+      "content": "/root/.cache/hyperframes/history/2f7aa0bc-4b83-4766-b110-036ca1d5bed9/blobs/10/10e593d61b69c372d01f28c93fc56425e85001ada5dff57b14b07ef397b4ad9b"
+    },
+    "tools/transcribe.py": {
+      "hash": "4655fc7dbef370625b1864d7902b93b321990da2b5d99b3b16ff51f4728779a8",
+      "content": "/root/.cache/hyperframes/history/2f7aa0bc-4b83-4766-b110-036ca1d5bed9/blobs/46/4655fc7dbef370625b1864d7902b93b321990da2b5d99b3b16ff51f4728779a8"
+    },
+    "transcript.json": {
+      "hash": "8b52b1434ae3651e2f6cd2747b4f3d8b42adb11f94f8ff62e4a5437556b4c702",
+      "content": "/root/.cache/hyperframes/history/2f7aa0bc-4b83-4766-b110-036ca1d5bed9/blobs/8b/8b52b1434ae3651e2f6cd2747b4f3d8b42adb11f94f8ff62e4a5437556b4c702"
     }
   },
   "revisions": {
@@ -106,6 +118,29 @@
         "index.html": {
           "before": "/root/.cache/hyperframes/history/2f7aa0bc-4b83-4766-b110-036ca1d5bed9/blobs/9a/9ab2d878666b3436e9077163c020d5caefbb48e77f2f933cf4ff3234f6707793",
           "after": "/root/.cache/hyperframes/history/2f7aa0bc-4b83-4766-b110-036ca1d5bed9/blobs/75/753101567fc700926d57569db4ee769f5943e2f17ddc029f9ef6e5af19623493"
+        }
+      }
+    },
+    "e2b4de61-09be-4c7d-be41-3985acd69598": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1795136282719,
+      "endedAt": 1795136282801,
+      "files": {
+        "tools/build8.py": {
+          "before": null,
+          "after": "/root/.cache/hyperframes/history/2f7aa0bc-4b83-4766-b110-036ca1d5bed9/blobs/10/10e593d61b69c372d01f28c93fc56425e85001ada5dff57b14b07ef397b4ad9b"
+        },
+        "tools/transcribe.py": {
+          "before": null,
+          "after": "/root/.cache/hyperframes/history/2f7aa0bc-4b83-4766-b110-036ca1d5bed9/blobs/46/4655fc7dbef370625b1864d7902b93b321990da2b5d99b3b16ff51f4728779a8"
+        },
+        "transcript.json": {
+          "before": null,
+          "after": "/root/.cache/hyperframes/history/2f7aa0bc-4b83-4766-b110-036ca1d5bed9/blobs/8b/8b52b1434ae3651e2f6cd2747b4f3d8b42adb11f94f8ff62e4a5437556b4c702"
         }
       }
     }
