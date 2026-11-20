@@ -373,14 +373,14 @@ build_scene("pull", [
     pill("pl-shut", "Tutup habis", W("k2", 72.60), end("k2") - W("k2", 72.60), 300),
 ])
 
-YT = 880
+YT = 300    # top of frame, over the blinds, clear of the face
 CTA0 = fr(SEG["z1"]["start"] + 0.05)
 cta_body = clip("cta-card", CTA0, TOTAL - CTA0,
-                '<div style="font-size:30px;font-weight:600;color:var(--muted)">Nak dapatkan bidai ni?</div>'
-                '<div style="margin-top:10px;display:inline-flex;align-items:center;gap:14px;padding:16px 34px;border-radius:999px;background:#fe2c55;color:#fff;font-weight:900;font-size:46px;white-space:nowrap">'
-                '<svg viewBox="0 0 24 24" width="44" height="44" style="flex:none" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v15"/><path d="M5.5 12.5L12 19l6.5-6.5"/></svg>'
+                '<div style="font-size:24px;font-weight:600;color:var(--muted)">Nak dapatkan bidai ni?</div>'
+                '<div style="margin-top:8px;display:inline-flex;align-items:center;gap:10px;padding:11px 26px;border-radius:999px;background:#fe2c55;color:#fff;font-weight:900;font-size:34px;white-space:nowrap">'
+                '<svg viewBox="0 0 24 24" width="32" height="32" style="flex:none" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v15"/><path d="M5.5 12.5L12 19l6.5-6.5"/></svg>'
                 'Tekan link di bawah</div>',
-                cls="widget", style=f"top:{YT}px; width:720px; margin-left:-390px; text-align:center")
+                cls="widget", style=f"top:{YT}px; width:520px; margin-left:-290px; padding:18px 22px; border-radius:28px; text-align:center")
 cta_js = "\n".join([fade_in("#cta-card", CTA0, y=-20),
                     f'    tl.fromTo("#cta-card div:last-child", {{ scale: 1 }}, {{ scale: 1.06, duration: 0.3, ease: "power2.out", yoyo: true, repeat: 1 }}, {W("z1", 78.30)});'])
 build_scene("outro", [
