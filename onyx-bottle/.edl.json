@@ -1,5 +1,5 @@
 {
- "total": 21.4667,
+ "total": 21.5667,
  "segs": [
   {
    "id": "a1",
@@ -59,9 +59,9 @@
    "id": "m4",
    "src": "v",
    "src_in": 18.9333,
-   "src_out": 20.8,
+   "src_out": 20.9,
    "start": 14.2334,
-   "dur": 1.8665,
+   "dur": 1.9665,
    "scale": 1.08
   },
   {
@@ -69,7 +69,7 @@
    "src": "v",
    "src_in": 22.3,
    "src_out": 24.9,
-   "start": 16.1,
+   "start": 16.2,
    "dur": 2.5999,
    "scale": 1.0
   },
@@ -78,7 +78,7 @@
    "src": "v",
    "src_in": 24.8333,
    "src_out": 27.6,
-   "start": 18.7,
+   "start": 18.8,
    "dur": 2.7664999999999997,
    "scale": 1.06
   }
@@ -127,7 +127,10 @@
   "tau,",
   "sekarang",
   "ni",
+  "bukan",
+  "zaman",
   "tripod",
+  "Ni",
   "Botol",
   "air",
   "ni,",

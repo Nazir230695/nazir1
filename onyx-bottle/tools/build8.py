@@ -26,7 +26,7 @@ EDL = [
     ("m1", "v", 10.98, 10.98, 1.00),  # ni (he clips the phone on the magnet)
     ("m2", "v", 13.42, 13.42, 1.00),  # haa
     ("m3", "v", 15.10, 18.74, 1.00),  # boleh record tau sambil nak main dumbbell ke main gym ke apa kan
-    ("m4", "v", 18.94, 20.48, 1.08),  # tak payah tau, sekarang ni (bawa) tripod
+    ("m4", "v", 18.94, 20.48, 1.08),  # tak payah tau, sekarang ni bukan zaman tripod
     ("z1", "v", 22.38, 24.74, 1.00),  # botol air ni, fuhlamak memang padu lah
     ("z2", "v", 24.86, 26.28, 1.06),  # nak dapat mana, pergi ke link tu
 ]
@@ -46,6 +46,8 @@ for sid, src, a, b, sc in EDL:
         b = 12.60  # keep the magnet clip-on action
     if sid == "m2":
         b = 14.60
+    if sid == "m4":
+        b = 20.89  # measured: "-pod" ends 20.80, silence until 20.91 — keep the full word
     if sid == "z2":
         b = 27.60  # hold on the smile for the shop card
     fa, fb = round(a * FPS), round(b * FPS)
@@ -84,8 +86,10 @@ def norm(sid, w):
     core = re.sub(r"[^\w-]", "", t).lower()
     if sid in ("m1", "m2") or core in {"haa", "ni"} and sid in ("m1", "m2"):
         return None
-    if sid == "m4" and core in {"bukan", "sama", "-sama"}:
-        return None  # garbled; the pill says "tak payah tripod"
+    if sid == "m4" and core == "sama":
+        return "zaman"  # "bukan zaman tripod" (whisper heard "sama-sama")
+    if sid == "m4" and core == "-sama":
+        return None
     if sid == "z1" and core == "oh":
         return "Fuhlamak"
     if sid == "z1" and core == "lah" and w["start"] < 23.8:
@@ -380,7 +384,7 @@ build_scene("intro", [
 build_scene("magnet", [
     pill("mg-mag", "Magnet · lekat phone", SEG["m1"]["start"] + 0.5, end("m2") - SEG["m1"]["start"] - 0.5, None, YT + 20, icon=MAG),
     pill("mg-rec", "Record masa workout", W("m3", 15.54), end("m3") - W("m3", 15.54), None, YT + 20, icon=CAM),
-    pill("mg-tri", "Tak payah tripod", SEG["m4"]["start"] + 0.05, end("m4") - SEG["m4"]["start"] - 0.05, None, YT + 20, icon=CHECK),
+    pill("mg-tri", "Bukan zaman tripod", SEG["m4"]["start"] + 0.05, end("m4") - SEG["m4"]["start"] - 0.05, None, YT + 20, icon=CHECK),
 ])
 
 # ending, like the Dalwa edit: wave title, then the shop card
