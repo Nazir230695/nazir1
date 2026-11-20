@@ -80,7 +80,7 @@ def W(sid, t):
 
 
 # ---------------------------------------------------------------- one-word captions
-FIX = {"layar": "layan", "elektro": "electro"}
+FIX = {"layar": "layan", "elektro": "electro", "rasa": "fasa"}
 DROP = {"ha", "haa", "hu", "oh", "la", "weh", "game", "okay", "lepas"}
 
 
