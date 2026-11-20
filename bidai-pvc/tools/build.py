@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """PVC venetian blinds — same look as the work-jacket edit (one-word captions, glass cards, full-screen inserts,
-wave title, CTA "link di bio"), plus muted b-roll cutaways from the second clip.
+wave title, CTA "tekan link di bawah"), plus muted b-roll cutaways from the second clip.
 Usage: python3 -I build.py <words.json> <project_dir>
 """
 import json, sys, html, os, re, math, subprocess
@@ -101,7 +101,7 @@ for s in segs:
             if re.sub(r"[^\w]", "", txt).lower() == "lingguan":   # "link bawah" heard as one word
                 mid = fr((st + en) / 2)
                 kept.append(dict(text="link", start=st, end=mid, seg=s["id"]))
-                kept.append(dict(text="di bio", start=mid, end=max(en + 0.3, mid + 0.3), seg=s["id"]))
+                kept.append(dict(text="bawah", start=mid, end=max(en + 0.3, mid + 0.3), seg=s["id"]))
                 continue
             kept.append(dict(text=txt, start=st, end=max(en, st + 0.12), seg=s["id"]))
 # glue hyphen halves ("habuk" "-habuk", "ter" "-sold") and "50" "%"
@@ -377,10 +377,10 @@ YT = 880
 CTA0 = fr(SEG["z1"]["start"] + 0.05)
 cta_body = clip("cta-card", CTA0, TOTAL - CTA0,
                 '<div style="font-size:30px;font-weight:600;color:var(--muted)">Nak dapatkan bidai ni?</div>'
-                '<div style="margin-top:10px;display:inline-flex;align-items:center;gap:14px;padding:16px 34px;border-radius:999px;background:#fe2c55;color:#fff;font-weight:900;font-size:46px">'
-                '<svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M10 14a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1 1"/><path d="M14 10a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1-1"/></svg>'
-                'Tekan link di bio</div>',
-                cls="widget", style=f"top:{YT}px; width:640px; margin-left:-350px; text-align:center")
+                '<div style="margin-top:10px;display:inline-flex;align-items:center;gap:14px;padding:16px 34px;border-radius:999px;background:#fe2c55;color:#fff;font-weight:900;font-size:46px;white-space:nowrap">'
+                '<svg viewBox="0 0 24 24" width="44" height="44" style="flex:none" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v15"/><path d="M5.5 12.5L12 19l6.5-6.5"/></svg>'
+                'Tekan link di bawah</div>',
+                cls="widget", style=f"top:{YT}px; width:720px; margin-left:-390px; text-align:center")
 cta_js = "\n".join([fade_in("#cta-card", CTA0, y=-20),
                     f'    tl.fromTo("#cta-card div:last-child", {{ scale: 1 }}, {{ scale: 1.06, duration: 0.3, ease: "power2.out", yoyo: true, repeat: 1 }}, {W("z1", 78.30)});'])
 build_scene("outro", [
