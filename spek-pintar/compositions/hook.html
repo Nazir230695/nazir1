@@ -1,0 +1,63 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; pointer-events: none; 
+      --ink: #ffffff;
+      --dark: #0d0e10;
+      --neon: #3dff8b;
+      --neon-soft: rgba(61,255,139,.55);
+      --glass: rgba(16, 17, 20, 0.78);
+      --stroke: rgba(255,255,255,.14);
+      --font-ui: "Montserrat", sans-serif;
+ }
+    .chip { position: absolute; left: 0; width: 960px; text-align: center; }
+    .chip > span { display: inline-flex; align-items: center; gap: 14px; }
+    .chip .lb { background: #fff; color: #111; font-family: var(--font-ui); font-weight: 600; font-size: 40px; letter-spacing: .01em;
+      padding: 8px 18px; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,.35); white-space: nowrap; text-transform: uppercase; }
+    .chip .ic { width: 70px; height: 70px; border-radius: 50%; background: var(--dark); border: 2.5px solid rgba(255,255,255,.9);
+      display: inline-flex; align-items: center; justify-content: center; box-shadow: 0 10px 30px rgba(0,0,0,.4); }
+    .chip .ic svg { width: 38px; height: 38px; }
+    .tag { position: absolute; font-family: var(--font-ui); font-weight: 600; font-size: 40px; color: #111; background: #fff;
+      border: 3px solid #111; padding: 6px 16px; white-space: nowrap; text-transform: uppercase; }
+    .co svg { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; overflow: visible; }
+    .glass { position: absolute; background: var(--glass); border: 1.5px solid var(--stroke); border-radius: 30px;
+      box-shadow: 0 24px 60px rgba(0,0,0,.5); backdrop-filter: blur(18px); color: #fff; font-family: var(--font-ui); }
+    .head { position: absolute; left: 0; width: 960px; text-align: center; font-family: var(--font-ui); font-weight: 800; color: #fff;
+      font-size: 62px; line-height: 1.08; text-shadow: 0 3px 6px rgba(0,0,0,.5), 0 10px 34px rgba(0,0,0,.6); }
+    .chrome { position: absolute; left: 0; width: 960px; text-align: center; font-family: var(--font-ui); font-weight: 900; font-size: 150px;
+      letter-spacing: .02em; line-height: 1; }
+    .chrome span { display: inline-block; background: linear-gradient(180deg, #ffffff 0%, #d9dde3 38%, #7d838c 52%, #f4f6f8 70%, #a9afb7 100%);
+      -webkit-background-clip: text; background-clip: text; color: transparent; filter: drop-shadow(0 6px 18px rgba(0,0,0,.55)); }
+    .pilltag { display: inline-flex; align-items: center; gap: 10px; padding: 10px 26px 10px 16px; border-radius: 12px; background: rgba(255,255,255,.94);
+      color: #111; font-family: var(--font-ui); font-weight: 700; font-size: 32px; box-shadow: 0 10px 28px rgba(0,0,0,.35); white-space: nowrap; }
+    .pilltag svg { width: 30px; height: 30px; }
+
+  </style>
+  <div id="root" data-composition-id="hook" data-width="1080" data-height="1920">
+    <div id="hk-t" class="head clip" data-start="0.0667" data-duration="2.6333" data-track-index="0" style="top:900px"><div id="hk-tt">AI Smart<br/>Glasses</div></div>
+    <div id="hk-touch" class=" clip" data-start="3.1" data-duration="4.6667" data-track-index="0" style="position:absolute; left:40px; top:770px"><div style="width:250px;height:250px;border-radius:26px;background:linear-gradient(150deg,#2a2d33,#0b0c0e);border:1.5px solid rgba(255,255,255,.18);box-shadow:0 24px 60px rgba(0,0,0,.6);display:flex;flex-direction:column;justify-content:flex-end;padding:22px;font-family:var(--font-ui);color:#fff"><div style="width:62px;height:62px;border-radius:50%;border:3px solid #3dff8b;margin-bottom:auto;box-shadow:0 0 18px #3dff8b"></div><div style="font-weight:800;font-size:34px;line-height:1.05">Touch<br/>Control</div></div></div>
+    <div id="hk-tint0" class="chip clip" data-start="4.5" data-duration="3.5333" data-track-index="0" style="top:1040px"><span><span id="hk-tint0b" class="lb">Terang</span><span id="hk-tint0c" class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></svg></span></span></div>
+    <div id="hk-tint1" class="chip clip" data-start="7.8333" data-duration="1.6333" data-track-index="0" style="top:1040px"><span><span id="hk-tint1b" class="lb">Separuh</span><span id="hk-tint1c" class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><circle cx="12" cy="12" r="8.5"/><path d="M12 3.5a8.5 8.5 0 0 1 0 17z" fill="#fff"/></svg></span></span></div>
+    <div id="hk-tint2" class="chip clip" data-start="9.2667" data-duration="0.8667" data-track-index="0" style="top:1040px"><span><span id="hk-tint2b" class="lb">Gelap</span><span id="hk-tint2c" class="ic"><svg viewBox="0 0 24 24" fill="#fff"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"/></svg></span></span></div>
+    <div id="hk-smart" class="chip clip" data-start="11.8333" data-duration="2.2667" data-track-index="0" style="top:940px"><span><span id="hk-smartb" class="lb">Smart</span><span id="hk-smartc" class="ic"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 2l2.2 6.3L20.5 10l-6.3 2.2L12 18.5l-2.2-6.3L3.5 10l6.3-1.7z"/></svg></span></span></div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#hk-tt", { opacity: 0, y: 30, filter: "blur(10px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.45, ease: "expo.out" }, 0.0667);
+    tl.to("#hk-t", { opacity: 0, scale: 0.92, duration: 0.18, ease: "power2.in" }, 2.4667);
+    tl.fromTo("#hk-touch", { opacity: 0, rotation: -25, scale: 0.6, y: 30 }, { opacity: 1, rotation: -10, scale: 1, y: 0, duration: 0.5, ease: "back.out(1.6)" }, 3.1);
+    tl.to("#hk-touch", { opacity: 0, scale: 0.92, duration: 0.18, ease: "power2.in" }, 7.5667);
+    tl.fromTo("#hk-tint0b", { opacity: 0, x: -24, filter: "blur(8px)" }, { opacity: 1, x: 0, filter: "blur(0px)", duration: 0.35, ease: "expo.out" }, 4.5);
+    tl.fromTo("#hk-tint0c", { opacity: 0, scale: 0.3, rotation: -60 }, { opacity: 1, scale: 1, rotation: 0, duration: 0.4, ease: "back.out(2)" }, 4.5667);
+    tl.to("#hk-tint0", { opacity: 0, scale: 0.92, duration: 0.18, ease: "power2.in" }, 7.8333);
+    tl.fromTo("#hk-tint1b", { opacity: 0, x: -24, filter: "blur(8px)" }, { opacity: 1, x: 0, filter: "blur(0px)", duration: 0.35, ease: "expo.out" }, 7.8333);
+    tl.fromTo("#hk-tint1c", { opacity: 0, scale: 0.3, rotation: -60 }, { opacity: 1, scale: 1, rotation: 0, duration: 0.4, ease: "back.out(2)" }, 7.8667);
+    tl.to("#hk-tint1", { opacity: 0, scale: 0.92, duration: 0.18, ease: "power2.in" }, 9.2667);
+    tl.fromTo("#hk-tint2b", { opacity: 0, x: -24, filter: "blur(8px)" }, { opacity: 1, x: 0, filter: "blur(0px)", duration: 0.35, ease: "expo.out" }, 9.2667);
+    tl.fromTo("#hk-tint2c", { opacity: 0, scale: 0.3, rotation: -60 }, { opacity: 1, scale: 1, rotation: 0, duration: 0.4, ease: "back.out(2)" }, 9.3);
+    tl.to("#hk-tint2", { opacity: 0, scale: 0.92, duration: 0.18, ease: "power2.in" }, 9.9333);
+    tl.fromTo("#hk-smartb", { opacity: 0, x: -24, filter: "blur(8px)" }, { opacity: 1, x: 0, filter: "blur(0px)", duration: 0.35, ease: "expo.out" }, 11.8333);
+    tl.fromTo("#hk-smartc", { opacity: 0, scale: 0.3, rotation: -60 }, { opacity: 1, scale: 1, rotation: 0, duration: 0.4, ease: "back.out(2)" }, 11.9);
+    tl.to("#hk-smart", { opacity: 0, scale: 0.92, duration: 0.18, ease: "power2.in" }, 13.9);
+    window.__timelines["hook"] = tl;
+  </script>
+</template>
