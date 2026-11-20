@@ -29,7 +29,7 @@ EDL = [
     ("d2", "v", 25.30, 27.34, 1.08, None, None),  # dia ada speaker, hidden speaker dia, memang rare
     ("e1", "v", 29.68, 30.52, 1.00, 29.30, None), # (lepas) tu lawa dia memang lawa
     ("f1", "v", 31.18, 34.18, 1.00, None, None),  # boleh bluetooth speaker, boleh dengar lagu, boleh angkat call
-    ("g0", "w", 0.76, 1.92, 1.00, 0.70, 11.05),  # okay, ni apa dengar lah  + the song playing from the glasses speaker (held to the mic)
+    ("g0", "w", 0.76, 1.92, 1.00, 0.70, 20.17),  # okay, ni apa dengar lah  + the song playing from the glasses speaker (held to the mic)
     ("g1", "w", 20.24, 21.30, 1.06, None, 21.75), # oh layan weh, syok oh       (second clip, listening)
     ("g2", "w", 25.58, 26.00, 1.10, None, 26.70), # memang terbaik lah
     ("h1", "v", 34.54, 35.90, 1.00, 34.70, None), # yang best dia yang ni
