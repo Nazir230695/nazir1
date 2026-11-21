@@ -1,0 +1,52 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; pointer-events: none; 
+      --ink: #ffffff;
+      --dark: #0d0e10;
+      --neon: #3dff8b;
+      --hot: #ff6b3d;
+      --cold: #4cc3ff;
+      --glass: rgba(16, 17, 20, 0.80);
+      --stroke: rgba(255,255,255,.14);
+      --font-ui: "Montserrat", sans-serif;
+ }
+    .chip { position: absolute; left: 0; width: 960px; text-align: center; }
+    .chip > span { display: inline-flex; align-items: center; gap: 14px; }
+    .chip .lb { background: #fff; color: #111; font-family: var(--font-ui); font-weight: 600; font-size: 40px; letter-spacing: .01em;
+      padding: 8px 18px; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,.35); white-space: nowrap; text-transform: uppercase; }
+    .chip .ic { width: 70px; height: 70px; border-radius: 50%; background: var(--dark); border: 2.5px solid rgba(255,255,255,.9);
+      display: inline-flex; align-items: center; justify-content: center; box-shadow: 0 10px 30px rgba(0,0,0,.4); }
+    .chip .ic svg { width: 38px; height: 38px; }
+    .glass { position: absolute; background: var(--glass); border: 1.5px solid var(--stroke); border-radius: 30px;
+      box-shadow: 0 24px 60px rgba(0,0,0,.5); backdrop-filter: blur(18px); color: #fff; font-family: var(--font-ui); }
+    .head { position: absolute; left: 0; width: 960px; text-align: center; font-family: var(--font-ui); font-weight: 800; color: #fff;
+      font-size: 60px; line-height: 1.1; text-shadow: 0 3px 6px rgba(0,0,0,.5), 0 10px 34px rgba(0,0,0,.6); }
+    .chrome { position: absolute; left: 0; width: 960px; text-align: center; font-family: var(--font-ui); font-weight: 900; font-size: 170px; line-height: 1; }
+    .chrome span { display: inline-block; background: linear-gradient(180deg, #ffffff 0%, #d9dde3 38%, #7d838c 52%, #f4f6f8 70%, #a9afb7 100%);
+      -webkit-background-clip: text; background-clip: text; color: transparent; filter: drop-shadow(0 6px 18px rgba(0,0,0,.55)); }
+    .pilltag { display: inline-flex; align-items: center; gap: 10px; padding: 10px 26px 10px 16px; border-radius: 12px; background: rgba(255,255,255,.95);
+      color: #111; font-family: var(--font-ui); font-weight: 700; font-size: 34px; box-shadow: 0 10px 28px rgba(0,0,0,.35); white-space: nowrap; }
+    .pilltag svg { width: 32px; height: 32px; }
+
+  </style>
+  <div id="root" data-composition-id="parts" data-width="1080" data-height="1920">
+    <div id="pt-tap" class="chip clip" data-start="22.5667" data-duration="2.8333" data-track-index="0" style="top:270px; left:430px; width:auto; text-align:left"><span><span id="pt-tapc" class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9h9a4 4 0 0 1 4 4v1"/><path d="M8 5h4M10 5v4"/><path d="M17 17.5c0 1-.7 2-1.5 2s-1.5-1-1.5-2 1.5-3 1.5-3 1.5 2 1.5 3z"/></svg></span><span id="pt-tapb" class="lb">Paip getah</span></span></div>
+    <div id="pt-tapimg" class=" clip" data-start="22.7667" data-duration="2.6333" data-track-index="0" style="position:absolute; left:600px; top:380px; width:300px"><div style="border-radius:22px;overflow:hidden;border:3px solid rgba(255,255,255,.9);box-shadow:0 24px 60px rgba(0,0,0,.5)"><img src="assets/img/faucet.jpg" alt="" style="display:block;width:300px"/></div></div>
+    <div id="pt-grip" class="chip clip" data-start="25.4" data-duration="3.5333" data-track-index="0" style="top:270px; left:60px; width:auto; text-align:left"><span><span id="pt-gripc" class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12a7 7 0 0 1 14 0"/><path d="M3.5 12h3M17.5 12h3"/></svg></span><span id="pt-gripb" class="lb">Pemegang kukuh</span></span></div>
+    <div id="pt-10l" class=" clip" data-start="28.9333" data-duration="1.4333" data-track-index="0" style="position:absolute; inset:0" data-layout-allow-overflow><div class="chrome" style="top:240px"><span class="chpt-10l">1</span><span class="chpt-10l">0</span><span class="chpt-10l">L</span></div></div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#pt-tapc", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.5, ease: "power3.out" }, 22.5667);
+    tl.fromTo("#pt-tapb", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.55, ease: "power3.out" }, 22.6333);
+    tl.to("#pt-tap", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 25.0333);
+    tl.fromTo("#pt-tapimg", { opacity: 0, y: 30, scale: 0.94 }, { opacity: 1, y: 0, scale: 1, duration: 0.6, ease: "power3.out" }, 22.7667);
+    tl.to("#pt-tapimg", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 25.0333);
+    tl.fromTo("#pt-gripc", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.5, ease: "power3.out" }, 25.4);
+    tl.fromTo("#pt-gripb", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.55, ease: "power3.out" }, 25.4667);
+    tl.to("#pt-grip", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 28.5667);
+    tl.fromTo(".chpt-10l", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.5, ease: "power3.out", stagger: 0.08 }, 28.9333);
+    tl.to("#pt-10l", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 30.0);
+    window.__timelines["parts"] = tl;
+  </script>
+</template>

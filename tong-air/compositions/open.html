@@ -1,0 +1,52 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; pointer-events: none; 
+      --ink: #ffffff;
+      --dark: #0d0e10;
+      --neon: #3dff8b;
+      --hot: #ff6b3d;
+      --cold: #4cc3ff;
+      --glass: rgba(16, 17, 20, 0.80);
+      --stroke: rgba(255,255,255,.14);
+      --font-ui: "Montserrat", sans-serif;
+ }
+    .chip { position: absolute; left: 0; width: 960px; text-align: center; }
+    .chip > span { display: inline-flex; align-items: center; gap: 14px; }
+    .chip .lb { background: #fff; color: #111; font-family: var(--font-ui); font-weight: 600; font-size: 40px; letter-spacing: .01em;
+      padding: 8px 18px; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,.35); white-space: nowrap; text-transform: uppercase; }
+    .chip .ic { width: 70px; height: 70px; border-radius: 50%; background: var(--dark); border: 2.5px solid rgba(255,255,255,.9);
+      display: inline-flex; align-items: center; justify-content: center; box-shadow: 0 10px 30px rgba(0,0,0,.4); }
+    .chip .ic svg { width: 38px; height: 38px; }
+    .glass { position: absolute; background: var(--glass); border: 1.5px solid var(--stroke); border-radius: 30px;
+      box-shadow: 0 24px 60px rgba(0,0,0,.5); backdrop-filter: blur(18px); color: #fff; font-family: var(--font-ui); }
+    .head { position: absolute; left: 0; width: 960px; text-align: center; font-family: var(--font-ui); font-weight: 800; color: #fff;
+      font-size: 60px; line-height: 1.1; text-shadow: 0 3px 6px rgba(0,0,0,.5), 0 10px 34px rgba(0,0,0,.6); }
+    .chrome { position: absolute; left: 0; width: 960px; text-align: center; font-family: var(--font-ui); font-weight: 900; font-size: 170px; line-height: 1; }
+    .chrome span { display: inline-block; background: linear-gradient(180deg, #ffffff 0%, #d9dde3 38%, #7d838c 52%, #f4f6f8 70%, #a9afb7 100%);
+      -webkit-background-clip: text; background-clip: text; color: transparent; filter: drop-shadow(0 6px 18px rgba(0,0,0,.55)); }
+    .pilltag { display: inline-flex; align-items: center; gap: 10px; padding: 10px 26px 10px 16px; border-radius: 12px; background: rgba(255,255,255,.95);
+      color: #111; font-family: var(--font-ui); font-weight: 700; font-size: 34px; box-shadow: 0 10px 28px rgba(0,0,0,.35); white-space: nowrap; }
+    .pilltag svg { width: 32px; height: 32px; }
+
+  </style>
+  <div id="root" data-composition-id="open" data-width="1080" data-height="1920">
+    <div id="op-h" class="head clip" data-start="1.5667" data-duration="1.7667" data-track-index="0" style="top:270px"><div id="op-ht">Kenapa nak beli<br/>yang mahal?</div></div>
+    <div id="price" class="glass clip" data-start="3.4333" data-duration="5.5" data-track-index="0" style="left:90px; top:270px; width:780px"><div style="padding:22px 26px;text-align:center"><div id="pr0" style="position:relative;display:inline-block;margin:0 14px;font-weight:900;font-size:58px;color:#fff">RM200<span id="pr0x" style="position:absolute;left:-6px;right:-6px;top:50%;height:7px;margin-top:-3px;background:#ff3b5c;border-radius:4px;transform-origin:0 50%"></span></div><div id="pr1" style="position:relative;display:inline-block;margin:0 14px;font-weight:900;font-size:58px;color:#fff">RM100<span id="pr1x" style="position:absolute;left:-6px;right:-6px;top:50%;height:7px;margin-top:-3px;background:#ff3b5c;border-radius:4px;transform-origin:0 50%"></span></div><div id="pr2" style="position:relative;display:inline-block;margin:0 14px;font-weight:900;font-size:58px;color:#fff">RM50<span id="pr2x" style="position:absolute;left:-6px;right:-6px;top:50%;height:7px;margin-top:-3px;background:#ff3b5c;border-radius:4px;transform-origin:0 50%"></span></div><div id="prf" style="margin-top:12px;font-weight:900;font-size:64px;color:var(--neon);text-shadow:0 0 24px rgba(61,255,139,.55)">Bawah lagi!</div></div></div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#op-ht", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.6, ease: "power3.out" }, 1.5667);
+    tl.to("#op-h", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 2.9667);
+    tl.fromTo("#price", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.55, ease: "power3.out" }, 3.4333);
+    tl.set(["#pr0", "#pr1", "#pr2", "#prf"], { opacity: 0 }, 3.4333);
+    tl.fromTo("#pr0", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 3.9);
+    tl.fromTo("#pr0x", { scaleX: 0 }, { scaleX: 1, duration: 0.35, ease: "power2.inOut" }, 4.3333);
+    tl.fromTo("#pr1", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 5.1333);
+    tl.fromTo("#pr1x", { scaleX: 0 }, { scaleX: 1, duration: 0.35, ease: "power2.inOut" }, 5.5667);
+    tl.fromTo("#pr2", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 6.7667);
+    tl.fromTo("#pr2x", { scaleX: 0 }, { scaleX: 1, duration: 0.35, ease: "power2.inOut" }, 7.2333);
+    tl.fromTo("#prf", { opacity: 0, scale: 0.85 }, { opacity: 1, scale: 1, duration: 0.5, ease: "back.out(1.6)" }, 7.8);
+    tl.to("#price", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 8.5667);
+    window.__timelines["open"] = tl;
+  </script>
+</template>

@@ -1,0 +1,57 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; pointer-events: none; 
+      --ink: #ffffff;
+      --dark: #0d0e10;
+      --neon: #3dff8b;
+      --hot: #ff6b3d;
+      --cold: #4cc3ff;
+      --glass: rgba(16, 17, 20, 0.80);
+      --stroke: rgba(255,255,255,.14);
+      --font-ui: "Montserrat", sans-serif;
+ }
+    .chip { position: absolute; left: 0; width: 960px; text-align: center; }
+    .chip > span { display: inline-flex; align-items: center; gap: 14px; }
+    .chip .lb { background: #fff; color: #111; font-family: var(--font-ui); font-weight: 600; font-size: 40px; letter-spacing: .01em;
+      padding: 8px 18px; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,.35); white-space: nowrap; text-transform: uppercase; }
+    .chip .ic { width: 70px; height: 70px; border-radius: 50%; background: var(--dark); border: 2.5px solid rgba(255,255,255,.9);
+      display: inline-flex; align-items: center; justify-content: center; box-shadow: 0 10px 30px rgba(0,0,0,.4); }
+    .chip .ic svg { width: 38px; height: 38px; }
+    .glass { position: absolute; background: var(--glass); border: 1.5px solid var(--stroke); border-radius: 30px;
+      box-shadow: 0 24px 60px rgba(0,0,0,.5); backdrop-filter: blur(18px); color: #fff; font-family: var(--font-ui); }
+    .head { position: absolute; left: 0; width: 960px; text-align: center; font-family: var(--font-ui); font-weight: 800; color: #fff;
+      font-size: 60px; line-height: 1.1; text-shadow: 0 3px 6px rgba(0,0,0,.5), 0 10px 34px rgba(0,0,0,.6); }
+    .chrome { position: absolute; left: 0; width: 960px; text-align: center; font-family: var(--font-ui); font-weight: 900; font-size: 170px; line-height: 1; }
+    .chrome span { display: inline-block; background: linear-gradient(180deg, #ffffff 0%, #d9dde3 38%, #7d838c 52%, #f4f6f8 70%, #a9afb7 100%);
+      -webkit-background-clip: text; background-clip: text; color: transparent; filter: drop-shadow(0 6px 18px rgba(0,0,0,.55)); }
+    .pilltag { display: inline-flex; align-items: center; gap: 10px; padding: 10px 26px 10px 16px; border-radius: 12px; background: rgba(255,255,255,.95);
+      color: #111; font-family: var(--font-ui); font-weight: 700; font-size: 34px; box-shadow: 0 10px 28px rgba(0,0,0,.35); white-space: nowrap; }
+    .pilltag svg { width: 32px; height: 32px; }
+
+  </style>
+  <div id="root" data-composition-id="legs" data-width="1080" data-height="1920">
+    <div id="lg-best" class="chip clip" data-start="9.5" data-duration="1.6333" data-track-index="0" style="top:270px"><span><span id="lg-bestc" class="ic"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg></span><span id="lg-bestb" class="lb">Memang terbaik</span></span></div>
+    <div id="lg-fold" class="chip clip" data-start="12.7667" data-duration="5.1667" data-track-index="0" style="top:270px; left:60px; width:auto; text-align:left"><span><span id="lg-foldc" class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="13" rx="3"/><path d="M8 16l-2 5M16 16l2 5M12 16v5"/></svg></span><span id="lg-foldb" class="lb">Kaki boleh lipat</span></span></div>
+    <div id="lg-img" class=" clip" data-start="13.6333" data-duration="4.3" data-track-index="0" style="position:absolute; left:60px; top:380px; width:330px"><div style="border-radius:22px;overflow:hidden;border:3px solid rgba(255,255,255,.9);box-shadow:0 24px 60px rgba(0,0,0,.5)"><img src="assets/img/tripod.jpg" alt="" style="display:block;width:330px"/></div></div>
+    <div id="lg-lock" class="chip clip" data-start="17.9333" data-duration="1.4333" data-track-index="0" style="top:270px"><span><span id="lg-lockc" class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="10.5" width="14" height="10" rx="2.5"/><path d="M8.5 10.5V7.5a3.5 3.5 0 0 1 7 0v3"/></svg></span><span id="lg-lockb" class="lb">Lock kemas</span></span></div>
+    <div id="lg-cup" class="chip clip" data-start="19.3667" data-duration="3.0" data-track-index="0" style="top:270px"><span><span id="lg-cupc" class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h11v6a5 5 0 0 1-5 5h-1a5 5 0 0 1-5-5z"/><path d="M16 10h1.5a2.5 2.5 0 0 1 0 5H16"/><path d="M8 3c0 1.5 1 1.5 1 3M12 3c0 1.5 1 1.5 1 3"/></svg></span><span id="lg-cupb" class="lb">Muat cawan bawah paip</span></span></div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#lg-bestc", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.5, ease: "power3.out" }, 9.5);
+    tl.fromTo("#lg-bestb", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.55, ease: "power3.out" }, 9.5667);
+    tl.to("#lg-best", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 10.7667);
+    tl.fromTo("#lg-foldc", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.5, ease: "power3.out" }, 12.7667);
+    tl.fromTo("#lg-foldb", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.55, ease: "power3.out" }, 12.8333);
+    tl.to("#lg-fold", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 17.5667);
+    tl.fromTo("#lg-img", { opacity: 0, y: 30, scale: 0.94 }, { opacity: 1, y: 0, scale: 1, duration: 0.6, ease: "power3.out" }, 13.6333);
+    tl.to("#lg-img", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 17.5667);
+    tl.fromTo("#lg-lockc", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.5, ease: "power3.out" }, 17.9333);
+    tl.fromTo("#lg-lockb", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.55, ease: "power3.out" }, 18.0);
+    tl.to("#lg-lock", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 19.0);
+    tl.fromTo("#lg-cupc", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.5, ease: "power3.out" }, 19.3667);
+    tl.fromTo("#lg-cupb", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.55, ease: "power3.out" }, 19.4333);
+    tl.to("#lg-cup", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 22.0);
+    window.__timelines["legs"] = tl;
+  </script>
+</template>
