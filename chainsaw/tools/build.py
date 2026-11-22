@@ -27,7 +27,7 @@ VARIANTS = {
     # video 1: features & safety
     "1": [
         ("c0", "c", 0.00, 4.40, 0.55),     # hook: cutting a branch (chainsaw sound, lowered)
-        ("s1", "v", 0.78, 6.90, 1.0),      # kau tekan, tak ada apa. ni bukan aku kena tipu. ni ada safety tau. kau tekan button ni, kau tekan
+        ("s1", "v", 0.78, 6.90, 1.0, 9.70),  # kau tekan ... kau tekan button ni, kau tekan  + the chainsaw running until 9.7 s
         ("s2", "v", 9.92, 14.30, 1.0),     # memang padu kan. memang terbaik lah. kat sini kau boleh tengok dia punya peratus bateri
         ("s3", "v", 17.88, 22.46, 1.0),    # kat sini kau boleh isi minyak rantai dia ... kau buka ni, kau isi minyak rantai dia
         ("s4a", "v", 22.78, 24.34, 1.0),   # nak safety dia, dia dah bagi juga
@@ -50,7 +50,7 @@ VARIANTS = {
 EDL = VARIANTS[VARIANT]
 
 segs, f = [], 0
-for sid, src, a, b, vol in EDL:
+for sid, src, a, b, vol, *ob in EDL:
     if src == "v":
         w0, w1 = wat(a), wat(b)
         i0, i1 = WORDS.index(w0), WORDS.index(w1)
@@ -58,6 +58,8 @@ for sid, src, a, b, vol in EDL:
         next_start = WORDS[i1 + 1]["start"] if i1 + 1 < len(WORDS) else 1e9
         a = max(w0["start"] - PAD_IN, prev_end + 0.04) if i0 > 0 else max(0, w0["start"] - PAD_IN)
         b = min(w1["end"] + PAD_OUT, next_start - 0.06)
+        if ob:
+            b = ob[0]
     fa, fb = round(a * FPS), round(b * FPS)
     segs.append(dict(id=sid, src=src, src_in=fa / FPS, src_out=fb / FPS, start=f / FPS, dur=(fb - fa) / FPS, vol=vol))
     f += fb - fa
@@ -304,7 +306,7 @@ scene_opt("hook", [
 
 scene_opt("safety", [
     opt(["s1"], lambda: chip("sf-safe", "Ada safety", "shield", W("s1", 4.00), W("s1", 5.32) - W("s1", 4.00), LOW)),
-    opt(["s1"], lambda: chip("sf-btn", "Tekan butang + picu", "power", W("s1", 5.32), end("s1") - W("s1", 5.32) + 0.2, LOW)),
+    opt(["s1"], lambda: chip("sf-btn", "Tekan butang + picu", "power", W("s1", 5.32), W("s1", 6.90) + 0.6 - W("s1", 5.32), LOW)),
     opt(["s2"], lambda: chip("sf-best", "Memang terbaik", "star", W("s2", 9.92), W("s2", 11.88) - W("s2", 9.92), LOW)),
     opt(["s2"], lambda: chip("sf-bat", "Paparan peratus bateri", "battery", W("s2", 11.88), end("s2") - W("s2", 11.88), LOW)),
     opt(["s2"], lambda: img_card("sf-batimg", "assets/img/battery-led.jpg", None, W("s2", 12.14), end("s2") - W("s2", 12.14), 600, SIDE_Y - 140, w=330)),
