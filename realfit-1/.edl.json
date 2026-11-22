@@ -1,0 +1,115 @@
+{
+ "total": 46.0,
+ "segs": [
+  {
+   "id": "h0",
+   "src": "h",
+   "src_in": 6.8,
+   "src_out": 11.4,
+   "start": 0.0,
+   "dur": 4.5999,
+   "vol": 0.35
+  },
+  {
+   "id": "a1",
+   "src": "v",
+   "src_in": 0.0,
+   "src_out": 7.7667,
+   "start": 4.6,
+   "dur": 7.766500000000001,
+   "vol": 1.0
+  },
+  {
+   "id": "a2",
+   "src": "v",
+   "src_in": 9.8,
+   "src_out": 15.6333,
+   "start": 12.3667,
+   "dur": 5.833200000000001,
+   "vol": 1.0
+  },
+  {
+   "id": "a3",
+   "src": "v",
+   "src_in": 28.1,
+   "src_out": 36.0,
+   "start": 18.2,
+   "dur": 7.899900000000001,
+   "vol": 1.0
+  },
+  {
+   "id": "a4",
+   "src": "v",
+   "src_in": 49.0,
+   "src_out": 55.5667,
+   "start": 26.1,
+   "dur": 6.5665000000000004,
+   "vol": 1.0
+  },
+  {
+   "id": "a5",
+   "src": "v",
+   "src_in": 83.1,
+   "src_out": 91.5667,
+   "start": 32.6667,
+   "dur": 8.4665,
+   "vol": 1.0
+  },
+  {
+   "id": "a6",
+   "src": "v",
+   "src_in": 93.8333,
+   "src_out": 96.1,
+   "start": 41.1334,
+   "dur": 2.2664999999999997,
+   "vol": 1.0
+  },
+  {
+   "id": "e1",
+   "src": "h",
+   "src_in": 9.0,
+   "src_out": 11.6,
+   "start": 43.4,
+   "dur": 2.5999,
+   "vol": 0.3
+  }
+ ],
+ "phrases": [
+  "Jam Realfit",
+  "daripada Realfit,",
+  "dia bagi dengan",
+  "tiga tali,",
+  "kau boleh",
+  "tukar-tukar dia,",
+  "memang lawa,",
+  "cara nak pakai",
+  "dia pun",
+  "cukup mudah,",
+  "boleh jawab call,",
+  "kau nak",
+  "dial apa,",
+  "apa semua boleh,",
+  "boleh nak tengok",
+  "call record,",
+  "contact pun semua",
+  "boleh masuk",
+  "kat sini.",
+  "tak mau ni",
+  "kau boleh tekan",
+  "yang mana kau",
+  "nak dia boleh",
+  "bubuh juga gambar",
+  "apa wallpaper",
+  "dia bagi dengan",
+  "tiga tali ni",
+  "tali jenis kulit,",
+  "ni tali",
+  "original dia,",
+  "dia bagi",
+  "dengan manual,",
+  "charger pun ada",
+  "kat sini,",
+  "nak dapat mana,",
+  "tekan link"
+ ]
+}

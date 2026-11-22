@@ -1,0 +1,97 @@
+{
+ "total": 33.9,
+ "segs": [
+  {
+   "id": "t1",
+   "src": "v",
+   "src_in": 42.0667,
+   "src_out": 45.4667,
+   "start": 0.0,
+   "dur": 3.3998999999999997,
+   "vol": 1.0
+  },
+  {
+   "id": "t2",
+   "src": "v",
+   "src_in": 36.1,
+   "src_out": 41.4,
+   "start": 3.4,
+   "dur": 5.2999,
+   "vol": 1.0
+  },
+  {
+   "id": "t3",
+   "src": "v",
+   "src_in": 56.4,
+   "src_out": 60.0667,
+   "start": 8.7,
+   "dur": 3.6664999999999996,
+   "vol": 1.0
+  },
+  {
+   "id": "t4",
+   "src": "v",
+   "src_in": 61.3,
+   "src_out": 74.0667,
+   "start": 12.3667,
+   "dur": 12.7665,
+   "vol": 1.0
+  },
+  {
+   "id": "t5",
+   "src": "v",
+   "src_in": 74.1333,
+   "src_out": 76.0333,
+   "start": 25.1334,
+   "dur": 1.8999,
+   "vol": 1.0
+  },
+  {
+   "id": "t6",
+   "src": "v",
+   "src_in": 93.8333,
+   "src_out": 96.1,
+   "start": 27.0334,
+   "dur": 2.2664999999999997,
+   "vol": 1.0
+  },
+  {
+   "id": "e2",
+   "src": "h",
+   "src_in": 6.8,
+   "src_out": 11.4,
+   "start": 29.3,
+   "dur": 4.5999,
+   "vol": 0.3
+  }
+ ],
+ "phrases": [
+  "kau boleh tekan",
+  "treadmill ke apa",
+  "kan tiga",
+  "dua satu",
+  "lepas tu sports",
+  "pun boleh sport",
+  "dia dekat",
+  "seratus lebih",
+  "masuk sleep heart",
+  "rate apa semua",
+  "boleh tengok ni",
+  "tahap stress",
+  "weather kita boleh",
+  "check camera muzik,",
+  "semua ada kat",
+  "sini alarm,",
+  "stopwatch, kalendar calculator,",
+  "stock market",
+  "pun ada,",
+  "lampu SOS kau",
+  "nak find",
+  "phone kan,",
+  "apa bluetooth je,",
+  "so memang",
+  "terbaik lah,",
+  "nak dapat mana,",
+  "tekan link"
+ ]
+}

@@ -1,0 +1,69 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; pointer-events: none; 
+      --ink: #ffffff;
+      --dark: #0d0e10;
+      --neon: #ff8a1f;
+      --glass: rgba(16, 17, 20, 0.80);
+      --stroke: rgba(255,255,255,.14);
+      --font-ui: "Montserrat", sans-serif;
+ }
+    .chip { position: absolute; left: 0; width: 960px; text-align: center; }
+    .chip > span { display: inline-flex; align-items: center; gap: 14px; }
+    .chip .lb { background: #fff; color: #111; font-family: var(--font-ui); font-weight: 600; font-size: 40px; letter-spacing: .01em;
+      padding: 8px 18px; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,.35); white-space: nowrap; text-transform: uppercase; }
+    .chip .ic { width: 70px; height: 70px; border-radius: 50%; background: var(--dark); border: 2.5px solid rgba(255,255,255,.9);
+      display: inline-flex; align-items: center; justify-content: center; box-shadow: 0 10px 30px rgba(0,0,0,.4); }
+    .chip .ic svg { width: 38px; height: 38px; }
+    .glass { position: absolute; background: var(--glass); border: 1.5px solid var(--stroke); border-radius: 30px;
+      box-shadow: 0 24px 60px rgba(0,0,0,.5); backdrop-filter: blur(18px); color: #fff; font-family: var(--font-ui); }
+    .head { position: absolute; left: 0; width: 960px; text-align: center; font-family: var(--font-ui); font-weight: 800; color: #fff;
+      font-size: 62px; line-height: 1.1; text-shadow: 0 0 4px rgba(0,0,0,.9), 0 3px 8px rgba(0,0,0,.75), 0 10px 34px rgba(0,0,0,.75); }
+    .head > div { display: inline-block; padding: 14px 30px; border-radius: 26px; background: rgba(10,11,13,.42); }
+    .head em { font-style: normal; color: var(--neon); }
+    .pilltag { display: inline-flex; align-items: center; gap: 10px; padding: 10px 26px 10px 16px; border-radius: 12px; background: rgba(255,255,255,.95);
+      color: #111; font-family: var(--font-ui); font-weight: 700; font-size: 34px; box-shadow: 0 10px 28px rgba(0,0,0,.35); white-space: nowrap; }
+
+  </style>
+  <div id="root" data-composition-id="sc2" data-width="1080" data-height="1920">
+    <div id="t1-h" class="head clip" data-start="0.3" data-duration="3.1" data-track-index="0" style="top:260px"><div id="t1-ht">Treadmill?<br/><em>Tekan je</em></div></div>
+    <div id="t2-img" class=" clip" data-start="4.7333" data-duration="3.9667" data-track-index="0" style="position:absolute; left:130px; top:160px; width:700px"><div style="border-radius:22px;overflow:hidden;border:3px solid rgba(255,255,255,.9);box-shadow:0 24px 60px rgba(0,0,0,.5)"><img src="assets/img/sports.jpg" alt="" style="display:block;width:700px"/></div></div>
+    <div id="t2-100" class="chip clip" data-start="7.0333" data-duration="1.7667" data-track-index="0" style="top:480px"><span><span id="t2-100c" class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="14" cy="4" r="1.8"/><path d="M8 21l3-6 3 2v5M6 11l3-3 4 1 3 4 3 1M11 15l-1-5"/></svg></span><span id="t2-100b" class="lb">100+ mod sukan</span></span></div>
+    <div id="t3-img" class=" clip" data-start="8.8" data-duration="3.5667" data-track-index="0" style="position:absolute; left:130px; top:160px; width:700px"><div style="border-radius:22px;overflow:hidden;border:3px solid rgba(255,255,255,.9);box-shadow:0 24px 60px rgba(0,0,0,.5)"><img src="assets/img/health.jpg" alt="" style="display:block;width:700px"/></div></div>
+    <div id="t3-hr" class="chip clip" data-start="9.5" data-duration="2.9667" data-track-index="0" style="top:480px"><span><span id="t3-hrc" class="ic"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 20.5s-7.5-4.6-7.5-10A4.3 4.3 0 0 1 12 7.6a4.3 4.3 0 0 1 7.5 2.9c0 5.4-7.5 10-7.5 10z"/></svg></span><span id="t3-hrb" class="lb">Tidur, jantung &amp; stres</span></span></div>
+    <div id="t4-g" class="glass clip" data-start="12.4333" data-duration="12.7" data-track-index="0" style="left:70px; top:170px; width:820px"><div style="display:flex;flex-wrap:wrap;justify-content:center;padding:18px 12px"><div id="t4-g0" style="width:146px;text-align:center;margin:8px 4px"><div style="width:84px;height:84px;margin:0 auto;border-radius:24px;background:linear-gradient(150deg,#ff9a3c,#ff6a1a);display:flex;align-items:center;justify-content:center;box-shadow:0 8px 22px rgba(0,0,0,.35)"><svg viewBox="0 0 24 24" width="46" height="46"><path d="M7 17h10a4 4 0 0 0 0-8 5.5 5.5 0 0 0-10.6 1.6A3.3 3.3 0 0 0 7 17z" fill="none" stroke="#fff" stroke-width="2"/></svg></div><div style="margin-top:8px;font-weight:700;font-size:26px;color:#fff;white-space:nowrap">Cuaca</div></div><div id="t4-g1" style="width:146px;text-align:center;margin:8px 4px"><div style="width:84px;height:84px;margin:0 auto;border-radius:24px;background:linear-gradient(150deg,#ff9a3c,#ff6a1a);display:flex;align-items:center;justify-content:center;box-shadow:0 8px 22px rgba(0,0,0,.35)"><svg viewBox="0 0 24 24" width="46" height="46"><rect x="3" y="7" width="18" height="13" rx="2.5" fill="none" stroke="#fff" stroke-width="2"/><circle cx="12" cy="13.5" r="3.5" fill="none" stroke="#fff" stroke-width="2"/><path d="M8.5 7l1.5-3h4l1.5 3" fill="none" stroke="#fff" stroke-width="2"/></svg></div><div style="margin-top:8px;font-weight:700;font-size:26px;color:#fff;white-space:nowrap">Kamera</div></div><div id="t4-g2" style="width:146px;text-align:center;margin:8px 4px"><div style="width:84px;height:84px;margin:0 auto;border-radius:24px;background:linear-gradient(150deg,#ff9a3c,#ff6a1a);display:flex;align-items:center;justify-content:center;box-shadow:0 8px 22px rgba(0,0,0,.35)"><svg viewBox="0 0 24 24" width="46" height="46"><path d="M9 18V5l11-2v13" fill="none" stroke="#fff" stroke-width="2"/><circle cx="6.5" cy="18" r="2.5" fill="#fff"/><circle cx="17.5" cy="16" r="2.5" fill="#fff"/></svg></div><div style="margin-top:8px;font-weight:700;font-size:26px;color:#fff;white-space:nowrap">Muzik</div></div><div id="t4-g3" style="width:146px;text-align:center;margin:8px 4px"><div style="width:84px;height:84px;margin:0 auto;border-radius:24px;background:linear-gradient(150deg,#ff9a3c,#ff6a1a);display:flex;align-items:center;justify-content:center;box-shadow:0 8px 22px rgba(0,0,0,.35)"><svg viewBox="0 0 24 24" width="46" height="46"><circle cx="12" cy="13" r="7" fill="none" stroke="#fff" stroke-width="2"/><path d="M12 9v4l2.5 2M4 5l3-2.5M20 5l-3-2.5" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg></div><div style="margin-top:8px;font-weight:700;font-size:26px;color:#fff;white-space:nowrap">Alarm</div></div><div id="t4-g4" style="width:146px;text-align:center;margin:8px 4px"><div style="width:84px;height:84px;margin:0 auto;border-radius:24px;background:linear-gradient(150deg,#ff9a3c,#ff6a1a);display:flex;align-items:center;justify-content:center;box-shadow:0 8px 22px rgba(0,0,0,.35)"><svg viewBox="0 0 24 24" width="46" height="46"><circle cx="12" cy="14" r="7" fill="none" stroke="#fff" stroke-width="2"/><path d="M12 14V10M10 3h4M12 3v4" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg></div><div style="margin-top:8px;font-weight:700;font-size:26px;color:#fff;white-space:nowrap">Stopwatch</div></div><div id="t4-g5" style="width:146px;text-align:center;margin:8px 4px"><div style="width:84px;height:84px;margin:0 auto;border-radius:24px;background:linear-gradient(150deg,#ff9a3c,#ff6a1a);display:flex;align-items:center;justify-content:center;box-shadow:0 8px 22px rgba(0,0,0,.35)"><svg viewBox="0 0 24 24" width="46" height="46"><rect x="3" y="5" width="18" height="16" rx="2.5" fill="none" stroke="#fff" stroke-width="2"/><path d="M3 10h18M8 3v4M16 3v4" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg></div><div style="margin-top:8px;font-weight:700;font-size:26px;color:#fff;white-space:nowrap">Kalendar</div></div><div id="t4-g6" style="width:146px;text-align:center;margin:8px 4px"><div style="width:84px;height:84px;margin:0 auto;border-radius:24px;background:linear-gradient(150deg,#ff9a3c,#ff6a1a);display:flex;align-items:center;justify-content:center;box-shadow:0 8px 22px rgba(0,0,0,.35)"><svg viewBox="0 0 24 24" width="46" height="46"><rect x="5" y="3" width="14" height="18" rx="2.5" fill="none" stroke="#fff" stroke-width="2"/><path d="M8 7h8M8.5 12h.01M12 12h.01M15.5 12h.01M8.5 16h.01M12 16h.01M15.5 16h.01" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/></svg></div><div style="margin-top:8px;font-weight:700;font-size:26px;color:#fff;white-space:nowrap">Kalkulator</div></div><div id="t4-g7" style="width:146px;text-align:center;margin:8px 4px"><div style="width:84px;height:84px;margin:0 auto;border-radius:24px;background:linear-gradient(150deg,#ff9a3c,#ff6a1a);display:flex;align-items:center;justify-content:center;box-shadow:0 8px 22px rgba(0,0,0,.35)"><svg viewBox="0 0 24 24" width="46" height="46"><path d="M3 20h18M5 16l4-5 4 3 6-8" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div style="margin-top:8px;font-weight:700;font-size:26px;color:#fff;white-space:nowrap">Saham</div></div><div id="t4-g8" style="width:146px;text-align:center;margin:8px 4px"><div style="width:84px;height:84px;margin:0 auto;border-radius:24px;background:linear-gradient(150deg,#ff9a3c,#ff6a1a);display:flex;align-items:center;justify-content:center;box-shadow:0 8px 22px rgba(0,0,0,.35)"><svg viewBox="0 0 24 24" width="46" height="46"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9V16h7v-2.1A6 6 0 0 0 12 3z" fill="none" stroke="#fff" stroke-width="2" stroke-linejoin="round"/></svg></div><div style="margin-top:8px;font-weight:700;font-size:26px;color:#fff;white-space:nowrap">SOS</div></div><div id="t4-g9" style="width:146px;text-align:center;margin:8px 4px"><div style="width:84px;height:84px;margin:0 auto;border-radius:24px;background:linear-gradient(150deg,#ff9a3c,#ff6a1a);display:flex;align-items:center;justify-content:center;box-shadow:0 8px 22px rgba(0,0,0,.35)"><svg viewBox="0 0 24 24" width="46" height="46"><rect x="7" y="2.5" width="10" height="19" rx="2.5" fill="none" stroke="#fff" stroke-width="2"/><path d="M11 18.5h2" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg></div><div style="margin-top:8px;font-weight:700;font-size:26px;color:#fff;white-space:nowrap">Cari phone</div></div></div></div>
+    <div id="t5-best" class="chip clip" data-start="25.9667" data-duration="1.1667" data-track-index="0" style="top:300px"><span><span id="t5-bestc" class="ic"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg></span><span id="t5-bestb" class="lb">Memang terbaik</span></span></div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#t1-ht", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.6, ease: "power3.out" }, 0.3);
+    tl.to("#t1-h", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 3.0333);
+    tl.fromTo("#t2-img", { opacity: 0, y: 30, scale: 0.94 }, { opacity: 1, y: 0, scale: 1, duration: 0.6, ease: "power3.out" }, 4.7333);
+    tl.to("#t2-img", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 8.3333);
+    tl.fromTo("#t2-100c", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.5, ease: "power3.out" }, 7.0333);
+    tl.fromTo("#t2-100b", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.55, ease: "power3.out" }, 7.1);
+    tl.to("#t2-100", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 8.4333);
+    tl.fromTo("#t3-img", { opacity: 0, y: 30, scale: 0.94 }, { opacity: 1, y: 0, scale: 1, duration: 0.6, ease: "power3.out" }, 8.8);
+    tl.to("#t3-img", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 12.0);
+    tl.fromTo("#t3-hrc", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.5, ease: "power3.out" }, 9.5);
+    tl.fromTo("#t3-hrb", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.55, ease: "power3.out" }, 9.5667);
+    tl.to("#t3-hr", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 12.1);
+    tl.fromTo("#t4-g", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.55, ease: "power3.out" }, 12.4333);
+    tl.set(["#t4-g0", "#t4-g1", "#t4-g2", "#t4-g3", "#t4-g4", "#t4-g5", "#t4-g6", "#t4-g7", "#t4-g8", "#t4-g9"], { opacity: 0.18 }, 12.4333);
+    tl.to("#t4-g0", { opacity: 1, duration: 0.35, ease: "power2.out" }, 12.4667);
+    tl.to("#t4-g1", { opacity: 1, duration: 0.35, ease: "power2.out" }, 13.7);
+    tl.to("#t4-g2", { opacity: 1, duration: 0.35, ease: "power2.out" }, 14.5333);
+    tl.to("#t4-g3", { opacity: 1, duration: 0.35, ease: "power2.out" }, 16.6);
+    tl.to("#t4-g4", { opacity: 1, duration: 0.35, ease: "power2.out" }, 17.4);
+    tl.to("#t4-g5", { opacity: 1, duration: 0.35, ease: "power2.out" }, 18.2);
+    tl.to("#t4-g6", { opacity: 1, duration: 0.35, ease: "power2.out" }, 19.1);
+    tl.to("#t4-g7", { opacity: 1, duration: 0.35, ease: "power2.out" }, 20.3333);
+    tl.to("#t4-g8", { opacity: 1, duration: 0.35, ease: "power2.out" }, 21.5);
+    tl.to("#t4-g9", { opacity: 1, duration: 0.35, ease: "power2.out" }, 23.7);
+    tl.to("#t4-g", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 24.7667);
+    tl.fromTo("#t5-bestc", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.5, ease: "power3.out" }, 25.9667);
+    tl.fromTo("#t5-bestb", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.55, ease: "power3.out" }, 26.0333);
+    tl.to("#t5-best", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 26.7667);
+    window.__timelines["sc2"] = tl;
+  </script>
+</template>
