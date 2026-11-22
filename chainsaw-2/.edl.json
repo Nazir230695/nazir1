@@ -1,0 +1,110 @@
+{
+ "total": 39.3333,
+ "segs": [
+  {
+   "id": "c2",
+   "src": "c",
+   "src_in": 6.2,
+   "src_out": 9.0,
+   "start": 0.0,
+   "dur": 2.7998999999999996,
+   "vol": 0.55
+  },
+  {
+   "id": "s5",
+   "src": "v",
+   "src_in": 32.8333,
+   "src_out": 42.1333,
+   "start": 2.8,
+   "dur": 9.299900000000001,
+   "vol": 1.0
+  },
+  {
+   "id": "s6",
+   "src": "v",
+   "src_in": 43.5667,
+   "src_out": 47.4667,
+   "start": 12.1,
+   "dur": 3.8998999999999997,
+   "vol": 1.0
+  },
+  {
+   "id": "s7",
+   "src": "v",
+   "src_in": 49.8667,
+   "src_out": 54.1,
+   "start": 16.0,
+   "dur": 4.2332,
+   "vol": 1.0
+  },
+  {
+   "id": "s9",
+   "src": "v",
+   "src_in": 63.6667,
+   "src_out": 72.7333,
+   "start": 20.2334,
+   "dur": 9.0665,
+   "vol": 1.0
+  },
+  {
+   "id": "sa",
+   "src": "v",
+   "src_in": 72.6667,
+   "src_out": 78.3,
+   "start": 29.3,
+   "dur": 5.6332,
+   "vol": 1.0
+  },
+  {
+   "id": "b0",
+   "src": "b",
+   "src_in": 0.2,
+   "src_out": 4.6,
+   "start": 34.9334,
+   "dur": 4.399900000000001,
+   "vol": 0.6
+  }
+ ],
+ "phrases": [
+  "Setiap pembelian,",
+  "dia bagi juga",
+  "dengan charger,",
+  "adapter dia.",
+  "Kat sini,",
+  "kau boleh tengok,",
+  "dia bagi sekali",
+  "dengan box dia",
+  "memang lawa.",
+  "Kau boleh letak",
+  "dalam ni.",
+  "Nak pindah,",
+  "mudah alih,",
+  "Kat sini,",
+  "dia bagi sekali",
+  "dengan cordless dia.",
+  "Bateri cordless dia.",
+  "Kau boleh masuk",
+  "dari sini.",
+  "Mudah kan?",
+  "Memang lawa,",
+  "memang terbaik.",
+  "Paket pembelian ni",
+  "sekali kau tengok.",
+  "Dia ada sekali",
+  "dengan rantai tau.",
+  "Dia bagi sekali",
+  "dengan rantai.",
+  "So kau",
+  "jangan risau.",
+  "Dia bagi juga",
+  "dengan screwdriver ni",
+  "kau boleh",
+  "pasang tu.",
+  "Nak dapat mana",
+  "benda ni.",
+  "Harga-harga memang kau",
+  "boleh terkejut lah.",
+  "Sebab sekarang tengah",
+  "ada promosi."
+ ]
+}

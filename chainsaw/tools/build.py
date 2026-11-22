@@ -2,7 +2,7 @@
 """Cordless chainsaw — reference style (white label chips + round black icon, glass cards, neon accent), calm pacing like
 the insulated-bucket edit: lines kept whole with breathing room, phrase captions, soft long-held overlays, no zoom jumps.
 Opens on the branch-cutting clip, closes on the box contents with a 'Tekan link sekarang' card.
-Usage: python3 -I build.py <words.json> <project_dir>     (words of raw.mp4; cut.mp4 / box.mp4 are wordless b-roll)
+Usage: python3 -I build.py <words.json> <project_dir> <1|2>   (1 = features & safety, 2 = what is in the set)     (words of raw.mp4; cut.mp4 / box.mp4 are wordless b-roll)
 """
 import json, sys, html, os, re, math, subprocess
 
@@ -22,21 +22,32 @@ def wat(t):
 
 
 # (id, src, first_word_start | src_in, last_word_start | src_out, volume)   — b-roll rows give raw in/out seconds
-EDL = [
-    ("c0", "c", 0.00, 4.40, 0.55),     # hook: cutting a branch (chainsaw sound, lowered)
-    ("s1", "v", 0.78, 6.90, 1.0),      # kau tekan, tak ada apa. ni bukan aku kena tipu. ni ada safety tau. kau tekan button ni, kau tekan
-    ("s2", "v", 9.92, 14.30, 1.0),     # memang padu kan. memang terbaik lah. kat sini kau boleh tengok dia punya peratus bateri
-    ("s3", "v", 17.88, 22.46, 1.0),    # lepas tu kat sini kau boleh isi minyak rantai dia ... kau buka ni, kau isi minyak rantai dia
-    ("s4", "v", 22.78, 31.38, 1.0),    # nak safety dia, dia dah bagi juga ... so safety lah. kalau potong pokok kau pun dia tak terbang kena tangan kau
-    ("s5", "v", 33.02, 41.90, 1.0),    # setiap pembelian dia bagi charger, adapter. dia bagi sekali dengan box, memang lawa. kau boleh letak dalam ni. nak pindah, mudah alih
-    ("s6", "v", 43.76, 47.20, 1.0),    # kat sini dia bagi sekali dengan cordless dia, bateri cordless dia
-    ("s7", "v", 49.90, 53.58, 1.0),    # kau boleh masuk dari sini. mudah kan? memang lawa, memang terbaik
-    ("s8", "v", 54.16, 58.46, 1.0),    # kau dah tengok tadi kan, aku potong pokok tadi kan? memang padu tak padu?
-    ("c1", "c", 6.40, 8.70, 0.55),     # cutting again
-    ("s9", "v", 63.86, 72.34, 1.0),    # paket pembelian ni ... rantai ... jangan risau ... screwdriver, kau boleh pasang
-    ("sa", "v", 72.86, 77.60, 1.0),    # nak dapat mana benda ni? harga-harga memang kau boleh terkejut lah, sebab sekarang tengah ada promosi
-    ("b0", "b", 0.20, 4.60, 0.6),      # box contents, CTA card
-]
+VARIANT = sys.argv[3] if len(sys.argv) > 3 else "1"
+VARIANTS = {
+    # video 1: features & safety
+    "1": [
+        ("c0", "c", 0.00, 4.40, 0.55),     # hook: cutting a branch (chainsaw sound, lowered)
+        ("s1", "v", 0.78, 6.90, 1.0),      # kau tekan, tak ada apa. ni bukan aku kena tipu. ni ada safety tau. kau tekan button ni, kau tekan
+        ("s2", "v", 9.92, 14.30, 1.0),     # memang padu kan. memang terbaik lah. kat sini kau boleh tengok dia punya peratus bateri
+        ("s3", "v", 17.88, 22.46, 1.0),    # kat sini kau boleh isi minyak rantai dia ... kau buka ni, kau isi minyak rantai dia
+        ("s4a", "v", 22.78, 24.34, 1.0),   # nak safety dia, dia dah bagi juga
+        ("s4b", "v", 28.22, 31.38, 1.0),   # so safety lah. kalau potong pokok kau pun dia tak terbang kena tangan kau
+        ("c1", "c", 6.40, 8.70, 0.55),     # cutting again
+        ("sa", "v", 72.86, 77.60, 1.0),    # nak dapat mana benda ni? harga-harga memang kau boleh terkejut lah, sebab sekarang tengah ada promosi
+        ("b0", "b", 0.20, 4.60, 0.6),      # box contents, CTA card
+    ],
+    # video 2: what's in the set
+    "2": [
+        ("c2", "c", 6.20, 9.00, 0.55),     # hook: cutting
+        ("s5", "v", 33.02, 41.90, 1.0),    # setiap pembelian dia bagi charger, adapter. dia bagi sekali dengan box, memang lawa. kau boleh letak dalam ni. nak pindah, mudah alih
+        ("s6", "v", 43.76, 47.20, 1.0),    # kat sini dia bagi sekali dengan cordless dia, bateri cordless dia
+        ("s7", "v", 49.90, 53.58, 1.0),    # kau boleh masuk dari sini. mudah kan? memang lawa, memang terbaik
+        ("s9", "v", 63.86, 72.34, 1.0),    # paket pembelian ni ... rantai ... jangan risau ... screwdriver, kau boleh pasang
+        ("sa", "v", 72.86, 77.60, 1.0),
+        ("b0", "b", 0.20, 4.60, 0.6),
+    ],
+}
+EDL = VARIANTS[VARIANT]
 
 segs, f = [], 0
 for sid, src, a, b, vol in EDL:
@@ -278,39 +289,47 @@ def img_card(cid, src, label, start, dur, x, y, w=340, crop=None):
 LOW = 990
 SIDE_Y = 760
 
-build_scene("hook", [
-    head("hk-h", "Potong dahan<br/><em>sekali lalu</em>", 0.3, end("c0") - 0.3, 300),
+def opt(ids, f):
+    return f() if all(i in SEG for i in ids) else None
+
+
+def scene_opt(name, parts):
+    build_scene(name, [p for p in parts if p])
+
+
+scene_opt("hook", [
+    opt(["c0"], lambda: head("hk-h", "Potong dahan<br/><em>sekali lalu</em>", 0.3, end("c0") - 0.3, 300)),
+    opt(["c2"], lambda: head("hk-h2", "Lengkap<br/><em>satu set</em>", 0.3, end("c2") - 0.3, 300)),
 ])
 
-build_scene("safety", [
-    chip("sf-safe", "Ada safety", "shield", W("s1", 4.00), W("s1", 5.32) - W("s1", 4.00), LOW),
-    chip("sf-btn", "Tekan butang + picu", "power", W("s1", 5.32), end("s1") - W("s1", 5.32) + 0.2, LOW),
-    chip("sf-best", "Memang terbaik", "star", W("s2", 9.92), W("s2", 11.88) - W("s2", 9.92), LOW),
-    chip("sf-bat", "Paparan peratus bateri", "battery", W("s2", 11.88), end("s2") - W("s2", 11.88), LOW),
-    img_card("sf-batimg", "assets/img/battery-led.jpg", None, W("s2", 12.14), end("s2") - W("s2", 12.14), 600, SIDE_Y - 140, w=330),
+scene_opt("safety", [
+    opt(["s1"], lambda: chip("sf-safe", "Ada safety", "shield", W("s1", 4.00), W("s1", 5.32) - W("s1", 4.00), LOW)),
+    opt(["s1"], lambda: chip("sf-btn", "Tekan butang + picu", "power", W("s1", 5.32), end("s1") - W("s1", 5.32) + 0.2, LOW)),
+    opt(["s2"], lambda: chip("sf-best", "Memang terbaik", "star", W("s2", 9.92), W("s2", 11.88) - W("s2", 9.92), LOW)),
+    opt(["s2"], lambda: chip("sf-bat", "Paparan peratus bateri", "battery", W("s2", 11.88), end("s2") - W("s2", 11.88), LOW)),
+    opt(["s2"], lambda: img_card("sf-batimg", "assets/img/battery-led.jpg", None, W("s2", 12.14), end("s2") - W("s2", 12.14), 600, SIDE_Y - 140, w=330)),
 ])
 
-build_scene("oil", [
-    chip("ol-oil", "Isi minyak rantai", "oil", W("s3", 18.78), end("s3") - W("s3", 18.78), LOW),
-    img_card("ol-img", "assets/img/oil.jpg", None, W("s3", 19.18), end("s3") - W("s3", 19.18), 620, SIDE_Y - 60, w=300),
-    chip("ol-guard", "Penghadang keselamatan", "shield", W("s4", 22.78), W("s4", 29.16) - W("s4", 22.78), LOW),
-    chip("ol-hand", "Tak kena tangan", "shield", W("s4", 29.16), end("s4") - W("s4", 29.16) + 0.2, LOW),
+scene_opt("oil", [
+    opt(["s3"], lambda: chip("ol-oil", "Isi minyak rantai", "oil", W("s3", 18.78), end("s3") - W("s3", 18.78), LOW)),
+    opt(["s3"], lambda: img_card("ol-img", "assets/img/oil.jpg", None, W("s3", 19.18), end("s3") - W("s3", 19.18), 620, SIDE_Y - 60, w=300)),
+    opt(["s4a"], lambda: chip("ol-guard", "Penghadang keselamatan", "shield", W("s4a", 22.78), end("s4a") - W("s4a", 22.78) + 0.2, LOW)),
+    opt(["s4b"], lambda: chip("ol-hand", "Tak kena tangan", "shield", W("s4b", 29.16), end("s4b") - W("s4b", 29.16) + 0.2, LOW)),
+    opt(["c1"], lambda: head("ol-cut", "Laju &amp; <em>padu</em>", st("c1") + 0.2, end("c1") - st("c1") - 0.2, 300)),
 ])
 
-build_scene("kit", [
-    chip("kt-chg", "Charger + adapter", "plug", W("s5", 33.86), W("s5", 36.30) - W("s5", 33.86), LOW),
-    chip("kt-box", "Kotak simpanan", "box", W("s5", 36.30), end("s5") - W("s5", 36.30), LOW),
-    img_card("kt-boximg", "assets/img/storage.jpg", None, W("s5", 38.68), end("s5") - W("s5", 38.68), 590, SIDE_Y - 140, w=330),
-    chip("kt-bat", "Bateri cordless", "battery", W("s6", 44.58), end("s6") - W("s6", 44.58), LOW),
-    chip("kt-easy", "Senang pasang", "star", W("s7", 49.90), end("s7") - W("s7", 49.90), LOW),
-    chip("kt-padu", "Memang padu", "star", W("s8", 57.10), end("s8") - W("s8", 57.10) + 0.2, LOW),
-    head("kt-cut", "Laju &amp; <em>padu</em>", st("c1") + 0.2, end("c1") - st("c1") - 0.2, 300),
+scene_opt("kit", [
+    opt(["s5"], lambda: chip("kt-chg", "Charger + adapter", "plug", W("s5", 33.86), W("s5", 36.30) - W("s5", 33.86), LOW)),
+    opt(["s5"], lambda: chip("kt-box", "Kotak simpanan", "box", W("s5", 36.30), end("s5") - W("s5", 36.30), LOW)),
+    opt(["s5"], lambda: img_card("kt-boximg", "assets/img/storage.jpg", None, W("s5", 38.68), end("s5") - W("s5", 38.68), 590, SIDE_Y - 140, w=330)),
+    opt(["s6"], lambda: chip("kt-bat", "Bateri cordless", "battery", W("s6", 44.58), end("s6") - W("s6", 44.58), LOW)),
+    opt(["s7"], lambda: chip("kt-easy", "Senang pasang", "star", W("s7", 49.90), end("s7") - W("s7", 49.90), LOW)),
 ])
 
-build_scene("pack", [
-    chip("pk-chain", "Rantai ganti", "chain", W("s9", 66.34), W("s9", 69.64) - W("s9", 66.34), LOW),
-    chip("pk-tool", "Screwdriver sekali", "tool", W("s9", 69.64), end("s9") - W("s9", 69.64), LOW),
-    chip("pk-promo", "Tengah promosi", "tag", W("sa", 76.98), end("sa") - W("sa", 76.98) + 0.2, LOW),
+scene_opt("pack", [
+    opt(["s9"], lambda: chip("pk-chain", "Rantai ganti", "chain", W("s9", 66.34), W("s9", 69.64) - W("s9", 66.34), LOW)),
+    opt(["s9"], lambda: chip("pk-tool", "Screwdriver sekali", "tool", W("s9", 69.64), end("s9") - W("s9", 69.64), LOW)),
+    opt(["sa"], lambda: chip("pk-promo", "Tengah promosi", "tag", W("sa", 76.98), end("sa") - W("sa", 76.98) + 0.2, LOW)),
 ])
 
 shop = (f'<div style="display:flex;align-items:center;gap:20px;padding:18px 20px">'
@@ -344,23 +363,27 @@ videos = [f'        <video id="{s["id"]}" class="clip seg" src="{SRC[s["src"]]}"
           f'data-media-start="{s["src_in"]}" data-track-index="1" data-has-audio="true" data-volume="{s["vol"]}" data-fade-in="0.06" data-fade-out="0.1" playsinline></video>' for s in segs]
 cam = [f'      tl.fromTo("#cam", {{ scale: 1.0 }}, {{ scale: 1.035, duration: {fr(s["dur"])}, ease: "none", immediateRender: false }}, {s["start"]});' for s in segs]
 
-SFX = [("sx-h", "whoosh.mp3", 0.3, 0.2),
-       ("sx-safe", "pop.mp3", W("s1", 4.00), 0.2),
-       ("sx-btn", "click-soft.mp3", W("s1", 5.32), 0.35),
-       ("sx-best", "pop.mp3", W("s2", 9.92), 0.2),
-       ("sx-bat", "pop.mp3", W("s2", 11.88), 0.2),
-       ("sx-oil", "pop.mp3", W("s3", 18.78), 0.2),
-       ("sx-guard", "pop.mp3", W("s4", 22.78), 0.2),
-       ("sx-chg", "pop.mp3", W("s5", 33.86), 0.2),
-       ("sx-box", "pop.mp3", W("s5", 36.30), 0.2),
-       ("sx-bat2", "pop.mp3", W("s6", 44.58), 0.2),
-       ("sx-easy", "pop.mp3", W("s7", 49.90), 0.2),
-       ("sx-padu", "sparkle.mp3", W("s8", 57.10), 0.2),
-       ("sx-chain", "pop.mp3", W("s9", 66.34), 0.2),
-       ("sx-tool", "pop.mp3", W("s9", 69.64), 0.2),
-       ("sx-shop", "whoosh-short.mp3", SHOP0, 0.2),
-       ("sx-promo", "pop.mp3", W("sa", 76.98), 0.2),
-       ("sx-cta", "sparkle.mp3", CTA0 + 0.2, 0.3)]
+SFX_ALL = [
+    (["c0"], lambda: ("sx-h", "whoosh.mp3", 0.3, 0.2)),
+    (["c2"], lambda: ("sx-h2", "whoosh.mp3", 0.3, 0.2)),
+    (["s1"], lambda: ("sx-safe", "pop.mp3", W("s1", 4.00), 0.2)),
+    (["s1"], lambda: ("sx-btn", "click-soft.mp3", W("s1", 5.32), 0.35)),
+    (["s2"], lambda: ("sx-best", "pop.mp3", W("s2", 9.92), 0.2)),
+    (["s2"], lambda: ("sx-bat", "pop.mp3", W("s2", 11.88), 0.2)),
+    (["s3"], lambda: ("sx-oil", "pop.mp3", W("s3", 18.78), 0.2)),
+    (["s4a"], lambda: ("sx-guard", "pop.mp3", W("s4a", 22.78), 0.2)),
+    (["s4b"], lambda: ("sx-hand", "pop.mp3", W("s4b", 29.16), 0.2)),
+    (["s5"], lambda: ("sx-chg", "pop.mp3", W("s5", 33.86), 0.2)),
+    (["s5"], lambda: ("sx-box", "pop.mp3", W("s5", 36.30), 0.2)),
+    (["s6"], lambda: ("sx-bat2", "pop.mp3", W("s6", 44.58), 0.2)),
+    (["s7"], lambda: ("sx-easy", "pop.mp3", W("s7", 49.90), 0.2)),
+    (["s9"], lambda: ("sx-chain", "pop.mp3", W("s9", 66.34), 0.2)),
+    (["s9"], lambda: ("sx-tool", "pop.mp3", W("s9", 69.64), 0.2)),
+    (["sa"], lambda: ("sx-shop", "whoosh-short.mp3", SHOP0, 0.2)),
+    (["sa"], lambda: ("sx-promo", "pop.mp3", W("sa", 76.98), 0.2)),
+    (["b0"], lambda: ("sx-cta", "sparkle.mp3", CTA0 + 0.2, 0.3)),
+]
+SFX = [f() for ids, f in SFX_ALL if all(i in SEG for i in ids)]
 
 
 def adur(fn):
