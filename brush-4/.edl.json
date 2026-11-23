@@ -1,0 +1,67 @@
+{
+ "total": 26.0333,
+ "segs": [
+  {
+   "id": "d1",
+   "src": "d",
+   "src_in": 0.0,
+   "src_out": 16.6,
+   "start": 0.0,
+   "dur": 16.5999,
+   "vol": 1.0,
+   "zone": "top"
+  },
+  {
+   "id": "c3",
+   "src": "c",
+   "src_in": 31.8,
+   "src_out": 37.9,
+   "start": 16.6,
+   "dur": 6.0999,
+   "vol": 1.0,
+   "zone": "top"
+  },
+  {
+   "id": "cta",
+   "src": "e",
+   "src_in": 30.4,
+   "src_out": 31.9,
+   "start": 22.7,
+   "dur": 1.4999,
+   "vol": 1.0,
+   "zone": "low"
+  },
+  {
+   "id": "tail",
+   "src": "e",
+   "src_in": 28.5,
+   "src_out": 30.3333,
+   "start": 24.2,
+   "dur": 1.8332,
+   "vol": 0.25,
+   "zone": "low"
+  }
+ ],
+ "phrases": [
+  "Terima kasih lah",
+  "siapa yang reka",
+  "benda ni.",
+  "Bila lantai bersih,",
+  "boleh tarik",
+  "macam ni,",
+  "kering.",
+  "Baru bini sayang,",
+  "best.",
+  "Baru bini sayang.",
+  "Syok tu.",
+  "Tengok, kilat tu.",
+  "Baru bini",
+  "ada mood.",
+  "tarik air macam",
+  "tu lah bila",
+  "lantai kering baru",
+  "syok weh",
+  "nak dapat mana tekan",
+  "link bawah."
+ ]
+}

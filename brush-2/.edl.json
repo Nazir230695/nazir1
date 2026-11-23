@@ -1,0 +1,124 @@
+{
+ "total": 29.9667,
+ "segs": [
+  {
+   "id": "h",
+   "src": "b",
+   "src_in": 0.0,
+   "src_out": 4.0,
+   "start": 0.0,
+   "dur": 3.9999,
+   "vol": 0.5,
+   "zone": "top"
+  },
+  {
+   "id": "b1",
+   "src": "b",
+   "src_in": 6.3,
+   "src_out": 14.5,
+   "start": 4.0,
+   "dur": 8.1999,
+   "vol": 1.0,
+   "zone": "top"
+  },
+  {
+   "id": "b2",
+   "src": "b",
+   "src_in": 15.3,
+   "src_out": 16.7,
+   "start": 12.2,
+   "dur": 1.3999,
+   "vol": 1.0,
+   "zone": "top"
+  },
+  {
+   "id": "b3",
+   "src": "b",
+   "src_in": 21.0,
+   "src_out": 27.1,
+   "start": 13.6,
+   "dur": 6.0999,
+   "vol": 1.0,
+   "zone": "top"
+  },
+  {
+   "id": "b4",
+   "src": "b",
+   "src_in": 28.7333,
+   "src_out": 31.0,
+   "start": 19.7,
+   "dur": 2.2664999999999997,
+   "vol": 1.0,
+   "zone": "top"
+  },
+  {
+   "id": "b5",
+   "src": "b",
+   "src_in": 32.3333,
+   "src_out": 35.9333,
+   "start": 21.9667,
+   "dur": 3.5999,
+   "vol": 1.0,
+   "zone": "low"
+  },
+  {
+   "id": "b6",
+   "src": "b",
+   "src_in": 36.4,
+   "src_out": 37.4667,
+   "start": 25.5667,
+   "dur": 1.0665,
+   "vol": 1.0,
+   "zone": "low"
+  },
+  {
+   "id": "cta",
+   "src": "e",
+   "src_in": 30.4,
+   "src_out": 31.9,
+   "start": 26.6334,
+   "dur": 1.4999,
+   "vol": 1.0,
+   "zone": "low"
+  },
+  {
+   "id": "tail",
+   "src": "e",
+   "src_in": 28.5,
+   "src_out": 30.3333,
+   "start": 28.1334,
+   "dur": 1.8332,
+   "vol": 0.25,
+   "zone": "low"
+  }
+ ],
+ "phrases": [
+  "Betul mudah weh,",
+  "syok guna dia.",
+  "Ini boleh,",
+  "tak payah nak",
+  "ubah kedudukan.",
+  "Tengok aku duduk",
+  "static ya,",
+  "buat macam ni",
+  "pun boleh.",
+  "Celah-celah semua boleh.",
+  "Betul syok,",
+  "memang syok",
+  "guna ni.",
+  "Dia jadi seronok,",
+  "aku nak tarik",
+  "air ke apa",
+  "pun je.",
+  "Bila lantai pun",
+  "sentiasa kering.",
+  "Ni,",
+  "Dia boleh pergi",
+  "macam ni,",
+  "boleh tarik",
+  "air sekali.",
+  "bentuk dia V,",
+  "nak dapat mana tekan",
+  "link bawah."
+ ]
+}

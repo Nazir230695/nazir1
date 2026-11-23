@@ -1,0 +1,115 @@
+{
+ "total": 27.4333,
+ "segs": [
+  {
+   "id": "e1",
+   "src": "e",
+   "src_in": 1.7333,
+   "src_out": 6.8,
+   "start": 0.0,
+   "dur": 5.0665000000000004,
+   "vol": 1.0,
+   "zone": "top"
+  },
+  {
+   "id": "e2",
+   "src": "e",
+   "src_in": 7.4667,
+   "src_out": 9.8667,
+   "start": 5.0667,
+   "dur": 2.3998999999999997,
+   "vol": 1.0,
+   "zone": "top"
+  },
+  {
+   "id": "e3",
+   "src": "e",
+   "src_in": 10.3,
+   "src_out": 13.4,
+   "start": 7.4667,
+   "dur": 3.0999,
+   "vol": 1.0,
+   "zone": "low"
+  },
+  {
+   "id": "e4",
+   "src": "e",
+   "src_in": 14.0667,
+   "src_out": 18.8667,
+   "start": 10.5667,
+   "dur": 4.7999,
+   "vol": 1.0,
+   "zone": "low"
+  },
+  {
+   "id": "e5",
+   "src": "e",
+   "src_in": 19.3,
+   "src_out": 21.8667,
+   "start": 15.3667,
+   "dur": 2.5665,
+   "vol": 1.0,
+   "zone": "low"
+  },
+  {
+   "id": "e6",
+   "src": "e",
+   "src_in": 23.6,
+   "src_out": 28.4,
+   "start": 17.9334,
+   "dur": 4.7999,
+   "vol": 1.0,
+   "zone": "low"
+  },
+  {
+   "id": "cta",
+   "src": "e",
+   "src_in": 30.4,
+   "src_out": 31.9,
+   "start": 22.7334,
+   "dur": 1.4999,
+   "vol": 1.0,
+   "zone": "low"
+  },
+  {
+   "id": "tail",
+   "src": "a",
+   "src_in": 46.2,
+   "src_out": 49.4,
+   "start": 24.2334,
+   "dur": 3.1999,
+   "vol": 0.25,
+   "zone": "top"
+  }
+ ],
+ "phrases": [
+  "boleh tarik",
+  "macam ni,",
+  "bersih macam ni,",
+  "kering boleh tarik-tarik,",
+  "siap tengok-tengok.",
+  "boleh tarik bagi",
+  "lantai kering",
+  "macam ni.",
+  "Baru bini sayang.",
+  "Baru bini bermood.",
+  "ni yang mana",
+  "suami-suami dia ajar",
+  "buat kerja,",
+  "nampak dapat",
+  "benda ni.",
+  "Dua dalam",
+  "satu tu.",
+  "Dia bentuk V,",
+  "dia boleh siap",
+  "tarik air lagi.",
+  "Lepas tu,",
+  "dia boleh pergi",
+  "180 darjah.",
+  "Ni,",
+  "boleh pergi",
+  "180 darjah.",
+  "nak dapat mana tekan",
+  "link bawah."
+ ]
+}
