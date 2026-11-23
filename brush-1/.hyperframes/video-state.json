@@ -461,5 +461,16 @@
       ]
     },
     "unversioned": []
-  }
+  },
+  "renders": {
+    "latest": {
+      "id": "71ccf4fc-e152-48e0-aef7-015cc4ea006c",
+      "completedAt": 1795459577816,
+      "output": "/home/user/nazir1/brush-1/renders/brush-1.mp4",
+      "status": "completed",
+      "revision": null
+    },
+    "retainedRevisions": []
+  },
+  "pendingArtifactCleanup": []
 }
