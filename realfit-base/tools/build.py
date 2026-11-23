@@ -31,7 +31,7 @@ VARIANTS = {
         ("a1", "v", 0.18, 7.54, 1.0),                   # jam realfit tau, daripada realfit, dia bagi dengan tiga tali, kau boleh tukar-tukar dia
         ("a2", "v", 12.30, 15.00, 1.0, {"in": 9.80, "out": 15.62}),  # (strap swap) memang lawa, cara nak pakai dia pun cukup mudah
         ("a3", "v", 28.28, 35.88, 1.0),                 # boleh jawab call, nak dial apa semua boleh, boleh tengok call record, contact pun semua boleh masuk kat sini
-        ("a4", "v", 49.14, 55.30, 1.0, {"in": 49.00}),                 # tak mau ni, kau boleh tekan yang mana kau nak, dia boleh bubuh juga gambar, wallpaper
+        ("a4", "v", 49.14, 55.30, 1.0, {"in": 49.00, "out": 55.62}),                 # tak mau ni, kau boleh tekan yang mana kau nak, dia boleh bubuh juga gambar, wallpaper
         ("a5", "v", 83.18, 91.06, 1.0, {"in": 83.10}),                 # dia bagi dengan 3 tali, ni tali jenis kulit, ni tali original dia, dia bagi dengan manual, charger pun ada kat sini
         ("a6", "v", 94.02, 95.80, 1.0, {"out": 96.10}), # nak dapat mana, tekan link
         ("e1", "h", 9.00, 11.60, 0.3),                  # end card on the watch
@@ -346,6 +346,19 @@ def feature_grid(cid, items, start, dur, y):
     return body, "\n".join(js)
 
 
+def photo_insert(cid, src, start, dur, w=880):
+    """full-screen cut-away: footage dims, a big white product-photo card eases in"""
+    body = clip(cid, start, dur,
+                f'<div id="{cid}bg" style="position:absolute;inset:0;background:rgba(8,9,12,.72)"></div>'
+                f'<div id="{cid}c" style="position:absolute;left:{(960 - w) // 2 + 60}px;top:600px;width:{w}px;border-radius:30px;overflow:hidden;'
+                f'background:#fff;box-shadow:0 30px 80px rgba(0,0,0,.6)"><img src="{src}" alt="" style="display:block;width:{w}px"/></div>',
+                style="position:absolute; inset:0", extra=" data-layout-allow-overflow")
+    js = "\n".join([f'    tl.fromTo("#{cid}bg", {{ opacity: 0 }}, {{ opacity: 1, duration: 0.35, ease: "power2.out" }}, {fr(start)});',
+                    f'    tl.fromTo("#{cid}c", {{ opacity: 0, y: 40, scale: 0.94 }}, {{ opacity: 1, y: 0, scale: 1, duration: 0.6, ease: "power3.out" }}, {fr(start + 0.05)});',
+                    f'    tl.to("#{cid}", {{ opacity: 0, duration: 0.3, ease: "power2.in" }}, {fr(start + dur - 0.32)});'])
+    return body, js
+
+
 def opt(ids, f):
     return f() if all(i in SEG for i in ids) else None
 
@@ -364,8 +377,11 @@ scene_opt("sc1", [
     opt(["a3"], lambda: chip("a3-call", "Jawab call", "call", W("a3", 28.28), W("a3", 31.08) - W("a3", 28.28), TOPC)),
     opt(["a3"], lambda: chip("a3-dial", "Dail terus", "dial", W("a3", 31.08), W("a3", 33.36) - W("a3", 31.08), TOPC)),
     opt(["a3"], lambda: chip("a3-rec", "Rekod call &amp; contact", "contact", W("a3", 33.36), end("a3") - W("a3", 33.36), TOPC)),
-    opt(["a4"], lambda: chip("a4-wall", "Tukar wallpaper", "image", W("a4", 50.72), end("a4") - W("a4", 50.72), TOPC)),
-    opt(["a5"], lambda: chip("a5-tali", "3 tali: kulit &amp; original", "watch", W("a5", 83.70), W("a5", 87.50) - W("a5", 83.70), TOPC)),
+    opt(["a4"], lambda: photo_insert("a4-faces", "assets/img/faces.jpg", W("a4", 50.72) - 0.1, W("a4", 53.80) - W("a4", 50.72) + 0.1)),
+    opt(["a4"], lambda: photo_insert("a4-photo", "assets/img/photoface.jpg", W("a4", 53.80), end("a4") - W("a4", 53.80) + 0.9)),
+    opt(["a4"], lambda: chip("a4-wall", "200+ muka jam", "image", W("a4", 50.72), W("a4", 53.80) - W("a4", 50.72), TOPC)),
+    opt(["a4"], lambda: chip("a4-own", "Letak gambar sendiri", "image", W("a4", 53.80), end("a4") - W("a4", 53.80) + 0.9, TOPC)),
+    opt(["a5"], lambda: chip("a5-tali", "3 tali: kulit &amp; original", "watch", max(W("a5", 83.70), st("a5") + 1.0), W("a5", 87.50) - max(W("a5", 83.70), st("a5") + 1.0), TOPC)),
     opt(["a5"], lambda: chip("a5-box", "Manual + charger", "box2", W("a5", 87.50), end("a5") - W("a5", 87.50), TOPC)),
 ])
 
