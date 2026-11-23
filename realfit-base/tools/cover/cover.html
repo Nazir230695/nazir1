@@ -1,0 +1,22 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:Anton;src:url(anton.woff2) format("woff2")}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#07080a}
+#bg{position:absolute;inset:0;background-size:cover;background-position:center;filter:brightness(.62) contrast(1.12) saturate(.55)}
+#tone{position:absolute;inset:0;background:
+  radial-gradient(ellipse 70% 45% at 50% 52%,rgba(201,162,94,.10),transparent 70%),
+  linear-gradient(180deg,rgba(6,7,9,.92) 0%,rgba(6,7,9,.35) 26%,rgba(6,7,9,.15) 50%,rgba(6,7,9,.55) 70%,rgba(6,7,9,.95) 100%)}
+#vig{position:absolute;inset:0;box-shadow:inset 0 0 260px 60px rgba(0,0,0,.85)}
+.t{position:absolute;left:0;width:1080px;text-align:center;font-family:Anton,Impact,sans-serif;text-transform:uppercase;line-height:.98}
+.gold{background:linear-gradient(180deg,#fff4d6 0%,#f0d79c 30%,#c9a25e 58%,#8a6630 80%,#e8c98a 100%);-webkit-background-clip:text;background-clip:text;color:transparent;
+  -webkit-text-stroke:3px rgba(20,14,6,.9);filter:drop-shadow(0 8px 0 rgba(0,0,0,.85)) drop-shadow(0 16px 30px rgba(0,0,0,.7))}
+#top{top:150px;font-size:250px;letter-spacing:.02em}
+#bot{bottom:200px;font-size:132px;letter-spacing:.01em}
+#rule{position:absolute;left:390px;width:300px;height:5px;bottom:500px;border-radius:3px;background:linear-gradient(90deg,transparent,#c9a25e,transparent)}
+#tag{position:absolute;left:0;width:1080px;bottom:520px;text-align:center;font-family:Montserrat,Inter,sans-serif;font-weight:600;font-size:34px;letter-spacing:.32em;color:#e9d9b4;text-shadow:0 2px 10px rgba(0,0,0,.8)}
+</style></head><body>
+<div id="bg"></div><div id="tone"></div><div id="vig"></div>
+<div id="top" class="t gold">TOP</div>
+<div id="tag">TAG</div><div id="rule"></div>
+<div id="bot" class="t gold">BOT</div>
+</body></html>

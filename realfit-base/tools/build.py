@@ -180,7 +180,7 @@ for snt in merged:
 
 # caption height per take: above the watch screen on wrist close-ups, under the watch when the face is at the top
 CAP_Y = {"a1": 1180}
-CAP_DEFAULT = 470 if VARIANT == "1" else 600
+CAP_DEFAULT = 530 if VARIANT == "1" else 670
 cap_items, cap_js = [], []
 for i, ph in enumerate(phrases):
     s0 = fr(ph[0]["start"])
@@ -313,7 +313,7 @@ def img_card(cid, src, label, start, dur, x, y, w=340, crop=None):
 # ---------------------------------------------------------------- scenes
 # talking shots: face ~y 250-600, chainsaw at chest; overlays sit over the legs (y 960-1150), captions below at 1230
 LOW = 1040      # chips over the strap / lower wrist when the face is at the top (a1)
-TOPC = 300      # chips over the shirt above the watch on wrist close-ups
+TOPC = 370      # chips over the shirt above the watch on wrist close-ups (header sits above at y 200)
 SIDE_Y = 760
 
 G_ICONS = {
@@ -369,11 +369,11 @@ def scene_opt(name, parts):
 
 # ---- video 1
 scene_opt("sc1", [
-    opt(["h0"], lambda: head("hk-h", "Jam pintar<br/><em>Realfit</em>", 0.3, end("h0") - 0.3, 300)),
+    opt(["h0"], lambda: head("hk-h", "Jam pintar<br/><em>Realfit</em>", 0.3, end("h0") - 0.3, 380)),
     opt(["a1"], lambda: chip("a1-tali", "3 tali, boleh tukar", "watch", W("a1", 5.42), end("a1") - W("a1", 5.42) + 0.1, LOW)),
     opt(["a2"], lambda: chip("a2-lawa", "Memang lawa", "star", W("a2", 12.30), W("a2", 13.54) - W("a2", 12.30), TOPC)),
     opt(["a2"], lambda: chip("a2-mudah", "Senang pakai", "watch", W("a2", 13.54), end("a2") - W("a2", 13.54), TOPC)),
-    opt(["a2"], lambda: img_card("a2-img", "assets/img/bezel.jpg", None, W("a2", 13.54) + 0.2, end("a2") - W("a2", 13.54) - 0.2, 660, 400, w=240)),
+    opt(["a2"], lambda: img_card("a2-img", "assets/img/bezel.jpg", None, W("a2", 13.54) + 0.2, end("a2") - W("a2", 13.54) - 0.2, 660, 470, w=240)),
     opt(["a3"], lambda: chip("a3-call", "Jawab call", "call", W("a3", 28.28), W("a3", 31.08) - W("a3", 28.28), TOPC)),
     opt(["a3"], lambda: chip("a3-dial", "Dail terus", "dial", W("a3", 31.08), W("a3", 33.36) - W("a3", 31.08), TOPC)),
     opt(["a3"], lambda: chip("a3-rec", "Rekod call &amp; contact", "contact", W("a3", 33.36), end("a3") - W("a3", 33.36), TOPC)),
@@ -387,14 +387,14 @@ scene_opt("sc1", [
 
 # ---- video 2
 scene_opt("sc2", [
-    opt(["t1"], lambda: head("t1-h", "Treadmill?<br/><em>Tekan je</em>", 0.3, end("t1") - 0.3, 260)),
-    opt(["t2"], lambda: img_card("t2-img", "assets/img/sports.jpg", None, W("t2", 37.42), end("t2") - W("t2", 37.42), 130, 160, w=700)),
-    opt(["t2"], lambda: chip("t2-100", "100+ mod sukan", "run", W("t2", 39.72), end("t2") - W("t2", 39.72) + 0.1, TOPC + 180)),
-    opt(["t3"], lambda: img_card("t3-img", "assets/img/health.jpg", None, st("t3") + 0.1, end("t3") - st("t3") - 0.1, 130, 160, w=700)),
-    opt(["t3"], lambda: chip("t3-hr", "Tidur, jantung &amp; stres", "heart", W("t3", 57.20), end("t3") - W("t3", 57.20) + 0.1, TOPC + 180)),
+    opt(["t1"], lambda: head("t1-h", "Treadmill?<br/><em>Tekan je</em>", 0.3, end("t1") - 0.3, 370)),
+    opt(["t2"], lambda: img_card("t2-img", "assets/img/sports.jpg", None, W("t2", 37.42), end("t2") - W("t2", 37.42), 180, 340, w=600)),
+    opt(["t2"], lambda: chip("t2-100", "100+ mod sukan", "run", W("t2", 39.72), end("t2") - W("t2", 39.72) + 0.1, TOPC + 200)),
+    opt(["t3"], lambda: img_card("t3-img", "assets/img/health.jpg", None, st("t3") + 0.1, end("t3") - st("t3") - 0.1, 180, 340, w=600)),
+    opt(["t3"], lambda: chip("t3-hr", "Tidur, jantung &amp; stres", "heart", W("t3", 57.20), end("t3") - W("t3", 57.20) + 0.1, TOPC + 200)),
     opt(["t4"], lambda: feature_grid("t4-g", [("Cuaca", W("t4", 61.40)), ("Kamera", W("t4", 62.64)), ("Muzik", W("t4", 63.46)), ("Alarm", W("t4", 65.52)),
                                               ("Stopwatch", W("t4", 66.32)), ("Kalendar", W("t4", 67.12)), ("Kalkulator", W("t4", 68.02)), ("Saham", W("t4", 69.26)),
-                                              ("SOS", W("t4", 70.42)), ("Cari phone", W("t4", 72.64))], st("t4") + 0.05, end("t4") - st("t4") - 0.05, 170)),
+                                              ("SOS", W("t4", 70.42)), ("Cari phone", W("t4", 72.64))], st("t4") + 0.05, end("t4") - st("t4") - 0.05, 370)),
     opt(["t5"], lambda: chip("t5-best", "Memang terbaik", "star", W("t5", 74.96), end("t5") - W("t5", 74.96) + 0.1, TOPC)),
 ])
 
@@ -409,13 +409,26 @@ cta = ('<div style="display:inline-flex;align-items:center;gap:12px;padding:16px
 SHOP0 = st("a6" if "a6" in SEG else "t6") + 0.05
 CTA0 = st("e1" if "e1" in SEG else "e2")
 build_scene("outro", [
-    (clip("ot-shop", SHOP0, TOTAL - SHOP0, shop, cls="glass", style="left:110px; top:280px; width:740px"),
+    (clip("ot-shop", SHOP0, TOTAL - SHOP0, shop, cls="glass", style="left:110px; top:360px; width:740px"),
      "\n".join([f'    tl.fromTo("#ot-shop", {{ opacity: 0, y: 30 }}, {{ opacity: 1, y: 0, duration: 0.55, ease: "power3.out" }}, {SHOP0});',
                 ])),
     (clip("ot-cta", CTA0, TOTAL - CTA0, cta, style="position:absolute; left:0; width:960px; top:1180px; text-align:center"),
      "\n".join([f'    tl.fromTo("#ot-cta > div", {{ opacity: 0, scale: 0.8 }}, {{ opacity: 1, scale: 1, duration: 0.55, ease: "back.out(1.5)" }}, {fr(CTA0 + 0.2)});',
                 f'    tl.fromTo("#ot-cta > div", {{ scale: 1 }}, {{ scale: 1.05, duration: 0.45, ease: "sine.inOut", yoyo: true, repeat: 3, immediateRender: false }}, {fr(CTA0 + 0.9)});'])),
 ])
+
+# ---- creator / product header, on screen the whole video (like the reference)
+HEAD_L = ("REZEKI.NAZIR", "TRUSTED AFFILIATE")
+HEAD_R = ("REALFIT", "AMOLED SMART WATCH")
+hdr = (f'<div id="hd-l" style="position:absolute;left:84px;top:252px;display:flex;align-items:stretch;gap:16px">'
+       f'<div style="width:7px;border-radius:4px;background:linear-gradient(180deg,#f3dfb1,#c9a25e 55%,#8f6a32)"></div>'
+       f'<div class="hdt">{HEAD_L[0]}<br/>{HEAD_L[1]}</div></div>'
+       f'<div id="hd-r" class="hdt" style="position:absolute;right:94px;top:252px;text-align:right">{HEAD_R[0]}<br/>{HEAD_R[1]}</div>')
+write("brand.html", scene("brand", BASE + """
+    .hdt { font-family: var(--font-ui); font-weight: 600; font-size: 29px; line-height: 1.22; letter-spacing: .05em; color: #f6f1e7;
+      text-shadow: 0 1px 2px rgba(0,0,0,.7), 0 2px 12px rgba(0,0,0,.55); white-space: nowrap; }
+""", clip("hd", 0, TOTAL, hdr, style="position:absolute; inset:0"),
+    f'    tl.fromTo(["#hd-l", "#hd-r"], {{ opacity: 0 }}, {{ opacity: 1, duration: 0.6, ease: "power2.out" }}, 0.1);'))
 
 write("captions.html", scene("captions", f"""
     #root {{ position: absolute; inset: 0; pointer-events: none; {TOK} }}
@@ -468,7 +481,7 @@ for sid, fn, t0, vol in sorted(SFX, key=lambda x: x[2]):
     lanes[lane] = t0 + d
     sfx.append(f'      <audio id="{sid}" class="clip" src="assets/sfx/{fn}" data-start="{t0}" data-duration="{d}" data-track-index="{20 + lane}" data-volume="{vol}"></audio>')
 
-hosts = [("sc1" if VARIANT == "1" else "sc2", 2), ("outro", 7), ("captions", 8)]
+hosts = [("sc1" if VARIANT == "1" else "sc2", 2), ("outro", 7), ("captions", 8), ("brand", 9)]
 host_html = "\n".join(
     f'      <div id="{n}" data-composition-id="{n}" data-composition-src="compositions/{n}.html" data-start="0" data-duration="{TOTAL}" '
     f'data-track-index="{tr}" data-track-kind="{"captions" if n == "captions" else "graphics"}" data-width="1080" data-height="1920" style="z-index:{5 + tr}"></div>'
