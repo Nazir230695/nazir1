@@ -1,7 +1,7 @@
 {
   "version": 1,
   "historyId": "70f065d4-5d6c-4510-ae19-5e4248bb2acb",
-  "currentRevision": "ace0529e-3725-4849-9bf9-88ab7fe87bbb",
+  "currentRevision": "9a947fd5-5935-4dd5-9de0-0864b73c5972",
   "pendingChanges": false,
   "files": {
     "AGENTS.md": {
@@ -57,8 +57,8 @@
       "content": "/root/.cache/hyperframes/history/70f065d4-5d6c-4510-ae19-5e4248bb2acb/blobs/c2/c2efd9d902a59bf9ec5019035d7deadd17762136896b6e3cb6dd99ea50997a30"
     },
     "compositions/brand.html": {
-      "hash": "13e10a6153149792a5525025760fb9c567d54e3c2d4616e71db73d74bd508aa5",
-      "content": "/root/.cache/hyperframes/history/70f065d4-5d6c-4510-ae19-5e4248bb2acb/blobs/13/13e10a6153149792a5525025760fb9c567d54e3c2d4616e71db73d74bd508aa5"
+      "hash": "d5fe03bcc373f9680aaf52bcfb5af9e9f8d4175374d9916aff56d3da8b2645f0",
+      "content": "/root/.cache/hyperframes/history/70f065d4-5d6c-4510-ae19-5e4248bb2acb/blobs/d5/d5fe03bcc373f9680aaf52bcfb5af9e9f8d4175374d9916aff56d3da8b2645f0"
     },
     "compositions/captions.html": {
       "hash": "e3292defa02e0f54185d5962913b7b34166e4e039acb7456c9a79158078ea60f",
@@ -111,6 +111,10 @@
     "assets/raw_e.mp4": {
       "hash": "16ab75562070061fa8a223040c3f1dacbb6991315a4f8e3ed5fd18efbdf4670d",
       "content": "/root/.cache/hyperframes/history/70f065d4-5d6c-4510-ae19-5e4248bb2acb/blobs/16/16ab75562070061fa8a223040c3f1dacbb6991315a4f8e3ed5fd18efbdf4670d"
+    },
+    "cover/cover-brush-1.png": {
+      "hash": "193cf9760edcbdb1a442433c10b793a338b4d13a075ba46ea8165a36061ea7ab",
+      "content": "/root/.cache/hyperframes/history/70f065d4-5d6c-4510-ae19-5e4248bb2acb/blobs/19/193cf9760edcbdb1a442433c10b793a338b4d13a075ba46ea8165a36061ea7ab"
     }
   },
   "revisions": {
@@ -168,6 +172,25 @@
         "compositions/captions.html": {
           "before": "/root/.cache/hyperframes/history/70f065d4-5d6c-4510-ae19-5e4248bb2acb/blobs/34/3419539d1b84a6e07f32df84d0bba82bfff37be9644ee2e03ef139d90d5ab7f2",
           "after": "/root/.cache/hyperframes/history/70f065d4-5d6c-4510-ae19-5e4248bb2acb/blobs/e3/e3292defa02e0f54185d5962913b7b34166e4e039acb7456c9a79158078ea60f"
+        }
+      }
+    },
+    "9a947fd5-5935-4dd5-9de0-0864b73c5972": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1795484124116,
+      "endedAt": 1795484124158,
+      "files": {
+        "compositions/brand.html": {
+          "before": "/root/.cache/hyperframes/history/70f065d4-5d6c-4510-ae19-5e4248bb2acb/blobs/13/13e10a6153149792a5525025760fb9c567d54e3c2d4616e71db73d74bd508aa5",
+          "after": "/root/.cache/hyperframes/history/70f065d4-5d6c-4510-ae19-5e4248bb2acb/blobs/d5/d5fe03bcc373f9680aaf52bcfb5af9e9f8d4175374d9916aff56d3da8b2645f0"
+        },
+        "cover/cover-brush-1.png": {
+          "before": null,
+          "after": "/root/.cache/hyperframes/history/70f065d4-5d6c-4510-ae19-5e4248bb2acb/blobs/19/193cf9760edcbdb1a442433c10b793a338b4d13a075ba46ea8165a36061ea7ab"
         }
       }
     }
