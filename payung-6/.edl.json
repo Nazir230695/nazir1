@@ -1,0 +1,102 @@
+{
+ "total": 18.0333,
+ "segs": [
+  {
+   "id": "b0",
+   "src": "b",
+   "src_in": 12.5,
+   "src_out": 15.5,
+   "start": 0.0,
+   "dur": 2.9999,
+   "vol": 0.0,
+   "zone": "low"
+  },
+  {
+   "id": "v1",
+   "src": "d",
+   "src_in": 0.0,
+   "src_out": 2.2667,
+   "start": 3.0,
+   "dur": 2.2664999999999997,
+   "vol": 1.0,
+   "zone": "low"
+  },
+  {
+   "id": "v2",
+   "src": "c",
+   "src_in": 12.7333,
+   "src_out": 14.1,
+   "start": 5.2667,
+   "dur": 1.3665,
+   "vol": 1.0,
+   "zone": "low"
+  },
+  {
+   "id": "b1",
+   "src": "b",
+   "src_in": 18.0,
+   "src_out": 21.0,
+   "start": 6.6334,
+   "dur": 2.9999,
+   "vol": 0.0,
+   "zone": "low"
+  },
+  {
+   "id": "v3",
+   "src": "e",
+   "src_in": 14.0,
+   "src_out": 15.3333,
+   "start": 9.6334,
+   "dur": 1.3332,
+   "vol": 1.0,
+   "zone": "low"
+  },
+  {
+   "id": "v4",
+   "src": "d",
+   "src_in": 35.0,
+   "src_out": 38.1,
+   "start": 10.9667,
+   "dur": 3.0999,
+   "vol": 1.0,
+   "zone": "low"
+  },
+  {
+   "id": "cta",
+   "src": "a",
+   "src_in": 17.4667,
+   "src_out": 18.9333,
+   "start": 14.0667,
+   "dur": 1.4665,
+   "vol": 1.0,
+   "zone": "low"
+  },
+  {
+   "id": "tail",
+   "src": "b",
+   "src_in": 27.0,
+   "src_out": 29.5,
+   "start": 15.5334,
+   "dur": 2.4999,
+   "vol": 0.0,
+   "zone": "low"
+  }
+ ],
+ "phrases": [
+  "ni,",
+  "payung magic ni.",
+  "Payung ni",
+  "memang best.",
+  "Ni,",
+  "kain dia",
+  "pun tebal.",
+  "Memang elok,",
+  "memang cun.",
+  "memang tak pasal",
+  "nak keluar ke",
+  "nak masuk ke",
+  "memang berbaloi",
+  "Nak beli mana,",
+  "tekan link."
+ ]
+}

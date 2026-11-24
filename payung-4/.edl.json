@@ -1,0 +1,107 @@
+{
+ "total": 26.3,
+ "segs": [
+  {
+   "id": "e1",
+   "src": "e",
+   "src_in": 0.0,
+   "src_out": 2.4,
+   "start": 0.0,
+   "dur": 2.3998999999999997,
+   "vol": 1.0,
+   "zone": "low"
+  },
+  {
+   "id": "e2",
+   "src": "e",
+   "src_in": 8.5,
+   "src_out": 16.9333,
+   "start": 2.4,
+   "dur": 8.4332,
+   "vol": 1.0,
+   "zone": "low"
+  },
+  {
+   "id": "e3",
+   "src": "e",
+   "src_in": 18.2,
+   "src_out": 19.2,
+   "start": 10.8334,
+   "dur": 0.9999,
+   "vol": 1.0,
+   "zone": "low"
+  },
+  {
+   "id": "e4",
+   "src": "e",
+   "src_in": 21.7,
+   "src_out": 23.8667,
+   "start": 11.8334,
+   "dur": 2.1664999999999996,
+   "vol": 1.0,
+   "zone": "low"
+  },
+  {
+   "id": "e5",
+   "src": "e",
+   "src_in": 24.9,
+   "src_out": 31.0,
+   "start": 14.0,
+   "dur": 6.0999,
+   "vol": 1.0,
+   "zone": "low"
+  },
+  {
+   "id": "cta",
+   "src": "e",
+   "src_in": 31.0,
+   "src_out": 34.7,
+   "start": 20.1,
+   "dur": 3.6999,
+   "vol": 1.0,
+   "zone": "low"
+  },
+  {
+   "id": "tail",
+   "src": "b",
+   "src_in": 18.0,
+   "src_out": 20.5,
+   "start": 23.8,
+   "dur": 2.4999,
+   "vol": 0.0,
+   "zone": "low"
+  }
+ ],
+ "phrases": [
+  "Payung ni tengah",
+  "viral kat",
+  "TikTok tau.",
+  "Nampak-nampak ada",
+  "button ni.",
+  "Kau tekan",
+  "je ni.",
+  "Alamak auto",
+  "buka geng.",
+  "Memang elok,",
+  "memang cun.",
+  "Kau tengok belakang",
+  "dia ada",
+  "fiber bone.",
+  "Ni kalau ada",
+  "ribut kan.",
+  "Kau jangan risau.",
+  "Memang dia tahan",
+  "lasak tau.",
+  "Kalau nak masuk",
+  "kereta pulak.",
+  "Kau tekan",
+  "ni je.",
+  "Kau jangan risau.",
+  "Kau tekan ni.",
+  "Alamak tutup geng.",
+  "memang cun memang",
+  "terbaik nak dapat",
+  "mana tekan",
+  "link bawah"
+ ]
+}

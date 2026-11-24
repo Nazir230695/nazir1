@@ -1,0 +1,61 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; pointer-events: none; 
+      --ink: #ffffff;
+      --dark: #0d0e10;
+      --neon: #ff8a1f;
+      --glass: rgba(16, 17, 20, 0.80);
+      --stroke: rgba(255,255,255,.14);
+      --font-ui: "Montserrat", sans-serif;
+ }
+    .chip { position: absolute; left: 0; width: 960px; text-align: center; }
+    .chip > span { display: inline-flex; align-items: center; gap: 14px; }
+    .chip .lb { background: #fff; color: #111; font-family: var(--font-ui); font-weight: 600; font-size: 40px; letter-spacing: .01em;
+      padding: 8px 18px; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,.35); white-space: nowrap; text-transform: uppercase; }
+    .chip .ic { width: 70px; height: 70px; border-radius: 50%; background: var(--dark); border: 2.5px solid rgba(255,255,255,.9);
+      display: inline-flex; align-items: center; justify-content: center; box-shadow: 0 10px 30px rgba(0,0,0,.4); }
+    .chip .ic svg { width: 38px; height: 38px; }
+    .glass { position: absolute; background: var(--glass); border: 1.5px solid var(--stroke); border-radius: 30px;
+      box-shadow: 0 24px 60px rgba(0,0,0,.5); backdrop-filter: blur(18px); color: #fff; font-family: var(--font-ui); }
+    .head { position: absolute; left: 0; width: 960px; text-align: center; font-family: var(--font-ui); font-weight: 800; color: #fff;
+      font-size: 62px; line-height: 1.1; text-shadow: 0 0 4px rgba(0,0,0,.9), 0 3px 8px rgba(0,0,0,.75), 0 10px 34px rgba(0,0,0,.75); }
+    .head > div { display: inline-block; padding: 14px 30px; border-radius: 26px; background: rgba(10,11,13,.42); }
+    .head em { font-style: normal; color: var(--neon); }
+    .pilltag { display: inline-flex; align-items: center; gap: 10px; padding: 10px 26px 10px 16px; border-radius: 12px; background: rgba(255,255,255,.95);
+      color: #111; font-family: var(--font-ui); font-weight: 700; font-size: 34px; box-shadow: 0 10px 28px rgba(0,0,0,.35); white-space: nowrap; }
+
+  </style>
+  <div id="root" data-composition-id="sc" data-width="1080" data-height="1920">
+    <div id="hk" class="head clip" data-start="0.2" data-duration="2.9" data-track-index="0" style="top:1290px"><div id="hkt">Payung<br/><em>125CM</em></div></div>
+    <div id="c-magic" class="chip clip" data-start="3.3" data-duration="1.9667" data-track-index="0" style="top:1330px"><span><span id="c-magicc" class="ic"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg></span><span id="c-magicb" class="lb">Memang best</span></span></div>
+    <div id="c-kain" class="chip clip" data-start="5.3667" data-duration="1.2667" data-track-index="0" style="top:1330px"><span><span id="c-kainc" class="ic"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg></span><span id="c-kainb" class="lb">Kain tebal</span></span></div>
+    <div id="p-size" class=" clip" data-start="6.7333" data-duration="2.9" data-track-index="0" style="position:absolute; inset:0" data-layout-allow-overflow><div id="p-sizebg" style="position:absolute;inset:0;background:rgba(8,9,12,.72)"></div><div id="p-sizec" style="position:absolute;left:100px;top:600px;width:880px;border-radius:30px;overflow:hidden;background:#fff;box-shadow:0 30px 80px rgba(0,0,0,.6)"><img src="assets/img/size.jpg" alt="" style="display:block;width:880px"/></div></div>
+    <div id="c-xl" class="chip clip" data-start="6.8333" data-duration="2.8" data-track-index="0" style="top:1330px"><span><span id="c-xlc" class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z"/></svg></span><span id="c-xlb" class="lb">Extra large 125cm</span></span></div>
+    <div id="c-cun" class="chip clip" data-start="9.7333" data-duration="1.2333" data-track-index="0" style="top:1330px"><span><span id="c-cunc" class="ic"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 20.5s-7.5-4.6-7.5-10A4.3 4.3 0 0 1 12 7.6a4.3 4.3 0 0 1 7.5 2.9c0 5.4-7.5 10-7.5 10z"/></svg></span><span id="c-cunb" class="lb">Krim &amp; hitam</span></span></div>
+    <div id="c-baloi" class="chip clip" data-start="11.0667" data-duration="3.0" data-track-index="0" style="top:1330px"><span><span id="c-baloic" class="ic"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg></span><span id="c-baloib" class="lb">Keluar masuk kereta, berbaloi</span></span></div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#hkt", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.6, ease: "power3.out" }, 0.2);
+    tl.to("#hk", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 2.7333);
+    tl.fromTo("#c-magicc", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.5, ease: "power3.out" }, 3.3);
+    tl.fromTo("#c-magicb", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.55, ease: "power3.out" }, 3.3667);
+    tl.to("#c-magic", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 4.9);
+    tl.fromTo("#c-kainc", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.5, ease: "power3.out" }, 5.3667);
+    tl.fromTo("#c-kainb", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.55, ease: "power3.out" }, 5.4333);
+    tl.to("#c-kain", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 6.2667);
+    tl.fromTo("#p-sizebg", { opacity: 0 }, { opacity: 1, duration: 0.35, ease: "power2.out" }, 6.7333);
+    tl.fromTo("#p-sizec", { opacity: 0, y: 40, scale: 0.94 }, { opacity: 1, y: 0, scale: 1, duration: 0.6, ease: "power3.out" }, 6.7667);
+    tl.to("#p-size", { opacity: 0, duration: 0.3, ease: "power2.in" }, 9.3);
+    tl.fromTo("#c-xlc", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.5, ease: "power3.out" }, 6.8333);
+    tl.fromTo("#c-xlb", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.55, ease: "power3.out" }, 6.9);
+    tl.to("#c-xl", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 9.2667);
+    tl.fromTo("#c-cunc", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.5, ease: "power3.out" }, 9.7333);
+    tl.fromTo("#c-cunb", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.55, ease: "power3.out" }, 9.8);
+    tl.to("#c-cun", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 10.6);
+    tl.fromTo("#c-baloic", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.5, ease: "power3.out" }, 11.0667);
+    tl.fromTo("#c-baloib", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.55, ease: "power3.out" }, 11.1333);
+    tl.to("#c-baloi", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 13.7);
+    window.__timelines["sc"] = tl;
+  </script>
+</template>

@@ -1,0 +1,68 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; pointer-events: none; 
+      --ink: #ffffff;
+      --dark: #0d0e10;
+      --neon: #ff8a1f;
+      --glass: rgba(16, 17, 20, 0.80);
+      --stroke: rgba(255,255,255,.14);
+      --font-ui: "Montserrat", sans-serif;
+ }
+    .chip { position: absolute; left: 0; width: 960px; text-align: center; }
+    .chip > span { display: inline-flex; align-items: center; gap: 14px; }
+    .chip .lb { background: #fff; color: #111; font-family: var(--font-ui); font-weight: 600; font-size: 40px; letter-spacing: .01em;
+      padding: 8px 18px; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,.35); white-space: nowrap; text-transform: uppercase; }
+    .chip .ic { width: 70px; height: 70px; border-radius: 50%; background: var(--dark); border: 2.5px solid rgba(255,255,255,.9);
+      display: inline-flex; align-items: center; justify-content: center; box-shadow: 0 10px 30px rgba(0,0,0,.4); }
+    .chip .ic svg { width: 38px; height: 38px; }
+    .glass { position: absolute; background: var(--glass); border: 1.5px solid var(--stroke); border-radius: 30px;
+      box-shadow: 0 24px 60px rgba(0,0,0,.5); backdrop-filter: blur(18px); color: #fff; font-family: var(--font-ui); }
+    .head { position: absolute; left: 0; width: 960px; text-align: center; font-family: var(--font-ui); font-weight: 800; color: #fff;
+      font-size: 62px; line-height: 1.1; text-shadow: 0 0 4px rgba(0,0,0,.9), 0 3px 8px rgba(0,0,0,.75), 0 10px 34px rgba(0,0,0,.75); }
+    .head > div { display: inline-block; padding: 14px 30px; border-radius: 26px; background: rgba(10,11,13,.42); }
+    .head em { font-style: normal; color: var(--neon); }
+    .pilltag { display: inline-flex; align-items: center; gap: 10px; padding: 10px 26px 10px 16px; border-radius: 12px; background: rgba(255,255,255,.95);
+      color: #111; font-family: var(--font-ui); font-weight: 700; font-size: 34px; box-shadow: 0 10px 28px rgba(0,0,0,.35); white-space: nowrap; }
+
+  </style>
+  <div id="root" data-composition-id="sc" data-width="1080" data-height="1920">
+    <div id="hk" class="head clip" data-start="0.3" data-duration="4.0667" data-track-index="0" style="top:1290px"><div id="hkt">Nampak<br/><em>premium</em></div></div>
+    <div id="c-btn" class="chip clip" data-start="5.7333" data-duration="3.1667" data-track-index="0" style="top:1330px"><span><span id="c-btnc" class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12a8 8 0 1 1-2.3-5.7"/><path d="M20 4v4h-4"/></svg></span><span id="c-btnb" class="lb">Ada button</span></span></div>
+    <div id="c-cantik" class="chip clip" data-start="8.9" data-duration="1.3" data-track-index="0" style="top:1330px"><span><span id="c-cantikc" class="ic"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg></span><span id="c-cantikb" class="lb">Buka pun cantik</span></span></div>
+    <div id="c-kain" class="chip clip" data-start="10.2" data-duration="2.2333" data-track-index="0" style="top:1330px"><span><span id="c-kainc" class="ic"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg></span><span id="c-kainb" class="lb">Kain tebal</span></span></div>
+    <div id="c-uv" class="chip clip" data-start="12.4333" data-duration="5.3667" data-track-index="0" style="top:1330px"><span><span id="c-uvc" class="ic"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg></span><span id="c-uvb" class="lb">Lindung UV</span></span></div>
+    <div id="c-fiber" class="chip clip" data-start="17.8" data-duration="3.5333" data-track-index="0" style="top:1330px"><span><span id="c-fiberc" class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14l8-8 8 8"/><path d="M6 14v5M9 14v6M12 14v6M15 14v6M18 14v5"/></svg></span><span id="c-fiberb" class="lb">Fiber bone, tak mudah patah</span></span></div>
+    <div id="i-hero" class=" clip" data-start="18.0" data-duration="4.5333" data-track-index="0" style="position:absolute; left:50px; top:420px; width:320px"><div style="border-radius:22px;overflow:hidden;border:3px solid rgba(255,255,255,.9);box-shadow:0 24px 60px rgba(0,0,0,.5)"><img src="assets/img/hero.jpg" alt="" style="display:block;width:320px"/></div></div>
+    <div id="c-tutup" class="chip clip" data-start="23.8667" data-duration="1.6667" data-track-index="0" style="top:1330px"><span><span id="c-tutupc" class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12a8 8 0 1 1-2.3-5.7"/><path d="M20 4v4h-4"/></svg></span><span id="c-tutupb" class="lb">Tekan, terus tutup</span></span></div>
+    <div id="c-basah" class="chip clip" data-start="25.5333" data-duration="2.5333" data-track-index="0" style="top:1330px"><span><span id="c-basahc" class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z"/></svg></span><span id="c-basahb" class="lb">Masuk kereta tak basah</span></span></div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#hkt", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.6, ease: "power3.out" }, 0.3);
+    tl.to("#hk", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 4.0);
+    tl.fromTo("#c-btnc", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.5, ease: "power3.out" }, 5.7333);
+    tl.fromTo("#c-btnb", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.55, ease: "power3.out" }, 5.8);
+    tl.to("#c-btn", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 8.5333);
+    tl.fromTo("#c-cantikc", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.5, ease: "power3.out" }, 8.9);
+    tl.fromTo("#c-cantikb", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.55, ease: "power3.out" }, 8.9667);
+    tl.to("#c-cantik", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 9.8333);
+    tl.fromTo("#c-kainc", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.5, ease: "power3.out" }, 10.2);
+    tl.fromTo("#c-kainb", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.55, ease: "power3.out" }, 10.2667);
+    tl.to("#c-kain", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 12.0667);
+    tl.fromTo("#c-uvc", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.5, ease: "power3.out" }, 12.4333);
+    tl.fromTo("#c-uvb", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.55, ease: "power3.out" }, 12.5);
+    tl.to("#c-uv", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 17.4333);
+    tl.fromTo("#c-fiberc", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.5, ease: "power3.out" }, 17.8);
+    tl.fromTo("#c-fiberb", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.55, ease: "power3.out" }, 17.8667);
+    tl.to("#c-fiber", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 20.9667);
+    tl.fromTo("#i-hero", { opacity: 0, y: 30, scale: 0.94 }, { opacity: 1, y: 0, scale: 1, duration: 0.6, ease: "power3.out" }, 18.0);
+    tl.to("#i-hero", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 22.1667);
+    tl.fromTo("#c-tutupc", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.5, ease: "power3.out" }, 23.8667);
+    tl.fromTo("#c-tutupb", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.55, ease: "power3.out" }, 23.9333);
+    tl.to("#c-tutup", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 25.1667);
+    tl.fromTo("#c-basahc", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.5, ease: "power3.out" }, 25.5333);
+    tl.fromTo("#c-basahb", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.55, ease: "power3.out" }, 25.6);
+    tl.to("#c-basah", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 27.7);
+    window.__timelines["sc"] = tl;
+  </script>
+</template>

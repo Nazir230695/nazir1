@@ -1,0 +1,52 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; pointer-events: none; 
+      --ink: #ffffff;
+      --dark: #0d0e10;
+      --neon: #ff8a1f;
+      --glass: rgba(16, 17, 20, 0.80);
+      --stroke: rgba(255,255,255,.14);
+      --font-ui: "Montserrat", sans-serif;
+ }
+    .cw { position: absolute; left: 0; width: 960px; top: 1180px; text-align: center; }
+    .cw span { display: inline-block; font-family: var(--font-ui); font-weight: 900; font-size: 48px; color: #fff; letter-spacing: .01em;
+      text-shadow: 0 0 3px rgba(0,0,0,.9), 0 2px 0 rgba(0,0,0,.5), 0 4px 18px rgba(0,0,0,.8); }
+
+  </style>
+  <div id="root" data-composition-id="captions" data-width="1080" data-height="1920">
+    <div id="cp000" class="cw clip" data-start="3.2667" data-duration="0.3333" data-track-index="0" style="top:1450px"><span id="cp000s">NI</span></div>
+    <div id="cp001" class="cw clip" data-start="3.6" data-duration="1.0333" data-track-index="0" style="top:1450px"><span id="cp001s">PAYUNG MAGIC NI</span></div>
+    <div id="cp002" class="cw clip" data-start="4.6333" data-duration="0.3333" data-track-index="0" style="top:1450px"><span id="cp002s">PAYUNG NI</span></div>
+    <div id="cp003" class="cw clip" data-start="4.9667" data-duration="0.3" data-track-index="0" style="top:1450px"><span id="cp003s">MEMANG BEST</span></div>
+    <div id="cp004" class="cw clip" data-start="5.3333" data-duration="0.3" data-track-index="0" style="top:1450px"><span id="cp004s">NI</span></div>
+    <div id="cp005" class="cw clip" data-start="5.6333" data-duration="0.5667" data-track-index="0" style="top:1450px"><span id="cp005s">KAIN DIA</span></div>
+    <div id="cp006" class="cw clip" data-start="6.2" data-duration="0.4333" data-track-index="0" style="top:1450px"><span id="cp006s">PUN TEBAL</span></div>
+    <div id="cp007" class="cw clip" data-start="9.6333" data-duration="0.7667" data-track-index="0" style="top:1450px"><span id="cp007s">MEMANG ELOK</span></div>
+    <div id="cp008" class="cw clip" data-start="10.4" data-duration="0.5667" data-track-index="0" style="top:1450px"><span id="cp008s">MEMANG CUN</span></div>
+    <div id="cp009" class="cw clip" data-start="11.0" data-duration="0.7333" data-track-index="0" style="top:1450px"><span id="cp009s">MEMANG TAK PASAL</span></div>
+    <div id="cp010" class="cw clip" data-start="11.7333" data-duration="0.7" data-track-index="0" style="top:1450px"><span id="cp010s">NAK KELUAR KE</span></div>
+    <div id="cp011" class="cw clip" data-start="12.4333" data-duration="0.5667" data-track-index="0" style="top:1450px"><span id="cp011s">NAK MASUK KE</span></div>
+    <div id="cp012" class="cw clip" data-start="13.0" data-duration="1.0667" data-track-index="0" style="top:1450px"><span id="cp012s">MEMANG BERBALOI</span></div>
+    <div id="cp013" class="cw clip" data-start="14.1333" data-duration="0.7667" data-track-index="0" style="top:1450px"><span id="cp013s">NAK BELI MANA</span></div>
+    <div id="cp014" class="cw clip" data-start="14.9" data-duration="0.6333" data-track-index="0" style="top:1450px"><span id="cp014s">TEKAN LINK</span></div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#cp000s", { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.22, ease: "power2.out" }, 3.2667);
+    tl.fromTo("#cp001s", { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.22, ease: "power2.out" }, 3.6);
+    tl.fromTo("#cp002s", { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.22, ease: "power2.out" }, 4.6333);
+    tl.fromTo("#cp003s", { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.22, ease: "power2.out" }, 4.9667);
+    tl.fromTo("#cp004s", { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.22, ease: "power2.out" }, 5.3333);
+    tl.fromTo("#cp005s", { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.22, ease: "power2.out" }, 5.6333);
+    tl.fromTo("#cp006s", { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.22, ease: "power2.out" }, 6.2);
+    tl.fromTo("#cp007s", { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.22, ease: "power2.out" }, 9.6333);
+    tl.fromTo("#cp008s", { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.22, ease: "power2.out" }, 10.4);
+    tl.fromTo("#cp009s", { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.22, ease: "power2.out" }, 11.0);
+    tl.fromTo("#cp010s", { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.22, ease: "power2.out" }, 11.7333);
+    tl.fromTo("#cp011s", { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.22, ease: "power2.out" }, 12.4333);
+    tl.fromTo("#cp012s", { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.22, ease: "power2.out" }, 13.0);
+    tl.fromTo("#cp013s", { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.22, ease: "power2.out" }, 14.1333);
+    tl.fromTo("#cp014s", { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.22, ease: "power2.out" }, 14.9);
+    window.__timelines["captions"] = tl;
+  </script>
+</template>

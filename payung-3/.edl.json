@@ -1,0 +1,116 @@
+{
+ "total": 26.9,
+ "segs": [
+  {
+   "id": "d0",
+   "src": "d",
+   "src_in": 3.7,
+   "src_out": 5.2667,
+   "start": 0.0,
+   "dur": 1.5665,
+   "vol": 1.0,
+   "zone": "low"
+  },
+  {
+   "id": "d1",
+   "src": "d",
+   "src_in": 0.0,
+   "src_out": 2.2667,
+   "start": 1.5667,
+   "dur": 2.2664999999999997,
+   "vol": 1.0,
+   "zone": "low"
+  },
+  {
+   "id": "d2",
+   "src": "d",
+   "src_in": 14.3,
+   "src_out": 20.3,
+   "start": 3.8334,
+   "dur": 5.9999,
+   "vol": 1.0,
+   "zone": "low"
+  },
+  {
+   "id": "d3",
+   "src": "d",
+   "src_in": 21.4,
+   "src_out": 24.9,
+   "start": 9.8334,
+   "dur": 3.4999,
+   "vol": 1.0,
+   "zone": "low"
+  },
+  {
+   "id": "d4",
+   "src": "d",
+   "src_in": 25.1,
+   "src_out": 29.7,
+   "start": 13.3334,
+   "dur": 4.5999,
+   "vol": 1.0,
+   "zone": "low"
+  },
+  {
+   "id": "d5",
+   "src": "d",
+   "src_in": 30.0,
+   "src_out": 33.5333,
+   "start": 17.9334,
+   "dur": 3.5332,
+   "vol": 1.0,
+   "zone": "low"
+  },
+  {
+   "id": "cta",
+   "src": "d",
+   "src_in": 37.0,
+   "src_out": 39.9333,
+   "start": 21.4667,
+   "dur": 2.9332,
+   "vol": 1.0,
+   "zone": "low"
+  },
+  {
+   "id": "tail",
+   "src": "b",
+   "src_in": 18.0,
+   "src_out": 20.5,
+   "start": 24.4,
+   "dur": 2.4999,
+   "vol": 0.0,
+   "zone": "low"
+  }
+ ],
+ "phrases": [
+  "Sekarang hujan",
+  "kat luar.",
+  "Kau jangan risau.",
+  "ni,",
+  "payung magic ni.",
+  "Payung ni",
+  "memang best.",
+  "Kau buka tangan.",
+  "Kau tekan ni.",
+  "Button ni.",
+  "Kau dia",
+  "buka auto.",
+  "Kau keluar.",
+  "Nampak?",
+  "Tak basah pun.",
+  "Kau keluar.",
+  "Nak masuk dalam",
+  "kereta apa tak?",
+  "Kau masuk dulu",
+  "dalam kereta.",
+  "So,",
+  "Kau tak basah.",
+  "tuan-tuan tekan button",
+  "ni tekan dah",
+  "tuan-tuan dia tutup",
+  "tu automatik",
+  "memang berbaloi nak",
+  "dapat mana tekan",
+  "link macam biasa"
+ ]
+}

@@ -1,0 +1,117 @@
+{
+ "total": 22.8333,
+ "segs": [
+  {
+   "id": "h",
+   "src": "e",
+   "src_in": 12.3,
+   "src_out": 14.0,
+   "start": 0.0,
+   "dur": 1.6999,
+   "vol": 1.0,
+   "zone": "low"
+  },
+  {
+   "id": "b1",
+   "src": "b",
+   "src_in": 15.0,
+   "src_out": 17.0,
+   "start": 1.7,
+   "dur": 1.9999,
+   "vol": 0.0,
+   "zone": "low"
+  },
+  {
+   "id": "v1",
+   "src": "a",
+   "src_in": 15.0,
+   "src_out": 17.4667,
+   "start": 3.7,
+   "dur": 2.4665,
+   "vol": 1.0,
+   "zone": "low"
+  },
+  {
+   "id": "v2",
+   "src": "c",
+   "src_in": 15.0,
+   "src_out": 17.9333,
+   "start": 6.1667,
+   "dur": 2.9332,
+   "vol": 1.0,
+   "zone": "low"
+  },
+  {
+   "id": "v3",
+   "src": "c",
+   "src_in": 20.3333,
+   "src_out": 22.8,
+   "start": 9.1,
+   "dur": 2.4665,
+   "vol": 1.0,
+   "zone": "low"
+  },
+  {
+   "id": "b2",
+   "src": "b",
+   "src_in": 18.0,
+   "src_out": 20.0,
+   "start": 11.5667,
+   "dur": 1.9999,
+   "vol": 0.0,
+   "zone": "low"
+  },
+  {
+   "id": "v4",
+   "src": "d",
+   "src_in": 29.9333,
+   "src_out": 33.5,
+   "start": 13.5667,
+   "dur": 3.5665,
+   "vol": 1.0,
+   "zone": "low"
+  },
+  {
+   "id": "cta",
+   "src": "e",
+   "src_in": 31.0,
+   "src_out": 34.7,
+   "start": 17.1334,
+   "dur": 3.6999,
+   "vol": 1.0,
+   "zone": "low"
+  },
+  {
+   "id": "tail",
+   "src": "b",
+   "src_in": 27.0,
+   "src_out": 29.0,
+   "start": 20.8334,
+   "dur": 1.9999,
+   "vol": 0.0,
+   "zone": "low"
+  }
+ ],
+ "phrases": [
+  "Alamak auto",
+  "buka geng.",
+  "Memang jimat masa,",
+  "jimat ruang,",
+  "jimat tenaga.",
+  "Memang dia lindung",
+  "pada UV,",
+  "kan?",
+  "Tuh,",
+  "fiber bone tau.",
+  "Dia tak mudah",
+  "patah tau.",
+  "tuan-tuan tekan button",
+  "ni tekan dah",
+  "tuan-tuan dia tutup",
+  "tu automatik",
+  "memang cun memang",
+  "terbaik nak dapat",
+  "mana tekan",
+  "link bawah"
+ ]
+}
