@@ -77,7 +77,7 @@ def W(sid, t):
 
 
 # ---------------------------------------------------------------- phrase captions
-FIX = {"depanku": "depan aku"}
+FIX = {"depanku": "depan aku", "ss": "XS", "sl": "XL"}
 DROP = {"haa", "ha", "okay", "okey", "ok", "sekejap"}
 
 
@@ -338,7 +338,7 @@ PARTS = {
     "1": lambda: [
         head("hk", "Tisu<br/><em>5 saiz</em>", 0.3, W("s1", 4.22) - 0.3, 1290),
         photo_insert("p-sizes", "assets/img/sizes.jpg", W("s1", 4.22), end("s1") - W("s1", 4.22) + 0.2),
-        C("c-ss", "Saiz SS pun ada", "star", "s2", W("s2", 8.5)),
+        C("c-ss", "Saiz XS pun ada", "star", "s2", W("s2", 8.5)),
         C("c-baloi", "Memang berbaloi", "star", "s3", W("s3", 17.62), W("s3", 18.98)),
         C("c-geng", "Geng perempuan mesti suka", "heart", "s3", W("s3", 18.98)),
         IMG("i-hero", "assets/img/hero.jpg", "s3", st("s3") + 0.3, W("s3", 17.62)),
@@ -348,8 +348,8 @@ PARTS = {
         C("c-s", "Saiz S · Bilik", "star", "s2", st("s2") + 0.1),
         C("c-m", "Saiz M · Dapur", "star", "s3", st("s3") + 0.1),
         C("c-l", "Saiz L · Toilet", "star", "s4", st("s4") + 0.1, W("s4", 17.94)),
-        C("c-sl", "Saiz SL · Meja makan", "star", "s4", W("s4", 17.94)),
-        C("c-ss", "Saiz SS · Lebih kecil", "star", "s5", W("s5", 22.96)),
+        C("c-sl", "Saiz XL · Meja makan", "star", "s4", W("s4", 17.94)),
+        C("c-ss", "Saiz XS · Lebih kecil", "star", "s5", W("s5", 22.96)),
         IMG("i-spec", "assets/img/spec.jpg", "s5", W("s5", 22.96) + 0.2, end("s5"), w=340),
         C("c-label", "Siap ada label", "tag", "s6", W("s6", 26.54)),
     ],
@@ -386,7 +386,7 @@ build_scene("outro", [
 
 # ---- creator / product header, on screen the whole video (like the reference)
 HEAD_L = ("REZEKI.NAZIR", "TRUSTED AFFILIATE")
-HEAD_R = ("A BIG", "MOMENTS TISSUE")
+HEAD_R = ("A BIG HOME LIVING", "MOMENTS TISSUE")
 hdr = (f'<div id="hd-l" style="position:absolute;left:84px;top:252px;display:flex;align-items:stretch;gap:16px">'
        f'<div style="width:7px;border-radius:4px;background:linear-gradient(180deg,#f3dfb1,#c9a25e 55%,#8f6a32)"></div>'
        f'<div class="hdt">{HEAD_L[0]}<br/>{HEAD_L[1]}</div></div>'
