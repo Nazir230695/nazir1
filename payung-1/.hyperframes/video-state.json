@@ -1,7 +1,7 @@
 {
   "version": 1,
   "historyId": "de173e0a-4b66-468e-b46e-5c2e0fc6dd88",
-  "currentRevision": null,
+  "currentRevision": "943856ed-e188-426a-8f18-a28796675619",
   "pendingChanges": false,
   "files": {
     "AGENTS.md": {
@@ -21,8 +21,8 @@
       "content": "/root/.cache/hyperframes/history/de173e0a-4b66-468e-b46e-5c2e0fc6dd88/blobs/d8/d836bf2a8be8399e8e8ba8493c3e21ed2db8af0d3012840b41140c48c8e8be8a"
     },
     "assets/img/pack.jpg": {
-      "hash": "d62d12333941c2df6728904c8819684bb7d1deea625d9e0ffb0afaace322f26e",
-      "content": "/root/.cache/hyperframes/history/de173e0a-4b66-468e-b46e-5c2e0fc6dd88/blobs/d6/d62d12333941c2df6728904c8819684bb7d1deea625d9e0ffb0afaace322f26e"
+      "hash": "8d64e86d2ddbbb74cdd0e9d419577f6a06967b4eedf0a632a239c2393d1bda96",
+      "content": "/root/.cache/hyperframes/history/de173e0a-4b66-468e-b46e-5c2e0fc6dd88/blobs/8d/8d64e86d2ddbbb74cdd0e9d419577f6a06967b4eedf0a632a239c2393d1bda96"
     },
     "assets/img/size.jpg": {
       "hash": "403e9485800861e4006a11b7881a70ede38e5b26a10944784a455fc6672a5458",
@@ -53,8 +53,8 @@
       "content": "/root/.cache/hyperframes/history/de173e0a-4b66-468e-b46e-5c2e0fc6dd88/blobs/c2/c2efd9d902a59bf9ec5019035d7deadd17762136896b6e3cb6dd99ea50997a30"
     },
     "compositions/brand.html": {
-      "hash": "563060abb424996ac93826bd2f31983c2b74abaff03227f526d6c419cb333186",
-      "content": "/root/.cache/hyperframes/history/de173e0a-4b66-468e-b46e-5c2e0fc6dd88/blobs/56/563060abb424996ac93826bd2f31983c2b74abaff03227f526d6c419cb333186"
+      "hash": "92c7b337d160fa210c38febcefe5d057d64b1352abead691abd09ec353be708a",
+      "content": "/root/.cache/hyperframes/history/de173e0a-4b66-468e-b46e-5c2e0fc6dd88/blobs/92/92c7b337d160fa210c38febcefe5d057d64b1352abead691abd09ec353be708a"
     },
     "compositions/captions.html": {
       "hash": "5de58d18d1dc7d607fb2fc9b655f8e7c7462059e39c2960e161572c10794b346",
@@ -107,15 +107,97 @@
     "assets/raw_e.mp4": {
       "hash": "887d539cb9b9e74bd0796d8f2ac8d14c18e55737478cb2656fb4054045be5a31",
       "content": "/root/.cache/hyperframes/history/de173e0a-4b66-468e-b46e-5c2e0fc6dd88/blobs/88/887d539cb9b9e74bd0796d8f2ac8d14c18e55737478cb2656fb4054045be5a31"
+    },
+    "cover/cover-payung-1.png": {
+      "hash": "a50e45b86ff03049723e523f09f48a173fd4935698bb0099f045d3dd8d88768f",
+      "content": "/root/.cache/hyperframes/history/de173e0a-4b66-468e-b46e-5c2e0fc6dd88/blobs/a5/a50e45b86ff03049723e523f09f48a173fd4935698bb0099f045d3dd8d88768f"
     }
   },
-  "revisions": {},
+  "revisions": {
+    "9dc4335d-effd-4060-b6e2-34ffb6c58a91": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1795533085195,
+      "endedAt": 1795533085202,
+      "files": {
+        "assets/img/pack.jpg": {
+          "before": "/root/.cache/hyperframes/history/de173e0a-4b66-468e-b46e-5c2e0fc6dd88/blobs/d6/d62d12333941c2df6728904c8819684bb7d1deea625d9e0ffb0afaace322f26e",
+          "after": "/root/.cache/hyperframes/history/de173e0a-4b66-468e-b46e-5c2e0fc6dd88/blobs/33/335aea6af5997caa64206ca6da61e5654abb305c633f6090d693059a075d1879"
+        },
+        "compositions/brand.html": {
+          "before": "/root/.cache/hyperframes/history/de173e0a-4b66-468e-b46e-5c2e0fc6dd88/blobs/56/563060abb424996ac93826bd2f31983c2b74abaff03227f526d6c419cb333186",
+          "after": "/root/.cache/hyperframes/history/de173e0a-4b66-468e-b46e-5c2e0fc6dd88/blobs/92/92c7b337d160fa210c38febcefe5d057d64b1352abead691abd09ec353be708a"
+        },
+        "cover/cover-payung-1.png": {
+          "before": null,
+          "after": "/root/.cache/hyperframes/history/de173e0a-4b66-468e-b46e-5c2e0fc6dd88/blobs/a5/a50e45b86ff03049723e523f09f48a173fd4935698bb0099f045d3dd8d88768f"
+        }
+      }
+    },
+    "943856ed-e188-426a-8f18-a28796675619": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1795533215367,
+      "endedAt": 1795533215368,
+      "files": {
+        "assets/img/pack.jpg": {
+          "before": "/root/.cache/hyperframes/history/de173e0a-4b66-468e-b46e-5c2e0fc6dd88/blobs/33/335aea6af5997caa64206ca6da61e5654abb305c633f6090d693059a075d1879",
+          "after": "/root/.cache/hyperframes/history/de173e0a-4b66-468e-b46e-5c2e0fc6dd88/blobs/8d/8d64e86d2ddbbb74cdd0e9d419577f6a06967b4eedf0a632a239c2393d1bda96"
+        }
+      }
+    }
+  },
   "checks": {
     "latest": {
       "revision": null,
       "id": "ed955cb7-f611-492b-bc06-c0d0f1e4dcb2"
     },
-    "revisions": {},
+    "revisions": {
+      "9dc4335d-effd-4060-b6e2-34ffb6c58a91": [
+        {
+          "id": "5d39bc6d-0fe6-40fc-a777-e286eadaaf66",
+          "scope": "project",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 45000,
+              "cache": true,
+              "contrast": true,
+              "craft": true,
+              "strict": false,
+              "snapshots": false,
+              "safeZones": [
+                "tiktok",
+                "reels",
+                "shorts"
+              ],
+              "browserGpuMode": "auto",
+              "includeUnmounted": false
+            }
+          },
+          "createdAt": 1795533095649,
+          "contentHash": "b8e1a6fac3d70e138b7c505bf64edcaf0d0714e099cbf0d90ccd14bc6f0cf548",
+          "revision": "9dc4335d-effd-4060-b6e2-34ffb6c58a91",
+          "inputFingerprint": "347a1368bce5a73e0fdf82369d33597ee1b7b6131b52fc1cea2f3a75d3771228",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "fe78a181-dac6-4846-9932-3788514de8e5"
+        }
+      ]
+    },
     "unversioned": [
       {
         "id": "ed955cb7-f611-492b-bc06-c0d0f1e4dcb2",
@@ -282,5 +364,18 @@
         "attribution": "unversioned"
       }
     ]
-  }
+  },
+  "renders": {
+    "latest": {
+      "id": "fe78a181-dac6-4846-9932-3788514de8e5",
+      "completedAt": 1795533332475,
+      "output": "/home/user/nazir1/payung-1/renders/payung-1.mp4",
+      "status": "completed",
+      "revision": "943856ed-e188-426a-8f18-a28796675619"
+    },
+    "retainedRevisions": [
+      "943856ed-e188-426a-8f18-a28796675619"
+    ]
+  },
+  "pendingArtifactCleanup": []
 }
