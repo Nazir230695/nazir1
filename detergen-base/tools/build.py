@@ -25,9 +25,9 @@ CTA = [("cta", "a", 43.25, 45.80, 1.0, "low"), ("tail", "a", 17.95, 19.30, 0.3, 
 VARIANTS = {
     "1": [  # viral, 5.2 kg, harga, buka terus guna, wangi
         ("s1", "a", 0.10, 8.70, 1.0, "low"),
-        ("s2", "a", 8.70, 16.95, 1.0, "low"),
-        ("s3", "a", 19.25, 20.60, 1.0, "low"),
-        ("s4", "a", 22.60, 24.38, 1.0, "low"),
+        ("s2", "a", 8.70, 18.10, 1.0, "low"),
+        ("s3", "a", 18.95, 20.95, 1.0, "low"),
+        ("s4", "a", 22.55, 24.42, 1.0, "low"),
     ] + CTA,
     "2": [  # 5.2 kg, cara guna, ramai beli online, jimat
         ("s1", "a", 0.10, 5.25, 1.0, "low"),
@@ -90,11 +90,12 @@ def norm(w, prev):
     return rep + t[len(t.rstrip(".,!?")):]
 
 
+CAP_STOP = {"s2": 16.95}   # "keluar belon tu" is unclear: keep the audio, no caption
 kept = []
 for s in segs:
     ws = WORDS[s["src"]]
     for i, w in enumerate(ws):
-        if s["src_in"] <= w["start"] < s["src_out"] - 0.05:
+        if s["src_in"] <= w["start"] < s["src_out"] - 0.05 and not (s["id"] in CAP_STOP and w["start"] > CAP_STOP[s["id"]]):
             prev = re.sub(r"[^\w]", "", ws[i - 1]["text"]).lower() if i else ""
             nxt = re.sub(r"[^\w]", "", ws[i + 1]["text"]).lower() if i + 1 < len(ws) else ""
             if re.sub(r"[^\w]", "", w["text"]).lower() == "lepas" and nxt == "mana":
@@ -331,9 +332,8 @@ PARTS = {
         head("hk", "Sabun viral<br/><em>5.2KG</em>", 0.3, W("s1", 5.33) - 0.3, 1290),
         photo_insert("p-pack", "assets/img/hero.jpg", W("s1", 2.17), W("s1", 5.33) - W("s1", 2.17)),
         C("c-harga", "Harga tak masuk akal", "tag", "s1", W("s1", 6.21)),
-        C("c-buka", "Buka &amp; terus guna", "star", "s2", W("s2", 11.23), W("s2", 14.55)),
-        C("c-botol", "Tak perlu botol lain", "star", "s2", W("s2", 14.55), W("s2", 15.85)),
-        C("c-best", "Memang terbaik", "star", "s2", W("s2", 15.85)),
+        C("c-buka", "Buka &amp; terus guna", "star", "s2", W("s2", 11.23), W("s2", 15.85)),
+        C("c-best", "Memang terbaik", "star", "s2", W("s2", 15.85), end("s2") + 0.3),
         C("c-wangi", "Wangi tahan 72 jam", "heart", "s3", st("s3") + 0.1),
         IMG("i-buih", "assets/img/buih.jpg", "s3", st("s3") + 0.2, end("s3")),
         C("c-wangi2", "Serius wangi", "heart", "s4", W("s4", 23.21)),
