@@ -1,0 +1,64 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; pointer-events: none; 
+      --ink: #ffffff;
+      --dark: #0d0e10;
+      --neon: #ff8a1f;
+      --glass: rgba(16, 17, 20, 0.80);
+      --stroke: rgba(255,255,255,.14);
+      --font-ui: "Montserrat", sans-serif;
+ }
+    .chip { position: absolute; left: 0; width: 960px; text-align: center; }
+    .chip > span { display: inline-flex; align-items: center; gap: 14px; }
+    .chip .lb { background: #fff; color: #111; font-family: var(--font-ui); font-weight: 600; font-size: 40px; letter-spacing: .01em;
+      padding: 8px 18px; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,.35); white-space: nowrap; text-transform: uppercase; }
+    .chip .ic { width: 70px; height: 70px; border-radius: 50%; background: var(--dark); border: 2.5px solid rgba(255,255,255,.9);
+      display: inline-flex; align-items: center; justify-content: center; box-shadow: 0 10px 30px rgba(0,0,0,.4); }
+    .chip .ic svg { width: 38px; height: 38px; }
+    .glass { position: absolute; background: var(--glass); border: 1.5px solid var(--stroke); border-radius: 30px;
+      box-shadow: 0 24px 60px rgba(0,0,0,.5); backdrop-filter: blur(18px); color: #fff; font-family: var(--font-ui); }
+    .head { position: absolute; left: 0; width: 960px; text-align: center; font-family: var(--font-ui); font-weight: 800; color: #fff;
+      font-size: 62px; line-height: 1.1; text-shadow: 0 0 4px rgba(0,0,0,.9), 0 3px 8px rgba(0,0,0,.75), 0 10px 34px rgba(0,0,0,.75); }
+    .head > div { display: inline-block; padding: 14px 30px; border-radius: 26px; background: rgba(10,11,13,.42); }
+    .head em { font-style: normal; color: var(--neon); }
+    .pilltag { display: inline-flex; align-items: center; gap: 10px; padding: 10px 26px 10px 16px; border-radius: 12px; background: rgba(255,255,255,.95);
+      color: #111; font-family: var(--font-ui); font-weight: 700; font-size: 34px; box-shadow: 0 10px 28px rgba(0,0,0,.35); white-space: nowrap; }
+
+  </style>
+  <div id="root" data-composition-id="sc" data-width="1080" data-height="1920">
+    <div id="hk" class="head clip" data-start="0.3" data-duration="4.8667" data-track-index="0" style="top:1290px"><div id="hkt">Detergen<br/><em>5.2KG</em></div></div>
+    <div id="c-cara" class="chip clip" data-start="8.6333" data-duration="2.4667" data-track-index="0" style="top:1330px"><span><span id="c-carac" class="ic"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg></span><span id="c-carab" class="lb">Ada cara guna kat belakang</span></span></div>
+    <div id="c-dos" class="chip clip" data-start="11.1" data-duration="3.1667" data-track-index="0" style="top:1330px"><span><span id="c-dosc" class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z"/></svg></span><span id="c-dosb" class="lb">4kg pakaian = 50ml</span></span></div>
+    <div id="c-mudah" class="chip clip" data-start="17.0333" data-duration="0.8" data-track-index="0" style="top:1330px"><span><span id="c-mudahc" class="ic"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg></span><span id="c-mudahb" class="lb">Memang mudah</span></span></div>
+    <div id="i-lembut" class=" clip" data-start="14.4667" data-duration="3.3667" data-track-index="0" style="position:absolute; left:50px; top:420px; width:300px"><div style="border-radius:22px;overflow:hidden;border:3px solid rgba(255,255,255,.9);box-shadow:0 24px 60px rgba(0,0,0,.5)"><img src="assets/img/lembut.jpg" alt="" style="display:block;width:300px"/></div></div>
+    <div id="c-ramai" class="chip clip" data-start="17.9333" data-duration="2.3333" data-track-index="0" style="top:1330px"><span><span id="c-ramaic" class="ic"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 20.5s-7.5-4.6-7.5-10A4.3 4.3 0 0 1 12 7.6a4.3 4.3 0 0 1 7.5 2.9c0 5.4-7.5 10-7.5 10z"/></svg></span><span id="c-ramaib" class="lb">Ramai dah beli</span></span></div>
+    <div id="c-online" class="chip clip" data-start="20.2667" data-duration="1.9333" data-track-index="0" style="top:1330px"><span><span id="c-onlinec" class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12V4h8l10 10-8 8z"/><circle cx="7.5" cy="8.5" r="1.4" fill="#fff"/></svg></span><span id="c-onlineb" class="lb">Beli online je</span></span></div>
+    <div id="c-jimat" class="chip clip" data-start="22.2" data-duration="1.8" data-track-index="0" style="top:1330px"><span><span id="c-jimatc" class="ic"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg></span><span id="c-jimatb" class="lb">Jimat minyak &amp; tenaga</span></span></div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#hkt", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.6, ease: "power3.out" }, 0.3);
+    tl.to("#hk", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 4.8);
+    tl.fromTo("#c-carac", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.5, ease: "power3.out" }, 8.6333);
+    tl.fromTo("#c-carab", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.55, ease: "power3.out" }, 8.7);
+    tl.to("#c-cara", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 10.7333);
+    tl.fromTo("#c-dosc", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.5, ease: "power3.out" }, 11.1);
+    tl.fromTo("#c-dosb", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.55, ease: "power3.out" }, 11.1667);
+    tl.to("#c-dos", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 13.9);
+    tl.fromTo("#c-mudahc", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.5, ease: "power3.out" }, 17.0333);
+    tl.fromTo("#c-mudahb", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.55, ease: "power3.out" }, 17.1);
+    tl.to("#c-mudah", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 17.4667);
+    tl.fromTo("#i-lembut", { opacity: 0, y: 30, scale: 0.94 }, { opacity: 1, y: 0, scale: 1, duration: 0.6, ease: "power3.out" }, 14.4667);
+    tl.to("#i-lembut", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 17.4667);
+    tl.fromTo("#c-ramaic", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.5, ease: "power3.out" }, 17.9333);
+    tl.fromTo("#c-ramaib", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.55, ease: "power3.out" }, 18.0);
+    tl.to("#c-ramai", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 19.9);
+    tl.fromTo("#c-onlinec", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.5, ease: "power3.out" }, 20.2667);
+    tl.fromTo("#c-onlineb", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.55, ease: "power3.out" }, 20.3333);
+    tl.to("#c-online", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 21.8333);
+    tl.fromTo("#c-jimatc", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.5, ease: "power3.out" }, 22.2);
+    tl.fromTo("#c-jimatb", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.55, ease: "power3.out" }, 22.2667);
+    tl.to("#c-jimat", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 23.6333);
+    window.__timelines["sc"] = tl;
+  </script>
+</template>

@@ -1,0 +1,68 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; pointer-events: none; 
+      --ink: #ffffff;
+      --dark: #0d0e10;
+      --neon: #ff8a1f;
+      --glass: rgba(16, 17, 20, 0.80);
+      --stroke: rgba(255,255,255,.14);
+      --font-ui: "Montserrat", sans-serif;
+ }
+    .chip { position: absolute; left: 0; width: 960px; text-align: center; }
+    .chip > span { display: inline-flex; align-items: center; gap: 14px; }
+    .chip .lb { background: #fff; color: #111; font-family: var(--font-ui); font-weight: 600; font-size: 40px; letter-spacing: .01em;
+      padding: 8px 18px; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,.35); white-space: nowrap; text-transform: uppercase; }
+    .chip .ic { width: 70px; height: 70px; border-radius: 50%; background: var(--dark); border: 2.5px solid rgba(255,255,255,.9);
+      display: inline-flex; align-items: center; justify-content: center; box-shadow: 0 10px 30px rgba(0,0,0,.4); }
+    .chip .ic svg { width: 38px; height: 38px; }
+    .glass { position: absolute; background: var(--glass); border: 1.5px solid var(--stroke); border-radius: 30px;
+      box-shadow: 0 24px 60px rgba(0,0,0,.5); backdrop-filter: blur(18px); color: #fff; font-family: var(--font-ui); }
+    .head { position: absolute; left: 0; width: 960px; text-align: center; font-family: var(--font-ui); font-weight: 800; color: #fff;
+      font-size: 62px; line-height: 1.1; text-shadow: 0 0 4px rgba(0,0,0,.9), 0 3px 8px rgba(0,0,0,.75), 0 10px 34px rgba(0,0,0,.75); }
+    .head > div { display: inline-block; padding: 14px 30px; border-radius: 26px; background: rgba(10,11,13,.42); }
+    .head em { font-style: normal; color: var(--neon); }
+    .pilltag { display: inline-flex; align-items: center; gap: 10px; padding: 10px 26px 10px 16px; border-radius: 12px; background: rgba(255,255,255,.95);
+      color: #111; font-family: var(--font-ui); font-weight: 700; font-size: 34px; box-shadow: 0 10px 28px rgba(0,0,0,.35); white-space: nowrap; }
+
+  </style>
+  <div id="root" data-composition-id="sc" data-width="1080" data-height="1920">
+    <div id="hk" class="head clip" data-start="0.3" data-duration="4.9333" data-track-index="0" style="top:1290px"><div id="hkt">Sabun viral<br/><em>5.2KG</em></div></div>
+    <div id="p-pack" class=" clip" data-start="2.0667" data-duration="3.1667" data-track-index="0" style="position:absolute; inset:0" data-layout-allow-overflow><div id="p-packbg" style="position:absolute;inset:0;background:rgba(8,9,12,.72)"></div><div id="p-packc" style="position:absolute;left:100px;top:600px;width:880px;border-radius:30px;overflow:hidden;background:#fff;box-shadow:0 30px 80px rgba(0,0,0,.6)"><img src="assets/img/hero.jpg" alt="" style="display:block;width:880px"/></div></div>
+    <div id="c-harga" class="chip clip" data-start="6.1" data-duration="2.5" data-track-index="0" style="top:1330px"><span><span id="c-hargac" class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12V4h8l10 10-8 8z"/><circle cx="7.5" cy="8.5" r="1.4" fill="#fff"/></svg></span><span id="c-hargab" class="lb">Harga tak masuk akal</span></span></div>
+    <div id="c-buka" class="chip clip" data-start="11.1333" data-duration="3.3333" data-track-index="0" style="top:1330px"><span><span id="c-bukac" class="ic"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg></span><span id="c-bukab" class="lb">Buka &amp; terus guna</span></span></div>
+    <div id="c-botol" class="chip clip" data-start="14.4667" data-duration="1.2667" data-track-index="0" style="top:1330px"><span><span id="c-botolc" class="ic"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg></span><span id="c-botolb" class="lb">Tak perlu botol lain</span></span></div>
+    <div id="c-best" class="chip clip" data-start="15.7333" data-duration="1.1" data-track-index="0" style="top:1330px"><span><span id="c-bestc" class="ic"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg></span><span id="c-bestb" class="lb">Memang terbaik</span></span></div>
+    <div id="c-wangi" class="chip clip" data-start="16.9333" data-duration="1.2333" data-track-index="0" style="top:1330px"><span><span id="c-wangic" class="ic"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 20.5s-7.5-4.6-7.5-10A4.3 4.3 0 0 1 12 7.6a4.3 4.3 0 0 1 7.5 2.9c0 5.4-7.5 10-7.5 10z"/></svg></span><span id="c-wangib" class="lb">Wangi tahan 72 jam</span></span></div>
+    <div id="i-buih" class=" clip" data-start="17.0333" data-duration="1.1333" data-track-index="0" style="position:absolute; left:50px; top:420px; width:300px"><div style="border-radius:22px;overflow:hidden;border:3px solid rgba(255,255,255,.9);box-shadow:0 24px 60px rgba(0,0,0,.5)"><img src="assets/img/buih.jpg" alt="" style="display:block;width:300px"/></div></div>
+    <div id="c-wangi2" class="chip clip" data-start="18.7667" data-duration="1.1667" data-track-index="0" style="top:1330px"><span><span id="c-wangi2c" class="ic"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 20.5s-7.5-4.6-7.5-10A4.3 4.3 0 0 1 12 7.6a4.3 4.3 0 0 1 7.5 2.9c0 5.4-7.5 10-7.5 10z"/></svg></span><span id="c-wangi2b" class="lb">Serius wangi</span></span></div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#hkt", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.6, ease: "power3.out" }, 0.3);
+    tl.to("#hk", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 4.8667);
+    tl.fromTo("#p-packbg", { opacity: 0 }, { opacity: 1, duration: 0.35, ease: "power2.out" }, 2.0667);
+    tl.fromTo("#p-packc", { opacity: 0, y: 40, scale: 0.94 }, { opacity: 1, y: 0, scale: 1, duration: 0.6, ease: "power3.out" }, 2.1333);
+    tl.to("#p-pack", { opacity: 0, duration: 0.3, ease: "power2.in" }, 4.9);
+    tl.fromTo("#c-hargac", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.5, ease: "power3.out" }, 6.1);
+    tl.fromTo("#c-hargab", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.55, ease: "power3.out" }, 6.1667);
+    tl.to("#c-harga", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 8.2333);
+    tl.fromTo("#c-bukac", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.5, ease: "power3.out" }, 11.1333);
+    tl.fromTo("#c-bukab", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.55, ease: "power3.out" }, 11.2);
+    tl.to("#c-buka", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 14.1);
+    tl.fromTo("#c-botolc", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.5, ease: "power3.out" }, 14.4667);
+    tl.fromTo("#c-botolb", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.55, ease: "power3.out" }, 14.5333);
+    tl.to("#c-botol", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 15.3667);
+    tl.fromTo("#c-bestc", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.5, ease: "power3.out" }, 15.7333);
+    tl.fromTo("#c-bestb", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.55, ease: "power3.out" }, 15.8);
+    tl.to("#c-best", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 16.4667);
+    tl.fromTo("#c-wangic", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.5, ease: "power3.out" }, 16.9333);
+    tl.fromTo("#c-wangib", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.55, ease: "power3.out" }, 17.0);
+    tl.to("#c-wangi", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 17.8);
+    tl.fromTo("#i-buih", { opacity: 0, y: 30, scale: 0.94 }, { opacity: 1, y: 0, scale: 1, duration: 0.6, ease: "power3.out" }, 17.0333);
+    tl.to("#i-buih", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 17.8);
+    tl.fromTo("#c-wangi2c", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.5, ease: "power3.out" }, 18.7667);
+    tl.fromTo("#c-wangi2b", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.55, ease: "power3.out" }, 18.8333);
+    tl.to("#c-wangi2", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 19.5667);
+    window.__timelines["sc"] = tl;
+  </script>
+</template>
