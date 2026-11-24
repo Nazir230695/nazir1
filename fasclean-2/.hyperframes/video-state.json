@@ -202,15 +202,14 @@
   },
   "checks": {
     "latest": {
-      "revision": "1731e429-f545-4f43-893e-c47c4509fed8",
-      "id": "077ff820-9c04-4bb0-acf7-15fd5a6fea46"
+      "revision": null,
+      "id": "34eeb941-8c71-4d0d-af6a-5be4490d27cd"
     },
     "revisions": {
       "042e24fa-cefa-41f0-a62e-9da9d7f29863": [
         {
           "id": "fcd51f93-3e87-4537-88ac-44d345e3f6cd",
           "scope": "project",
-          "report": "/home/user/nazir1/fasclean-2/.hyperframes/artifacts/checks/fcd51f93-3e87-4537-88ac-44d345e3f6cd.json",
           "metadata": {
             "ok": false,
             "browserSkipped": false,
@@ -240,14 +239,15 @@
           "revision": "042e24fa-cefa-41f0-a62e-9da9d7f29863",
           "inputFingerprint": "036d4416414a54360afcd335202105f2a3c922ec142887ab8db6b7362e40fb84",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "1f0480b3-ac81-4783-9f72-e0b9908855b1"
         }
       ],
       "1731e429-f545-4f43-893e-c47c4509fed8": [
         {
           "id": "077ff820-9c04-4bb0-acf7-15fd5a6fea46",
           "scope": "project",
-          "report": "/home/user/nazir1/fasclean-2/.hyperframes/artifacts/checks/077ff820-9c04-4bb0-acf7-15fd5a6fea46.json",
           "metadata": {
             "ok": true,
             "browserSkipped": false,
@@ -277,7 +277,9 @@
           "revision": "1731e429-f545-4f43-893e-c47c4509fed8",
           "inputFingerprint": "31c855bae325ff334b08fb57a2f7d05e14367705cf6326685c944ec92b8a008b",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "1f0480b3-ac81-4783-9f72-e0b9908855b1"
         }
       ]
     },
@@ -790,5 +792,18 @@
         "attribution": "unversioned"
       }
     ]
-  }
+  },
+  "renders": {
+    "latest": {
+      "id": "1f0480b3-ac81-4783-9f72-e0b9908855b1",
+      "completedAt": 1795561440637,
+      "output": "/home/user/nazir1/fasclean-2/renders/fasclean-2.mp4",
+      "status": "completed",
+      "revision": "a56c1428-7236-4f0d-a518-21af8a0ebc9c"
+    },
+    "retainedRevisions": [
+      "a56c1428-7236-4f0d-a518-21af8a0ebc9c"
+    ]
+  },
+  "pendingArtifactCleanup": []
 }
