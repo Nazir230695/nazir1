@@ -8,7 +8,7 @@ const jobs = [
   { out: 'cover-payung-3.png', img: 'f_d_4.jpg', pos: '50% 50%', top: 'HUJAN? RELAKS', bot: 'KELUAR KERETA<br>TAK BASAH' },
   { out: 'cover-payung-4.png', img: 'f_e_13.5.jpg', pos: '50% 50%', top: 'VIRAL DI TIKTOK', bot: 'PAYUNG AUTO<br>TAHAN RIBUT' },
   { out: 'cover-payung-5.png', img: 'f_b_16.jpg', pos: '50% 50%', top: '1 TEKAN', bot: 'TERUS<br>TERBUKA' },
-  { out: 'cover-payung-6.png', img: 'f_b_19.jpg', pos: '50% 50%', top: 'PAYUNG 125CM', bot: 'EXTRA LARGE<br>STORMPROOF' },
+  { out: 'cover-payung-6.png', img: 'f_b_19.jpg', pos: '50% 50%', top: 'PAYUNG AUTO', bot: 'ADA 2 SAIZ<br>2 WARNA' },
 ];
 const _old = [
   { out: 'cover-brush-1.png', img: 'f_a_37.0.jpg', pos: '50% 45%', top: '2 DALAM 1', bot: 'BERUS +<br>PENARIK AIR' },

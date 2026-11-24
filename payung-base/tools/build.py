@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""A BIG HOME LIVING Stormproof 125 cm auto umbrella — six short (<40 s) videos with different hooks from five raw clips
+"""A BIG HOME LIVING auto umbrella (2 sizes) — six short (<40 s) videos with different hooks from five raw clips
 (raw_b is wordless open/close b-roll, kept silent), reference style, HD grade baked into raw_*.mp4.
 Usage: python3 -I build.py <transcript.json> <project_dir> <1..6>
 """
@@ -62,7 +62,7 @@ VARIANTS = {
         ("cta", "e", 31.00, 34.70, 1.0, "low"),
         ("tail", "b", 27.00, 29.00, 0.0, "low"),
     ],
-    "6": [  # payung 125 cm, 2 warna (b-roll led)
+    "6": [  # 2 saiz, 2 warna (b-roll led)
         ("b0", "b", 12.50, 15.50, 0.0, "low"),
         ("v1", "d", 0.00, 2.25, 1.0, "low"),
         ("v2", "c", 12.75, 14.10, 1.0, "low"),
@@ -381,7 +381,7 @@ PARTS = {
         C("c-kain", "Kain tebal", "star", "c1", W("c1", 12.8), W("c1", 15.04)),
         C("c-uv", "Lindung UV", "star", "c1", W("c1", 15.04), W("c1", 20.4)),
         C("c-fiber", "Fiber bone, tak mudah patah", "brush", "c1", W("c1", 20.4)),
-        IMG("i-hero", "assets/img/hero.jpg", "c1", W("c1", 20.4) + 0.2, end("c2"), w=320),
+        IMG("i-hero", "assets/img/onetouch.jpg", "c1", W("c1", 20.4) + 0.2, end("c2"), w=320),
         C("c-tutup", "Tekan, terus tutup", "spin", "c3", W("c3", 29.2), W("c3", 30.88)),
         C("c-basah", "Masuk kereta tak basah", "drop", "c3", W("c3", 30.88)),
     ],
@@ -401,7 +401,7 @@ PARTS = {
         C("c-auto", "Auto buka", "spin", "e2", W("e2", 12.35), W("e2", 14.01)),
         C("c-cun", "Memang cun", "star", "e2", W("e2", 14.01), W("e2", 15.41)),
         C("c-fiber", "Ada fiber bone", "brush", "e2", W("e2", 15.41)),
-        IMG("i-hero", "assets/img/hero.jpg", "e2", W("e2", 15.41) + 0.2, end("e3"), w=320),
+        IMG("i-hero", "assets/img/onetouch.jpg", "e2", W("e2", 15.41) + 0.2, end("e3"), w=320),
         C("c-ribut", "Tahan ribut", "drop", "e4", st("e4") + 0.1),
         C("c-tutup", "Tekan je, terus tutup", "spin", "e5", W("e5", 26.69)),
     ],
@@ -411,16 +411,16 @@ PARTS = {
         C("c-jimat", "Jimat masa, ruang, tenaga", "star", "v1", st("v1") + 0.1),
         C("c-uv", "Lindung UV", "star", "v2", st("v2") + 0.1),
         C("c-fiber", "Fiber bone, tak mudah patah", "brush", "v3", st("v3") + 0.1),
-        C("c-125", "Stormproof 125cm", "drop", "b2", st("b2") + 0.1),
-        IMG("i-hero", "assets/img/hero.jpg", "b2", st("b2") + 0.2, end("b2"), w=320),
+        C("c-125", "Stormproof, tahan ribut", "drop", "b2", st("b2") + 0.1),
+        IMG("i-hero", "assets/img/onetouch.jpg", "b2", st("b2") + 0.2, end("b2"), w=320),
         C("c-tutup", "Tutup automatik", "spin", "v4", st("v4") + 0.4),
     ],
     "6": lambda: [
-        head("hk", "Payung<br/><em>125CM</em>", 0.2, end("b0") - 0.1, 1290),
+        head("hk", "Payung<br/><em>2 saiz</em>", 0.2, end("b0") - 0.1, 1290),
         C("c-magic", "Memang best", "star", "v1", st("v1") + 0.3),
         C("c-kain", "Kain tebal", "star", "v2", st("v2") + 0.1),
         photo_insert("p-size", "assets/img/size.jpg", st("b1") + 0.1, end("b1") - st("b1") - 0.1),
-        C("c-xl", "Extra large 125cm", "drop", "b1", st("b1") + 0.2),
+        C("c-xl", "Ada 2 saiz", "drop", "b1", st("b1") + 0.2),
         C("c-cun", "Krim &amp; hitam", "heart", "v3", st("v3") + 0.1),
         C("c-baloi", "Keluar masuk kereta, berbaloi", "star", "v4", st("v4") + 0.1),
     ],
@@ -448,7 +448,7 @@ build_scene("outro", [
 
 # ---- creator / product header, on screen the whole video (like the reference)
 HEAD_L = ("REZEKI.NAZIR", "TRUSTED AFFILIATE")
-HEAD_R = ("A BIG HOME LIVING", "PAYUNG AUTO 125CM")
+HEAD_R = ("A BIG HOME LIVING", "PAYUNG AUTO")
 hdr = (f'<div id="hd-l" style="position:absolute;left:84px;top:252px;display:flex;align-items:stretch;gap:16px">'
        f'<div style="width:7px;border-radius:4px;background:linear-gradient(180deg,#f3dfb1,#c9a25e 55%,#8f6a32)"></div>'
        f'<div class="hdt">{HEAD_L[0]}<br/>{HEAD_L[1]}</div></div>'
