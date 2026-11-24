@@ -1,0 +1,82 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; pointer-events: none; 
+      --ink: #ffffff;
+      --dark: #0d0e10;
+      --neon: #ff8a1f;
+      --glass: rgba(16, 17, 20, 0.80);
+      --stroke: rgba(255,255,255,.14);
+      --font-ui: "Montserrat", sans-serif;
+ }
+    .chip { position: absolute; left: 0; width: 960px; text-align: center; }
+    .chip > span { display: inline-flex; align-items: center; gap: 14px; }
+    .chip .lb { background: #fff; color: #111; font-family: var(--font-ui); font-weight: 600; font-size: 40px; letter-spacing: .01em;
+      padding: 8px 18px; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,.35); white-space: nowrap; text-transform: uppercase; }
+    .chip .ic { width: 70px; height: 70px; border-radius: 50%; background: var(--dark); border: 2.5px solid rgba(255,255,255,.9);
+      display: inline-flex; align-items: center; justify-content: center; box-shadow: 0 10px 30px rgba(0,0,0,.4); }
+    .chip .ic svg { width: 38px; height: 38px; }
+    .glass { position: absolute; background: var(--glass); border: 1.5px solid var(--stroke); border-radius: 30px;
+      box-shadow: 0 24px 60px rgba(0,0,0,.5); backdrop-filter: blur(18px); color: #fff; font-family: var(--font-ui); }
+    .head { position: absolute; left: 0; width: 960px; text-align: center; font-family: var(--font-ui); font-weight: 800; color: #fff;
+      font-size: 62px; line-height: 1.1; text-shadow: 0 0 4px rgba(0,0,0,.9), 0 3px 8px rgba(0,0,0,.75), 0 10px 34px rgba(0,0,0,.75); }
+    .head > div { display: inline-block; padding: 14px 30px; border-radius: 26px; background: rgba(10,11,13,.42); }
+    .head em { font-style: normal; color: var(--neon); }
+    .pilltag { display: inline-flex; align-items: center; gap: 10px; padding: 10px 26px 10px 16px; border-radius: 12px; background: rgba(255,255,255,.95);
+      color: #111; font-family: var(--font-ui); font-weight: 700; font-size: 34px; box-shadow: 0 10px 28px rgba(0,0,0,.35); white-space: nowrap; }
+
+  </style>
+  <div id="root" data-composition-id="sc" data-width="1080" data-height="1920">
+    <div id="hl" class=" clip" data-start="0.0" data-duration="6.3333" data-track-index="0" style="position:absolute; left:0; width:960px; top:440px; text-align:center"><div id="hl-t" style="font-family:var(--font-ui);font-weight:900;font-size:76px;line-height:1.08;letter-spacing:.14em;color:#ffe45c;-webkit-text-stroke:3px #1a1406;paint-order:stroke fill;text-shadow:0 4px 0 rgba(0,0,0,.6),0 8px 26px rgba(0,0,0,.7)">KAKAK-KAKAK,<br>STOP PENING!</div></div>
+    <div id="fl" class=" clip" data-start="0.0" data-duration="6.4333" data-track-index="0" style="position:absolute; inset:0"><div id="fl0" style="position:absolute;inset:0;background:#fff;opacity:0"></div><div id="fl1" style="position:absolute;inset:0;background:#fff;opacity:0"></div><div id="fl2" style="position:absolute;inset:0;background:#fff;opacity:0"></div><div id="fl3" style="position:absolute;inset:0;background:#fff;opacity:0"></div><div id="fl4" style="position:absolute;inset:0;background:#fff;opacity:0"></div><div id="fl5" style="position:absolute;inset:0;background:#fff;opacity:0"></div></div>
+    <div id="c-solusi" class="chip clip" data-start="6.0333" data-duration="0.8667" data-track-index="0" style="top:1330px"><span><span id="c-solusic" class="ic"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg></span><span id="c-solusib" class="lb">Ni solusi dia</span></span></div>
+    <div id="c-botol" class="chip clip" data-start="8.4" data-duration="1.3333" data-track-index="0" style="top:1330px"><span><span id="c-botolc" class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z"/></svg></span><span id="c-botolb" class="lb">Botol susu anak</span></span></div>
+    <div id="c-buah" class="chip clip" data-start="9.7333" data-duration="2.3667" data-track-index="0" style="top:1330px"><span><span id="c-buahc" class="ic"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg></span><span id="c-buahb" class="lb">Buah &amp; sayur</span></span></div>
+    <div id="c-pinggan" class="chip clip" data-start="12.1" data-duration="3.0333" data-track-index="0" style="top:1330px"><span><span id="c-pingganc" class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z"/></svg></span><span id="c-pingganb" class="lb">Pinggan berminyak</span></span></div>
+    <div id="i-oil" class=" clip" data-start="15.3333" data-duration="6.4667" data-track-index="0" style="position:absolute; left:50px; top:420px; width:330px"><div style="border-radius:22px;overflow:hidden;border:3px solid rgba(255,255,255,.9);box-shadow:0 24px 60px rgba(0,0,0,.5)"><img src="assets/img/oil.jpg" alt="" style="display:block;width:330px"/></div></div>
+    <div id="c-2x" class="chip clip" data-start="19.6" data-duration="2.2" data-track-index="0" style="top:1330px"><span><span id="c-2xc" class="ic"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg></span><span id="c-2xb" class="lb">2x kuasa tanggal minyak</span></span></div>
+    <div id="i-baby" class=" clip" data-start="21.9" data-duration="3.2333" data-track-index="0" style="position:absolute; left:50px; top:420px; width:330px"><div style="border-radius:22px;overflow:hidden;border:3px solid rgba(255,255,255,.9);box-shadow:0 24px 60px rgba(0,0,0,.5)"><img src="assets/img/baby.jpg" alt="" style="display:block;width:330px"/></div></div>
+    <div id="c-semua" class="chip clip" data-start="21.8" data-duration="3.3333" data-track-index="0" style="top:1330px"><span><span id="c-semuac" class="ic"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 20.5s-7.5-4.6-7.5-10A4.3 4.3 0 0 1 12 7.6a4.3 4.3 0 0 1 7.5 2.9c0 5.4-7.5 10-7.5 10z"/></svg></span><span id="c-semuab" class="lb">Buah, sayur, botol bayi</span></span></div>
+    <div id="c-halal" class="chip clip" data-start="25.1333" data-duration="1.5" data-track-index="0" style="top:1330px"><span><span id="c-halalc" class="ic"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg></span><span id="c-halalb" class="lb">Halal</span></span></div>
+    <div id="c-viral" class="chip clip" data-start="26.6333" data-duration="1.9333" data-track-index="0" style="top:1330px"><span><span id="c-viralc" class="ic"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 20.5s-7.5-4.6-7.5-10A4.3 4.3 0 0 1 12 7.6a4.3 4.3 0 0 1 7.5 2.9c0 5.4-7.5 10-7.5 10z"/></svg></span><span id="c-viralb" class="lb">Memang dah viral</span></span></div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#hl-t", { opacity: 0, scaleX: 1.6, scaleY: 1.15 }, { opacity: 1, scaleX: 1, scaleY: 1, duration: 0.55, ease: "expo.out" }, 0.05);
+    tl.to("#hl", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 5.9667);
+    tl.fromTo("#fl0", { opacity: 0.55 }, { opacity: 0, duration: 0.16, ease: "power2.out", immediateRender: false }, 1.0);
+    tl.fromTo("#fl1", { opacity: 0.55 }, { opacity: 0, duration: 0.16, ease: "power2.out", immediateRender: false }, 1.9667);
+    tl.fromTo("#fl2", { opacity: 0.55 }, { opacity: 0, duration: 0.16, ease: "power2.out", immediateRender: false }, 2.9667);
+    tl.fromTo("#fl3", { opacity: 0.55 }, { opacity: 0, duration: 0.16, ease: "power2.out", immediateRender: false }, 3.9667);
+    tl.fromTo("#fl4", { opacity: 0.55 }, { opacity: 0, duration: 0.16, ease: "power2.out", immediateRender: false }, 4.9333);
+    tl.fromTo("#fl5", { opacity: 0.55 }, { opacity: 0, duration: 0.16, ease: "power2.out", immediateRender: false }, 5.9333);
+    tl.fromTo("#c-solusic", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.5, ease: "power3.out" }, 6.0333);
+    tl.fromTo("#c-solusib", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.55, ease: "power3.out" }, 6.1);
+    tl.to("#c-solusi", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 6.5333);
+    tl.fromTo("#c-botolc", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.5, ease: "power3.out" }, 8.4);
+    tl.fromTo("#c-botolb", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.55, ease: "power3.out" }, 8.4667);
+    tl.to("#c-botol", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 9.3667);
+    tl.fromTo("#c-buahc", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.5, ease: "power3.out" }, 9.7333);
+    tl.fromTo("#c-buahb", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.55, ease: "power3.out" }, 9.8);
+    tl.to("#c-buah", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 11.7333);
+    tl.fromTo("#c-pingganc", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.5, ease: "power3.out" }, 12.1);
+    tl.fromTo("#c-pingganb", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.55, ease: "power3.out" }, 12.1667);
+    tl.to("#c-pinggan", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 14.7667);
+    tl.fromTo("#i-oil", { opacity: 0, y: 30, scale: 0.94 }, { opacity: 1, y: 0, scale: 1, duration: 0.6, ease: "power3.out" }, 15.3333);
+    tl.to("#i-oil", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 21.4333);
+    tl.fromTo("#c-2xc", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.5, ease: "power3.out" }, 19.6);
+    tl.fromTo("#c-2xb", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.55, ease: "power3.out" }, 19.6667);
+    tl.to("#c-2x", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 21.4333);
+    tl.fromTo("#i-baby", { opacity: 0, y: 30, scale: 0.94 }, { opacity: 1, y: 0, scale: 1, duration: 0.6, ease: "power3.out" }, 21.9);
+    tl.to("#i-baby", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 24.7667);
+    tl.fromTo("#c-semuac", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.5, ease: "power3.out" }, 21.8);
+    tl.fromTo("#c-semuab", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.55, ease: "power3.out" }, 21.8667);
+    tl.to("#c-semua", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 24.7667);
+    tl.fromTo("#c-halalc", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.5, ease: "power3.out" }, 25.1333);
+    tl.fromTo("#c-halalb", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.55, ease: "power3.out" }, 25.2);
+    tl.to("#c-halal", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 26.2667);
+    tl.fromTo("#c-viralc", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.5, ease: "power3.out" }, 26.6333);
+    tl.fromTo("#c-viralb", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.55, ease: "power3.out" }, 26.7);
+    tl.to("#c-viral", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 28.2);
+    window.__timelines["sc"] = tl;
+  </script>
+</template>
