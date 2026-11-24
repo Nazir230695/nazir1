@@ -356,5 +356,16 @@
         "attribution": "unversioned"
       }
     ]
-  }
+  },
+  "renders": {
+    "latest": {
+      "id": "ba9ffc6c-7e52-4bfb-9364-5b76d8998370",
+      "completedAt": 1795526518439,
+      "output": "/home/user/nazir1/tisu-1/renders/tisu-1.mp4",
+      "status": "completed",
+      "revision": null
+    },
+    "retainedRevisions": []
+  },
+  "pendingArtifactCleanup": []
 }

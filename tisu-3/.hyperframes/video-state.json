@@ -1,7 +1,7 @@
 {
   "version": 1,
   "historyId": "046ded2b-a63d-4eb9-89b9-8080e9e43a91",
-  "currentRevision": null,
+  "currentRevision": "b59fc434-c9a1-4e86-a8d2-ca6c5478e42a",
   "pendingChanges": false,
   "files": {
     "AGENTS.md": {
@@ -103,9 +103,29 @@
     "assets/raw_b.mp4": {
       "hash": "f0a6d8e548f719115258cf69c2096e7979a143f7504ffd68be0df185aa97af42",
       "content": "/root/.cache/hyperframes/history/046ded2b-a63d-4eb9-89b9-8080e9e43a91/blobs/f0/f0a6d8e548f719115258cf69c2096e7979a143f7504ffd68be0df185aa97af42"
+    },
+    "cover/cover-tisu-3.png": {
+      "hash": "29006f50652f3cb368a8509a2e6cad7903826cc0a1328e32048f9094cfee0dca",
+      "content": "/root/.cache/hyperframes/history/046ded2b-a63d-4eb9-89b9-8080e9e43a91/blobs/29/29006f50652f3cb368a8509a2e6cad7903826cc0a1328e32048f9094cfee0dca"
     }
   },
-  "revisions": {},
+  "revisions": {
+    "b59fc434-c9a1-4e86-a8d2-ca6c5478e42a": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1795526690310,
+      "endedAt": 1795526690311,
+      "files": {
+        "cover/cover-tisu-3.png": {
+          "before": null,
+          "after": "/root/.cache/hyperframes/history/046ded2b-a63d-4eb9-89b9-8080e9e43a91/blobs/29/29006f50652f3cb368a8509a2e6cad7903826cc0a1328e32048f9094cfee0dca"
+        }
+      }
+    }
+  },
   "checks": {
     "latest": {
       "revision": null,
@@ -318,5 +338,18 @@
         "attribution": "unversioned"
       }
     ]
-  }
+  },
+  "renders": {
+    "latest": {
+      "id": "c3281649-4306-48e5-a4fe-7161446c35e9",
+      "completedAt": 1795526818712,
+      "output": "/home/user/nazir1/tisu-3/renders/tisu-3.mp4",
+      "status": "completed",
+      "revision": "b59fc434-c9a1-4e86-a8d2-ca6c5478e42a"
+    },
+    "retainedRevisions": [
+      "b59fc434-c9a1-4e86-a8d2-ca6c5478e42a"
+    ]
+  },
+  "pendingArtifactCleanup": []
 }
