@@ -430,16 +430,15 @@ build_scene("outro", [
 # ---- creator / product header, on screen the whole video (like the reference)
 HEAD_L = ("REZEKI.NAZIR", "TRUSTED AFFILIATE")
 HEAD_R = ("A BIG", "BERUS LANTAI 2 IN 1")
-hdr = (f'<div id="hd-scrim" style="position:absolute;left:0;top:190px;width:1080px;height:200px;background:linear-gradient(180deg,rgba(8,8,10,0) 0%,rgba(8,8,10,.6) 30%,rgba(8,8,10,.6) 70%,rgba(8,8,10,0) 100%)"></div>'
-       f'<div id="hd-l" style="position:absolute;left:84px;top:252px;display:flex;align-items:stretch;gap:16px">'
+hdr = (f'<div id="hd-l" style="position:absolute;left:84px;top:252px;display:flex;align-items:stretch;gap:16px">'
        f'<div style="width:7px;border-radius:4px;background:linear-gradient(180deg,#f3dfb1,#c9a25e 55%,#8f6a32)"></div>'
        f'<div class="hdt">{HEAD_L[0]}<br/>{HEAD_L[1]}</div></div>'
        f'<div id="hd-r" class="hdt" style="position:absolute;right:94px;top:252px;text-align:right">{HEAD_R[0]}<br/>{HEAD_R[1]}</div>')
 write("brand.html", scene("brand", BASE + """
     .hdt { font-family: var(--font-ui); font-weight: 600; font-size: 29px; line-height: 1.22; letter-spacing: .05em; color: #f6f1e7;
-      text-shadow: 0 1px 2px rgba(0,0,0,.7), 0 2px 12px rgba(0,0,0,.55); white-space: nowrap; }
+      text-shadow: 0 0 2px rgba(0,0,0,.95), 0 1px 3px rgba(0,0,0,.9), 0 0 10px rgba(0,0,0,.7), 0 2px 18px rgba(0,0,0,.6); white-space: nowrap; }
 """, clip("hd", 0, TOTAL, hdr, style="position:absolute; inset:0"),
-    f'    tl.fromTo(["#hd-scrim", "#hd-l", "#hd-r"], {{ opacity: 0 }}, {{ opacity: 1, duration: 0.6, ease: "power2.out" }}, 0.1);'))
+    f'    tl.fromTo(["#hd-l", "#hd-r"], {{ opacity: 0 }}, {{ opacity: 1, duration: 0.6, ease: "power2.out" }}, 0.1);'))
 
 write("captions.html", scene("captions", f"""
     #root {{ position: absolute; inset: 0; pointer-events: none; {TOK} }}
