@@ -1,0 +1,115 @@
+{
+ "total": 26.8,
+ "segs": [
+  {
+   "id": "s1",
+   "src": "b",
+   "src_in": 2.6,
+   "src_out": 7.4,
+   "start": 0.0,
+   "dur": 4.7999,
+   "vol": 1.0,
+   "zone": "low"
+  },
+  {
+   "id": "s2",
+   "src": "b",
+   "src_in": 7.5,
+   "src_out": 11.6667,
+   "start": 4.8,
+   "dur": 4.1665,
+   "vol": 1.0,
+   "zone": "low"
+  },
+  {
+   "id": "s3",
+   "src": "b",
+   "src_in": 12.7333,
+   "src_out": 14.9,
+   "start": 8.9667,
+   "dur": 2.1664999999999996,
+   "vol": 1.0,
+   "zone": "low"
+  },
+  {
+   "id": "s4",
+   "src": "b",
+   "src_in": 15.6667,
+   "src_out": 20.1,
+   "start": 11.1334,
+   "dur": 4.4332,
+   "vol": 1.0,
+   "zone": "low"
+  },
+  {
+   "id": "s5",
+   "src": "b",
+   "src_in": 20.3,
+   "src_out": 24.9333,
+   "start": 15.5667,
+   "dur": 4.6332,
+   "vol": 1.0,
+   "zone": "low"
+  },
+  {
+   "id": "s6",
+   "src": "b",
+   "src_in": 25.4,
+   "src_out": 28.9,
+   "start": 20.2,
+   "dur": 3.4999,
+   "vol": 1.0,
+   "zone": "low"
+  },
+  {
+   "id": "cta",
+   "src": "b",
+   "src_in": 47.8,
+   "src_out": 49.2667,
+   "start": 23.7,
+   "dur": 1.4665,
+   "vol": 1.0,
+   "zone": "low"
+  },
+  {
+   "id": "tail",
+   "src": "b",
+   "src_in": 36.3,
+   "src_out": 37.9333,
+   "start": 25.1667,
+   "dur": 1.6332,
+   "vol": 0.3,
+   "zone": "low"
+  }
+ ],
+ "phrases": [
+  "depan aku ni ada",
+  "tisu memang berbentuk",
+  "banyak saiz tau.",
+  "Tengok ni.",
+  "ni.",
+  "Saiz S,",
+  "awak boleh letak",
+  "dekat dalam bilik.",
+  "Saiz M,",
+  "awak boleh letak",
+  "kat dapur.",
+  "Saiz L,",
+  "awak boleh letak",
+  "dalam toilet.",
+  "Saiz SL,",
+  "awak boleh letak",
+  "kat meja makan.",
+  "kalau nak kecil",
+  "lagi kat sini,",
+  "tu dia ada",
+  "saiz SS.",
+  "SS.",
+  "nampak? Untuk meal,",
+  "after meal.",
+  "Siap dia",
+  "tulis je.",
+  "nak dapat mana",
+  "tekan link bawah"
+ ]
+}

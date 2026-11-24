@@ -1,0 +1,64 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; pointer-events: none; 
+      --ink: #ffffff;
+      --dark: #0d0e10;
+      --neon: #ff8a1f;
+      --glass: rgba(16, 17, 20, 0.80);
+      --stroke: rgba(255,255,255,.14);
+      --font-ui: "Montserrat", sans-serif;
+ }
+    .chip { position: absolute; left: 0; width: 960px; text-align: center; }
+    .chip > span { display: inline-flex; align-items: center; gap: 14px; }
+    .chip .lb { background: #fff; color: #111; font-family: var(--font-ui); font-weight: 600; font-size: 40px; letter-spacing: .01em;
+      padding: 8px 18px; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,.35); white-space: nowrap; text-transform: uppercase; }
+    .chip .ic { width: 70px; height: 70px; border-radius: 50%; background: var(--dark); border: 2.5px solid rgba(255,255,255,.9);
+      display: inline-flex; align-items: center; justify-content: center; box-shadow: 0 10px 30px rgba(0,0,0,.4); }
+    .chip .ic svg { width: 38px; height: 38px; }
+    .glass { position: absolute; background: var(--glass); border: 1.5px solid var(--stroke); border-radius: 30px;
+      box-shadow: 0 24px 60px rgba(0,0,0,.5); backdrop-filter: blur(18px); color: #fff; font-family: var(--font-ui); }
+    .head { position: absolute; left: 0; width: 960px; text-align: center; font-family: var(--font-ui); font-weight: 800; color: #fff;
+      font-size: 62px; line-height: 1.1; text-shadow: 0 0 4px rgba(0,0,0,.9), 0 3px 8px rgba(0,0,0,.75), 0 10px 34px rgba(0,0,0,.75); }
+    .head > div { display: inline-block; padding: 14px 30px; border-radius: 26px; background: rgba(10,11,13,.42); }
+    .head em { font-style: normal; color: var(--neon); }
+    .pilltag { display: inline-flex; align-items: center; gap: 10px; padding: 10px 26px 10px 16px; border-radius: 12px; background: rgba(255,255,255,.95);
+      color: #111; font-family: var(--font-ui); font-weight: 700; font-size: 34px; box-shadow: 0 10px 28px rgba(0,0,0,.35); white-space: nowrap; }
+
+  </style>
+  <div id="root" data-composition-id="sc" data-width="1080" data-height="1920">
+    <div id="hk" class="head clip" data-start="0.3" data-duration="4.6" data-track-index="0" style="top:1290px"><div id="hkt">Tisu ikut<br/><em>tempat</em></div></div>
+    <div id="c-s" class="chip clip" data-start="4.9" data-duration="4.0667" data-track-index="0" style="top:1330px"><span><span id="c-sc" class="ic"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg></span><span id="c-sb" class="lb">Saiz S · Bilik</span></span></div>
+    <div id="c-m" class="chip clip" data-start="9.0667" data-duration="2.0667" data-track-index="0" style="top:1330px"><span><span id="c-mc" class="ic"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg></span><span id="c-mb" class="lb">Saiz M · Dapur</span></span></div>
+    <div id="c-l" class="chip clip" data-start="11.2333" data-duration="2.1667" data-track-index="0" style="top:1330px"><span><span id="c-lc" class="ic"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg></span><span id="c-lb" class="lb">Saiz L · Toilet</span></span></div>
+    <div id="c-sl" class="chip clip" data-start="13.4" data-duration="2.1667" data-track-index="0" style="top:1330px"><span><span id="c-slc" class="ic"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg></span><span id="c-slb" class="lb">Saiz SL · Meja makan</span></span></div>
+    <div id="c-ss" class="chip clip" data-start="18.2333" data-duration="1.9667" data-track-index="0" style="top:1330px"><span><span id="c-ssc" class="ic"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg></span><span id="c-ssb" class="lb">Saiz SS · Lebih kecil</span></span></div>
+    <div id="i-spec" class=" clip" data-start="18.4333" data-duration="1.7667" data-track-index="0" style="position:absolute; left:50px; top:420px; width:340px"><div style="border-radius:22px;overflow:hidden;border:3px solid rgba(255,255,255,.9);box-shadow:0 24px 60px rgba(0,0,0,.5)"><img src="assets/img/spec.jpg" alt="" style="display:block;width:340px"/></div></div>
+    <div id="c-label" class="chip clip" data-start="21.3333" data-duration="2.3667" data-track-index="0" style="top:1330px"><span><span id="c-labelc" class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12V4h8l10 10-8 8z"/><circle cx="7.5" cy="8.5" r="1.4" fill="#fff"/></svg></span><span id="c-labelb" class="lb">Siap ada label</span></span></div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#hkt", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.6, ease: "power3.out" }, 0.3);
+    tl.to("#hk", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 4.5333);
+    tl.fromTo("#c-sc", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.5, ease: "power3.out" }, 4.9);
+    tl.fromTo("#c-sb", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.55, ease: "power3.out" }, 4.9667);
+    tl.to("#c-s", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 8.6);
+    tl.fromTo("#c-mc", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.5, ease: "power3.out" }, 9.0667);
+    tl.fromTo("#c-mb", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.55, ease: "power3.out" }, 9.1333);
+    tl.to("#c-m", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 10.7667);
+    tl.fromTo("#c-lc", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.5, ease: "power3.out" }, 11.2333);
+    tl.fromTo("#c-lb", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.55, ease: "power3.out" }, 11.3);
+    tl.to("#c-l", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 13.0333);
+    tl.fromTo("#c-slc", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.5, ease: "power3.out" }, 13.4);
+    tl.fromTo("#c-slb", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.55, ease: "power3.out" }, 13.4667);
+    tl.to("#c-sl", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 15.2);
+    tl.fromTo("#c-ssc", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.5, ease: "power3.out" }, 18.2333);
+    tl.fromTo("#c-ssb", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.55, ease: "power3.out" }, 18.3);
+    tl.to("#c-ss", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 19.8333);
+    tl.fromTo("#i-spec", { opacity: 0, y: 30, scale: 0.94 }, { opacity: 1, y: 0, scale: 1, duration: 0.6, ease: "power3.out" }, 18.4333);
+    tl.to("#i-spec", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 19.8333);
+    tl.fromTo("#c-labelc", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.5, ease: "power3.out" }, 21.3333);
+    tl.fromTo("#c-labelb", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.55, ease: "power3.out" }, 21.4);
+    tl.to("#c-label", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 23.3333);
+    window.__timelines["sc"] = tl;
+  </script>
+</template>

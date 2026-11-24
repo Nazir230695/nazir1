@@ -1,0 +1,56 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; pointer-events: none; 
+      --ink: #ffffff;
+      --dark: #0d0e10;
+      --neon: #ff8a1f;
+      --glass: rgba(16, 17, 20, 0.80);
+      --stroke: rgba(255,255,255,.14);
+      --font-ui: "Montserrat", sans-serif;
+ }
+    .chip { position: absolute; left: 0; width: 960px; text-align: center; }
+    .chip > span { display: inline-flex; align-items: center; gap: 14px; }
+    .chip .lb { background: #fff; color: #111; font-family: var(--font-ui); font-weight: 600; font-size: 40px; letter-spacing: .01em;
+      padding: 8px 18px; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,.35); white-space: nowrap; text-transform: uppercase; }
+    .chip .ic { width: 70px; height: 70px; border-radius: 50%; background: var(--dark); border: 2.5px solid rgba(255,255,255,.9);
+      display: inline-flex; align-items: center; justify-content: center; box-shadow: 0 10px 30px rgba(0,0,0,.4); }
+    .chip .ic svg { width: 38px; height: 38px; }
+    .glass { position: absolute; background: var(--glass); border: 1.5px solid var(--stroke); border-radius: 30px;
+      box-shadow: 0 24px 60px rgba(0,0,0,.5); backdrop-filter: blur(18px); color: #fff; font-family: var(--font-ui); }
+    .head { position: absolute; left: 0; width: 960px; text-align: center; font-family: var(--font-ui); font-weight: 800; color: #fff;
+      font-size: 62px; line-height: 1.1; text-shadow: 0 0 4px rgba(0,0,0,.9), 0 3px 8px rgba(0,0,0,.75), 0 10px 34px rgba(0,0,0,.75); }
+    .head > div { display: inline-block; padding: 14px 30px; border-radius: 26px; background: rgba(10,11,13,.42); }
+    .head em { font-style: normal; color: var(--neon); }
+    .pilltag { display: inline-flex; align-items: center; gap: 10px; padding: 10px 26px 10px 16px; border-radius: 12px; background: rgba(255,255,255,.95);
+      color: #111; font-family: var(--font-ui); font-weight: 700; font-size: 34px; box-shadow: 0 10px 28px rgba(0,0,0,.35); white-space: nowrap; }
+
+  </style>
+  <div id="root" data-composition-id="sc" data-width="1080" data-height="1920">
+    <div id="hk" class="head clip" data-start="0.3" data-duration="3.0667" data-track-index="0" style="top:1290px"><div id="hkt">Tisu<br/><em>5 saiz</em></div></div>
+    <div id="p-sizes" class=" clip" data-start="3.3667" data-duration="3.5667" data-track-index="0" style="position:absolute; inset:0" data-layout-allow-overflow><div id="p-sizesbg" style="position:absolute;inset:0;background:rgba(8,9,12,.72)"></div><div id="p-sizesc" style="position:absolute;left:100px;top:600px;width:880px;border-radius:30px;overflow:hidden;background:#fff;box-shadow:0 30px 80px rgba(0,0,0,.6)"><img src="assets/img/sizes.jpg" alt="" style="display:block;width:880px"/></div></div>
+    <div id="c-ss" class="chip clip" data-start="6.9" data-duration="3.3" data-track-index="0" style="top:1330px"><span><span id="c-ssc" class="ic"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg></span><span id="c-ssb" class="lb">Saiz SS pun ada</span></span></div>
+    <div id="c-baloi" class="chip clip" data-start="15.9" data-duration="1.3333" data-track-index="0" style="top:1330px"><span><span id="c-baloic" class="ic"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg></span><span id="c-baloib" class="lb">Memang berbaloi</span></span></div>
+    <div id="c-geng" class="chip clip" data-start="17.2333" data-duration="4.1333" data-track-index="0" style="top:1330px"><span><span id="c-gengc" class="ic"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 20.5s-7.5-4.6-7.5-10A4.3 4.3 0 0 1 12 7.6a4.3 4.3 0 0 1 7.5 2.9c0 5.4-7.5 10-7.5 10z"/></svg></span><span id="c-gengb" class="lb">Geng perempuan mesti suka</span></span></div>
+    <div id="i-hero" class=" clip" data-start="10.5" data-duration="5.4" data-track-index="0" style="position:absolute; left:50px; top:420px; width:300px"><div style="border-radius:22px;overflow:hidden;border:3px solid rgba(255,255,255,.9);box-shadow:0 24px 60px rgba(0,0,0,.5)"><img src="assets/img/hero.jpg" alt="" style="display:block;width:300px"/></div></div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#hkt", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.6, ease: "power3.out" }, 0.3);
+    tl.to("#hk", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 3.0);
+    tl.fromTo("#p-sizesbg", { opacity: 0 }, { opacity: 1, duration: 0.35, ease: "power2.out" }, 3.3667);
+    tl.fromTo("#p-sizesc", { opacity: 0, y: 40, scale: 0.94 }, { opacity: 1, y: 0, scale: 1, duration: 0.6, ease: "power3.out" }, 3.4333);
+    tl.to("#p-sizes", { opacity: 0, duration: 0.3, ease: "power2.in" }, 6.6);
+    tl.fromTo("#c-ssc", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.5, ease: "power3.out" }, 6.9);
+    tl.fromTo("#c-ssb", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.55, ease: "power3.out" }, 6.9667);
+    tl.to("#c-ss", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 9.8333);
+    tl.fromTo("#c-baloic", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.5, ease: "power3.out" }, 15.9);
+    tl.fromTo("#c-baloib", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.55, ease: "power3.out" }, 15.9667);
+    tl.to("#c-baloi", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 16.8667);
+    tl.fromTo("#c-gengc", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.5, ease: "power3.out" }, 17.2333);
+    tl.fromTo("#c-gengb", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.55, ease: "power3.out" }, 17.3);
+    tl.to("#c-geng", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 21.0);
+    tl.fromTo("#i-hero", { opacity: 0, y: 30, scale: 0.94 }, { opacity: 1, y: 0, scale: 1, duration: 0.6, ease: "power3.out" }, 10.5);
+    tl.to("#i-hero", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 15.5333);
+    window.__timelines["sc"] = tl;
+  </script>
+</template>

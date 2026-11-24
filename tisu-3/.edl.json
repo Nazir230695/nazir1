@@ -1,0 +1,69 @@
+{
+ "total": 19.9667,
+ "segs": [
+  {
+   "id": "s1",
+   "src": "b",
+   "src_in": 29.3,
+   "src_out": 36.3,
+   "start": 0.0,
+   "dur": 6.9999,
+   "vol": 1.0,
+   "zone": "low"
+  },
+  {
+   "id": "s2",
+   "src": "b",
+   "src_in": 37.9333,
+   "src_out": 47.8,
+   "start": 7.0,
+   "dur": 9.8665,
+   "vol": 1.0,
+   "zone": "low"
+  },
+  {
+   "id": "cta",
+   "src": "b",
+   "src_in": 47.8,
+   "src_out": 49.2667,
+   "start": 16.8667,
+   "dur": 1.4665,
+   "vol": 1.0,
+   "zone": "low"
+  },
+  {
+   "id": "tail",
+   "src": "b",
+   "src_in": 36.3,
+   "src_out": 37.9333,
+   "start": 18.3334,
+   "dur": 1.6332,
+   "vol": 0.3,
+   "zone": "low"
+  }
+ ],
+ "phrases": [
+  "perempuan-perempuan memang faham",
+  "tisu-tisu ni kenapa",
+  "ada banyak saiz",
+  "ni,",
+  "kalau pun beli",
+  "kat diorang ni,",
+  "memang diorang",
+  "cukup suka",
+  "dia dah bagi",
+  "tau siap,",
+  "daily",
+  "easy,",
+  "facial lah untuk",
+  "kaki make up,",
+  "untuk sweat lap",
+  "peluh ke",
+  "apa kan,",
+  "memang saiz besar",
+  "ni memang puas",
+  "hati lah,",
+  "nak dapat mana",
+  "tekan link bawah"
+ ]
+}
