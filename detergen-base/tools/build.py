@@ -29,11 +29,13 @@ VARIANTS = {
         ("s3", "a", 18.95, 20.95, 1.0, "low"),
         ("s4", "a", 22.55, 24.42, 1.0, "low"),
     ] + CTA,
-    "2": [  # 5.2 kg, cara guna, ramai beli online, jimat
+    "2": [  # hook: orang beli online je; then 5.2 kg, cara guna, ramai beli, jimat
+        ("hk2", "a", 38.85, 41.40, 1.0, "low"),
         ("s1", "a", 0.10, 5.25, 1.0, "low"),
         ("s5", "a", 24.38, 33.45, 1.0, "low"),
         ("s6", "a", 33.55, 37.10, 1.0, "low"),
-        ("s7", "a", 37.10, 43.25, 1.0, "low"),
+        ("s7", "a", 37.10, 38.90, 1.0, "low"),
+        ("s8", "a", 41.40, 43.25, 1.0, "low"),
     ] + CTA,
 }
 EDL = VARIANTS[VARIANT]
@@ -339,14 +341,14 @@ PARTS = {
         C("c-wangi2", "Serius wangi", "heart", "s4", W("s4", 23.21)),
     ],
     "2": lambda: [
-        head("hk", "Detergen<br/><em>5.2KG</em>", 0.3, end("s1") - 0.3, 1290),
+        head("hk", "Orang beli<br/><em>online je</em>", 0.3, end("hk2") - 0.3, 1290),
+        C("c-52", "Detergen 5.2KG", "star", "s1", W("s1", 2.17)),
         C("c-cara", "Ada cara guna kat belakang", "star", "s5", W("s5", 27.85), W("s5", 30.31)),
         C("c-dos", "4kg pakaian = 50ml", "drop", "s5", W("s5", 30.31)),
         C("c-mudah", "Memang mudah", "star", "s6", W("s6", 36.31)),
         IMG("i-lembut", "assets/img/lembut.jpg", "s6", st("s6") + 0.2, end("s6")),
-        C("c-ramai", "Ramai dah beli", "heart", "s7", st("s7") + 0.1, W("s7", 39.53)),
-        C("c-online", "Beli online je", "tag", "s7", W("s7", 39.53), W("s7", 41.45)),
-        C("c-jimat", "Jimat minyak &amp; tenaga", "star", "s7", W("s7", 41.45)),
+        C("c-ramai", "Ramai dah beli", "heart", "s7", st("s7") + 0.1),
+        C("c-jimat", "Jimat minyak &amp; tenaga", "star", "s8", st("s8") + 0.1),
     ],
 }
 build_scene("sc", PARTS[V]())

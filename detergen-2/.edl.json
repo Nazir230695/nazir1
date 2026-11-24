@@ -1,12 +1,22 @@
 {
- "total": 27.9,
+ "total": 27.9333,
  "segs": [
+  {
+   "id": "hk2",
+   "src": "a",
+   "src_in": 38.8667,
+   "src_out": 41.4,
+   "start": 0.0,
+   "dur": 2.5332,
+   "vol": 1.0,
+   "zone": "low"
+  },
   {
    "id": "s1",
    "src": "a",
    "src_in": 0.1,
    "src_out": 5.2667,
-   "start": 0.0,
+   "start": 2.5334,
    "dur": 5.1665,
    "vol": 1.0,
    "zone": "low"
@@ -16,7 +26,7 @@
    "src": "a",
    "src_in": 24.3667,
    "src_out": 33.4667,
-   "start": 5.1667,
+   "start": 7.7,
    "dur": 9.0999,
    "vol": 1.0,
    "zone": "low"
@@ -26,7 +36,7 @@
    "src": "a",
    "src_in": 33.5333,
    "src_out": 37.1,
-   "start": 14.2667,
+   "start": 16.8,
    "dur": 3.5665,
    "vol": 1.0,
    "zone": "low"
@@ -35,9 +45,19 @@
    "id": "s7",
    "src": "a",
    "src_in": 37.1,
+   "src_out": 38.9,
+   "start": 20.3667,
+   "dur": 1.7999,
+   "vol": 1.0,
+   "zone": "low"
+  },
+  {
+   "id": "s8",
+   "src": "a",
+   "src_in": 41.4,
    "src_out": 43.2667,
-   "start": 17.8334,
-   "dur": 6.1665,
+   "start": 22.1667,
+   "dur": 1.8665,
    "vol": 1.0,
    "zone": "low"
   },
@@ -46,7 +66,7 @@
    "src": "a",
    "src_in": 43.2667,
    "src_out": 45.8,
-   "start": 24.0,
+   "start": 24.0334,
    "dur": 2.5332,
    "vol": 1.0,
    "zone": "low"
@@ -56,13 +76,17 @@
    "src": "a",
    "src_in": 17.9333,
    "src_out": 19.3,
-   "start": 26.5334,
+   "start": 26.5667,
    "dur": 1.3665,
    "vol": 0.3,
    "zone": "low"
   }
  ],
  "phrases": [
+  "sekarang ni orang",
+  "beli online je,",
+  "tak payah pergi",
+  "kedai-kedai dah,",
   "Sabun yang tengah",
   "viral sekarang,",
   "5.2KG",
@@ -82,11 +106,7 @@
   "guna dia,",
   "memang mudah ni,",
   "ramai dah yang",
-  "beli ni sekarang",
-  "ni orang beli",
-  "online je,",
-  "tak payah pergi",
-  "kedai-kedai dah,",
+  "beli ni",
   "jimat minyak,",
   "save tenaga pun,",
   "nak dapat mana",
