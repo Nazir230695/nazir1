@@ -1,7 +1,7 @@
 {
   "version": 1,
   "historyId": "29587759-85d5-43f0-b0c8-2bca538bf5a3",
-  "currentRevision": "02c49215-687c-43bf-99b0-f6e3f6142040",
+  "currentRevision": "870e3b73-485e-41bb-9d48-f78f2b5f5d10",
   "pendingChanges": false,
   "files": {
     "AGENTS.md": {
@@ -57,8 +57,8 @@
       "content": "/root/.cache/hyperframes/history/29587759-85d5-43f0-b0c8-2bca538bf5a3/blobs/c2/c2efd9d902a59bf9ec5019035d7deadd17762136896b6e3cb6dd99ea50997a30"
     },
     "compositions/brand.html": {
-      "hash": "40f7355e0edfa49af00494c35c73d9cf5ff0a3f0b8a0fa4d249bbae427cb7a59",
-      "content": "/root/.cache/hyperframes/history/29587759-85d5-43f0-b0c8-2bca538bf5a3/blobs/40/40f7355e0edfa49af00494c35c73d9cf5ff0a3f0b8a0fa4d249bbae427cb7a59"
+      "hash": "0c32f5a441b2110324b57a2a20116e3dab5816bbb460e6c9493bef068fedd8fc",
+      "content": "/root/.cache/hyperframes/history/29587759-85d5-43f0-b0c8-2bca538bf5a3/blobs/0c/0c32f5a441b2110324b57a2a20116e3dab5816bbb460e6c9493bef068fedd8fc"
     },
     "compositions/captions.html": {
       "hash": "4c4bad8fb6fdf5868a1b2597d1371fe4b5e1e5982444ba1b9889536410e9e8cc",
@@ -95,6 +95,10 @@
     "assets/raw_a.mp4": {
       "hash": "44a123a1184dc8b38a92562e547e9e914ca6a2bc4a22ec67ca7f7461f2db3db4",
       "content": "/root/.cache/hyperframes/history/29587759-85d5-43f0-b0c8-2bca538bf5a3/blobs/44/44a123a1184dc8b38a92562e547e9e914ca6a2bc4a22ec67ca7f7461f2db3db4"
+    },
+    "cover/cover-detergen-1.png": {
+      "hash": "2e2763edfd38e647c7820b1287d28608275d5a285a879c3658fd26a6e1d9ff2d",
+      "content": "/root/.cache/hyperframes/history/29587759-85d5-43f0-b0c8-2bca538bf5a3/blobs/2e/2e2763edfd38e647c7820b1287d28608275d5a285a879c3658fd26a6e1d9ff2d"
     }
   },
   "revisions": {
@@ -112,19 +116,37 @@
           "after": "/root/.cache/hyperframes/history/29587759-85d5-43f0-b0c8-2bca538bf5a3/blobs/24/242c37bf5ec2731b860ff3af6f06d0ba810c1e199b680df17d019829c1292708"
         }
       }
+    },
+    "870e3b73-485e-41bb-9d48-f78f2b5f5d10": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1795498789005,
+      "endedAt": 1795498789010,
+      "files": {
+        "compositions/brand.html": {
+          "before": "/root/.cache/hyperframes/history/29587759-85d5-43f0-b0c8-2bca538bf5a3/blobs/40/40f7355e0edfa49af00494c35c73d9cf5ff0a3f0b8a0fa4d249bbae427cb7a59",
+          "after": "/root/.cache/hyperframes/history/29587759-85d5-43f0-b0c8-2bca538bf5a3/blobs/0c/0c32f5a441b2110324b57a2a20116e3dab5816bbb460e6c9493bef068fedd8fc"
+        },
+        "cover/cover-detergen-1.png": {
+          "before": null,
+          "after": "/root/.cache/hyperframes/history/29587759-85d5-43f0-b0c8-2bca538bf5a3/blobs/2e/2e2763edfd38e647c7820b1287d28608275d5a285a879c3658fd26a6e1d9ff2d"
+        }
+      }
     }
   },
   "checks": {
     "latest": {
-      "revision": "02c49215-687c-43bf-99b0-f6e3f6142040",
-      "id": "3a7e9110-8cfa-4a89-992b-5147ca11e494"
+      "revision": "870e3b73-485e-41bb-9d48-f78f2b5f5d10",
+      "id": "88b5aca1-3e0e-4dcb-a36b-e3f2fe44e25e"
     },
     "revisions": {
       "02c49215-687c-43bf-99b0-f6e3f6142040": [
         {
           "id": "3a7e9110-8cfa-4a89-992b-5147ca11e494",
           "scope": "project",
-          "report": "/home/user/nazir1/detergen-1/.hyperframes/artifacts/checks/3a7e9110-8cfa-4a89-992b-5147ca11e494.json",
           "metadata": {
             "ok": false,
             "browserSkipped": false,
@@ -153,6 +175,45 @@
           "contentHash": "0bdc2fad7c358384cdecc329b1dbd67cab786b674a19050eecc6ff4a12009ba0",
           "revision": "02c49215-687c-43bf-99b0-f6e3f6142040",
           "inputFingerprint": "bb1b8251059e1b88da71b371be6bb616d3d3134df4e951d72592f384b4086c91",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "9f532947-e99c-4e2f-a0a4-a3d8521d5398"
+        }
+      ],
+      "870e3b73-485e-41bb-9d48-f78f2b5f5d10": [
+        {
+          "id": "88b5aca1-3e0e-4dcb-a36b-e3f2fe44e25e",
+          "scope": "project",
+          "report": "/home/user/nazir1/detergen-1/.hyperframes/artifacts/checks/88b5aca1-3e0e-4dcb-a36b-e3f2fe44e25e.json",
+          "metadata": {
+            "ok": false,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 45000,
+              "cache": true,
+              "contrast": true,
+              "craft": true,
+              "strict": false,
+              "snapshots": false,
+              "safeZones": [
+                "tiktok",
+                "reels",
+                "shorts"
+              ],
+              "browserGpuMode": "auto",
+              "includeUnmounted": false
+            }
+          },
+          "createdAt": 1795498799630,
+          "contentHash": "1cc1ff4053b56fb58c2d1be04385ba9af9f8df7108ca52447b7a96f2485c1765",
+          "revision": "870e3b73-485e-41bb-9d48-f78f2b5f5d10",
+          "inputFingerprint": "df04a12966e9e8cdf0ea5c1f3a7191a434f2cd134b13a736900ddba6c82c9afd",
           "inputScope": "local-project-files",
           "attribution": "recorded-revision"
         }
@@ -198,15 +259,14 @@
   },
   "snapshots": {
     "latest": {
-      "revision": "02c49215-687c-43bf-99b0-f6e3f6142040",
-      "id": "b252e9f1-e6af-4aa0-ab31-4475e2bd239a-2"
+      "revision": null,
+      "id": "992d4e04-15e1-4185-b0da-0fa8bcb67ce2-0"
     },
     "revisions": {
       "02c49215-687c-43bf-99b0-f6e3f6142040": [
         {
           "scope": "full",
           "id": "b252e9f1-e6af-4aa0-ab31-4475e2bd239a-0",
-          "image": "/home/user/nazir1/detergen-1/.hyperframes/artifacts/snapshots/d36282f3-e86a-4984-8d44-c8b51c5e22fc/frame-00-at-17.2s.png",
           "time": 17.2,
           "metadata": {
             "width": 1080,
@@ -221,12 +281,13 @@
           "revision": "02c49215-687c-43bf-99b0-f6e3f6142040",
           "inputFingerprint": "bb1b8251059e1b88da71b371be6bb616d3d3134df4e951d72592f384b4086c91",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "9f532947-e99c-4e2f-a0a4-a3d8521d5398"
         },
         {
           "scope": "full",
           "id": "b252e9f1-e6af-4aa0-ab31-4475e2bd239a-1",
-          "image": "/home/user/nazir1/detergen-1/.hyperframes/artifacts/snapshots/d36282f3-e86a-4984-8d44-c8b51c5e22fc/frame-01-at-22.5s.png",
           "time": 22.5,
           "metadata": {
             "width": 1080,
@@ -241,12 +302,13 @@
           "revision": "02c49215-687c-43bf-99b0-f6e3f6142040",
           "inputFingerprint": "bb1b8251059e1b88da71b371be6bb616d3d3134df4e951d72592f384b4086c91",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "9f532947-e99c-4e2f-a0a4-a3d8521d5398"
         },
         {
           "scope": "full",
           "id": "b252e9f1-e6af-4aa0-ab31-4475e2bd239a-2",
-          "image": "/home/user/nazir1/detergen-1/.hyperframes/artifacts/snapshots/d36282f3-e86a-4984-8d44-c8b51c5e22fc/frame-02-at-23.583s.png",
           "time": 23.583,
           "metadata": {
             "width": 1080,
@@ -261,7 +323,9 @@
           "revision": "02c49215-687c-43bf-99b0-f6e3f6142040",
           "inputFingerprint": "bb1b8251059e1b88da71b371be6bb616d3d3134df4e951d72592f384b4086c91",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "9f532947-e99c-4e2f-a0a4-a3d8521d5398"
         }
       ]
     },
@@ -450,13 +514,15 @@
   },
   "renders": {
     "latest": {
-      "id": "e1d8fc11-6727-4926-956a-d7c4d5ad9285",
-      "completedAt": 1795498494614,
+      "id": "9f532947-e99c-4e2f-a0a4-a3d8521d5398",
+      "completedAt": 1795498936262,
       "output": "/home/user/nazir1/detergen-1/renders/detergen-1.mp4",
       "status": "completed",
-      "revision": null
+      "revision": "870e3b73-485e-41bb-9d48-f78f2b5f5d10"
     },
-    "retainedRevisions": []
+    "retainedRevisions": [
+      "870e3b73-485e-41bb-9d48-f78f2b5f5d10"
+    ]
   },
   "pendingArtifactCleanup": []
 }

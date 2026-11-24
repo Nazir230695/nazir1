@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""OKCMENG 5.2 kg laundry detergent — one raw clip split into two short videos, reference style (rezeki.nazir header,
+"""AOKEMENG 5.2 kg laundry detergent — one raw clip split into two short videos, reference style (rezeki.nazir header,
 white label chips, phrase captions, calm pacing), bright HD grade baked into raw_a.mp4, ending on 'Tekan link sekarang'.
 Usage: python3 -I build.py <transcript.json> <project_dir> <1|2>
 """
@@ -372,7 +372,7 @@ build_scene("outro", [
 
 # ---- creator / product header, on screen the whole video (like the reference)
 HEAD_L = ("REZEKI.NAZIR", "TRUSTED AFFILIATE")
-HEAD_R = ("OKCMENG", "DETERGEN DOBI 5.2KG")
+HEAD_R = ("AOKEMENG", "DETERGEN DOBI 5.2KG")
 hdr = (f'<div id="hd-l" style="position:absolute;left:84px;top:252px;display:flex;align-items:stretch;gap:16px">'
        f'<div style="width:7px;border-radius:4px;background:linear-gradient(180deg,#f3dfb1,#c9a25e 55%,#8f6a32)"></div>'
        f'<div class="hdt">{HEAD_L[0]}<br/>{HEAD_L[1]}</div></div>'

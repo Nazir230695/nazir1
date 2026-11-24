@@ -1,7 +1,7 @@
 {
   "version": 1,
   "historyId": "b55d2234-42a3-42b6-af30-fd97581bfeea",
-  "currentRevision": "965eefcf-d523-4767-be3e-4b8542904637",
+  "currentRevision": "fa5f7629-7147-4876-afcf-764622e8d92e",
   "pendingChanges": false,
   "files": {
     "AGENTS.md": {
@@ -57,8 +57,8 @@
       "content": "/root/.cache/hyperframes/history/b55d2234-42a3-42b6-af30-fd97581bfeea/blobs/c2/c2efd9d902a59bf9ec5019035d7deadd17762136896b6e3cb6dd99ea50997a30"
     },
     "compositions/brand.html": {
-      "hash": "2ca2dcbcecdffd16c5fe37cc995fd395f1080ab929ba5f23a8e61489b39507f8",
-      "content": "/root/.cache/hyperframes/history/b55d2234-42a3-42b6-af30-fd97581bfeea/blobs/2c/2ca2dcbcecdffd16c5fe37cc995fd395f1080ab929ba5f23a8e61489b39507f8"
+      "hash": "5d275e38fbddaa7f7fb5764ac12d642a76bca8cc9fb6cfdbf74872efc60db316",
+      "content": "/root/.cache/hyperframes/history/b55d2234-42a3-42b6-af30-fd97581bfeea/blobs/5d/5d275e38fbddaa7f7fb5764ac12d642a76bca8cc9fb6cfdbf74872efc60db316"
     },
     "compositions/captions.html": {
       "hash": "8be97613113779718c31568c604c8f0dc82eb83952bfb2b852923b38a84deae1",
@@ -131,12 +131,27 @@
           "after": "/root/.cache/hyperframes/history/b55d2234-42a3-42b6-af30-fd97581bfeea/blobs/35/35d59809e2e647ef7827a49cf4419b7eb27caf05b6a3dcd93b972cfad511c5e0"
         }
       }
+    },
+    "fa5f7629-7147-4876-afcf-764622e8d92e": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1795498938159,
+      "endedAt": 1795498938161,
+      "files": {
+        "compositions/brand.html": {
+          "before": "/root/.cache/hyperframes/history/b55d2234-42a3-42b6-af30-fd97581bfeea/blobs/2c/2ca2dcbcecdffd16c5fe37cc995fd395f1080ab929ba5f23a8e61489b39507f8",
+          "after": "/root/.cache/hyperframes/history/b55d2234-42a3-42b6-af30-fd97581bfeea/blobs/5d/5d275e38fbddaa7f7fb5764ac12d642a76bca8cc9fb6cfdbf74872efc60db316"
+        }
+      }
     }
   },
   "checks": {
     "latest": {
-      "revision": null,
-      "id": "9f0ba965-30b2-4c91-9e53-519db56b97a5"
+      "revision": "fa5f7629-7147-4876-afcf-764622e8d92e",
+      "id": "4d96110f-6d6f-45fb-a34b-33d6362049e9"
     },
     "revisions": {
       "d80b1e50-3879-44cb-a311-b965ecc73397": [
@@ -175,6 +190,43 @@
           "attribution": "recorded-revision",
           "status": "cleaned",
           "cleanedAfterRender": "c84cfad6-edcf-4c62-8e3d-015bacdabcf5"
+        }
+      ],
+      "fa5f7629-7147-4876-afcf-764622e8d92e": [
+        {
+          "id": "4d96110f-6d6f-45fb-a34b-33d6362049e9",
+          "scope": "project",
+          "report": "/home/user/nazir1/detergen-2/.hyperframes/artifacts/checks/4d96110f-6d6f-45fb-a34b-33d6362049e9.json",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 45000,
+              "cache": true,
+              "contrast": true,
+              "craft": true,
+              "strict": false,
+              "snapshots": false,
+              "safeZones": [
+                "tiktok",
+                "reels",
+                "shorts"
+              ],
+              "browserGpuMode": "auto",
+              "includeUnmounted": false
+            }
+          },
+          "createdAt": 1795498948260,
+          "contentHash": "30983e618a8c1654ac138a8f938daaec8aad35c231856910c9245fb107b2ef8f",
+          "revision": "fa5f7629-7147-4876-afcf-764622e8d92e",
+          "inputFingerprint": "7868d9b86941759785ab6de327ea41cb91493e82bf3063001f618a6966d5b450",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
         }
       ]
     },
@@ -407,13 +459,14 @@
   },
   "renders": {
     "latest": {
-      "id": "c84cfad6-edcf-4c62-8e3d-015bacdabcf5",
-      "completedAt": 1795498657417,
+      "id": "b9881e5f-9a17-485d-bc95-5258a200dcf0",
+      "completedAt": 1795499108852,
       "output": "/home/user/nazir1/detergen-2/renders/detergen-2.mp4",
       "status": "completed",
-      "revision": "965eefcf-d523-4767-be3e-4b8542904637"
+      "revision": "fa5f7629-7147-4876-afcf-764622e8d92e"
     },
     "retainedRevisions": [
+      "fa5f7629-7147-4876-afcf-764622e8d92e",
       "965eefcf-d523-4767-be3e-4b8542904637"
     ]
   },
