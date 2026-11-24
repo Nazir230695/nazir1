@@ -447,5 +447,16 @@
         "attribution": "unversioned"
       }
     ]
-  }
+  },
+  "renders": {
+    "latest": {
+      "id": "e1d8fc11-6727-4926-956a-d7c4d5ad9285",
+      "completedAt": 1795498494614,
+      "output": "/home/user/nazir1/detergen-1/renders/detergen-1.mp4",
+      "status": "completed",
+      "revision": null
+    },
+    "retainedRevisions": []
+  },
+  "pendingArtifactCleanup": []
 }
