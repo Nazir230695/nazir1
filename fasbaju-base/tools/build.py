@@ -336,23 +336,27 @@ def photo_insert(cid, src, start, dur, w=880):
     return body, js
 
 
-def newpack(cid, sid, t0, t1):
+def bigzoom(cid, img, origin, tag, t0, t1, zoom=1.65):
     """'dulu botol, sekarang pack' image as a big centre card: footage dims, card eases in, then it zooms onto the new pouch"""
     w = 880
     t1 = max(t1, t0 + 3.0)
     body = clip(cid, t0, t1 - t0,
                 f'<div id="{cid}bg" style="position:absolute;inset:0;background:rgba(8,9,12,.74)"></div>'
                 f'<div id="{cid}c" style="position:absolute;left:{(960 - w) // 2 + 60}px;top:330px;width:{w}px;height:{w}px;border-radius:30px;overflow:hidden;background:#fff;box-shadow:0 30px 80px rgba(0,0,0,.6)">'
-                f'<img id="{cid}i" src="assets/img/newpack.jpg" alt="" style="display:block;width:{w}px;height:{w}px;object-fit:cover;transform-origin:76% 52%"/></div>'
+                f'<img id="{cid}i" src="assets/img/{img}" alt="" style="display:block;width:{w}px;height:{w}px;object-fit:cover;transform-origin:{origin}"/></div>'
                 f'<div id="{cid}t" style="position:absolute;left:0;width:1080px;top:{330 + w - 36}px;text-align:center">'
-                f'<span style="display:inline-block;padding:14px 34px;border-radius:999px;background:#fe2c55;color:#fff;font-family:var(--font-ui);font-weight:900;font-size:44px;letter-spacing:.04em;box-shadow:0 12px 30px rgba(0,0,0,.4)">SEKARANG PACK BARU</span></div>',
+                f'<span style="display:inline-block;padding:14px 34px;border-radius:999px;background:#fe2c55;color:#fff;font-family:var(--font-ui);font-weight:900;font-size:44px;letter-spacing:.04em;box-shadow:0 12px 30px rgba(0,0,0,.4)">{tag}</span></div>',
                 style="position:absolute; inset:0", extra=" data-layout-allow-overflow")
     js = "\n".join([f'    tl.fromTo("#{cid}bg", {{ opacity: 0 }}, {{ opacity: 1, duration: 0.35, ease: "power2.out" }}, {fr(t0)});',
                     f'    tl.fromTo("#{cid}c", {{ opacity: 0, y: 40, scale: 0.92 }}, {{ opacity: 1, y: 0, scale: 1, duration: 0.55, ease: "power3.out" }}, {fr(t0 + 0.05)});',
-                    f'    tl.fromTo("#{cid}i", {{ scale: 1 }}, {{ scale: 1.65, duration: 1.1, ease: "power2.inOut", immediateRender: false }}, {fr(t0 + 1.0)});',
+                    f'    tl.fromTo("#{cid}i", {{ scale: 1 }}, {{ scale: {zoom}, duration: 1.1, ease: "power2.inOut", immediateRender: false }}, {fr(t0 + 1.0)});',
                     f'    tl.fromTo("#{cid}t", {{ opacity: 0, scale: 0.6 }}, {{ opacity: 1, scale: 1, duration: 0.45, ease: "back.out(1.8)" }}, {fr(t0 + 1.6)});',
                     f'    tl.to("#{cid}", {{ opacity: 0, duration: 0.3, ease: "power2.in" }}, {fr(t1 - 0.32)});'])
     return body, js
+
+
+def newpack(cid, sid, t0, t1):
+    return bigzoom(cid, "newpack.jpg", "76% 52%", "SEKARANG PACK BARU", t0, t1)
 
 
 def opt(ids, f):
@@ -394,12 +398,13 @@ PARTS = {
         C("c-pindah", "Tak perlu pindah ke botol", "drop", "a2", W("a2", 16.71), W("a2", 21.55)),
         C("c-guna", "Buka, guna, tutup balik", "star", "a2", W("a2", 21.55)),
         C("c-cara", "Ada cara guna", "star", "a3", st("a3") + 0.2, W("a3", 32.19)),
-        IMG("i-bau", "assets/img/hero.jpg", "a3", W("a3", 32.19), W("a3", 33.97), w=340),
+        bigzoom("p-wangi", "hero.jpg", "70% 55%", "WANGI TAHAN 120 JAM", W("a3", 32.19) - 0.3, W("a3", 33.97) + 0.4),
         C("c-bau", "Wangi tahan 120 jam", "heart", "a3", W("a3", 32.19), W("a3", 33.97)),
         C("c-stok", "Stok cepat habis", "tag", "a3", W("a3", 33.97)),
     ],
     "2": lambda: [
-        newpack("p-new", "b1", st("b1") + 0.2, W("b1", 10.42)),
+        bigzoom("p-putih", "putih.jpg", "80% 35%", "BAJU PUTIH LEBIH CERAH", W("b2", 16.26), W("b2", 19.18)),
+        newpack("p-new", "b1", W("b1", 5.92), W("b1", 10.42)),
         C("c-botol", "Dulu botol, kini pack", "star", "b1", st("b1") + 0.2, W("b1", 8.62)),
         C("c-tutup", "Siap ada penutup", "star", "b1", W("b1", 8.62), W("b1", 10.42)),
         C("c-guna", "Buka &amp; tutup je", "star", "b1", W("b1", 10.42), W("b1", 14.32)),
@@ -410,6 +415,7 @@ PARTS = {
         C("c-2kg", "2kg", "drop", "b2", W("b2", 24.86)),
     ],
     "3": lambda: [
+        bigzoom("p-wangi", "hero.jpg", "70% 55%", "WANGI TAHAN 120 JAM", W("c2", 17.28), W("c2", 20.68)),
         newpack("p-new", "c1", W("c1", 5.78), W("c1", 9.64)),
         C("c-baru", "Jenama baru, Fasclean", "star", "c1", st("c1") + 0.1, W("c1", 5.78)),
         C("c-pack", "Dulu botol merah, kini pack", "star", "c1", W("c1", 5.78), W("c1", 9.64)),
@@ -420,6 +426,7 @@ PARTS = {
         C("c-cepat", "Beli cepat sebelum habis", "tag", "c3", W("c3", 24.98)),
     ],
     "4": lambda: [
+        bigzoom("p-bau", "bau.jpg", "50% 50%", "HILANGKAN BAU", W("d1", 12.68), W("d2", 17.18), zoom=1.25),
         newpack("p-new", "d1", W("d1", 4.3), W("d1", 7.52)),
         C("c-wangi", "Wangi tahan 120 jam", "heart", "d1", st("d1"), W("d1", 4.3)),
         C("c-pack", "Dulu botol, kini pack", "star", "d1", W("d1", 4.3), W("d1", 7.52)),
