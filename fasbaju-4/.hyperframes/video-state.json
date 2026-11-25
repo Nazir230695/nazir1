@@ -186,7 +186,6 @@
         {
           "id": "57f61845-e233-4823-a20c-b2427f284c7d",
           "scope": "project",
-          "report": "/home/user/nazir1/fasbaju-4/.hyperframes/artifacts/checks/57f61845-e233-4823-a20c-b2427f284c7d.json",
           "metadata": {
             "ok": false,
             "browserSkipped": false,
@@ -216,14 +215,15 @@
           "revision": "31c998e2-b416-4ad7-b809-e41f307ed59a",
           "inputFingerprint": "743ea4cc7f283d5f9f5d9f3a68989c72d6b2ac3d5fd5386921733a1f75fba6fc",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "7b06c5d3-e15c-4cbe-b7ce-fa243e3d77f4"
         }
       ],
       "125f1c2a-89b4-457a-b2f7-ed8a4933f2d6": [
         {
           "id": "d6b16cb9-b6ea-4695-982f-fd8ea64c543e",
           "scope": "project",
-          "report": "/home/user/nazir1/fasbaju-4/.hyperframes/artifacts/checks/d6b16cb9-b6ea-4695-982f-fd8ea64c543e.json",
           "metadata": {
             "ok": false,
             "browserSkipped": false,
@@ -253,7 +253,9 @@
           "revision": "125f1c2a-89b4-457a-b2f7-ed8a4933f2d6",
           "inputFingerprint": "90a4eae013e4923d6dd5a7ad45a9b6881be9f9c73046012a2fb55d55f6dd02e8",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "7b06c5d3-e15c-4cbe-b7ce-fa243e3d77f4"
         }
       ],
       "bc23165f-22d8-4a95-bf13-1f92d9fb37e3": [
@@ -733,5 +735,18 @@
         "attribution": "unversioned"
       }
     ]
-  }
+  },
+  "renders": {
+    "latest": {
+      "id": "7b06c5d3-e15c-4cbe-b7ce-fa243e3d77f4",
+      "completedAt": 1795594908058,
+      "output": "/home/user/nazir1/fasbaju-4/renders/fasbaju-4.mp4",
+      "status": "completed",
+      "revision": "bc23165f-22d8-4a95-bf13-1f92d9fb37e3"
+    },
+    "retainedRevisions": [
+      "bc23165f-22d8-4a95-bf13-1f92d9fb37e3"
+    ]
+  },
+  "pendingArtifactCleanup": []
 }

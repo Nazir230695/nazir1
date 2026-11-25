@@ -186,7 +186,6 @@
         {
           "id": "e2166cc8-e07a-4a5e-9ec8-63f455fe4f7d",
           "scope": "project",
-          "report": "/home/user/nazir1/fasbaju-1/.hyperframes/artifacts/checks/e2166cc8-e07a-4a5e-9ec8-63f455fe4f7d.json",
           "metadata": {
             "ok": true,
             "browserSkipped": false,
@@ -216,14 +215,15 @@
           "revision": "48658f63-75e2-499c-9ba2-f9cb63511e3a",
           "inputFingerprint": "61b18f97afff190565cbe40a3443e8b578aa149669658125e29ba73af9210f52",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "4a437120-58f3-42ef-ba13-31c541df9304"
         }
       ],
       "78f318de-3a94-471a-b464-db70871c58cb": [
         {
           "id": "49a68664-2e20-4ef0-b496-87f2c87bc158",
           "scope": "project",
-          "report": "/home/user/nazir1/fasbaju-1/.hyperframes/artifacts/checks/49a68664-2e20-4ef0-b496-87f2c87bc158.json",
           "metadata": {
             "ok": true,
             "browserSkipped": false,
@@ -253,7 +253,9 @@
           "revision": "78f318de-3a94-471a-b464-db70871c58cb",
           "inputFingerprint": "dca13b6aec1d1ef3bad00f1a7c4ec703477bcaf02bb02d0648a444fc9ba357cc",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "4a437120-58f3-42ef-ba13-31c541df9304"
         }
       ],
       "abcb9247-3f97-43ca-8422-eeee26262bc9": [
@@ -663,5 +665,18 @@
         "attribution": "unversioned"
       }
     ]
-  }
+  },
+  "renders": {
+    "latest": {
+      "id": "4a437120-58f3-42ef-ba13-31c541df9304",
+      "completedAt": 1795594498847,
+      "output": "/home/user/nazir1/fasbaju-1/renders/fasbaju-1.mp4",
+      "status": "completed",
+      "revision": "abcb9247-3f97-43ca-8422-eeee26262bc9"
+    },
+    "retainedRevisions": [
+      "abcb9247-3f97-43ca-8422-eeee26262bc9"
+    ]
+  },
+  "pendingArtifactCleanup": []
 }
