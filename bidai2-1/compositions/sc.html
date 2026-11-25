@@ -1,0 +1,75 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; pointer-events: none; 
+      --ink: #ffffff;
+      --dark: #0d0e10;
+      --neon: #ff8a1f;
+      --glass: rgba(16, 17, 20, 0.80);
+      --stroke: rgba(255,255,255,.14);
+      --font-ui: "Montserrat", sans-serif;
+ }
+    .chip { position: absolute; left: 0; width: 960px; text-align: center; }
+    .chip > span { display: inline-flex; align-items: center; gap: 14px; }
+    .chip .lb { background: #fff; color: #111; font-family: var(--font-ui); font-weight: 600; font-size: 40px; letter-spacing: .01em;
+      padding: 8px 18px; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,.35); white-space: nowrap; text-transform: uppercase; }
+    .chip .ic { width: 70px; height: 70px; border-radius: 50%; background: var(--dark); border: 2.5px solid rgba(255,255,255,.9);
+      display: inline-flex; align-items: center; justify-content: center; box-shadow: 0 10px 30px rgba(0,0,0,.4); }
+    .chip .ic svg { width: 38px; height: 38px; }
+    .glass { position: absolute; background: var(--glass); border: 1.5px solid var(--stroke); border-radius: 30px;
+      box-shadow: 0 24px 60px rgba(0,0,0,.5); backdrop-filter: blur(18px); color: #fff; font-family: var(--font-ui); }
+    .head { position: absolute; left: 0; width: 960px; text-align: center; font-family: var(--font-ui); font-weight: 800; color: #fff;
+      font-size: 62px; line-height: 1.1; text-shadow: 0 0 4px rgba(0,0,0,.9), 0 3px 8px rgba(0,0,0,.75), 0 10px 34px rgba(0,0,0,.75); }
+    .head > div { display: inline-block; padding: 14px 30px; border-radius: 26px; background: rgba(10,11,13,.42); }
+    .head em { font-style: normal; color: var(--neon); }
+    .pilltag { display: inline-flex; align-items: center; gap: 10px; padding: 10px 26px 10px 16px; border-radius: 12px; background: rgba(255,255,255,.95);
+      color: #111; font-family: var(--font-ui); font-weight: 700; font-size: 34px; box-shadow: 0 10px 28px rgba(0,0,0,.35); white-space: nowrap; }
+
+  </style>
+  <div id="root" data-composition-id="sc" data-width="1080" data-height="1920">
+    <div id="hl" class=" clip" data-start="0.0" data-duration="4.9" data-track-index="0" style="position:absolute; left:0; width:960px; top:440px; text-align:center"><div id="hl-t" style="font-family:var(--font-ui);font-weight:900;font-size:76px;line-height:1.08;letter-spacing:.14em;color:#ffe45c;-webkit-text-stroke:3px #1a1406;paint-order:stroke fill;text-shadow:0 4px 0 rgba(0,0,0,.6),0 8px 26px rgba(0,0,0,.7)">TAK PAYAH BASUH<br>LANGSIR!</div></div>
+    <div id="p-shop" class=" clip" data-start="26.8333" data-duration="5.2667" data-track-index="0" style="position:absolute; inset:0" data-layout-allow-overflow><div id="p-shopbg" style="position:absolute;inset:0;background:rgba(8,9,12,.74)"></div><div id="p-shopc" style="position:absolute;left:100px;top:330px;width:880px;height:880px;border-radius:30px;overflow:hidden;background:#fff;box-shadow:0 30px 80px rgba(0,0,0,.6)"><img id="p-shopi" src="assets/img/review.jpg" alt="" style="display:block;width:880px;height:880px;object-fit:cover;transform-origin:50% 30%"/></div><div id="p-shopt" style="position:absolute;left:0;width:1080px;top:1174px;text-align:center"><span style="display:inline-block;padding:14px 34px;border-radius:999px;background:#fe2c55;color:#fff;font-family:var(--font-ui);font-weight:900;font-size:44px;letter-spacing:.04em;box-shadow:0 12px 30px rgba(0,0,0,.4)">8.6K REVIEW · 4.8 BINTANG</span></div></div>
+    <div id="c-2juta" class="chip clip" data-start="26.8333" data-duration="4.9667" data-track-index="0" style="top:1330px"><span><span id="c-2jutac" class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12V4h8l10 10-8 8z"/><circle cx="7.5" cy="8.5" r="1.4" fill="#fff"/></svg></span><span id="c-2jutab" class="lb">Kedai dah terjual 2 juta</span></span></div>
+    <div id="c-lawa" class="chip clip" data-start="4.6" data-duration="2.7667" data-track-index="0" style="top:1330px"><span><span id="c-lawac" class="ic"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg></span><span id="c-lawab" class="lb">Auto lawa</span></span></div>
+    <div id="c-cahaya" class="chip clip" data-start="9.0" data-duration="6.1667" data-track-index="0" style="top:1330px"><span><span id="c-cahayac" class="ic"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg></span><span id="c-cahayab" class="lb">Pusing je, dapat cahaya</span></span></div>
+    <div id="c-luar" class="chip clip" data-start="15.1667" data-duration="1.6" data-track-index="0" style="top:1330px"><span><span id="c-luarc" class="ic"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg></span><span id="c-luarb" class="lb">Boleh tengok luar</span></span></div>
+    <div id="c-malam" class="chip clip" data-start="16.8667" data-duration="2.0667" data-track-index="0" style="top:1330px"><span><span id="c-malamc" class="ic"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg></span><span id="c-malamb" class="lb">Malam? Tutup</span></span></div>
+    <div id="c-50" class="chip clip" data-start="18.9333" data-duration="3.8" data-track-index="0" style="top:1330px"><span><span id="c-50c" class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12a8 8 0 1 1-2.3-5.7"/><path d="M20 4v4h-4"/></svg></span><span id="c-50b" class="lb">Buka 50%, tarik tali je</span></span></div>
+    <div id="c-wp" class="chip clip" data-start="22.9333" data-duration="3.1" data-track-index="0" style="top:1330px"><span><span id="c-wpc" class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z"/></svg></span><span id="c-wpb" class="lb">Waterproof</span></span></div>
+    <div id="c-puas" class="chip clip" data-start="31.8" data-duration="1.8333" data-track-index="0" style="top:1330px"><span><span id="c-puasc" class="ic"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 20.5s-7.5-4.6-7.5-10A4.3 4.3 0 0 1 12 7.6a4.3 4.3 0 0 1 7.5 2.9c0 5.4-7.5 10-7.5 10z"/></svg></span><span id="c-puasb" class="lb">Kedai memang puas hati</span></span></div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#hl-t", { opacity: 0, scaleX: 1.6, scaleY: 1.15 }, { opacity: 1, scaleX: 1, scaleY: 1, duration: 0.55, ease: "expo.out" }, 0.05);
+    tl.to("#hl", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 4.5333);
+    tl.fromTo("#p-shopbg", { opacity: 0 }, { opacity: 1, duration: 0.35, ease: "power2.out" }, 26.8333);
+    tl.fromTo("#p-shopc", { opacity: 0, y: 40, scale: 0.92 }, { opacity: 1, y: 0, scale: 1, duration: 0.55, ease: "power3.out" }, 26.8667);
+    tl.fromTo("#p-shopi", { scale: 1 }, { scale: 1.35, duration: 1.1, ease: "power2.inOut", immediateRender: false }, 27.8333);
+    tl.fromTo("#p-shopt", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.45, ease: "back.out(1.8)" }, 28.4333);
+    tl.to("#p-shop", { opacity: 0, duration: 0.3, ease: "power2.in" }, 31.7667);
+    tl.fromTo("#c-2jutac", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.5, ease: "power3.out" }, 26.8333);
+    tl.fromTo("#c-2jutab", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.55, ease: "power3.out" }, 26.9);
+    tl.to("#c-2juta", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 31.4333);
+    tl.fromTo("#c-lawac", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.5, ease: "power3.out" }, 4.6);
+    tl.fromTo("#c-lawab", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.55, ease: "power3.out" }, 4.6667);
+    tl.to("#c-lawa", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 7.0);
+    tl.fromTo("#c-cahayac", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.5, ease: "power3.out" }, 9.0);
+    tl.fromTo("#c-cahayab", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.55, ease: "power3.out" }, 9.0667);
+    tl.to("#c-cahaya", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 14.8);
+    tl.fromTo("#c-luarc", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.5, ease: "power3.out" }, 15.1667);
+    tl.fromTo("#c-luarb", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.55, ease: "power3.out" }, 15.2333);
+    tl.to("#c-luar", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 16.4);
+    tl.fromTo("#c-malamc", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.5, ease: "power3.out" }, 16.8667);
+    tl.fromTo("#c-malamb", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.55, ease: "power3.out" }, 16.9333);
+    tl.to("#c-malam", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 18.5667);
+    tl.fromTo("#c-50c", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.5, ease: "power3.out" }, 18.9333);
+    tl.fromTo("#c-50b", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.55, ease: "power3.out" }, 19.0);
+    tl.to("#c-50", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 22.3667);
+    tl.fromTo("#c-wpc", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.5, ease: "power3.out" }, 22.9333);
+    tl.fromTo("#c-wpb", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.55, ease: "power3.out" }, 23.0);
+    tl.to("#c-wp", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 25.6667);
+    tl.fromTo("#c-puasc", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.5, ease: "power3.out" }, 31.8);
+    tl.fromTo("#c-puasb", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.55, ease: "power3.out" }, 31.8667);
+    tl.to("#c-puas", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 33.2667);
+    window.__timelines["sc"] = tl;
+  </script>
+</template>

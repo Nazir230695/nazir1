@@ -1,0 +1,69 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; pointer-events: none; 
+      --ink: #ffffff;
+      --dark: #0d0e10;
+      --neon: #ff8a1f;
+      --glass: rgba(16, 17, 20, 0.80);
+      --stroke: rgba(255,255,255,.14);
+      --font-ui: "Montserrat", sans-serif;
+ }
+    .chip { position: absolute; left: 0; width: 960px; text-align: center; }
+    .chip > span { display: inline-flex; align-items: center; gap: 14px; }
+    .chip .lb { background: #fff; color: #111; font-family: var(--font-ui); font-weight: 600; font-size: 40px; letter-spacing: .01em;
+      padding: 8px 18px; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,.35); white-space: nowrap; text-transform: uppercase; }
+    .chip .ic { width: 70px; height: 70px; border-radius: 50%; background: var(--dark); border: 2.5px solid rgba(255,255,255,.9);
+      display: inline-flex; align-items: center; justify-content: center; box-shadow: 0 10px 30px rgba(0,0,0,.4); }
+    .chip .ic svg { width: 38px; height: 38px; }
+    .glass { position: absolute; background: var(--glass); border: 1.5px solid var(--stroke); border-radius: 30px;
+      box-shadow: 0 24px 60px rgba(0,0,0,.5); backdrop-filter: blur(18px); color: #fff; font-family: var(--font-ui); }
+    .head { position: absolute; left: 0; width: 960px; text-align: center; font-family: var(--font-ui); font-weight: 800; color: #fff;
+      font-size: 62px; line-height: 1.1; text-shadow: 0 0 4px rgba(0,0,0,.9), 0 3px 8px rgba(0,0,0,.75), 0 10px 34px rgba(0,0,0,.75); }
+    .head > div { display: inline-block; padding: 14px 30px; border-radius: 26px; background: rgba(10,11,13,.42); }
+    .head em { font-style: normal; color: var(--neon); }
+    .pilltag { display: inline-flex; align-items: center; gap: 10px; padding: 10px 26px 10px 16px; border-radius: 12px; background: rgba(255,255,255,.95);
+      color: #111; font-family: var(--font-ui); font-weight: 700; font-size: 34px; box-shadow: 0 10px 28px rgba(0,0,0,.35); white-space: nowrap; }
+
+  </style>
+  <div id="root" data-composition-id="sc" data-width="1080" data-height="1920">
+    <div id="hl" class=" clip" data-start="0.0" data-duration="3.7" data-track-index="0" style="position:absolute; left:0; width:960px; top:440px; text-align:center"><div id="hl-t" style="font-family:var(--font-ui);font-weight:900;font-size:76px;line-height:1.08;letter-spacing:.14em;color:#ffe45c;-webkit-text-stroke:3px #1a1406;paint-order:stroke fill;text-shadow:0 4px 0 rgba(0,0,0,.6),0 8px 26px rgba(0,0,0,.7)">KENA HUJAN?<br>WATERPROOF!</div></div>
+    <div id="p-warna" class=" clip" data-start="23.0" data-duration="3.0" data-track-index="0" style="position:absolute; inset:0" data-layout-allow-overflow><div id="p-warnabg" style="position:absolute;inset:0;background:rgba(8,9,12,.74)"></div><div id="p-warnac" style="position:absolute;left:100px;top:330px;width:880px;height:880px;border-radius:30px;overflow:hidden;background:#fff;box-shadow:0 30px 80px rgba(0,0,0,.6)"><img id="p-warnai" src="assets/img/colours.jpg" alt="" style="display:block;width:880px;height:880px;object-fit:cover;transform-origin:50% 55%"/></div><div id="p-warnat" style="position:absolute;left:0;width:1080px;top:1174px;text-align:center"><span style="display:inline-block;padding:14px 34px;border-radius:999px;background:#fe2c55;color:#fff;font-family:var(--font-ui);font-weight:900;font-size:44px;letter-spacing:.04em;box-shadow:0 12px 30px rgba(0,0,0,.4)">MACAM-MACAM WARNA</span></div></div>
+    <div id="p-ruang" class=" clip" data-start="27.0667" data-duration="3.9" data-track-index="0" style="position:absolute; inset:0" data-layout-allow-overflow><div id="p-ruangbg" style="position:absolute;inset:0;background:rgba(8,9,12,.74)"></div><div id="p-ruangc" style="position:absolute;left:100px;top:330px;width:880px;height:880px;border-radius:30px;overflow:hidden;background:#fff;box-shadow:0 30px 80px rgba(0,0,0,.6)"><img id="p-ruangi" src="assets/img/rooms.jpg" alt="" style="display:block;width:880px;height:880px;object-fit:cover;transform-origin:50% 50%"/></div><div id="p-ruangt" style="position:absolute;left:0;width:1080px;top:1174px;text-align:center"><span style="display:inline-block;padding:14px 34px;border-radius:999px;background:#fe2c55;color:#fff;font-family:var(--font-ui);font-weight:900;font-size:44px;letter-spacing:.04em;box-shadow:0 12px 30px rgba(0,0,0,.4)">SESUAI SEMUA RUANG</span></div></div>
+    <div id="c-atas" class="chip clip" data-start="4.4" data-duration="6.6333" data-track-index="0" style="top:1330px"><span><span id="c-atasc" class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12a8 8 0 1 1-2.3-5.7"/><path d="M20 4v4h-4"/></svg></span><span id="c-atasb" class="lb">Buka ke atas pun boleh</span></span></div>
+    <div id="c-bawah" class="chip clip" data-start="11.0333" data-duration="2.5667" data-track-index="0" style="top:1330px"><span><span id="c-bawahc" class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12a8 8 0 1 1-2.3-5.7"/><path d="M20 4v4h-4"/></svg></span><span id="c-bawahb" class="lb">Atau turun ke bawah</span></span></div>
+    <div id="c-cun" class="chip clip" data-start="16.3667" data-duration="3.2667" data-track-index="0" style="top:1330px"><span><span id="c-cunc" class="ic"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg></span><span id="c-cunb" class="lb">Bentuk cun &amp; elok</span></span></div>
+    <div id="c-cantik" class="chip clip" data-start="19.7333" data-duration="3.2667" data-track-index="0" style="top:1330px"><span><span id="c-cantikc" class="ic"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 20.5s-7.5-4.6-7.5-10A4.3 4.3 0 0 1 12 7.6a4.3 4.3 0 0 1 7.5 2.9c0 5.4-7.5 10-7.5 10z"/></svg></span><span id="c-cantikb" class="lb">Memang cantik</span></span></div>
+    <div id="c-best" class="chip clip" data-start="30.6667" data-duration="0.9667" data-track-index="0" style="top:1330px"><span><span id="c-bestc" class="ic"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg></span><span id="c-bestb" class="lb">Kualiti cantik, terbaik</span></span></div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#hl-t", { opacity: 0, scaleX: 1.6, scaleY: 1.15 }, { opacity: 1, scaleX: 1, scaleY: 1, duration: 0.55, ease: "expo.out" }, 0.05);
+    tl.to("#hl", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 3.3333);
+    tl.fromTo("#p-warnabg", { opacity: 0 }, { opacity: 1, duration: 0.35, ease: "power2.out" }, 23.0);
+    tl.fromTo("#p-warnac", { opacity: 0, y: 40, scale: 0.92 }, { opacity: 1, y: 0, scale: 1, duration: 0.55, ease: "power3.out" }, 23.0667);
+    tl.fromTo("#p-warnai", { scale: 1 }, { scale: 1.3, duration: 1.1, ease: "power2.inOut", immediateRender: false }, 24.0);
+    tl.fromTo("#p-warnat", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.45, ease: "back.out(1.8)" }, 24.6);
+    tl.to("#p-warna", { opacity: 0, duration: 0.3, ease: "power2.in" }, 25.6667);
+    tl.fromTo("#p-ruangbg", { opacity: 0 }, { opacity: 1, duration: 0.35, ease: "power2.out" }, 27.0667);
+    tl.fromTo("#p-ruangc", { opacity: 0, y: 40, scale: 0.92 }, { opacity: 1, y: 0, scale: 1, duration: 0.55, ease: "power3.out" }, 27.1333);
+    tl.fromTo("#p-ruangi", { scale: 1 }, { scale: 1.2, duration: 1.1, ease: "power2.inOut", immediateRender: false }, 28.0667);
+    tl.fromTo("#p-ruangt", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.45, ease: "back.out(1.8)" }, 28.6667);
+    tl.to("#p-ruang", { opacity: 0, duration: 0.3, ease: "power2.in" }, 30.6333);
+    tl.fromTo("#c-atasc", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.5, ease: "power3.out" }, 4.4);
+    tl.fromTo("#c-atasb", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.55, ease: "power3.out" }, 4.4667);
+    tl.to("#c-atas", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 10.6667);
+    tl.fromTo("#c-bawahc", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.5, ease: "power3.out" }, 11.0333);
+    tl.fromTo("#c-bawahb", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.55, ease: "power3.out" }, 11.1);
+    tl.to("#c-bawah", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 13.2333);
+    tl.fromTo("#c-cunc", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.5, ease: "power3.out" }, 16.3667);
+    tl.fromTo("#c-cunb", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.55, ease: "power3.out" }, 16.4333);
+    tl.to("#c-cun", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 19.2667);
+    tl.fromTo("#c-cantikc", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.5, ease: "power3.out" }, 19.7333);
+    tl.fromTo("#c-cantikb", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.55, ease: "power3.out" }, 19.8);
+    tl.to("#c-cantik", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 22.6333);
+    tl.fromTo("#c-bestc", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.5, ease: "power3.out" }, 30.6667);
+    tl.fromTo("#c-bestb", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.55, ease: "power3.out" }, 30.7333);
+    tl.to("#c-best", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 31.2667);
+    window.__timelines["sc"] = tl;
+  </script>
+</template>
