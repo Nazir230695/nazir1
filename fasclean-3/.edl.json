@@ -1,5 +1,5 @@
 {
- "total": 27.1333,
+ "total": 24.4,
  "segs": [
   {
    "id": "m0",
@@ -49,23 +49,12 @@
    "id": "cta",
    "src": "e",
    "src_in": 28.8333,
-   "src_out": 31.1,
+   "src_out": 30.5667,
    "start": 22.6667,
-   "dur": 2.2664999999999997,
+   "dur": 1.7332,
    "vol": 1.0,
    "zone": "low",
    "kind": "talk"
-  },
-  {
-   "id": "tail",
-   "src": "h",
-   "src_in": 17.2,
-   "src_out": 19.4,
-   "start": 24.9334,
-   "dur": 2.1999,
-   "vol": 0.0,
-   "zone": "low",
-   "kind": "broll"
   }
  ],
  "phrases": [
@@ -94,7 +83,6 @@
   "Barang dia",
   "memang terbaik.",
   "Nak beli mana",
-  "tekan link sekarang",
-  "sebelum habis stop"
+  "tekan link sekarang"
  ]
 }

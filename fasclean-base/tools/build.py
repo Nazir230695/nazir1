@@ -23,8 +23,8 @@ def wat(src, t):
 VARIANT = sys.argv[3] if len(sys.argv) > 3 else "1"
 # HOOK: (voice_src, voice_in, voice_out, headline, [(src, src_in), ...] montage shots, split evenly over the voice line)
 # BODY: (id, src, src_in, src_out, volume, zone)
-CTA = [("cta", "e", 28.82, 31.10, 1.0, "low")]
-TAIL = [("tail", "h", 17.20, 19.40, 0.0, "low")]
+CTA = [("cta", "e", 28.82, 30.58, 1.0, "low")]   # "nak beli mana, tekan link sekarang" then the video ends
+TAIL = []
 HOOKS = {
     "1": ("e", 0.15, 6.10, "KAKAK-KAKAK,<br>STOP PENING!", [("e", 0.6), ("h", 0.5), ("f", 12.5), ("h", 17.0), ("d", 0.2), ("a", 3.0)]),
     "2": ("h", 0.00, 4.55, "PINGGAN<br>BERMINYAK?", [("h", 0.2), ("i", 2.0), ("h", 6.5), ("h", 12.0), ("h", 17.5)]),
@@ -35,7 +35,7 @@ VARIANTS = {
     "1": [("e1", "e", 6.10, 15.30, 1.0, "low"), ("e2", "e", 15.40, 28.82, 1.0, "low")] + CTA + TAIL,
     "2": [("h1", "h", 10.70, 16.10, 1.0, "low"), ("i1", "i", 1.80, 6.70, 1.0, "low"),
           ("c1", "c", 8.35, 13.65, 1.0, "low"), ("c2", "c", 22.85, 27.40, 1.0, "low"),
-          ("cta", "c", 27.42, 31.90, 1.0, "low"), ("tail", "h", 17.20, 19.40, 0.0, "low")],
+          ("cta", "c", 27.42, 29.43, 1.0, "low")],
     "3": [("d1", "d", 3.50, 13.30, 1.0, "low"), ("a1", "a", 18.45, 21.95, 1.0, "low"),
           ("d2", "d", 23.80, 29.80, 1.0, "low")] + CTA + TAIL,
     "4": [("g1", "g", 3.05, 10.45, 1.0, "low"), ("f1", "f", 15.75, 19.95, 1.0, "low"),
@@ -423,8 +423,8 @@ shop = (f'<div style="display:flex;align-items:center;gap:20px;padding:18px 20px
 cta = ('<div style="display:inline-flex;align-items:center;gap:12px;padding:16px 36px;border-radius:999px;background:#fe2c55;color:#fff;font-family:var(--font-ui);font-weight:900;font-size:44px;white-space:nowrap;box-shadow:0 14px 36px rgba(0,0,0,.45)">'
        '<svg viewBox="0 0 24 24" width="40" height="40" style="flex:none" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v15"/><path d="M5.5 12.5L12 19l6.5-6.5"/></svg>'
        'Tekan link sekarang</div>')
-SHOP0 = st("cta") + 0.05
-CTA0 = st("cta") + 0.6
+SHOP0 = st("cta") - 1.0   # the CTA line is short now, so the shop card comes in a beat earlier
+CTA0 = st("cta") - 0.6
 build_scene("outro", [
     (clip("ot-shop", SHOP0, TOTAL - SHOP0, shop, cls="glass", style="left:110px; top:1040px; width:740px"),
      "\n".join([f'    tl.fromTo("#ot-shop", {{ opacity: 0, y: 30 }}, {{ opacity: 1, y: 0, duration: 0.55, ease: "power3.out" }}, {SHOP0});',

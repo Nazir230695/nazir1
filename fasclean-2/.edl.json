@@ -1,5 +1,5 @@
 {
- "total": 31.3667,
+ "total": 26.7,
  "segs": [
   {
    "id": "m0",
@@ -60,23 +60,12 @@
    "id": "cta",
    "src": "c",
    "src_in": 27.4333,
-   "src_out": 31.9,
+   "src_out": 29.4333,
    "start": 24.7,
-   "dur": 4.4665,
+   "dur": 1.9999,
    "vol": 1.0,
    "zone": "low",
    "kind": "talk"
-  },
-  {
-   "id": "tail",
-   "src": "h",
-   "src_in": 17.2,
-   "src_out": 19.4,
-   "start": 29.1667,
-   "dur": 2.1999,
-   "vol": 0.0,
-   "zone": "low",
-   "kind": "broll"
   }
  ],
  "phrases": [
@@ -105,9 +94,6 @@
   "Memang guna tak",
   "apa was-was.",
   "Terbaik nak dapat",
-  "mana tekan link",
-  "sebelum habis stock",
-  "Jenama ni cepat",
-  "habis stock Padu"
+  "mana tekan link"
  ]
 }
