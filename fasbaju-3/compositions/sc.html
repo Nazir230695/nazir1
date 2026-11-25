@@ -27,8 +27,8 @@
   </style>
   <div id="root" data-composition-id="sc" data-width="1080" data-height="1920">
     <div id="hl" class=" clip" data-start="0.0" data-duration="3.4333" data-track-index="0" style="position:absolute; left:0; width:960px; top:440px; text-align:center"><div id="hl-t" style="font-family:var(--font-ui);font-weight:900;font-size:76px;line-height:1.08;letter-spacing:.14em;color:#ffe45c;-webkit-text-stroke:3px #1a1406;paint-order:stroke fill;text-shadow:0 4px 0 rgba(0,0,0,.6),0 8px 26px rgba(0,0,0,.7)">KAKAK-KAKAK,<br>BAIK BELI!</div></div>
+    <div id="p-new" class=" clip" data-start="5.7" data-duration="3.8667" data-track-index="0" style="position:absolute; inset:0" data-layout-allow-overflow><div id="p-newbg" style="position:absolute;inset:0;background:rgba(8,9,12,.74)"></div><div id="p-newc" style="position:absolute;left:100px;top:330px;width:880px;height:880px;border-radius:30px;overflow:hidden;background:#fff;box-shadow:0 30px 80px rgba(0,0,0,.6)"><img id="p-newi" src="assets/img/newpack.jpg" alt="" style="display:block;width:880px;height:880px;object-fit:cover;transform-origin:76% 52%"/></div><div id="p-newt" style="position:absolute;left:0;width:1080px;top:1174px;text-align:center"><span style="display:inline-block;padding:14px 34px;border-radius:999px;background:#fe2c55;color:#fff;font-family:var(--font-ui);font-weight:900;font-size:44px;letter-spacing:.04em;box-shadow:0 12px 30px rgba(0,0,0,.4)">SEKARANG PACK BARU</span></div></div>
     <div id="c-baru" class="chip clip" data-start="3.1" data-duration="2.6" data-track-index="0" style="top:1330px"><span><span id="c-baruc" class="ic"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg></span><span id="c-barub" class="lb">Jenama baru, Fasclean</span></span></div>
-    <div id="i-new" class=" clip" data-start="5.7" data-duration="3.8667" data-track-index="0" style="position:absolute; left:50px; top:420px; width:340px"><div style="border-radius:22px;overflow:hidden;border:3px solid rgba(255,255,255,.9);box-shadow:0 24px 60px rgba(0,0,0,.5)"><img src="assets/img/newpack.jpg" alt="" style="display:block;width:340px"/></div></div>
     <div id="c-pack" class="chip clip" data-start="5.7" data-duration="3.8667" data-track-index="0" style="top:1330px"><span><span id="c-packc" class="ic"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg></span><span id="c-packb" class="lb">Dulu botol merah, kini pack</span></span></div>
     <div id="c-tutup" class="chip clip" data-start="11.1667" data-duration="4.1333" data-track-index="0" style="top:1330px"><span><span id="c-tutupc" class="ic"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg></span><span id="c-tutupb" class="lb">Ada penutup, boleh tutup balik</span></span></div>
     <div id="c-pegang" class="chip clip" data-start="15.3" data-duration="1.5" data-track-index="0" style="top:1330px"><span><span id="c-pegangc" class="ic"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg></span><span id="c-pegangb" class="lb">Ada tempat pegang</span></span></div>
@@ -40,11 +40,14 @@
     const tl = gsap.timeline({ paused: true });
     tl.fromTo("#hl-t", { opacity: 0, scaleX: 1.6, scaleY: 1.15 }, { opacity: 1, scaleX: 1, scaleY: 1, duration: 0.55, ease: "expo.out" }, 0.05);
     tl.to("#hl", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 3.0667);
+    tl.fromTo("#p-newbg", { opacity: 0 }, { opacity: 1, duration: 0.35, ease: "power2.out" }, 5.7);
+    tl.fromTo("#p-newc", { opacity: 0, y: 40, scale: 0.92 }, { opacity: 1, y: 0, scale: 1, duration: 0.55, ease: "power3.out" }, 5.7333);
+    tl.fromTo("#p-newi", { scale: 1 }, { scale: 1.65, duration: 1.1, ease: "power2.inOut", immediateRender: false }, 6.7);
+    tl.fromTo("#p-newt", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.45, ease: "back.out(1.8)" }, 7.3);
+    tl.to("#p-new", { opacity: 0, duration: 0.3, ease: "power2.in" }, 9.2333);
     tl.fromTo("#c-baruc", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.5, ease: "power3.out" }, 3.1);
     tl.fromTo("#c-barub", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.55, ease: "power3.out" }, 3.1667);
     tl.to("#c-baru", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 5.3333);
-    tl.fromTo("#i-new", { opacity: 0, y: 30, scale: 0.94 }, { opacity: 1, y: 0, scale: 1, duration: 0.6, ease: "power3.out" }, 5.7);
-    tl.to("#i-new", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 9.2);
     tl.fromTo("#c-packc", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.5, ease: "power3.out" }, 5.7);
     tl.fromTo("#c-packb", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.55, ease: "power3.out" }, 5.7667);
     tl.to("#c-pack", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 9.2);

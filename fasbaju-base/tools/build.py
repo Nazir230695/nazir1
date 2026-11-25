@@ -336,6 +336,25 @@ def photo_insert(cid, src, start, dur, w=880):
     return body, js
 
 
+def newpack(cid, sid, t0, t1):
+    """'dulu botol, sekarang pack' image as a big centre card: footage dims, card eases in, then it zooms onto the new pouch"""
+    w = 880
+    t1 = max(t1, t0 + 3.0)
+    body = clip(cid, t0, t1 - t0,
+                f'<div id="{cid}bg" style="position:absolute;inset:0;background:rgba(8,9,12,.74)"></div>'
+                f'<div id="{cid}c" style="position:absolute;left:{(960 - w) // 2 + 60}px;top:330px;width:{w}px;height:{w}px;border-radius:30px;overflow:hidden;background:#fff;box-shadow:0 30px 80px rgba(0,0,0,.6)">'
+                f'<img id="{cid}i" src="assets/img/newpack.jpg" alt="" style="display:block;width:{w}px;height:{w}px;object-fit:cover;transform-origin:76% 52%"/></div>'
+                f'<div id="{cid}t" style="position:absolute;left:0;width:1080px;top:{330 + w - 36}px;text-align:center">'
+                f'<span style="display:inline-block;padding:14px 34px;border-radius:999px;background:#fe2c55;color:#fff;font-family:var(--font-ui);font-weight:900;font-size:44px;letter-spacing:.04em;box-shadow:0 12px 30px rgba(0,0,0,.4)">SEKARANG PACK BARU</span></div>',
+                style="position:absolute; inset:0", extra=" data-layout-allow-overflow")
+    js = "\n".join([f'    tl.fromTo("#{cid}bg", {{ opacity: 0 }}, {{ opacity: 1, duration: 0.35, ease: "power2.out" }}, {fr(t0)});',
+                    f'    tl.fromTo("#{cid}c", {{ opacity: 0, y: 40, scale: 0.92 }}, {{ opacity: 1, y: 0, scale: 1, duration: 0.55, ease: "power3.out" }}, {fr(t0 + 0.05)});',
+                    f'    tl.fromTo("#{cid}i", {{ scale: 1 }}, {{ scale: 1.65, duration: 1.1, ease: "power2.inOut", immediateRender: false }}, {fr(t0 + 1.0)});',
+                    f'    tl.fromTo("#{cid}t", {{ opacity: 0, scale: 0.6 }}, {{ opacity: 1, scale: 1, duration: 0.45, ease: "back.out(1.8)" }}, {fr(t0 + 1.6)});',
+                    f'    tl.to("#{cid}", {{ opacity: 0, duration: 0.3, ease: "power2.in" }}, {fr(t1 - 0.32)});'])
+    return body, js
+
+
 def opt(ids, f):
     return f() if all(i in SEG for i in ids) else None
 
@@ -368,9 +387,9 @@ def flashes():
 
 PARTS = {
     "1": lambda: [
+        newpack("p-new", "a2", st("a2") + 0.2, W("a2", 16.71)),
         C("c-mudah", "Memang mudah", "star", "a1", st("a1") + 0.2, W("a1", 7.25)),
         C("c-viral", "Ramai dah kenal, viral", "heart", "a1", W("a1", 7.25)),
-        IMG("i-new", "assets/img/newpack.jpg", "a2", st("a2") + 0.2, W("a2", 16.71), w=340),
         C("c-tutup", "Pack baru ada penutup", "star", "a2", st("a2") + 0.2, W("a2", 16.71)),
         C("c-pindah", "Tak perlu pindah ke botol", "drop", "a2", W("a2", 16.71), W("a2", 21.55)),
         C("c-guna", "Buka, guna, tutup balik", "star", "a2", W("a2", 21.55)),
@@ -380,8 +399,8 @@ PARTS = {
         C("c-stok", "Stok cepat habis", "tag", "a3", W("a3", 33.97)),
     ],
     "2": lambda: [
+        newpack("p-new", "b1", st("b1") + 0.2, W("b1", 10.42)),
         C("c-botol", "Dulu botol, kini pack", "star", "b1", st("b1") + 0.2, W("b1", 8.62)),
-        IMG("i-new", "assets/img/newpack.jpg", "b1", st("b1") + 0.2, W("b1", 10.42), w=340),
         C("c-tutup", "Siap ada penutup", "star", "b1", W("b1", 8.62), W("b1", 10.42)),
         C("c-guna", "Buka &amp; tutup je", "star", "b1", W("b1", 10.42), W("b1", 14.32)),
         C("c-pegang", "Ada tempat pegang", "star", "b1", W("b1", 14.32)),
@@ -391,8 +410,8 @@ PARTS = {
         C("c-2kg", "2kg", "drop", "b2", W("b2", 24.86)),
     ],
     "3": lambda: [
+        newpack("p-new", "c1", W("c1", 5.78), W("c1", 9.64)),
         C("c-baru", "Jenama baru, Fasclean", "star", "c1", st("c1") + 0.1, W("c1", 5.78)),
-        IMG("i-new", "assets/img/newpack.jpg", "c1", W("c1", 5.78), W("c1", 9.64), w=340),
         C("c-pack", "Dulu botol merah, kini pack", "star", "c1", W("c1", 5.78), W("c1", 9.64)),
         C("c-tutup", "Ada penutup, boleh tutup balik", "star", "c1", W("c1", 11.24), W("c1", 15.36)),
         C("c-pegang", "Ada tempat pegang", "star", "c1", W("c1", 15.36)),
@@ -401,8 +420,8 @@ PARTS = {
         C("c-cepat", "Beli cepat sebelum habis", "tag", "c3", W("c3", 24.98)),
     ],
     "4": lambda: [
+        newpack("p-new", "d1", W("d1", 4.3), W("d1", 7.52)),
         C("c-wangi", "Wangi tahan 120 jam", "heart", "d1", st("d1"), W("d1", 4.3)),
-        IMG("i-new", "assets/img/newpack.jpg", "d1", W("d1", 4.3), W("d1", 7.52), w=340),
         C("c-pack", "Dulu botol, kini pack", "star", "d1", W("d1", 4.3), W("d1", 7.52)),
         C("c-tutup", "Siap ada penutup", "star", "d1", W("d1", 7.52), W("d1", 12.68)),
         C("c-pegang", "Tempat pegang, 2kg", "star", "d1", W("d1", 12.68)),
