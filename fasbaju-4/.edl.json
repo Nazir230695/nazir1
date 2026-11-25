@@ -1,0 +1,74 @@
+{
+ "total": 21.6333,
+ "segs": [
+  {
+   "id": "m0",
+   "src": "d",
+   "src_in": 0.0,
+   "src_out": 3.5333,
+   "start": 0.0,
+   "dur": 3.5332,
+   "vol": 1.0,
+   "zone": "low",
+   "kind": "talk"
+  },
+  {
+   "id": "d1",
+   "src": "d",
+   "src_in": 3.5333,
+   "src_out": 16.0,
+   "start": 3.5334,
+   "dur": 12.4665,
+   "vol": 1.0,
+   "zone": "low",
+   "kind": "talk"
+  },
+  {
+   "id": "d2",
+   "src": "d",
+   "src_in": 16.0,
+   "src_out": 18.9333,
+   "start": 16.0,
+   "dur": 2.9332,
+   "vol": 1.0,
+   "zone": "low",
+   "kind": "talk"
+  },
+  {
+   "id": "cta",
+   "src": "a",
+   "src_in": 36.0,
+   "src_out": 38.7,
+   "start": 18.9334,
+   "dur": 2.6999,
+   "vol": 1.0,
+   "zone": "low",
+   "kind": "talk"
+  }
+ ],
+ "phrases": [
+  "viral, viral,",
+  "viral memang wangi,",
+  "memang padu ni",
+  "Fasclean sebelum ni",
+  "dalam botol ni",
+  "dia main dengan",
+  "pack baru macam",
+  "ni memang lawa,",
+  "siap ada penutup",
+  "tau penutup ni",
+  "kita boleh buka,",
+  "guna dan boleh",
+  "tutup balik,",
+  "ada tempat",
+  "pegang dia,",
+  "yang ni 2kg",
+  "yang saya pegang",
+  "ni stock",
+  "cepat habis baik",
+  "beli sekarang sebelum",
+  "habis stock,",
+  "kalau berkenan,",
+  "tekan link bawah"
+ ]
+}

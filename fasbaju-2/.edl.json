@@ -1,0 +1,81 @@
+{
+ "total": 29.4,
+ "segs": [
+  {
+   "id": "m0",
+   "src": "b",
+   "src_in": 0.0,
+   "src_out": 2.9333,
+   "start": 0.0,
+   "dur": 2.9332,
+   "vol": 1.0,
+   "zone": "low",
+   "kind": "talk"
+  },
+  {
+   "id": "b1",
+   "src": "b",
+   "src_in": 3.1333,
+   "src_out": 16.0667,
+   "start": 2.9334,
+   "dur": 12.9332,
+   "vol": 1.0,
+   "zone": "low",
+   "kind": "talk"
+  },
+  {
+   "id": "b2",
+   "src": "b",
+   "src_in": 16.1333,
+   "src_out": 25.9667,
+   "start": 15.8667,
+   "dur": 9.8332,
+   "vol": 1.0,
+   "zone": "low",
+   "kind": "talk"
+  },
+  {
+   "id": "cta",
+   "src": "b",
+   "src_in": 26.1,
+   "src_out": 29.8,
+   "start": 25.7,
+   "dur": 3.6999,
+   "vol": 1.0,
+   "zone": "low",
+   "kind": "talk"
+  }
+ ],
+ "phrases": [
+  "Kakak-kakak tengok ni,",
+  "dia main dengan",
+  "pack baru.",
+  "Sebelum ni kakak-kakak",
+  "tengok saya buat",
+  "review dalam botol",
+  "tapi ni dia",
+  "main dengan pack",
+  "baru siap ada",
+  "penutup ni tau.",
+  "Kau hanya perlu",
+  "buka dan tutup",
+  "je bila",
+  "dah diguna.",
+  "Dengan ada tempat",
+  "pegang je ni.",
+  "Memang memang terbaik,",
+  "ni memang viral",
+  "lah itu.",
+  "Stok cepat habis,",
+  "dia main pula",
+  "dengan baru.",
+  "Yang penting ada",
+  "halal lah kakak-kakak.",
+  "ada halal.",
+  "2kg lah",
+  "depan saya.",
+  "Kalau kakak-kakak tengok",
+  "video saya ni,",
+  "boleh tekan link,"
+ ]
+}
