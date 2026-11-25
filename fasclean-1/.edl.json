@@ -1,78 +1,23 @@
 {
- "total": 33.0333,
+ "total": 33.0667,
  "segs": [
   {
    "id": "m0",
    "src": "e",
-   "src_in": 0.6,
-   "src_out": 1.6,
+   "src_in": 0.1333,
+   "src_out": 6.1,
    "start": 0.0,
-   "dur": 0.9999,
-   "vol": 0.0,
+   "dur": 5.9665,
+   "vol": 1.0,
    "zone": "low",
-   "kind": "mute"
-  },
-  {
-   "id": "m1",
-   "src": "h",
-   "src_in": 0.5,
-   "src_out": 1.4667,
-   "start": 1.0,
-   "dur": 0.9665,
-   "vol": 0.0,
-   "zone": "low",
-   "kind": "mute"
-  },
-  {
-   "id": "m2",
-   "src": "f",
-   "src_in": 12.5,
-   "src_out": 13.5,
-   "start": 1.9667,
-   "dur": 0.9999,
-   "vol": 0.0,
-   "zone": "low",
-   "kind": "mute"
-  },
-  {
-   "id": "m3",
-   "src": "h",
-   "src_in": 17.0,
-   "src_out": 18.0,
-   "start": 2.9667,
-   "dur": 0.9999,
-   "vol": 0.0,
-   "zone": "low",
-   "kind": "mute"
-  },
-  {
-   "id": "m4",
-   "src": "d",
-   "src_in": 0.2,
-   "src_out": 1.1667,
-   "start": 3.9667,
-   "dur": 0.9665,
-   "vol": 0.0,
-   "zone": "low",
-   "kind": "mute"
-  },
-  {
-   "id": "m5",
-   "src": "a",
-   "src_in": 3.0,
-   "src_out": 4.0,
-   "start": 4.9334,
-   "dur": 0.9999,
-   "vol": 0.0,
-   "zone": "low",
-   "kind": "mute"
+   "kind": "talk"
   },
   {
    "id": "e1",
    "src": "e",
    "src_in": 6.1,
    "src_out": 15.3,
-   "start": 5.9334,
+   "start": 5.9667,
    "dur": 9.1999,
    "vol": 1.0,
    "zone": "low",
@@ -83,7 +28,7 @@
    "src": "e",
    "src_in": 15.4,
    "src_out": 28.8333,
-   "start": 15.1334,
+   "start": 15.1667,
    "dur": 13.4332,
    "vol": 1.0,
    "zone": "low",
@@ -94,7 +39,7 @@
    "src": "e",
    "src_in": 28.8333,
    "src_out": 31.1,
-   "start": 28.5667,
+   "start": 28.6,
    "dur": 2.2664999999999997,
    "vol": 1.0,
    "zone": "low",
@@ -105,25 +50,20 @@
    "src": "h",
    "src_in": 17.2,
    "src_out": 19.4,
-   "start": 30.8334,
+   "start": 30.8667,
    "dur": 2.1999,
    "vol": 0.0,
    "zone": "low",
    "kind": "broll"
-  },
-  {
-   "id": "hv",
-   "src": "e",
-   "src_in": 0.1333,
-   "src_out": 6.0667,
-   "start": 0.0,
-   "dur": 5.933233333333334,
-   "vol": 1.0,
-   "zone": "low",
-   "kind": "voice"
   }
  ],
  "phrases": [
+  "Kakak-kakak,",
+  "sebelum ni kalau",
+  "pening sabun",
+  "habis cepat,",
+  "ni,",
+  "ni solusi dia.",
   "Pasal apa?",
   "Sabun ni boleh",
   "basuh juga botol",
@@ -153,12 +93,6 @@
   "dah viral",
   "Nak beli mana",
   "tekan link sekarang",
-  "sebelum habis stop",
-  "Kakak-kakak,",
-  "sebelum ni kalau",
-  "pening sabun",
-  "habis cepat,",
-  "ni,",
-  "ni solusi dia."
+  "sebelum habis stop"
  ]
 }

@@ -25,11 +25,7 @@
     <div id="root" data-composition-id="main" data-start="0" data-duration="31.3667" data-width="1080" data-height="1920">
       <!-- Footage: kept takes from raw_a..raw_e.mp4. Trim in Studio by dragging clip edges. -->
       <div id="cam">
-        <video id="m0" class="clip seg" src="assets/raw_h.mp4" data-start="0.0" data-duration="0.8999" data-media-start="0.2" data-track-index="1" muted playsinline></video>
-        <video id="m1" class="clip seg" src="assets/raw_i.mp4" data-start="0.9" data-duration="0.8999" data-media-start="2.0" data-track-index="1" muted playsinline></video>
-        <video id="m2" class="clip seg" src="assets/raw_h.mp4" data-start="1.8" data-duration="0.9332" data-media-start="6.5" data-track-index="1" muted playsinline></video>
-        <video id="m3" class="clip seg" src="assets/raw_h.mp4" data-start="2.7334" data-duration="0.8999" data-media-start="12.0" data-track-index="1" muted playsinline></video>
-        <video id="m4" class="clip seg" src="assets/raw_h.mp4" data-start="3.6334" data-duration="0.8999" data-media-start="17.5" data-track-index="1" muted playsinline></video>
+        <video id="m0" class="clip seg" src="assets/raw_h.mp4" data-start="0.0" data-duration="4.5332" data-media-start="0.0" data-track-index="1" data-has-audio="true" data-volume="1.0" data-fade-in="0.06" data-fade-out="0.1" playsinline></video>
         <video id="h1" class="clip seg" src="assets/raw_h.mp4" data-start="4.5334" data-duration="5.399900000000001" data-media-start="10.7" data-track-index="1" data-has-audio="true" data-volume="1.0" data-fade-in="0.06" data-fade-out="0.1" playsinline></video>
         <video id="i1" class="clip seg" src="assets/raw_i.mp4" data-start="9.9334" data-duration="4.899900000000001" data-media-start="1.8" data-track-index="1" data-has-audio="true" data-volume="1.0" data-fade-in="0.06" data-fade-out="0.1" playsinline></video>
         <video id="c1" class="clip seg" src="assets/raw_c.mp4" data-start="14.8334" data-duration="5.333200000000001" data-media-start="8.3333" data-track-index="1" data-has-audio="true" data-volume="1.0" data-fade-in="0.06" data-fade-out="0.1" playsinline></video>
@@ -41,12 +37,8 @@
       <div id="outro" data-composition-id="outro" data-composition-src="compositions/outro.html" data-start="0" data-duration="31.3667" data-track-index="7" data-track-kind="graphics" data-width="1080" data-height="1920" style="z-index:12"></div>
       <div id="captions" data-composition-id="captions" data-composition-src="compositions/captions.html" data-start="0" data-duration="31.3667" data-track-index="8" data-track-kind="captions" data-width="1080" data-height="1920" style="z-index:13"></div>
       <div id="brand" data-composition-id="brand" data-composition-src="compositions/brand.html" data-start="0" data-duration="31.3667" data-track-index="9" data-track-kind="graphics" data-width="1080" data-height="1920" style="z-index:14"></div>
-      <audio id="hv" class="clip" src="assets/raw_h.mp4" data-start="0" data-duration="4.5332333333333334" data-media-start="0.0" data-track-index="19" data-volume="1" data-fade-out="0.08"></audio>
+
       <audio id="sx-hk" class="clip" src="assets/sfx/whoosh.mp3" data-start="0" data-duration="0.5667" data-track-index="20" data-volume="0.3"></audio>
-      <audio id="sx-m1" class="clip" src="assets/sfx/whoosh-short.mp3" data-start="0.9" data-duration="0.5667" data-track-index="20" data-volume="0.22"></audio>
-      <audio id="sx-m2" class="clip" src="assets/sfx/whoosh-short.mp3" data-start="1.8" data-duration="0.5667" data-track-index="20" data-volume="0.22"></audio>
-      <audio id="sx-m3" class="clip" src="assets/sfx/whoosh-short.mp3" data-start="2.7333" data-duration="0.5667" data-track-index="20" data-volume="0.22"></audio>
-      <audio id="sx-m4" class="clip" src="assets/sfx/whoosh-short.mp3" data-start="3.6333" data-duration="0.5667" data-track-index="20" data-volume="0.22"></audio>
       <audio id="sx-c-mudah" class="clip" src="assets/sfx/pop.mp3" data-start="4.7667" data-duration="0.7333" data-track-index="20" data-volume="0.2"></audio>
       <audio id="sx-c-hilang" class="clip" src="assets/sfx/pop.mp3" data-start="8.3333" data-duration="0.7333" data-track-index="20" data-volume="0.2"></audio>
       <audio id="sx-c-plastik" class="clip" src="assets/sfx/pop.mp3" data-start="10.1333" data-duration="0.7333" data-track-index="20" data-volume="0.2"></audio>
@@ -58,6 +50,7 @@
     </div>
     <script>
       const tl = gsap.timeline({ paused: true });
+      tl.fromTo("#cam", { scale: 1.0 }, { scale: 1.035, duration: 4.5333, ease: "none", immediateRender: false }, 0.0);
       tl.fromTo("#cam", { scale: 1.0 }, { scale: 1.035, duration: 5.4, ease: "none", immediateRender: false }, 4.5334);
       tl.fromTo("#cam", { scale: 1.0 }, { scale: 1.035, duration: 4.9, ease: "none", immediateRender: false }, 9.9334);
       tl.fromTo("#cam", { scale: 1.0 }, { scale: 1.035, duration: 5.3333, ease: "none", immediateRender: false }, 14.8334);
@@ -65,10 +58,6 @@
       tl.fromTo("#cam", { scale: 1.0 }, { scale: 1.035, duration: 4.4667, ease: "none", immediateRender: false }, 24.7);
       tl.fromTo("#cam", { scale: 1.0 }, { scale: 1.035, duration: 2.2, ease: "none", immediateRender: false }, 29.1667);
       tl.fromTo("#cam", { rotation: -100, scale: 1.6 }, { rotation: 0, scale: 1.08, duration: 0.5, ease: "expo.out", immediateRender: false }, 0);
-      tl.fromTo("#cam", { scale: 1.22, rotation: -4 }, { scale: 1.06, rotation: 0, duration: 0.3, ease: "power3.out", immediateRender: false }, 0.9);
-      tl.fromTo("#cam", { scale: 1.22, rotation: 4 }, { scale: 1.06, rotation: 0, duration: 0.3, ease: "power3.out", immediateRender: false }, 1.8);
-      tl.fromTo("#cam", { scale: 1.22, rotation: -4 }, { scale: 1.06, rotation: 0, duration: 0.3, ease: "power3.out", immediateRender: false }, 2.7333);
-      tl.fromTo("#cam", { scale: 1.22, rotation: 4 }, { scale: 1.06, rotation: 0, duration: 0.3, ease: "power3.out", immediateRender: false }, 3.6333);
       tl.to({}, { duration: 31.3667 }, 0);
       window.__timelines["main"] = tl;
     </script>

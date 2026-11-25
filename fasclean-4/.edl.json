@@ -4,57 +4,13 @@
   {
    "id": "m0",
    "src": "f",
-   "src_in": 14.0,
-   "src_out": 15.0,
+   "src_in": 21.0,
+   "src_out": 25.9333,
    "start": 0.0,
-   "dur": 0.9999,
-   "vol": 0.0,
+   "dur": 4.9332,
+   "vol": 1.0,
    "zone": "low",
-   "kind": "mute"
-  },
-  {
-   "id": "m1",
-   "src": "g",
-   "src_in": 0.4,
-   "src_out": 1.3667,
-   "start": 1.0,
-   "dur": 0.9665,
-   "vol": 0.0,
-   "zone": "low",
-   "kind": "mute"
-  },
-  {
-   "id": "m2",
-   "src": "f",
-   "src_in": 17.5,
-   "src_out": 18.5,
-   "start": 1.9667,
-   "dur": 0.9999,
-   "vol": 0.0,
-   "zone": "low",
-   "kind": "mute"
-  },
-  {
-   "id": "m3",
-   "src": "g",
-   "src_in": 3.5,
-   "src_out": 4.4667,
-   "start": 2.9667,
-   "dur": 0.9665,
-   "vol": 0.0,
-   "zone": "low",
-   "kind": "mute"
-  },
-  {
-   "id": "m4",
-   "src": "f",
-   "src_in": 24.5,
-   "src_out": 25.5,
-   "start": 3.9334,
-   "dur": 0.9999,
-   "vol": 0.0,
-   "zone": "low",
-   "kind": "mute"
+   "kind": "talk"
   },
   {
    "id": "g1",
@@ -121,20 +77,16 @@
    "vol": 0.0,
    "zone": "low",
    "kind": "broll"
-  },
-  {
-   "id": "hv",
-   "src": "f",
-   "src_in": 21.0,
-   "src_out": 25.9333,
-   "start": 0.0,
-   "dur": 4.933233333333334,
-   "vol": 1.0,
-   "zone": "low",
-   "kind": "voice"
   }
  ],
  "phrases": [
+  "Dia tak",
+  "melekit tau.",
+  "Dia tak tinggal",
+  "kesan kat",
+  "tangan kita.",
+  "Basuh sikit",
+  "dah hilang.",
   "Lepas tu yang",
   "best dia lagi,",
   "collagen hand",
@@ -162,13 +114,6 @@
   "apa was-was.",
   "Nak beli mana",
   "tekan link sekarang",
-  "sebelum habis stop",
-  "Dia tak",
-  "melekit tau.",
-  "Dia tak tinggal",
-  "kesan kat",
-  "tangan kita.",
-  "Basuh sikit",
-  "dah hilang."
+  "sebelum habis stop"
  ]
 }

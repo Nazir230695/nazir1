@@ -41,7 +41,8 @@ VARIANTS = {
     "4": [("g1", "g", 3.05, 10.45, 1.0, "low"), ("f1", "f", 15.75, 19.95, 1.0, "low"),
           ("a1", "a", 0.00, 4.95, 1.0, "low"), ("c1", "c", 22.85, 27.40, 1.0, "low")] + CTA + TAIL,
 }
-HV_SRC, HV_IN, HV_OUT, HEADLINE, SHOTS = HOOKS[VARIANT]
+HV_SRC, HV_IN, HV_OUT, HEADLINE, _MONTAGE = HOOKS[VARIANT]
+SHOTS = [(HV_SRC, HV_IN)]   # one continuous shot (the montage list is kept above for reference only)
 n_shots = len(SHOTS)
 hook_frames = round((HV_OUT - HV_IN) * FPS)
 EDL = []
@@ -49,7 +50,7 @@ acc = 0
 for k, (src, t0) in enumerate(SHOTS):
     nfr = round(hook_frames * (k + 1) / n_shots) - acc
     acc += nfr
-    EDL.append((f"m{k}", src, t0, t0 + nfr / FPS, 0.0, "low"))
+    EDL.append((f"m{k}", src, t0, t0 + nfr / FPS, 1.0, "low"))
 EDL += VARIANTS[VARIANT]
 segs, f = [], 0
 for sid, src, a, b, vol, zone in EDL:
@@ -62,10 +63,7 @@ for sg in segs:
     sg["dur"] = math.floor(sg["dur"] * 10000 + 1e-6) / 10000 - 0.0001
 TOTAL = round(f / FPS, 4)
 for sg in segs:
-    sg["kind"] = "mute" if sg["id"].startswith("m") else ("broll" if sg["vol"] == 0 else "talk")
-# the hook voice: audio-only segment laid under the montage
-segs.append(dict(id="hv", src=HV_SRC, src_in=round(round(HV_IN * FPS) / FPS, 4), src_out=round(round(HV_IN * FPS) / FPS + hook_frames / FPS, 4),
-                 start=0.0, dur=hook_frames / FPS - 0.0001, vol=1.0, zone="low", kind="voice"))
+    sg["kind"] = "broll" if sg["vol"] == 0 else "talk"
 HOOK_END = fr(hook_frames / FPS)
 SEG = {s["id"]: s for s in segs}
 
@@ -414,7 +412,7 @@ PARTS = {
         C("c-halal", "Halal, tak was-was", "star", "c1", W("c1", 23.84)),
     ],
 }
-build_scene("sc", [hook_headline(), flashes()] + PARTS[V]())
+build_scene("sc", [hook_headline()] + PARTS[V]())
 
 
 shop = (f'<div style="display:flex;align-items:center;gap:20px;padding:18px 20px">'
@@ -461,9 +459,7 @@ videos = [f'        <video id="{s["id"]}" class="clip seg" src="{SRC[s["src"]]}"
           f'data-media-start="{s["src_in"]}" data-track-index="1" '
           + ('muted ' if s["kind"] in ("mute", "broll") else f'data-has-audio="true" data-volume="{s["vol"]}" data-fade-in="0.06" data-fade-out="0.1" ')
           + 'playsinline></video>' for s in segs if s["kind"] != "voice"]
-hv = SEG["hv"]
-voice_audio = (f'      <audio id="hv" class="clip" src="{SRC[hv["src"]]}" data-start="0" data-duration="{hv["dur"]}" data-media-start="{hv["src_in"]}" '
-               f'data-track-index="19" data-volume="1" data-fade-out="0.08"></audio>')
+voice_audio = ""
 cam = [f'      tl.fromTo("#cam", {{ scale: 1.0 }}, {{ scale: 1.035, duration: {fr(s["dur"])}, ease: "none", immediateRender: false }}, {s["start"]});' for s in segs if s["kind"] not in ("mute", "voice")]
 cam.append('      tl.fromTo("#cam", { rotation: -100, scale: 1.6 }, { rotation: 0, scale: 1.08, duration: 0.5, ease: "expo.out", immediateRender: false }, 0);')
 cam += [f'      tl.fromTo("#cam", {{ scale: 1.22, rotation: {(-4 if k % 2 else 4)} }}, {{ scale: 1.06, rotation: 0, duration: 0.3, ease: "power3.out", immediateRender: false }}, {st(f"m{k}")});' for k in range(1, n_shots)]

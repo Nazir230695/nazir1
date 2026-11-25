@@ -4,46 +4,13 @@
   {
    "id": "m0",
    "src": "d",
-   "src_in": 0.3,
-   "src_out": 1.1667,
+   "src_in": 0.0,
+   "src_out": 3.4,
    "start": 0.0,
-   "dur": 0.8665,
-   "vol": 0.0,
+   "dur": 3.3998999999999997,
+   "vol": 1.0,
    "zone": "low",
-   "kind": "mute"
-  },
-  {
-   "id": "m1",
-   "src": "e",
-   "src_in": 8.6,
-   "src_out": 9.4333,
-   "start": 0.8667,
-   "dur": 0.8332,
-   "vol": 0.0,
-   "zone": "low",
-   "kind": "mute"
-  },
-  {
-   "id": "m2",
-   "src": "a",
-   "src_in": 16.0,
-   "src_out": 16.8333,
-   "start": 1.7,
-   "dur": 0.8332,
-   "vol": 0.0,
-   "zone": "low",
-   "kind": "mute"
-  },
-  {
-   "id": "m3",
-   "src": "f",
-   "src_in": 15.0,
-   "src_out": 15.8667,
-   "start": 2.5334,
-   "dur": 0.8665,
-   "vol": 0.0,
-   "zone": "low",
-   "kind": "mute"
+   "kind": "talk"
   },
   {
    "id": "d1",
@@ -99,20 +66,12 @@
    "vol": 0.0,
    "zone": "low",
    "kind": "broll"
-  },
-  {
-   "id": "hv",
-   "src": "d",
-   "src_in": 0.0,
-   "src_out": 3.4,
-   "start": 0.0,
-   "dur": 3.3998999999999997,
-   "vol": 1.0,
-   "zone": "low",
-   "kind": "voice"
   }
  ],
  "phrases": [
+  "Ada sabun ni,",
+  "boleh basuh",
+  "botol susu.",
   "Ada sabun ni,",
   "boleh basuh sayur",
   "dan buah-buah.",
@@ -136,9 +95,6 @@
   "memang terbaik.",
   "Nak beli mana",
   "tekan link sekarang",
-  "sebelum habis stop",
-  "Ada sabun ni,",
-  "boleh basuh",
-  "botol susu."
+  "sebelum habis stop"
  ]
 }

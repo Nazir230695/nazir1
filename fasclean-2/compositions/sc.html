@@ -27,7 +27,6 @@
   </style>
   <div id="root" data-composition-id="sc" data-width="1080" data-height="1920">
     <div id="hl" class=" clip" data-start="0.0" data-duration="4.9333" data-track-index="0" style="position:absolute; left:0; width:960px; top:440px; text-align:center"><div id="hl-t" style="font-family:var(--font-ui);font-weight:900;font-size:76px;line-height:1.08;letter-spacing:.14em;color:#ffe45c;-webkit-text-stroke:3px #1a1406;paint-order:stroke fill;text-shadow:0 4px 0 rgba(0,0,0,.6),0 8px 26px rgba(0,0,0,.7)">PINGGAN<br>BERMINYAK?</div></div>
-    <div id="fl" class=" clip" data-start="0.0" data-duration="5.0333" data-track-index="0" style="position:absolute; inset:0"><div id="fl0" style="position:absolute;inset:0;background:#fff;opacity:0"></div><div id="fl1" style="position:absolute;inset:0;background:#fff;opacity:0"></div><div id="fl2" style="position:absolute;inset:0;background:#fff;opacity:0"></div><div id="fl3" style="position:absolute;inset:0;background:#fff;opacity:0"></div><div id="fl4" style="position:absolute;inset:0;background:#fff;opacity:0"></div></div>
     <div id="c-mudah" class="chip clip" data-start="4.7667" data-duration="3.5667" data-track-index="0" style="top:1330px"><span><span id="c-mudahc" class="ic"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg></span><span id="c-mudahb" class="lb">Mudah gila</span></span></div>
     <div id="c-hilang" class="chip clip" data-start="8.3333" data-duration="1.6" data-track-index="0" style="top:1330px"><span><span id="c-hilangc" class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z"/></svg></span><span id="c-hilangb" class="lb">Minyak terus hilang</span></span></div>
     <div id="c-plastik" class="chip clip" data-start="10.1333" data-duration="3.3667" data-track-index="0" style="top:1330px"><span><span id="c-plastikc" class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z"/></svg></span><span id="c-plastikb" class="lb">Plastik pun hilang minyak</span></span></div>
@@ -41,11 +40,6 @@
     const tl = gsap.timeline({ paused: true });
     tl.fromTo("#hl-t", { opacity: 0, scaleX: 1.6, scaleY: 1.15 }, { opacity: 1, scaleX: 1, scaleY: 1, duration: 0.55, ease: "expo.out" }, 0.05);
     tl.to("#hl", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 4.5667);
-    tl.fromTo("#fl0", { opacity: 0.55 }, { opacity: 0, duration: 0.16, ease: "power2.out", immediateRender: false }, 0.9);
-    tl.fromTo("#fl1", { opacity: 0.55 }, { opacity: 0, duration: 0.16, ease: "power2.out", immediateRender: false }, 1.8);
-    tl.fromTo("#fl2", { opacity: 0.55 }, { opacity: 0, duration: 0.16, ease: "power2.out", immediateRender: false }, 2.7333);
-    tl.fromTo("#fl3", { opacity: 0.55 }, { opacity: 0, duration: 0.16, ease: "power2.out", immediateRender: false }, 3.6333);
-    tl.fromTo("#fl4", { opacity: 0.55 }, { opacity: 0, duration: 0.16, ease: "power2.out", immediateRender: false }, 4.5333);
     tl.fromTo("#c-mudahc", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.5, ease: "power3.out" }, 4.7667);
     tl.fromTo("#c-mudahb", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.55, ease: "power3.out" }, 4.8333);
     tl.to("#c-mudah", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 7.9667);

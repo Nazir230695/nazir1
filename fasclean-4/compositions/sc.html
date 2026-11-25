@@ -27,7 +27,6 @@
   </style>
   <div id="root" data-composition-id="sc" data-width="1080" data-height="1920">
     <div id="hl" class=" clip" data-start="0.0" data-duration="5.3333" data-track-index="0" style="position:absolute; left:0; width:960px; top:440px; text-align:center"><div id="hl-t" style="font-family:var(--font-ui);font-weight:900;font-size:76px;line-height:1.08;letter-spacing:.14em;color:#ffe45c;-webkit-text-stroke:3px #1a1406;paint-order:stroke fill;text-shadow:0 4px 0 rgba(0,0,0,.6),0 8px 26px rgba(0,0,0,.7)">TANGAN<br>TAK KERING</div></div>
-    <div id="fl" class=" clip" data-start="0.0" data-duration="5.4333" data-track-index="0" style="position:absolute; inset:0"><div id="fl0" style="position:absolute;inset:0;background:#fff;opacity:0"></div><div id="fl1" style="position:absolute;inset:0;background:#fff;opacity:0"></div><div id="fl2" style="position:absolute;inset:0;background:#fff;opacity:0"></div><div id="fl3" style="position:absolute;inset:0;background:#fff;opacity:0"></div><div id="fl4" style="position:absolute;inset:0;background:#fff;opacity:0"></div></div>
     <div id="i-col" class=" clip" data-start="5.1333" data-duration="7.2" data-track-index="0" style="position:absolute; left:50px; top:420px; width:330px"><div style="border-radius:22px;overflow:hidden;border:3px solid rgba(255,255,255,.9);box-shadow:0 24px 60px rgba(0,0,0,.5)"><img src="assets/img/collagen.jpg" alt="" style="display:block;width:330px"/></div></div>
     <div id="c-col" class="chip clip" data-start="4.9667" data-duration="7.3667" data-track-index="0" style="top:1330px"><span><span id="c-colc" class="ic"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 20.5s-7.5-4.6-7.5-10A4.3 4.3 0 0 1 12 7.6a4.3 4.3 0 0 1 7.5 2.9c0 5.4-7.5 10-7.5 10z"/></svg></span><span id="c-colb" class="lb">Ada kolagen untuk tangan</span></span></div>
     <div id="c-minyak" class="chip clip" data-start="12.4333" data-duration="4.1" data-track-index="0" style="top:1330px"><span><span id="c-minyakc" class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z"/></svg></span><span id="c-minyakb" class="lb">Tangan berminyak pun hilang</span></span></div>
@@ -39,11 +38,6 @@
     const tl = gsap.timeline({ paused: true });
     tl.fromTo("#hl-t", { opacity: 0, scaleX: 1.6, scaleY: 1.15 }, { opacity: 1, scaleX: 1, scaleY: 1, duration: 0.55, ease: "expo.out" }, 0.05);
     tl.to("#hl", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 4.9667);
-    tl.fromTo("#fl0", { opacity: 0.55 }, { opacity: 0, duration: 0.16, ease: "power2.out", immediateRender: false }, 1.0);
-    tl.fromTo("#fl1", { opacity: 0.55 }, { opacity: 0, duration: 0.16, ease: "power2.out", immediateRender: false }, 1.9667);
-    tl.fromTo("#fl2", { opacity: 0.55 }, { opacity: 0, duration: 0.16, ease: "power2.out", immediateRender: false }, 2.9667);
-    tl.fromTo("#fl3", { opacity: 0.55 }, { opacity: 0, duration: 0.16, ease: "power2.out", immediateRender: false }, 3.9333);
-    tl.fromTo("#fl4", { opacity: 0.55 }, { opacity: 0, duration: 0.16, ease: "power2.out", immediateRender: false }, 4.9333);
     tl.fromTo("#i-col", { opacity: 0, y: 30, scale: 0.94 }, { opacity: 1, y: 0, scale: 1, duration: 0.6, ease: "power3.out" }, 5.1333);
     tl.to("#i-col", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 11.9667);
     tl.fromTo("#c-colc", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.5, ease: "power3.out" }, 4.9667);
