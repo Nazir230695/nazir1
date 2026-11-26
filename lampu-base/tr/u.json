@@ -1,0 +1,662 @@
+[
+{
+"text": "Haa,",
+"start": 0.0,
+"end": 0.52,
+"p": 0.64
+},
+{
+"text": "depan",
+"start": 0.66,
+"end": 1.16,
+"p": 1.0
+},
+{
+"text": "aku",
+"start": 1.16,
+"end": 1.36,
+"p": 1.0
+},
+{
+"text": "ni",
+"start": 1.36,
+"end": 1.64,
+"p": 1.0
+},
+{
+"text": "main",
+"start": 1.64,
+"end": 1.86,
+"p": 0.97
+},
+{
+"text": "lampu",
+"start": 1.86,
+"end": 2.48,
+"p": 1.0
+},
+{
+"text": "pula",
+"start": 2.48,
+"end": 2.72,
+"p": 0.65
+},
+{
+"text": "Lampukan",
+"start": 2.72,
+"end": 3.28,
+"p": 0.65
+},
+{
+"text": "mijau",
+"start": 3.28,
+"end": 3.84,
+"p": 0.68
+},
+{
+"text": "ni",
+"start": 3.84,
+"end": 4.02,
+"p": 1.0
+},
+{
+"text": "memang",
+"start": 4.02,
+"end": 4.26,
+"p": 0.98
+},
+{
+"text": "dah",
+"start": 4.26,
+"end": 4.48,
+"p": 0.98
+},
+{
+"text": "ramai",
+"start": 4.48,
+"end": 4.88,
+"p": 0.99
+},
+{
+"text": "terkenal",
+"start": 4.88,
+"end": 5.32,
+"p": 0.95
+},
+{
+"text": "Ok,",
+"start": 5.32,
+"end": 5.98,
+"p": 0.61
+},
+{
+"text": "kita",
+"start": 6.06,
+"end": 6.2,
+"p": 1.0
+},
+{
+"text": "tengok",
+"start": 6.2,
+"end": 6.52,
+"p": 1.0
+},
+{
+"text": "lah",
+"start": 6.52,
+"end": 6.6,
+"p": 0.92
+},
+{
+"text": "Dia",
+"start": 6.6,
+"end": 7.32,
+"p": 0.96
+},
+{
+"text": "bagi",
+"start": 7.32,
+"end": 7.68,
+"p": 1.0
+},
+{
+"text": "yang",
+"start": 7.68,
+"end": 7.82,
+"p": 0.55
+},
+{
+"text": "jenama",
+"start": 7.82,
+"end": 8.12,
+"p": 0.72
+},
+{
+"text": "apa",
+"start": 8.12,
+"end": 8.36,
+"p": 1.0
+},
+{
+"text": "Bismillah",
+"start": 12.41,
+"end": 12.93,
+"p": 0.99
+},
+{
+"text": "Ok,",
+"start": 14.23,
+"end": 14.75,
+"p": 1.0
+},
+{
+"text": "setiap",
+"start": 14.91,
+"end": 15.27,
+"p": 1.0
+},
+{
+"text": "pembelian",
+"start": 15.27,
+"end": 15.71,
+"p": 0.99
+},
+{
+"text": "Dia",
+"start": 15.71,
+"end": 16.09,
+"p": 0.81
+},
+{
+"text": "akan",
+"start": 16.09,
+"end": 16.29,
+"p": 1.0
+},
+{
+"text": "bagi",
+"start": 16.29,
+"end": 16.69,
+"p": 1.0
+},
+{
+"text": "dengan",
+"start": 16.69,
+"end": 16.79,
+"p": 1.0
+},
+{
+"text": "remote",
+"start": 16.79,
+"end": 17.21,
+"p": 1.0
+},
+{
+"text": "je",
+"start": 17.21,
+"end": 17.41,
+"p": 0.96
+},
+{
+"text": "ni",
+"start": 17.41,
+"end": 17.59,
+"p": 1.0
+},
+{
+"text": "Lampu",
+"start": 17.59,
+"end": 18.33,
+"p": 0.73
+},
+{
+"text": "boleh",
+"start": 18.33,
+"end": 18.49,
+"p": 0.99
+},
+{
+"text": "control",
+"start": 18.49,
+"end": 18.89,
+"p": 0.95
+},
+{
+"text": "nanti",
+"start": 18.89,
+"end": 19.35,
+"p": 1.0
+},
+{
+"text": "Dia",
+"start": 19.35,
+"end": 20.15,
+"p": 0.96
+},
+{
+"text": "ada",
+"start": 20.15,
+"end": 20.25,
+"p": 1.0
+},
+{
+"text": "barb",
+"start": 20.25,
+"end": 20.57,
+"p": 0.52
+},
+{
+"text": "dia",
+"start": 20.57,
+"end": 20.63,
+"p": 1.0
+},
+{
+"text": "juga,",
+"start": 20.63,
+"end": 20.87,
+"p": 0.99
+},
+{
+"text": "spare",
+"start": 20.99,
+"end": 21.21,
+"p": 1.0
+},
+{
+"text": "Haa,",
+"start": 22.57,
+"end": 23.09,
+"p": 0.99
+},
+{
+"text": "ni",
+"start": 23.13,
+"end": 23.27,
+"p": 1.0
+},
+{
+"text": "Ada",
+"start": 23.27,
+"end": 23.99,
+"p": 0.98
+},
+{
+"text": "manual,",
+"start": 23.99,
+"end": 24.73,
+"p": 0.92
+},
+{
+"text": "lampu",
+"start": 24.83,
+"end": 25.03,
+"p": 1.0
+},
+{
+"text": "boleh",
+"start": 25.03,
+"end": 25.21,
+"p": 1.0
+},
+{
+"text": "scan",
+"start": 25.21,
+"end": 25.51,
+"p": 1.0
+},
+{
+"text": "Cara",
+"start": 25.51,
+"end": 25.81,
+"p": 0.89
+},
+{
+"text": "kegunaan",
+"start": 25.81,
+"end": 26.63,
+"p": 0.99
+},
+{
+"text": "dia",
+"start": 26.63,
+"end": 26.71,
+"p": 1.0
+},
+{
+"text": "pun",
+"start": 26.71,
+"end": 26.83,
+"p": 0.54
+},
+{
+"text": "semua",
+"start": 26.83,
+"end": 27.05,
+"p": 1.0
+},
+{
+"text": "Kat",
+"start": 27.05,
+"end": 27.67,
+"p": 0.6
+},
+{
+"text": "sini",
+"start": 27.67,
+"end": 27.85,
+"p": 1.0
+},
+{
+"text": "dia",
+"start": 27.85,
+"end": 28.05,
+"p": 0.96
+},
+{
+"text": "ada",
+"start": 28.05,
+"end": 28.17,
+"p": 1.0
+},
+{
+"text": "manual",
+"start": 28.17,
+"end": 28.43,
+"p": 1.0
+},
+{
+"text": "dia",
+"start": 28.43,
+"end": 28.69,
+"p": 1.0
+},
+{
+"text": "Haa,",
+"start": 29.35,
+"end": 29.87,
+"p": 0.92
+},
+{
+"text": "ni",
+"start": 29.89,
+"end": 30.03,
+"p": 0.99
+},
+{
+"text": "lampu",
+"start": 30.03,
+"end": 30.53,
+"p": 1.0
+},
+{
+"text": "solar",
+"start": 30.53,
+"end": 30.81,
+"p": 1.0
+},
+{
+"text": "tau",
+"start": 30.81,
+"end": 31.13,
+"p": 0.99
+},
+{
+"text": "Apa",
+"start": 31.13,
+"end": 31.57,
+"p": 0.5
+},
+{
+"text": "boleh",
+"start": 31.57,
+"end": 31.93,
+"p": 0.99
+},
+{
+"text": "gantung",
+"start": 31.93,
+"end": 32.75,
+"p": 0.95
+},
+{
+"text": "dekat",
+"start": 32.75,
+"end": 33.05,
+"p": 0.95
+},
+{
+"text": "luar",
+"start": 33.05,
+"end": 33.49,
+"p": 0.94
+},
+{
+"text": "rumah",
+"start": 33.49,
+"end": 33.79,
+"p": 0.97
+},
+{
+"text": "apa",
+"start": 33.79,
+"end": 34.15,
+"p": 0.56
+},
+{
+"text": "Halaman",
+"start": 34.15,
+"end": 34.61,
+"p": 0.66
+},
+{
+"text": "rumah",
+"start": 34.61,
+"end": 34.89,
+"p": 1.0
+},
+{
+"text": "apa",
+"start": 34.89,
+"end": 35.11,
+"p": 0.85
+},
+{
+"text": "memang",
+"start": 35.11,
+"end": 35.35,
+"p": 0.86
+},
+{
+"text": "naik",
+"start": 35.35,
+"end": 35.83,
+"p": 0.99
+},
+{
+"text": "lawa",
+"start": 35.83,
+"end": 36.25,
+"p": 0.89
+},
+{
+"text": "Nak",
+"start": 36.25,
+"end": 36.53,
+"p": 0.98
+},
+{
+"text": "dekat",
+"start": 36.53,
+"end": 37.15,
+"p": 1.0
+},
+{
+"text": "Ramadan",
+"start": 37.15,
+"end": 37.43,
+"p": 0.84
+},
+{
+"text": "ni",
+"start": 37.43,
+"end": 37.81,
+"p": 0.99
+},
+{
+"text": "kan",
+"start": 37.81,
+"end": 37.93,
+"p": 1.0
+},
+{
+"text": "Baik",
+"start": 37.93,
+"end": 38.89,
+"p": 0.98
+},
+{
+"text": "beli",
+"start": 38.89,
+"end": 39.09,
+"p": 1.0
+},
+{
+"text": "sekarang",
+"start": 39.09,
+"end": 39.27,
+"p": 1.0
+},
+{
+"text": "Nanti",
+"start": 40.01,
+"end": 40.73,
+"p": 1.0
+},
+{
+"text": "kalau",
+"start": 40.73,
+"end": 40.85,
+"p": 1.0
+},
+{
+"text": "Ramadan",
+"start": 40.85,
+"end": 41.15,
+"p": 0.99
+},
+{
+"text": "habis",
+"start": 41.15,
+"end": 41.55,
+"p": 0.99
+},
+{
+"text": "stock",
+"start": 41.55,
+"end": 41.77,
+"p": 0.37
+},
+{
+"text": "Atau",
+"start": 41.77,
+"end": 42.07,
+"p": 0.85
+},
+{
+"text": "harga",
+"start": 42.07,
+"end": 42.47,
+"p": 0.93
+},
+{
+"text": "dia",
+"start": 42.47,
+"end": 42.59,
+"p": 1.0
+},
+{
+"text": "melonjak",
+"start": 42.59,
+"end": 43.47,
+"p": 0.89
+},
+{
+"text": "tinggi",
+"start": 43.47,
+"end": 43.85,
+"p": 1.0
+},
+{
+"text": "Haa",
+"start": 43.85,
+"end": 44.69,
+"p": 0.5
+},
+{
+"text": "Lawa",
+"start": 45.29,
+"end": 46.03,
+"p": 0.77
+},
+{
+"text": "ni",
+"start": 46.03,
+"end": 46.15,
+"p": 1.0
+},
+{
+"text": "Jom",
+"start": 46.15,
+"end": 46.93,
+"p": 0.97
+},
+{
+"text": "kita",
+"start": 46.93,
+"end": 47.05,
+"p": 1.0
+},
+{
+"text": "gantung",
+"start": 47.05,
+"end": 47.43,
+"p": 0.99
+},
+{
+"text": "kat",
+"start": 47.43,
+"end": 47.51,
+"p": 0.95
+},
+{
+"text": "luar",
+"start": 47.51,
+"end": 47.63,
+"p": 1.0
+},
+{
+"text": "Kita",
+"start": 47.63,
+"end": 48.29,
+"p": 1.0
+},
+{
+"text": "tengok",
+"start": 48.29,
+"end": 48.69,
+"p": 1.0
+},
+{
+"text": "macam",
+"start": 48.69,
+"end": 48.81,
+"p": 0.99
+},
+{
+"text": "mana",
+"start": 48.81,
+"end": 48.97,
+"p": 1.0
+}
+]

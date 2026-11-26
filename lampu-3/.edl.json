@@ -1,0 +1,119 @@
+{
+ "total": 23.7,
+ "segs": [
+  {
+   "id": "m0",
+   "src": "m",
+   "src_in": 21.1333,
+   "src_out": 23.0,
+   "start": 0.0,
+   "dur": 1.8665,
+   "vol": 1.0,
+   "zone": "low",
+   "kind": "talk"
+  },
+  {
+   "id": "l1",
+   "src": "l",
+   "src_in": 5.2333,
+   "src_out": 8.6333,
+   "start": 1.8667,
+   "dur": 3.3998999999999997,
+   "vol": 1.0,
+   "zone": "low",
+   "kind": "talk"
+  },
+  {
+   "id": "l2",
+   "src": "l",
+   "src_in": 36.6667,
+   "src_out": 40.1333,
+   "start": 5.2667,
+   "dur": 3.4665,
+   "vol": 1.0,
+   "zone": "low",
+   "kind": "talk"
+  },
+  {
+   "id": "l3",
+   "src": "l",
+   "src_in": 44.9,
+   "src_out": 46.3667,
+   "start": 8.7334,
+   "dur": 1.4665,
+   "vol": 1.0,
+   "zone": "low",
+   "kind": "talk"
+  },
+  {
+   "id": "m1",
+   "src": "m",
+   "src_in": 9.9333,
+   "src_out": 12.4,
+   "start": 10.2,
+   "dur": 2.4665,
+   "vol": 1.0,
+   "zone": "low",
+   "kind": "talk"
+  },
+  {
+   "id": "l4",
+   "src": "l",
+   "src_in": 14.9667,
+   "src_out": 16.7,
+   "start": 12.6667,
+   "dur": 1.7332,
+   "vol": 1.0,
+   "zone": "low",
+   "kind": "talk"
+  },
+  {
+   "id": "u1",
+   "src": "u",
+   "src_in": 36.1667,
+   "src_out": 43.8667,
+   "start": 14.4,
+   "dur": 7.6999,
+   "vol": 1.0,
+   "zone": "low",
+   "kind": "talk"
+  },
+  {
+   "id": "cta",
+   "src": "l",
+   "src_in": 52.1333,
+   "src_out": 53.7333,
+   "start": 22.1,
+   "dur": 1.5999,
+   "vol": 1.0,
+   "zone": "low",
+   "kind": "talk"
+  }
+ ],
+ "phrases": [
+  "dia ada",
+  "banyak mode",
+  "dia berkelip-kelip",
+  "ada banyak mod",
+  "mode 1,",
+  "mode 2",
+  "mode 3,",
+  "mode 4,",
+  "mode 5",
+  "dia ada",
+  "sampai 8,",
+  "ataupun nampak boleh",
+  "guna juga solar",
+  "dia ni",
+  "layan, memang lawa",
+  "Nak dekat Ramadan",
+  "ni kan Baik",
+  "beli sekarang",
+  "Nanti kalau Ramadan",
+  "habis stock Atau",
+  "harga dia",
+  "melonjak tinggi",
+  "kalau berkenan,",
+  "tekan link bawah"
+ ]
+}

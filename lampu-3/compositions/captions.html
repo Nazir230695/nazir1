@@ -1,0 +1,70 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; pointer-events: none; 
+      --ink: #ffffff;
+      --dark: #0d0e10;
+      --neon: #ff8a1f;
+      --glass: rgba(16, 17, 20, 0.80);
+      --stroke: rgba(255,255,255,.14);
+      --font-ui: "Montserrat", sans-serif;
+ }
+    .cw { position: absolute; left: 0; width: 960px; top: 1180px; text-align: center; }
+    .cw span { display: inline-block; font-family: var(--font-ui); font-weight: 900; font-size: 48px; color: #fff; letter-spacing: .01em;
+      text-shadow: 0 0 3px rgba(0,0,0,.9), 0 2px 0 rgba(0,0,0,.5), 0 4px 18px rgba(0,0,0,.8); }
+
+  </style>
+  <div id="root" data-composition-id="captions" data-width="1080" data-height="1920">
+    <div id="cp000" class="cw clip" data-start="0.5" data-duration="0.6667" data-track-index="0" style="top:1450px"><span id="cp000s">DIA ADA</span></div>
+    <div id="cp001" class="cw clip" data-start="1.1667" data-duration="0.7" data-track-index="0" style="top:1450px"><span id="cp001s">BANYAK MODE</span></div>
+    <div id="cp002" class="cw clip" data-start="2.3667" data-duration="1.1" data-track-index="0" style="top:1450px"><span id="cp002s">DIA BERKELIP-KELIP</span></div>
+    <div id="cp003" class="cw clip" data-start="4.0333" data-duration="1.2333" data-track-index="0" style="top:1450px"><span id="cp003s">ADA BANYAK MOD</span></div>
+    <div id="cp004" class="cw clip" data-start="5.3333" data-duration="0.9" data-track-index="0" style="top:1450px"><span id="cp004s">MODE 1</span></div>
+    <div id="cp005" class="cw clip" data-start="6.2667" data-duration="0.4" data-track-index="0" style="top:1450px"><span id="cp005s">MODE 2</span></div>
+    <div id="cp006" class="cw clip" data-start="6.6667" data-duration="0.6333" data-track-index="0" style="top:1450px"><span id="cp006s">MODE 3</span></div>
+    <div id="cp007" class="cw clip" data-start="7.3" data-duration="0.9667" data-track-index="0" style="top:1450px"><span id="cp007s">MODE 4</span></div>
+    <div id="cp008" class="cw clip" data-start="8.2667" data-duration="0.4667" data-track-index="0" style="top:1450px"><span id="cp008s">MODE 5</span></div>
+    <div id="cp009" class="cw clip" data-start="9.3" data-duration="0.3667" data-track-index="0" style="top:1450px"><span id="cp009s">DIA ADA</span></div>
+    <div id="cp010" class="cw clip" data-start="9.6667" data-duration="0.5333" data-track-index="0" style="top:1450px"><span id="cp010s">SAMPAI 8</span></div>
+    <div id="cp011" class="cw clip" data-start="10.2" data-duration="1.2333" data-track-index="0" style="top:1450px"><span id="cp011s">ATAUPUN NAMPAK BOLEH</span></div>
+    <div id="cp012" class="cw clip" data-start="11.4333" data-duration="0.7333" data-track-index="0" style="top:1450px"><span id="cp012s">GUNA JUGA SOLAR</span></div>
+    <div id="cp013" class="cw clip" data-start="12.1667" data-duration="0.5" data-track-index="0" style="top:1450px"><span id="cp013s">DIA NI</span></div>
+    <div id="cp014" class="cw clip" data-start="12.8667" data-duration="1.5333" data-track-index="0" style="top:1450px"><span id="cp014s">LAYAN MEMANG LAWA</span></div>
+    <div id="cp015" class="cw clip" data-start="14.4667" data-duration="1.2" data-track-index="0" style="top:1450px"><span id="cp015s">NAK DEKAT RAMADAN</span></div>
+    <div id="cp016" class="cw clip" data-start="15.6667" data-duration="1.4667" data-track-index="0" style="top:1450px"><span id="cp016s">NI KAN BAIK</span></div>
+    <div id="cp017" class="cw clip" data-start="17.1333" data-duration="0.7" data-track-index="0" style="top:1450px"><span id="cp017s">BELI SEKARANG</span></div>
+    <div id="cp018" class="cw clip" data-start="18.2333" data-duration="1.1333" data-track-index="0" style="top:1450px"><span id="cp018s">NANTI KALAU RAMADAN</span></div>
+    <div id="cp019" class="cw clip" data-start="19.3667" data-duration="0.9333" data-track-index="0" style="top:1450px"><span id="cp019s">HABIS STOCK ATAU</span></div>
+    <div id="cp020" class="cw clip" data-start="20.3" data-duration="0.5333" data-track-index="0" style="top:1450px"><span id="cp020s">HARGA DIA</span></div>
+    <div id="cp021" class="cw clip" data-start="20.8333" data-duration="1.2667" data-track-index="0" style="top:1450px"><span id="cp021s">MELONJAK TINGGI</span></div>
+    <div id="cp022" class="cw clip" data-start="22.1667" data-duration="0.9333" data-track-index="0" style="top:1450px"><span id="cp022s">KALAU BERKENAN</span></div>
+    <div id="cp023" class="cw clip" data-start="23.1" data-duration="0.6" data-track-index="0" style="top:1450px"><span id="cp023s">TEKAN LINK BAWAH</span></div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#cp000s", { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.22, ease: "power2.out" }, 0.5);
+    tl.fromTo("#cp001s", { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.22, ease: "power2.out" }, 1.1667);
+    tl.fromTo("#cp002s", { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.22, ease: "power2.out" }, 2.3667);
+    tl.fromTo("#cp003s", { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.22, ease: "power2.out" }, 4.0333);
+    tl.fromTo("#cp004s", { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.22, ease: "power2.out" }, 5.3333);
+    tl.fromTo("#cp005s", { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.22, ease: "power2.out" }, 6.2667);
+    tl.fromTo("#cp006s", { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.22, ease: "power2.out" }, 6.6667);
+    tl.fromTo("#cp007s", { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.22, ease: "power2.out" }, 7.3);
+    tl.fromTo("#cp008s", { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.22, ease: "power2.out" }, 8.2667);
+    tl.fromTo("#cp009s", { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.22, ease: "power2.out" }, 9.3);
+    tl.fromTo("#cp010s", { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.22, ease: "power2.out" }, 9.6667);
+    tl.fromTo("#cp011s", { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.22, ease: "power2.out" }, 10.2);
+    tl.fromTo("#cp012s", { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.22, ease: "power2.out" }, 11.4333);
+    tl.fromTo("#cp013s", { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.22, ease: "power2.out" }, 12.1667);
+    tl.fromTo("#cp014s", { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.22, ease: "power2.out" }, 12.8667);
+    tl.fromTo("#cp015s", { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.22, ease: "power2.out" }, 14.4667);
+    tl.fromTo("#cp016s", { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.22, ease: "power2.out" }, 15.6667);
+    tl.fromTo("#cp017s", { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.22, ease: "power2.out" }, 17.1333);
+    tl.fromTo("#cp018s", { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.22, ease: "power2.out" }, 18.2333);
+    tl.fromTo("#cp019s", { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.22, ease: "power2.out" }, 19.3667);
+    tl.fromTo("#cp020s", { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.22, ease: "power2.out" }, 20.3);
+    tl.fromTo("#cp021s", { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.22, ease: "power2.out" }, 20.8333);
+    tl.fromTo("#cp022s", { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.22, ease: "power2.out" }, 22.1667);
+    tl.fromTo("#cp023s", { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.22, ease: "power2.out" }, 23.1);
+    window.__timelines["captions"] = tl;
+  </script>
+</template>

@@ -1,0 +1,39 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; pointer-events: none; 
+      --ink: #ffffff;
+      --dark: #0d0e10;
+      --neon: #ff8a1f;
+      --glass: rgba(16, 17, 20, 0.80);
+      --stroke: rgba(255,255,255,.14);
+      --font-ui: "Montserrat", sans-serif;
+ }
+    .chip { position: absolute; left: 0; width: 960px; text-align: center; }
+    .chip > span { display: inline-flex; align-items: center; gap: 14px; }
+    .chip .lb { background: #fff; color: #111; font-family: var(--font-ui); font-weight: 600; font-size: 40px; letter-spacing: .01em;
+      padding: 8px 18px; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,.35); white-space: nowrap; text-transform: uppercase; }
+    .chip .ic { width: 70px; height: 70px; border-radius: 50%; background: var(--dark); border: 2.5px solid rgba(255,255,255,.9);
+      display: inline-flex; align-items: center; justify-content: center; box-shadow: 0 10px 30px rgba(0,0,0,.4); }
+    .chip .ic svg { width: 38px; height: 38px; }
+    .glass { position: absolute; background: var(--glass); border: 1.5px solid var(--stroke); border-radius: 30px;
+      box-shadow: 0 24px 60px rgba(0,0,0,.5); backdrop-filter: blur(18px); color: #fff; font-family: var(--font-ui); }
+    .head { position: absolute; left: 0; width: 960px; text-align: center; font-family: var(--font-ui); font-weight: 800; color: #fff;
+      font-size: 62px; line-height: 1.1; text-shadow: 0 0 4px rgba(0,0,0,.9), 0 3px 8px rgba(0,0,0,.75), 0 10px 34px rgba(0,0,0,.75); }
+    .head > div { display: inline-block; padding: 14px 30px; border-radius: 26px; background: rgba(10,11,13,.42); }
+    .head em { font-style: normal; color: var(--neon); }
+    .pilltag { display: inline-flex; align-items: center; gap: 10px; padding: 10px 26px 10px 16px; border-radius: 12px; background: rgba(255,255,255,.95);
+      color: #111; font-family: var(--font-ui); font-weight: 700; font-size: 34px; box-shadow: 0 10px 28px rgba(0,0,0,.35); white-space: nowrap; }
+
+  </style>
+  <div id="root" data-composition-id="outro" data-width="1080" data-height="1920">
+    <div id="ot-shop" class="glass clip" data-start="22.8667" data-duration="2.6" data-track-index="0" style="left:110px; top:1040px; width:740px"><div style="display:flex;align-items:center;gap:20px;padding:18px 20px"><div style="width:120px;height:120px;border-radius:24px;background:#fff;flex:none;overflow:hidden"><img src="assets/img/img1.jpg" alt="" style="width:120px;height:120px;object-fit:cover"/></div><div style="flex:1"><div style="font-weight:900;font-size:38px">LAMPU SOLAR CANMEI</div><div style="margin-top:6px;display:flex;align-items:center;gap:10px;font-weight:700;font-size:30px;color:rgba(255,255,255,.85)"><svg width=30 height=30 viewBox="0 0 24 24" fill="#f5c542"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg> 4.2 &middot; 8.7K terjual</div></div></div></div>
+    <div id="ot-cta" class=" clip" data-start="23.2667" data-duration="2.2" data-track-index="0" style="position:absolute; left:0; width:960px; top:1225px; text-align:center"><div style="display:inline-flex;align-items:center;gap:12px;padding:16px 36px;border-radius:999px;background:#fe2c55;color:#fff;font-family:var(--font-ui);font-weight:900;font-size:44px;white-space:nowrap;box-shadow:0 14px 36px rgba(0,0,0,.45)"><svg viewBox="0 0 24 24" width="40" height="40" style="flex:none" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v15"/><path d="M5.5 12.5L12 19l6.5-6.5"/></svg>Tekan link sekarang</div></div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#ot-shop", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.55, ease: "power3.out" }, 22.8667);
+    tl.fromTo("#ot-cta > div", { opacity: 0, scale: 0.8 }, { opacity: 1, scale: 1, duration: 0.55, ease: "back.out(1.5)" }, 23.4667);
+    tl.fromTo("#ot-cta > div", { scale: 1 }, { scale: 1.05, duration: 0.45, ease: "sine.inOut", yoyo: true, repeat: 3, immediateRender: false }, 24.1667);
+    window.__timelines["outro"] = tl;
+  </script>
+</template>
