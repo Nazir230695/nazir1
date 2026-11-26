@@ -1,7 +1,7 @@
 {
   "version": 1,
   "historyId": "5f7cdb97-5ff5-4a30-b2f2-4c900823946b",
-  "currentRevision": null,
+  "currentRevision": "599ab4ba-a52c-4a7e-bf88-aefe4a2e7b4e",
   "pendingChanges": false,
   "files": {
     "AGENTS.md": {
@@ -159,9 +159,29 @@
     "assets/raw_u.mp4": {
       "hash": "1d75b7e8a9f7bef6d0eb21f9753ec3313293d4e4dbe72503173f2ea28a017b22",
       "content": "/root/.cache/hyperframes/history/5f7cdb97-5ff5-4a30-b2f2-4c900823946b/blobs/1d/1d75b7e8a9f7bef6d0eb21f9753ec3313293d4e4dbe72503173f2ea28a017b22"
+    },
+    "cover.png": {
+      "hash": "7186ea9e7ecf3fab27bd5857fbe0749e743364778a5515f58fb3d82886b46c98",
+      "content": "/root/.cache/hyperframes/history/5f7cdb97-5ff5-4a30-b2f2-4c900823946b/blobs/71/7186ea9e7ecf3fab27bd5857fbe0749e743364778a5515f58fb3d82886b46c98"
     }
   },
-  "revisions": {},
+  "revisions": {
+    "599ab4ba-a52c-4a7e-bf88-aefe4a2e7b4e": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1795672230317,
+      "endedAt": 1795672230318,
+      "files": {
+        "cover.png": {
+          "before": null,
+          "after": "/root/.cache/hyperframes/history/5f7cdb97-5ff5-4a30-b2f2-4c900823946b/blobs/71/7186ea9e7ecf3fab27bd5857fbe0749e743364778a5515f58fb3d82886b46c98"
+        }
+      }
+    }
+  },
   "checks": {
     "latest": {
       "revision": null,
@@ -574,5 +594,18 @@
         "attribution": "unversioned"
       }
     ]
-  }
+  },
+  "renders": {
+    "latest": {
+      "id": "2d8f5ad9-f0c8-4441-a4a6-df3aed5cfeb2",
+      "completedAt": 1795672416235,
+      "output": "/home/user/nazir1/lampu-4/renders/lampu-4.mp4",
+      "status": "completed",
+      "revision": "599ab4ba-a52c-4a7e-bf88-aefe4a2e7b4e"
+    },
+    "retainedRevisions": [
+      "599ab4ba-a52c-4a7e-bf88-aefe4a2e7b4e"
+    ]
+  },
+  "pendingArtifactCleanup": []
 }
