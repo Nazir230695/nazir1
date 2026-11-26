@@ -31,7 +31,7 @@ HOOKS = {
 VARIANTS = {
     "1": [("b1", "b", 10.26, 12.42, 1.0, "low"), ("b2", "b", 16.50, 29.42, 1.0, "low"), ("b3", "b", 44.26, 48.72, 1.0, "low"),
           ("b4", "b", 53.44, 55.50, 1.0, "low"), ("b5", "b", 58.46, 59.10, 1.0, "low"), ("b6", "b", 61.14, 62.58, 1.0, "low"),
-          ("b7", "b", 75.08, 79.42, 1.0, "low"), ("pr", "b", 82.18, 84.34, 1.0, "low"), ("cta", "b", 88.56, 90.50, 1.0, "low")],
+          ("b7", "b", 75.08, 79.42, 1.0, "low")] + END_G,
     "2": [("a1", "a", 13.27, 19.42, 1.0, "low"), ("a2", "a", 20.39, 25.62, 1.0, "low"), ("a3", "a", 29.33, 30.92, 1.0, "low"),
           ("a4", "a", 46.95, 48.50, 1.0, "low"), ("a5", "a", 66.00, 71.12, 1.0, "low"), ("a6", "a", 72.79, 75.70, 1.0, "low"),
           ("a7", "a", 80.63, 82.72, 1.0, "low")] + END_G,
@@ -541,7 +541,7 @@ PARTS = {
         tick("tk2", "SMART PROJECTOR", st("b6") + 0.1, end("b6"), y=600),
         tick("tk3", "JIMAT, TAK PAYAH PANGGUNG", W("b7", 77.24), end("b7")),
         leak("lk3", st("pr")),
-        pricetag("prc", st("pr"), end("pr"), W("pr", 83.44)),
+        pricetag("prc", st("pr") + 0.5, end("pr"), st("pr") + 1.6),
     ],
     "2": lambda: [
         dial("d-hd", st("a1") + 0.05, W("a1", 15.57) - 0.05, 1080, "P", "FULL HD", cy=1380),
@@ -583,7 +583,7 @@ shop = (f'<div style="display:flex;align-items:center;gap:20px;padding:18px 20px
         f'<span style="font-size:24px;background:#ff2d55;border-radius:999px;padding:3px 12px">-57%</span></div></div></div>')
 cta = ('<div style="display:inline-flex;align-items:center;gap:12px;padding:16px 36px;border-radius:999px;background:#fe2c55;color:#fff;font-family:var(--font-ui);font-weight:900;font-size:44px;white-space:nowrap;box-shadow:0 14px 36px rgba(0,0,0,.45)">'
        '<svg viewBox="0 0 24 24" width="40" height="40" style="flex:none" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v15"/><path d="M5.5 12.5L12 19l6.5-6.5"/></svg>'
-       'Tekan link sekarang</div>')
+       'Klik link di bawah</div>')
 SHOP0 = st("cta") - 0.1
 CTA0 = st("cta") + 0.1
 build_scene("outro", [

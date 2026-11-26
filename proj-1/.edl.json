@@ -1,5 +1,5 @@
 {
- "total": 37.4,
+ "total": 38.5,
  "segs": [
   {
    "id": "m0",
@@ -91,22 +91,22 @@
   },
   {
    "id": "pr",
-   "src": "b",
-   "src_in": 82.1667,
-   "src_out": 84.3333,
+   "src": "g",
+   "src_in": 87.8333,
+   "src_out": 91.2667,
    "start": 33.3,
-   "dur": 2.1664999999999996,
+   "dur": 3.4332,
    "vol": 1.0,
    "zone": "low",
    "kind": "talk"
   },
   {
    "id": "cta",
-   "src": "b",
-   "src_in": 88.5667,
-   "src_out": 90.5,
-   "start": 35.4667,
-   "dur": 1.9332,
+   "src": "g",
+   "src_in": 93.2667,
+   "src_out": 95.0333,
+   "start": 36.7334,
+   "dur": 1.7665,
    "vol": 1.0,
    "zone": "low",
    "kind": "talk"
@@ -195,18 +195,24 @@
   "wayang",
   "Jimat",
   "masuk",
+  "Tengok",
+  "bola",
+  "pun",
+  "layan",
+  "Nak",
+  "layan",
+  "movie",
+  "kat",
+  "rumah",
+  "pun",
+  "boleh",
+  "Memang",
+  "terbaik",
   "Nak",
   "dapat",
   "mana",
-  "Beg",
-  "oren",
-  "lagi",
-  "murah",
-  "buy",
-  "today",
-  "get",
-  "today",
-  "tekan",
-  "link"
+  "Tekan",
+  "link",
+  "bawah"
  ]
 }
