@@ -1,0 +1,18 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:ArchivoX;src:url(archivo-xb.woff2) format("woff2");font-weight:900;font-stretch:125%}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#000}
+#bg{position:absolute;inset:0;background-size:cover;background-position:center;filter:brightness(1.04) contrast(1.06) saturate(1.08)}
+#shade{position:absolute;inset:0}
+.top #shade{background:linear-gradient(180deg,rgba(0,0,0,.55) 0%,rgba(0,0,0,.30) 30%,rgba(0,0,0,0) 48%)}
+.bottom #shade{background:linear-gradient(0deg,rgba(0,0,0,.6) 0%,rgba(0,0,0,.30) 32%,rgba(0,0,0,0) 50%)}
+#title{position:absolute;left:0;width:1080px;text-align:center;font-family:ArchivoX,sans-serif;font-weight:900;font-stretch:125%;color:#fff;
+  text-transform:uppercase;line-height:1.08;letter-spacing:.01em;
+  text-shadow:0 0 3px rgba(0,0,0,.6),0 4px 10px rgba(0,0,0,.55),0 10px 30px rgba(0,0,0,.45)}
+.top #title{top:330px}
+.bottom #title{bottom:330px}
+#title div{white-space:nowrap}
+</style></head><body class="top">
+<div id="bg"></div><div id="shade"></div>
+<div id="title"><div id="l1">L1</div><div id="l2">L2</div></div>
+</body></html>

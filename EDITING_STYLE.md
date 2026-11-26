@@ -10,5 +10,9 @@ Do NOT use the cinematic style (`build_cine.py`, plastik/bidai3) unless asked â€
 - Header: REZEKI.NAZIR Â· TRUSTED AFFILIATE (left) and the shop/product (right), no dark band.
 - Captions are white, bold and uppercase, kept off the face; chips are used sparingly.
 - Ending is a shop card plus "Tekan link sekarang"; the video ends right after "tekan link". Never write "bio".
-- Covers: dark premium background, gold Anton title, all text inside the 3:4 crop.
+- Covers (new, from Nov 2026): a bright video frame with the product big and clear, plus a 2-line title in white Archivo Expanded Black
+  with a soft shadow, kept inside the 3:4 crop. Template: `tools/cover-v2` (`node make.js <dir> jobs.json`). No more dark/gold covers.
+- Motion graphics (projector onwards): dial counters, icon pills, focus brackets, tick tags, light leaks, price tag + disclaimer,
+  one-word captions (`proj-base/tools/build.py`).
+- Price: when showing a promo price, add "Disclaimer: Harga mungkin berubah apabila promosi tamat".
 - Show storyboards and covers for review before rendering.

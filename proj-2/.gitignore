@@ -1,0 +1,4 @@
+assets/raw_*.mp4
+.hyperframes/artifacts/
+node_modules/
+renders/
