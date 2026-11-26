@@ -1,0 +1,97 @@
+{
+ "total": 28.0,
+ "segs": [
+  {
+   "id": "m0",
+   "src": "l",
+   "src_in": 28.4,
+   "src_out": 30.8667,
+   "start": 0.0,
+   "dur": 2.4665,
+   "vol": 1.0,
+   "zone": "low",
+   "kind": "talk"
+  },
+  {
+   "id": "u1",
+   "src": "u",
+   "src_in": 29.3333,
+   "src_out": 36.2667,
+   "start": 2.4667,
+   "dur": 6.9332,
+   "vol": 1.0,
+   "zone": "low",
+   "kind": "talk"
+  },
+  {
+   "id": "m1",
+   "src": "m",
+   "src_in": 15.1667,
+   "src_out": 19.4333,
+   "start": 9.4,
+   "dur": 4.266500000000001,
+   "vol": 1.0,
+   "zone": "low",
+   "kind": "talk"
+  },
+  {
+   "id": "f1",
+   "src": "f",
+   "src_in": 11.8333,
+   "src_out": 17.4,
+   "start": 13.6667,
+   "dur": 5.5665000000000004,
+   "vol": 1.0,
+   "zone": "low",
+   "kind": "talk"
+  },
+  {
+   "id": "l3",
+   "src": "l",
+   "src_in": 17.2333,
+   "src_out": 24.4,
+   "start": 19.2334,
+   "dur": 7.1665,
+   "vol": 1.0,
+   "zone": "low",
+   "kind": "talk"
+  },
+  {
+   "id": "cta",
+   "src": "l",
+   "src_in": 52.1333,
+   "src_out": 53.7333,
+   "start": 26.4,
+   "dur": 1.5999,
+   "vol": 1.0,
+   "zone": "low",
+   "kind": "talk"
+  }
+ ],
+ "phrases": [
+  "tu,",
+  "wow smart banget",
+  "ni lampu solar",
+  "boleh gantung dekat",
+  "luar rumah",
+  "Halaman rumah memang",
+  "naik lawa",
+  "kita on dulu",
+  "wow cantik banget",
+  "macam-macam mod",
+  "korang tengok",
+  "aku set mod",
+  "kat sini boleh",
+  "Kalau pun",
+  "nak beli,",
+  "beli sekarang Sebab",
+  "pun nanti tunggu",
+  "dah bulan Ramadan",
+  "Dah dekat raya,",
+  "habis stock Atau",
+  "harga dia naik",
+  "gila-gila memang",
+  "kalau berkenan,",
+  "tekan link bawah"
+ ]
+}
