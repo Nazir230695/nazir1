@@ -8,7 +8,7 @@ import json, sys, html, os, re, math, subprocess
 WJ, P = sys.argv[1], sys.argv[2]
 FPS = 30
 WORDS = json.load(open(WJ))     # {"a": [...], "b": [...], ...} word lists per raw clip
-SRC = {k: f"assets/raw_{k}.mp4" for k in "abcdef"}
+SRC = {k: f"assets/raw_{k}.mp4" for k in "abcdefg"}
 
 
 def fr(t):
@@ -22,7 +22,9 @@ def wat(src, t):
 VARIANT = sys.argv[3] if len(sys.argv) > 3 else "1"
 # HOOK: (voice_src, voice_in, voice_out, headline, [(src, src_in), ...] montage shots, split evenly over the voice line)
 # BODY: (id, src, src_in, src_out, volume, zone)
+END_G = [("pr", "g", 87.82, 91.28, 1.0, "low"), ("cta", "g", 93.28, 95.02, 1.0, "low")]   # latest clip: bola / movie, then "nak dapat mana, tekan link bawah"
 HOOKS = {
+    "3": ("g", 1.96, 6.20, "KAKI MOVIE?<br>KAKI BOLA?", []),
     "1": ("b", 2.30, 7.52, "TAK PAYAH<br>TV DAH!", []),
     "2": ("a", 5.00, 11.12, "PROJEKTOR<br>SMART HD!", []),
 }
@@ -32,8 +34,9 @@ VARIANTS = {
           ("b7", "b", 75.08, 79.42, 1.0, "low"), ("pr", "b", 82.18, 84.34, 1.0, "low"), ("cta", "b", 88.56, 90.50, 1.0, "low")],
     "2": [("a1", "a", 13.27, 19.42, 1.0, "low"), ("a2", "a", 20.39, 25.62, 1.0, "low"), ("a3", "a", 29.33, 30.92, 1.0, "low"),
           ("a4", "a", 46.95, 48.50, 1.0, "low"), ("a5", "a", 66.00, 71.12, 1.0, "low"), ("a6", "a", 72.79, 75.70, 1.0, "low"),
-          ("a7", "a", 80.63, 82.72, 1.0, "low"), ("pr", "a", 83.73, 85.20, 1.0, "low"), ("pr2", "a", 86.11, 89.20, 1.0, "low"),
-          ("cta", "a", 89.19, 90.47, 1.0, "low")],
+          ("a7", "a", 80.63, 82.72, 1.0, "low")] + END_G,
+    "3": [("g2", "g", 10.02, 23.64, 1.0, "low"), ("g3", "g", 32.04, 33.48, 1.0, "low"), ("g4", "g", 37.04, 39.50, 1.0, "low"),
+          ("g5", "g", 49.68, 57.52, 1.0, "low"), ("g6", "g", 69.20, 72.70, 1.0, "low")] + END_G,
 }
 HV_SRC, HV_IN, HV_OUT, HEADLINE, _MONTAGE = HOOKS[VARIANT]
 SHOTS = [(HV_SRC, HV_IN)]   # one continuous shot (the montage list is kept above for reference only)
@@ -81,14 +84,14 @@ def W(sid, t):
 
 
 # ---------------------------------------------------------------- muted b-roll overlays over the talking audio (src, src_in, t0, t1)
-OVS = {"1": lambda: [], "2": lambda: []}
+OVS = {"1": lambda: [], "2": lambda: [], "3": lambda: [("d", 17.0, st("g2") + 0.05, W("g2", 11.84) - 0.05)]}
 OV = [(f"ov{k}", src, a, fr(t0), fr(t1)) for k, (src, a, t0, t1) in enumerate(OVS[VARIANT]())]
 
 # ---------------------------------------------------------------- phrase captions
-FIX = {"upi": "Upin", "-upi": "Ipin", "-ejah": "", "noah": "Nova", "pancah": "pancar", "ejah": "adjust", "belik": "balik", "simpak": "simpan",
+FIX = {"mumpa": "korang", "ambo": "kau", "layang": "layan", ".4g": ".4G", "upi": "Upin", "-upi": "Ipin", "-ejah": "", "noah": "Nova", "pancah": "pancar", "ejah": "adjust", "belik": "balik", "simpak": "simpan",
        "penek": "pasang", "ampun": "hampir", "orange": "oren", "orin": "oren", "bag": "beg", "benar": "", "projektor": "projector", "edi": "ready"}
 DROP = {"haa", "ha", "haha", "hahaha", "okay", "ok", "oh", "eh", "apa", "apa,", "lah", "lah,", "tau", "tuh", "alamak", "gang", "geng", "kan"}
-CAP_SKIP = []
+CAP_SKIP = [("g", 51.2, 54.9)]
 
 
 def norm(w, prev):
@@ -130,7 +133,7 @@ for s in segs:
                 kept.append(dict(text=txt, start=at(s["id"], w["start"]), end=at(s["id"], min(w["end"], s["src_out"])), seg=s["id"]))
 glued = []
 for w in kept:   # "Celah" + "-celah", "tarik" + "-tarik"
-    if glued and glued[-1]["seg"] == w["seg"] and (w["text"].startswith("-") or w["text"].startswith("%")):
+    if glued and glued[-1]["seg"] == w["seg"] and (w["text"].startswith("-") or w["text"].startswith("%") or w["text"].startswith(".")):
         glued[-1]["text"] += w["text"]; glued[-1]["end"] = w["end"]
     else:
         glued.append(w)
@@ -552,7 +555,20 @@ PARTS = {
         tick("tk2", "TERUS TEPAT, TAK PAYAH ADJUST", at("a5", 69.0) + 0.15, end("a6")),
         leak("lk2", st("a7")),
         bigzoom("p-box", "img1.jpg", "50% 45%", "SMART PROJECTOR", st("a7") + 0.05, end("a7"), zoom=1.2),
-        pricetag("prc", st("pr"), end("pr2"), W("pr2", 86.13)),
+        pricetag("prc", st("pr") + 1.0, end("pr"), st("pr") + 2.0),
+    ],
+    "3": lambda: [
+        dial("d-hd", W("g2", 11.84), W("g2", 13.96) - 0.05, 1080, "P", "FULL HD", cy=1380),
+        pills("pl", [(WIFI, "WiFi 2.4G + 5G", W("g2", 13.96)), (BT, "Bluetooth 5.4", W("g2", 18.88))], W("g2", 20.80) - 0.05, y=1250),
+        ring360("r360", W("g2", 20.80), end("g2"), cy=1190),
+        leak("lk1", st("g3")),
+        tick("tk1", "ANTI SLIP", st("g3") + 0.1, end("g3"), y=600),
+        tick("tk2", "SIAP KABEL 3 PIN", st("g4") + 0.1, end("g4"), y=600),
+        tick("tk3", "AUTO CALIBRATE", st("g5") + 0.1, at("g5", 55.3)),
+        leak("lk-rev", at("g5", 55.3)),
+        tick("tk4", "TERUS TEPAT", at("g5", 55.3) + 0.15, end("g5")),
+        tick("tk5", "ADA SPEAKER", W("g6", 71.16), end("g6"), y=600),
+        pricetag("prc", st("pr") + 0.5, end("pr"), st("pr") + 1.6),
     ],
 }
 build_scene("sc", [hook_headline()] + PARTS[V]())
@@ -618,6 +634,8 @@ SFX = [("sx-hk", "whoosh.mp3", 0.0, 0.3)] + [(f"sx-m{k}", "whoosh-short.mp3", st
 SFX += [(f"sx-{oid}", "whoosh-short.mp3", t0, 0.15) for oid, src, a, t0, t1 in OV]
 if VARIANT == "2":
     SFX.append(("sx-reveal", "sparkle.mp3", at("a5", 69.0), 0.35))
+if VARIANT == "3":
+    SFX.append(("sx-reveal", "sparkle.mp3", at("g5", 55.3), 0.35))
 for m in _re.finditer(r'id="(c-[a-z0-9-]+)" class="chip clip" data-start="([0-9.]+)"', open(os.path.join(P, "compositions", "sc.html")).read()):
     SFX.append((f"sx-{m.group(1)}", "pop.mp3", float(m.group(2)), 0.2))
 for m in _re.finditer(r'id="(p-[a-z0-9-]+)" class=" clip" data-start="([0-9.]+)"', open(os.path.join(P, "compositions", "sc.html")).read()):
