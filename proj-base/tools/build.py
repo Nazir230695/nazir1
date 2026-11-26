@@ -418,8 +418,8 @@ def dial(cid, t0, t1, num, unit, label, cy=640):
     body = clip(cid, t0, t1 - t0, svg + txt, style="position:absolute; inset:0", extra=" data-layout-allow-overflow")
     js = "\n".join([
         f'    tl.fromTo("#{cid}", {{ opacity: 0, scale: 0.9 }}, {{ opacity: 1, scale: 1, duration: 0.35, ease: "power3.out" }}, {fr(t0)});',
-        f'    tl.to("#{cid}mp", {{ attr: {{ "stroke-dashoffset": 0 }}, duration: 1.1, ease: "power2.out" }}, {fr(t0 + 0.1)});',
-        f'    {{ const o = {{ v: 0 }}; tl.to(o, {{ v: {num}, duration: 1.1, ease: "power2.out", onUpdate: () => {{ document.querySelector("#{cid}n").textContent = Math.round(o.v).toLocaleString("en-US"); }} }}, {fr(t0 + 0.1)}); }}',
+        f'    tl.to("#{cid}mp", {{ attr: {{ "stroke-dashoffset": 0 }}, duration: 0.8, ease: "power2.out" }}, {fr(t0 + 0.1)});',
+        f'    {{ const o = {{ v: 0 }}; tl.to(o, {{ v: {num}, duration: 0.8, ease: "power2.out", onUpdate: () => {{ document.querySelector("#{cid}n").textContent = Math.round(o.v); }} }}, {fr(t0 + 0.1)}); }}',
         f'    tl.to("#{cid}", {{ opacity: 0, scale: 1.05, duration: 0.3, ease: "power2.in" }}, {fr(t1 - 0.32)});'])
     return body, js
 
@@ -541,7 +541,7 @@ PARTS = {
         pricetag("prc", st("pr"), end("pr"), W("pr", 83.44)),
     ],
     "2": lambda: [
-        dial("d-hd", st("a1") + 0.05, W("a1", 14.73), 1080, "P", "FULL HD", cy=1380),
+        dial("d-hd", st("a1") + 0.05, W("a1", 15.57) - 0.05, 1080, "P", "FULL HD", cy=1380),
         pills("pl", [(WIFI, "WiFi", W("a1", 15.57)), (BT, "Bluetooth", W("a1", 16.51))], W("a1", 17.23), y=1250),
         ring360("r360", W("a1", 17.23), end("a1") + 0.3, cy=1190),
         leak("lk1", st("a2")),
