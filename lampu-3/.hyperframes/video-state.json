@@ -1,7 +1,7 @@
 {
   "version": 1,
   "historyId": "a69e0b32-cf19-4c75-805f-336d238afc13",
-  "currentRevision": "2c4e9672-d928-4911-a79a-0f4b41e2691c",
+  "currentRevision": "3cd078cb-8f6c-4f01-ac58-abc7372bba90",
   "pendingChanges": false,
   "files": {
     "AGENTS.md": {
@@ -139,6 +139,10 @@
     "assets/raw_u.mp4": {
       "hash": "1d75b7e8a9f7bef6d0eb21f9753ec3313293d4e4dbe72503173f2ea28a017b22",
       "content": "/root/.cache/hyperframes/history/a69e0b32-cf19-4c75-805f-336d238afc13/blobs/1d/1d75b7e8a9f7bef6d0eb21f9753ec3313293d4e4dbe72503173f2ea28a017b22"
+    },
+    "cover.png": {
+      "hash": "1e8fb62eb7fa409f716dc395a0294dd7f9a590dd856be82e3c3438ac05aa6820",
+      "content": "/root/.cache/hyperframes/history/a69e0b32-cf19-4c75-805f-336d238afc13/blobs/1e/1e8fb62eb7fa409f716dc395a0294dd7f9a590dd856be82e3c3438ac05aa6820"
     }
   },
   "revisions": {
@@ -203,19 +207,33 @@
           "after": "/root/.cache/hyperframes/history/a69e0b32-cf19-4c75-805f-336d238afc13/blobs/21/219f0c540bdb0979e9dee4178cdc2f63f28a27e12c833a92156ef279cb25659d"
         }
       }
+    },
+    "3cd078cb-8f6c-4f01-ac58-abc7372bba90": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1795660436134,
+      "endedAt": 1795660436134,
+      "files": {
+        "cover.png": {
+          "before": null,
+          "after": "/root/.cache/hyperframes/history/a69e0b32-cf19-4c75-805f-336d238afc13/blobs/1e/1e8fb62eb7fa409f716dc395a0294dd7f9a590dd856be82e3c3438ac05aa6820"
+        }
+      }
     }
   },
   "checks": {
     "latest": {
-      "revision": "2c4e9672-d928-4911-a79a-0f4b41e2691c",
-      "id": "4f08cbd1-7e63-497a-a0f3-b9e1b80f9a99"
+      "revision": null,
+      "id": "fe21cf72-809c-4566-a965-528abbe56ed3"
     },
     "revisions": {
       "27c6cf79-0a09-4b65-99a6-b7eb48caed2d": [
         {
           "id": "a20de30f-ac27-4287-9fb9-cc2d6ec4b861",
           "scope": "project",
-          "report": "/home/user/nazir1/lampu-3/.hyperframes/artifacts/checks/a20de30f-ac27-4287-9fb9-cc2d6ec4b861.json",
           "metadata": {
             "ok": true,
             "browserSkipped": false,
@@ -245,14 +263,15 @@
           "revision": "27c6cf79-0a09-4b65-99a6-b7eb48caed2d",
           "inputFingerprint": "b65b7e8a8a3dd1dff6c59f9b1ea7bcabc754919d1a0f7ed756275cef8903949b",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "97c76093-1afc-493d-8578-0768805fbfaa"
         }
       ],
       "2c4e9672-d928-4911-a79a-0f4b41e2691c": [
         {
           "id": "4f08cbd1-7e63-497a-a0f3-b9e1b80f9a99",
           "scope": "project",
-          "report": "/home/user/nazir1/lampu-3/.hyperframes/artifacts/checks/4f08cbd1-7e63-497a-a0f3-b9e1b80f9a99.json",
           "metadata": {
             "ok": true,
             "browserSkipped": false,
@@ -282,7 +301,9 @@
           "revision": "2c4e9672-d928-4911-a79a-0f4b41e2691c",
           "inputFingerprint": "93a2811bf0af0e1ebcbfab7a3f063e33f13c4866f68373083560e311abbfa796",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "97c76093-1afc-493d-8578-0768805fbfaa"
         }
       ]
     },
@@ -695,5 +716,18 @@
       ]
     },
     "unversioned": []
-  }
+  },
+  "renders": {
+    "latest": {
+      "id": "97c76093-1afc-493d-8578-0768805fbfaa",
+      "completedAt": 1795660588155,
+      "output": "/home/user/nazir1/lampu-3/renders/lampu-3.mp4",
+      "status": "completed",
+      "revision": "3cd078cb-8f6c-4f01-ac58-abc7372bba90"
+    },
+    "retainedRevisions": [
+      "3cd078cb-8f6c-4f01-ac58-abc7372bba90"
+    ]
+  },
+  "pendingArtifactCleanup": []
 }
