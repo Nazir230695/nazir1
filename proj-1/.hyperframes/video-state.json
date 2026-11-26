@@ -1110,13 +1110,14 @@
   },
   "renders": {
     "latest": {
-      "id": "8555af0e-054a-422b-9ff2-622218a78579",
-      "completedAt": 1795691471546,
+      "id": "b0740049-836a-4b37-a731-809dcdea6e76",
+      "completedAt": 1795696358604,
       "output": "/home/user/nazir1/proj-1/renders/proj-1.mp4",
       "status": "completed",
-      "revision": "664d19d8-0972-49b0-812f-7c41757d0109"
+      "revision": "06e85083-182e-4777-8723-097e22a09539"
     },
     "retainedRevisions": [
+      "06e85083-182e-4777-8723-097e22a09539",
       "664d19d8-0972-49b0-812f-7c41757d0109"
     ]
   },

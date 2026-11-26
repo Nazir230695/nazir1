@@ -492,7 +492,6 @@
         {
           "id": "766e641f-7bdb-4ff3-8337-23745d936e9d",
           "scope": "project",
-          "report": "/home/user/nazir1/proj-2/.hyperframes/artifacts/checks/766e641f-7bdb-4ff3-8337-23745d936e9d.json",
           "metadata": {
             "ok": true,
             "browserSkipped": false,
@@ -522,7 +521,9 @@
           "revision": "01a3151a-e85b-4b29-a5e9-c943f8b0ed45",
           "inputFingerprint": "66622e858711e15b4d51dc5968a2593942e9f7c87af4754ebb0e97446e44f7a6",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "d3187b6c-f248-426f-9bbd-eb4be21fc412"
         }
       ],
       "c192e540-016f-419d-a986-916c84b77799": [
@@ -566,7 +567,6 @@
         {
           "id": "832b88a5-e241-47b6-880f-28f628caa6a1",
           "scope": "project",
-          "report": "/home/user/nazir1/proj-2/.hyperframes/artifacts/checks/832b88a5-e241-47b6-880f-28f628caa6a1.json",
           "metadata": {
             "ok": true,
             "browserSkipped": false,
@@ -596,14 +596,15 @@
           "revision": "25dc2119-0ec3-4cfd-9ffb-e8a4b6f9f1cf",
           "inputFingerprint": "7189e31163434fce92d9349e4d614e1de343a37de88f5dc36d53cdd8c3907f97",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "d3187b6c-f248-426f-9bbd-eb4be21fc412"
         }
       ],
       "7bbf505a-c89d-48a4-8e05-51de5f9457a8": [
         {
           "id": "a671b378-5135-4187-8ac4-7182ca6054b8",
           "scope": "project",
-          "report": "/home/user/nazir1/proj-2/.hyperframes/artifacts/checks/a671b378-5135-4187-8ac4-7182ca6054b8.json",
           "metadata": {
             "ok": true,
             "browserSkipped": false,
@@ -633,7 +634,9 @@
           "revision": "7bbf505a-c89d-48a4-8e05-51de5f9457a8",
           "inputFingerprint": "49be4b961d1b69583a0c5a592dcab8d8ebfcf0396f9c749b8223b72eeb262287",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "d3187b6c-f248-426f-9bbd-eb4be21fc412"
         }
       ],
       "e6b8ac14-b01c-4dbc-9a6a-d1bb17d90c9b": [
@@ -1416,15 +1419,15 @@
   },
   "renders": {
     "latest": {
-      "id": "f2b1c806-c67c-4f6c-92cd-0e62aaf9ae82",
-      "completedAt": 1795693137786,
+      "id": "d3187b6c-f248-426f-9bbd-eb4be21fc412",
+      "completedAt": 1795696523331,
       "output": "/home/user/nazir1/proj-2/renders/proj-2.mp4",
       "status": "completed",
-      "revision": "c192e540-016f-419d-a986-916c84b77799"
+      "revision": "e6b8ac14-b01c-4dbc-9a6a-d1bb17d90c9b"
     },
     "retainedRevisions": [
-      "c192e540-016f-419d-a986-916c84b77799",
-      "01a3151a-e85b-4b29-a5e9-c943f8b0ed45"
+      "e6b8ac14-b01c-4dbc-9a6a-d1bb17d90c9b",
+      "c192e540-016f-419d-a986-916c84b77799"
     ]
   },
   "pendingArtifactCleanup": []

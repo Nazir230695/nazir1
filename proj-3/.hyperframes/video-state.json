@@ -639,5 +639,18 @@
         "attribution": "unversioned"
       }
     ]
-  }
+  },
+  "renders": {
+    "latest": {
+      "id": "ceecebbb-e94e-4e2e-8e8f-f967ad0901dc",
+      "completedAt": 1795696696418,
+      "output": "/home/user/nazir1/proj-3/renders/proj-3.mp4",
+      "status": "completed",
+      "revision": "9f03ee9b-32f6-4c82-8b3c-564214d0a22a"
+    },
+    "retainedRevisions": [
+      "9f03ee9b-32f6-4c82-8b3c-564214d0a22a"
+    ]
+  },
+  "pendingArtifactCleanup": []
 }
