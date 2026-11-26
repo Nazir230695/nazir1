@@ -1,0 +1,98 @@
+{
+ "total": 29.3333,
+ "segs": [
+  {
+   "id": "m0",
+   "src": "u",
+   "src_in": 0.6333,
+   "src_out": 5.3667,
+   "start": 0.0,
+   "dur": 4.7332,
+   "vol": 1.0,
+   "zone": "low",
+   "kind": "talk"
+  },
+  {
+   "id": "u1",
+   "src": "u",
+   "src_in": 14.2333,
+   "src_out": 21.2333,
+   "start": 4.7334,
+   "dur": 6.9999,
+   "vol": 1.0,
+   "zone": "low",
+   "kind": "talk"
+  },
+  {
+   "id": "m1",
+   "src": "m",
+   "src_in": 15.1667,
+   "src_out": 19.4333,
+   "start": 11.7334,
+   "dur": 4.266500000000001,
+   "vol": 1.0,
+   "zone": "low",
+   "kind": "talk"
+  },
+  {
+   "id": "m3",
+   "src": "m",
+   "src_in": 26.8667,
+   "src_out": 31.6667,
+   "start": 16.0,
+   "dur": 4.7999,
+   "vol": 1.0,
+   "zone": "low",
+   "kind": "talk"
+  },
+  {
+   "id": "u2",
+   "src": "u",
+   "src_in": 29.3333,
+   "src_out": 36.2667,
+   "start": 20.8,
+   "dur": 6.9332,
+   "vol": 1.0,
+   "zone": "low",
+   "kind": "talk"
+  },
+  {
+   "id": "cta",
+   "src": "l",
+   "src_in": 52.1333,
+   "src_out": 53.7333,
+   "start": 27.7334,
+   "dur": 1.5999,
+   "vol": 1.0,
+   "zone": "low",
+   "kind": "talk"
+  }
+ ],
+ "phrases": [
+  "depan aku ni",
+  "main lampu pula",
+  "Lampu Canmeijia ni",
+  "memang dah",
+  "ramai terkenal",
+  "setiap pembelian Dia",
+  "akan bagi dengan",
+  "remote je ni",
+  "Lampu boleh control",
+  "nanti Dia ada",
+  "bulb dia juga,",
+  "spare",
+  "kita on dulu",
+  "wow cantik banget",
+  "tu nampak dia",
+  "klik klik",
+  "dia klik",
+  "laju laju",
+  "ni lampu solar",
+  "boleh gantung dekat",
+  "luar rumah",
+  "Halaman rumah memang",
+  "naik lawa",
+  "kalau berkenan,",
+  "tekan link bawah"
+ ]
+}

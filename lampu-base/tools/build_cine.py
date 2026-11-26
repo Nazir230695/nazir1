@@ -8,7 +8,7 @@ import json, sys, html, os, re, math, subprocess
 WJ, P = sys.argv[1], sys.argv[2]
 FPS = 30
 WORDS = json.load(open(WJ))     # {"a": [...], "b": [...], ...} word lists per raw clip
-SRC = {k: f"assets/cine_{k}.mp4" for k in ("u", "m", "l", "f", "n1")}
+SRC = {k: f"assets/cine_{k}.mp4" for k in ("u", "m", "l", "f", "n1", "acc")}
 
 
 def fr(t):
@@ -23,10 +23,12 @@ VARIANT = sys.argv[3] if len(sys.argv) > 3 else "1"
 # HOOK: (voice_src, voice_in, voice_out, headline, [(src, src_in), ...] montage shots, split evenly over the voice line)
 # BODY: (id, src, src_in, src_out, volume, zone)
 CTA_A = [("cta", "l", 52.12, 53.72, 1.0, "low")]   # "kalau berkenan, tekan link bawah" then the video ends
-HOOKS = {"c": ("l", 28.40, 30.86, "", [])}
+HOOKS = {"c": ("l", 28.40, 30.86, "", []), "c2": ("u", 0.62, 5.36, "", [])}
 VARIANTS = {
     "c": [("u1", "u", 29.35, 36.28, 1.0, "low"), ("m1", "m", 15.16, 19.42, 1.0, "low"), ("f1", "f", 11.83, 17.40, 1.0, "low"),
           ("l3", "l", 17.24, 24.40, 1.0, "low")] + CTA_A,
+    "c2": [("u1", "u", 14.23, 21.24, 1.0, "low"), ("m1", "m", 15.16, 19.42, 1.0, "low"),
+           ("m3", "m", 26.87, 31.66, 1.0, "low"), ("u2", "u", 29.35, 36.28, 1.0, "low")] + CTA_A,
 }
 HV_SRC, HV_IN, HV_OUT, HEADLINE, _MONTAGE = HOOKS[VARIANT]
 SHOTS = [(HV_SRC, HV_IN)]   # one continuous shot (the montage list is kept above for reference only)
@@ -78,6 +80,7 @@ CTA_OV = lambda: [("f", 28.0, st("cta"), end("cta"))]   # the close-up strobes t
 OVS = {
     "c": lambda: [("f", 19.0, W("u1", 31.93), W("u1", 34.15)), ("n1", 44.5, W("u1", 34.15), end("u1")),
                   ("n1", 44.2, st("l3") + 0.4, W("l3", 21.88)), ("f", 25.0, W("l3", 21.88), end("l3"))] + CTA_OV(),
+    "c2": lambda: [("acc", 9.6, W("u1", 19.35), end("u1")), ("f", 19.0, W("u2", 31.93), W("u2", 34.15)), ("n1", 44.5, W("u2", 34.15), end("u2"))] + CTA_OV(),
 }
 OV = [(f"ov{k}", src, a, fr(t0), fr(t1)) for k, (src, a, t0, t1) in enumerate(OVS[VARIANT]())]
 
@@ -406,6 +409,10 @@ PARTS = {
     "c": lambda: [
         bigzoom("p-scene", "img1.jpg", "50% 45%", "", W("u1", 29.89), W("u1", 31.93) + 0.3),
         bigzoom("p-remote", "img5.jpg", "50% 45%", "", W("f1", 15.88), end("f1")),
+    ],
+    "c2": lambda: [
+        bigzoom("p-remote", "img5.jpg", "50% 45%", "", W("u1", 16.79), W("u1", 19.35)),
+        bigzoom("p-scene", "img1.jpg", "50% 45%", "", W("u2", 29.89), W("u2", 31.93) + 0.3),
     ],
 }
 build_scene("sc", [hook_headline()] + PARTS[V]())
