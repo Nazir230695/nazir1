@@ -31,7 +31,7 @@ VARIANTS = {
           ("b4", "b", 53.44, 55.50, 1.0, "low"), ("b5", "b", 58.46, 59.10, 1.0, "low"), ("b6", "b", 61.14, 62.58, 1.0, "low"),
           ("b7", "b", 75.08, 79.42, 1.0, "low"), ("pr", "b", 82.18, 84.34, 1.0, "low"), ("cta", "b", 88.56, 90.50, 1.0, "low")],
     "2": [("a1", "a", 13.27, 19.42, 1.0, "low"), ("a2", "a", 20.39, 25.62, 1.0, "low"), ("a3", "a", 29.33, 30.92, 1.0, "low"),
-          ("a4", "a", 46.95, 52.12, 1.0, "low"), ("a5", "a", 68.83, 71.12, 1.0, "low"), ("a6", "a", 72.79, 75.70, 1.0, "low"),
+          ("a4", "a", 46.95, 48.50, 1.0, "low"), ("a5", "a", 66.00, 71.12, 1.0, "low"), ("a6", "a", 72.79, 75.70, 1.0, "low"),
           ("a7", "a", 80.63, 82.72, 1.0, "low"), ("pr", "a", 83.73, 85.20, 1.0, "low"), ("pr2", "a", 86.11, 89.20, 1.0, "low"),
           ("cta", "a", 89.19, 90.47, 1.0, "low")],
 }
@@ -547,8 +547,9 @@ PARTS = {
         leak("lk1", st("a2")),
         brackets("bk", "Pancar kat siling", W("a2", 21.65), end("a2")),
         tick("tk0", "TENGOK SAMBIL BARING", st("a3"), end("a3")),
-        tick("tk1", "AUTO CALIBRATE", W("a4", 50.67), end("a4")),
-        tick("tk2", "TAK PAYAH ADJUST", st("a5") + 0.1, end("a6")),
+        tick("tk1", "AUTO CALIBRATE", st("a5") + 0.1, at("a5", 69.0)),
+        leak("lk-rev", at("a5", 69.0)),
+        tick("tk2", "TERUS TEPAT, TAK PAYAH ADJUST", at("a5", 69.0) + 0.15, end("a6")),
         leak("lk2", st("a7")),
         bigzoom("p-box", "img1.jpg", "50% 45%", "SMART PROJECTOR", st("a7") + 0.05, end("a7"), zoom=1.2),
         pricetag("prc", st("pr"), end("pr2"), W("pr2", 86.13)),
@@ -615,6 +616,8 @@ cam += [f'      tl.fromTo("#cam", {{ scale: 1.22, rotation: {(-4 if k % 2 else 4
 import re as _re
 SFX = [("sx-hk", "whoosh.mp3", 0.0, 0.3)] + [(f"sx-m{k}", "whoosh-short.mp3", st(f"m{k}"), 0.22) for k in range(1, n_shots)]
 SFX += [(f"sx-{oid}", "whoosh-short.mp3", t0, 0.15) for oid, src, a, t0, t1 in OV]
+if VARIANT == "2":
+    SFX.append(("sx-reveal", "sparkle.mp3", at("a5", 69.0), 0.35))
 for m in _re.finditer(r'id="(c-[a-z0-9-]+)" class="chip clip" data-start="([0-9.]+)"', open(os.path.join(P, "compositions", "sc.html")).read()):
     SFX.append((f"sx-{m.group(1)}", "pop.mp3", float(m.group(2)), 0.2))
 for m in _re.finditer(r'id="(p-[a-z0-9-]+)" class=" clip" data-start="([0-9.]+)"', open(os.path.join(P, "compositions", "sc.html")).read()):
