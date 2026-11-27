@@ -8,7 +8,7 @@ Rakam satu take penuh. Kalau tersasul, ulang ayat tu je, nanti aku potong.
 |---|---|---|
 | 0:00–0:03 | Hook: HOTEL T20 HARGA B40 | "Korang, ni hotel T20… tapi harga B40! Aku booking kat TikTok je." |
 | 0:03–0:06 | Kad nama hotel | "M Resort Kuala Lumpur, hotel 5 bintang kat Bukit Kiara." |
-| 0:06–0:15 | Kolam ala resort | "Tengok kolam dia… luas gila, siap ada pantai pasir. Anak-anak aku memang tak nak naik langsung!" |
+| 0:06–0:15 | Kolam ala resort | "Tengok kolam dia… luas gila, lantai dia pun macam pasir pantai. Anak-anak aku memang tak nak naik langsung!" |
 | 0:15–0:20 | Jacuzzi + rain shower | "Ada jacuzzi, ada rain shower tepi kolam. Rasa macam kat Bali weh." |
 | 0:20–0:24 | Waktu malam | "Malam-malam lagi cantik, lampu semua menyala." |
 | 0:24–0:28 | Kids club | "Untuk budak-budak ada kids club, ball pit, wall climbing." |

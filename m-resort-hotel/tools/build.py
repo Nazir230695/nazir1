@@ -76,7 +76,7 @@ LABELS = [
 
 # review lines (lower third): (text, from-seg, to-seg)
 LINES = [
-    ("Kolam dia luas, siap ada <b>pantai pasir</b>", 3, 4),
+    ("Lantai kolam dia<br><b>macam pasir</b>", 3, 4),
     ("Anak-anak memang <b>tak nak naik</b> 😂", 5, 6),
     ("Berendam dalam <b>jacuzzi</b>, lega habis", 7, 7),
     ("Mandi bawah <b>rain shower</b> tepi kolam", 8, 8),

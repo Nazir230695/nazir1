@@ -1,7 +1,7 @@
 {
   "version": 1,
   "historyId": "208fff73-1f9f-4b9e-87e2-e629a66d0864",
-  "currentRevision": "66f38c4a-d62d-4183-ae1b-ade4b93da06d",
+  "currentRevision": "971d3946-ab70-4b41-b017-2ba47470732f",
   "pendingChanges": false,
   "files": {
     "AGENTS.md": {
@@ -49,8 +49,8 @@
       "content": "/root/.cache/hyperframes/history/208fff73-1f9f-4b9e-87e2-e629a66d0864/blobs/c2/c2efd9d902a59bf9ec5019035d7deadd17762136896b6e3cb6dd99ea50997a30"
     },
     "compositions/overlay.html": {
-      "hash": "2de5e40d2077d5ad661f1a4e9c62dfe434e392c89ed42f7fcd3445001271d34d",
-      "content": "/root/.cache/hyperframes/history/208fff73-1f9f-4b9e-87e2-e629a66d0864/blobs/2d/2de5e40d2077d5ad661f1a4e9c62dfe434e392c89ed42f7fcd3445001271d34d"
+      "hash": "d9a0220d0cfd8b3c5c9d79bb286d713b2f6b99a7fac6d2c37cbb763842b3c59e",
+      "content": "/root/.cache/hyperframes/history/208fff73-1f9f-4b9e-87e2-e629a66d0864/blobs/d9/d9a0220d0cfd8b3c5c9d79bb286d713b2f6b99a7fac6d2c37cbb763842b3c59e"
     },
     "hyperframes.json": {
       "hash": "35a6d4ea79ebe911f0d81705f7aace5d8ff0316b745b0311d56af50c9c237cb7",
@@ -69,8 +69,8 @@
       "content": "/root/.cache/hyperframes/history/208fff73-1f9f-4b9e-87e2-e629a66d0864/blobs/20/20e944ed48797f3e7e8546d34bc1b80a6228d6944bc07cf329204a6c9f2b1d5d"
     },
     "tools/build.py": {
-      "hash": "ff6b1b4e8c70257d987479c478674562468bde1ffba655b06f2c06b8c66a620c",
-      "content": "/root/.cache/hyperframes/history/208fff73-1f9f-4b9e-87e2-e629a66d0864/blobs/ff/ff6b1b4e8c70257d987479c478674562468bde1ffba655b06f2c06b8c66a620c"
+      "hash": "23809be18deb475491ad3e78f62f91659f05a30623284d24f4a2c8af19b16da7",
+      "content": "/root/.cache/hyperframes/history/208fff73-1f9f-4b9e-87e2-e629a66d0864/blobs/23/23809be18deb475491ad3e78f62f91659f05a30623284d24f4a2c8af19b16da7"
     },
     "tools/proxy.sh": {
       "hash": "b6774ae51b1cd3887f0cda79cee573b2efccf2da9d94f51d47f6d97e46c7635e",
@@ -169,8 +169,8 @@
       "content": "/root/.cache/hyperframes/history/208fff73-1f9f-4b9e-87e2-e629a66d0864/blobs/07/075e17bdac5c13662a1c9530050e0046f81d4138e00eb3bf30427a7b4404103d"
     },
     "VOICEOVER.md": {
-      "hash": "2f227beb66750c043e307cd9c63fdd13c7c285d0906add2477a318c89fd0db8b",
-      "content": "/root/.cache/hyperframes/history/208fff73-1f9f-4b9e-87e2-e629a66d0864/blobs/2f/2f227beb66750c043e307cd9c63fdd13c7c285d0906add2477a318c89fd0db8b"
+      "hash": "49dd55a226952b49ad68c9f6d7cb125f4085a346f16bc56791e7420d0f4215ef",
+      "content": "/root/.cache/hyperframes/history/208fff73-1f9f-4b9e-87e2-e629a66d0864/blobs/49/49dd55a226952b49ad68c9f6d7cb125f4085a346f16bc56791e7420d0f4215ef"
     }
   },
   "revisions": {
@@ -291,12 +291,73 @@
           "after": "/root/.cache/hyperframes/history/208fff73-1f9f-4b9e-87e2-e629a66d0864/blobs/2f/2f227beb66750c043e307cd9c63fdd13c7c285d0906add2477a318c89fd0db8b"
         }
       }
+    },
+    "701c3b6b-e552-481b-95c1-1f30c0fede6d": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1795773482395,
+      "endedAt": 1795773482398,
+      "files": {
+        "compositions/overlay.html": {
+          "before": "/root/.cache/hyperframes/history/208fff73-1f9f-4b9e-87e2-e629a66d0864/blobs/2d/2de5e40d2077d5ad661f1a4e9c62dfe434e392c89ed42f7fcd3445001271d34d",
+          "after": "/root/.cache/hyperframes/history/208fff73-1f9f-4b9e-87e2-e629a66d0864/blobs/55/553be113590da12c9c50209b6af1a5d435725c78ca0042d59dda3809e04b57d8"
+        },
+        "tools/build.py": {
+          "before": "/root/.cache/hyperframes/history/208fff73-1f9f-4b9e-87e2-e629a66d0864/blobs/ff/ff6b1b4e8c70257d987479c478674562468bde1ffba655b06f2c06b8c66a620c",
+          "after": "/root/.cache/hyperframes/history/208fff73-1f9f-4b9e-87e2-e629a66d0864/blobs/21/217678a597199012c71b1ef0ddceb813af0cb5ceaa1b923d0e89646d9d3fff01"
+        },
+        "VOICEOVER.md": {
+          "before": "/root/.cache/hyperframes/history/208fff73-1f9f-4b9e-87e2-e629a66d0864/blobs/2f/2f227beb66750c043e307cd9c63fdd13c7c285d0906add2477a318c89fd0db8b",
+          "after": "/root/.cache/hyperframes/history/208fff73-1f9f-4b9e-87e2-e629a66d0864/blobs/49/49dd55a226952b49ad68c9f6d7cb125f4085a346f16bc56791e7420d0f4215ef"
+        }
+      }
+    },
+    "1bc4a0fc-0f0f-4d68-ac07-dc6021406a35": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1795773561756,
+      "endedAt": 1795773561768,
+      "files": {
+        "compositions/overlay.html": {
+          "before": "/root/.cache/hyperframes/history/208fff73-1f9f-4b9e-87e2-e629a66d0864/blobs/55/553be113590da12c9c50209b6af1a5d435725c78ca0042d59dda3809e04b57d8",
+          "after": "/root/.cache/hyperframes/history/208fff73-1f9f-4b9e-87e2-e629a66d0864/blobs/db/db6ab675449cc034ac134bfc6862a51b1ce9b0529154f49c7623d748cca54d2a"
+        },
+        "tools/build.py": {
+          "before": "/root/.cache/hyperframes/history/208fff73-1f9f-4b9e-87e2-e629a66d0864/blobs/21/217678a597199012c71b1ef0ddceb813af0cb5ceaa1b923d0e89646d9d3fff01",
+          "after": "/root/.cache/hyperframes/history/208fff73-1f9f-4b9e-87e2-e629a66d0864/blobs/8b/8b4b3dc56cb50d22f8de28d8ebd5b8450da2af57b7a39a41f46937222a88518b"
+        }
+      }
+    },
+    "971d3946-ab70-4b41-b017-2ba47470732f": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1795773591376,
+      "endedAt": 1795773591389,
+      "files": {
+        "compositions/overlay.html": {
+          "before": "/root/.cache/hyperframes/history/208fff73-1f9f-4b9e-87e2-e629a66d0864/blobs/db/db6ab675449cc034ac134bfc6862a51b1ce9b0529154f49c7623d748cca54d2a",
+          "after": "/root/.cache/hyperframes/history/208fff73-1f9f-4b9e-87e2-e629a66d0864/blobs/d9/d9a0220d0cfd8b3c5c9d79bb286d713b2f6b99a7fac6d2c37cbb763842b3c59e"
+        },
+        "tools/build.py": {
+          "before": "/root/.cache/hyperframes/history/208fff73-1f9f-4b9e-87e2-e629a66d0864/blobs/8b/8b4b3dc56cb50d22f8de28d8ebd5b8450da2af57b7a39a41f46937222a88518b",
+          "after": "/root/.cache/hyperframes/history/208fff73-1f9f-4b9e-87e2-e629a66d0864/blobs/23/23809be18deb475491ad3e78f62f91659f05a30623284d24f4a2c8af19b16da7"
+        }
+      }
     }
   },
   "checks": {
     "latest": {
-      "revision": null,
-      "id": "d4e947c3-4830-495e-8dd2-4e433c09ad73"
+      "revision": "971d3946-ab70-4b41-b017-2ba47470732f",
+      "id": "976eff14-68d5-49e9-86d9-a5f181c339b4"
     },
     "revisions": {
       "f2b63288-ff6d-4bd3-b838-9d4f21ac932d": [
@@ -379,7 +440,6 @@
         {
           "id": "d7ef5228-4c06-4f13-a935-cf06cfc4df24",
           "scope": "project",
-          "report": "/home/user/nazir1/m-resort-hotel/.hyperframes/artifacts/checks/d7ef5228-4c06-4f13-a935-cf06cfc4df24.json",
           "metadata": {
             "ok": true,
             "browserSkipped": false,
@@ -409,7 +469,9 @@
           "revision": "1426c5d6-a550-4e05-97f7-95b0edc5864f",
           "inputFingerprint": "bcadf037ca731d753acd308a961fb501b10437ceacaa3eab915bf67d7feeb611",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "45cc8512-74c1-4d8b-a6b7-ba59a79bdb8a"
         }
       ],
       "82bbedc5-ab61-453e-bcad-572dc21a9de4": [
@@ -448,6 +510,81 @@
           "attribution": "recorded-revision",
           "status": "cleaned",
           "cleanedAfterRender": "02c026b6-1ab9-442d-9dfc-68347d63dd83"
+        }
+      ],
+      "701c3b6b-e552-481b-95c1-1f30c0fede6d": [
+        {
+          "id": "68646d07-866e-4395-9371-b6a2e66dd727",
+          "scope": "project",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 45000,
+              "cache": true,
+              "contrast": true,
+              "craft": true,
+              "strict": false,
+              "snapshots": false,
+              "safeZones": [
+                "tiktok",
+                "reels",
+                "shorts"
+              ],
+              "browserGpuMode": "auto",
+              "includeUnmounted": false
+            }
+          },
+          "createdAt": 1795773535864,
+          "contentHash": "d8945f11302902727f13429687352970f5e95c1cab5d577b84805e0737e7689d",
+          "revision": "701c3b6b-e552-481b-95c1-1f30c0fede6d",
+          "inputFingerprint": "91475afd139b8af1c9db04a65070b03b118ed6185d3f4c65395b064aa1676eee",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "45cc8512-74c1-4d8b-a6b7-ba59a79bdb8a"
+        }
+      ],
+      "971d3946-ab70-4b41-b017-2ba47470732f": [
+        {
+          "id": "976eff14-68d5-49e9-86d9-a5f181c339b4",
+          "scope": "project",
+          "report": "/home/user/nazir1/m-resort-hotel/.hyperframes/artifacts/checks/976eff14-68d5-49e9-86d9-a5f181c339b4.json",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 45000,
+              "cache": true,
+              "contrast": true,
+              "craft": true,
+              "strict": false,
+              "snapshots": false,
+              "safeZones": [
+                "tiktok",
+                "reels",
+                "shorts"
+              ],
+              "browserGpuMode": "auto",
+              "includeUnmounted": false
+            }
+          },
+          "createdAt": 1795773617398,
+          "contentHash": "e6055fe86fafb2796d32b4fe2b054d3d7f92af43c5ebbe5002ff7dcdf5791585",
+          "revision": "971d3946-ab70-4b41-b017-2ba47470732f",
+          "inputFingerprint": "5c9505b05adeb670b3c38eec5d8259d23e02f7eafb7fa0474e6dcbcc773cfbbc",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
         }
       ]
     },
@@ -560,10 +697,7 @@
     ]
   },
   "snapshots": {
-    "latest": {
-      "revision": "1426c5d6-a550-4e05-97f7-95b0edc5864f",
-      "id": "1bf2b8d3-2776-47e2-b772-ebde912f2df5-0"
-    },
+    "latest": null,
     "revisions": {
       "44229349-58c7-49d1-90ed-b295d3e7d452": [
         {
@@ -907,7 +1041,6 @@
         {
           "scope": "full",
           "id": "1bf2b8d3-2776-47e2-b772-ebde912f2df5-0",
-          "image": "/home/user/nazir1/m-resort-hotel/.hyperframes/artifacts/snapshots/73f7303b-aef6-46f0-9f20-c9e6795c28e9/frame-00-at-9s.png",
           "time": 9,
           "metadata": {
             "width": 1080,
@@ -922,12 +1055,13 @@
           "revision": "1426c5d6-a550-4e05-97f7-95b0edc5864f",
           "inputFingerprint": "bcadf037ca731d753acd308a961fb501b10437ceacaa3eab915bf67d7feeb611",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "45cc8512-74c1-4d8b-a6b7-ba59a79bdb8a"
         },
         {
           "scope": "full",
           "id": "1bf2b8d3-2776-47e2-b772-ebde912f2df5-1",
-          "image": "/home/user/nazir1/m-resort-hotel/.hyperframes/artifacts/snapshots/73f7303b-aef6-46f0-9f20-c9e6795c28e9/frame-01-at-52.5s.png",
           "time": 52.5,
           "metadata": {
             "width": 1080,
@@ -942,12 +1076,13 @@
           "revision": "1426c5d6-a550-4e05-97f7-95b0edc5864f",
           "inputFingerprint": "bcadf037ca731d753acd308a961fb501b10437ceacaa3eab915bf67d7feeb611",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "45cc8512-74c1-4d8b-a6b7-ba59a79bdb8a"
         },
         {
           "scope": "full",
           "id": "1bf2b8d3-2776-47e2-b772-ebde912f2df5-2",
-          "image": "/home/user/nazir1/m-resort-hotel/.hyperframes/artifacts/snapshots/73f7303b-aef6-46f0-9f20-c9e6795c28e9/frame-02-at-54.55s.png",
           "time": 54.55,
           "metadata": {
             "width": 1080,
@@ -962,7 +1097,9 @@
           "revision": "1426c5d6-a550-4e05-97f7-95b0edc5864f",
           "inputFingerprint": "bcadf037ca731d753acd308a961fb501b10437ceacaa3eab915bf67d7feeb611",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "45cc8512-74c1-4d8b-a6b7-ba59a79bdb8a"
         }
       ],
       "82bbedc5-ab61-453e-bcad-572dc21a9de4": [
@@ -1050,21 +1187,109 @@
           "status": "cleaned",
           "cleanedAfterRender": "02c026b6-1ab9-442d-9dfc-68347d63dd83"
         }
+      ],
+      "701c3b6b-e552-481b-95c1-1f30c0fede6d": [
+        {
+          "scope": "full",
+          "id": "c6aa6317-f53b-4c90-848f-8c55c208b14f-0",
+          "time": 9,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1795773548710,
+          "contentHash": "af60e6bb275f3c1ab34db2a8cef4d6b3a898f1f285e73f56454c6ff313ea64e2",
+          "revision": "701c3b6b-e552-481b-95c1-1f30c0fede6d",
+          "inputFingerprint": "91475afd139b8af1c9db04a65070b03b118ed6185d3f4c65395b064aa1676eee",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "45cc8512-74c1-4d8b-a6b7-ba59a79bdb8a"
+        },
+        {
+          "scope": "full",
+          "id": "c6aa6317-f53b-4c90-848f-8c55c208b14f-1",
+          "time": 54.55,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1795773548710,
+          "contentHash": "7c82d8644ccc955a6877e6557c881e710244dab629fba3928710f38504f0d0b5",
+          "revision": "701c3b6b-e552-481b-95c1-1f30c0fede6d",
+          "inputFingerprint": "91475afd139b8af1c9db04a65070b03b118ed6185d3f4c65395b064aa1676eee",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "45cc8512-74c1-4d8b-a6b7-ba59a79bdb8a"
+        }
+      ],
+      "1bc4a0fc-0f0f-4d68-ac07-dc6021406a35": [
+        {
+          "scope": "full",
+          "id": "f177ff31-ba90-4979-98e0-324dea52b4ed-0",
+          "time": 9,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1795773571178,
+          "contentHash": "ede73ca475910e2b960b09f708fd2b5c05afafc934deae85a95305e8e9e6e5dc",
+          "revision": "1bc4a0fc-0f0f-4d68-ac07-dc6021406a35",
+          "inputFingerprint": "57dcff21b3f2d6385198d8be9d52afa9b0e3c1bc90d9dcb85e2c65de10af30f9",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "45cc8512-74c1-4d8b-a6b7-ba59a79bdb8a"
+        },
+        {
+          "scope": "full",
+          "id": "f177ff31-ba90-4979-98e0-324dea52b4ed-1",
+          "time": 54.55,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1795773571179,
+          "contentHash": "7c82d8644ccc955a6877e6557c881e710244dab629fba3928710f38504f0d0b5",
+          "revision": "1bc4a0fc-0f0f-4d68-ac07-dc6021406a35",
+          "inputFingerprint": "57dcff21b3f2d6385198d8be9d52afa9b0e3c1bc90d9dcb85e2c65de10af30f9",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "45cc8512-74c1-4d8b-a6b7-ba59a79bdb8a"
+        }
       ]
     },
     "unversioned": []
   },
   "renders": {
     "latest": {
-      "id": "02c026b6-1ab9-442d-9dfc-68347d63dd83",
-      "completedAt": 1795772021367,
+      "id": "45cc8512-74c1-4d8b-a6b7-ba59a79bdb8a",
+      "completedAt": 1795774323996,
       "output": "/home/user/nazir1/m-resort-hotel/renders/m-resort-trusted-review.mp4",
       "status": "completed",
-      "revision": "66f38c4a-d62d-4183-ae1b-ade4b93da06d"
+      "revision": "971d3946-ab70-4b41-b017-2ba47470732f"
     },
     "retainedRevisions": [
-      "66f38c4a-d62d-4183-ae1b-ade4b93da06d",
-      "1426c5d6-a550-4e05-97f7-95b0edc5864f"
+      "971d3946-ab70-4b41-b017-2ba47470732f",
+      "66f38c4a-d62d-4183-ae1b-ade4b93da06d"
     ]
   },
   "pendingArtifactCleanup": []
