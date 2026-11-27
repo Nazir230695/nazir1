@@ -1,0 +1,94 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; pointer-events: none; 
+      --ink: #ffffff;
+      --dark: #0d0e10;
+      --neon: #ff8a1f;
+      --glass: rgba(16, 17, 20, 0.80);
+      --stroke: rgba(255,255,255,.14);
+      --font-ui: "Montserrat", sans-serif;
+ }
+    .chip { position: absolute; left: 0; width: 960px; text-align: center; }
+    .chip > span { display: inline-flex; align-items: center; gap: 14px; }
+    .chip .lb { background: #fff; color: #111; font-family: var(--font-ui); font-weight: 600; font-size: 40px; letter-spacing: .01em;
+      padding: 8px 18px; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,.35); white-space: nowrap; text-transform: uppercase; }
+    .chip .ic { width: 70px; height: 70px; border-radius: 50%; background: var(--dark); border: 2.5px solid rgba(255,255,255,.9);
+      display: inline-flex; align-items: center; justify-content: center; box-shadow: 0 10px 30px rgba(0,0,0,.4); }
+    .chip .ic svg { width: 38px; height: 38px; }
+    .glass { position: absolute; background: var(--glass); border: 1.5px solid var(--stroke); border-radius: 30px;
+      box-shadow: 0 24px 60px rgba(0,0,0,.5); backdrop-filter: blur(18px); color: #fff; font-family: var(--font-ui); }
+    .head { position: absolute; left: 0; width: 960px; text-align: center; font-family: var(--font-ui); font-weight: 800; color: #fff;
+      font-size: 62px; line-height: 1.1; text-shadow: 0 0 4px rgba(0,0,0,.9), 0 3px 8px rgba(0,0,0,.75), 0 10px 34px rgba(0,0,0,.75); }
+    .head > div { display: inline-block; padding: 14px 30px; border-radius: 26px; background: rgba(10,11,13,.42); }
+    .head em { font-style: normal; color: var(--neon); }
+    .pilltag { display: inline-flex; align-items: center; gap: 10px; padding: 10px 26px 10px 16px; border-radius: 12px; background: rgba(255,255,255,.95);
+      color: #111; font-family: var(--font-ui); font-weight: 700; font-size: 34px; box-shadow: 0 10px 28px rgba(0,0,0,.35); white-space: nowrap; }
+
+  </style>
+  <div id="root" data-composition-id="sc" data-width="1080" data-height="1920">
+    <div id="hl" class=" clip" data-start="0.0" data-duration="3.7" data-track-index="0" style="position:absolute; left:0; width:960px; top:440px; text-align:center"><div id="hl-t" style="font-family:var(--font-ui);font-weight:900;font-size:76px;line-height:1.08;letter-spacing:.14em;color:#ffe45c;-webkit-text-stroke:3px #1a1406;paint-order:stroke fill;text-shadow:0 4px 0 rgba(0,0,0,.6),0 8px 26px rgba(0,0,0,.7)">KENA HUJAN?<br>WATERPROOF!</div></div>
+    <div id="pl-wp" class=" clip" data-start="3.0" data-duration="0.8" data-track-index="0" style="position:absolute; left:0; width:1080px; top:1250px; text-align:center"><span id="pl-wp0" style="display:inline-flex;align-items:center;gap:14px;margin:0 10px;padding:14px 28px 14px 18px;border-radius:999px;background:rgba(14,15,18,.72);border:2px solid rgba(255,255,255,.25);backdrop-filter:blur(14px);box-shadow:0 14px 34px rgba(0,0,0,.45)"><span style="width:58px;height:58px;border-radius:50%;background:#ff8a1f;display:inline-flex;align-items:center;justify-content:center"><span style="width:34px;height:34px;display:block"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z"/></svg></span></span><span style="font-family:var(--font-ui);font-weight:800;font-size:40px;color:#fff">Waterproof</span></span></div>
+    <div id="lk1" class=" clip" data-start="3.2333" data-duration="0.7333" data-track-index="0" style="position:absolute; inset:0" data-layout-allow-overflow><div id="lk1i" style="position:absolute;inset:-10%;opacity:0;mix-blend-mode:screen;background:radial-gradient(ellipse 60% 50% at 30% 40%,rgba(255,200,90,.95),transparent 70%),radial-gradient(ellipse 70% 60% at 80% 70%,rgba(255,110,30,.9),transparent 70%)"></div></div>
+    <div id="tk1" class=" clip" data-start="4.7333" data-duration="6.3" data-track-index="0" style="position:absolute; left:0; width:1080px; top:520px; text-align:center"><span style="display:inline-flex;align-items:center;filter:drop-shadow(0 10px 26px rgba(0,0,0,.5))"><svg width="76" height="76" viewBox="0 0 76 76" style="flex:none"><circle cx="38" cy="38" r="33" fill="#0d0e10" stroke="#25d366" stroke-width="6"/><path id="tk1p" d="M23 39l10 10 20-22" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="50" stroke-dashoffset="50"/></svg><span id="tk1l" style="background:#fff;color:#111;font-family:var(--font-ui);font-weight:900;font-size:46px;padding:8px 24px 8px 18px;margin-left:-6px;transform-origin:0 50%">BUKA KE ATAS</span></span></div>
+    <div id="tk2" class=" clip" data-start="11.0333" data-duration="2.5667" data-track-index="0" style="position:absolute; left:0; width:1080px; top:520px; text-align:center"><span style="display:inline-flex;align-items:center;filter:drop-shadow(0 10px 26px rgba(0,0,0,.5))"><svg width="76" height="76" viewBox="0 0 76 76" style="flex:none"><circle cx="38" cy="38" r="33" fill="#0d0e10" stroke="#25d366" stroke-width="6"/><path id="tk2p" d="M23 39l10 10 20-22" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="50" stroke-dashoffset="50"/></svg><span id="tk2l" style="background:#fff;color:#111;font-family:var(--font-ui);font-weight:900;font-size:46px;padding:8px 24px 8px 18px;margin-left:-6px;transform-origin:0 50%">ATAU TURUN KE BAWAH</span></span></div>
+    <div id="bk" class=" clip" data-start="14.7333" data-duration="2.7" data-track-index="0" style="position:absolute; inset:0" data-layout-allow-overflow><div id="bkb" style="position:absolute;left:230px;top:400px;width:620px;height:560px;filter:drop-shadow(0 2px 6px rgba(0,0,0,.6))"><div style="position:absolute;width:90px;height:90px;left:0;top:0;border-left:8px solid #fff;border-top:8px solid #fff"></div><div style="position:absolute;width:90px;height:90px;right:0;top:0;border-right:8px solid #fff;border-top:8px solid #fff"></div><div style="position:absolute;width:90px;height:90px;left:0;bottom:0;border-left:8px solid #fff;border-bottom:8px solid #fff"></div><div style="position:absolute;width:90px;height:90px;right:0;bottom:0;border-right:8px solid #fff;border-bottom:8px solid #fff"></div></div><div style="position:absolute;left:0;width:1080px;top:920px;text-align:center"><span id="bkl" style="display:inline-block;background:#fff;color:#111;font-family:var(--font-ui);font-weight:800;font-size:42px;padding:8px 22px;transform-origin:0 50%">Lebih nampak lawa</span></div></div>
+    <div id="tk3" class=" clip" data-start="17.4333" data-duration="2.2" data-track-index="0" style="position:absolute; left:0; width:1080px; top:520px; text-align:center"><span style="display:inline-flex;align-items:center;filter:drop-shadow(0 10px 26px rgba(0,0,0,.5))"><svg width="76" height="76" viewBox="0 0 76 76" style="flex:none"><circle cx="38" cy="38" r="33" fill="#0d0e10" stroke="#25d366" stroke-width="6"/><path id="tk3p" d="M23 39l10 10 20-22" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="50" stroke-dashoffset="50"/></svg><span id="tk3l" style="background:#fff;color:#111;font-family:var(--font-ui);font-weight:900;font-size:46px;padding:8px 24px 8px 18px;margin-left:-6px;transform-origin:0 50%">BENTUK CUN &amp; ELOK</span></span></div>
+    <div id="lk2" class=" clip" data-start="19.5667" data-duration="0.7333" data-track-index="0" style="position:absolute; inset:0" data-layout-allow-overflow><div id="lk2i" style="position:absolute;inset:-10%;opacity:0;mix-blend-mode:screen;background:radial-gradient(ellipse 60% 50% at 30% 40%,rgba(255,200,90,.95),transparent 70%),radial-gradient(ellipse 70% 60% at 80% 70%,rgba(255,110,30,.9),transparent 70%)"></div></div>
+    <div id="tk4" class=" clip" data-start="19.7333" data-duration="3.2667" data-track-index="0" style="position:absolute; left:0; width:1080px; top:520px; text-align:center"><span style="display:inline-flex;align-items:center;filter:drop-shadow(0 10px 26px rgba(0,0,0,.5))"><svg width="76" height="76" viewBox="0 0 76 76" style="flex:none"><circle cx="38" cy="38" r="33" fill="#0d0e10" stroke="#25d366" stroke-width="6"/><path id="tk4p" d="M23 39l10 10 20-22" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="50" stroke-dashoffset="50"/></svg><span id="tk4l" style="background:#fff;color:#111;font-family:var(--font-ui);font-weight:900;font-size:46px;padding:8px 24px 8px 18px;margin-left:-6px;transform-origin:0 50%">MEMANG CANTIK</span></span></div>
+    <div id="p-warna" class=" clip" data-start="23.0" data-duration="3.0" data-track-index="0" style="position:absolute; inset:0" data-layout-allow-overflow><div id="p-warnabg" style="position:absolute;inset:0;background:rgba(8,9,12,.74)"></div><div id="p-warnac" style="position:absolute;left:100px;top:330px;width:880px;height:880px;border-radius:30px;overflow:hidden;background:#fff;box-shadow:0 30px 80px rgba(0,0,0,.6)"><img id="p-warnai" src="assets/img/colours.jpg" alt="" style="display:block;width:880px;height:880px;object-fit:cover;transform-origin:50% 55%"/></div><div id="p-warnat" style="position:absolute;left:0;width:1080px;top:1174px;text-align:center"><span style="display:inline-block;padding:14px 34px;border-radius:999px;background:#fe2c55;color:#fff;font-family:var(--font-ui);font-weight:900;font-size:44px;letter-spacing:.04em;box-shadow:0 12px 30px rgba(0,0,0,.4)">MACAM-MACAM WARNA</span></div></div>
+    <div id="lk3" class=" clip" data-start="25.8667" data-duration="0.7333" data-track-index="0" style="position:absolute; inset:0" data-layout-allow-overflow><div id="lk3i" style="position:absolute;inset:-10%;opacity:0;mix-blend-mode:screen;background:radial-gradient(ellipse 60% 50% at 30% 40%,rgba(255,200,90,.95),transparent 70%),radial-gradient(ellipse 70% 60% at 80% 70%,rgba(255,110,30,.9),transparent 70%)"></div></div>
+    <div id="pl-pvc" class=" clip" data-start="26.0333" data-duration="1.0" data-track-index="0" style="position:absolute; left:0; width:1080px; top:1250px; text-align:center"><span id="pl-pvc0" style="display:inline-flex;align-items:center;gap:14px;margin:0 10px;padding:14px 28px 14px 18px;border-radius:999px;background:rgba(14,15,18,.72);border:2px solid rgba(255,255,255,.25);backdrop-filter:blur(14px);box-shadow:0 14px 34px rgba(0,0,0,.45)"><span style="width:58px;height:58px;border-radius:50%;background:#ff8a1f;display:inline-flex;align-items:center;justify-content:center"><span style="width:34px;height:34px;display:block"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></svg></span></span><span style="font-family:var(--font-ui);font-weight:800;font-size:40px;color:#fff">PVC</span></span><span id="pl-pvc1" style="display:inline-flex;align-items:center;gap:14px;margin:0 10px;padding:14px 28px 14px 18px;border-radius:999px;background:rgba(14,15,18,.72);border:2px solid rgba(255,255,255,.25);backdrop-filter:blur(14px);box-shadow:0 14px 34px rgba(0,0,0,.45)"><span style="width:58px;height:58px;border-radius:50%;background:#ff8a1f;display:inline-flex;align-items:center;justify-content:center"><span style="width:34px;height:34px;display:block"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z"/></svg></span></span><span style="font-family:var(--font-ui);font-weight:800;font-size:40px;color:#fff">Tahan air</span></span></div>
+    <div id="p-ruang" class=" clip" data-start="27.0667" data-duration="3.9" data-track-index="0" style="position:absolute; inset:0" data-layout-allow-overflow><div id="p-ruangbg" style="position:absolute;inset:0;background:rgba(8,9,12,.74)"></div><div id="p-ruangc" style="position:absolute;left:100px;top:330px;width:880px;height:880px;border-radius:30px;overflow:hidden;background:#fff;box-shadow:0 30px 80px rgba(0,0,0,.6)"><img id="p-ruangi" src="assets/img/rooms.jpg" alt="" style="display:block;width:880px;height:880px;object-fit:cover;transform-origin:50% 50%"/></div><div id="p-ruangt" style="position:absolute;left:0;width:1080px;top:1174px;text-align:center"><span style="display:inline-block;padding:14px 34px;border-radius:999px;background:#fe2c55;color:#fff;font-family:var(--font-ui);font-weight:900;font-size:44px;letter-spacing:.04em;box-shadow:0 12px 30px rgba(0,0,0,.4)">SESUAI SEMUA RUANG</span></div></div>
+    <div id="tk5" class=" clip" data-start="30.9667" data-duration="0.6667" data-track-index="0" style="position:absolute; left:0; width:1080px; top:1250px; text-align:center"><span style="display:inline-flex;align-items:center;filter:drop-shadow(0 10px 26px rgba(0,0,0,.5))"><svg width="76" height="76" viewBox="0 0 76 76" style="flex:none"><circle cx="38" cy="38" r="33" fill="#0d0e10" stroke="#25d366" stroke-width="6"/><path id="tk5p" d="M23 39l10 10 20-22" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="50" stroke-dashoffset="50"/></svg><span id="tk5l" style="background:#fff;color:#111;font-family:var(--font-ui);font-weight:900;font-size:46px;padding:8px 24px 8px 18px;margin-left:-6px;transform-origin:0 50%">KUALITI TERBAIK</span></span></div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#hl-t", { opacity: 0, scaleX: 1.6, scaleY: 1.15 }, { opacity: 1, scaleX: 1, scaleY: 1, duration: 0.55, ease: "expo.out" }, 0.05);
+    tl.to("#hl", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 3.3333);
+    tl.fromTo("#pl-wp0", { opacity: 0, scale: 0.5, y: 20 }, { opacity: 1, scale: 1, y: 0, duration: 0.45, ease: "back.out(1.8)" }, 3.0);
+    tl.to("#pl-wp", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 3.4333);
+    tl.fromTo("#lk1i", { opacity: 0, x: -60 }, { opacity: 0.9, x: 0, duration: 0.25, ease: "power2.out" }, 3.2333);
+    tl.to("#lk1i", { opacity: 0, x: 60, duration: 0.4, ease: "power2.in" }, 3.5333);
+    tl.fromTo("#tk1", { opacity: 0, scale: 0.7 }, { opacity: 1, scale: 1, duration: 0.35, ease: "back.out(1.8)" }, 4.7333);
+    tl.to("#tk1p", { attr: { "stroke-dashoffset": 0 }, duration: 0.35, ease: "power2.out" }, 4.9333);
+    tl.fromTo("#tk1l", { scaleX: 0 }, { scaleX: 1, duration: 0.35, ease: "power3.out" }, 4.9667);
+    tl.to("#tk1", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 10.6667);
+    tl.fromTo("#tk2", { opacity: 0, scale: 0.7 }, { opacity: 1, scale: 1, duration: 0.35, ease: "back.out(1.8)" }, 11.0333);
+    tl.to("#tk2p", { attr: { "stroke-dashoffset": 0 }, duration: 0.35, ease: "power2.out" }, 11.2333);
+    tl.fromTo("#tk2l", { scaleX: 0 }, { scaleX: 1, duration: 0.35, ease: "power3.out" }, 11.2667);
+    tl.to("#tk2", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 13.2333);
+    tl.fromTo("#bkb", { opacity: 0, scale: 1.25 }, { opacity: 1, scale: 1, duration: 0.4, ease: "power3.out" }, 14.7333);
+    tl.fromTo("#bkl", { scaleX: 0 }, { scaleX: 1, duration: 0.35, ease: "power3.out" }, 15.0333);
+    tl.to("#bk", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 17.0667);
+    tl.fromTo("#tk3", { opacity: 0, scale: 0.7 }, { opacity: 1, scale: 1, duration: 0.35, ease: "back.out(1.8)" }, 17.4333);
+    tl.to("#tk3p", { attr: { "stroke-dashoffset": 0 }, duration: 0.35, ease: "power2.out" }, 17.6333);
+    tl.fromTo("#tk3l", { scaleX: 0 }, { scaleX: 1, duration: 0.35, ease: "power3.out" }, 17.6667);
+    tl.to("#tk3", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 19.2667);
+    tl.fromTo("#lk2i", { opacity: 0, x: -60 }, { opacity: 0.9, x: 0, duration: 0.25, ease: "power2.out" }, 19.5667);
+    tl.to("#lk2i", { opacity: 0, x: 60, duration: 0.4, ease: "power2.in" }, 19.8667);
+    tl.fromTo("#tk4", { opacity: 0, scale: 0.7 }, { opacity: 1, scale: 1, duration: 0.35, ease: "back.out(1.8)" }, 19.7333);
+    tl.to("#tk4p", { attr: { "stroke-dashoffset": 0 }, duration: 0.35, ease: "power2.out" }, 19.9333);
+    tl.fromTo("#tk4l", { scaleX: 0 }, { scaleX: 1, duration: 0.35, ease: "power3.out" }, 19.9667);
+    tl.to("#tk4", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 22.6333);
+    tl.fromTo("#p-warnabg", { opacity: 0 }, { opacity: 1, duration: 0.35, ease: "power2.out" }, 23.0);
+    tl.fromTo("#p-warnac", { opacity: 0, y: 40, scale: 0.92 }, { opacity: 1, y: 0, scale: 1, duration: 0.55, ease: "power3.out" }, 23.0667);
+    tl.fromTo("#p-warnai", { scale: 1 }, { scale: 1.3, duration: 1.1, ease: "power2.inOut", immediateRender: false }, 24.0);
+    tl.fromTo("#p-warnat", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.45, ease: "back.out(1.8)" }, 24.6);
+    tl.to("#p-warna", { opacity: 0, duration: 0.3, ease: "power2.in" }, 25.6667);
+    tl.fromTo("#lk3i", { opacity: 0, x: -60 }, { opacity: 0.9, x: 0, duration: 0.25, ease: "power2.out" }, 25.8667);
+    tl.to("#lk3i", { opacity: 0, x: 60, duration: 0.4, ease: "power2.in" }, 26.1667);
+    tl.fromTo("#pl-pvc0", { opacity: 0, scale: 0.5, y: 20 }, { opacity: 1, scale: 1, y: 0, duration: 0.45, ease: "back.out(1.8)" }, 26.0333);
+    tl.fromTo("#pl-pvc1", { opacity: 0, scale: 0.5, y: 20 }, { opacity: 1, scale: 1, y: 0, duration: 0.45, ease: "back.out(1.8)" }, 26.4333);
+    tl.to("#pl-pvc", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 26.6333);
+    tl.fromTo("#p-ruangbg", { opacity: 0 }, { opacity: 1, duration: 0.35, ease: "power2.out" }, 27.0667);
+    tl.fromTo("#p-ruangc", { opacity: 0, y: 40, scale: 0.92 }, { opacity: 1, y: 0, scale: 1, duration: 0.55, ease: "power3.out" }, 27.1333);
+    tl.fromTo("#p-ruangi", { scale: 1 }, { scale: 1.2, duration: 1.1, ease: "power2.inOut", immediateRender: false }, 28.0667);
+    tl.fromTo("#p-ruangt", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.45, ease: "back.out(1.8)" }, 28.6667);
+    tl.to("#p-ruang", { opacity: 0, duration: 0.3, ease: "power2.in" }, 30.6333);
+    tl.fromTo("#tk5", { opacity: 0, scale: 0.7 }, { opacity: 1, scale: 1, duration: 0.35, ease: "back.out(1.8)" }, 30.9667);
+    tl.to("#tk5p", { attr: { "stroke-dashoffset": 0 }, duration: 0.35, ease: "power2.out" }, 31.1667);
+    tl.fromTo("#tk5l", { scaleX: 0 }, { scaleX: 1, duration: 0.35, ease: "power3.out" }, 31.2333);
+    tl.to("#tk5", { opacity: 0, y: -10, duration: 0.35, ease: "power2.inOut" }, 31.2667);
+    window.__timelines["sc"] = tl;
+  </script>
+</template>
