@@ -1,0 +1,5 @@
+# source footage proxies are large — regenerate from the Drive originals (see tools/proxy.sh)
+assets/clips/
+.hyperframes/artifacts/
+node_modules/
+renders/

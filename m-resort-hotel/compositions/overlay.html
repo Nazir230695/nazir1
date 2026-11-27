@@ -1,0 +1,129 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; pointer-events: none;
+      --font-ui: "Montserrat", sans-serif;
+      --font-num: "Oswald", "League Gothic", sans-serif;
+      --gold: #f5c542; --tt-red: #fe2c55; --tt-cyan: #25f4ee; --glass: rgba(14,15,19,.82); }
+    .hdr { display: inline-flex; align-items: center; gap: 12px; padding: 14px 34px 14px 18px; border-radius: 999px;
+      background: var(--glass); border: 1.5px solid rgba(255,255,255,.16); box-shadow: 0 12px 30px rgba(0,0,0,.35);
+      color: #fff; font-family: var(--font-ui); font-weight: 800; font-size: 38px; letter-spacing: .12em; }
+    .hdr svg { width: 50px; height: 50px; }
+    .hk-a, .hk-b { font-family: var(--font-num); font-weight: 700; color: #fff; line-height: .98; letter-spacing: .01em;
+      text-shadow: 0 4px 0 rgba(0,0,0,.35), 0 10px 40px rgba(0,0,0,.75); }
+    .hk-a { font-size: 150px; }
+    .hk-b { font-size: 110px; margin-top: 34px; }
+    .t20 { color: var(--gold); }
+    .b40 { color: #fff; background: var(--tt-red); padding: 0 22px; border-radius: 22px; text-shadow: none; }
+    .tt-pill { display: inline-flex; align-items: center; gap: 14px; padding: 16px 34px; border-radius: 999px; background: #fff; color: #111;
+      font-family: var(--font-ui); font-weight: 800; font-size: 46px; box-shadow: -5px 0 0 var(--tt-cyan), 5px 0 0 var(--tt-red), 0 14px 34px rgba(0,0,0,.4); }
+    .tt-dot { width: 22px; height: 22px; border-radius: 50%; background: var(--tt-red); box-shadow: -5px 0 0 var(--tt-cyan); }
+    .pill { display: inline-flex; align-items: center; gap: 12px; padding: 14px 30px; border-radius: 999px; background: #fff; color: #111;
+      font-family: var(--font-ui); font-weight: 800; font-size: 40px; box-shadow: 0 12px 30px rgba(0,0,0,.35); white-space: nowrap; }
+    .pill svg { width: 38px; height: 38px; }
+    .line { display: inline; font-family: var(--font-ui); font-weight: 700; font-size: 46px; line-height: 1.34; color: #fff;
+      background: rgba(10,10,14,.72); padding: 8px 20px; border-radius: 16px; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
+    .line b { color: var(--gold); font-weight: 800; }
+    .card { position: absolute; left: 50%; width: 760px; margin-left: -380px; padding: 30px 36px; border-radius: 34px; background: var(--glass);
+      border: 1.5px solid rgba(255,255,255,.14); box-shadow: 0 24px 60px rgba(0,0,0,.45); color: #fff; font-family: var(--font-ui); text-align: center; }
+    .nm-t { font-size: 54px; font-weight: 800; letter-spacing: .01em; }
+    .nm-s { font-size: 30px; font-weight: 600; color: rgba(255,255,255,.66); margin-top: 6px; }
+    .nm-r { display: flex; align-items: center; justify-content: center; gap: 14px; margin-top: 18px; }
+    .stars { display: inline-flex; gap: 4px; } .stars svg { width: 38px; height: 38px; }
+    .nm-5 { font-size: 32px; font-weight: 700; }
+    .nm-g { margin-top: 14px; font-size: 32px; font-weight: 600; color: rgba(255,255,255,.8); }
+    .nm-g b { color: #fff; background: #1f9d55; padding: 2px 14px; border-radius: 10px; margin-right: 6px; }
+    .cta-pin svg { width: 170px; height: 170px; display: block; margin: 0 auto 10px; filter: drop-shadow(0 14px 24px rgba(0,0,0,.5)); }
+    .cta-a { font-family: var(--font-num); font-weight: 700; font-size: 100px; color: #fff; line-height: 1; text-shadow: 0 10px 40px rgba(0,0,0,.75); }
+    .cta-a .loc { color: var(--tt-red); text-shadow: -4px 0 0 var(--tt-cyan), 0 10px 40px rgba(0,0,0,.6); }
+    .cta-b { font-family: var(--font-ui); font-weight: 800; font-size: 64px; color: #fff; margin-top: 12px; text-shadow: 0 6px 30px rgba(0,0,0,.8); }
+    .pin-sq { width: 96px; height: 96px; border-radius: 24px; background: #fff; display: flex; align-items: center; justify-content: center; }
+    .pin-sq svg { width: 66px; height: 66px; }
+    .btn { padding: 18px 34px; border-radius: 999px; background: var(--tt-red); color: #fff; font-weight: 800; font-size: 38px; }
+  </style>
+  <div id="root" data-composition-id="overlay" data-width="1080" data-height="1920">
+    <div id="hdr" class="clip" data-start="0" data-duration="54.8" data-track-index="0" style="position:absolute;left:0;width:1080px;top:236px;text-align:center" data-layout-allow-safe-zone><span id="hdr-i" class="hdr"><svg viewBox="0 0 24 24"><path d="M12 1.8l2.6 1.9 3.2-.1 1 3.1 2.6 1.9-1 3.1 1 3.1-2.6 1.9-1 3.1-3.2-.1L12 22.2l-2.6-1.9-3.2.1-1-3.1-2.6-1.9 1-3.1-1-3.1 2.6-1.9 1-3.1 3.2.1z" fill="#20d5ec"/><path d="M7.6 12.3l3 3 5.8-6" stroke="#0b0b0f" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><span>TRUSTED REVIEW</span></span></div>
+    <div id="hk" class="clip" data-start="0" data-duration="3.2" data-track-index="0" style="position:absolute;left:0;width:1080px;top:560px;text-align:center"><div id="hk1" class="hk-a">HOTEL <span class="t20">T20</span></div><div id="hk2" class="hk-b">HARGA <span class="b40">B40</span> 😱</div><div style="margin-top:34px"><span id="hk3" class="tt-pill"><span class="tt-dot"></span>booking di TikTok</span></div></div>
+    <div id="nm" class="card clip" data-start="3.2" data-duration="3.0" data-track-index="0" style="top:1040px"><div class="nm-t">M Resort &amp; Hotel</div><div class="nm-s">Kuala Lumpur · Bukit Kiara</div><div class="nm-r"><span class="stars"><svg viewBox="0 0 24 24" fill="#f5c542"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="#f5c542"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="#f5c542"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="#f5c542"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><svg viewBox="0 0 24 24" fill="#f5c542"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg></span><span class="nm-5">5 bintang</span></div><div class="nm-g"><b>4.9</b> Excellent · 2.1K review</div></div>
+    <div id="lb0" class="clip" data-start="6.2" data-duration="9.0" data-track-index="0" style="position:absolute;left:0;width:1080px;top:370px;text-align:center"><span id="lb0i" class="pill"><svg viewBox="0 0 24 24" fill="none" stroke="#0aa5ff" stroke-width="2.4" stroke-linecap="round"><path d="M2 9c2.5-2 4.5-2 7 0s4.5 2 7 0 4.5-2 6 0"/><path d="M2 15c2.5-2 4.5-2 7 0s4.5 2 7 0 4.5-2 6 0"/></svg><span>Kolam ala resort</span></span></div>
+    <div id="lb1" class="clip" data-start="15.2" data-duration="2.0" data-track-index="0" style="position:absolute;left:0;width:1080px;top:370px;text-align:center"><span id="lb1i" class="pill"><svg viewBox="0 0 24 24" fill="none" stroke="#0aa5ff" stroke-width="2.2"><circle cx="8" cy="14" r="5"/><circle cx="17" cy="8" r="3.4"/><circle cx="17.5" cy="17.5" r="2"/></svg><span>Jacuzzi</span></span></div>
+    <div id="lb2" class="clip" data-start="17.2" data-duration="2.4" data-track-index="0" style="position:absolute;left:0;width:1080px;top:370px;text-align:center"><span id="lb2i" class="pill"><svg viewBox="0 0 24 24" fill="#0aa5ff"><path d="M12 2.5s7 7.6 7 12.6a7 7 0 0 1-14 0c0-5 7-12.6 7-12.6z"/></svg><span>Rain shower</span></span></div>
+    <div id="lb3" class="clip" data-start="19.6" data-duration="4.8" data-track-index="0" style="position:absolute;left:0;width:1080px;top:370px;text-align:center"><span id="lb3i" class="pill"><svg viewBox="0 0 24 24" fill="#f5c542"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"/></svg><span>Waktu malam</span></span></div>
+    <div id="lb4" class="clip" data-start="24.4" data-duration="4.0" data-track-index="0" style="position:absolute;left:0;width:1080px;top:370px;text-align:center"><span id="lb4i" class="pill"><svg viewBox="0 0 24 24" fill="#ff4d8d"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg><span>Kids club</span></span></div>
+    <div id="lb5" class="clip" data-start="28.4" data-duration="4.2" data-track-index="0" style="position:absolute;left:0;width:1080px;top:370px;text-align:center"><span id="lb5i" class="pill"><svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2.6" stroke-linecap="round"><path d="M6 7v10M3 9.5v5M18 7v10M21 9.5v5M6 12h12"/></svg><span>Gym 24 jam</span></span></div>
+    <div id="lb6" class="clip" data-start="32.6" data-duration="10.2" data-track-index="0" style="position:absolute;left:0;width:1080px;top:370px;text-align:center"><span id="lb6i" class="pill"><svg viewBox="0 0 24 24" fill="none" stroke="#e8590c" stroke-width="2.4" stroke-linecap="round"><path d="M7 3v8M4.5 3v5a2.5 2.5 0 0 0 5 0V3M7 11v10M17 3c-2 1.5-3 4-3 7h3v11"/></svg><span>Breakfast buffet</span></span></div>
+    <div id="lb7" class="clip" data-start="42.8" data-duration="7.4" data-track-index="0" style="position:absolute;left:0;width:1080px;top:370px;text-align:center"><span id="lb7i" class="pill"><svg viewBox="0 0 24 24" fill="none" stroke="#7048e8" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18V6M3 13h18v5M21 13a3 3 0 0 0-3-3h-7v3"/><circle cx="7" cy="10.5" r="1.6"/></svg><span>Dalam bilik</span></span></div>
+    <div id="ln0" class="clip" data-start="6.2" data-duration="4.4" data-track-index="0" style="position:absolute;left:120px;width:740px;top:1090px;text-align:left"><span id="ln0i" class="line">Kolam dia luas, siap ada <b>pantai pasir</b></span></div>
+    <div id="ln1" class="clip" data-start="10.6" data-duration="4.6" data-track-index="0" style="position:absolute;left:120px;width:740px;top:1090px;text-align:left"><span id="ln1i" class="line">Anak-anak memang <b>tak nak naik</b> 😂</span></div>
+    <div id="ln2" class="clip" data-start="15.2" data-duration="2.0" data-track-index="0" style="position:absolute;left:120px;width:740px;top:1090px;text-align:left"><span id="ln2i" class="line">Berendam dalam <b>jacuzzi</b>, lega habis</span></div>
+    <div id="ln3" class="clip" data-start="17.2" data-duration="2.4" data-track-index="0" style="position:absolute;left:120px;width:740px;top:1090px;text-align:left"><span id="ln3i" class="line">Mandi bawah <b>rain shower</b> tepi kolam</span></div>
+    <div id="ln4" class="clip" data-start="19.6" data-duration="4.8" data-track-index="0" style="position:absolute;left:120px;width:740px;top:1090px;text-align:left"><span id="ln4i" class="line">Malam-malam lagi <b>cantik</b> ✨</span></div>
+    <div id="ln5" class="clip" data-start="24.4" data-duration="4.0" data-track-index="0" style="position:absolute;left:120px;width:740px;top:1090px;text-align:left"><span id="ln5i" class="line">Ada <b>ball pit</b> &amp; <b>wall climbing</b></span></div>
+    <div id="ln6" class="clip" data-start="28.4" data-duration="4.2" data-track-index="0" style="position:absolute;left:120px;width:740px;top:1090px;text-align:left"><span id="ln6i" class="line">Gym buka <b>24 jam</b>, view taman</span></div>
+    <div id="ln7" class="clip" data-start="32.6" data-duration="5.0" data-track-index="0" style="position:absolute;left:120px;width:740px;top:1090px;text-align:left"><span id="ln7i" class="line">Western, Melayu, Jepun — <b>semua ada</b></span></div>
+    <div id="ln8" class="clip" data-start="37.6" data-duration="3.2" data-track-index="0" style="position:absolute;left:120px;width:740px;top:1090px;text-align:left"><span id="ln8i" class="line">Nasi lemak, sambal dia <b>padu</b> 🔥</span></div>
+    <div id="ln9" class="clip" data-start="40.8" data-duration="2.0" data-track-index="0" style="position:absolute;left:120px;width:740px;top:1090px;text-align:left"><span id="ln9i" class="line">Pinggan penuh, perut kenyang 😋</span></div>
+    <div id="ln10" class="clip" data-start="42.8" data-duration="2.4" data-track-index="0" style="position:absolute;left:120px;width:740px;top:1090px;text-align:left"><span id="ln10i" class="line">Ada <b>coffee set</b> &amp; <b>minibar</b></span></div>
+    <div id="ln11" class="clip" data-start="45.2" data-duration="5.0" data-track-index="0" style="position:absolute;left:120px;width:740px;top:1090px;text-align:left"><span id="ln11i" class="line">Overall? <b>Terbaik!</b> 👍</span></div>
+    <div id="cta" class="clip" data-start="50.2" data-duration="4.6" data-track-index="0" style="position:absolute;left:0;width:1080px;top:430px;text-align:center"><div id="cta-pin" class="cta-pin"><svg viewBox="0 0 24 24"><path d="M12 1.8a7.6 7.6 0 0 0-7.6 7.6c0 5.6 7.6 12.8 7.6 12.8s7.6-7.2 7.6-12.8A7.6 7.6 0 0 0 12 1.8z" fill="#fe2c55"/><circle cx="12" cy="9.4" r="2.9" fill="#fff"/></svg></div><div id="cta-t1" class="cta-a">TEKAN <span class="loc">LOCATION</span></div><div id="cta-t2" class="cta-b">untuk book 👇</div></div>
+    <div id="cta-c" class="card clip" data-start="50.8" data-duration="4.0" data-track-index="0" style="top:1040px;width:800px;margin-left:-400px" data-layout-allow-safe-zone><div style="display:flex;align-items:center;gap:22px"><div class="pin-sq"><svg viewBox="0 0 24 24"><path d="M12 1.8a7.6 7.6 0 0 0-7.6 7.6c0 5.6 7.6 12.8 7.6 12.8s7.6-7.2 7.6-12.8A7.6 7.6 0 0 0 12 1.8z" fill="#fe2c55"/><circle cx="12" cy="9.4" r="2.9" fill="#fff"/></svg></div><div style="flex:1;text-align:left"><div class="nm-t" style="font-size:36px;white-space:nowrap">M Resort &amp; Hotel KL</div><div class="nm-s" style="margin-top:4px;font-size:26px;white-space:nowrap">Booking terus di TikTok</div></div><div id="cta-btn" class="btn">Book</div></div></div>
+  </div>
+  <script>
+    window.__timelines = window.__timelines || {};
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#hdr-i", { opacity: 0, scale: 0.7 }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(1.7)" }, 0.15);
+    tl.fromTo("#hk1", { opacity: 0, scale: 1.8, filter: "blur(14px)" }, { opacity: 1, scale: 1, filter: "blur(0px)", duration: 0.32, ease: "expo.out" }, 0.0);
+    tl.fromTo("#hk2", { opacity: 0, scale: 1.8, filter: "blur(14px)" }, { opacity: 1, scale: 1, filter: "blur(0px)", duration: 0.32, ease: "expo.out" }, 0.75);
+    tl.fromTo("#hk3", { opacity: 0, scale: 0.7 }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(1.7)" }, 1.55);
+    tl.to("#hk", { opacity: 0, y: -40, filter: "blur(10px)", duration: 0.22, ease: "power2.in" }, 2.98);
+    tl.fromTo("#nm", { opacity: 0, y: 30, filter: "blur(8px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.35, ease: "expo.out" }, 3.2);
+    tl.to("#nm", { opacity: 0, filter: "blur(8px)", duration: 0.18, ease: "power2.in" }, 6.02);
+    tl.fromTo("#lb0i", { opacity: 0, scale: 0.7 }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(1.7)" }, 6.25);
+    tl.to("#lb0", { opacity: 0, duration: 0.15, ease: "power2.in" }, 15.05);
+    tl.fromTo("#lb1i", { opacity: 0, scale: 0.7 }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(1.7)" }, 15.25);
+    tl.to("#lb1", { opacity: 0, duration: 0.15, ease: "power2.in" }, 17.05);
+    tl.fromTo("#lb2i", { opacity: 0, scale: 0.7 }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(1.7)" }, 17.25);
+    tl.to("#lb2", { opacity: 0, duration: 0.15, ease: "power2.in" }, 19.45);
+    tl.fromTo("#lb3i", { opacity: 0, scale: 0.7 }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(1.7)" }, 19.65);
+    tl.to("#lb3", { opacity: 0, duration: 0.15, ease: "power2.in" }, 24.25);
+    tl.fromTo("#lb4i", { opacity: 0, scale: 0.7 }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(1.7)" }, 24.45);
+    tl.to("#lb4", { opacity: 0, duration: 0.15, ease: "power2.in" }, 28.25);
+    tl.fromTo("#lb5i", { opacity: 0, scale: 0.7 }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(1.7)" }, 28.45);
+    tl.to("#lb5", { opacity: 0, duration: 0.15, ease: "power2.in" }, 32.45);
+    tl.fromTo("#lb6i", { opacity: 0, scale: 0.7 }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(1.7)" }, 32.65);
+    tl.to("#lb6", { opacity: 0, duration: 0.15, ease: "power2.in" }, 42.65);
+    tl.fromTo("#lb7i", { opacity: 0, scale: 0.7 }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(1.7)" }, 42.85);
+    tl.to("#lb7", { opacity: 0, duration: 0.15, ease: "power2.in" }, 50.05);
+    tl.fromTo("#ln0i", { opacity: 0, y: 30, filter: "blur(8px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.35, ease: "expo.out" }, 6.32);
+    tl.to("#ln0i", { opacity: 0, filter: "blur(8px)", duration: 0.18, ease: "power2.in" }, 10.42);
+    tl.fromTo("#ln1i", { opacity: 0, y: 30, filter: "blur(8px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.35, ease: "expo.out" }, 10.72);
+    tl.to("#ln1i", { opacity: 0, filter: "blur(8px)", duration: 0.18, ease: "power2.in" }, 15.02);
+    tl.fromTo("#ln2i", { opacity: 0, y: 30, filter: "blur(8px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.35, ease: "expo.out" }, 15.32);
+    tl.to("#ln2i", { opacity: 0, filter: "blur(8px)", duration: 0.18, ease: "power2.in" }, 17.02);
+    tl.fromTo("#ln3i", { opacity: 0, y: 30, filter: "blur(8px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.35, ease: "expo.out" }, 17.32);
+    tl.to("#ln3i", { opacity: 0, filter: "blur(8px)", duration: 0.18, ease: "power2.in" }, 19.42);
+    tl.fromTo("#ln4i", { opacity: 0, y: 30, filter: "blur(8px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.35, ease: "expo.out" }, 19.72);
+    tl.to("#ln4i", { opacity: 0, filter: "blur(8px)", duration: 0.18, ease: "power2.in" }, 24.22);
+    tl.fromTo("#ln5i", { opacity: 0, y: 30, filter: "blur(8px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.35, ease: "expo.out" }, 24.52);
+    tl.to("#ln5i", { opacity: 0, filter: "blur(8px)", duration: 0.18, ease: "power2.in" }, 28.22);
+    tl.fromTo("#ln6i", { opacity: 0, y: 30, filter: "blur(8px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.35, ease: "expo.out" }, 28.52);
+    tl.to("#ln6i", { opacity: 0, filter: "blur(8px)", duration: 0.18, ease: "power2.in" }, 32.42);
+    tl.fromTo("#ln7i", { opacity: 0, y: 30, filter: "blur(8px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.35, ease: "expo.out" }, 32.72);
+    tl.to("#ln7i", { opacity: 0, filter: "blur(8px)", duration: 0.18, ease: "power2.in" }, 37.42);
+    tl.fromTo("#ln8i", { opacity: 0, y: 30, filter: "blur(8px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.35, ease: "expo.out" }, 37.72);
+    tl.to("#ln8i", { opacity: 0, filter: "blur(8px)", duration: 0.18, ease: "power2.in" }, 40.62);
+    tl.fromTo("#ln9i", { opacity: 0, y: 30, filter: "blur(8px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.35, ease: "expo.out" }, 40.92);
+    tl.to("#ln9i", { opacity: 0, filter: "blur(8px)", duration: 0.18, ease: "power2.in" }, 42.62);
+    tl.fromTo("#ln10i", { opacity: 0, y: 30, filter: "blur(8px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.35, ease: "expo.out" }, 42.92);
+    tl.to("#ln10i", { opacity: 0, filter: "blur(8px)", duration: 0.18, ease: "power2.in" }, 45.02);
+    tl.fromTo("#ln11i", { opacity: 0, y: 30, filter: "blur(8px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.35, ease: "expo.out" }, 45.32);
+    tl.to("#ln11i", { opacity: 0, filter: "blur(8px)", duration: 0.18, ease: "power2.in" }, 50.02);
+    tl.fromTo("#cta-pin", { opacity: 0, scale: 1.8, filter: "blur(14px)" }, { opacity: 1, scale: 1, filter: "blur(0px)", duration: 0.32, ease: "expo.out" }, 50.25);
+    tl.fromTo("#cta-pin svg", { y: 0 }, { y: -26, duration: 0.32, ease: "power2.out", yoyo: true, repeat: 7 }, 50.65);
+    tl.fromTo("#cta-t1", { opacity: 0, scale: 1.8, filter: "blur(14px)" }, { opacity: 1, scale: 1, filter: "blur(0px)", duration: 0.32, ease: "expo.out" }, 50.35);
+    tl.fromTo("#cta-t2", { opacity: 0, y: 30, filter: "blur(8px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.35, ease: "expo.out" }, 50.65);
+    tl.fromTo("#cta-c", { opacity: 0, y: 30, filter: "blur(8px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.35, ease: "expo.out" }, 50.8);
+    tl.fromTo("#cta-btn", { scale: 1 }, { scale: 1.12, duration: 0.25, ease: "power2.out", yoyo: true, repeat: 5 }, 51.5);
+    tl.to({}, { duration: 54.8 }, 0);
+    window.__timelines["overlay"] = tl;
+  </script>
+</template>
