@@ -109,6 +109,8 @@ ICONS = {
     "dumbbell": '<svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2.6" stroke-linecap="round"><path d="M6 7v10M3 9.5v5M18 7v10M21 9.5v5M6 12h12"/></svg>',
     "fork": '<svg viewBox="0 0 24 24" fill="none" stroke="#e8590c" stroke-width="2.4" stroke-linecap="round"><path d="M7 3v8M4.5 3v5a2.5 2.5 0 0 0 5 0V3M7 11v10M17 3c-2 1.5-3 4-3 7h3v11"/></svg>',
     "bed": '<svg viewBox="0 0 24 24" fill="none" stroke="#7048e8" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18V6M3 13h18v5M21 13a3 3 0 0 0-3-3h-7v3"/><circle cx="7" cy="10.5" r="1.6"/></svg>',
+    "pin_g": '<svg viewBox="0 0 24 24"><path d="M12 1.8a7.6 7.6 0 0 0-7.6 7.6c0 5.6 7.6 12.8 7.6 12.8s7.6-7.2 7.6-12.8A7.6 7.6 0 0 0 12 1.8z" fill="#22c55e"/><circle cx="12" cy="9.4" r="2.9" fill="#fff"/></svg>',
+    "pin_w": '<svg viewBox="0 0 24 24"><path d="M12 1.8a7.6 7.6 0 0 0-7.6 7.6c0 5.6 7.6 12.8 7.6 12.8s7.6-7.2 7.6-12.8A7.6 7.6 0 0 0 12 1.8z" fill="#fff"/><circle cx="12" cy="9.4" r="2.9" fill="#22c55e"/></svg>',
     "pin": '<svg viewBox="0 0 24 24"><path d="M12 1.8a7.6 7.6 0 0 0-7.6 7.6c0 5.6 7.6 12.8 7.6 12.8s7.6-7.2 7.6-12.8A7.6 7.6 0 0 0 12 1.8z" fill="#fe2c55"/><circle cx="12" cy="9.4" r="2.9" fill="#fff"/></svg>',
 }
 STARS = "".join('<svg viewBox="0 0 24 24" fill="#f5c542"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></svg>' for _ in range(5))
@@ -190,7 +192,9 @@ def show(sel, t0, t1, kind="pop"):
         anim.append(f'    tl.to("{sel}", {{ opacity: 0, filter: "blur(8px)", duration: 0.18, ease: "power2.in" }}, {round(t1 - 0.18,4)});')
 
 # persistent header
-els.append(f'    <div id="hdr" class="clip" data-start="0" data-duration="{TOTAL}" data-track-index="0" style="position:absolute;left:0;width:1080px;top:236px;text-align:center" data-layout-allow-safe-zone><span id="hdr-i" class="hdr">{ICONS["check"]}<span>TRUSTED REVIEW</span></span></div>')
+els.append(f'    <div id="hdr" class="clip" data-start="0" data-duration="{TOTAL}" data-track-index="0" style="position:absolute;left:60px;width:960px;top:214px" data-layout-allow-safe-zone>'
+           f'<div id="hdr-i" class="hdr"><div class="hdr-l"><div class="hdr-tr">{ICONS["check"]}<span>TRUSTED REVIEW</span></div><div class="hdr-u">@rezeki.nazir</div></div>'
+           f'<div class="hdr-sep"></div><div class="hdr-r"><div class="hdr-h">M Resort &amp; Hotel</div><div class="hdr-c">Kuala Lumpur <span class="hdr-st">★</span> 4.9</div></div></div></div>')
 show("#hdr-i", 0.15, None, "pop")
 
 # hook
@@ -215,7 +219,7 @@ show("#nm", n0, n1, "rise")
 # labels
 for k, (txt, ic, a, b) in enumerate(LABELS):
     t0, t1 = at(a), end(b)
-    els.append(f'    <div id="lb{k}" class="clip" data-start="{t0}" data-duration="{round(t1-t0,4)}" data-track-index="0" style="position:absolute;left:0;width:1080px;top:370px;text-align:center"><span id="lb{k}i" class="pill">{ICONS[ic]}<span>{txt}</span></span></div>')
+    els.append(f'    <div id="lb{k}" class="clip" data-start="{t0}" data-duration="{round(t1-t0,4)}" data-track-index="0" style="position:absolute;left:0;width:1080px;top:400px;text-align:center"><span id="lb{k}i" class="pill">{ICONS[ic]}<span>{txt}</span></span></div>')
     show(f"#lb{k}i", t0 + 0.05, None, "pop")
     anim.append(f'    tl.to("#lb{k}", {{ opacity: 0, duration: 0.15, ease: "power2.in" }}, {round(t1-0.15,4)});')
 
@@ -228,12 +232,12 @@ for k, (txt, a, b) in enumerate(LINES):
 # CTA
 c0, c1 = CTA
 els.append(f'    <div id="cta" class="clip" data-start="{c0}" data-duration="{round(c1-c0,4)}" data-track-index="0" style="position:absolute;left:0;width:1080px;top:430px;text-align:center">'
-           f'<div id="cta-pin" class="cta-pin">{ICONS["pin"]}</div>'
-           f'<div id="cta-t1" class="cta-a">TEKAN <span class="loc">LOCATION</span></div>'
+           f'<div id="cta-pin" class="cta-pin">{ICONS["pin_g"]}</div>'
+           f'<div id="cta-t1" class="cta-a">TEKAN <span class="loc">LOCATION HIJAU</span></div>'
            f'<div id="cta-t2" class="cta-b">untuk book 👇</div></div>')
 els.append(f'    <div id="cta-c" class="card clip" data-start="{round(c0+0.6,4)}" data-duration="{round(c1-c0-0.6,4)}" data-track-index="0" style="top:1040px;width:800px;margin-left:-400px" data-layout-allow-safe-zone>'
-           f'<div style="display:flex;align-items:center;gap:22px"><div class="pin-sq">{ICONS["pin"]}</div>'
-           f'<div style="flex:1;text-align:left"><div class="nm-t" style="font-size:36px;white-space:nowrap">M Resort &amp; Hotel KL</div><div class="nm-s" style="margin-top:4px;font-size:26px;white-space:nowrap">Booking terus di TikTok</div></div>'
+           f'<div style="display:flex;align-items:center;gap:22px"><div class="pin-sq">{ICONS["pin_w"]}</div>'
+           f'<div style="flex:1;text-align:left"><div class="nm-t" style="font-size:36px;white-space:nowrap">M Resort &amp; Hotel KL</div><div class="nm-s" style="margin-top:4px;font-size:28px;white-space:nowrap">Tekan location hijau 📍</div></div>'
            f'<div id="cta-btn" class="btn">Book</div></div></div>')
 show("#cta-pin", c0 + 0.05, None, "slam")
 anim.append(f'    tl.fromTo("#cta-pin svg", {{ y: 0 }}, {{ y: -26, duration: 0.32, ease: "power2.out", yoyo: true, repeat: 7 }}, {round(c0+0.45,4)});')
@@ -247,11 +251,16 @@ overlay = f'''<template>
     #root {{ position: absolute; inset: 0; pointer-events: none;
       --font-ui: "Montserrat", sans-serif;
       --font-num: "Oswald", "League Gothic", sans-serif;
-      --gold: #f5c542; --tt-red: #fe2c55; --tt-cyan: #25f4ee; --glass: rgba(14,15,19,.82); }}
-    .hdr {{ display: inline-flex; align-items: center; gap: 12px; padding: 14px 34px 14px 18px; border-radius: 999px;
+      --gold: #f5c542; --green: #22c55e; --tt-red: #fe2c55; --tt-cyan: #25f4ee; --glass: rgba(14,15,19,.82); }}
+    .hdr {{ display: flex; align-items: center; gap: 22px; padding: 16px 30px 16px 20px; border-radius: 30px;
       background: var(--glass); border: 1.5px solid rgba(255,255,255,.16); box-shadow: 0 12px 30px rgba(0,0,0,.35);
       color: #fff; font-family: var(--font-ui); font-weight: 800; font-size: 38px; letter-spacing: .12em; }}
-    .hdr svg {{ width: 50px; height: 50px; }}
+    .hdr svg {{ width: 42px; height: 42px; flex: none; }}
+    .hdr-l {{ flex: none; }} .hdr-tr {{ display: flex; align-items: center; gap: 10px; font-size: 30px; letter-spacing: .1em; }}
+    .hdr-u {{ margin: 4px 0 0 52px; font-size: 28px; font-weight: 700; letter-spacing: .02em; color: var(--tt-cyan); }}
+    .hdr-sep {{ width: 2px; align-self: stretch; background: rgba(255,255,255,.22); }}
+    .hdr-r {{ flex: 1; text-align: right; min-width: 0; }} .hdr-h {{ font-size: 34px; letter-spacing: .01em; white-space: nowrap; }}
+    .hdr-c {{ margin-top: 4px; font-size: 28px; font-weight: 600; letter-spacing: .02em; color: rgba(255,255,255,.72); }} .hdr-st {{ color: var(--gold); }}
     .hk-a, .hk-b {{ font-family: var(--font-num); font-weight: 700; color: #fff; line-height: .98; letter-spacing: .01em;
       text-shadow: 0 4px 0 rgba(0,0,0,.35), 0 10px 40px rgba(0,0,0,.75); }}
     .hk-a {{ font-size: 150px; }}
@@ -277,12 +286,12 @@ overlay = f'''<template>
     .nm-g {{ margin-top: 14px; font-size: 32px; font-weight: 600; color: rgba(255,255,255,.8); }}
     .nm-g b {{ color: #fff; background: #1f9d55; padding: 2px 14px; border-radius: 10px; margin-right: 6px; }}
     .cta-pin svg {{ width: 170px; height: 170px; display: block; margin: 0 auto 10px; filter: drop-shadow(0 14px 24px rgba(0,0,0,.5)); }}
-    .cta-a {{ font-family: var(--font-num); font-weight: 700; font-size: 100px; color: #fff; line-height: 1; text-shadow: 0 10px 40px rgba(0,0,0,.75); }}
-    .cta-a .loc {{ color: var(--tt-red); text-shadow: -4px 0 0 var(--tt-cyan), 0 10px 40px rgba(0,0,0,.6); }}
+    .cta-a {{ font-family: var(--font-num); font-weight: 700; font-size: 86px; color: #fff; line-height: 1; text-shadow: 0 10px 40px rgba(0,0,0,.75); }}
+    .cta-a .loc {{ color: var(--green); text-shadow: 0 4px 0 #0b5d2c, 0 10px 40px rgba(0,0,0,.6); }}
     .cta-b {{ font-family: var(--font-ui); font-weight: 800; font-size: 64px; color: #fff; margin-top: 12px; text-shadow: 0 6px 30px rgba(0,0,0,.8); }}
-    .pin-sq {{ width: 96px; height: 96px; border-radius: 24px; background: #fff; display: flex; align-items: center; justify-content: center; }}
+    .pin-sq {{ width: 96px; height: 96px; border-radius: 24px; background: #15803d; display: flex; align-items: center; justify-content: center; }}
     .pin-sq svg {{ width: 66px; height: 66px; }}
-    .btn {{ padding: 18px 34px; border-radius: 999px; background: var(--tt-red); color: #fff; font-weight: 800; font-size: 38px; }}
+    .btn {{ padding: 18px 34px; border-radius: 999px; background: #15803d; color: #fff; font-weight: 800; font-size: 38px; }}
   </style>
   <div id="root" data-composition-id="overlay" data-width="1080" data-height="1920">
 {chr(10).join(els)}
