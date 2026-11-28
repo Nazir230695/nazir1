@@ -1,7 +1,7 @@
 {
   "version": 1,
   "historyId": "992c540a-b202-406a-a456-362754145de3",
-  "currentRevision": "23b4698b-d9b2-4b36-afa6-9dc0aab0621c",
+  "currentRevision": "07b63b9e-ed7f-49b7-88c6-d363bf66b954",
   "pendingChanges": false,
   "files": {
     "AGENTS.md": {
@@ -95,6 +95,10 @@
     "assets/raw_b.mp4": {
       "hash": "f7b5bb757b45fc0c310dcaf824747a362e245b59c46ccb5e4baab1f0b9be67c5",
       "content": "/root/.cache/hyperframes/history/992c540a-b202-406a-a456-362754145de3/blobs/f7/f7b5bb757b45fc0c310dcaf824747a362e245b59c46ccb5e4baab1f0b9be67c5"
+    },
+    "cover.png": {
+      "hash": "7f19b69e21675199870d9f04f3c60383fb169eae32eed74418d6adeca1547dfd",
+      "content": "/root/.cache/hyperframes/history/992c540a-b202-406a-a456-362754145de3/blobs/7f/7f19b69e21675199870d9f04f3c60383fb169eae32eed74418d6adeca1547dfd"
     }
   },
   "revisions": {
@@ -112,19 +116,33 @@
           "after": "/root/.cache/hyperframes/history/992c540a-b202-406a-a456-362754145de3/blobs/9a/9a09c1c3ea68f4494da8fcd26106e4d88346d905b3fb899f9556017ffbf1ed92"
         }
       }
+    },
+    "07b63b9e-ed7f-49b7-88c6-d363bf66b954": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1795865239605,
+      "endedAt": 1795865239606,
+      "files": {
+        "cover.png": {
+          "before": null,
+          "after": "/root/.cache/hyperframes/history/992c540a-b202-406a-a456-362754145de3/blobs/7f/7f19b69e21675199870d9f04f3c60383fb169eae32eed74418d6adeca1547dfd"
+        }
+      }
     }
   },
   "checks": {
     "latest": {
-      "revision": "23b4698b-d9b2-4b36-afa6-9dc0aab0621c",
-      "id": "2dd74b13-064b-4443-8c34-7c6dcf6696a0"
+      "revision": null,
+      "id": "333c6297-293f-43b4-8f72-820565e84449"
     },
     "revisions": {
       "23b4698b-d9b2-4b36-afa6-9dc0aab0621c": [
         {
           "id": "2dd74b13-064b-4443-8c34-7c6dcf6696a0",
           "scope": "project",
-          "report": "/home/user/nazir1/charger-2/.hyperframes/artifacts/checks/2dd74b13-064b-4443-8c34-7c6dcf6696a0.json",
           "metadata": {
             "ok": true,
             "browserSkipped": false,
@@ -154,7 +172,9 @@
           "revision": "23b4698b-d9b2-4b36-afa6-9dc0aab0621c",
           "inputFingerprint": "9eabff52b67874ce62dc242422b99e262c7cfe018fa5fe98e4306fb3fdcade84",
           "inputScope": "local-project-files",
-          "attribution": "recorded-revision"
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "9be7b3bc-a86d-4d76-b6f1-052ea5647a87"
         }
       ]
     },
@@ -606,5 +626,18 @@
       ]
     },
     "unversioned": []
-  }
+  },
+  "renders": {
+    "latest": {
+      "id": "9be7b3bc-a86d-4d76-b6f1-052ea5647a87",
+      "completedAt": 1795865484394,
+      "output": "/home/user/nazir1/charger-2/renders/charger-2.mp4",
+      "status": "completed",
+      "revision": "07b63b9e-ed7f-49b7-88c6-d363bf66b954"
+    },
+    "retainedRevisions": [
+      "07b63b9e-ed7f-49b7-88c6-d363bf66b954"
+    ]
+  },
+  "pendingArtifactCleanup": []
 }
