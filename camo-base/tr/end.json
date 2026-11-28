@@ -1,0 +1,140 @@
+[
+{
+"text": "Memang",
+"start": 0.0,
+"end": 0.36,
+"p": 0.88
+},
+{
+"text": "orang",
+"start": 0.36,
+"end": 0.54,
+"p": 0.26
+},
+{
+"text": "lah,",
+"start": 0.54,
+"end": 0.68,
+"p": 0.59
+},
+{
+"text": "baik",
+"start": 0.72,
+"end": 0.9,
+"p": 0.55
+},
+{
+"text": "lah.",
+"start": 0.9,
+"end": 1.08,
+"p": 0.89
+},
+{
+"text": "Ada",
+"start": 1.14,
+"end": 1.4,
+"p": 0.98
+},
+{
+"text": "macam",
+"start": 1.4,
+"end": 1.62,
+"p": 0.99
+},
+{
+"text": "-macam",
+"start": 1.62,
+"end": 1.86,
+"p": 0.99
+},
+{
+"text": "warna.",
+"start": 1.86,
+"end": 2.16,
+"p": 0.97
+},
+{
+"text": "Alang",
+"start": 2.6,
+"end": 2.98,
+"p": 0.96
+},
+{
+"text": "-alang",
+"start": 2.98,
+"end": 3.3,
+"p": 1.0
+},
+{
+"text": "harga",
+"start": 3.3,
+"end": 3.7,
+"p": 0.69
+},
+{
+"text": "tengah",
+"start": 3.7,
+"end": 3.98,
+"p": 0.83
+},
+{
+"text": "promo,",
+"start": 3.98,
+"end": 5.96,
+"p": 0.48
+},
+{
+"text": "harga",
+"start": 6.4,
+"end": 6.94,
+"p": 0.99
+},
+{
+"text": "student",
+"start": 6.94,
+"end": 7.22,
+"p": 0.93
+},
+{
+"text": "je.",
+"start": 7.22,
+"end": 7.5,
+"p": 0.98
+},
+{
+"text": "Nak",
+"start": 7.56,
+"end": 7.74,
+"p": 0.96
+},
+{
+"text": "dapat",
+"start": 7.74,
+"end": 7.94,
+"p": 1.0
+},
+{
+"text": "mana,",
+"start": 7.94,
+"end": 8.08,
+"p": 0.04
+},
+{
+"text": "tekan",
+"start": 8.18,
+"end": 8.34,
+"p": 0.53
+},
+{
+"text": "link",
+"start": 8.34,
+"end": 8.48,
+"p": 0.01
+},
+{
+"text": "bawah.",
+"start": 8.48,
+"end": 8.64,
+"p": 0.53
+}
+]
